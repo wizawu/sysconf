@@ -1,6 +1,7 @@
 set autoindent
 set backspace=2
-set nonumber
+set expandtab
+set number
 set shiftwidth=4
 set smartindent
 set smarttab
