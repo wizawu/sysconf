@@ -1,0 +1,3 @@
+qemu-kvm -hda xp.img -m 512 -vga std \
+-usb -usbdevice tablet \
+-smb /mnt
