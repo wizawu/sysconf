@@ -169,7 +169,7 @@ for s = 1, screen.count() do
 	-- Initialize widget
 	memwidget = widget({ type = "textbox" })
 	-- Register widget
-	vicious.register(memwidget, vicious.widgets.mem, "MEM $1% ($2MB/$3MB) |", 12)
+	vicious.register(memwidget, vicious.widgets.mem, "MEM $1% ($2MiB/$3MiB) |", 12)
 	
 	-- Initialize widget
 	cpuwidget = widget({ type = "textbox" })
