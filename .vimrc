@@ -17,7 +17,7 @@ if has('gui_running')
     colorscheme solarized
     set background=dark
 else
-    colorscheme peachpuff
+    colorscheme prmths
 endif
 set t_Co=256
 
