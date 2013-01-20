@@ -4,6 +4,8 @@
 ## Generated on 2012-09-07
 ##
 
+## Score: 0.8, United States
+Server = http://cake.lib.fit.edu/archlinux/$repo/os/$arch
 ## Score: 2.1, China
 Server = http://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
 ## Score: 3.7, China
@@ -37,8 +39,6 @@ Server = http://archlinux.limun.org/$repo/os/$arch
 Server = http://mirror.rit.edu/archlinux/$repo/os/$arch
 ## Score: 0.7, Germany
 Server = http://ftp.tuxdroid.org/archlinux/$repo/os/$arch
-## Score: 0.8, United States
-Server = http://cake.lib.fit.edu/archlinux/$repo/os/$arch
 ## Score: 0.9, United Kingdom
 Server = http://mirror.bytemark.co.uk/archlinux/$repo/os/$arch
 ## Score: 0.9, United States
