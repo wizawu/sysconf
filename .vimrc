@@ -10,7 +10,7 @@ set softtabstop=4
 set tabstop=4
 set textwidth=80
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
-filetype plugin indent on
+filetype indent on
 filetype plugin on
 syntax on
 
