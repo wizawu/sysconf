@@ -10,9 +10,6 @@ set softtabstop=4
 set tabstop=4
 set textwidth=80
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
-filetype indent on
-filetype plugin on
-syntax on
 
 " GUI
 set guifont=Consolas\ 10
@@ -32,3 +29,6 @@ endif
 " golang
 set rtp+=/usr/share/go/misc/vim
 
+" plugins
+filetype plugin indent on
+syntax on
