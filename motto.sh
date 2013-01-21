@@ -4,7 +4,7 @@
 let n=8
 declare -A arr
 
-arr[0]="\e[1;33m\n
+arr[0]="\e[0;33m\n
 1. The fear of missing out.\n
 If you feel anxious because you constantly feel\n
 like you're missing out on something happening\n
@@ -24,7 +24,7 @@ Take a deep breath, smile, and notice how lovely it\n
 is. Read The Power of Now.\n
 \e[0m"
 
-arr[1]="\e[1;33m\n
+arr[1]="\e[0;33m\n
 2. Avoiding pain and defeat.\n
 Not to spoil the ending for you, but everything is\n
 going to be OK – you just need to learn a lesson or\n
@@ -37,7 +37,7 @@ teaches you what you need to know, so you can move\n
 on to the next step.\n
 \e[0m"
 
-arr[2]="\e[1;33m\n
+arr[2]="\e[0;33m\n
 3. Holding on to what's no longer there.\n
 Some of us spend the vast majority of our lives\n
 recounting past memories, and letting them steer the\n
@@ -51,7 +51,7 @@ of them in the past and realize that they lead to\n
 nowhere.\n
 \e[0m"
 
-arr[3]="\e[1;33m\n
+arr[3]="\e[0;33m\n
 4. Retelling a self-defeating story.\n
 If we continue to repeat a story in our head, we\n
 eventually believe that story and embrace it –\n
@@ -65,7 +65,7 @@ easy. What matters the most is what you start doing\n
 now. Read Awaken the Giant Within.\n
 \e[0m"
 
-arr[4]="\e[1;33m\n
+arr[4]="\e[0;33m\n
 5. Attempting to fit in by becoming someone else.\n
 The hardest battle you're ever going to fight is the\n
 battle to be you, just the way you are in this\n
@@ -77,7 +77,7 @@ awesome self. Be your own kind of beautiful right\n
 now, in the way only you know how.\n
 \e[0m"
 
-arr[5]="\e[1;33m\n
+arr[5]="\e[0;33m\n
 6. The picture in your head of how it's supposed to be.\n
 What often screws us up the most in life is the\n
 picture in our head of how it's supposed to be.\n
@@ -90,7 +90,7 @@ but we can choose how we dance to it. Read The Last\n
 Lecture.\n
 \e[0m"
 
-arr[6]="\e[1;33m\n
+arr[6]="\e[0;33m\n
 7. Berating yourself for not being perfect.\n
 Don't be too hard on yourself. There are plenty of\n
 people willing to do that for you. Do your best and\n
@@ -102,7 +102,7 @@ even your mistakes. Because even mistakes mean\n
 you're trying.\n
 \e[0m"
 
-arr[7]="\e[1;33m\n
+arr[7]="\e[0;33m\n
 8. Waiting, and then waiting some more.\n
 Stop waiting for tomorrow; you will never get today\n
 back. It doesn't matter what you've done in the\n
