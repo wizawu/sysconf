@@ -30,5 +30,6 @@ endif
 set rtp+=/usr/share/go/misc/vim
 
 " plugins
-filetype plugin indent on
+filetype indent on
+filetype plugin on
 syntax on

@@ -41,3 +41,7 @@ export PATH=$PATH:$ZOOKEEPER_HOME/bin
 export REDIS_HOME=/home/wiza/basement/redis-2.4.16
 export PATH=$PATH:$REDIS_HOME/src
 
+export GOROOT=/usr/lib/go
+export GOBIN=$GOROOT/bin
+export PATH=$PATH:$GOBIN
+
