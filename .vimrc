@@ -23,7 +23,7 @@ if has('gui_running')
     colorscheme solarized
     set background=dark
 else
-    colorscheme peachpuff
+    colorscheme emacs
 endif
 
 " golang
