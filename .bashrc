@@ -1,19 +1,17 @@
-#
-# ~/.bashrc
-#
-
-.wizacfg/motto.sh
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
 complete -cf sudo
 xrdb /home/wiza/.Xresources
+.wizacfg/motto.sh
 
 alias ls='ls --color=auto'
 alias vi='vim'
 alias viR='vim -R'
-# alias xsel='xsel -b -i'
+alias gor='go run'
+alias gob='go build'
+alias timef='/usr/bin/time -f "%E\n%M\n"'
 
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;35m\]\u\[\033[01;30m\]@\[\033[01;32m\]\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 
