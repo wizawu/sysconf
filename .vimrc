@@ -11,6 +11,8 @@ set tabstop=4
 set textwidth=80
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set mouse=a
+imap <C-e> <C-x><C-o>
+autocmd VimEnter * hi MatchParen ctermbg=darkblue
 
 " GUI
 set guifont=Oxygen\ Mono\ 9
