@@ -13,6 +13,8 @@ alias gor='go run'
 alias gob='go build'
 alias timef='/usr/bin/time -f "%E\n%M\n"'
 alias gcc='gcc -std=c11 -fms-extensions'
+alias gg='gccgo'
+alias ggs='gccgo -static-libgo'
 
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;35m\]\u\[\033[01;30m\]@\[\033[01;32m\]\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 
