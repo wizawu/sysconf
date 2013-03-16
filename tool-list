@@ -6,3 +6,5 @@ nmap
 xsel
 httrack
 axel
+libpdf.so    # copy to /usr/lib/chromium
+fxchrome     # chrome theme for firefox
