@@ -1,13 +1,23 @@
-file-roller
-dstat
-sar
+file-roller           # archive graphical manager
+dstat                 # combination of stat tools
 iftop
 nmap
 xsel
 httrack
 axel
-libpdf.so    # copy to /usr/lib/chromium
-fxchrome     # chrome theme for firefox
-vimerl
-clang_complete
-gocode
+libpdf.so             # copy to /usr/lib/chromium
+fxchrome              # chrome theme for firefox
+vimerl                # vim plugin for Erlang
+clang_complete        # vim plugin for c
+gocode                # vim plugin for Go
+siege
+http_load
+httperf
+vifm
+curl icanhazip.com
+scp
+rsync
+htop                  # powerful process viewer
+calcurse              # to-do manager
+tpp                   # console ppt
+ncat
