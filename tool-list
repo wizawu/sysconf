@@ -21,3 +21,6 @@ htop                  # powerful process viewer
 calcurse              # to-do manager
 tpp                   # console ppt
 ncat
+pref
+strace                # trace system calls
+fcitx-cloudpinyin
