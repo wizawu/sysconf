@@ -8,19 +8,13 @@ xrdb /home/wiza/.Xresources
 
 alias ls='ls --color=auto'
 alias vi='vim'
-alias viR='vim -R'
+alias vr='vim -R'
 alias timef='/usr/bin/time -f "TIME:\t%E\nMEM:\t%M KB\n"'
 alias gcc='gcc -std=c11 -fms-extensions'
 alias ggsl='gccgo -static-libgo'
 
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;35m\]\u\[\033[01;30m\]@\[\033[01;32m\]\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 eval `dircolors /home/wiza/.dircolors`
-
-export XIM="SCIM"
-export XMODIFIERS=@im=SCIM
-export GTK_IM_MODULE=scim
-export QT_IM_MODULE=scim
-export XIM_PROGRAM="scim -d"
 
 export JAVA_HOME=/usr/lib/jvm/jdk1.7.0_05
 export JRE_HOME=$JAVA_HOME/jre
@@ -43,4 +37,3 @@ export PATH=$PATH:$REDIS_HOME/src
 export GOROOT=/usr/lib/go
 export GOBIN=$GOROOT/bin
 export PATH=$PATH:$GOBIN
-
