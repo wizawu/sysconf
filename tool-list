@@ -28,3 +28,4 @@ hdparm --fibmap [...]      # block address of a file
 lshw -C cpu|network|...    # 
 xev                        # print key code
 xmodmap                    # modify keymaps
+lzz                        # Lazy C++
