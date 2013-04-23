@@ -11,7 +11,9 @@ alias vi='vim'
 alias vr='vim -R'
 alias timef='/usr/bin/time -f "TIME:\t%E\nMEM:\t%M KB\n"'
 alias gcc='gcc -std=c11 -fms-extensions'
-alias ggsl='gccgo -static-libgo'
+alias g++='g++ -std=c++11'
+alias clang='clang -std=c11 -W'
+alias clang++='clang++ -std=c++11 -W'
 
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;35m\]\u\[\033[01;30m\]@\[\033[01;32m\]\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 eval `dircolors /home/wiza/.dircolors`
