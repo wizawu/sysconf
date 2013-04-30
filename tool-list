@@ -9,7 +9,6 @@ libpdf.so                  # copy to /usr/lib/chromium
 fxchrome                   # chrome theme for firefox
 vimerl                     # vim plugin for Erlang
 clang_complete             # vim plugin for c
-gocode                     # vim plugin for Go
 siege
 http_load
 httperf
@@ -29,3 +28,4 @@ lshw -C cpu|network|...    #
 xev                        # print key code
 xmodmap                    # modify keymaps
 lzz                        # Lazy C++
+vimacs
