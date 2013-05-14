@@ -30,3 +30,5 @@ xmodmap                    # modify keymaps
 lzz                        # Lazy C++
 vimacs
 pkgfile
+wps
+pmap                       # report memory map of a process
