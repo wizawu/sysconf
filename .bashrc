@@ -39,3 +39,7 @@ export PATH=$PATH:$REDIS_HOME/src
 export GOROOT=/usr/lib/go
 export GOBIN=$GOROOT/bin
 export PATH=$PATH:$GOBIN
+
+export HUGS_HOME=/home/wiza/workspace/hugs98-Sep2006
+alias runhugs='HUGSDIR='${HUGS_HOME}'/hugsdir '${HUGS_HOME}'/src/runhugs'
+alias hugs='HUGSDIR='${HUGS_HOME}'/hugsdir '${HUGS_HOME}'/src/hugs'
