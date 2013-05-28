@@ -20,7 +20,6 @@ htop                       # powerful process viewer
 calcurse                   # to-do manager
 tpp                        # console ppt
 ncat
-pref
 strace                     # trace system calls
 fcitx-cloudpinyin
 hdparm --fibmap [...]      # block address of a file

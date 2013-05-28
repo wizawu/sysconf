@@ -4,6 +4,12 @@
 ## Generated on 2012-09-07
 ##
 
+Server = http://mirror.rit.edu/archlinux/$repo/os/$arch
+Server = http://ftp.halifax.rwth-aachen.de/manjaro/$repo/$arch
+Server = http://mirrors.mycraft.eu/manjaro/$repo/$arch
+Server = http://manjarolinux.polymorf.fr/$repo/$arch
+Server = http://repo.manjaro.org.uk/$repo/$arch
+
 ## Score: 2.1, China
 Server = http://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
 ## Score: 3.7, China
