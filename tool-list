@@ -34,3 +34,4 @@ pmap                       # report memory map of a process
 goagent                    # find it on github
 set -x                     # trace commands executed 
 losetup                    # set up loop devices
+iotop
