@@ -35,3 +35,4 @@ goagent                    # find it on github
 set -x                     # trace commands executed 
 losetup                    # set up loop devices
 iotop
+perf stat|top|...
