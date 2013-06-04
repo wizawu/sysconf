@@ -3,7 +3,7 @@
 [[ $- != *i* ]] && return
 
 complete -cf sudo
-xrdb /home/wiza/.Xresources
+# xrdb /home/wiza/.Xresources
 /home/wiza/.wizacfg/motto.sh
 
 alias ls='ls --color=auto'

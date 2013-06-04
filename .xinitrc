@@ -1,6 +1,10 @@
+#!/bin/sh
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
 
-gnome-settings-daemon &
-exec ck-launch-session dbus-launch gnome-session
+# gnome-settings-daemon &
+# exec ck-launch-session dbus-launch gnome-session
+
+exec gnome-session &
+awesome
