@@ -40,3 +40,5 @@ lscpu
 lsusb
 fio
 libhugetlbfs-utils         # hugeadm, hugectl, pagesize...
+netctl
+stat
