@@ -3,8 +3,10 @@
 [[ $- != *i* ]] && return
 
 complete -cf sudo
+source /usr/share/git/completion/git-completion.bash
 # xrdb /home/wiza/.Xresources
 /home/wiza/.wizacfg/motto.sh
+export LANG=en_US.UTF-8
 
 alias ls='ls --color=auto'
 alias vi='vim'

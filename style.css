@@ -1,0 +1,13 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document regexp("(?!.*\\.pdf).*") {
+    body {
+        text-shadow: 0px 0px 1px #909090 !important;
+    }
+}
+
+@-moz-document regexp("^http(s)?://((www|gist|help|status).)?github.*") {
+    body, input, select, textarea, button {
+        font-family: FSAlbert !important;
+    }
+}
