@@ -1,7 +1,9 @@
 file-roller                # archive graphical manager
 dstat                      # combination of stat tools
 iftop
+tsocks
 nmap
+lsof
 xsel
 httrack
 axel

@@ -21,10 +21,13 @@ alias cythonc='clang -I/usr/include/python3.3m -lpython3.3m'
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;35m\]\u\[\033[01;30m\]@\[\033[01;32m\]\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 eval `dircolors /home/wiza/.dircolors`
 
-export JAVA_HOME=/usr/lib/jvm/jdk1.7.0_05
+export JAVA_HOME=/usr/lib/jvm/jdk1.7.0_21
 export JRE_HOME=$JAVA_HOME/jre
 export CLASSPATH=.:$JAVA_HOME/lib:$JRE_HOME/lib
 export PATH=$PATH:$JAVA_HOME/bin
+
+export GRADLE_HOME=/home/wiza/gradle-1.6
+export PATH=$PATH:$GRADLE_HOME/bin
 
 export HADOOP_HOME=/home/wiza/basement/hadoop-1.0.3
 export HADOOP_HOME_WARN_SUPPRESS=1
