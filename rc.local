@@ -1,8 +1,0 @@
-#!/bin/bash
-#
-# /etc/rc.local: Local multi-user start-up script.
-#
-
-ntpd -s
-
-exit 0
