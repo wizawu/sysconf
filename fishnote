@@ -1,7 +1,7 @@
 #!/usr/bin/expect -f
 
 set timeout -1
-spawn ssh -D 7070 wiza@ssh8.fishnote.net -p 443 
+spawn ssh -D 6070 wiza@ssh8.fishnote.net -p 443 
 expect "*?assword:*"
 send "fuckgfw\r"
 interact
