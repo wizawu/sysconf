@@ -45,3 +45,4 @@ libhugetlbfs-utils         # hugeadm, hugectl, pagesize...
 netctl
 stat
 gperftools                 # tcmalloc
+mdadm                      # Software RAID

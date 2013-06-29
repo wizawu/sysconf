@@ -38,6 +38,10 @@ endif
 " golang
 set rtp+=/usr/share/go/misc/vim
 
+" clang_complete
+let g:clang_complete_auto=2
+let g:clang_close_preview=1
+
 " plugins
 filetype indent on
 filetype plugin on
