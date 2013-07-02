@@ -9,7 +9,6 @@ set tabstop=4
 set backspace=2
 set textwidth=80
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
-" set mouse=a
 imap <C-f> <C-x><C-o>
 imap <C-e> <End>
 autocmd VimEnter * hi MatchParen ctermbg=darkblue
@@ -41,6 +40,18 @@ set rtp+=/usr/share/go/misc/vim
 " clang_complete
 let g:clang_complete_auto=2
 let g:clang_close_preview=1
+
+" vundle
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+Bundle 'Valloric/YouCompleteMe'
+
+" YCM
+let g:ycm_global_ycm_extra_conf = '/home/wiza/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
+let g:ycm_autoclose_preview_window_after_completion = 1
 
 " plugins
 filetype indent on

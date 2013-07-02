@@ -10,7 +10,6 @@ axel
 libpdf.so                  # copy to /usr/lib/chromium
 fxchrome                   # chrome theme for firefox
 vimerl                     # vim plugin for Erlang
-clang_complete             # vim plugin for c
 siege
 http_load
 httperf
@@ -46,3 +45,7 @@ netctl
 stat
 gperftools                 # tcmalloc
 mdadm                      # Software RAID
+vundle                     # vim plugin manager
+YouCompleteMe
+clang_complete
+vim-multiple-cursors
