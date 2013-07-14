@@ -49,3 +49,4 @@ vundle                     # vim plugin manager
 YouCompleteMe
 clang_complete
 vim-multiple-cursors
+Yunio
