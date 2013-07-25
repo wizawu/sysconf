@@ -14,7 +14,8 @@ imap <C-e> <End>
 autocmd VimEnter * hi MatchParen ctermbg=darkblue
 
 " GUI
-set guifont=Oxygen\ Mono\ 9
+" set guifont=Oxygen\ Mono\ 9
+set guifont=LetterGothicMono\ 10
 set guioptions-=m
 set guioptions-=r
 set guioptions-=T
