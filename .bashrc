@@ -26,9 +26,6 @@ export JRE_HOME=$JAVA_HOME/jre
 export CLASSPATH=.:$JAVA_HOME/lib:$JRE_HOME/lib
 export PATH=$PATH:$JAVA_HOME/bin
 
-export GRADLE_HOME=/home/wiza/gradle-1.6
-export PATH=$PATH:$GRADLE_HOME/bin
-
 export HADOOP_HOME=/home/wiza/basement/hadoop-1.0.3
 export HADOOP_HOME_WARN_SUPPRESS=1
 export PATH=$PATH:$HADOOP_HOME/bin
