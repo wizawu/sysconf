@@ -1,0 +1,8 @@
+{
+    "server":["198.74.49.16"],
+    "server_port":12147,
+    "local_port":1080,
+    "password":"fuck0gfw",
+    "timeout":60,
+	"method":"aes-256-cfb"
+}
