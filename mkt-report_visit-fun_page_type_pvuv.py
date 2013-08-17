@@ -199,7 +199,7 @@ def execute(tdw):
         GROUP BY frefer_url_classlev%d_id
     """
 
-    # 合并各级类型的统计结果
+    # 各级类型的统计结果
     t_union_x = """
         SELECT
           %d, %s, %s, %s, %s, fpv, fuv,
@@ -223,7 +223,8 @@ def execute(tdw):
           fdetail_pv, fdetail_uv, fshop_pv, fshop_uv,
           fsearch_pv, fsearch_uv, fchan_pv, fchan_uv
         )
-        WITH t_class AS (
+        WITH t_class AS (    -- url_id对应的0,1,2,3级类型
+
           SELECT
             DISTINCT fcurrent_url_id     fcur_id,
             fshop_type                   fclassl0_id,
@@ -232,7 +233,9 @@ def execute(tdw):
             fcurrent_url_classlev3_id    fclassl3_id
           FROM ecc_paipai_basic::daily_raw_paipai_tree_pv_info
           WHERE fdate_cd = %s
+
         ), t_tree_info AS (    -- 增加current和refer页面的0级类型
+
           SELECT /*+ MAPJOIN(t_class) */  t1.*,
             t1.fshop_type          fcurrent_url_classlev0_id,
             t_class.fclassl0_id    frefer_url_classlev0_id
@@ -242,7 +245,9 @@ def execute(tdw):
               WHERE fdate_cd = %s
             ) t1
             ON t_class.fcur_id = t1.frefer_url_id
+
         ), t_click AS (    -- 增加0,1,2,3级页面类型
+
           SELECT /*+ MAPJOIN(t_class) */  t2.*,
             t_class.fclassl0_id,
             t_class.fclassl1_id,
@@ -254,6 +259,7 @@ def execute(tdw):
               WHERE fdate_cd = %s
             ) t2
             ON t_class.fcur_id = t2.fcurrent_url_type_id
+
         ), t_pvuv_0 AS (%s
         ), t_pvuv_1 AS (%s
         ), t_pvuv_2 AS (%s
@@ -282,13 +288,20 @@ def execute(tdw):
            t_click_x % 0, t_click_x % 1, t_click_x % 2, t_click_x % 3,
            t_rd_x % 0,    t_rd_x % 1,    t_rd_x % 2,    t_rd_x % 3,
            v_numfrom,
-           t_union_x % (0, "t_pvuv_x.fclassl0_id", "NULL", "NULL", "NULL", 0,0,0,0,0,0,0),
-           t_union_x % (1, "t_pvuv_x.fclassl0_id", "t_pvuv_x.fclassl1_id",
-                        "NULL", "NULL", 1,1,1,1,1,1,1),
-           t_union_x % (2, "t_pvuv_x.fclassl0_id", "t_pvuv_x.fclassl1_id",
-                        "t_pvuv_x.fclassl2_id", "NULL", 2,2,2,2,2,2,2),
-           t_union_x % (3, "t_pvuv_x.fclassl0_id", "t_pvuv_x.fclassl1_id",
-                        "t_pvuv_x.fclassl2_id", "t_pvuv_x.fclassl3_id", 3,3,3,3,3,3,3))
+           t_union_x % (0,
+                        "t_pvuv_x.fclassl0_id", "NULL", "NULL", "NULL",
+                        0,0,0,0,0,0,0),
+           t_union_x % (1,
+                        "t_pvuv_x.fclassl0_id", "t_pvuv_x.fclassl1_id", "NULL", "NULL",
+                        1,1,1,1,1,1,1),
+           t_union_x % (2,
+                        "t_pvuv_x.fclassl0_id", "t_pvuv_x.fclassl1_id",
+                        "t_pvuv_x.fclassl2_id", "NULL",
+                        2,2,2,2,2,2,2),
+           t_union_x % (3,
+                        "t_pvuv_x.fclassl0_id", "t_pvuv_x.fclassl1_id",
+                        "t_pvuv_x.fclassl2_id", "t_pvuv_x.fclassl3_id",
+                        3,3,3,3,3,3,3))
     mkt_common.WriteLog(tdw, pysql_filename, "running", sql)
     tdw.execute(sql)
     
