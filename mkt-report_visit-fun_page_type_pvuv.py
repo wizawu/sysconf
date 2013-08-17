@@ -126,7 +126,6 @@ def execute(tdw):
     """ % (v_numfrom, v_numfrom)
     mkt_common.WriteLog(tdw, pysql_filename, "running", sql)
     tdw.execute(sql)
-
     
     # 各级类型PV和UV
     t_pvuv_x = """
@@ -200,6 +199,21 @@ def execute(tdw):
         GROUP BY frefer_url_classlev%d_id
     """
 
+    # 合并各级类型的统计结果
+    t_union_x = """
+        SELECT
+          %d, %s, %s, %s, %s, fpv, fuv,
+          fclick, fclick_pv, fclick_uv, frd_pv, frd_uv, fwg_pv, fwg_uv,
+          fpp_pv, fpp_uv, fwg_home_pv, fwg_home_uv, fpp_home_pv, fpp_home_uv,
+          fdetail_pv, fdetail_uv, fshop_pv, fshop_uv,
+          fsearch_pv, fsearch_uv, fchan_pv, fchan_uv
+        FROM t_pvuv_%d            AS t_pvuv_x
+          LEFT JOIN t_click_%d    AS t_click_x
+            ON t_pvuv_x.fclassl%d_id = t_click_x.fclassl%d_id
+          LEFT JOIN t_rd_%d       AS t_rd_x
+            ON t_pvuv_x.fclassl%d_id = t_rd_x.fclassl%d_id
+    """
+
     sql = """
         INSERT INTO r_fun_page_type_pvuv (
           fdate_cd, fclass_flag,
@@ -253,13 +267,28 @@ def execute(tdw):
         ), t_rd_2 AS (%s
         ), t_rd_3 AS (%s
         ) 
-        SELECT %s, * FROM (
-          
+        SELECT %s, *
+        FROM (         -- 按0级类型统计
+          %s
+          UNION ALL    -- 按1级类型统计
+          %s
+          UNION ALL    -- 按2级类型统计
+          %s
+          UNION ALL    -- 按3级类型统计
+          %s
         )
-    """ % (v_numfrom, v_numfrom, v_numfrom, v_numfrom,
-           t_rd_x % 0, t_rd_x % 1, t_rd_x % 2, t_rd_x % 3,
-           t_click_x % 0, t_click_x % 1, t_click_x % 2, t_click_x % 3, 
-           t_pvuv_x % 0, t_pvuv_x % 1, t_pvuv_x % 2, t_pvuv_x % 3)
+    """ % (v_numfrom, v_numfrom, v_numfrom, 
+           t_pvuv_x % 0,  t_pvuv_x % 1,  t_pvuv_x % 2,  t_pvuv_x % 3,
+           t_click_x % 0, t_click_x % 1, t_click_x % 2, t_click_x % 3,
+           t_rd_x % 0,    t_rd_x % 1,    t_rd_x % 2,    t_rd_x % 3,
+           v_numfrom,
+           t_union_x % (0, "t_pvuv_x.fclassl0_id", "NULL", "NULL", "NULL", 0,0,0,0,0,0,0),
+           t_union_x % (1, "t_pvuv_x.fclassl0_id", "t_pvuv_x.fclassl1_id",
+                        "NULL", "NULL", 1,1,1,1,1,1,1),
+           t_union_x % (2, "t_pvuv_x.fclassl0_id", "t_pvuv_x.fclassl1_id",
+                        "t_pvuv_x.fclassl2_id", "NULL", 2,2,2,2,2,2,2),
+           t_union_x % (3, "t_pvuv_x.fclassl0_id", "t_pvuv_x.fclassl1_id",
+                        "t_pvuv_x.fclassl2_id", "t_pvuv_x.fclassl3_id", 3,3,3,3,3,3,3))
     mkt_common.WriteLog(tdw, pysql_filename, "running", sql)
     tdw.execute(sql)
     
