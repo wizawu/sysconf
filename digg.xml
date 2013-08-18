@@ -10,6 +10,7 @@
 <outline text="ACM Queue" title="ACM Queue" type="rss" xmlUrl="http://queue.acm.org/rss/feeds/queuecontent.xml" htmlUrl="http://queue.acm.org/" />
 <outline text="Basho" title="Basho" type="rss" xmlUrl="http://basho.com/feed" htmlUrl="http://basho.com" />
 <outline text="Beyond Search" title="Beyond Search" type="rss" xmlUrl="http://www.guwendong.com/feed" htmlUrl="http://www.guwendong.com" />
+<outline text="Beyond the Void" title="Beyond the Void" type="rss" xmlUrl="https://www.byvoid.com/feed" htmlUrl="http://www.byvoid.com/" />
 <outline text="λ-calculus" title="λ-calculus" type="rss" xmlUrl="http://www.cppblog.com/vczh/rss.aspx" htmlUrl="http://www.cppblog.com/vczh/" />
 <outline text="DBA Notes" title="DBA Notes" type="rss" xmlUrl="http://dbanotes.net/feed" htmlUrl="http://dbanotes.net" />
 <outline text="Erlang" title="Erlang" type="rss" xmlUrl="http://www.erlang.org/rss/news" htmlUrl="http://www.erlang.org/rss/news" />
@@ -26,9 +27,12 @@
 <outline text="Matrix67" title="Matrix67" type="rss" xmlUrl="http://www.matrix67.com/blog/feed.asp" htmlUrl="http://www.matrix67.com/blog" />
 <outline text="myNoSQL" title="myNoSQL" type="rss" xmlUrl="http://feeds.feedburner.com/nosql" htmlUrl="http://nosql.mypopescu.com/" />
 <outline text="NoSQLFan" title="NoSQLFan" type="rss" xmlUrl="http://blog.nosqlfan.com/feed" htmlUrl="http://blog.nosqlfan.com" />
+<outline text="Open Query" title="Open Query" type="rss" xmlUrl="http://openquery.com/blog/feed" htmlUrl="http://openquery.com/blog" />
 <outline text="pagefault" title="pagefault" type="rss" xmlUrl="http://www.pagefault.info/?feed=rss2" htmlUrl="http://www.pagefault.info" />
 <outline text="pcwalton" title="pcwalton" type="rss" xmlUrl="http://pcwalton.github.io/atom.xml" htmlUrl="http://pcwalton.github.com/" />
+<outline text="Philip Su" title="Philip Su" type="rss" xmlUrl="http://worldofsu.com/philipsu/feed/" htmlUrl="http://worldofsu.com/philipsu" />
 <outline text="Phoronix" title="Phoronix" type="rss" xmlUrl="http://www.phoronix.com/rss.php" htmlUrl="http://www.phoronix.com/" />
+<outline text="Preshing" title="Preshing" type="rss" xmlUrl="http://preshing.com/feed" htmlUrl="http://preshing.com" />
 <outline text="GitHub Private Feed" title="GitHub Private Feed" type="rss" xmlUrl="https://github.com/wizawu.private.atom?token=5d8772e2151c1a49317f9d0520323edf" htmlUrl="https://github.com/wizawu" />
 <outline text="SaltTiger" title="SaltTiger" type="rss" xmlUrl="http://www.salttiger.com/index.php/feed/" htmlUrl="http://www.salttiger.com" />
 <outline text="Solidot" title="Solidot" type="rss" xmlUrl="http://feeds2.feedburner.com/solidot" htmlUrl="http://www.solidot.org" />
@@ -59,6 +63,7 @@
 <outline text="酷壳" title="酷壳" type="rss" xmlUrl="http://coolshell.cn/feed" htmlUrl="http://coolshell.cn" />
 <outline text="量子恒道官方博客" title="量子恒道官方博客" type="rss" xmlUrl="http://blog.linezing.com/feed" htmlUrl="http://blog.linezing.com" />
 <outline text="银河里的星星" title="银河里的星星" type="rss" xmlUrl="http://duanple.blog.163.com/rss/" htmlUrl="http://duanple.blog.163.com" />
-<outline text="陈迪豪" title="陈迪豪" type="rss" xmlUrl="http://www.chendihao.cn/feed/" htmlUrl="http://www.chendihao.cn" /></body>
+<outline text="陈迪豪" title="陈迪豪" type="rss" xmlUrl="http://www.chendihao.cn/feed/" htmlUrl="http://www.chendihao.cn" />
+<outline text="阮一峰" title="阮一峰" type="rss" xmlUrl="http://www.ruanyifeng.com/blog/atom.xml" htmlUrl="http://www.ruanyifeng.com/blog/" /></body>
 
 </opml>
