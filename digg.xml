@@ -21,6 +21,7 @@
 <outline text="IBM developerWorks: Linux" title="IBM developerWorks: Linux" type="rss" xmlUrl="http://www.ibm.com/developerworks/cn/views/linux/rss/libraryview.jsp?site_id=10&amp;contentarea_by=Linux&amp;topic_by=&amp;product_by=&amp;type_by=%E6%89%80%E6%9C%89%E7%B1%BB%E5%88%AB&amp;search_by=&amp;industry_by=&amp;sort_by=Date&amp;series_title_by=" htmlUrl="http://www.ibm.com/developerworks/cn/" />
 <outline text="InfoQ Personalized Feed" title="InfoQ Personalized Feed" type="rss" xmlUrl="http://www.infoq.com/rss/rss.action?token=fzRxeNNgzItuGpjGAiLvFogHwDDrwsVN" htmlUrl="http://www.infoq.com" />
 <outline text="JLOUIS Ramblings" title="JLOUIS Ramblings" type="rss" xmlUrl="http://jlouisramblings.blogspot.com/feeds/posts/default" htmlUrl="http://jlouisramblings.blogspot.com/" />
+<outline text="kernelchina" title="kernelchina" type="rss" xmlUrl="http://www.kernelchina.org/rss.xml" htmlUrl="http://www.kernelchina.org" />
 <outline text="Linux新闻 - Linux公社" title="Linux新闻 - Linux公社" type="rss" xmlUrl="http://www.linuxidc.com/rssFeed.aspx?cid=10" htmlUrl="http://www.linuxidc.com/" />
 <outline text="LWN.net" title="LWN.net" type="rss" xmlUrl="http://lwn.net/headlines/newrss" htmlUrl="http://lwn.net" />
 <outline text="Maniagnosis" title="Maniagnosis" type="rss" xmlUrl="http://maniagnosis.crsr.net/feeds/posts/default" htmlUrl="http://maniagnosis.crsr.net/" />
@@ -40,6 +41,7 @@
 <outline text="StorageMojo" title="StorageMojo" type="rss" xmlUrl="http://storagemojo.com/feed/" htmlUrl="http://storagemojo.com" />
 <outline text="Tim[后端技术]" title="Tim[后端技术]" type="rss" xmlUrl="http://timyang.net/feed/atom/" htmlUrl="http://timyang.net/" />
 <outline text="VoltDB" title="VoltDB" type="rss" xmlUrl="http://voltdb.com/blog/feed" htmlUrl="http://blog.voltdb.com" />
+<outline text="vpsee.com" title="vpsee.com" type="rss" xmlUrl="http://www.vpsee.com/feed/" htmlUrl="http://www.vpsee.com" />
 <outline text="InfoQ个性化Feed" title="InfoQ个性化Feed" type="rss" xmlUrl="http://www.infoq.com/cn/rss/rss.action?token=fzRxeNNgzItuGpjGAiLvFogHwDDrwsVN" htmlUrl="http://www.infoq.com/cn/" />
 <outline text="xiaoxia" title="xiaoxia" type="rss" xmlUrl="http://xiaoxia.org/feed/" htmlUrl="http://xiaoxia.org" />
 <outline text="You Wouldn't Like Me When I'm Not Coding" title="You Wouldn't Like Me When I'm Not Coding" type="rss" xmlUrl="http://theincredibleholk.wordpress.com/feed/" htmlUrl="http://theincredibleholk.wordpress.com" />
