@@ -4,6 +4,7 @@
 <title>wiza subscriptions in Digg Reader</title>
 </head>
 <body>
+<outline text="统计之都" title="统计之都" type="rss" xmlUrl="http://cos.name/feed/" htmlUrl="http://cos.name" />
 <outline text="36氪" title="36氪" type="rss" xmlUrl="http://www.36kr.com/feed" htmlUrl="http://www.36kr.com/" />
 <outline text="4G spaces" title="4G spaces" type="rss" xmlUrl="http://blog.youxu.info/feed/" htmlUrl="http://blog.youxu.info" />
 <outline text="50年前的波拉岛" title="50年前的波拉岛" type="rss" xmlUrl="http://davidzai.blog.163.com/rss/" htmlUrl="http://davidzai.blog.163.com" />

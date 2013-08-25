@@ -51,3 +51,4 @@ clang_complete
 vim-multiple-cursors
 rust
 pypy
+watch -tdn1 cat /proc/...
