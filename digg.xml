@@ -5,6 +5,9 @@
 </head>
 <body>
 <outline text="统计之都" title="统计之都" type="rss" xmlUrl="http://cos.name/feed/" htmlUrl="http://cos.name" />
+<outline text="Revolutions" title="Revolutions" type="rss" xmlUrl="http://blog.revolutionanalytics.com/atom.xml" htmlUrl="http://blog.revolutionanalytics.com/" />
+<outline text="R-bloggers" title="R-bloggers" type="rss" xmlUrl="http://feeds.feedburner.com/RBloggers" htmlUrl="http://www.r-bloggers.com" />
+<outline text="250bpm-blogs" title="250bpm-blogs" type="rss" xmlUrl="http://250bpm.com/feed/pages/pagename/blog/category/blog/t/250bpm-blogs/h/http%3A%2F%2Fwww.250bpm.com%2Fblog" htmlUrl="http://www.250bpm.com/blog" />
 <outline text="36氪" title="36氪" type="rss" xmlUrl="http://www.36kr.com/feed" htmlUrl="http://www.36kr.com/" />
 <outline text="4G spaces" title="4G spaces" type="rss" xmlUrl="http://blog.youxu.info/feed/" htmlUrl="http://blog.youxu.info" />
 <outline text="50年前的波拉岛" title="50年前的波拉岛" type="rss" xmlUrl="http://davidzai.blog.163.com/rss/" htmlUrl="http://davidzai.blog.163.com" />
@@ -24,6 +27,7 @@
 <outline text="JLOUIS Ramblings" title="JLOUIS Ramblings" type="rss" xmlUrl="http://jlouisramblings.blogspot.com/feeds/posts/default" htmlUrl="http://jlouisramblings.blogspot.com/" />
 <outline text="kernelchina" title="kernelchina" type="rss" xmlUrl="http://www.kernelchina.org/rss.xml" htmlUrl="http://www.kernelchina.org" />
 <outline text="Linux新闻 - Linux公社" title="Linux新闻 - Linux公社" type="rss" xmlUrl="http://www.linuxidc.com/rssFeed.aspx?cid=10" htmlUrl="http://www.linuxidc.com/" />
+<outline text="Luna Cheung" title="Luna Cheung" type="rss" xmlUrl="http://lunacheung.lofter.com/rss" htmlUrl="http://lunacheung.lofter.com" />
 <outline text="LWN.net" title="LWN.net" type="rss" xmlUrl="http://lwn.net/headlines/newrss" htmlUrl="http://lwn.net" />
 <outline text="Maniagnosis" title="Maniagnosis" type="rss" xmlUrl="http://maniagnosis.crsr.net/feeds/posts/default" htmlUrl="http://maniagnosis.crsr.net/" />
 <outline text="Matrix67" title="Matrix67" type="rss" xmlUrl="http://www.matrix67.com/blog/feed.asp" htmlUrl="http://www.matrix67.com/blog" />
@@ -58,7 +62,6 @@
 <outline text="徐明明" title="徐明明" type="rss" xmlUrl="http://xumingming.sinaapp.com/feed/" htmlUrl="http://xumingming.sinaapp.com" />
 <outline text="我自然" title="我自然" type="rss" xmlUrl="http://www.yankay.com/feed/" htmlUrl="http://www.yankay.com" />
 <outline text="搜索技术博客－淘宝" title="搜索技术博客－淘宝" type="rss" xmlUrl="http://www.searchtb.com/feed" htmlUrl="http://www.searchtb.com" />
-<outline text="La Luna" title="La Luna" type="rss" xmlUrl="http://lanruoj.blog.163.com/rss/" htmlUrl="http://lanruoj.blog.163.com" />
 <outline text="淘宝中间件团队博客" title="淘宝中间件团队博客" type="rss" xmlUrl="http://jm.taobao.org/feed/" htmlUrl="http://jm.taobao.org" />
 <outline text="淘宝核心系统团队博客" title="淘宝核心系统团队博客" type="rss" xmlUrl="http://rdc.taobao.com/blog/cs/?feed=rss2" htmlUrl="http://rdc.taobao.com/blog/cs" />
 <outline text="爱范儿" title="爱范儿" type="rss" xmlUrl="http://www.ifanr.com/feed" htmlUrl="http://www.ifanr.com?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=" />
