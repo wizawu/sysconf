@@ -6,6 +6,7 @@
 # xmodmap -e "keycode 110 = Delete"
 
 xmodmap -e "keycode 108 = Escape"
+xmodmap -e "keycode 127 = Insert"
 
 # Use this six commands to swap CapsLock and Ctrl
 # xmodmap -e "remove Lock = Caps_Lock"
