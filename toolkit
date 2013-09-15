@@ -52,3 +52,4 @@ vim-multiple-cursors
 rust
 pypy
 watch -tdn1 cat /proc/...
+getconf                    # getconf [PAGESIZE|WORD_BIT|...]
