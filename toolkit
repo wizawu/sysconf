@@ -1,5 +1,6 @@
 file-roller                # archive graphical manager
 dstat                      # combination of stat tools
+sysstat                    # iostat, mpstat, pidstat
 iftop
 tsocks
 nmap
@@ -18,7 +19,6 @@ curl icanhazip.com
 scp
 rsync
 htop                       # powerful process viewer
-calcurse                   # to-do manager
 tpp                        # console ppt
 ncat
 strace                     # trace system calls
