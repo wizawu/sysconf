@@ -53,3 +53,4 @@ pypy
 watch -tdn1 cat /proc/...
 getconf                    # getconf [PAGESIZE|WORD_BIT|...]
 libfiu                     # fiu-run, fiu-ctrl
+ipcs
