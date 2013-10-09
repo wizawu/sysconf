@@ -244,12 +244,8 @@ Support: support@pixelunion.net
 	</script>
 	<style type="text/css">
 		 body { font-family:{font:Outside Text}; color:{color:Outside Text}; background-color:{color:Background};{block:IfBackgroundImage}background-image:url({image:Background}); background-repeat:repeat;{block:IfFixedBackground} background-attachment:fixed;{/block:IfFixedBackground}{/block:IfBackgroundImage} }
-         code {
-             font-family: Consolas;
-         }
-         wiza {
-             font-size: 11pt !important;
-         }
+     code { font-family: Consolas; }
+     motto { font-size: 11pt !important; }
 		.blog-title, #sidebar h1, #sidebar h2, #sidebar h3, #footer h1, #footer h2, #footer h3  { font-family:{font:Outside Heading}; }
 		.copy { font-family:{font:Inside Text}; }
 		.copy h1, .copy h2, .copy h3, .copy h4, .copy h5, .copy h6, .auto-headings .copy p:first-child strong:first-child, #notes h2, #disqus h2, .speaker {font-family:{font:Inside Heading};}
@@ -316,7 +312,7 @@ Support: support@pixelunion.net
 
 			{block:IfNotBlogTitleInPageHeader}
 			<h1 class="blog-title{block:IfNotBlogTitleInTopBar} hidden{/block:IfNotBlogTitleInTopBar}"><a href="/">{Title}</a></h1>
-            <wiza class="blog-title{block:IfNotBlogTitleInTopBar} hidden{/block:IfNotBlogTitleInTopBar}">Everything you and I do springs from two motives: the sex urge and the desire to be great.</wiza>
+      <motto class="blog-title{block:IfNotBlogTitleInTopBar} hidden{/block:IfNotBlogTitleInTopBar}">Everything you and I do springs from two motives: the sex urge and the desire to be great.</motto>
 			{/block:IfNotBlogTitleInPageHeader}
 
 			{block:IfPagesInTopBar}
