@@ -12,9 +12,11 @@
 <outline text="4G spaces" title="4G spaces" type="rss" xmlUrl="http://blog.youxu.info/feed/" htmlUrl="http://blog.youxu.info" />
 <outline text="50年前的波拉岛" title="50年前的波拉岛" type="rss" xmlUrl="http://davidzai.blog.163.com/rss/" htmlUrl="http://davidzai.blog.163.com" />
 <outline text="ACM Queue" title="ACM Queue" type="rss" xmlUrl="http://queue.acm.org/rss/feeds/queuecontent.xml" htmlUrl="http://queue.acm.org/" />
+<outline text="Adam Bard" title="Adam Bard" type="rss" xmlUrl="http://adambard.com/blog/feed.xml" htmlUrl="http://adambard.com/blog/" />
 <outline text="Basho" title="Basho" type="rss" xmlUrl="http://basho.com/feed" htmlUrl="http://basho.com" />
 <outline text="Beyond Search" title="Beyond Search" type="rss" xmlUrl="http://www.guwendong.com/feed" htmlUrl="http://www.guwendong.com" />
 <outline text="Beyond the Void" title="Beyond the Void" type="rss" xmlUrl="https://www.byvoid.com/feed" htmlUrl="http://www.byvoid.com/" />
+<outline text="小米Bigdata" title="小米Bigdata" type="rss" xmlUrl="http://bigdata-blog.net/feed/" htmlUrl="http://bigdata-blog.net" />
 <outline text="λ-calculus" title="λ-calculus" type="rss" xmlUrl="http://www.cppblog.com/vczh/rss.aspx" htmlUrl="http://www.cppblog.com/vczh/" />
 <outline text="DBA Notes" title="DBA Notes" type="rss" xmlUrl="http://dbanotes.net/feed" htmlUrl="http://dbanotes.net" />
 <outline text="Erlang" title="Erlang" type="rss" xmlUrl="http://www.erlang.org/rss/news" htmlUrl="http://www.erlang.org/rss/news" />
@@ -50,6 +52,7 @@
 <outline text="InfoQ个性化Feed" title="InfoQ个性化Feed" type="rss" xmlUrl="http://www.infoq.com/cn/rss/rss.action?token=fzRxeNNgzItuGpjGAiLvFogHwDDrwsVN" htmlUrl="http://www.infoq.com/cn/" />
 <outline text="xiaoxia" title="xiaoxia" type="rss" xmlUrl="http://xiaoxia.org/feed/" htmlUrl="http://xiaoxia.org" />
 <outline text="You Wouldn't Like Me When I'm Not Coding" title="You Wouldn't Like Me When I'm Not Coding" type="rss" xmlUrl="http://theincredibleholk.wordpress.com/feed/" htmlUrl="http://theincredibleholk.wordpress.com" />
+<outline text="并行实验室" title="并行实验室" type="rss" xmlUrl="http://www.parallellabs.com/feed/" htmlUrl="http://www.parallellabs.com" />
 <outline text="《程序员》杂志官网" title="《程序员》杂志官网" type="rss" xmlUrl="http://feed.feedsky.com/programmer" htmlUrl="" />
 <outline text="云风的 BLOG" title="云风的 BLOG" type="rss" xmlUrl="http://blog.codingnow.com/atom.xml" htmlUrl="http://blog.codingnow.com/" />
 <outline text="刘未鹏| Mind Hacks" title="刘未鹏| Mind Hacks" type="rss" xmlUrl="http://mindhacks.cn/feed/" htmlUrl="http://mindhacks.cn" />
