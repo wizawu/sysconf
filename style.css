@@ -8,6 +8,27 @@
 
 @-moz-document regexp("^http(s)?://((www|gist|help|status).)?github.*") {
     body, input, select, textarea, button {
-        font-family: FSAlbert !important;
+        font-family: Lato !important;
+    }
+}
+
+@-moz-document regexp("^http(s)?://www.evernote.com.*") {
+    body, input, select, textarea, button {
+        font-family: Lato !important;
+    }
+}
+
+@-moz-document regexp("^http(s)?://.*digg.com/reader/.*") {
+    body, .detail-body {
+        font-family: Lato !important;
+    }
+}
+
+@-moz-document regexp("^http(s)?://dillinger.io.*") {
+    body, p {
+        font-family: Lato !important;
+    }
+    code, .ace_editor {
+        font-family: Consolas !important;       
     }
 }
