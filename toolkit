@@ -1,56 +1,64 @@
-file-roller                # archive graphical manager
-dstat                      # combination of stat tools
-sysstat                    # iostat, mpstat, pidstat
-iftop
-tsocks
-nmap
-lsof
-xsel
-httrack
-axel
-libpdf.so                  # copy to /usr/lib/chromium
-fxchrome                   # chrome theme for firefox
-vimerl                     # vim plugin for Erlang
-siege
-http_load
-httperf
-vifm
-curl icanhazip.com
+* Common
 scp
 rsync
-htop                       # powerful process viewer
-tpp                        # console ppt
-ncat
-strace                     # trace system calls
-fcitx-cloudpinyin
-hdparm --fibmap [...]      # block address of a file
-lshw -C cpu|network|...    # 
-xev                        # print key code
-xmodmap                    # modify keymaps
-lzz                        # Lazy C++
-vimacs
-pkgfile
-wps
-pmap                       # report memory map of a process
-goagent                    # find it on github
-set -x                     # trace commands executed
-losetup                    # set up loop devices
-iotop
-perf stat|top|...          # bench, lock, kmem
+watch -tdn1 cat /proc/...
+
+* System
+libhugetlbfs                    # hugeadm, hugectl, pagesize
+gperftools                      # tcmalloc
+losetup                         # set up loop devices
+mdadm                           # software RAID
+
+* View
+lsof
+lshw -C cpu|network|...
 lscpu
 lsusb
-fio
-libhugetlbfs-utils         # hugeadm, hugectl, pagesize...
-netctl
 stat
-gperftools                 # tcmalloc
-mdadm                      # Software RAID
-vundle                     # vim plugin manager
-YouCompleteMe
-clang_complete
-vim-multiple-cursors
-pypy
-watch -tdn1 cat /proc/...
-getconf                    # getconf [PAGESIZE|WORD_BIT|...]
-libfiu                     # fiu-run, fiu-ctrl
+hdparm --fibmap
+pmap                            # memory map of process
 ipcs
+getconf PAGESIZE|WORD_BIT...
+pkgfile
+
+* Monitor
+htop
+iotop
+iftop
+dstat
+sysstat                         # iostat, mpstat, pidstat
+
+* Network
+netctl
+ncat
+nmap
+axel
+tsocks
+goagent                         # find it on github
+httrack
+curl icanhazip.com
+
+* Debug and Profile
+set -x
+strace
+perf stat|top|...               # bench, lock, kmem
+fio
+libfiu                          # fiu-run, fiu-ctrl
+valgrind
+
+* Plugins
+align
+vimerl
+vimacs
+vundle                          # vim plugin manager
+YouCompleteMe
+
+* Other
+awesome
+vifm
+file-roller                     # archiver graphical manager
+fcitx-cloudpinyin
+xsel
+xev                             # print key code
+xmodmap                         # modify keymaps
+lzz                             # Lazy C++
