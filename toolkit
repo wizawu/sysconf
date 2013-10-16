@@ -35,6 +35,7 @@ nmap
 axel
 tsocks
 goagent                         # find it on github
+shadowsocks
 httrack
 curl icanhazip.com
 
