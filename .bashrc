@@ -17,6 +17,7 @@ alias g++='g++ -std=c++11'
 alias clang='clang -std=c11 -W'
 alias clang++='clang++ -std=c++11 -W'
 alias cythonc='clang -I/usr/include/python3.3m -lpython3.3m'
+alias cmemchk='valgrind --tool=memcheck --leak-check=full'
 
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;35m\]\u\[\033[01;30m\]@\[\033[01;32m\]\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 eval `dircolors /home/wiza/.dircolors`
