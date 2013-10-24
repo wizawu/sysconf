@@ -13,12 +13,6 @@ imap <C-f> <C-x><C-o>
 imap <C-e> <End>
 autocmd VimEnter * hi MatchParen ctermbg=darkblue
 
-" Last Edit
-autocmd BufReadPost *
-  \ if line("'\"") > 0 && line("'\"") <= line("$") |
-  \	exe "normal g'\"" |
-  \ endif
-
 " GUI
 set guifont=Consolas\ 10
 set guioptions-=m
