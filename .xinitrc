@@ -6,6 +6,6 @@ export XMODIFIERS="@im=fcitx"
 # gnome-settings-daemon &
 # exec ck-launch-session dbus-launch gnome-session
 
-fcitx -rd
+#fcitx -rd
 exec gnome-session &
 awesome

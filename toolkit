@@ -2,6 +2,7 @@
 scp
 rsync
 watch -tdn1 cat /proc/...
+sudo !!
 
 * System
 libhugetlbfs                    # hugeadm, hugectl, pagesize
@@ -20,6 +21,8 @@ pmap                            # memory map of process
 ipcs
 getconf PAGESIZE|WORD_BIT...
 pkgfile
+pt-summary                      # wget http://percona.com/get/pt-summary
+pstree
 
 * Monitor
 htop
@@ -38,6 +41,8 @@ goagent                         # find it on github
 shadowsocks
 httrack
 curl icanhazip.com
+mtr                             # ping + traceroute
+ss                              # similar to netcat
 
 * Debug and Profile
 set -x
@@ -63,3 +68,8 @@ xsel
 xev                             # print key code
 xmodmap                         # modify keymaps
 lzz                             # Lazy C++
+
+* X
+icu4c-51_2
+harfbuzz-0.9.19
+pango-1.28.1
