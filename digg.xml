@@ -4,6 +4,7 @@
 <title>wiza subscriptions in Digg Reader</title>
 </head>
 <body>
+<outline text="Sébastien Han" title="Sébastien Han" type="rss" xmlUrl="http://www.sebastien-han.fr/atom.xml" htmlUrl="http://sebastien-han.fr/" />
 <outline text="统计之都" title="统计之都" type="rss" xmlUrl="http://cos.name/feed/" htmlUrl="http://cos.name" />
 <outline text="Revolutions" title="Revolutions" type="rss" xmlUrl="http://blog.revolutionanalytics.com/atom.xml" htmlUrl="http://blog.revolutionanalytics.com/" />
 <outline text="R-bloggers" title="R-bloggers" type="rss" xmlUrl="http://feeds.feedburner.com/RBloggers" htmlUrl="http://www.r-bloggers.com" />
@@ -52,6 +53,7 @@
 <outline text="InfoQ个性化Feed" title="InfoQ个性化Feed" type="rss" xmlUrl="http://www.infoq.com/cn/rss/rss.action?token=fzRxeNNgzItuGpjGAiLvFogHwDDrwsVN" htmlUrl="http://www.infoq.com/cn/" />
 <outline text="xiaoxia" title="xiaoxia" type="rss" xmlUrl="http://xiaoxia.org/feed/" htmlUrl="http://xiaoxia.org" />
 <outline text="You Wouldn't Like Me When I'm Not Coding" title="You Wouldn't Like Me When I'm Not Coding" type="rss" xmlUrl="http://theincredibleholk.wordpress.com/feed/" htmlUrl="http://theincredibleholk.wordpress.com" />
+<outline text="理性动态链接库" title="理性动态链接库" type="rss" xmlUrl="http://www.rational.so/atom.xml" htmlUrl="http://sproblvem.github.io/" />
 <outline text="并行实验室" title="并行实验室" type="rss" xmlUrl="http://www.parallellabs.com/feed/" htmlUrl="http://www.parallellabs.com" />
 <outline text="《程序员》杂志官网" title="《程序员》杂志官网" type="rss" xmlUrl="http://feed.feedsky.com/programmer" htmlUrl="" />
 <outline text="云风的 BLOG" title="云风的 BLOG" type="rss" xmlUrl="http://blog.codingnow.com/atom.xml" htmlUrl="http://blog.codingnow.com/" />
