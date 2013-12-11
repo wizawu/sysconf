@@ -18,8 +18,14 @@
     }
 }
 
-@-moz-document regexp("^http(s)?://.*digg.com/reader/.*") {
+@-moz-document regexp("^http(s)?://.*digg.com/reader.*") {
     body, .detail-body {
+        font-family: Lato !important;
+    }
+}
+
+@-moz-document regexp("^http(s)?://.*djangoproject.com.*") {
+    body {
         font-family: Lato !important;
     }
 }
