@@ -1,3 +1,4 @@
+-- awesome 3.5 rc.lua --
 vicious = require("vicious")
 
 -- Standard awesome library
@@ -181,16 +182,13 @@ for s = 1, screen.count() do
     
     ---- @wiza ----
 	memwidget = wibox.widget.textbox()
-	vicious.register(memwidget, vicious.widgets.mem, "MEM $1% ($2MiB/$3MiB) |", 12)
-
-	cpuwidget = wibox.widget.textbox()
-	vicious.register(cpuwidget, vicious.widgets.cpu, " | CPU $1% ")
+	vicious.register(memwidget, vicious.widgets.mem, "MEM $1% ($2MiB/$3MiB) |", 1)
 
 	cputempwidget = wibox.widget.textbox()
-	vicious.register(cputempwidget, vicious.widgets.thermal, "$1°C | ", 3, {"coretemp.0", "core"})
+	vicious.register(cputempwidget, vicious.widgets.thermal, "$1°C | ", 1, {"coretemp.0", "core"})
 
-	uptimewidget = wibox.widget.textbox()
-	vicious.register(uptimewidget, vicious.widgets.uptime, "Load ($4 $5 $6) | ", 60)
+	cpuwidget = wibox.widget.textbox()
+	vicious.register(cpuwidget, vicious.widgets.cpu, " | CPU $1% ", 1)
     ---- @wiza ----
 
     -- Create the wibox
@@ -446,6 +444,13 @@ client.connect_signal("manage", function (c, startup)
     end
 end)
 
-client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
+client.connect_signal("focus", function(c)
+    if c.maximized_horizontal == true and c.maximized_vertical == true then
+        c.border_width = "0"
+    else
+        c.border_width = beautiful.border_width
+    end
+    c.border_color = beautiful.border_focus
+end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}

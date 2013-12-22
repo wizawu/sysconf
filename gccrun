@@ -1,0 +1,22 @@
+#!/bin/bash
+
+if [ $# -lt 1 ]; then
+    echo "usage: $0 main.c|test.cc|... [arg1 arg2...]"
+    exit 1
+fi
+
+src="$1"
+out="__execUtable__.oUt"
+shift 1
+
+case $src in
+    *.c )
+        gcc -std=c11 -O3 $src -o $out && ./$out $@;;
+    *.cc | *.cpp )
+        g++ -std=c++11 -O3 $src -o $out && ./$out $@;;
+    * )
+        echo "not C/C++ source" && exit 1
+esac
+
+rm -f $out
+exit 0

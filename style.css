@@ -1,19 +1,22 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document regexp("(?!.*\\.pdf).*") {
-    body {
+    body, h1 {
         text-shadow: 0px 0px 1px #909090 !important;
     }
 }
 
 @-moz-document regexp("^http(s)?://((www|gist|help|status).)?github.*") {
-    body, input, select, textarea, button {
+    body, input, select, textarea, button, .markdown-body {
         font-family: Lato !important;
+    }
+    tt, code, pre, .blob-code, .blob-line-code, .diff-line-code {
+       font-family: 'CamingoCode' !important;
     }
 }
 
-@-moz-document regexp("^http(s)?://www.evernote.com.*") {
-    body, input, select, textarea, button {
+@-moz-document regexp("^http(s)?://www.infoq.com.*") {
+    body, h1.general {
         font-family: Lato !important;
     }
 }
@@ -24,17 +27,11 @@
     }
 }
 
-@-moz-document regexp("^http(s)?://.*djangoproject.com.*") {
-    body {
-        font-family: Lato !important;
+@-moz-document regexp("^http(s)?://.*stackedit.io/editor.*") {
+    #wmd-input, #preview-contents {
+        font-size: 14px;
     }
-}
-
-@-moz-document regexp("^http(s)?://dillinger.io.*") {
-    body, p {
-        font-family: Lato !important;
-    }
-    code, .ace_editor {
-        font-family: Consolas !important;       
+    .pre, pre, code {
+        font-family: 'CamingoCode' !important;
     }
 }

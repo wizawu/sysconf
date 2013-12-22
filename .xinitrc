@@ -1,12 +1,10 @@
 #!/bin/sh
 
-#export GTK_IM_MODULE=fcitx
-#export QT_IM_MODULE=fcitx
-#export XMODIFIERS="@im=fcitx"
+export IM="fcitx"
+export GTK_IM_MODULE=$IM
+export QT_IM_MODULE=$IM
+export XMODIFIERS="@im=$IM"
 
-export GTK_IM_MODULE=ibus
-export QT_IM_MODULE=ibus
-export XMODIFIERS="@im=ibus"
-
-exec gnome-session &
+dconf write /org/gnome/settings-daemon/plugins/cursor/active false
+exec gnome-session --session=awesome &
 awesome

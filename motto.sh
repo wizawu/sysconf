@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 let n=9
@@ -113,11 +112,11 @@ which way to go, it is always wise to follow your heart.\n
 arr[8]="\n
 \e[0;34m Confidence comes from practice, not knowledge.\n
 \e[0;35m Do a little bit more than you are comfortable doing.\n
-\e[0;36m Mistakes are what make practice valuable.\n
+\e[0;34m Mistakes are what make practice valuable.\n
+\e[0;35m Solve 100% of one problem rather than 50% of two.\n
 \e[0m"
 
 let now=`date +"%s"`
 let rem=$now%$n
 
 echo -e ${arr[$rem]}
-

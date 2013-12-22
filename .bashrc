@@ -1,13 +1,16 @@
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-complete -cf sudo
-source /usr/share/git/completion/git-completion.bash
-/home/wiza/.wizacfg/motto.sh
+# basic
 export LANG=en_US.UTF-8
+export PATH=$PATH:/usr/sbin
+complete -cf sudo
+source /usr/share/bash-completion/completions/git
 
+# alias
 alias ls='ls --color=auto'
+alias la='ls -A'
+alias ll='ls -l'
 alias vi='vim'
 alias vr='vim -R'
 alias timef='/usr/bin/time -f "TIME:\t%E\nMEM:\t%M KB\n"'
@@ -17,38 +20,25 @@ alias clang='clang -std=c11 -W'
 alias clang++='clang++ -std=c++11 -W'
 alias cythonc='clang -I/usr/include/python3.3m -lpython3.3m'
 alias cmemchk='valgrind --tool=memcheck --leak-check=full'
+alias tgp='tsocks git push'
 
+# git
 git config --global color.ui true
-
 function parse_git_branch {
-    git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/' -e 's/((/(/' -e 's/))/)/'
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/^\1/'
 }
 
-PS1='${debian_chroot:+($debian_chroot)}\[\033[01;35m\]\u\[\033[01;30m\]@\[\033[01;32m\]\h\[\033[00m\]:\[\033[01;34m\]\w $(parse_git_branch)\[\033[00m\]\$ '
+# color
+PS1='${debian_chroot:+($debian_chroot)}\033[34m\u\033[90m@\033[33m\h\033[90m:\033[94m\w \033[90m$(parse_git_branch)\n\[\033[93m\]\$ \[\033[0m\]'
 eval `dircolors /home/wiza/.dircolors`
 
-export JAVA_HOME=/usr/lib/jvm/jdk1.7.0_21
+# Java
+export JAVA_HOME=/usr/lib/jvm/oracle_jdk
 export JRE_HOME=$JAVA_HOME/jre
 export CLASSPATH=.:$JAVA_HOME/lib:$JRE_HOME/lib
 export PATH=$PATH:$JAVA_HOME/bin
 
-export HADOOP_HOME=/home/wiza/basement/hadoop-1.0.3
-export HADOOP_HOME_WARN_SUPPRESS=1
-export PATH=$PATH:$HADOOP_HOME/bin
-
-export HBASE_HOME=/home/wiza/basement/hbase-0.94.1
-export PATH=$PATH:$HBASE_HOME/bin
-
-export ZOOKEEPER_HOME=/home/wiza/basement/zookeeper-3.4.3
-export PATH=$PATH:$ZOOKEEPER_HOME/bin
-
-export REDIS_HOME=/home/wiza/basement/redis-2.4.16
-export PATH=$PATH:$REDIS_HOME/src
-
+# Go
+export GOPATH=$HOME/go
 export GOROOT=/usr/lib/go
-export GOBIN=$GOROOT/bin
-export PATH=$PATH:$GOBIN
-
-export HUGS_HOME=/home/wiza/workspace/hugs98-Sep2006
-alias runhugs='HUGSDIR='${HUGS_HOME}'/hugsdir '${HUGS_HOME}'/src/runhugs'
-alias hugs='HUGSDIR='${HUGS_HOME}'/hugsdir '${HUGS_HOME}'/src/hugs'
+export PATH=$GOPATH/bin:$PATH

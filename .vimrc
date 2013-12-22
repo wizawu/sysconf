@@ -8,10 +8,16 @@ set shiftwidth=2
 set tabstop=2
 set backspace=2
 set textwidth=80
+set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
-imap <C-f> <C-x><C-o>
 imap <C-e> <End>
+imap <C-f> <C-x><C-o>
 autocmd VimEnter * hi MatchParen ctermbg=darkblue
+
+" fold
+set foldmethod=syntax
+set foldlevelstart=99
+let javaScript_fold=1
 
 " GUI
 set guifont=Consolas\ 10
@@ -34,26 +40,26 @@ else
     colorscheme dante
 endif
 
-" golang
-set rtp+=/usr/share/go/misc/vim
-
-" clang_complete
-let g:clang_complete_auto=2
-let g:clang_close_preview=1
-
 " vundle
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=/home/wiza/.vim/bundle/vundle/
 call vundle#rc()
-Bundle 'gmarik/vundle'
-Bundle 'Valloric/YouCompleteMe'
-
-" YCM
-let g:ycm_global_ycm_extra_conf = '/home/wiza/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
-let g:ycm_autoclose_preview_window_after_completion = 1
+Plugin 'gmarik/vundle'
+Plugin 'mattn/emmet-vim'
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-lua-ftplugin'
 
 " plugins
+let g:lua_complete_omni = 1
+let g:lua_define_completion_mappings = 0
+let g:user_emmet_leader_key='<C-b>'
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_filepath_completion_use_working_dir = 1
+let g:ycm_global_ycm_extra_conf = '/home/wiza/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
+
 filetype indent on
 filetype plugin on
 syntax on

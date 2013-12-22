@@ -1,0 +1,89 @@
+#!/bin/sh
+
+# run with sudo
+
+set -e -x
+
+HOME="/home/wiza"
+PWD=$(cd $(dirname $0) && pwd)
+
+DEB_MIR="deb http://mirrors.163.com/debian/ sid main contrib non-free"
+cat $DEB_MIR > /etc/apt/sources.list
+apt-get update
+
+apt-get install -y --no-install-recommends \
+                sudo \
+                wpasupplicant \
+                gnome-session \
+                gnome-control-center \
+                gnome-tweak-tool \
+                gnome-terminal \
+                gnome-font-viewer \
+                gnome-screenshot \
+                awesome awesome-extra \
+                xorg xscreensaver \
+                make unzip unrar
+
+if [ $# -eq 1 ] && [ $1 = '-full' ]; then
+apt-get install -y --no-install-recommends \
+                alsa-base alsa-oss alsa-tools alsa-utils \
+                ack-grep axel cmake dbus di dstat evince \
+                erlang-base-hipe erlang-inets erlang-xmerl \
+                fcitx-googlepinyin fcitx-module-cloudpinyin \
+                file-roller fio fiu-utils g++ gcc-doc gedit \
+                gthumb hdparm htop httpie httrack iftop iotop \
+                lftp linux-tools lm-sensors lshw mtr manpages-dev \
+                nautilus nmap ntfs-3g ntp p7zip-full parallel \
+                pm-utils rsync samba smbclient ssh strace \
+                sysstat tcpdump time tmux totem tree tsocks \
+                valgrind vim-gtk vsftpd wput xsel
+fi
+
+VUNDLE=$HOME/.vim/bundle/vundle
+mkdir -p $VUNDLE && rm -r $VUNDLE
+git clone -b master --depth 1 https://github.com/gmarik/vundle.git $VUNDLE
+
+ln -sf $PWD/gccrun          /usr/bin/
+ln -sf $PWD/shadowsocks     /usr/bin/
+ln -sf $PWD/awesome-showup  /usr/bin/
+ln -sf $PWD/awesome.session /usr/share/gnome-session/sessions/
+ln -sf $PWD/keycool.sh      /usr/bin/keycool
+ln -sf $PWD/.xinitrc        $HOME/
+ln -sf $PWD/.bashrc         $HOME/
+ln -sf $PWD/.vimrc          $HOME/
+ln -sf $PWD/.dircolors      $HOME/
+ln -sf $PWD/.tmux.conf      $HOME/
+ln -sf $PWD/.gitconfig      $HOME/
+
+mkdir -p $HOME/.vim/colors
+cp dante.vim                $HOME/.vim/colors/
+
+set +x
+
+echo "download vifm-0.7.4"
+echo "apt-cache search linux-image"
+echo "apt-get install wicd-gtk"
+
+exit 0
+
+# useful tools
+# getconf
+# google-perftools
+# hdparm --fibmap
+# ipcs
+# libhugetlbfs    # hugeadm, hugectl, pagesize
+# losetup
+# lscpu
+# lsof
+# lsusb
+# mdadm
+# ncat
+# perf
+# pmap
+# pstree
+# pt-summary    # wget http://percona.com/get/pt-summary
+# setxkbmap
+# ss
+# stat
+# xev
+# xmodmap

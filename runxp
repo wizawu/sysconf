@@ -1,3 +1,5 @@
-qemu-kvm -hda xp.img -m 256 -vga std \
--smb /mnt
+#!/bin/bash
+
+qemu-kvm -hda xp.img -m 256 -vga std
+# -smb /share
 # -usb -usbdevice tablet

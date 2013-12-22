@@ -1,0 +1,10 @@
+[color]
+	ui = true
+[user]
+	email = wizawu@gmail.com
+	name = wizawu
+[push]
+	default = upstream
+[alias]
+	st = status
+	co = checkout
