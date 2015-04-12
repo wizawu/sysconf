@@ -1,2 +1,0 @@
-#!/bin/bash
-for i in `ps ax|grep gnome|grep failed`; do kill $i; break; done

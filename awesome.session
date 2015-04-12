@@ -1,4 +1,0 @@
-[GNOME Session]
-Name=Awesome
-RequiredComponents=gnome-shell;gnome-settings-daemon;
-DefaultProvider-notifications=notify-osd
