@@ -2,28 +2,40 @@
 
 @-moz-document regexp("(?!.*\\.pdf).*") {
     body, h1 {
-        text-shadow: 0px 0px 1px #909090 !important;
+        text-shadow: 0px 0px 1px #888 !important;
     }
 }
 
 @-moz-document regexp("^http(s)?://((www|gist|help|status).)?github.*") {
     body, input, select, textarea, button, .markdown-body {
-        font-family: Lato !important;
+        font-family: Cabin !important;
     }
     tt, code, pre, .blob-code, .blob-line-code, .diff-line-code {
-       font-family: 'CamingoCode' !important;
+       font-family: 'Source Code Pro' !important;
+    }
+}
+
+@-moz-document regexp("^http(s)?://.*\.assembla.com.*") {
+    body {
+        font-family: Cabin !important;
+    }
+    .app-nav {
+        font-family: Amaranth !important;
+    }
+    pre, code {
+        font-family: 'Source Code Pro' !important;
     }
 }
 
 @-moz-document regexp("^http(s)?://www.infoq.com.*") {
     body, h1.general {
-        font-family: Lato !important;
+        font-family: Cabin !important;
     }
 }
 
 @-moz-document regexp("^http(s)?://.*digg.com/reader.*") {
     body, .detail-body {
-        font-family: Lato !important;
+        font-family: Cabin !important;
     }
 }
 
@@ -32,6 +44,6 @@
         font-size: 14px;
     }
     .pre, pre, code {
-        font-family: 'CamingoCode' !important;
+        font-family: 'Source Code Pro' !important;
     }
 }
