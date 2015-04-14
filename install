@@ -47,6 +47,7 @@ ln -sf $PWD/.vimrc          $HOME/
 ln -sf $PWD/.dircolors      $HOME/
 ln -sf $PWD/.tmux.conf      $HOME/
 ln -sf $PWD/.gitconfig      $HOME/
+ln -sf $PWD/.asoundrc       $HOME/
 
 mkdir -p $HOME/.vim/colors
 cp $PWD/dante.vim           $HOME/.vim/colors/
