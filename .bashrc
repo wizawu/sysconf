@@ -18,9 +18,9 @@ alias gcc='gcc -std=c11 -fms-extensions'
 alias g++='g++ -std=c++11'
 alias clang='clang -std=c11 -W'
 alias clang++='clang++ -std=c++11 -W'
-alias cythonc='clang -I/usr/include/python3.3m -lpython3.3m'
 alias cmemchk='valgrind --tool=memcheck --leak-check=full'
 alias tgp='tsocks git push'
+alias apt='sudo aptitude'
 
 # git
 git config --global color.ui true
