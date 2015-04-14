@@ -8,7 +8,7 @@
 
 @-moz-document regexp("^http(s)?://((www|gist|help|status).)?github.*") {
     body, input, select, textarea, button, .markdown-body {
-        font-family: Cabin !important;
+        font-family: Lato !important;
     }
     tt, code, pre, .blob-code, .blob-line-code, .diff-line-code {
        font-family: 'Source Code Pro' !important;
@@ -17,10 +17,10 @@
 
 @-moz-document regexp("^http(s)?://.*\.assembla.com.*") {
     body {
-        font-family: Cabin !important;
+        font-family: Lato !important;
     }
     .app-nav {
-        font-family: Amaranth !important;
+        font-family: Cabin !important;
     }
     pre, code {
         font-family: 'Source Code Pro' !important;
@@ -29,13 +29,13 @@
 
 @-moz-document regexp("^http(s)?://www.infoq.com.*") {
     body, h1.general {
-        font-family: Cabin !important;
+        font-family: Lato !important;
     }
 }
 
 @-moz-document regexp("^http(s)?://.*digg.com/reader.*") {
     body, .detail-body {
-        font-family: Cabin !important;
+        font-family: Lato !important;
     }
 }
 
