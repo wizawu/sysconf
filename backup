@@ -1,0 +1,5 @@
+#!/bin/sh
+
+set -x
+
+rsync -a --delete /home/wiza/misc/ /mnt/v/misc/
