@@ -31,12 +31,13 @@ apt-get install -y --no-install-recommends \
                 alsa-base alsa-oss alsa-tools alsa-utils \
                 ack-grep axel chromium cmake dbus di dstat \
                 erlang-base-hipe erlang-inets erlang-xmerl \
-                fio fiu-utils g++ gcc-doc gufw \
+                fio fiu-utils fonts-wqy-microhei \
+                g++ gcc-doc gufw \
                 hdparm htop httpie httrack iftop iotop \
                 lftp linux-tools lm-sensors lshw \
                 mtr manpages-dev mupdf nmap ntfs-3g ntp \
                 p7zip-full parallel pcmanfm pm-utils rsync \
-                samba scim smbclient ssh strace sysstat \
+                samba scim-pinyin smbclient ssh strace sysstat \
                 tcpdump time tmux tree tsocks \
                 valgrind vifm vim-gtk vlc vsftpd \
                 wput xsel xfce4-terminal
