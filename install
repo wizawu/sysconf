@@ -33,8 +33,8 @@ apt-get install -y --no-install-recommends \
                 erlang-base-hipe erlang-inets erlang-xmerl \
                 fio fiu-utils fonts-wqy-microhei \
                 g++ gcc-doc gufw \
-                hdparm htop httpie httrack iftop iotop \
-                lftp linux-tools lm-sensors lshw \
+                hdparm hsetroot htop httpie httrack \
+                iftop iotop lftp linux-tools lm-sensors lshw \
                 mtr manpages-dev mupdf nmap ntfs-3g ntp \
                 p7zip-full parallel pcmanfm pm-utils rsync \
                 samba scim-pinyin smbclient ssh strace sysstat \
@@ -43,7 +43,10 @@ apt-get install -y --no-install-recommends \
                 wput xsel xfce4-terminal
 fi
 
-mkdir -p $HOME/{.fonts,local,misc,repos,tmp}
+for dir in .fonts local misc repos tmp; do
+  mkdir -p $HOME/$dir
+done
+
 if [ "`grep Desktop /etc/crontab`" = "" ]; then
   echo "* * * * *  wiza  rm -df /home/wiza/Desktop" >> /etc/crontab
 fi
