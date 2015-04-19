@@ -29,7 +29,7 @@ apt-get install -y --no-install-recommends \
 if [ $# -eq 1 ] && [ $1 = '-full' ]; then
 apt-get install -y --no-install-recommends \
                 alsa-base alsa-oss alsa-tools alsa-utils \
-                ack-grep axel chromium cmake dbus di dstat \
+                ack-grep axel cmake dbus di dstat \
                 erlang-base-hipe erlang-inets erlang-xmerl \
                 fio fiu-utils fonts-wqy-microhei \
                 g++ gcc-doc gufw \
@@ -79,7 +79,6 @@ cp $PWD/dante.vim           $HOME/.vim/colors/
 set +x
 
 echo "visudo# wiza ALL=(ALL) NOPASSWD: ALL"
-echo "move fonts to ~/.fonts; fc-cache -fv"
 
 exit 0
 

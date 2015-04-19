@@ -46,11 +46,12 @@ filetype off
 set rtp+=/home/wiza/.vim/bundle/vundle/
 call vundle#rc()
 Plugin 'gmarik/vundle'
+Plugin 'tsaleh/vim-align'
 Plugin 'mattn/emmet-vim'
-Plugin 'nsf/gocode', {'rtp': 'vim/'}
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-lua-ftplugin'
+" Plugin 'nsf/gocode', {'rtp': 'vim/'}
+" Plugin 'Valloric/YouCompleteMe'
 
 " plugins
 let g:lua_complete_omni = 1
