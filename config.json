@@ -1,6 +1,6 @@
 {
-    "server":["106.186.31.254"],
-    "server_port":26360,
+    "server":["106.187.93.241"],
+    "server_port":12661,
     "local_port":1080,
     "password":"4hfg7nvkpi",
     "timeout":60,
