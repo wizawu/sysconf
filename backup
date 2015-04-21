@@ -1,5 +1,7 @@
 #!/bin/sh
 
+rsync -anv --delete /home/wiza/misc/ /mnt/v/misc/
+
 echo -n "Input 'ok' to continue: "
 read ok
 if [ $ok != 'ok' ]; then
