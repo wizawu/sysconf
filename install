@@ -36,7 +36,8 @@ apt-get install -y --no-install-recommends \
                 hdparm hsetroot htop httpie httrack \
                 iftop iotop lftp linux-tools lm-sensors lshw \
                 mtr manpages-dev mupdf nmap ntfs-3g ntp \
-                p7zip-full parallel pcmanfm pm-utils rsync \
+                p7zip-full parallel pcmanfm pm-utils \
+                ristretto rsync \
                 samba scim-pinyin smbclient ssh strace sysstat \
                 tcpdump time tmux tree tsocks \
                 valgrind vifm vim-gtk vlc vsftpd \
