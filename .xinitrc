@@ -7,5 +7,5 @@ export XMODIFIERS="@im=SCIM"
 
 scim -d
 startxfce4 &
-hsetroot -clear
+(sleep 2 && hsetroot -full /usr/share/awesome/themes/default/background.png) &
 awesome
