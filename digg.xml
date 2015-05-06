@@ -4,14 +4,12 @@
 <title>wiza subscriptions in Digg Reader</title>
 </head>
 <body>
+<outline text="GitHub Feed" title="GitHub Feed" type="rss" xmlUrl="https://github.com/wizawu.private.atom?token=ABmV1ChhlI4m6ahl6SANr2HHoNMyUOtQks6zV331wA==" htmlUrl="https://github.com/wizawu" />
 <outline text="ACM Queue" title="ACM Queue" type="rss" xmlUrl="http://queue.acm.org/rss/feeds/queuecontent.xml" htmlUrl="http://queue.acm.org/" />
 <outline text="Aerospike" title="Aerospike" type="rss" xmlUrl="http://www.aerospike.com/feed" htmlUrl="http://www.aerospike.com" />
 <outline text="Basho" title="Basho" type="rss" xmlUrl="http://basho.com/feed" htmlUrl="http://basho.com" />
-<outline text="Cloud Platform Blog" title="Cloud Platform Blog" type="rss" xmlUrl="http://googlecloudplatform.blogspot.com/atom.xml" htmlUrl="http://googlecloudplatform.blogspot.com/" />
 <outline text="CRUD Comics" title="CRUD Comics" type="rss" xmlUrl="http://crudcomic.tumblr.com/rss" htmlUrl="http://crudcomic.tumblr.com/" />
-<outline text="DesignM.ag" title="DesignM.ag" type="rss" xmlUrl="http://feeds.feedburner.com/designmag" htmlUrl="http://designm.ag" />
 <outline text="Erlang" title="Erlang" type="rss" xmlUrl="http://www.erlang.org/rss/news" htmlUrl="http://www.erlang.org/rss/news" />
-<outline text="GitHub Feed" title="GitHub Feed" type="rss" xmlUrl="https://github.com/wizawu.private.atom?token=1676756__eyJzY29wZSI6IkF0b206L3dpemF3dS5wcml2YXRlLmF0b20iLCJleHBpcmVzIjoyOTg4NjAzNjMzfQ==--a26e6399638fcf4e9b9f536934817e32060b459e" htmlUrl="https://github.com/wizawu" />
 <outline text="High Scalability" title="High Scalability" type="rss" xmlUrl="http://feeds.feedburner.com/HighScalability" htmlUrl="http://highscalability.com/blog/" />
 <outline text="InfoQ Feed" title="InfoQ Feed" type="rss" xmlUrl="http://www.infoq.com/rss/rss.action?token=fzRxeNNgzItuGpjGAiLvFogHwDDrwsVN" htmlUrl="http://www.infoq.com" />
 <outline text="LWN.net" title="LWN.net" type="rss" xmlUrl="http://lwn.net/headlines/newrss" htmlUrl="http://lwn.net" />
