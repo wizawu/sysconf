@@ -22,7 +22,7 @@ apt-get update && apt-get upgrade -y
 apt-get install -y --no-install-recommends \
                 linux-headers-amd64 linux-image-amd64 \
                 sudo make unzip unrar \
-                xfce4-session xorg xscreensaver \
+                xfce4-session xorg \
                 awesome awesome-extra \
                 wpasupplicant
 
@@ -63,6 +63,7 @@ mkdir -p $VUNDLE && rm -r $VUNDLE
 git clone -b master --depth 1 https://github.com/gmarik/vundle.git $VUNDLE
 
 ln -sf $PWD/backup          /usr/bin/
+ln -sf $PWD/after-boot      /usr/bin/
 ln -sf $PWD/gccrun          /usr/bin/
 ln -sf $PWD/shadowsocks     /usr/bin/
 ln -sf $PWD/keycool.sh      /usr/bin/keycool
