@@ -1,8 +1,8 @@
 {
-    "server":["106.187.93.241"],
-    "server_port":12661,
+    "server":"localhost",
+    "server_port":8388,
     "local_port":1080,
-    "password":"4hfg7nvkpi",
+    "password":"barfoo!",
     "timeout":60,
-	"method":"aes-256-cfb"
+    "method":"aes-256-cfb"
 }
