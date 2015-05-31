@@ -4,8 +4,8 @@ set autoindent
 set smartindent
 set expandtab
 set smarttab
-set shiftwidth=2
-set tabstop=2
+set shiftwidth=4
+set tabstop=4
 set backspace=2
 set textwidth=80
 set encoding=utf-8
@@ -23,7 +23,7 @@ set foldlevelstart=99
 let javaScript_fold=1
 
 " GUI
-set guifont=Consolas\ 10
+set guifont=Source\ Code\ Pro\ 10
 set guioptions-=m
 set guioptions-=r
 set guioptions-=T
