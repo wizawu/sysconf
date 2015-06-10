@@ -69,6 +69,7 @@ ln -sf $PWD/shadowsocks     /usr/bin/
 ln -sf $PWD/keycool.sh      /usr/bin/keycool
 ln -sf $PWD/.xinitrc        $HOME/
 ln -sf $PWD/.bashrc         $HOME/
+ln -sf $PWD/.jshintrc       $HOME/
 ln -sf $PWD/.vimrc          $HOME/
 ln -sf $PWD/.dircolors      $HOME/
 ln -sf $PWD/.tmux.conf      $HOME/
