@@ -41,7 +41,7 @@ apt-get install -y --no-install-recommends \
                 samba scim-pinyin smbclient ssh strace sysstat \
                 tcpdump time tmux tree tsocks \
                 valgrind vifm vim-gtk vlc vsftpd \
-                wput xsel xfce4-terminal
+                wput xsel xfce4-terminal xfce4-screenshooter
 fi
 
 for dir in .fonts local misc repos tmp; do
