@@ -29,7 +29,7 @@ apt-get install -y --no-install-recommends \
 if [ $# -eq 1 ] && [ $1 = '-full' ]; then
 apt-get install -y --no-install-recommends \
                 alsa-base alsa-oss alsa-tools alsa-utils \
-                ack-grep axel cmake dbus di dstat \
+                ack-grep axel cmake dbus debootstrap di dstat \
                 erlang-base-hipe erlang-inets erlang-xmerl \
                 fio fiu-utils fonts-wqy-microhei \
                 g++ gcc-doc gufw \
