@@ -5,7 +5,6 @@
     "eqeqeq": true,
     "esnext": true,
     "evil": false,
-    "indent": 2,
     "lastsemic": true,
     "loopfunc": true,
     "node": true,
