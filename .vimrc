@@ -7,7 +7,6 @@ set smarttab
 set shiftwidth=4
 set tabstop=4
 set backspace=2
-set textwidth=80
 set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 inoremap <C-e> <End>
