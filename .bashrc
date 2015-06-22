@@ -3,7 +3,7 @@
 
 # basic
 export LANG=en_US.UTF-8
-export PATH=$PATH:/usr/sbin
+export PATH=$PATH:/sbin:/usr/sbin
 complete -cf sudo
 source /usr/share/bash-completion/completions/git
 
