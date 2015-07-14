@@ -39,7 +39,7 @@ apt-get install -y --no-install-recommends \
                 p7zip-full parallel pcmanfm pm-utils pppoeconf \
                 ristretto rinetd rsync \
                 samba scim-pinyin smbclient ssh strace sysstat \
-                tcpdump time tmux tree tsocks \
+                systemd-sysv tcpdump time tmux tree tsocks \
                 valgrind vifm vim-gtk vlc vsftpd \
                 wput xsel xfce4-terminal xfce4-screenshooter
 fi
