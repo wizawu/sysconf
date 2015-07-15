@@ -27,12 +27,13 @@ apt-get install -y --no-install-recommends \
                 wpasupplicant
 
 if [ $# -eq 1 ] && [ $1 = '-full' ]; then
+echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list
 apt-get install -y --no-install-recommends \
                 alsa-base alsa-oss alsa-tools alsa-utils \
                 ack-grep axel cmake dbus debootstrap di dstat \
                 erlang-base-hipe erlang-inets erlang-xmerl \
                 fio fiu-utils fonts-wqy-microhei \
-                g++ gcc-doc gufw \
+                g++ gcc-doc google-chrome-stable gufw \
                 hdparm hsetroot htop httpie httrack \
                 iftop iotop lftp linux-tools lm-sensors lshw \
                 mtr manpages-dev mupdf nmap ntfs-3g ntp \
