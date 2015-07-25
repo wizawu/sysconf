@@ -33,7 +33,7 @@ PS1='${debian_chroot:+($debian_chroot)}\033[34m\u\033[90m@\033[33m\h\033[90m:\03
 eval `dircolors /home/wiza/.dircolors`
 
 # Java
-export JAVA_HOME=/usr/lib/jvm/oracle_jdk
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
 export JRE_HOME=$JAVA_HOME/jre
 export CLASSPATH=.:$JAVA_HOME/lib:$JRE_HOME/lib
 export PATH=$PATH:$JAVA_HOME/bin

@@ -4,9 +4,7 @@ rsync -anv --delete /home/wiza/misc/ /mnt/v/misc/
 
 echo -n "Input 'ok' to continue: "
 read ok
-if [ $ok != 'ok' ]; then
-  exit 1
+if [ $ok = 'ok' ]; then
+    set -x
+    rsync -a --delete /home/wiza/misc/ /mnt/v/misc/
 fi
-
-set -x
-rsync -a --delete /home/wiza/misc/ /mnt/v/misc/
