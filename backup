@@ -1,10 +1,10 @@
 #!/bin/sh
 
-rsync -anv --delete /home/wiza/misc/ /mnt/v/misc/
+rsync -anv --delete --size-only --out-format='%M %10l %n' /home/wiza/misc/ /mnt/v/misc/
 
 echo -n "Input 'ok' to continue: "
 read ok
 if [ $ok = 'ok' ]; then
     set -x
-    rsync -a --delete /home/wiza/misc/ /mnt/v/misc/
+    rsync -a --delete --size-only /home/wiza/misc/ /mnt/v/misc/
 fi

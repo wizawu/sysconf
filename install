@@ -39,9 +39,10 @@ apt-get install -y --no-install-recommends \
                 mtr manpages-dev mupdf nmap ntfs-3g ntp \
                 p7zip-full parallel pcmanfm pm-utils pppoeconf \
                 ristretto rinetd rsync \
-                samba scim-pinyin smbclient ssh strace sysstat \
-                systemd-sysv tcpdump time tmux tree tsocks \
-                valgrind vifm vim-gtk vlc vsftpd \
+                samba scim-pinyin smbclient smplayer ssh \
+                strace sysstat systemd-sysv \
+                tcpdump time tmux tree tsocks \
+                valgrind vifm vim-gtk vsftpd \
                 wput xsel xfce4-terminal xfce4-screenshooter
 fi
 
