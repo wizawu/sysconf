@@ -3,7 +3,7 @@
 
 # basic
 export LANG=en_US.UTF-8
-export PATH=$PATH:/sbin:/usr/sbin
+export PATH=$PATH:/sbin:/usr/sbin:~/.wizacfg
 complete -cf sudo
 source /usr/share/bash-completion/completions/git
 

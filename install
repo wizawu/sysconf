@@ -58,11 +58,6 @@ VUNDLE=$HOME/.vim/bundle/vundle
 mkdir -p $VUNDLE && rm -r $VUNDLE
 git clone -b master --depth 1 https://github.com/gmarik/vundle.git $VUNDLE
 
-ln -sf $PWD/backup          /usr/bin/
-ln -sf $PWD/after-boot      /usr/bin/
-ln -sf $PWD/gccrun          /usr/bin/
-ln -sf $PWD/shadowsocks     /usr/bin/
-ln -sf $PWD/keycool.sh      /usr/bin/keycool
 ln -sf $PWD/99-fonts.conf   /etc/fonts/conf.d/
 ln -sf $PWD/.xinitrc        $HOME/
 ln -sf $PWD/.bashrc         $HOME/
