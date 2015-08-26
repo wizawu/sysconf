@@ -52,7 +52,7 @@ Plugin 'tsaleh/vim-align'
 Plugin 'mattn/emmet-vim'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-lua-ftplugin'
-" Plugin 'nsf/gocode', {'rtp': 'vim/'}
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
 " Plugin 'Valloric/YouCompleteMe'
 
 " plugins
