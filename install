@@ -35,7 +35,8 @@ apt-get install -y --no-install-recommends \
                 fio fiu-utils \
                 g++ gcc-doc google-chrome-stable gufw \
                 hdparm hsetroot htop httpie httrack \
-                iftop iotop lftp linux-tools lm-sensors lshw \
+                iftop iotop \
+                leafpad lftp linux-tools lm-sensors lshw \
                 mtr manpages-dev mupdf nmap ntfs-3g ntp \
                 p7zip-full parallel pcmanfm pm-utils pppoeconf \
                 ristretto rinetd rsync \
