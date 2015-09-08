@@ -1,0 +1,13 @@
+#!/bin/sh
+
+yum install -y socat
+yum install -y tmux
+
+mkdir -p .ssh
+
+echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC50fU32RWz4icqxKXLz0qugOULo46p8CGBlkmNDdfvllCKlBIEQMuUrOkhrk5cEkquPhQmAcp3p2Di59K2AlvlLzr92jUWfEzcWn6t65eFzqCP8I7oaQ99brd9W/fIv8YN2pqW/OHUNfjGb9Sam2jAi3VHxU2alLP6Sy1KOQriTEh9QVY1vMR1vEjuEVTz1WoxFsEiSKKeDHE8DpyJFhuKxED2HB/BlTAuN1U8BDfthjk6io/7/Jdqg4zkLbc+pnCOyZZkVW8Xhvd+wqY9kmQxK35VA0zgwNlcqZf+nVuaqIMWpq2/2KI2+vc+7BdGpsuRGKuOk2SisKc/mw9PHjI/ Latitude E6230' > .ssh/authorized_keys
+
+echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC4HRcemYIeBFE4/XX1zOsX3bYX/uS2A1jhT8OrUSRxSr0puayIUCAlhI7bprKUvjix9m57i/0/RbVZ8eN3GRlhq5ucU6JK8yAPjvl+lp94b8os4vEdIC81N4s6ECTFqd8IWvTqLhJriqowKysDoSYgNDXulGKyXRON/YBTIzXyJKyPSYDYaf8jSPscTerRWM9ZPyADoqdJ+45d/jDT77+752eFuZWUzD1JybKaQTc+L5ObQd5QkmQVOljXYJsdIPzJXi+pTc3t4k4AvdlvR7i8wVkPdakgmhFgmqnSelQQNz21vzTaJOcc5EHWvzJaQhiUT/AyCJwaZyskAyLPr3qT ifduyue@gmail.com' >> .ssh/authorized_keys
+
+tmux new-session -d 'socat TCP4-LISTEN:8688,fork TCP4:208.68.36.80:8388'
+tmux new-session -d 'socat TCP4-LISTEN:8788,fork TCP4:106.187.39.228:8388'
