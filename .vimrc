@@ -12,8 +12,8 @@ set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 inoremap <C-e> <End>
 inoremap <C-f> <C-x><C-o>
 nnoremap te :tabedit 
-nnoremap < :tabp<CR>
-nnoremap > :tabn<CR>
+nnoremap <A-Left> :tabp<CR>
+nnoremap <A-Right> :tabn<CR>
 autocmd VimEnter * hi MatchParen ctermbg=darkblue
 
 " fold
