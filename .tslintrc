@@ -1,0 +1,11 @@
+{
+    "rules": {
+        "curly": false,
+        "no-conditional-assignment": true,
+        "no-eval": true,
+        "no-unused-variable": true,
+        "no-use-before-declare": true,
+        "semicolon": true,
+        "triple-equals": true
+    }
+}
