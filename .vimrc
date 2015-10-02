@@ -49,7 +49,6 @@ set rtp+=/home/wiza/.vim/bundle/vundle/
 call vundle#rc()
 Plugin 'gmarik/vundle'
 Plugin 'tsaleh/vim-align'
-Plugin 'leafgarland/typescript-vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-lua-ftplugin'
