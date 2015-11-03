@@ -21,7 +21,7 @@ alias clang++='clang++ -std=c++11 -W'
 alias cmemchk='valgrind --tool=memcheck --leak-check=full'
 alias tgp='tsocks git push'
 alias apt='sudo aptitude'
-alias pgo='http_proxy=usetheforce.capps.curio.im:7777 https_proxy=usetheforce.capps.curio.im:7777 go'
+alias hp='http_proxy=usetheforce.capps.curio.im:7777 https_proxy=usetheforce.capps.curio.im:7777'
 
 # git
 git config --global color.ui true
