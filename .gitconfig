@@ -6,5 +6,9 @@
 [push]
 	default = upstream
 [alias]
-	st = status
+    cm = commit
 	co = checkout
+    df = diff
+    rb = rebase
+	st = status
+    wc = whatchanged
