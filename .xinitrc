@@ -8,5 +8,6 @@ export QT_IM_MODULE=xim
 xsunpinyin -d
 xset -b
 startxfce4 &
+(sleep 2 && synclient TapButton2=3) &
 (sleep 2 && hsetroot -full /usr/share/awesome/themes/default/background.png) &
 awesome
