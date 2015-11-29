@@ -37,7 +37,7 @@ apt-get install -y --no-install-recommends \
                 hdparm hsetroot htop httpie httrack \
                 iftop iotop \
                 leafpad lftp linux-tools lm-sensors lshw \
-                mtr manpages-dev mupdf nmap ntfs-3g ntp \
+                mtr manpages-dev mupdf nmap ntfs-3g ntpdate \
                 p7zip-full parallel pcmanfm pm-utils pppoeconf \
                 ristretto rinetd rsync \
                 samba smbclient smplayer ssh \
