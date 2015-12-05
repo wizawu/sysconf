@@ -1,5 +1,7 @@
-127.0.0.1          meepo-0
-208.68.36.80       meepo-1
-120.55.197.136     meepo-2
-127.0.0.1          local.iscreatedby.me
-127.0.0.1          local.curio.im
+127.0.0.1               localhost
+127.0.0.1               meepo-0
+208.68.36.80            meepo-1
+120.55.197.136          meepo-2
+120.55.246.17           meepo-3
+127.0.0.1               local.iscreatedby.me
+127.0.0.1               local.curio.im
