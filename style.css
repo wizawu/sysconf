@@ -18,8 +18,11 @@
     }
 }
 
-@-moz-document regexp("^http(s)?://.*(assembla.com|infoq.com|digg.com/reader|mail.google.com|readthedocs.org|highscalability.com|36kr.com|qingcloud.com).*") {
+@-moz-document regexp("^http(s)?://.*(infoq.com|digg.com/reader|.google.com|readthedocs.org|highscalability.com|36kr.com|qingcloud.com).*") {
     body, h1.general, .detail-body, td, .title *, .article *, .body {
+        font-family: sans-serif !important;
+    }
+    .g, body, html, input, .std, h1 {
         font-family: sans-serif !important;
     }
     pre, code {
