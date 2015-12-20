@@ -18,11 +18,8 @@
     }
 }
 
-@-moz-document regexp("^http(s)?://.*(infoq.com|digg.com/reader|.google.com|readthedocs.org|highscalability.com|36kr.com|qingcloud.com).*") {
-    body, h1.general, .detail-body, td, .title *, .article *, .body {
-        font-family: sans-serif !important;
-    }
-    .g, body, html, input, .std, h1 {
+@-moz-document regexp("^http(s)?://.*(bitbucket.org|infoq.com|digg.com/reader|.google.com|readthedocs.org|highscalability.com|36kr.com|qingcloud.com).*") {
+    *:not(.fa) {
         font-family: sans-serif !important;
     }
     pre, code {
