@@ -17,6 +17,9 @@ fi
 
 DEB_MIR="deb http://mirrors.ustc.edu.cn/debian/ sid main contrib non-free"
 echo $DEB_MIR > /etc/apt/sources.list
+DEB_MIR="deb-src http://mirrors.ustc.edu.cn/debian/ sid main contrib non-free"
+echo $DEB_MIR >> /etc/apt/sources.list
+
 apt-get update && apt-get upgrade -y
 
 apt-get install -y --no-install-recommends \
