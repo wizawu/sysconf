@@ -52,10 +52,6 @@ for dir in .fonts local misc repos tmp; do
   mkdir -p $HOME/$dir
 done
 
-if [ "`grep Desktop /etc/crontab`" = "" ]; then
-  echo "* * * * *  wiza  rm -df /home/wiza/Desktop" >> /etc/crontab
-fi
-
 VUNDLE=$HOME/.vim/bundle/vundle
 mkdir -p $VUNDLE && rm -r $VUNDLE
 git clone -b master --depth 1 https://github.com/gmarik/vundle.git $VUNDLE
