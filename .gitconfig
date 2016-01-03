@@ -1,14 +1,15 @@
 [color]
-	ui = true
+    ui = true
 [user]
-	email = wizawu@gmail.com
-	name = wizawu
+    email = wizawu@gmail.com
+    name = wizawu
 [push]
-	default = upstream
+    default = upstream
 [alias]
     cm = commit
-	co = checkout
+    co = checkout
     df = diff
     rb = rebase
-	st = status
+    rs = reset
+    st = status
     wc = whatchanged
