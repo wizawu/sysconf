@@ -5,6 +5,7 @@ export XMODIFIERS="@im=xsunpinyin"
 export GTK_IM_MODULE=xim
 export QT_IM_MODULE=xim
 
+xdg-user-dirs-update --set DESKTOP ~/
 xsunpinyin -d
 xset -b
 startxfce4 &

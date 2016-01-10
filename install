@@ -45,7 +45,8 @@ apt-get install -y --no-install-recommends \
                 strace sysstat systemd-sysv \
                 tcpdump time tmux tree tsocks \
                 valgrind vifm vim-gtk vsftpd wput \
-                xsel xfce4-terminal xfce4-screenshooter xsunpinyin
+                xdg-user-dirs xsel xfce4-terminal \
+                xfce4-screenshooter xsunpinyin
 fi
 
 for dir in .fonts local misc repos tmp; do
