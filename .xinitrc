@@ -5,7 +5,8 @@ export XMODIFIERS="@im=xsunpinyin"
 export GTK_IM_MODULE=xim
 export QT_IM_MODULE=xim
 
-xdg-user-dirs-update --set DESKTOP ~/
+echo "DESKTOP DOWNLOAD TEMPLATES PUBLICSHARE DOCUMENTS MUSIC PICTURES VIDEOS" |xargs -I {} xdg-user-dirs-update --set {} ~
+
 xsunpinyin -d
 xset -b
 startxfce4 &
