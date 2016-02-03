@@ -4,7 +4,7 @@
 
   tasks:
   - name: check user
-    user: name={{user}} state=present
+    user: name={{user}} state=present group=root
 
   - name: locale-gen
     locale_gen: name={{item}} state=present
