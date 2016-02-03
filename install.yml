@@ -1,5 +1,5 @@
 ---
-- hosts: install
+- hosts: {{host}}
   remote_user: root
 
   tasks:
@@ -19,10 +19,10 @@
     - zh_CN.UTF-8
 
   - name: copy hosts
-    copy: src=hosts dest=/etc/hosts mode=0644
+    copy: src=etc/hosts dest=/etc/hosts mode=0644
 
   - name: copy sources.list
-    copy: src=templates/sources.list dest=/etc/apt/sources.list mode=0644
+    copy: src=etc/sources.list dest=/etc/apt/sources.list mode=0644
 
   - name: apt-get update and upgrade
     apt: update_cache=yes upgrade=safe
