@@ -15,6 +15,7 @@ nnoremap te :tabedit
 nnoremap <A-Left> :tabp<CR>
 nnoremap <A-Right> :tabn<CR>
 autocmd VimEnter * hi MatchParen ctermbg=darkblue
+colorscheme dante
 
 " fold
 set foldmethod=syntax
@@ -33,14 +34,6 @@ nmap <C-a>00 :AlignCtrl p0P0<CR>
 nmap <C-a>01 :AlignCtrl p0P1<CR>
 nmap <C-a>10 :AlignCtrl p1P0<CR>
 nmap <C-a>11 :AlignCtrl p1P1<CR>
-
-" colorscheme
-if has('gui_running')
-    colorscheme solarized
-    set background=dark
-else
-    colorscheme dante
-endif
 
 " vundle
 set nocompatible
