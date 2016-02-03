@@ -4,7 +4,7 @@
 
   tasks:
   - name: check user
-    user: name={{user}} state=present group=root
+    user: name={{user}} state=present group=root shell=/bin/bash
 
   - name: locale-gen
     locale_gen: name={{item}} state=present
