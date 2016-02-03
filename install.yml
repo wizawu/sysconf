@@ -1,5 +1,5 @@
 ---
-- hosts: {{host}}
+- hosts: install
   remote_user: root
 
   tasks:
