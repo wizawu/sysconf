@@ -133,23 +133,17 @@
     git: repo=https://github.com/wizawu/wizacfg.git dest=/home/{{user}}/.wizacfg
     become_user: "{{user}}"
 
-  - name: create symbolic link to rc.lua
-    file: path=/home/{{user}}/.wizacfg/etc/rc.lua-3.4 dest=/etc/xdg/awesome/rc.lua state=link force=yes
-
   - name: mkdir for shadowsocks config
     file: path=/etc/shadowsocks state=directory mode=0755
 
-  - name: create symbolic link to config.json
-    file: path=/home/{{user}}/.wizacfg/etc/config.json dest=/etc/shadowsocks/ state=link force=yes
-
-  - name: create symbolic link to 99-fonts.conf
-    file: path=/home/{{user}}/.wizacfg/etc/99-fonts.conf dest=/etc/fonts/conf.d/ state=link force=yes
-
-  - name: create wlan0 interface
-    file: path=/home/{{user}}/.wizacfg/etc/wlan0 dest=/etc/network/interfaces.d/ state=link force=yes
-
-  - name: create symbolic link to dante.vim
-    file: path=/home/{{user}}/.wizacfg/etc/dante.vim dest=/usr/share/vim/vim74/colors/ state=link force=yes
+  - name: create symbolic links
+    file: src=/home/{{user}}/.wizacfg/etc/{{item.0}} dest={{item.1}} state=link force=yes
+    with_items:
+    - ["rc.lua-3.4", "/etc/xdg/awesome/rc.lua"]
+    - ["config.json", "/etc/shadowsocks/"]
+    - ["99-fonts.conf", "/etc/fonts/conf.d/"]
+    - ["wlan0", "/etc/network/interfaces.d/"]
+    - ["dante.vim", "/usr/share/vim/vim74/colors/"]
 
   - name: mkdir for vundle
     file: path=/home/{{user}}/.vim/bundle state=directory recurse=yes mode=0755
