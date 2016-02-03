@@ -137,13 +137,13 @@
     file: dest=/etc/shadowsocks state=directory mode=0755
 
   - name: create symbolic links
-    file: src=/home/{{user}}/.wizacfg/etc/{{item.0}} dest={{item.1}} state=link force=yes
+    file: src=/home/{{user}}/.wizacfg/etc/{{item.src}} dest={{item.dest}} state=link force=yes
     with_items:
-    - ["rc.lua-3.4",    "/etc/xdg/awesome/rc.lua"]
-    - ["config.json",   "/etc/shadowsocks/config.json"]
-    - ["99-fonts.conf", "/etc/fonts/conf.d/99-fonts.conf"]
-    - ["wlan0",         "/etc/network/interfaces.d/wlan0"]
-    - ["dante.vim",     "/usr/share/vim/vim74/colors/dante.vim"]
+    - {src: "rc.lua-3.4",       dest: "/etc/xdg/awesome/rc.lua"}
+    - {src: "config.json",      dest: "/etc/shadowsocks/config.json"}
+    - {src: "99-fonts.conf",    dest: "/etc/fonts/conf.d/99-fonts.conf"}
+    - {src: "wlan0",            dest: "/etc/network/interfaces.d/wlan0"}
+    - {src: "dante.vim",        dest: "/usr/share/vim/vim74/colors/dante.vim"}
 
   - name: mkdir for vundle
     file: dest=/home/{{user}}/.vim/bundle state=directory recurse=yes mode=0755
