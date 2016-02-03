@@ -1,0 +1,5 @@
+#!/bin/sh
+
+apt-get update
+apt-get install -y git ansible
+git clone -b master --depth 1 https://github.com/wizawu/wizacfg.git
