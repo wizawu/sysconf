@@ -2,5 +2,5 @@
 
 cat "deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main" > /etc/apt/sources.list.d/ansible.list
 apt-get update
-apt-get install -y git ansible
+apt-get install -y git aptitude ansible
 git clone -b master --depth 1 https://github.com/wizawu/wizacfg.git
