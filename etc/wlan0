@@ -1,0 +1,3 @@
+iface wlan0 inet dhcp
+    wpa-ssid    3idiots
+    wpa-psk     XXXXXXX
