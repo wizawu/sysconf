@@ -6,9 +6,6 @@
   - name: check user
     user: name={{user}} state=present
 
-  - name: add user to sudoers
-    template: src=templates/sudoers dest=/etc/sudoers.d/{{user}} mode=0440
-
   - name: locale-gen
     locale_gen: name={{item}} state=present
     with_items:
@@ -126,12 +123,15 @@
     - perf
     - pmap
 
+  - name: add user to sudoers
+    template: src=templates/sudoers dest=/etc/sudoers.d/{{user}} mode=0440
+
   - name: download pt-summary
     get_url: url=http://percona.com/get/pt-summary dest=/usr/bin/pt-summary mode=0755
 
   - name: download this repo
     git: repo=https://github.com/wizawu/wizacfg.git dest=/home/{{user}}/.wizacfg
-    become_user: {{user}}
+    become_user: "{{user}}"
 
   - name: create symbolic link to rc.lua
     file: path=/home/{{user}}/.wizacfg/etc/rc.lua-3.4 dest=/etc/xdg/awesome/rc.lua state=link force=yes
@@ -153,14 +153,15 @@
 
   - name: mkdir for vundle
     file: path=/home/{{user}}/.vim/bundle state=directory recurse=yes mode=0755
-    become_user: {{user}}
+    become_user: "{{user}}"
 
   - name: download vundle
     git: repo=https://github.com/gmarik/vundle.git dest=/home/{{user}}/.vim/bundle/vundle depth=1
-    become_user: {{user}}
+    become_user: "{{user}}"
 
   - name: create symbolic link to dotfiles
     file: path=/home/{{user}}/.wizacfg/dotfiles/{{item}} dest=/home/{{user}}/.{{item}} state=link force=yes
+    become_user: "{{user}}"
     with_items:
     - bashrc
     - dircolors
