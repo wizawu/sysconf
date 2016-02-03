@@ -150,7 +150,7 @@
     become_user: "{{user}}"
 
   - name: download vundle
-    git: repo=https://github.com/gmarik/vundle.git dest=/home/{{user}}/.vim/bundle/vundle depth=1
+    git: repo=https://github.com/gmarik/vundle.git dest=/home/{{user}}/.vim/bundle/vundle depth=1 force=yes
     become_user: "{{user}}"
 
   - name: create symbolic link to dotfiles
