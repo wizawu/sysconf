@@ -137,8 +137,8 @@
     file: dest=/etc/shadowsocks state=directory mode=0755
 
   - name: create symbolic links
-    file: src=/home/{{user}}/.wizacfg/etc/{{item[0]}} dest={{item[1]}} state=link force=yes
-    with_nested:
+    file: src=/home/{{user}}/.wizacfg/etc/{{item.0}} dest={{item.1}} state=link force=yes
+    with_items:
     - ["rc.lua-3.4",    "/etc/xdg/awesome/rc.lua"]
     - ["config.json",   "/etc/shadowsocks/config.json"]
     - ["99-fonts.conf", "/etc/fonts/conf.d/99-fonts.conf"]
