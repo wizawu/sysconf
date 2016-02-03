@@ -154,7 +154,7 @@
     become_user: "{{user}}"
 
   - name: create symbolic link to dotfiles
-    file: path=/home/{{user}}/.wizacfg/dotfiles/{{item}} dest=/home/{{user}}/.{{item}} state=link force=yes
+    file: src=/home/{{user}}/.wizacfg/dotfiles/{{item}} dest=/home/{{user}}/.{{item}} state=link force=yes
     become_user: "{{user}}"
     with_items:
     - bashrc
