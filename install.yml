@@ -79,6 +79,7 @@
     - psmisc
     - rinetd
     - ristretto
+    - rlwrap
     - rsync
     - samba
     - smbclient
