@@ -2,5 +2,8 @@
 
 cat "deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main" > /etc/apt/sources.list.d/ansible.list
 apt-get update
-apt-get install -y git aptitude ansible
+apt-get install -y git aptitude ansible openssh-server openssh-client
 git clone -b master --depth 1 https://github.com/wizawu/wizacfg.git
+ssh-keygen -t rsa
+cd ~/.ssh
+cat id_rsa.pub >> authorized_keys
