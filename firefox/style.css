@@ -18,7 +18,7 @@
     }
 }
 
-@-moz-document regexp("^http(s)?://.*(bitbucket.org|infoq.com|digg.com/reader|.google.com|readthedocs.org|highscalability.com|36kr.com|qingcloud.com).*") {
+@-moz-document regexp("^http(s)?://[^/]*(bitbucket.org|infoq.com|digg.com/reader|.google.[\.a-z]+/|readthedocs.org|highscalability.com|36kr.com|qingcloud.com).*") {
     *:not(.fa) {
         font-family: sans-serif !important;
     }
