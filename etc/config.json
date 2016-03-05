@@ -2,7 +2,7 @@
     "local_port": 1080,
     "method": "aes-256-cfb",
     "password": "barfoo!",
-    "server": "localhost",
+    "server": "shadowsocks",
     "server_port": 8388,
     "timeout": 60
 }
