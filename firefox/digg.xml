@@ -14,6 +14,7 @@
 <outline text="CRUD Comics" title="CRUD Comics" type="rss" xmlUrl="http://crudcomic.tumblr.com/rss" htmlUrl="http://crudcomic.tumblr.com/" />
 <outline text="DigitalOcean" title="DigitalOcean" type="rss" xmlUrl="https://www.digitalocean.com/community/tutorials/feed" htmlUrl="https://www.digitalocean.com/community/tutorials" />
 <outline text="Docker中文社区" title="Docker中文社区" type="rss" xmlUrl="https://www.dockboard.org/rss/" htmlUrl="http://dockboard.org/" />
+<outline text="Druid" title="Druid" type="rss" xmlUrl="http://druid.io/feed/" htmlUrl="http://druid.io/" />
 <outline text="Erlang" title="Erlang" type="rss" xmlUrl="http://www.erlang.org/rss/news" htmlUrl="http://www.erlang.org/rss/news" />
 <outline text="Everything is a Freaking DNS problem" title="Everything is a Freaking DNS problem" type="rss" xmlUrl="http://www.krisbuytaert.be/blog/rss.xml" htmlUrl="http://www.krisbuytaert.be/blog" />
 <outline text="Fari Liang" title="Fari Liang" type="rss" xmlUrl="http://www.fariliang.com/rss/" htmlUrl="http://fariliang.com" />
@@ -35,10 +36,10 @@
 <outline text="SDNAP" title="SDNAP" type="rss" xmlUrl="http://www.sdnap.com/feed" htmlUrl="http://www.sdnap.com" />
 <outline text="SaltTiger" title="SaltTiger" type="rss" xmlUrl="http://www.salttiger.com/index.php/feed/" htmlUrl="http://www.salttiger.com" />
 <outline text="Solidot" title="Solidot" type="rss" xmlUrl="http://feeds2.feedburner.com/solidot" htmlUrl="http://www.solidot.org" />
-<outline text="StorageMojo" title="StorageMojo" type="rss" xmlUrl="http://storagemojo.com/feed/" htmlUrl="http://storagemojo.com" />
 <outline text="Sébastien Han" title="Sébastien Han" type="rss" xmlUrl="http://www.sebastien-han.fr/atom.xml" htmlUrl="http://sebastien-han.fr/" />
 <outline text="The Netflix Tech Blog" title="The Netflix Tech Blog" type="rss" xmlUrl="http://techblog.netflix.com/rss.xml" htmlUrl="http://techblog.netflix.com/" />
 <outline text="Tim Yang" title="Tim Yang" type="rss" xmlUrl="http://timyang.net/feed/atom/" htmlUrl="http://timyang.net/" />
+<outline text="Uber Engineering Blog" title="Uber Engineering Blog" type="rss" xmlUrl="http://eng.uber.com/feed/" htmlUrl="https://eng.uber.com" />
 <outline text="VoltDB" title="VoltDB" type="rss" xmlUrl="http://voltdb.com/blog/feed" htmlUrl="http://blog.voltdb.com" />
 <outline text="You Wouldn't Like Me When I'm Not Coding" title="You Wouldn't Like Me When I'm Not Coding" type="rss" xmlUrl="http://theincredibleholk.wordpress.com/feed/" htmlUrl="http://theincredibleholk.wordpress.com" />
 <outline text="developerWorks: Linux" title="developerWorks: Linux" type="rss" xmlUrl="http://www.ibm.com/developerworks/cn/views/linux/rss/libraryview.jsp?site_id=10&amp;contentarea_by=Linux&amp;topic_by=&amp;product_by=&amp;type_by=%E6%89%80%E6%9C%89%E7%B1%BB%E5%88%AB&amp;search_by=&amp;industry_by=&amp;sort_by=Date&amp;series_title_by=" htmlUrl="http://www.ibm.com/developerworks/cn/" />
@@ -57,7 +58,7 @@
 <outline text="庄周梦蝶" title="庄周梦蝶" type="rss" xmlUrl="http://blog.fnil.net/index.php/feed" htmlUrl="http://blog.fnil.net" />
 <outline text="开源中国社区 新闻" title="开源中国社区 新闻" type="rss" xmlUrl="http://www.oschina.net/news/rss" htmlUrl="http://www.oschina.net/?from=rss" />
 <outline text="开源中国社区 软件" title="开源中国社区 软件" type="rss" xmlUrl="http://www.oschina.net/project/rss" htmlUrl="http://www.oschina.net/?from=rss" />
-<outline text="当然我在扯淡" title="当然我在扯淡" type="rss" xmlUrl="http://www.blogbar.cc/blog/26/feed" htmlUrl="http://www.yinwang.org" />
+<outline text="当然我在扯淡" title="当然我在扯淡" type="rss" xmlUrl="http://feed43.com/yinwangblog.xml" htmlUrl="http://www.yinwang.org" />
 <outline text="徐明明" title="徐明明" type="rss" xmlUrl="http://xumingming.sinaapp.com/feed/" htmlUrl="http://xumingming.sinaapp.com" />
 <outline text="我自然" title="我自然" type="rss" xmlUrl="http://www.yankay.com/feed/" htmlUrl="http://www.yankay.com" />
 <outline text="淘宝中间件团队" title="淘宝中间件团队" type="rss" xmlUrl="http://jm.taobao.org/feed/" htmlUrl="http://jm.taobao.org" />
@@ -74,4 +75,5 @@
 <outline text="银河里的星星" title="银河里的星星" type="rss" xmlUrl="http://duanple.blog.163.com/rss/" htmlUrl="http://duanple.blog.163.com" />
 <outline text="陈梓瀚" title="陈梓瀚" type="rss" xmlUrl="http://www.cppblog.com/vczh/rss.aspx" htmlUrl="http://www.cppblog.com/vczh/" />
 <outline text="青云志" title="青云志" type="rss" xmlUrl="https://log.qingcloud.com/?feed=rss2" htmlUrl="https://log.qingcloud.com" />
+
 </opml>

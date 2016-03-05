@@ -43,3 +43,6 @@ export PATH=$PATH:$JAVA_HOME/bin
 export GOPATH=$HOME/go
 export GOROOT=/usr/lib/go
 export PATH=$GOPATH/bin:$PATH
+
+# Swift
+export PATH=/home/wiza/local/swift/usr/bin:$PATH
