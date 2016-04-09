@@ -10,6 +10,9 @@ echo "DESKTOP DOWNLOAD TEMPLATES PUBLICSHARE DOCUMENTS MUSIC PICTURES VIDEOS" |x
 xsunpinyin -d
 xset -b
 startxfce4 &
-(sleep 2 && synclient TapButton2=3) &
+
 (sleep 2 && hsetroot -full /usr/share/awesome/themes/default/background.png) &
+(sleep 2 && pkill xscreensaver) &
+(sleep 2 && synclient TapButton2=3) &
+
 awesome
