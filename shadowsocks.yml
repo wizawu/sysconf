@@ -1,0 +1,17 @@
+---
+- hosts: shadowsocks
+  remote_user: root
+
+  tasks:
+  - name: install shadowsocks
+    apt: name=shadowsocks state=present
+
+  - name: generate password
+    local_action: shell python -c "import random; print(random.random())" |sha256sum |head -c 40
+    register: password
+
+  - name: copy shadowsocks conf
+    template: src=shadowsocks.json dest=/etc/shadowsocks/config.json
+
+  - name: restart shadowsocks
+    service: name=shadowsocks state=restarted
