@@ -1,6 +1,7 @@
 #!/bin/sh
+# install firmware-iwlwifi, wpasupplicant and their dependencies first
 
-cat "deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main" > /etc/apt/sources.list.d/ansible.list
+echo "deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main" > /etc/apt/sources.list.d/ansible.list
 apt-get update
 apt-get install -y git aptitude ansible openssh-server openssh-client
 git clone -b master --depth 1 https://github.com/wizawu/wizacfg.git
