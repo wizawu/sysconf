@@ -11,9 +11,7 @@ xsunpinyin -d
 xset -b
 startxfce4 &
 
-(sleep 4 && hsetroot -full /usr/share/awesome/themes/default/background.png) &
-(sleep 4 && pkill xfce4-panel) &
-(sleep 4 && pkill xscreensaver) &
-(sleep 4 && synclient TapButton2=3) &
+(sleep 3 && hsetroot -full /usr/share/awesome/themes/default/background.png) &
+(sleep 3 && synclient TapButton2=3) &
 
 awesome
