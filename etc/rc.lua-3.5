@@ -180,16 +180,19 @@ for s = 1, screen.count() do
     -- Create a tasklist widget
     mytasklist[s] = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, mytasklist.buttons)
     
-    ---- @wiza ----
+    ---- @wiza begin ----
 	memwidget = wibox.widget.textbox()
 	vicious.register(memwidget, vicious.widgets.mem, "MEM $1% ($2MiB/$3MiB) |", 1)
 
 	cputempwidget = wibox.widget.textbox()
-	vicious.register(cputempwidget, vicious.widgets.thermal, "$1°C | ", 1, {"coretemp.0", "core"})
+	vicious.register(cputempwidget, vicious.widgets.thermal, "$1°C | ", 1, "thermal_zone0")
 
 	cpuwidget = wibox.widget.textbox()
 	vicious.register(cpuwidget, vicious.widgets.cpu, " | CPU $1% ", 1)
-    ---- @wiza ----
+
+    batwidget = wibox.widget.textbox()
+    vicious.register(batwidget, vicious.widgets.bat, " BAT $2% ($3) |", 1, "BAT0")
+    ---- @wiza end ----
 
     -- Create the wibox
     mywibox[s] = awful.wibox({ position = "top", screen = s })
@@ -204,11 +207,12 @@ for s = 1, screen.count() do
     local right_layout = wibox.layout.fixed.horizontal()
     if s == 1 then right_layout:add(wibox.widget.systray()) end
 
-    ---- @wiza ----
+    ---- @wiza begin ----
     right_layout:add(cpuwidget)
     right_layout:add(cputempwidget)
     right_layout:add(memwidget)
-    ---- @wiza ----
+    right_layout:add(batwidget)
+    ---- @wiza end ----
     
     right_layout:add(mytextclock)
     right_layout:add(mylayoutbox[s])
