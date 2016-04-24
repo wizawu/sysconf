@@ -155,6 +155,7 @@
   - name: create symbolic link to dotfiles
     file: src=/home/{{user}}/.wizacfg/dotfiles/{{item}} dest=/home/{{user}}/.{{item}} state=link force=yes owner={{user}}
     with_items:
+    - asoundrc
     - bashrc
     - dircolors
     - gitconfig

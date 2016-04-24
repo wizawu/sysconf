@@ -1,3 +1,0 @@
-#!/bin/sh
-
-sudo xrandr --output LVDS1 --auto && sudo pm-suspend
