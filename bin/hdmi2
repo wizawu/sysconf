@@ -1,5 +1,3 @@
 #!/bin/bash
 
-xrandr --output HDMI2 --auto
-sleep 3
 xrandr --output HDMI2 --mode 3840x2160

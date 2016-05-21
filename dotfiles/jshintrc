@@ -1,5 +1,5 @@
 {
-    "asi": false,
+    "asi": true,
     "boss": false,
     "browser": true,
     "eqeqeq": true,
