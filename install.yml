@@ -48,6 +48,7 @@
     - g++
     - gcc-doc
     - google-perftools
+    - gtk3-engines-xfce
     - gufw
     - hdparm
     - hsetroot
