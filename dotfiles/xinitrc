@@ -8,7 +8,12 @@ export QT_IM_MODULE=xim
 echo "DESKTOP DOWNLOAD TEMPLATES PUBLICSHARE DOCUMENTS MUSIC PICTURES VIDEOS" |xargs -I {} xdg-user-dirs-update --set {} ~
 
 xsunpinyin -d
+
 xset -b
+xset -dpms
+xset s noblank
+xset s off
+
 startxfce4 &
 
 (sleep 3 && hsetroot -full /usr/share/awesome/themes/default/background.png) &
