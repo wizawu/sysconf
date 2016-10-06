@@ -43,7 +43,7 @@ export PATH=/home/wiza/local/maven/bin:$PATH
 # Go
 export GOPATH=$HOME/go
 export GOROOT=/usr/lib/go
-export PATH=$GOPATH/bin:$PATH
+export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
 
 # Swift
 export PATH=/home/wiza/local/swift/usr/bin:$PATH
