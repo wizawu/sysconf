@@ -15,6 +15,7 @@ nnoremap te :tabedit
 nnoremap <A-Left> :tabp<CR>
 nnoremap <A-Right> :tabn<CR>
 autocmd VimEnter * hi MatchParen ctermbg=darkblue
+autocmd BufWritePre * %s/\s\+$//e
 colorscheme dante
 
 " fold
