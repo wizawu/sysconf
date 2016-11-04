@@ -140,13 +140,6 @@
     - {src: "wlan0",            dest: "/etc/network/interfaces.d/wlan0"}
     - {src: "dante.vim",        dest: "/usr/share/vim/vim74/colors/dante.vim"}
 
-  - name: mkdir for vundle
-    file: dest=/home/{{user}}/.vim/bundle state=directory recurse=yes mode=0755 owner={{user}}
-
-  - name: download vundle
-    git: repo=https://github.com/gmarik/vundle.git dest=/home/{{user}}/.vim/bundle/vundle depth=1 force=yes
-    become_user: "{{user}}"
-
   - name: create symbolic link to dotfiles
     file: src=/home/{{user}}/.wizacfg/dotfiles/{{item}} dest=/home/{{user}}/.{{item}} state=link force=yes owner={{user}}
     with_items:
