@@ -130,6 +130,7 @@
 
   - name: download this repo
     git: repo=https://github.com/wizawu/wizacfg.git dest=/home/{{user}}/.wizacfg
+    become: true
     become_user: "{{user}}"
 
   - name: create symbolic links
