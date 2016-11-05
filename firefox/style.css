@@ -10,6 +10,9 @@
     .blob-code-inner {
        font-size: 13px;
     }
+    .new-user-avatar-cta {
+        display: none;
+    }
 }
 
 @-moz-document regexp("^https?://[^/]*(.+usemyfont|bitbucket.org|infoq.com|digg.com/reader|.google.[\.a-z]+/|readthedocs.org|highscalability.com|qingcloud.com).*") {
