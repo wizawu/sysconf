@@ -16,12 +16,9 @@ alias vr='vim -R'
 alias timef='/usr/bin/time -f "TIME:\t%E\nMEM:\t%M KB\n"'
 alias gcc='gcc -std=c11 -fms-extensions'
 alias g++='g++ -std=c++11'
-alias clang='clang -std=c11 -W'
-alias clang++='clang++ -std=c++11 -W'
 alias cmemchk='valgrind --tool=memcheck --leak-check=full'
 alias tgp='tsocks git push'
 alias apt='sudo aptitude'
-alias hp='http_proxy=usetheforce.capps.curio.im:7777 https_proxy=usetheforce.capps.curio.im:7777'
 
 # git
 git config --global color.ui true
@@ -34,7 +31,7 @@ PS1='${debian_chroot:+($debian_chroot)}\033[34m\u\033[90m@\033[33m\h\033[90m:\03
 eval `dircolors /home/wiza/.dircolors`
 
 # Java
-export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-8-jdk
 export JRE_HOME=$JAVA_HOME/jre
 export CLASSPATH=.:$JAVA_HOME/lib:$JRE_HOME/lib
 export PATH=$PATH:$JAVA_HOME/bin
@@ -44,6 +41,3 @@ export PATH=/home/wiza/local/maven/bin:$PATH
 export GOPATH=$HOME/go
 export GOROOT=/usr/lib/go
 export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
-
-# Swift
-export PATH=/home/wiza/local/swift/usr/bin:$PATH
