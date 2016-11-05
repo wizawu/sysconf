@@ -1,5 +1,5 @@
 ---
-- hosts: install
+- hosts: localhost
   remote_user: root
 
   tasks:
@@ -136,7 +136,6 @@
     file: src=/home/{{user}}/.wizacfg/etc/{{item.src}} dest={{item.dest}} state=link force=yes
     with_items:
     - {src: "rc.lua-3.5",       dest: "/etc/xdg/awesome/rc.lua"}
-    - {src: "99-fonts.conf",    dest: "/etc/fonts/conf.d/99-fonts.conf"}
     - {src: "wlan0",            dest: "/etc/network/interfaces.d/wlan0"}
     - {src: "dante.vim",        dest: "/usr/share/vim/vim74/colors/dante.vim"}
 
