@@ -1,25 +1,23 @@
-@namespace url(http://www.w3.org/1999/xhtml);
-
 @-moz-document regexp("^http(s)?://((www|gist|help|status).)?github.*") {
     body, input, select, textarea, button, .markdown-body {
-        font-family: sans-serif !important;
+        font-family: Aleo !important;
     }
     tt, code, pre, .blob-code, .blob-line-code, .diff-line-code {
-       font-family: monospace !important;
+        font-family: 'Courier Prime Code' !important;
     }
     .blob-code-inner {
-       font-size: 13px;
+        font-size: 13px;
     }
     .new-user-avatar-cta {
         display: none;
     }
 }
 
-@-moz-document regexp("^https?://[^/]*(.+usemyfont|bitbucket.org|infoq.com|digg.com/reader|.google.[\.a-z]+/|readthedocs.org|highscalability.com|qingcloud.com).*") {
+@-moz-document regexp("^https?://[^/]*(.+usemyfont|bitbucket.org|infoq.com|digg.com/reader|.google.[\\.a-z]+/|readthedocs.org|highscalability.com|qingcloud.com).*") {
     *:not(i) {
-        font-family: sans-serif !important;
+        font-family: Aleo !important;
     }
-    pre, code {
-        font-family: monospace !important;
+    pre, code, pre *, code * {
+        font-family: 'Courier Prime Code' !important;
     }
 }
