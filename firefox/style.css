@@ -1,9 +1,9 @@
 @-moz-document regexp("^http(s)?://((www|gist|help|status).)?github.*") {
     body, input, select, textarea, button, .markdown-body {
-        font-family: Aleo !important;
+        font-family: sans-serif !important;
     }
     tt, code, pre, .blob-code, .blob-line-code, .diff-line-code {
-        font-family: 'Courier Prime Code' !important;
+        font-family: monospace !important;
     }
     .blob-code-inner {
         font-size: 13px;
@@ -15,9 +15,9 @@
 
 @-moz-document regexp("^https?://[^/]*(.+usemyfont|bitbucket.org|infoq.com|digg.com/reader|.google.[\\.a-z]+/|readthedocs.org|highscalability.com|qingcloud.com).*") {
     *:not(i) {
-        font-family: Aleo !important;
+        font-family: sans-serif !important;
     }
     pre, code, pre *, code * {
-        font-family: 'Courier Prime Code' !important;
+        font-family: monospace !important;
     }
 }
