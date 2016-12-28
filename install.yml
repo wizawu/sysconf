@@ -42,6 +42,7 @@
     - erlang-xmerl
     - fio
     - fiu-utils
+    - fping
     - g++
     - gcc-doc
     - google-perftools
