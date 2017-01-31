@@ -19,6 +19,14 @@ autocmd VimEnter * hi MatchParen ctermbg=darkblue
 autocmd BufWritePre * %s/\s\+$//e
 colorscheme dante
 
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'gkz/vim-ls'
+call vundle#end()
+
 filetype indent on
 filetype plugin on
 syntax on
