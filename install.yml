@@ -141,11 +141,17 @@
     - {src: "wlan0",            dest: "/etc/network/interfaces.d/wlan0"}
     - {src: "dante.vim",        dest: "/usr/share/vim/vim74/colors/dante.vim"}
 
+  - name: create directories
+    file: dest=/home/{{user}}/{{item}} state=directory recurse=yes owner={{user}}
+    with_items:
+    - .config/fontconfig
+
   - name: create symbolic link to dotfiles
     file: src=/home/{{user}}/.wizacfg/dotfiles/{{item}} dest=/home/{{user}}/.{{item}} state=link force=yes owner={{user}}
     with_items:
     - asoundrc
     - bashrc
+    - config/fontconfig/fonts.conf
     - dircolors
     - gitconfig
     - tmux.conf
