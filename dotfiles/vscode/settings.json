@@ -1,5 +1,0 @@
-{
-    "editor.fontFamily": "'Courier Prime Code'",
-    "files.trimTrailingWhitespace": true,
-    "typescript.tsdk": "/usr/lib/node_modules/typescript/lib"
-}
