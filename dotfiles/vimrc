@@ -24,7 +24,6 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'gkz/vim-ls'
 call vundle#end()
 
 filetype indent on
