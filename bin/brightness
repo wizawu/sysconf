@@ -1,0 +1,4 @@
+#!/bin/sh
+
+output=$(xrandr --current |grep ' connected' |awk '{print $1}')
+xrandr --output $output --brightness $1

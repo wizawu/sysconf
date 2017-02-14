@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -ex
+
+grep nointernet /etc/group || sudo groupadd nointernet
+sudo usermod -G nointernet $(whoami)
+
+sudo iptables -A OUTPUT -m owner --gid-owner nointernet -j DROP
+
+sg nointernet $@
