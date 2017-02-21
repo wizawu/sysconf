@@ -19,8 +19,6 @@ alias gcc='gcc -std=c11 -fms-extensions'
 alias g++='g++ -std=c++11'
 alias cmemchk='valgrind --tool=memcheck --leak-check=full'
 alias apt='sudo aptitude'
-alias tgit='tsocks git'
-alias tnpm='NPM_CONFIG_REGISTRY=http://registry.npm.taobao.org npm'
 
 # git
 git config --global color.ui true
