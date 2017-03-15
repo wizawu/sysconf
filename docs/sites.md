@@ -4,3 +4,4 @@
 * [Library Genesis](http://gen.lib.rus.ec/)
 * [Papertrail](https://papertrailapp.com/)
 * [Scratchapixel](http://www.scratchapixel.com/)
+* [14 Amazingly Free Stock Photo Websites](https://www.entrepreneur.com/article/238646)
