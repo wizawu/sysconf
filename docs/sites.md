@@ -1,0 +1,6 @@
+* [DDoS Quick Guide | US-CERT](https://www.us-cert.gov/security-publications/DDoS-Quick-Guide)
+* [Font Library | Facebook](https://www.facebook.com/fontlibrary/)
+* [GTmetrix](https://gtmetrix.com/)
+* [Library Genesis](http://gen.lib.rus.ec/)
+* [Papertrail](https://papertrailapp.com/)
+* [Scratchapixel](http://www.scratchapixel.com/)
