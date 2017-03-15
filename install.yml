@@ -77,7 +77,6 @@
     - pppoeconf
     - psmisc
     - rinetd
-    - ristretto
     - rlwrap
     - rsync
     - samba
@@ -96,6 +95,7 @@
     - unrar
     - unzip
     - valgrind
+    - viewnior
     - vifm
     - vim-gtk
     - vsftpd
