@@ -144,6 +144,7 @@
   - name: create directories
     file: dest=/home/{{user}}/{{item}} state=directory recurse=yes owner={{user}}
     with_items:
+    - .config/Code/User
     - .config/fontconfig
     - .vim/bundle
 
@@ -152,6 +153,8 @@
     with_items:
     - asoundrc
     - bashrc
+    - config/Code/User/keybindings.json
+    - config/Code/User/settings.json
     - config/fontconfig/fonts.conf
     - dircolors
     - gitconfig
