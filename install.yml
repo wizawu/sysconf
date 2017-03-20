@@ -40,6 +40,8 @@
     - erlang-base-hipe
     - erlang-inets
     - erlang-xmerl
+    - fcitx
+    - fcitx-googlepinyin
     - fio
     - fiu-utils
     - fping
@@ -109,7 +111,6 @@
     - xfce4-terminal
     - xorg
     - xsel
-    - xsunpinyin
 
   - name: check built-in tools
     shell: which {{item}} || echo "missing" {{item}}
