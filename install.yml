@@ -69,6 +69,7 @@
     - mdadm
     - mtr
     - mupdf
+    - nginx
     - nmap
     - ntfs-3g
     - ntpdate
@@ -138,9 +139,10 @@
   - name: create symbolic links
     file: src=/home/{{user}}/.wizacfg/etc/{{item.src}} dest={{item.dest}} state=link force=yes
     with_items:
+    - {src: "dante.vim",        dest: "/usr/share/vim/vim74/colors/dante.vim"}
+    - {src: "nginx.conf",       dest: "/etc/nginx/modules-enabled/nginx.conf"}
     - {src: "rc.lua-3.5",       dest: "/etc/xdg/awesome/rc.lua"}
     - {src: "wlan0",            dest: "/etc/network/interfaces.d/wlan0"}
-    - {src: "dante.vim",        dest: "/usr/share/vim/vim74/colors/dante.vim"}
 
   - name: create directories
     file: dest=/home/{{user}}/{{item}} state=directory recurse=yes owner={{user}}
