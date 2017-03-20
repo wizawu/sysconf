@@ -1,19 +1,18 @@
 #!/bin/sh
 
 export LC_CTYPE="zh_CN.UTF-8"
-export XMODIFIERS="@im=xsunpinyin"
-export GTK_IM_MODULE=xim
-export QT_IM_MODULE=xim
+export XMODIFIERS="@im=fcitx"
+export QT_IM_MODULE=fcitx
+export GTK_IM_MODULE=fcitx
 
 echo "DESKTOP DOWNLOAD TEMPLATES PUBLICSHARE DOCUMENTS MUSIC PICTURES VIDEOS" |xargs -I {} xdg-user-dirs-update --set {} ~
-
-xsunpinyin -d
 
 xset -b
 xset -dpms
 xset s noblank
 xset s off
 
+fcitx &
 startxfce4 &
 
 (sleep 3 && hsetroot -full /usr/share/awesome/themes/default/background.png) &
