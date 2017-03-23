@@ -2,5 +2,5 @@
     "editor.fontFamily": "'Courier Prime Code'",
     "editor.fontSize": 17,
     "files.trimTrailingWhitespace": true,
-    "typescript.tsdk": "/usr/lib/node_modules/typescript/lib"
+    "files.autoSave": "afterDelay"
 }
