@@ -2,5 +2,6 @@
     "editor.fontFamily": "'Courier Prime Code'",
     "editor.fontSize": 17,
     "files.trimTrailingWhitespace": true,
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "vim.useCtrlKeys": true
 }
