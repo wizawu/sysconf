@@ -1,15 +1,25 @@
 [
     {
-        "key": "ctrl+shift+v",
-        "command": "editor.action.clipboardPasteAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
         "key": "alt+left",
         "command": "workbench.action.previousEditor"
     },
     {
         "key": "alt+right",
         "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "editor.action.selectAll",
+        "when": "editorTextFocus && vim.useCtrlKeys && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "editor.action.clipboardPasteAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "editor.action.formatSelection",
+        "when": "editorTextFocus && vim.useCtrlKeys && !inDebugRepl"
     }
 ]
