@@ -132,7 +132,7 @@
     get_url: url=http://percona.com/get/pt-summary dest=/usr/bin/pt-summary mode=0755
 
   - name: download this repo
-    git: repo=https://bitbucket.org/wizawu/wizacfg.git dest=/home/{{user}}/.wizacfg
+    git: repo=https://github.com/wizawu/wizacfg.git dest=/home/{{user}}/.wizacfg
     become: true
     become_user: "{{user}}"
 
