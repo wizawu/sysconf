@@ -3,5 +3,6 @@
     "editor.fontSize": 17,
     "files.trimTrailingWhitespace": true,
     "files.autoSave": "afterDelay",
-    "vim.useCtrlKeys": true
+    "vim.useCtrlKeys": true,
+    "workbench.colorTheme": "Monokai"
 }
