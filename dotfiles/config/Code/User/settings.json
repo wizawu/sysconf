@@ -4,5 +4,6 @@
     "files.trimTrailingWhitespace": true,
     "files.autoSave": "afterDelay",
     "vim.useCtrlKeys": true,
-    "workbench.colorTheme": "Monokai"
+    "workbench.colorTheme": "Monokai",
+    "typescript.check.tscVersion": false
 }
