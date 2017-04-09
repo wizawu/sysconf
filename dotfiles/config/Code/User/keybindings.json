@@ -26,5 +26,9 @@
         "key": "shift+alt+f",
         "command": "editor.action.formatSelection",
         "when": "editorTextFocus && vim.useCtrlKeys && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+shift+o",
+        "command": "workbench.action.files.openFolder"
     }
 ]
