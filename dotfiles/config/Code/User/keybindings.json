@@ -13,6 +13,11 @@
         "when": "editorTextFocus && vim.useCtrlKeys && !inDebugRepl"
     },
     {
+        "key": "ctrl+shift+c",
+        "command": "editor.action.clipboardCopyAction",
+        "when": "editorTextFocus"
+    },
+    {
         "key": "ctrl+shift+v",
         "command": "editor.action.clipboardPasteAction",
         "when": "editorTextFocus && !editorReadonly"
