@@ -5,5 +5,6 @@
     "files.autoSave": "afterDelay",
     "vim.useCtrlKeys": true,
     "workbench.colorTheme": "Monokai",
-    "typescript.check.tscVersion": false
+    "typescript.check.tscVersion": false,
+    "window.openFoldersInNewWindow": "on"
 }
