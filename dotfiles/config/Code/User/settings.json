@@ -4,5 +4,6 @@
     "files.trimTrailingWhitespace": true,
     "vim.useCtrlKeys": true,
     "workbench.colorTheme": "Monokai",
-    "window.openFoldersInNewWindow": "on"
+    "window.openFoldersInNewWindow": "on",
+    "typescript.check.tscVersion": false
 }
