@@ -1,3 +1,0 @@
-#!/bin/sh
-
-sudo yarn add --modules-folder=$(npm root -g) $@
