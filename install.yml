@@ -106,6 +106,7 @@
     - wput
     - x11-xkb-utils
     - x11-xserver-utils
+    - xclip
     - xdg-user-dirs
     - xfce4-screenshooter
     - xfce4-session
