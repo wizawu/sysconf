@@ -3,11 +3,14 @@
     "editor.fontSize": 17,
     "editor.fontWeight": "300",
     "editor.rulers": [ 80, 120 ],
+    "editor.wordWrap": "on",
     "files.autoSave": "off",
     "files.trimTrailingWhitespace": true,
     "typescript.check.tscVersion": false,
     "vim.useCtrlKeys": true,
     "vim.useSystemClipboard": false,
     "window.openFoldersInNewWindow": "on",
-    "workbench.colorTheme": "Monokai"
+    "workbench.colorTheme": "Monokai",
+    "workbench.editor.enablePreview": false,
+    "workbench.welcome.enabled": false
 }
