@@ -1,9 +1,8 @@
 {
-    "editor.fontFamily": "'Operator Mono', 'Courier Prime Code'",
+    "editor.fontFamily": "'Courier Prime Code'",
     "editor.fontSize": 17,
     "editor.fontWeight": "300",
     "editor.rulers": [ 80, 120 ],
-    "editor.wordWrap": "on",
     "files.autoSave": "off",
     "files.trimTrailingWhitespace": true,
     "typescript.check.tscVersion": false,
