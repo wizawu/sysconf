@@ -4,6 +4,7 @@
     "editor.fontWeight": "300",
     "editor.rulers": [ 80, 120 ],
     "files.autoSave": "off",
+    "files.exclude": { "*.retry": true },
     "files.trimTrailingWhitespace": true,
     "typescript.check.tscVersion": false,
     "vim.useCtrlKeys": true,
