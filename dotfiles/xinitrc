@@ -12,6 +12,7 @@ xset -dpms
 xset s noblank
 xset s off
 
+pkill fcitx
 fcitx &
 startxfce4 &
 
