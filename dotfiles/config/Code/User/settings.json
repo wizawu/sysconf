@@ -1,15 +1,17 @@
 {
     "editor.fontFamily": "'Courier Prime Code'",
-    "editor.fontSize": 17,
+    "editor.fontSize": 14,
     "editor.fontWeight": "300",
     "editor.rulers": [ 80, 120 ],
     "files.autoSave": "off",
     "files.exclude": { "*.retry": true },
+    "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "typescript.check.tscVersion": false,
     "vim.useCtrlKeys": true,
     "vim.useSystemClipboard": false,
     "window.openFoldersInNewWindow": "on",
+    "window.zoomLevel": 1.4,
     "workbench.colorTheme": "Monokai",
     "workbench.editor.enablePreview": false,
     "workbench.welcome.enabled": false
