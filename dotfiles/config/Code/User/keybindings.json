@@ -24,7 +24,7 @@
     },
     {
         "key": "shift+alt+f",
-        "command": "editor.action.formatSelection",
+        "command": "editor.action.formatDocument",
         "when": "editorTextFocus && vim.useCtrlKeys && !inDebugRepl"
     },
     {
