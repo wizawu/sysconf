@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sudo mount -o rw,uid=$UID,iocharset=utf8 $@
