@@ -1,0 +1,73 @@
+#!/bin/bash
+
+append() {
+    echo "$1" | sudo tee -a $2
+}
+
+if [[ -z "$1" || $1 = help ]]; then
+    echo "iface scan"
+    echo "iface vault [ssid]"
+    echo "iface wifi <interface> <ssid> <psk>"
+    echo "iface eth <interface> [address] [gateway]"
+    exit
+fi
+
+if [ $1 = scan ]; then
+    wpa_cli scan
+    wpa_cli scan_results
+fi
+
+conf=/etc/network/interface
+
+if [ $1 = wifi ]; then
+    if [[ -z "$2" || -z "$3" || -z "$4" ]]; then
+        iface help
+        exit 1
+    fi
+    sudo rm -f $conf
+    append "auto lo" $conf
+    append "iface lo inet loopback" $conf
+    append "iface $2 inet dhcp" $conf
+    append "  wpa-ssid $3" $conf
+    append "  wpa-psk $4" $conf
+    sudo ifdown $2
+    sudo ifup $2
+fi
+
+if [ $1 = eth ]; then
+    if [[ -z "$2" ]]; then
+        iface help
+        exit 1
+    fi
+    if [[ -n "$3" && -n "$4" ]]; then
+        inet=static
+    else
+        inet=dhcp
+    fi
+    sudo rm -f $conf
+    append "auto lo" $conf
+    append "iface lo inet loopback" $conf
+    append "iface $2 inet $inet" $conf
+    if [ $inet = static ]; then
+        append "  address $3" $conf
+        append "  gateway $4" $conf
+    fi
+    sudo ifdown $2
+    sudo ifup $2
+fi
+
+if [ $1 = vault ]; then
+    vault="jA0EBwMCxlRKjOEczqlg0rkB7D1qpS1ZTFdaEv6kB2HfLdwVlstyJgDcb5NnFJcF/MJQ9CCHf5IS
+        rd+H0UhIHirz2LPb+FLF5NYVVsq6VzIQk0TGw//b4dDDQAdSqhu60ryCCE8q5kku/AZAWtQ49k9J
+        ONNCmR2X0z6jJYHTYzmCSXIJAfBtZ+yEm0e/EAdRBC1Ov3Y7vSDrFnycmrgVUxzpPVS6r6/rcuk8
+        HFXfJcWnTmUvvVtznV9ZMhiM/N3LjBILf2z/lAH+CQ=="
+    if [ -z $2 ]; then
+        echo $vault | sed -e 's/ /\n/g' | base64 -d | gpg -d
+    else
+        echo $vault | sed -e 's/ /\n/g' | base64 -d | gpg -d | grep "$2::::" | sed -e 's/::::/ /g'
+    fi
+fi
+
+if [ $1 = ":vault" ]; then
+    gpg -c | base64
+fi
