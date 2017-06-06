@@ -37,6 +37,7 @@
     - debootstrap
     - di
     - dstat
+    - entr
     - erlang-base-hipe
     - erlang-inets
     - erlang-xmerl
