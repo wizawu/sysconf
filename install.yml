@@ -70,6 +70,7 @@
     - mdadm
     - mtr
     - mupdf
+    - mycli
     - nginx
     - nmap
     - ntfs-3g
