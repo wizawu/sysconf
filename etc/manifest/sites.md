@@ -9,3 +9,4 @@
 * [有哪些值得被推荐的中文字体？ - 知乎](https://www.zhihu.com/question/20727176)
 * [Home | Soapbox Agency](http://www.soapboxagency.net/)
 * [Iconfont-阿里巴巴矢量图标库](http://www.iconfont.cn/)
+* [Courier Prime | Quote-Unquote Apps](https://quoteunquoteapps.com/courierprime/)
