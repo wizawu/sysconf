@@ -11,3 +11,4 @@
 * [Iconfont-阿里巴巴矢量图标库](http://www.iconfont.cn/)
 * [Courier Prime | Quote-Unquote Apps](https://quoteunquoteapps.com/courierprime/)
 * [Profitability Calculator | NiceHash](https://www.nicehash.com/?p=calc)
+* [GPUBoss](http://gpuboss.com/)
