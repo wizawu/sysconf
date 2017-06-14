@@ -2,10 +2,18 @@
     "editor.fontFamily": "'Courier Prime Code'",
     "editor.fontSize": 17,
     "editor.fontWeight": "300",
-    "editor.rulers": [ 80, 120 ],
+    "editor.quickSuggestions": {
+        "comments": true,
+        "other": true,
+        "strings": true
+    },
+    "editor.rulers": [
+        80,
+        120
+    ],
     "files.autoSave": "off",
     "files.exclude": {
-        "**/node_modules": true,
+        "node_modules/": true,
         "*.retry": true
     },
     "files.insertFinalNewline": true,
