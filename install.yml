@@ -29,6 +29,7 @@
     - alsa-oss
     - alsa-tools
     - alsa-utils
+    - autossh
     - awesome
     - awesome-extra
     - axel
