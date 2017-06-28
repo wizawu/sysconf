@@ -17,7 +17,6 @@ alias vr='vim -R'
 alias gcc='gcc -std=c11 -fms-extensions'
 alias g++='g++ -std=c++11'
 alias cmemchk='valgrind --tool=memcheck --leak-check=full'
-alias apt='sudo aptitude'
 
 # git
 git config --global color.ui true
