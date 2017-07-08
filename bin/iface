@@ -7,8 +7,8 @@ append() {
 if [[ -z "$1" || $1 = help ]]; then
     echo "iface scan"
     echo "iface vault [ssid]"
-    echo "iface wifi <interface> <ssid> <psk> [address/mask] [gateway]"
-    echo "iface eth <interface> [address/mask] [gateway]"
+    echo "iface wifi <interface> <ssid> [psk [address/mask gateway]]"
+    echo "iface eth <interface> [address/mask gateway]"
     exit
 fi
 
@@ -20,7 +20,7 @@ fi
 conf=/etc/network/interfaces
 
 if [ $1 = wifi ]; then
-    if [[ -z "$2" || -z "$3" || -z "$4" ]]; then
+    if [[ -z "$2" || -z "$3" ]]; then
         iface help
         exit 1
     fi
@@ -34,8 +34,12 @@ if [ $1 = wifi ]; then
     append "auto lo" $conf
     append "iface lo inet loopback" $conf
     append "iface $2 inet $inet" $conf
-    append "    wpa-ssid $3" $conf
-    append "    wpa-psk $4" $conf
+    if [ -z "$4" ]; then
+        append "    wireless-essid $3" $conf
+    else
+        append "    wpa-ssid $3" $conf
+        append "    wpa-psk $4" $conf
+    fi
     if [ $inet = static ]; then
         append "    address $5" $conf
         append "    gateway $6" $conf
