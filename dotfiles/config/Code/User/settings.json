@@ -14,16 +14,16 @@
     "files.autoSave": "off",
     "files.exclude": {
         "node_modules/": true,
-        "*.retry": true
+        "**/*.retry": true
     },
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "git.enabled": false,
+    "java.home": "/usr/lib/jvm/default-jdk",
     "typescript.check.tscVersion": false,
     "vim.disableAnnoyingNeovimMessage": true,
     "vim.useCtrlKeys": true,
     "vim.useSystemClipboard": false,
     "window.openFoldersInNewWindow": "on",
-    "workbench.editor.enablePreview": false,
-    "workbench.welcome.enabled": false
+    "workbench.editor.enablePreview": false
 }
