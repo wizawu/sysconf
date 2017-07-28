@@ -72,10 +72,10 @@ if [ $1 = eth ]; then
 fi
 
 if [ $1 = vault ]; then
-    vault="jA0EBwMCxlRKjOEczqlg0rkB7D1qpS1ZTFdaEv6kB2HfLdwVlstyJgDcb5NnFJcF/MJQ9CCHf5IS
-        rd+H0UhIHirz2LPb+FLF5NYVVsq6VzIQk0TGw//b4dDDQAdSqhu60ryCCE8q5kku/AZAWtQ49k9J
-        ONNCmR2X0z6jJYHTYzmCSXIJAfBtZ+yEm0e/EAdRBC1Ov3Y7vSDrFnycmrgVUxzpPVS6r6/rcuk8
-        HFXfJcWnTmUvvVtznV9ZMhiM/N3LjBILf2z/lAH+CQ=="
+    vault="jA0EBwMCQ7wdp3vIRihg0sAIAaePVr61NfvVzoqljKlLFqChvGLS3cj6HdR96ZwWYzh2gp/jO5NJ
+        H2VRqAE3kP9DeTdWA6cWd4uPs5uXGBKFuYauuouZimG3gGxZ3lRg3e5gaVqDMjoyj4qgF5ohjOJV
+        y//BJ0ADTJvy3Sg3y+a/W43idgxFUBlwf76znK7Zuad1PhOMvELeG3FkwEG4TWGOnNmK8kfnQSEc
+        nOooOJpmLRhhgkFx9n0m/4mqzmLzNYUoY103JcGpHpr1ed11gFqSJcUI7W9/QGM="
     if [ -z $2 ]; then
         echo $vault | sed -e 's/ /\n/g' | base64 -d | gpg -d
     else
