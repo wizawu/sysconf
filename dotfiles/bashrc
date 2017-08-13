@@ -5,6 +5,7 @@
 export LANG=en_US.UTF-8
 export PATH=$PATH:/sbin:/usr/sbin:~/.wizacfg/bin:$(npm root -g)/.bin
 complete -cf sudo
+source /usr/share/bash-completion/bash_completion
 source /usr/share/bash-completion/completions/git
 
 # alias
