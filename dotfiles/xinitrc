@@ -12,10 +12,9 @@ xset -dpms
 xset s noblank
 xset s off
 
-pkill fcitx
-fcitx &
 startxfce4 &
 
+(sleep 3 && fcitx -d) &
 (sleep 3 && hsetroot -full /usr/share/awesome/themes/default/background.png) &
 (sleep 3 && synclient TapButton2=3) &
 
