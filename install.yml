@@ -90,6 +90,7 @@
     - smbclient
     - smplayer
     - ssh
+    - sshpass
     - strace
     - sudo
     - sysstat
