@@ -25,5 +25,5 @@
     "vim.useSystemClipboard": false,
     "window.openFoldersInNewWindow": "on",
     "workbench.editor.enablePreview": false,
-    "extensions.ignoreRecommendations": false
+    "python.linting.pylintPath": "/usr/local/bin/pylint"
 }
