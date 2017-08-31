@@ -21,7 +21,7 @@ conf=/etc/network/interfaces
 
 if [ $1 = wifi ]; then
     if [[ -z "$2" || -z "$3" ]]; then
-        iface help
+        $0 help
         exit 1
     fi
     if [[ -n "$5" && -n "$6" ]]; then
@@ -36,6 +36,10 @@ if [ $1 = wifi ]; then
     append "iface $2 inet $inet" $conf
     if [ -z "$4" ]; then
         append "    wireless-essid $3" $conf
+    elif [ "$4" = "-" ]; then
+        psk=$($0 vault "$3" | awk '{print $2}')
+        append "    wpa-ssid $3" $conf
+        append "    wpa-psk $psk" $conf
     else
         append "    wpa-ssid $3" $conf
         append "    wpa-psk $4" $conf
@@ -50,7 +54,7 @@ fi
 
 if [ $1 = eth ]; then
     if [[ -z "$2" ]]; then
-        iface help
+        $0 help
         exit 1
     fi
     if [[ -n "$3" && -n "$4" ]]; then
@@ -72,17 +76,14 @@ if [ $1 = eth ]; then
 fi
 
 if [ $1 = vault ]; then
-    vault="jA0EBwMCQ7wdp3vIRihg0sAIAaePVr61NfvVzoqljKlLFqChvGLS3cj6HdR96ZwWYzh2gp/jO5NJ
-        H2VRqAE3kP9DeTdWA6cWd4uPs5uXGBKFuYauuouZimG3gGxZ3lRg3e5gaVqDMjoyj4qgF5ohjOJV
-        y//BJ0ADTJvy3Sg3y+a/W43idgxFUBlwf76znK7Zuad1PhOMvELeG3FkwEG4TWGOnNmK8kfnQSEc
-        nOooOJpmLRhhgkFx9n0m/4mqzmLzNYUoY103JcGpHpr1ed11gFqSJcUI7W9/QGM="
-    if [ -z $2 ]; then
-        echo $vault | sed -e 's/ /\n/g' | base64 -d | gpg -d
+    vault="jA0EBwMCFUQj1VVW7J1g0sAJAXqJhVXtHUlbrWOTyzR83ucdn7Wft98tMnDAFbiM8jXaFSHJN4MPUePz9G6NjDNKP3obSCyZvr/r89Gi2tjDaOMRHCUTTuikY0wJmeRhWZmEBaax0dAhVmv+aVvsgro7p6yklMcEzvad5u3T/2lYASRPLHTh83JoBQMWZVWv61MoJMcwzyXP+0+2hYw9mXnr1Ss1LKWOGOwkuL6PZRtSMa7eXmHX1l8nwSWyQG3kBnB0kxSAlaDtDbjpwv+U7v9MVDBfZ5PKFaFa"
+    if [ -z "$2" ]; then
+        echo $vault | base64 -d | gpg -d
     else
-        echo $vault | sed -e 's/ /\n/g' | base64 -d | gpg -d | grep "$2::::" | sed -e 's/::::/ /g'
+        echo $vault | base64 -d | gpg -d | grep "^$2::::" | sed -e 's/::::/ /g'
     fi
 fi
 
 if [ $1 = ":vault" ]; then
-    gpg -c | base64
+    gpg -c | base64 -w 0
 fi
