@@ -1,0 +1,5 @@
+#!/bin/sh
+
+set -x
+sudo service nginx restart
+$(dirname $0)/shadowsocks -c repos/wizawu.com/conf/templates/shadowsocks.json
