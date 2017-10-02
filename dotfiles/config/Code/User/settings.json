@@ -1,6 +1,10 @@
 {
+    "beautify.options": {
+        "preserve_newlines": true,
+        "selector_separator_newline": false
+    },
     "editor.fontFamily": "'Courier Prime Code'",
-    "editor.fontSize": 17,
+    "editor.fontSize": 16,
     "editor.fontWeight": "300",
     "editor.quickSuggestions": {
         "comments": true,
@@ -19,11 +23,9 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "git.enabled": false,
-    "typescript.check.tscVersion": false,
     "vim.disableAnnoyingNeovimMessage": true,
     "vim.useCtrlKeys": true,
     "vim.useSystemClipboard": false,
     "window.openFoldersInNewWindow": "on",
-    "workbench.editor.enablePreview": false,
-    "python.linting.pylintPath": "/usr/local/bin/pylint"
+    "workbench.editor.enablePreview": false
 }
