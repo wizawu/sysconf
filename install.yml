@@ -37,6 +37,7 @@
     - colortail
     - dbus
     - debootstrap
+    - default-jdk
     - di
     - dstat
     - entr
