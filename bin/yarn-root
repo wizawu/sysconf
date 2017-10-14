@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -xe
+
+command=$1
+shift
+
+cd /tmp
+sudo rm -f package.json
+sudo yarn $command --modules-folder $(npm root -g) $@
