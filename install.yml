@@ -131,6 +131,7 @@
     - lsusb
     - perf
     - pmap
+    - trap
 
   - name: add user to sudoers
     template: src=templates/sudoers dest=/etc/sudoers.d/{{user}} mode=0440
