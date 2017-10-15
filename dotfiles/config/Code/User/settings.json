@@ -4,8 +4,8 @@
         "selector_separator_newline": false
     },
     "editor.fontFamily": "'Courier Prime Code'",
-    "editor.fontSize": 16,
-    "editor.fontWeight": "300",
+    "editor.fontSize": 17,
+    "editor.lineHeight": 24,
     "editor.quickSuggestions": {
         "comments": true,
         "other": true,
@@ -15,6 +15,7 @@
         80,
         120
     ],
+    "explorer.openEditors.visible": 0,
     "files.autoSave": "off",
     "files.exclude": {
         "node_modules/": true,
