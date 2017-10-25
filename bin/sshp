@@ -1,5 +1,12 @@
 #!/bin/sh
 
+if [ "$1" = "-t" ]; then
+    proxy=$(echo $2 | awk '{print $1":"$2}')
+    ProxyCommand="ncat --proxy-type socks5 --proxy $proxy %h %p"
+    ssh -o ProxyCommand="$ProxyCommand" -o ConnectTimeout=2 root@wizawu.com echo $proxy
+    exit
+fi
+
 if [ "$1" = "-n" ]; then
     ProxyCommand="ncat --proxy-type socks5 --proxy $2 %h %p"
     shift 2
