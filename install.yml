@@ -33,6 +33,7 @@
     - awesome
     - awesome-extra
     - axel
+    - clang-format
     - cmake
     - colortail
     - dbus
