@@ -3,9 +3,9 @@
         "preserve_newlines": true,
         "selector_separator_newline": false
     },
-    "editor.fontFamily": "'Courier Prime Code'",
-    "editor.fontSize": 17,
-    "editor.lineHeight": 24,
+    "editor.fontFamily": "Courier Prime Code",
+    "editor.fontSize": 16,
+    "editor.lineHeight": 22,
     "editor.quickSuggestions": {
         "comments": true,
         "other": true,
