@@ -52,6 +52,7 @@
     - fping
     - g++
     - gcc-doc
+    - google-chrome-stable
     - google-perftools
     - gtk3-engines-xfce
     - gufw
