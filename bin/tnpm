@@ -1,3 +1,9 @@
 #!/bin/sh
 
-NPM_CONFIG_REGISTRY=http://registry.npm.taobao.org npm $@
+set -x
+
+if [ "$1" = -g ]; then
+    sudo npm --registry=http://registry.npm.taobao.org $@
+else
+    npm --registry=http://registry.npm.taobao.org $@
+fi
