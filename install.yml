@@ -83,7 +83,6 @@
     - ntpdate
     - p7zip-full
     - parallel
-    - pcmanfm
     - pm-utils
     - pppoeconf
     - psmisc
@@ -100,6 +99,7 @@
     - sysstat
     - systemd-sysv
     - tcpdump
+    - thunar
     - time
     - tmux
     - tree
