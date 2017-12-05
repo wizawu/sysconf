@@ -18,13 +18,12 @@
     "explorer.openEditors.visible": 0,
     "files.autoSave": "off",
     "files.exclude": {
-        "node_modules/": true,
+        "**/node_modules/": true,
         "**/*.retry": true
     },
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "git.enabled": false,
-    "vim.disableAnnoyingNeovimMessage": true,
     "vim.useCtrlKeys": true,
     "vim.useSystemClipboard": false,
     "window.openFoldersInNewWindow": "on",
