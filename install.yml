@@ -29,6 +29,7 @@
     - alsa-oss
     - alsa-tools
     - alsa-utils
+    - apache2-utils
     - autossh
     - awesome
     - awesome-extra
@@ -113,6 +114,7 @@
     - vsftpd
     - wpasupplicant
     - wput
+    - wrk
     - x11-xkb-utils
     - x11-xserver-utils
     - xclip
