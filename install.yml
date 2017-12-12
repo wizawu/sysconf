@@ -155,14 +155,12 @@
     - {src: "dante.vim",        dest: "/usr/share/vim/vim74/colors/dante.vim"}
     - {src: "nginx.conf",       dest: "/etc/nginx/modules-enabled/nginx.conf"}
     - {src: "rc.lua-3.5",       dest: "/etc/xdg/awesome/rc.lua"}
-    - {src: "wlan0",            dest: "/etc/network/interfaces.d/wlan0"}
 
   - name: create directories
     file: dest=/home/{{user}}/{{item}} state=directory recurse=yes owner={{user}}
     with_items:
     - .config/Code/User
     - .config/fontconfig
-    - .vim/bundle
 
   - name: create symbolic link to dotfiles
     file: src=/home/{{user}}/.wizacfg/dotfiles/{{item}} dest=/home/{{user}}/.{{item}} state=link force=yes owner={{user}}
@@ -177,14 +175,6 @@
     - tmux.conf
     - vimrc
     - xinitrc
-
-  - name: clone vundle
-    git:
-      repo: git@github.com:VundleVim/Vundle.vim.git
-      dest: /home/{{user}}/.vim/bundle/Vundle.vim
-      clone: yes
-      force: yes
-      depth: 1
 
   - name: remove xfce panel and desktop
     apt: name={{item}} state=absent
