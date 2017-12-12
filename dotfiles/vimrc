@@ -1,31 +1,22 @@
-set number
 set autoindent
-set smartindent
-set expandtab
-set smarttab
-set shiftwidth=4
-set tabstop=4
 set backspace=2
 set encoding=utf-8
+set expandtab
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+set number
+set shiftwidth=4
+set smartindent
+set smarttab
+set tabstop=4
 
-inoremap <C-e> <End>
-inoremap <C-f> <C-x><C-o>
-nnoremap te :tabedit
-nnoremap <A-Left> :tabp<CR>
-nnoremap <A-Right> :tabn<CR>
-
-autocmd VimEnter * hi MatchParen ctermbg=darkblue
-autocmd BufWritePre * %s/\s\+$//e
 colorscheme dante
-
-set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-call vundle#end()
-
 filetype indent on
 filetype plugin on
 syntax on
+
+autocmd BufWritePre * %s/\s\+$//e
+autocmd VimEnter * hi MatchParen ctermbg=darkblue
+
+nnoremap <A-Left> :tabp<CR>
+nnoremap <A-Right> :tabn<CR>
+nnoremap te :tabedit
