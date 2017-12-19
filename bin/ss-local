@@ -1,0 +1,10 @@
+#!/bin/sh
+
+config=~/repos/wizawu.com/templates/shadowsocks.json
+local_port=$(cat $config | object-path-cli local_port)
+method=$(cat $config | object-path-cli method)
+password=$(cat $config | object-path-cli password)
+server_port=$(cat $config | object-path-cli server_port)
+
+set -x
+shadowsocks -k=$password -l=$local_port -m=$method -p=$server_port -s=meepo.wizawu.com
