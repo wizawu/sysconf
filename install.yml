@@ -153,7 +153,6 @@
     file: src=/home/{{user}}/.wizacfg/etc/{{item.src}} dest={{item.dest}} state=link force=yes
     with_items:
     - {src: "dante.vim",        dest: "/usr/share/vim/vim74/colors/dante.vim"}
-    - {src: "nginx.conf",       dest: "/etc/nginx/modules-enabled/nginx.conf"}
     - {src: "rc.lua-3.5",       dest: "/etc/xdg/awesome/rc.lua"}
 
   - name: create directories
