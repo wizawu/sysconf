@@ -5,7 +5,7 @@
     },
     "editor.fontFamily": "Courier Prime Code",
     "editor.fontSize": 16,
-    "editor.lineHeight": 22,
+    "editor.lineHeight": 24,
     "editor.quickSuggestions": {
         "comments": true,
         "other": true,
