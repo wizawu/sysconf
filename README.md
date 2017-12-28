@@ -1,16 +1,33 @@
-Install `firmware-iwlwifi`, `wpasupplicant` and their dependencies manually.
-
 ```
-echo "deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main" > /etc/apt/sources.list.d/ansible.list
+# install wireless driver
+wget http://mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware/linux-firmware_1.164_all.deb
+dpkg -i linux-firmware*.deb
+modprobe -r ath10k_pci
+modprobe ath10k_pci
 
+# install wpasupplicant
+wget http://ftp.cn.debian.org/debian/pool/main/p/pcsc-lite/libpcsclite1_1.8.20-1_amd64.deb
+wget http://ftp.cn.debian.org/debian/pool/main/libn/libnl3/libnl-genl-3-200_3.2.27-2_amd64.deb
+wget http://ftp.cn.debian.org/debian/pool/main/libn/libnl3/libnl-3-200_3.2.27-2_amd64.deb
+wget http://ftp.cn.debian.org/debian/pool/main/w/wpa/wpasupplicant_2.4-1+deb9u1_amd64.deb
+dpkg -i *.deb
+
+# edit /etc/network/interfaces
+auto lo
+iface lo inet loopback
+iface wlp1s0 inet dhcp
+    wpa-ssid ssid
+    wpa-psk password
+
+# install apt packages
+echo "deb http://mirrors.ustc.edu.cn/debian/ sid main contrib non-free" > /etc/apt/sources.list
+echo "deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main" >> /etc/apt/sources.list
 apt-get update
-apt-get install -y git aptitude ansible openssh-server openssh-client
+apt-get install -y ansible aptitude git openssh-client openssh-server tmux
 
-git clone -b master --depth 1 https://github.com/wizawu/wizacfg.git
-
-# For ansible ssh
+# run ansible playbook
 ssh-keygen -t rsa
-cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
-
+cp /root/.ssh/id_rsa.pub /root/.ssh/authorized_keys
+git clone -b master --depth 1 https://github.com/wizawu/wizacfg.git
 ansible-playbook install.yml -v -i inventory -e user=wiza
 ```

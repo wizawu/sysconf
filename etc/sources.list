@@ -1,5 +1,5 @@
 deb http://mirrors.ustc.edu.cn/debian/ sid main contrib non-free
-deb-src http://mirrors.ustc.edu.cn/debian/ sid main contrib non-free
+deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main
 
 deb http://dl.google.com/linux/chrome/deb/ stable main
 deb http://repo.percona.com/apt jessie main
