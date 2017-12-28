@@ -1,7 +1,7 @@
 deb http://mirrors.ustc.edu.cn/debian/ sid main contrib non-free
-deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main
+deb-src http://mirrors.ustc.edu.cn/debian/ sid main contrib non-free
 
-deb http://dl.google.com/linux/chrome/deb/ stable main
-deb http://repo.percona.com/apt jessie main
-deb https://deb.nodesource.com/node_8.x sid main
-deb https://packages.microsoft.com/repos/vscode stable main
+# deb http://dl.google.com/linux/chrome/deb/ stable main
+# deb http://repo.percona.com/apt jessie main
+# deb https://deb.nodesource.com/node_8.x sid main
+# deb https://packages.microsoft.com/repos/vscode stable main
