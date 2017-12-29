@@ -20,14 +20,15 @@ iface wlp1s0 inet dhcp
     wpa-psk password
 
 # install apt packages
-echo "deb http://mirrors.ustc.edu.cn/debian/ sid main contrib non-free" > /etc/apt/sources.list
-echo "deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main" >> /etc/apt/sources.list
-apt-get update
-apt-get install -y ansible aptitude git openssh-client openssh-server tmux
+echo "deb http://mirrors.ustc.edu.cn/debian/ stretch main contrib non-free" > /etc/apt/sources.list
+apt update
+apt install -y ansible git openssh-client openssh-server tmux
 
 # run ansible playbook
 ssh-keygen -t rsa
 cp /root/.ssh/id_rsa.pub /root/.ssh/authorized_keys
 git clone -b master --depth 1 https://github.com/wizawu/wizacfg.git
-ansible-playbook install.yml -v -i inventory -e user=wiza
+ansible-playbook install.yml -v -i inventory -e user=wizawu
+
+apt upgrade
 ```

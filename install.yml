@@ -15,12 +15,6 @@
     - zh_CN.GBK
     - zh_CN.UTF-8
 
-  - name: copy sources.list
-    template: src=sources.list dest=/etc/apt/ mode=0644
-
-  - name: apt-get update and upgrade
-    apt: update_cache=yes upgrade=safe
-
   - name: install packages
     apt: name={{item}} state=present
     with_items:
@@ -125,7 +119,7 @@
     - xsel
 
   - name: check built-in tools
-    shell: which {{item}} || echo "missing" {{item}}
+    shell: which {{item}}
     with_items:
     - getconf
     - ipcs
