@@ -15,11 +15,10 @@
     - zh_CN.GBK
     - zh_CN.UTF-8
 
-  - name: install packages
+  - name: install apt packages
     apt: name={{item}} state=present
     with_items:
     - ack-grep
-    - alsa-base
     - alsa-oss
     - alsa-tools
     - alsa-utils
@@ -65,6 +64,7 @@
     - linux-tools
     - lm-sensors
     - lshw
+    - lsof
     - make
     - manpages-dev
     - mdadm
@@ -119,13 +119,12 @@
     - xsel
 
   - name: check built-in tools
-    shell: which {{item}}
+    shell: command -v {{item}}
     with_items:
     - getconf
     - ipcs
     - losetup
     - lscpu
-    - lsof
     - lsusb
     - perf
     - pmap
