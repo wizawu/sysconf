@@ -15,8 +15,20 @@
     - zh_CN.GBK
     - zh_CN.UTF-8
 
+  - name: copy sources.list
+    template: src=sources.list dest=/etc/apt/
+
+  - name: add apt keys
+    apt_key: keyserver=keyserver.ubuntu.com id={{item}}
+    with_items:
+    - 1397BC53640DB551
+    - 1655A0AB68576280
+    - 7638D0442B90D010
+    - 9334A25F8507EFA5
+    - EB3E94ADBE1229CF
+
   - name: install apt packages
-    apt: name={{item}} state=present
+    apt: name={{item}} state=present update_cache=yes
     with_items:
     - ack-grep
     - alsa-oss
@@ -29,6 +41,7 @@
     - axel
     - clang-format
     - cmake
+    - code
     - colortail
     - dbus
     - debootstrap
@@ -36,9 +49,6 @@
     - di
     - dstat
     - entr
-    - erlang-base-hipe
-    - erlang-inets
-    - erlang-xmerl
     - fcitx
     - fcitx-googlepinyin
     - fio
@@ -46,6 +56,7 @@
     - fping
     - g++
     - gcc-doc
+    - google-chrome-stable
     - google-perftools
     - gtk3-engines-xfce
     - gufw
@@ -73,6 +84,7 @@
     - mycli
     - nginx
     - nmap
+    - nodejs
     - ntfs-3g
     - ntpdate
     - p7zip-full
