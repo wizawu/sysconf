@@ -20,9 +20,9 @@ iface wlp1s0 inet dhcp
     wpa-psk password
 
 # install apt packages
-echo "deb http://mirrors.ustc.edu.cn/debian/ stretch main" > /etc/apt/sources.list
+echo "deb http://mirrors.ustc.edu.cn/debian/ buster main" > /etc/apt/sources.list
 apt update
-apt install -y ansible git openssh-client openssh-server tmux
+apt install -y ansible apt-transport-https git openssh-client openssh-server tmux
 
 # run ansible playbook
 ssh-keygen -t rsa
