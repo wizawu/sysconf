@@ -6,6 +6,11 @@
   - name: check user
     user: name={{user}} state=present group=root shell=/bin/bash
 
+  - name: clone repo
+    git: repo=https://github.com/wizawu/wizacfg.git dest=/home/{{user}}/.wizacfg
+    become: true
+    become_user: "{{user}}"
+
   - name: locale-gen
     locale_gen: name={{item}} state=present
     with_items:
@@ -15,8 +20,10 @@
     - zh_CN.GBK
     - zh_CN.UTF-8
 
-  - name: copy sources.list
-    template: src=sources.list dest=/etc/apt/
+  - name: create symbolic link to apt sources.list
+    file: src=/home/{{user}}/.wizacfg/{{item}} dest=/{{item}} state=link force=yes
+    with_items:
+    - etc/apt/sources.list
 
   - name: add apt keys
     apt_key: keyserver=keyserver.ubuntu.com id={{item}}
@@ -74,6 +81,7 @@
     - linux-image-amd64
     - linux-tools
     - lm-sensors
+    - locate
     - lshw
     - lsof
     - make
@@ -148,16 +156,10 @@
   - name: download pt-summary
     get_url: url=http://percona.com/get/pt-summary dest=/usr/bin/pt-summary mode=0755
 
-  - name: clone repo
-    git: repo=https://github.com/wizawu/wizacfg.git dest=/home/{{user}}/.wizacfg
-    become: true
-    become_user: "{{user}}"
-
   - name: create directories
     file: dest=/home/{{user}}/{{item}} state=directory recurse=yes owner={{user}}
     with_items:
     - .config/Code/User
-    - .config/awesome
     - .config/fontconfig
     - .vim/colors
 
@@ -168,7 +170,6 @@
     - bashrc
     - config/Code/User/keybindings.json
     - config/Code/User/settings.json
-    - config/awesome/rc.lua
     - config/fontconfig/fonts.conf
     - dircolors
     - gitconfig
@@ -176,6 +177,11 @@
     - vimrc
     - vim/colors/dante.vim
     - xinitrc
+
+  - name: create symbolic link to awesome rc.lua
+    file: src=/home/{{user}}/.wizacfg/{{item}} dest=/{{item}} state=link force=yes
+    with_items:
+    - etc/xdg/awesome/rc.lua
 
   - name: remove xfce panel and desktop
     apt: name={{item}} state=absent
