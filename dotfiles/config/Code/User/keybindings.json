@@ -25,7 +25,7 @@
     {
         "key": "shift+alt+f",
         "command": "editor.action.formatDocument",
-        "when": "editorTextFocus && vim.useCtrlKeys && !inDebugRepl"
+        "when": "editorTextFocus && !editorReadonly"
     },
     {
         "key": "ctrl+shift+o",
