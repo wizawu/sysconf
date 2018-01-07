@@ -46,6 +46,7 @@
     - awesome
     - awesome-extra
     - axel
+    - cifs-utils
     - clang-format
     - cmake
     - code
@@ -183,9 +184,10 @@
     with_items:
     - etc/xdg/awesome/rc.lua
 
-  - name: remove xfce panel and desktop
+  - name: remove apt packages
     apt: name={{item}} state=absent
     with_items:
+    - lightdm
     - xfce4-panel
     - xfdesktop4
     - xscreensaver
