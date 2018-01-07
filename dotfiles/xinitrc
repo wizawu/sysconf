@@ -12,10 +12,11 @@ xset -dpms
 xset s noblank
 xset s off
 
-startxfce4 &
+mate-session &
 
 (sleep 3 && fcitx -d) &
 (sleep 3 && hsetroot -full /usr/share/awesome/themes/default/background.png) &
+(sleep 3 && pkill mate-session) &
 (sleep 3 && synclient TapButton2=3) &
 
 awesome
