@@ -66,7 +66,6 @@
     - gcc-doc
     - google-chrome-stable
     - google-perftools
-    - gtk3-engines-xfce
     - gufw
     - hdparm
     - hsetroot
@@ -87,6 +86,7 @@
     - lsof
     - make
     - manpages-dev
+    - mate-desktop-environment-core
     - mdadm
     - mtr
     - mupdf
@@ -114,7 +114,6 @@
     - sysstat
     - systemd-sysv
     - tcpdump
-    - thunar
     - time
     - tmux
     - tree
@@ -133,9 +132,6 @@
     - x11-xserver-utils
     - xclip
     - xdg-user-dirs
-    - xfce4-screenshooter
-    - xfce4-session
-    - xfce4-terminal
     - xorg
     - xsel
 
@@ -188,6 +184,4 @@
     apt: name={{item}} state=absent
     with_items:
     - lightdm
-    - xfce4-panel
-    - xfdesktop4
     - xscreensaver
