@@ -1,3 +1,7 @@
+-- @wizawu --
+local vicious = require("vicious")
+-- @end --
+
 -- Standard awesome library
 local gears = require("gears")
 local awful = require("awful")
@@ -205,6 +209,20 @@ awful.screen.connect_for_each_screen(function(s)
     -- Create the wibox
     s.mywibox = awful.wibar({ position = "top", screen = s })
 
+    -- @wizawu --
+    cpuwidget = wibox.widget.textbox()
+    vicious.register(cpuwidget, vicious.widgets.cpu, " | CPU $1% ", 1)
+
+    cputempwidget = wibox.widget.textbox()
+    vicious.register(cputempwidget, vicious.widgets.thermal, "$1°C | ", 1, "thermal_zone0")
+
+    memwidget = wibox.widget.textbox()
+    vicious.register(memwidget, vicious.widgets.mem, "MEM $1% ($2MiB/$3MiB) |", 1)
+
+    batwidget = wibox.widget.textbox()
+    vicious.register(batwidget, vicious.widgets.bat, " BAT $2% |", 1, "BAT0")
+    -- @end --
+
     -- Add widgets to the wibox
     s.mywibox:setup {
         layout = wibox.layout.align.horizontal,
@@ -219,6 +237,10 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal,
             mykeyboardlayout,
             wibox.widget.systray(),
+            cpuwidget,
+            cputempwidget,
+            memwidget,
+            batwidget,
             mytextclock,
             s.mylayoutbox,
         },
