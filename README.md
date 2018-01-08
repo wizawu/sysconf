@@ -30,7 +30,4 @@ cp /root/.ssh/id_rsa.pub /root/.ssh/authorized_keys
 ssh -o 'StrictHostKeyChecking=no' root@127.0.0.1 echo ok
 git clone -b master --depth 1 https://github.com/wizawu/wizacfg.git
 ansible-playbook install.yml -i inventory -e user=wizawu
-
-# replace gpg 2.x with 1.x
-dpkg -i files/deb/gnupg/*.deb
 ```
