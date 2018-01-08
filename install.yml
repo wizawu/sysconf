@@ -67,6 +67,7 @@
     - gcc-doc
     - google-chrome-stable
     - google-perftools
+    - gradle
     - gufw
     - hdparm
     - hsetroot
@@ -88,6 +89,7 @@
     - make
     - manpages-dev
     - mate-desktop-environment-core
+    - mate-utils
     - mdadm
     - mtr
     - mupdf
@@ -102,6 +104,8 @@
     - pm-utils
     - pppoeconf
     - psmisc
+    - python3.6
+    - redis-server
     - rinetd
     - rlwrap
     - rsync
@@ -112,6 +116,7 @@
     - sshpass
     - strace
     - sudo
+    - supervisor
     - sysstat
     - systemd-sysv
     - tcpdump
