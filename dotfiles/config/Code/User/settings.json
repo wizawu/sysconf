@@ -24,6 +24,7 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "git.enabled": false,
+    "python.linting.pylintPath": "/usr/local/bin/pylint",
     "vim.useCtrlKeys": true,
     "vim.useSystemClipboard": false,
     "window.openFoldersInNewWindow": "on",
