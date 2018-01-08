@@ -1,0 +1,3 @@
+#!/bin/sh
+
+ansible -i $1 --list-hosts $2
