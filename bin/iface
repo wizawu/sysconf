@@ -83,12 +83,12 @@ fi
 if [ $1 = vault ]; then
     vault="jA0EBwMCFUQj1VVW7J1g0sAJAXqJhVXtHUlbrWOTyzR83ucdn7Wft98tMnDAFbiM8jXaFSHJN4MPUePz9G6NjDNKP3obSCyZvr/r89Gi2tjDaOMRHCUTTuikY0wJmeRhWZmEBaax0dAhVmv+aVvsgro7p6yklMcEzvad5u3T/2lYASRPLHTh83JoBQMWZVWv61MoJMcwzyXP+0+2hYw9mXnr1Ss1LKWOGOwkuL6PZRtSMa7eXmHX1l8nwSWyQG3kBnB0kxSAlaDtDbjpwv+U7v9MVDBfZ5PKFaFa"
     if [ -z "$2" ]; then
-        echo $vault | base64 -d | gpg -d
+        echo $vault | base64 -d | gnupg -d
     else
-        echo $vault | base64 -d | gpg -d | grep "^$2::::" | sed -e 's/::::/ /g'
+        echo $vault | base64 -d | gnupg -d | grep "^$2::::" | sed -e 's/::::/ /g'
     fi
 fi
 
 if [ $1 = ":vault" ]; then
-    gpg -c | base64 -w 0
+    gnupg -c | base64 -w 0
 fi
