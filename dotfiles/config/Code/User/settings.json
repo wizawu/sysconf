@@ -24,6 +24,9 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "git.enabled": false,
+    "python.autoComplete.extraPaths": [
+        "${env:HOME}/.local/lib/python3.6/site-packages"
+    ],
     "python.linting.pylintPath": "/usr/local/bin/pylint",
     "vim.useCtrlKeys": true,
     "vim.useSystemClipboard": false,
