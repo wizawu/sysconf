@@ -59,6 +59,7 @@
     - entr
     - fcitx
     - fcitx-googlepinyin
+    - fcitx-ui-light
     - fio
     - fiu-utils
     - fping
