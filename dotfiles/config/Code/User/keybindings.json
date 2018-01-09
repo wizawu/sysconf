@@ -10,7 +10,7 @@
     {
         "key": "ctrl+a",
         "command": "editor.action.selectAll",
-        "when": "editorTextFocus && vim.useCtrlKeys && !inDebugRepl"
+        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+shift+c",
