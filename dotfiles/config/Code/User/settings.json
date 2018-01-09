@@ -27,6 +27,9 @@
     "python.autoComplete.extraPaths": [
         "${env:HOME}/.local/lib/python3.6/site-packages"
     ],
+    "python.linting.pylintArgs": [
+        "--errors-only"
+    ],
     "python.linting.pylintPath": "/usr/local/bin/pylint",
     "vim.useCtrlKeys": true,
     "vim.useSystemClipboard": false,
