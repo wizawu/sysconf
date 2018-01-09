@@ -55,6 +55,7 @@
     - debootstrap
     - default-jdk
     - di
+    - dnsutils
     - dstat
     - entr
     - fcitx
