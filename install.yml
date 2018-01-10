@@ -57,6 +57,7 @@
     - di
     - dnsutils
     - dstat
+    - eom
     - entr
     - fcitx
     - fcitx-googlepinyin
@@ -77,8 +78,6 @@
     - httrack
     - iftop
     - iotop
-    - krita
-    - leafpad
     - lftp
     - linux-headers-amd64
     - linux-image-amd64
@@ -95,6 +94,7 @@
     - mtr
     - mupdf
     - mycli
+    - netcat
     - nginx
     - nmap
     - nodejs
@@ -102,9 +102,11 @@
     - ntpdate
     - p7zip-full
     - parallel
+    - pluma
     - pm-utils
     - pppoeconf
     - psmisc
+    - pulseaudio
     - python3.6
     - redis-server
     - rinetd
