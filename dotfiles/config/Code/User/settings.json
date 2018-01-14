@@ -18,8 +18,9 @@
     "explorer.openEditors.visible": 0,
     "files.autoSave": "off",
     "files.exclude": {
-        "**/node_modules/": true,
-        "**/*.retry": true
+        "**/*.retry": true,
+        "**/__pycache__": true,
+        "**/node_modules/": true
     },
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
@@ -31,6 +32,7 @@
         "--errors-only"
     ],
     "python.linting.pylintPath": "/usr/local/bin/pylint",
+    "python.pythonPath": "/usr/bin/python3.6",
     "vim.useCtrlKeys": true,
     "vim.useSystemClipboard": false,
     "window.openFoldersInNewWindow": "on",
