@@ -117,6 +117,7 @@
     - smplayer
     - ssh
     - sshpass
+    - start-pulseaudio-x11
     - strace
     - sudo
     - supervisor
