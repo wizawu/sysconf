@@ -5,6 +5,7 @@ local_port=$(cat $config | object-path-cli local_port)
 method=$(cat $config | object-path-cli method)
 password=$(cat $config | object-path-cli password)
 server_port=$(cat $config | object-path-cli server_port)
+server=$(test -n "$1" && echo $1 || echo meepo.wizawu.com)
 
 set -x
-shadowsocks -k=$password -l=$local_port -m=$method -p=$server_port -s=meepo.wizawu.com
+shadowsocks -k=$password -l=$local_port -m=$method -p=${server_port} -s=$server
