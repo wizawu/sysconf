@@ -116,6 +116,7 @@
     - smbclient
     - smplayer
     - ssh
+    - sshfs
     - sshpass
     - start-pulseaudio-x11
     - strace
