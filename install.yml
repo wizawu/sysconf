@@ -45,6 +45,7 @@
     - autossh
     - awesome
     - awesome-extra
+    - caja
     - cifs-utils
     - clang-format
     - cmake
@@ -56,7 +57,6 @@
     - di
     - dnsutils
     - dstat
-    - eom
     - entr
     - fcitx
     - fcitx-googlepinyin
