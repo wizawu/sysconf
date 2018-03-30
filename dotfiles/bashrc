@@ -19,9 +19,6 @@ alias gcc='gcc -std=c11 -fms-extensions'
 alias g++='g++ -std=c++11'
 alias cmemchk='valgrind --tool=memcheck --leak-check=full'
 alias clangfmt='clang-format -style="{IndentWidth: 2, ColumnLimit: 120}"'
-alias finder=caja
-alias notepad=pluma
-alias preview=eom
 
 # git
 git config --global color.ui true
