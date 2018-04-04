@@ -28,11 +28,12 @@
   - name: add apt keys
     apt_key: keyserver=keyserver.ubuntu.com id={{item}}
     with_items:
-    - 1397BC53640DB551
-    - 1655A0AB68576280
-    - 7638D0442B90D010
-    - 9334A25F8507EFA5
-    - EB3E94ADBE1229CF
+    - 1397BC53640DB551      # chrome
+    - 1655A0AB68576280      # node
+    - 72A7496B45499429      # groonga
+    - 7638D0442B90D010      # debian
+    - 9334A25F8507EFA5      # percona
+    - EB3E94ADBE1229CF      # vscode
 
   - name: install apt packages
     apt: name={{item}} state=present update_cache=yes
