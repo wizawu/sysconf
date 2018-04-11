@@ -5,7 +5,7 @@
     },
     "editor.fontFamily": "Courier Prime Code",
     "editor.fontSize": 15,
-    "editor.lineHeight": 22,
+    "editor.lineHeight": 25,
     "editor.quickSuggestions": {
         "comments": true,
         "other": true,
@@ -37,5 +37,6 @@
     "vim.useSystemClipboard": false,
     "window.openFoldersInNewWindow": "on",
     "workbench.editor.enablePreview": false,
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Monokai Dimmed"
 }
