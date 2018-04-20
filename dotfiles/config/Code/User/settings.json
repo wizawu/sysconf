@@ -3,7 +3,7 @@
         "preserve_newlines": true,
         "selector_separator_newline": false
     },
-    "editor.fontFamily": "Courier Prime Code",
+    "editor.fontFamily": "BPMono",
     "editor.fontSize": 15,
     "editor.lineHeight": 25,
     "editor.quickSuggestions": {
@@ -25,14 +25,6 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "git.enabled": false,
-    "python.autoComplete.extraPaths": [
-        "${env:HOME}/.local/lib/python3.6/site-packages"
-    ],
-    "python.linting.pylintArgs": [
-        "--errors-only"
-    ],
-    "python.linting.pylintPath": "/usr/local/bin/pylint",
-    "python.pythonPath": "/usr/bin/python3.6",
     "vim.useCtrlKeys": true,
     "vim.useSystemClipboard": false,
     "window.openFoldersInNewWindow": "on",
