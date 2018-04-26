@@ -123,6 +123,7 @@
     - strace
     - sudo
     - supervisor
+    - sysbench
     - sysstat
     - systemd-sysv
     - tcpdump
@@ -165,6 +166,12 @@
 
   - name: download pt-summary
     get_url: url=http://percona.com/get/pt-summary dest=/usr/bin/pt-summary mode=0755
+
+  - name: install phoronix-test-suite
+    shell: "{{item}}"
+    with_items:
+    - "bin/axel http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.8.0_all.deb -o /tmp/phoronix-test-suite.deb"
+    - "dpkg -i /tmp/phoronix-test-suite.deb"
 
   - name: create directories
     file: dest=/home/{{user}}/{{item}} state=directory recurse=yes owner={{user}}
