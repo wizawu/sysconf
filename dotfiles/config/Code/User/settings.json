@@ -3,8 +3,8 @@
         "preserve_newlines": true,
         "selector_separator_newline": false
     },
-    "editor.fontFamily": "BPMono",
-    "editor.fontSize": 15,
+    "editor.fontFamily": "Courier Prime Code",
+    "editor.fontSize": 16,
     "editor.lineHeight": 25,
     "editor.quickSuggestions": {
         "comments": true,
