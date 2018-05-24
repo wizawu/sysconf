@@ -65,6 +65,7 @@
     - fio
     - firefox
     - fiu-utils
+    - fontforge
     - fping
     - g++
     - gcc-doc
@@ -108,7 +109,7 @@
     - pppoeconf
     - psmisc
     - pulseaudio
-    - python3.6
+    - qbittorrent
     - redis-server
     - rinetd
     - rlwrap
