@@ -2,7 +2,7 @@
 
 const action = process.argv[2]
 if (!action) {
-    console.error(`Usage: rmbat "name = name.replace(' ', '-')"`)
+    console.error(`Usage: rnbat "name = name.replace(' ', '-')"`)
     process.exit(1)
 }
 
@@ -10,5 +10,6 @@ const fs = require("fs")
 fs.readdirSync(".").forEach(name => {
     let oldName = name
     eval(action)
+    if (name === oldName) return
     fs.rename(oldName, name, () => console.log(oldName + " -> " + name))
 })
