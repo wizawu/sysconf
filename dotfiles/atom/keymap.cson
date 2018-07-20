@@ -1,0 +1,15 @@
+'atom-text-editor:not([mini])':
+  'shift-alt-s': 'sort-lines:sort'
+
+'atom-text-editor.vim-mode-plus:not(.insert-mode)':
+  'alt-left': 'vim-mode-plus:previous-tab'
+  'alt-right': 'vim-mode-plus:next-tab'
+  ': w enter': 'core:save'
+  ': w a enter': 'window:save-all'
+  ': q enter': 'core:close'
+
+'.platform-linux atom-text-editor:not([mini]).typescript-editor':
+  'shift-alt-f': 'typescript:format-code'
+
+'.platform-linux atom-text-editor':
+  'shift-alt-r': 'find-and-replace:show'
