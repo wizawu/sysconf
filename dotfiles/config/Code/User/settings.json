@@ -4,8 +4,8 @@
         "selector_separator_newline": false
     },
     "editor.fontFamily": "Courier Prime Code",
-    "editor.fontSize": 16,
-    "editor.lineHeight": 25,
+    "editor.fontSize": 13,
+    "editor.lineHeight": 22,
     "editor.quickSuggestions": {
         "comments": true,
         "other": true,
@@ -30,5 +30,12 @@
     "window.openFoldersInNewWindow": "on",
     "workbench.editor.enablePreview": false,
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "Popping and Locking"
+    "workbench.colorTheme": "Popping and Locking",
+    "javascript.suggestionActions.enabled": false,
+    "javascript.validate.enable": false,
+    "typescript.tsc.autoDetect": "off",
+    "typescript.suggestionActions.enabled": true,
+    "typescript.validate.enable": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.tsserver.log": "verbose"
 }
