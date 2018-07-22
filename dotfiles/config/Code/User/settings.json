@@ -30,5 +30,11 @@
     "window.openFoldersInNewWindow": "on",
     "workbench.editor.enablePreview": false,
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "Atom Material Theme"
+    "workbench.colorTheme": "Atom Material Theme",
+    "packages": [
+        "Atom Material Theme",
+        "Beautify css/sass/scss/less",
+        "Sort",
+        "Vim"
+    ]
 }
