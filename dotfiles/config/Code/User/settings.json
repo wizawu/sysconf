@@ -30,12 +30,5 @@
     "window.openFoldersInNewWindow": "on",
     "workbench.editor.enablePreview": false,
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "Popping and Locking",
-    "javascript.suggestionActions.enabled": false,
-    "javascript.validate.enable": false,
-    "typescript.tsc.autoDetect": "off",
-    "typescript.suggestionActions.enabled": true,
-    "typescript.validate.enable": false,
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "typescript.tsserver.log": "verbose"
+    "workbench.colorTheme": "Atom Material Theme"
 }
