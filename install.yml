@@ -109,6 +109,7 @@
     - pppoeconf
     - psmisc
     - pulseaudio
+    - python3.7
     - qbittorrent
     - redis-server
     - rinetd
@@ -149,6 +150,7 @@
     - xdg-user-dirs
     - xorg
     - xsel
+    - yapf
 
   - name: check built-in tools
     shell: command -v {{item}}
