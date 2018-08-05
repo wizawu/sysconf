@@ -25,16 +25,21 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "git.enabled": false,
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder}/lib"
+    ],
+    "python.formatting.provider": "yapf",
+    "python.formatting.yapfPath": "/usr/bin/yapf",
+    "python.linting.pylintArgs": [
+        "--disable-msg=E0401",
+        "--errors-only"
+    ],
+    "python.linting.pylintPath": "/usr/local/bin/pylint",
+    "python.pythonPath": "/usr/bin/python3.6",
     "vim.useCtrlKeys": true,
     "vim.useSystemClipboard": false,
     "window.openFoldersInNewWindow": "on",
     "workbench.editor.enablePreview": false,
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "Atom Material Theme",
-    "packages": [
-        "Atom Material Theme",
-        "Beautify css/sass/scss/less",
-        "Sort",
-        "Vim"
-    ]
+    "workbench.colorTheme": "Atom Material Theme"
 }
