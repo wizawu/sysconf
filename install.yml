@@ -33,7 +33,6 @@
     - 1397BC53640DB551      # chrome
     - 7638D0442B90D010      # debian
     - EB3E94ADBE1229CF      # vscode
-    - 9334A25F8507EFA5      # percona
 
   - name: install apt packages
     apt: name={{item}} state=present update_cache=yes
@@ -173,8 +172,8 @@
   - name: install phoronix-test-suite
     shell: "{{item}}"
     with_items:
-    - "bin/axel http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.8.0_all.deb -o /tmp/phoronix-test-suite.deb"
-    - "dpkg -i /tmp/phoronix-test-suite.deb"
+    - "bin/axel http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.8.0_all.deb -o /var/cache/phoronix-test-suite.deb"
+    - "dpkg -i /var/cache/phoronix-test-suite.deb"
 
   - name: create directories
     file: dest=/home/{{user}}/{{item}} state=directory recurse=yes owner={{user}}
@@ -206,9 +205,12 @@
   - name: update ansible config
     lineinfile:
       dest: /etc/ansible/ansible.cfg
-      regexp: '^callback_whitelist\s{0,}='
-      line: "callback_whitelist = profile_tasks"
+      regexp: {{item.regexp}}
+      line: {{item.line}}
       insertafter: '^\[default\]'
+    with_items:
+    - { regexp: '^callback_whitelist\s{0,}=', line: 'callback_whitelist = profile_tasks' }
+    - { regexp: '^retry_files_enabled\s{0,}=', line: 'retry_files_enabled = False' }
 
   - name: remove apt packages
     apt: name={{item}} state=absent
