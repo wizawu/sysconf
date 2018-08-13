@@ -125,6 +125,7 @@
     - sudo
     - supervisor
     - sysbench
+    - syslog-ng
     - sysstat
     - systemd-sysv
     - tcpdump
