@@ -9,16 +9,19 @@ source /usr/share/bash-completion/bash_completion
 source /usr/share/bash-completion/completions/git
 
 # alias
-alias ls='ls --color=auto'
+alias clangfmt='clang-format -style="{IndentWidth: 2, ColumnLimit: 120}"'
+alias cmemchk='valgrind --tool=memcheck --leak-check=full'
+alias g++='g++ -std=c++11'
+alias gcc='gcc -std=c11 -fms-extensions'
 alias la='ls -A'
-alias ll='ls -l'
 alias lh='ls -lh'
+alias ll='ls -l'
+alias ls='ls --color=auto'
+alias tgp='tgit push'
+alias tgpf='tgit push -f'
+alias timev="/usr/bin/time -v"
 alias vi='vim'
 alias vr='vim -R'
-alias gcc='gcc -std=c11 -fms-extensions'
-alias g++='g++ -std=c++11'
-alias cmemchk='valgrind --tool=memcheck --leak-check=full'
-alias clangfmt='clang-format -style="{IndentWidth: 2, ColumnLimit: 120}"'
 
 # git
 git config --global color.ui true
