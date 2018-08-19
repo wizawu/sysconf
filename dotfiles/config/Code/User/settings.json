@@ -36,6 +36,7 @@
     ],
     "python.linting.pylintPath": "/usr/local/bin/pylint",
     "python.pythonPath": "/usr/bin/python3.6",
+    "vim.cursorStylePerMode.normal": "line",
     "vim.useCtrlKeys": true,
     "vim.useSystemClipboard": false,
     "window.openFoldersInNewWindow": "on",
