@@ -182,6 +182,7 @@
     - .config/Code/User
     - .config/fontconfig
     - .vim/colors
+    - .ssh
 
   - name: create symbolic link to dotfiles
     file: src=/home/{{user}}/.wizacfg/dotfiles/{{item}} dest=/home/{{user}}/.{{item}} state=link force=yes owner={{user}}
@@ -193,6 +194,7 @@
     - config/fontconfig/fonts.conf
     - dircolors
     - gitconfig
+    - ssh/config
     - tmux.conf
     - vimrc
     - vim/colors/dante.vim
