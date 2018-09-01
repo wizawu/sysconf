@@ -81,7 +81,7 @@ if [ $1 = eth ]; then
 fi
 
 if [ $1 = vault ]; then
-    vault="jA0EBwMCFUQj1VVW7J1g0sAJAXqJhVXtHUlbrWOTyzR83ucdn7Wft98tMnDAFbiM8jXaFSHJN4MPUePz9G6NjDNKP3obSCyZvr/r89Gi2tjDaOMRHCUTTuikY0wJmeRhWZmEBaax0dAhVmv+aVvsgro7p6yklMcEzvad5u3T/2lYASRPLHTh83JoBQMWZVWv61MoJMcwzyXP+0+2hYw9mXnr1Ss1LKWOGOwkuL6PZRtSMa7eXmHX1l8nwSWyQG3kBnB0kxSAlaDtDbjpwv+U7v9MVDBfZ5PKFaFa"
+    vault="jA0EAwMCK7gY0OAukfFgybu/iWvZ4ukdrxPvp+vcM6Uslmyg+O4xRqAudhvAt14cd2QUklRZdnU4Z/rKukbkjIEg7RXA11b/W/GOnUffmaFjnv3n67Sdur9S7q1jF4X8VhlwInuq8jmQay0gpyyTdTQZiOHehtuaSvziv7fSTUFEMev7H/k1sJm1KroP3YdHDnoUMljtMCMe/DIspWfOB/we1R49mytq5SJwU5GQqFnqdkKw8uPiAHDnQ6Sx3x1BT7CnygbkXZUoZZuc"
     if [ -z "$2" ]; then
         echo $vault | base64 -d | gnupg -d
     else
@@ -90,5 +90,6 @@ if [ $1 = vault ]; then
 fi
 
 if [ $1 = ":vault" ]; then
+    echo CTRL-D
     gnupg -c | base64 -w 0
 fi
