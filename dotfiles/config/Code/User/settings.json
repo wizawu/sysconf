@@ -3,9 +3,9 @@
         "preserve_newlines": true,
         "selector_separator_newline": false
     },
-    "editor.fontFamily": "Courier Prime Code",
-    "editor.fontSize": 14,
-    "editor.lineHeight": 22,
+    "editor.fontFamily": "Courier Screenplay",
+    "editor.fontSize": 13,
+    "editor.lineHeight": 23,
     "editor.quickSuggestions": {
         "comments": true,
         "other": true,
