@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -x
+pwd=$(dirname $0)
+/usr/local/kitty/bin/kitty -c $pwd/../etc/kitty.conf

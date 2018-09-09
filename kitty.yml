@@ -1,0 +1,16 @@
+---
+- hosts: localhost
+
+  tasks:
+  - name: download kitty
+    get_url:
+      url: https://github.com/kovidgoyal/kitty/releases/download/v0.12.1/kitty-0.12.1-x86_64.txz
+      dest: /var/cache/kitty.tgz
+
+  - name: create kitty directory
+    file: dest=/usr/local/kitty state=directory
+
+  - name: extract kitty
+    unarchive:
+      src: /var/cache/kitty.tgz
+      dest: /usr/local/kitty
