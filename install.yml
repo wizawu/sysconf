@@ -211,8 +211,9 @@
   - name: create symbolic link to awesome rc.lua
     file: src=/home/{{user}}/.wizacfg/{{item}} dest=/{{item}} state=link force=yes
     with_items:
-    - etc/xdg/awesome/rc.lua
     - etc/X11/xorg.conf.d/70-synaptics.conf
+    - etc/rc.local
+    - etc/xdg/awesome/rc.lua
 
   - name: update ansible config
     lineinfile:
