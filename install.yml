@@ -130,6 +130,8 @@
     - systemd-sysv
     - tcpdump
     - time
+    - tlp
+    - tlp-rdw
     - tmux
     - tree
     - tsocks
