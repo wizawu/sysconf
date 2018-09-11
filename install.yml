@@ -114,6 +114,7 @@
     - rinetd
     - rlwrap
     - rsync
+    - rxvt-unicode-256color
     - samba
     - smbclient
     - smplayer
@@ -189,6 +190,7 @@
   - name: create symbolic link to dotfiles
     file: src=/home/{{user}}/.wizacfg/dotfiles/{{item}} dest=/home/{{user}}/.{{item}} state=link force=yes owner={{user}}
     with_items:
+    - Xdefaults
     - asoundrc
     - bashrc
     - config/Code/User/keybindings.json
@@ -198,8 +200,8 @@
     - gitconfig
     - ssh/config
     - tmux.conf
-    - vimrc
     - vim/colors/dante.vim
+    - vimrc
     - xinitrc
 
   - name: create directories
