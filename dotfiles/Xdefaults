@@ -22,6 +22,11 @@ URxvt.color6:           #06989A
 URxvt.color7:           #D3D7CF
 URxvt.color8:           #555753
 URxvt.color9:           #EF2929
-URxvt.font:             xft:Courier Prime Code:pixelsize=16
+URxvt.font:             xft:Courier Prime Code:size=10.5,xft:造字工房典黑（非商用）
 URxvt.foreground:       #C8C8C8
+URxvt.iso14755:         false
+URxvt.iso14755_52:      false
 URxvt.letterSpace:      0
+
+URxvt.keysym.Shift-Control-C:   eval:selection_to_clipboard
+URxvt.keysym.Shift-Control-V:   eval:paste_clipboard
