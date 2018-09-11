@@ -196,7 +196,6 @@
     - config/Code/User/keybindings.json
     - config/Code/User/settings.json
     - config/fontconfig/fonts.conf
-    - dircolors
     - gitconfig
     - ssh/config
     - tmux.conf
