@@ -1,5 +1,3 @@
-*antialias:             false
-*autohint:              false
 URxvt*scrollBar:        false
 URxvt*scrollBar_right:  false
 URxvt*shading:          20
@@ -25,7 +23,6 @@ URxvt.color9:           #EF2929
 URxvt.foreground:       #C8C8C8
 URxvt.iso14755:         false
 URxvt.iso14755_52:      false
-URxvt.letterSpace:      0
 
 URxvt.keysym.Shift-Control-C:   eval:selection_to_clipboard
 URxvt.keysym.Shift-Control-N:   perl:newterm
