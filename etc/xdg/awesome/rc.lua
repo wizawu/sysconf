@@ -49,7 +49,7 @@ beautiful.init(awful.util.get_themes_dir() .. "default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 -- @wizawu --
-terminal = "xterm"
+terminal = "urxvt++"
 -- @end --
 editor = os.getenv("EDITOR") or "editor"
 editor_cmd = terminal .. " -e " .. editor
