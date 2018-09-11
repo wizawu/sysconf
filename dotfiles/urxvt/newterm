@@ -25,7 +25,7 @@ sub on_user_command {
     # Check that keysym was "perl:newterm"
     if ($string eq "newterm") {
         my $dir = readlink("/proc/" . $term->{child_pid} . "/cwd");
-        exec("urxvt", "-cd", "$dir") unless fork;
+        exec("urxvt++", "-cd", "$dir") unless fork;
     }
     ()
 }
