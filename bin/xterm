@@ -1,3 +1,5 @@
-#!/bin/sh
+#!/bin/bash
 
-/usr/bin/urxvt -lsp 5
+PERLLIB=$(cd $(dirname $0)/../dotfiles/urxvt && pwd)
+
+/usr/bin/urxvt -lsp 5 --perl-lib $PERLLIB -pe newterm

@@ -29,4 +29,5 @@ URxvt.iso14755_52:      false
 URxvt.letterSpace:      0
 
 URxvt.keysym.Shift-Control-C:   eval:selection_to_clipboard
+URxvt.keysym.Shift-Control-N:   perl:newterm
 URxvt.keysym.Shift-Control-V:   eval:paste_clipboard
