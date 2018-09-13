@@ -1,19 +1,13 @@
 #!/bin/bash
 
-# switch to dvorak
+# reset
+setxkbmap -layout us
+
+# dvorak
 # setxkbmap dvorak
 
-# retrieve keycode with xev
-
-# swap Home and Delete 
-# xmodmap -e "keycode 119 = Home"
-# xmodmap -e "keycode 110 = Delete"
-
-# set right Alt to Esc
-xmodmap -e "keycode 108 = Escape"
-
-# set Pause to Insert
-# xmodmap -e "keycode 127 = Insert"
+# set grave to BackSpace
+xmodmap -e "keycode 49 = BackSpace"
 
 # swap CapsLock and Ctrl
 # xmodmap -e "remove Lock = Caps_Lock"
