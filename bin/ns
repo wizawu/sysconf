@@ -1,7 +1,11 @@
-#!/bin/sh
+#!/bin/bash
 
 if [ "$1" = "" ]; then
     cat /etc/resolv.conf
 else
     echo nameserver $1 | sudo tee /etc/resolv.conf
+fi
+
+if [ "$(grep wizawu.com /etc/resolv.conf)" = "" ]; then
+    echo "search wizawu.com" | sudo tee -a /etc/resolv.conf
 fi
