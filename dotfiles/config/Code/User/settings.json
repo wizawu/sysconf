@@ -26,6 +26,7 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "git.enabled": false,
+    "keyboard.dispatch": "keyCode",
     "python.autoComplete.extraPaths": [
         "${workspaceFolder}/lib"
     ],
