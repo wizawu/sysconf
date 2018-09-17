@@ -6,8 +6,11 @@ setxkbmap -layout us
 # dvorak
 # setxkbmap dvorak
 
-# set grave to BackSpace
-xmodmap -e "keycode 49 = BackSpace"
+# map Alt_R to grave
+xmodmap -e "keycode 108 = grave"
+
+# map Ctrl_R to asciitilde
+xmodmap -e "keycode 105 = asciitilde"
 
 # swap CapsLock and Ctrl
 # xmodmap -e "remove Lock = Caps_Lock"
