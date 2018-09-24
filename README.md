@@ -22,12 +22,12 @@ iface wlp1s0 inet dhcp
 # install apt packages
 echo "deb http://mirrors.ustc.edu.cn/debian/ sid main" > /etc/apt/sources.list
 apt update
-apt install -y ansible apt-transport-https git openssh-client openssh-server tmux
+apt install -y ansible apt-transport-https git openssh-client openssh-server
 
 # run ansible playbook
 ssh-keygen -t rsa
 cp /root/.ssh/id_rsa.pub /root/.ssh/authorized_keys
-ssh -o 'StrictHostKeyChecking=no' root@127.0.0.1 echo ok
+ssh root@127.0.0.1 echo ok
 git clone -b master --depth 1 https://github.com/wizawu/wizacfg.git
-ansible-playbook install.yml -i inventory -e user=wizawu
+cd wizacfg && ansible-playbook install.yml -i inventory -e user=wizawu
 ```
