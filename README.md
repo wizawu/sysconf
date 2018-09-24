@@ -22,7 +22,7 @@ iface wlp1s0 inet dhcp
 # install apt packages
 echo "deb http://mirrors.ustc.edu.cn/debian/ sid main" > /etc/apt/sources.list
 apt update
-apt install -y ansible apt-transport-https git openssh-client openssh-server
+apt install -y ansible apt-transport-https git openssh-client openssh-server sudo
 
 # run ansible playbook
 ssh-keygen -t rsa
