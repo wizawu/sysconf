@@ -3,6 +3,16 @@
   remote_user: root
 
   tasks:
+  - name: update ansible config
+    lineinfile:
+      dest: /etc/ansible/ansible.cfg
+      regexp: "{{item.regexp}}"
+      line: "{{item.line}}"
+      insertafter: '^\[default\]'
+    with_items:
+    - { regexp: '^callback_whitelist\s{0,}=', line: 'callback_whitelist = profile_tasks' }
+    - { regexp: '^retry_files_enabled\s{0,}=', line: 'retry_files_enabled = False' }
+
   - name: check user
     user: name={{user}} state=present group=root shell=/bin/bash
 
@@ -82,7 +92,6 @@
     - lftp
     - linux-headers-amd64
     - linux-image-amd64
-    - linux-tools
     - lm-sensors
     - locate
     - lshw
@@ -120,7 +129,6 @@
     - ssh
     - sshfs
     - sshpass
-    - start-pulseaudio-x11
     - strace
     - sudo
     - supervisor
@@ -208,16 +216,6 @@
     - etc/X11/xorg.conf.d/70-synaptics.conf
     - etc/rc.local
     - etc/xdg/awesome/rc.lua
-
-  - name: update ansible config
-    lineinfile:
-      dest: /etc/ansible/ansible.cfg
-      regexp: "{{item.regexp}}"
-      line: "{{item.line}}"
-      insertafter: '^\[default\]'
-    with_items:
-    - { regexp: '^callback_whitelist\s{0,}=', line: 'callback_whitelist = profile_tasks' }
-    - { regexp: '^retry_files_enabled\s{0,}=', line: 'retry_files_enabled = False' }
 
   - name: set /etc/resolv.conf to immutable
     shell: "chattr +i /etc/resolv.conf"
