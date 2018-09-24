@@ -28,10 +28,14 @@
   - name: add apt keys
     apt_key: keyserver=keyserver.ubuntu.com id={{item}}
     with_items:
+    - F1656F24C74CD1D8      # mariadb
+    - 1655A0AB68576280      # node
+    - 1397BC53640DB551      # chrome
     - 7638D0442B90D010      # debian
+    - EB3E94ADBE1229CF      # vscode
 
   - name: install apt packages
-    apt: name={{item}} update_cache=yes allow_unauthenticated=yes
+    apt: name={{item}} state=present update_cache=yes
     with_items:
     - ack-grep
     - alsa-oss
