@@ -184,7 +184,6 @@
     file: dest=/home/{{user}}/{{item}} state=directory recurse=yes owner={{user}}
     with_items:
     - .config/Code/User
-    - .config/fontconfig
     - .vim/colors
     - .ssh
 
@@ -196,7 +195,6 @@
     - bashrc
     - config/Code/User/keybindings.json
     - config/Code/User/settings.json
-    - config/fontconfig/fonts.conf
     - gitconfig
     - ssh/config
     - tmux.conf
@@ -207,13 +205,15 @@
   - name: create directories
     file: dest=/{{item}} state=directory recurse=yes
     with_items:
-    - etc/xdg/awesome
     - etc/X11/xorg.conf.d
+    - etc/fonts/conf.d
+    - etc/xdg/awesome
 
   - name: create symbolic link to etc config
     file: src=/home/{{user}}/.wizacfg/{{item}} dest=/{{item}} state=link force=yes
     with_items:
     - etc/X11/xorg.conf.d/70-synaptics.conf
+    - etc/fonts/conf.d/69-fonts.conf
     - etc/rc.local
     - etc/xdg/awesome/rc.lua
 
