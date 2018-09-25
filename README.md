@@ -30,4 +30,7 @@ cp /root/.ssh/id_rsa.pub /root/.ssh/authorized_keys
 ssh root@127.0.0.1 echo ok
 git clone -b master --depth 1 https://github.com/wizawu/wizacfg.git
 cd wizacfg && ansible-playbook install.yml -i inventory -e user=wizawu
+
+# other settings
+DPI: 118
 ```
