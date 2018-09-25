@@ -223,5 +223,6 @@
   - name: remove apt packages
     apt: name={{item}} state=absent
     with_items:
+    - fcitx-module-dbus
     - lightdm
     - xscreensaver
