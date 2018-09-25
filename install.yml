@@ -217,12 +217,15 @@
     - etc/rc.local
     - etc/xdg/awesome/rc.lua
 
-  - name: set /etc/resolv.conf to immutable
-    shell: "chattr +i /etc/resolv.conf"
-
   - name: remove apt packages
     apt: name={{item}} state=absent
     with_items:
     - fcitx-module-dbus
     - lightdm
     - xscreensaver
+
+  - name: install npm packages
+    shell: "{{item}}"
+    with_items:
+    - "npm -g install yarn"
+    - "yarn global add 1c"
