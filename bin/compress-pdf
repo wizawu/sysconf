@@ -1,0 +1,17 @@
+#!/bin/sh
+
+set -e
+
+echo "Usage: $(basename $0) input.pdf output.pdf [screen|ebook|prepress|printer]"
+
+test $1
+test $2
+
+QUALITY=ebook
+if [ -n "$3" ]; then
+    QUALITY=$3
+fi
+
+set -x
+gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH \
+   -dPDFSETTINGS=/$QUALITY -sOutputFile=$2 $1
