@@ -3,7 +3,7 @@
 
 # basic
 export LANG=en_US.UTF-8
-export PATH=$PATH:/sbin:/usr/sbin:~/.wizacfg/bin:$(npm root -g)/.bin
+export PATH=$PATH:/sbin:/usr/sbin:~/.sysconf/bin:$(npm root -g)/.bin
 echo -e -n "\x1b[\x35 q"
 
 # complete

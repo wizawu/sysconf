@@ -22,6 +22,6 @@ iface wlp1s0 inet dhcp
 # install
 ifup wlp1s0
 apt install git make
-git clone --depth 1 https://github.com/wizawu/wizacfg.git
+git clone --depth 1 https://github.com/wizawu/sysconf.git
 make
 ```
