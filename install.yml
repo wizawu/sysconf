@@ -69,7 +69,6 @@
     - colortail
     - dbus
     - debootstrap
-    - default-jdk
     - di
     - dnsutils
     - dstat
@@ -118,6 +117,7 @@
     - nodejs
     - ntfs-3g
     - ntpdate
+    - openjdk-11-jdk
     - p7zip-full
     - parallel
     - pluma
