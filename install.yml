@@ -17,7 +17,7 @@
     user: name={{user}} state=present group=root shell=/bin/bash
 
   - name: clone repo
-    git: repo=git@github.com:wizawu/wizacfg.git dest=/home/{{user}}/.wizacfg force=yes
+    git: repo=git@github.com:wizawu/sysconf.git dest=/home/{{user}}/.sysconf force=yes
     become: true
     become_user: "{{user}}"
 
@@ -31,7 +31,7 @@
     - zh_CN.UTF-8
 
   - name: create symbolic link to apt sources.list
-    file: src=/home/{{user}}/.wizacfg/{{item}} dest=/{{item}} state=link force=yes
+    file: src=/home/{{user}}/.sysconf/{{item}} dest=/{{item}} state=link force=yes
     with_items:
     - etc/apt/sources.list
 
@@ -205,7 +205,7 @@
     - etc/xdg/awesome
 
   - name: create symbolic link to global config
-    file: src=/home/{{user}}/.wizacfg/{{item}} dest=/{{item}} state=link force=yes
+    file: src=/home/{{user}}/.sysconf/{{item}} dest=/{{item}} state=link force=yes
     with_items:
     - etc/X11/xorg.conf.d/70-synaptics.conf
     - etc/fonts/conf.d/69-fonts.conf
@@ -225,7 +225,7 @@
     - .ssh
 
   - name: create symbolic link to user config
-    file: src=/home/{{user}}/.wizacfg/dotfiles/{{item}} dest=/home/{{user}}/.{{item}} state=link force=yes owner={{user}}
+    file: src=/home/{{user}}/.sysconf/dotfiles/{{item}} dest=/home/{{user}}/.{{item}} state=link force=yes owner={{user}}
     with_items:
     - Xdefaults
     - asoundrc
