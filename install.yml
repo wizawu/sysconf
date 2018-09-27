@@ -228,7 +228,6 @@
     file: src=/home/{{user}}/.sysconf/dotfiles/{{item}} dest=/home/{{user}}/.{{item}} state=link force=yes owner={{user}}
     with_items:
     - Xdefaults
-    - asoundrc
     - bashrc
     - config/Code/User/keybindings.json
     - config/Code/User/settings.json
