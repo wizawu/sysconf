@@ -207,8 +207,8 @@
   - name: create symbolic link to global config
     file: src=/home/{{user}}/.sysconf/{{item}} dest=/{{item}} state=link force=yes
     with_items:
-    - etc/X11/xorg.conf.d/70-synaptics.conf
-    - etc/fonts/conf.d/69-fonts.conf
+    - etc/X11/xorg.conf.d/99-synaptics.conf
+    - etc/fonts/conf.d/99-default.conf
     - etc/rc.local
     - etc/xdg/awesome/rc.lua
 
