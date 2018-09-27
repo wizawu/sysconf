@@ -187,11 +187,6 @@
     - mate-utils-common
     - xscreensaver
 
-  - name: remove mate-panel
-    shell: "test -f mate-panel && mv mate-panel mate-panel-disabled || echo"
-    args:
-      chdir: /usr/bin
-
   - name: install npm packages
     shell: "{{item}}"
     with_items:
