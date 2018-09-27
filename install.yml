@@ -78,6 +78,7 @@
     - fping
     - g++
     - gcc-doc
+    - gimp
     - google-chrome-stable
     - google-perftools
     - gradle
@@ -88,8 +89,10 @@
     - httpie
     - httrack
     - iftop
+    - inkscape
     - iotop
     - lftp
+    - libreoffice
     - linux-headers-amd64
     - linux-image-amd64
     - lm-sensors
