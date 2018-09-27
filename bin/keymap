@@ -3,17 +3,9 @@
 # reset
 setxkbmap -layout us
 
-# map Escape to `
+# map Alt_R to Mode_switch
+xmodmap -e "keycode 108 = Mode_switch"
+
 # map Shift+Escape to ~
-xmodmap -e "keycode 9 = grave asciitilde"
-
-# map Alt_R to Escape
-xmodmap -e "keycode 108 = Escape"
-
-# swap CapsLock and Ctrl
-# xmodmap -e "remove Lock = Caps_Lock"
-# xmodmap -e "remove Control = Control_L"
-# xmodmap -e "keycode 66 = Control_L"
-# xmodmap -e "keycode 37 = Caps_Lock"
-# xmodmap -e "add Lock = Caps_Lock"
-# xmodmap -e "add Control = Control_L"
+# map Mode_switch+Escape to `
+xmodmap -e "keycode 9 = Escape asciitilde grave"
