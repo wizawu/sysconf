@@ -1,4 +1,4 @@
-```
+```bash
 # install wireless driver
 wget http://mirrors.kernel.org/ubuntu/pool/main/l/linux-firmware/linux-firmware_1.169_all.deb
 dpkg -i linux-*.deb
