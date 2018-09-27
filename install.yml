@@ -3,6 +3,9 @@
   remote_user: root
 
   tasks:
+  - name: update current playbook
+    local_action: command git pull
+
   - name: update ansible config
     lineinfile:
       dest: /etc/ansible/ansible.cfg
@@ -17,7 +20,7 @@
     user: name={{user}} state=present group=root shell=/bin/bash
 
   - name: clone repo
-    git: repo=https://github.com/wizawu/wizacfg.git dest=/home/{{user}}/.wizacfg
+    git: repo=git@github.com:wizawu/wizacfg.git dest=/home/{{user}}/.wizacfg
     become: true
     become_user: "{{user}}"
 
