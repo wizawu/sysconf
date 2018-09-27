@@ -13,12 +13,6 @@
     - { regexp: '^callback_whitelist\s{0,}=', line: 'callback_whitelist = profile_tasks' }
     - { regexp: '^retry_files_enabled\s{0,}=', line: 'retry_files_enabled = False' }
 
-  - name: update current playbook
-    local_action: shell bash -c "{{item}}"
-    with_items:
-    - "git fetch origin"
-    - "git reset --hard origin/master"
-
   - name: create user
     user: name={{user}} state=present group=root shell=/bin/bash
 
@@ -117,7 +111,7 @@
     - nodejs
     - ntfs-3g
     - ntpdate
-    - openjdk-11-jdk
+    - openjdk-10-jdk
     - p7zip-full
     - parallel
     - pluma
@@ -197,7 +191,7 @@
     - "yarn global add 1c"
 
   - name: create default-java link
-    file: src=/usr/lib/jvm/java-11-openjdk-amd64 dest=/usr/lib/jvm/default-java state=link force=yes
+    file: src=/usr/lib/jvm/java-10-openjdk-amd64 dest=/usr/lib/jvm/default-java state=link force=yes
 
   - name: download pt-summary
     get_url: url=http://percona.com/get/pt-summary dest=/usr/bin/pt-summary mode=0755

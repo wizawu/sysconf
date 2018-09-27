@@ -12,6 +12,8 @@ ssh:
 	ssh -o "StrictHostKeyChecking=no" root@127.0.0.1 echo ok
 
 play:
+	git fetch origin
+	git reset --hard origin/master
 	ansible-playbook install.yml -i inventory -e user=wizawu
 
 dpi:
