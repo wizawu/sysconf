@@ -19,5 +19,18 @@ play:
 	apt autoclean
 	apt clean
 
-dpi:
-	echo 118
+####
+# DPI: 118
+####
+# How to hide mate-panel?
+# 1. Right-click top panel, 'Delete This Panel'
+# 2. Right-click bottom panel, 'New Panel'
+# 3. Right-click bottom panel, 'Delete This Panel'
+# 4. Right-click top panel (new), 'Properties':
+#    * Expand = false
+#    * Autohide = true
+#    * Show hide buttons = true
+#    * Arrows on hide buttons = true
+#    * Solid color -> Style = Transparent
+# 5. Click left hide button
+####
