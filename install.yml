@@ -184,11 +184,15 @@
     - lightdm
     - xscreensaver
 
+  - name: remove mate-panel
+    shell: "test -f mate-panel && mv mate-panel mate-panel-disabled || echo"
+    args:
+      chdir: /usr/bin
+
   - name: install npm packages
     shell: "{{item}}"
     with_items:
     - "npm -g install yarn"
-    - "yarn global add 1c"
 
   - name: create default-java link
     file: src=/usr/lib/jvm/java-10-openjdk-amd64 dest=/usr/lib/jvm/default-java state=link force=yes
