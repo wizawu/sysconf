@@ -1,4 +1,2 @@
-root        hard    nofile  200000
-root        soft    nofile  100000
 {{user}}    hard    nofile  200000
 {{user}}    soft    nofile  100000
