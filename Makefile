@@ -15,9 +15,9 @@ play:
 	git fetch origin
 	git reset --hard origin/master
 	ansible-playbook install.yml -i inventory -e user=wizawu
-	apt autoremove --purge
-	apt autoclean
-	apt clean
+	apt autoremove --purge -y
+	apt autoclean -y
+	apt clean -y
 
 ####
 # DPI: 118
