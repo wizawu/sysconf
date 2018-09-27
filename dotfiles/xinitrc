@@ -13,7 +13,7 @@ xset -dpms
 xset s noblank
 xset s off
 
-mate-session 2>/dev/null &
+(mate-session 2>/dev/null) &
 (sleep 2 && hsetroot -full /usr/share/awesome/themes/default/background.png) &
 (sleep 2 && fcitx -d) &
 
