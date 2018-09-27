@@ -3,7 +3,16 @@
 
 # basic
 export LANG=en_US.UTF-8
-export PATH=$PATH:/sbin:/usr/sbin:~/.sysconf/bin:$(npm root -g)/.bin
+export JAVA_HOME=/usr/lib/jvm/default-java
+export PATH=$HOME/.sysconf/bin:$JAVA_HOME/bin:/usr/sbin:/sbin:$PATH
+keymap
+
+# terminal
+git config --global color.ui true
+function parse_git_branch {
+    git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/^\1/'
+}
+PS1='${debian_chroot:+($debian_chroot)}\033[34m\u\033[90m@\033[33m\h\033[90m:\033[94m\w \033[90m$(parse_git_branch)\n\[\033[93m\]\$ \[\033[0m\]'
 echo -e -n "\x1b[\x35 q"
 
 # complete
@@ -25,16 +34,3 @@ alias tgit="tsocks git"
 alias timev="/usr/bin/time -v"
 alias vi='vim'
 alias vr='vim -R'
-
-# git
-git config --global color.ui true
-function parse_git_branch {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/^\1/'
-}
-
-# color
-PS1='${debian_chroot:+($debian_chroot)}\033[34m\u\033[90m@\033[33m\h\033[90m:\033[94m\w \033[90m$(parse_git_branch)\n\[\033[93m\]\$ \[\033[0m\]'
-
-# Java
-export JAVA_HOME=/usr/lib/jvm/default-java
-export PATH=$JAVA_HOME/bin:$PATH
