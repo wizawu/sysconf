@@ -61,7 +61,6 @@
     - cmake
     - code
     - colortail
-    - dbus
     - debootstrap
     - di
     - dnsutils
@@ -181,7 +180,11 @@
     apt: name={{item}} state=absent
     with_items:
     - fcitx-module-dbus
+    - gnome-keyring
     - lightdm
+    - mate-user-guide
+    - mate-utils
+    - mate-utils-common
     - xscreensaver
 
   - name: remove mate-panel
