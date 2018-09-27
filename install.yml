@@ -4,7 +4,10 @@
 
   tasks:
   - name: update current playbook
-    local_action: command git pull
+    local_action: shell bash -c "{{item}}"
+    with_items:
+    - "git fetch origin"
+    - "git reset --hard origin/master"
 
   - name: update ansible config
     lineinfile:
@@ -20,7 +23,7 @@
     user: name={{user}} state=present group=root shell=/bin/bash
 
   - name: clone repo
-    git: repo=git@github.com:wizawu/wizacfg.git dest=/home/{{user}}/.wizacfg
+    git: repo=git@github.com:wizawu/wizacfg.git dest=/home/{{user}}/.wizacfg force=yes
     become: true
     become_user: "{{user}}"
 

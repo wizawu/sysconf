@@ -19,7 +19,7 @@ iface wlp1s0 inet dhcp
     wpa-ssid ssid
     wpa-psk password
 
-# prepare
+# install
 ifup wlp1s0
 apt install git make
 git clone --depth 1 https://github.com/wizawu/wizacfg.git
