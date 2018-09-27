@@ -9,7 +9,7 @@ set smartindent
 set smarttab
 set tabstop=4
 
-colorscheme dante
+colorscheme desert
 filetype indent on
 filetype plugin on
 syntax on

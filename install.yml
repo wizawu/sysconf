@@ -187,7 +187,6 @@
     file: dest=/home/{{user}}/{{item}} state=directory recurse=yes owner={{user}}
     with_items:
     - .config/Code/User
-    - .vim/colors
     - .ssh
 
   - name: create symbolic link to dotfiles
@@ -201,7 +200,6 @@
     - gitconfig
     - ssh/config
     - tmux.conf
-    - vim/colors/dante.vim
     - vimrc
     - xinitrc
 
