@@ -212,11 +212,11 @@
     - etc/rc.local
     - etc/xdg/awesome/rc.lua
 
-  - name: update sudoers
-    template: src=templates/sudoers dest=/etc/sudoers.d/{{user}} mode=0440
-
-  - name: update security limits
-    template: src=templates/limits.conf dest=/etc/security/limits.d/{{user}}.conf mode=0644
+  - name: create template config
+    template: src={{item}}.tpl dest=/{{item}} mode=0440
+    with_items:
+    - etc/security/limits.d/default.conf
+    - etc/sudoers.d/default
 
   - name: create user directories
     file: dest=/home/{{user}}/{{item}} state=directory recurse=yes owner={{user}}
