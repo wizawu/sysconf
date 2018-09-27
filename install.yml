@@ -201,6 +201,7 @@
     with_items:
     - etc/X11/xorg.conf.d
     - etc/fonts/conf.d
+    - etc/security/limits.d
     - etc/xdg/awesome
 
   - name: create symbolic link to global config
@@ -211,8 +212,11 @@
     - etc/rc.local
     - etc/xdg/awesome/rc.lua
 
-  - name: add user to sudoers
+  - name: update sudoers
     template: src=templates/sudoers dest=/etc/sudoers.d/{{user}} mode=0440
+
+  - name: update security limits
+    template: src=templates/limits.conf dest=/etc/security/limits.d/{{user}}.conf mode=0644
 
   - name: create user directories
     file: dest=/home/{{user}}/{{item}} state=directory recurse=yes owner={{user}}
