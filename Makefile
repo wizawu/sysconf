@@ -1,4 +1,7 @@
-all: apt ssh play
+install:
+	git fetch origin
+	git reset --hard origin/master
+	ansible-playbook install.yml -i inventory -e user=wizawu
 
 apt:
 	echo "deb http://mirrors.ustc.edu.cn/debian/ sid main" > /etc/apt/sources.list
@@ -11,13 +14,12 @@ ssh:
 	cp /root/.ssh/id_rsa.pub /root/.ssh/authorized_keys
 	ssh -o "StrictHostKeyChecking=no" root@127.0.0.1 echo ok
 
-play:
-	git fetch origin
-	git reset --hard origin/master
-	ansible-playbook install.yml -i inventory -e user=wizawu
+clean:
 	apt autoremove --purge -y
 	apt autoclean -y
 	apt clean -y
+
+all: apt ssh install clean
 
 ####
 # DPI: 118
