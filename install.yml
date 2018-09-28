@@ -207,6 +207,7 @@
     - etc/X11/xorg.conf.d
     - etc/fonts/conf.d
     - etc/security/limits.d
+    - etc/sysctl.d
     - etc/xdg/awesome
 
   - name: create symbolic link to global config
@@ -215,6 +216,7 @@
     - etc/X11/xorg.conf.d/99-synaptics.conf
     - etc/fonts/conf.d/99-default.conf
     - etc/rc.local
+    - etc/sysctl.d/99-default.conf
     - etc/xdg/awesome/rc.lua
 
   - name: create template config
