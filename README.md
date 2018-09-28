@@ -23,5 +23,5 @@ iface wlp1s0 inet dhcp
 ifup wlp1s0
 apt install git make
 git clone --depth 1 https://github.com/wizawu/sysconf.git
-make
+make all
 ```
