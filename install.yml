@@ -195,9 +195,6 @@
     with_items:
     - "npm -g install yarn"
 
-  - name: create default-java link
-    file: src=/usr/lib/jvm/java-10-openjdk-amd64 dest=/usr/lib/jvm/default-java state=link force=yes
-
   - name: download pt-summary
     get_url: url=http://percona.com/get/pt-summary dest=/usr/bin/pt-summary mode=0755
 
