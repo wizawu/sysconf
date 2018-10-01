@@ -17,6 +17,6 @@ syntax on
 autocmd BufWritePre * %s/\s\+$//e
 autocmd VimEnter * hi MatchParen ctermbg=darkblue
 
-nnoremap <A-Left> :tabp<CR>
-nnoremap <A-Right> :tabn<CR>
+nnoremap <S-Tab> :tabp<CR>
+nnoremap <Tab> :tabn<CR>
 nnoremap te :tabedit
