@@ -222,6 +222,12 @@
     - etc/security/limits.d/default.conf
     - etc/sudoers.d/default
 
+  - name: update tsocks config
+    lineinfile:
+      dest: /etc/tsocks.conf
+      regexp: '^server\s{0,}='
+      line: 'server = 127.0.0.1'
+
   - name: create user directories
     file: dest=/home/{{user}}/{{item}} state=directory recurse=yes owner={{user}}
     with_items:
