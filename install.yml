@@ -45,7 +45,7 @@
     - F1656F24C74CD1D8      # mariadb
 
   - name: install apt packages
-    apt: name={{item}} update_cache=yes
+    apt: name={{item}} update_cache=yes install_recommends=no autoclean=yes
     with_items:
     - ack-grep
     - alsa-oss
@@ -179,7 +179,7 @@
     - trap
 
   - name: remove apt packages
-    apt: name={{item}} state=absent
+    apt: name={{item}} state=absent autoremove=yes purge=yes
     with_items:
     - fcitx-module-dbus
     - fcitx-ui-light
