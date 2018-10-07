@@ -227,6 +227,15 @@
       regexp: '^server\s{0,}='
       line: 'server = 127.0.0.1'
 
+  - name: update systemd logind.conf
+    lineinfile:
+      dest: /etc/systemd/logind.conf
+      regexp: '^{{item.key}}\s{0,}='
+      line: '{{item.key}}={{item.value}}'
+    with_items:
+    - { key: "HandleLidSwitch", value: "ignore" }
+    - { key: "HandlePowerKey", value: "suspend" }
+
   - name: create user directories
     file: dest=/home/{{user}}/{{item}} state=directory recurse=yes owner={{user}}
     with_items:
