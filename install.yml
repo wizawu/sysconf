@@ -118,7 +118,6 @@
     - pm-utils
     - pppoeconf
     - psmisc
-    - pulseaudio
     - python3.7
     - qbittorrent
     - redis-server
