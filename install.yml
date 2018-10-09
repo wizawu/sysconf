@@ -80,7 +80,6 @@
     - gimp
     - google-chrome-stable
     - google-perftools
-    - gradle:3.4.1-7
     - gufw
     - hdparm
     - hsetroot
@@ -111,7 +110,7 @@
     - nodejs
     - ntfs-3g
     - ntpdate
-    - openjdk-10-jdk
+    - openjdk-8-jdk
     - p7zip-full
     - parallel
     - pluma
@@ -193,6 +192,12 @@
     shell: "{{item}}"
     with_items:
     - "npm -g install yarn"
+
+  - name: download gradle
+    unarchive:
+      src: https://downloads.gradle.org/distributions/gradle-3.5.1-bin.zip
+      dest: /usr/local/lib
+      remote_src: yes
 
   - name: download pt-summary
     get_url: url=http://percona.com/get/pt-summary dest=/usr/bin/pt-summary mode=0755
