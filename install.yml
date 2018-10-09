@@ -80,7 +80,7 @@
     - gimp
     - google-chrome-stable
     - google-perftools
-    - gradle
+    - gradle:3.4.1-7
     - gufw
     - hdparm
     - hsetroot
@@ -258,8 +258,3 @@
     - tmux.conf
     - vimrc
     - xinitrc
-
-  - name: download libflashplayer.so
-    get_url:
-      url: https://github.com/wizawu/sysconf/releases/download/libflashplayer/libflashplayer.so
-      dest: /home/{{user}}/.mozilla/plugins/libflashplayer.so
