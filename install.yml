@@ -8,7 +8,7 @@
       dest: /etc/ansible/ansible.cfg
       regexp: "{{item.regexp}}"
       line: "{{item.line}}"
-      insertafter: '^\[default\]'
+      insertafter: '^\[defaults\]'
     with_items:
     - { regexp: '^callback_whitelist\s{0,}=', line: 'callback_whitelist = profile_tasks' }
     - { regexp: '^retry_files_enabled\s{0,}=', line: 'retry_files_enabled = False' }
