@@ -253,6 +253,7 @@
     - config/Code/User/settings.json
     - gitconfig
     - mozilla/firefox/d5dwqmpw.default/chrome/userChrome.css
+    - mozilla/firefox/d5dwqmpw.default/chrome/userContent.css
     - ssh/config
     - tmux.conf
     - vimrc
