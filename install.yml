@@ -241,6 +241,7 @@
     with_items:
     - .config/Code/User
     - .mozilla/firefox/d5dwqmpw.default/chrome
+    - .mozilla/plugins
     - .ssh
 
   - name: create symbolic link to user config
@@ -256,3 +257,8 @@
     - tmux.conf
     - vimrc
     - xinitrc
+
+  - name: download libflashplayer.so
+    get_url:
+      url: https://github.com/wizawu/sysconf/releases/download/libflashplayer/libflashplayer.so
+      dest: /home/{{user}}/.mozilla/plugins/libflashplayer.so
