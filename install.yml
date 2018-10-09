@@ -240,8 +240,6 @@
     file: dest=/home/{{user}}/{{item}} state=directory recurse=yes owner={{user}}
     with_items:
     - .config/Code/User
-    - .mozilla/firefox/d5dwqmpw.default/chrome
-    - .mozilla/plugins
     - .ssh
 
   - name: create symbolic link to user config
@@ -252,8 +250,6 @@
     - config/Code/User/keybindings.json
     - config/Code/User/settings.json
     - gitconfig
-    - mozilla/firefox/d5dwqmpw.default/chrome/userChrome.css
-    - mozilla/firefox/d5dwqmpw.default/chrome/userContent.css
     - ssh/config
     - tmux.conf
     - vimrc
