@@ -213,13 +213,16 @@ awful.screen.connect_for_each_screen(function(s)
 
     -- @wizawu --
     cpuwidget = wibox.widget.textbox()
-    vicious.register(cpuwidget, vicious.widgets.cpu, " | CPU $1% ", 1)
+    vicious.register(cpuwidget, vicious.widgets.cpu, " CPU $1%", 1)
 
     cputempwidget = wibox.widget.textbox()
-    vicious.register(cputempwidget, vicious.widgets.thermal, "$1°C | ", 1, "thermal_zone0")
+    vicious.register(cputempwidget, vicious.widgets.thermal, " $1°C |", 1, "thermal_zone0")
 
     memwidget = wibox.widget.textbox()
-    vicious.register(memwidget, vicious.widgets.mem, "MEM $1% ($2MiB/$3MiB) |", 1)
+    vicious.register(memwidget, vicious.widgets.mem, " MEM $1% $2/$3MiB |", 1)
+
+    fswidget = wibox.widget.textbox()
+    vicious.register(fswidget, vicious.widgets.fs, " DU ${/ used_gb}/${/ size_gb}GiB |", 1)
 
     batwidget = wibox.widget.textbox()
     vicious.register(batwidget, vicious.widgets.bat, " BAT $2% |", 1, "BAT0")
@@ -244,6 +247,7 @@ awful.screen.connect_for_each_screen(function(s)
             cpuwidget,
             cputempwidget,
             memwidget,
+            fswidget,
             batwidget,
             mytextclock,
             s.mylayoutbox,
