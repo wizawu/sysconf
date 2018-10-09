@@ -3,6 +3,7 @@
         "preserve_newlines": true,
         "selector_separator_newline": false
     },
+    "editor.detectIndentation": false,
     "editor.fontFamily": "Courier Prime Code",
     "editor.fontSize": 14,
     "editor.formatOnSave": true,
