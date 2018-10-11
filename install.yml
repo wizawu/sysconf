@@ -117,7 +117,6 @@
     - pm-utils
     - pppoeconf
     - psmisc
-    - python3.7
     - qbittorrent
     - redis-server
     - rinetd
@@ -146,6 +145,7 @@
     - tsocks
     - unrar
     - unzip
+    - upower
     - valgrind
     - viewnior
     - vifm
@@ -159,9 +159,9 @@
     - x11-xserver-utils
     - xclip
     - xdg-user-dirs
-    - xserver-xorg-input-synaptics
     - xorg
     - xsel
+    - xserver-xorg-input-synaptics
     - yapf
 
   - name: check built-in tools
@@ -175,6 +175,13 @@
     - perf
     - pmap
     - trap
+
+  - name: install ocaml
+    apt: name={{item}} update_cache=yes install_recommends=no autoclean=yes
+    with_items:
+    - menhir
+    - ocaml
+    - opam
 
   - name: remove apt packages
     apt: name={{item}} state=absent autoremove=yes purge=yes
