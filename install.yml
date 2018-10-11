@@ -206,6 +206,7 @@
     file: dest=/{{item}} state=directory recurse=yes
     with_items:
     - etc/X11/xorg.conf.d
+    - etc/apt/apt.conf.d
     - etc/fonts/conf.d
     - etc/security/limits.d
     - etc/sysctl.d
@@ -215,6 +216,7 @@
     file: src=/home/{{user}}/.sysconf/{{item}} dest=/{{item}} state=link force=yes
     with_items:
     - etc/X11/xorg.conf.d/99-synaptics.conf
+    - etc/apt/apt.conf.d/99default
     - etc/fonts/conf.d/99-default.conf
     - etc/rc.local
     - etc/sysctl.d/99-default.conf
