@@ -1,9 +1,0 @@
-#!/bin/bash
-
-set -ex
-
-inventory=~/repos/wizawu.com/inventory
-host=$(ansible $1 -i $inventory --list-hosts | tail -1)
-proxy=$(ansible shadowsocks -i $inventory --list-hosts | tail -1)
-
-sshp -s root@`echo $proxy` root@`echo $host`
