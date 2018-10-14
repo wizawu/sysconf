@@ -1,6 +1,6 @@
 #!/bin/sh
 
-config=~/repos/wizawu.com/templates/shadowsocks.json
+config=~/repos/vpsconf/templates/shadowsocks.json
 local_port=$(cat $config | object-path-cli local_port)
 method=$(cat $config | object-path-cli method)
 password=$(cat $config | object-path-cli password)
