@@ -196,9 +196,10 @@
     - xscreensaver
 
   - name: install npm packages
-    shell: "{{item}}"
+    shell: "npm -g install {{item}}"
     with_items:
-    - "npm -g install yarn"
+    - http-proxy-to-socks
+    - yarn
 
   - name: download gradle
     unarchive:
