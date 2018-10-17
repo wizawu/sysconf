@@ -203,12 +203,19 @@
 
   - name: download gradle
     unarchive:
-      src: http://111.230.108.159/gradle-3.5.1-bin.zip
+      src: https://downloads.gradle.org/distributions/gradle-3.5.1-bin.zip
       dest: /usr/local/lib
       remote_src: yes
+    when: false
 
   - name: download pt-summary
     get_url: url=http://percona.com/get/pt-summary dest=/usr/bin/pt-summary mode=0755
+
+  - name: disable autostart programs
+    command: mv /usr/bin/{{item.src}} /usr/bin/{{item.dest}}
+    with_items:
+    - { src: "caja", dest: "Caja" }
+    ignore_errors: yes
 
   - name: create etc directories
     file: dest=/{{item}} state=directory recurse=yes
