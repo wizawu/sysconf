@@ -9,5 +9,7 @@
     co = checkout
     dc = diff --cached
     df = diff
+    pl = pull
+    ps = push
     rb = rebase
     st = status
