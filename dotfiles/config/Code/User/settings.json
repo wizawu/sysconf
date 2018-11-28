@@ -29,6 +29,7 @@
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     "git.enabled": false,
+    "html.autoClosingTags": false,
     "keyboard.dispatch": "keyCode",
     "python.autoComplete.extraPaths": [
         "${workspaceFolder}/lib"
