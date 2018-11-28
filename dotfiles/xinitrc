@@ -1,6 +1,4 @@
 #!/bin/sh
-sudo ip l set wlp1s0 name wlan0
-
 export LC_CTYPE="zh_CN.UTF-8"
 export XMODIFIERS="@im=fcitx"
 export QT_IM_MODULE=fcitx
@@ -14,7 +12,7 @@ xset s noblank
 xset s off
 
 (mate-session 2>/dev/null) &
-(sleep 2 && hsetroot -full /usr/share/awesome/themes/default/background.png) &
 (sleep 2 && fcitx -d) &
+(sleep 15 && hsetroot -full /usr/share/awesome/themes/default/background.png) &
 
 awesome
