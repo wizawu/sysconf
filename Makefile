@@ -23,6 +23,8 @@ all: apt ssh install clean
 
 ####
 # DPI: 118
+# Font: Sans 10
+# Hint: Grayscale|Slight|RGB
 ####
 # How to hide mate-panel?
 # 1. Right-click top panel, 'Delete This Panel'

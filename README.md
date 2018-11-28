@@ -6,10 +6,11 @@ modprobe -r ath10k_pci
 modprobe ath10k_pci
 
 # install wpasupplicant
-wget http://ftp.cn.debian.org/debian/pool/main/p/pcsc-lite/libpcsclite1_1.8.20-1_amd64.deb
-wget http://ftp.cn.debian.org/debian/pool/main/libn/libnl3/libnl-genl-3-200_3.2.27-2_amd64.deb
 wget http://ftp.cn.debian.org/debian/pool/main/libn/libnl3/libnl-3-200_3.2.27-2_amd64.deb
-wget http://ftp.cn.debian.org/debian/pool/main/w/wpa/wpasupplicant_2.4-1+deb9u1_amd64.deb
+wget http://ftp.cn.debian.org/debian/pool/main/libn/libnl3/libnl-genl-3-200_3.2.27-2_amd64.deb
+wget http://ftp.cn.debian.org/debian/pool/main/p/pcsc-lite/libpcsclite1_1.8.20-1_amd64.deb
+wget http://ftp.cn.debian.org/debian/pool/main/w/wpa/wpasupplicant_2.4-1+deb9u2_amd64.deb
+wget https://debian.pkgs.org/9/debian-main-amd64/libdbus-1-3_1.10.26-0+deb9u1_amd64.deb.html
 dpkg -i *_amd64.deb
 
 # edit /etc/network/interfaces

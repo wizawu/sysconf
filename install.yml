@@ -17,7 +17,7 @@
     user: name={{user}} state=present group=root shell=/bin/bash
 
   - name: clone repo
-    git: repo=git@github.com:wizawu/sysconf.git dest=/home/{{user}}/.sysconf force=yes
+    git: repo=https://github.com/wizawu/sysconf dest=/home/{{user}}/.sysconf force=yes
     become: true
     become_user: "{{user}}"
 
@@ -55,6 +55,7 @@
     - autossh
     - awesome
     - awesome-extra
+    - bash-completion
     - caja
     - cifs-utils
     - clang-format
@@ -89,6 +90,7 @@
     - iftop
     - inkscape
     - iotop
+    - less
     - lftp
     - libreoffice
     - linux-headers-amd64
@@ -162,6 +164,8 @@
     - xdg-user-dirs
     - xorg
     - xsel
+    - xserver-xorg-input-kbd
+    - xserver-xorg-input-libinput
     - xserver-xorg-input-synaptics
     - yapf
 
@@ -223,10 +227,14 @@
     with_items:
     - etc/X11/xorg.conf.d
     - etc/apt/apt.conf.d
+    - etc/fonts/conf.available
     - etc/fonts/conf.d
     - etc/security/limits.d
     - etc/sysctl.d
     - etc/xdg/awesome
+
+  - name: remove default font config
+    shell: "mv /etc/fonts/conf.d/*.conf /etc/fonts/conf.available/"
 
   - name: create symbolic link to global config
     file: src=/home/{{user}}/.sysconf/{{item}} dest=/{{item}} state=link force=yes
