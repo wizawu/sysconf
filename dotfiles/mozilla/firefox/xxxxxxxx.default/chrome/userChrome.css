@@ -1,9 +1,0 @@
-* {
-  font-family: Lato;
-  font-size: 12pt !important;
-}
-
-.devtools-monospace, .devtools-monospace * {
-  font-family: monospace;
-  font-size: 10pt !important;
-}
