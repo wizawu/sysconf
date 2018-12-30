@@ -239,6 +239,7 @@
     - etc/fonts/conf.available
     - etc/fonts/conf.d
     - etc/security/limits.d
+    - etc/supervisor/conf.d
     - etc/sysctl.d
     - etc/xdg/awesome
 
@@ -260,6 +261,7 @@
     with_items:
     - etc/security/limits.d/default.conf
     - etc/sudoers.d/default
+    - etc/supervisor/conf.d/ss-local.conf
 
   - name: update tsocks config
     lineinfile:

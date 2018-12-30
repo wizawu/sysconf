@@ -3,7 +3,7 @@
 kbmod &
 
 PERLLIB=$(cd $(dirname $0)/../dotfiles/urxvt && pwd)
-EN_FONT=$(test -n "$xft" && echo "$xft" || echo "Courier Prime Code")
+EN_FONT=$(test -n "$xft" && echo "$xft" || echo "Hasklig")
 
 /usr/bin/urxvt -lsp 5 -letsp -2 --perl-lib $PERLLIB -pe newterm \
     -fn "xft:$EN_FONT:size=11.5,xft:造字工房典黑（非商用）" \
