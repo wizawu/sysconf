@@ -4,7 +4,12 @@ export XMODIFIERS="@im=fcitx"
 export QT_IM_MODULE=fcitx
 export GTK_IM_MODULE=fcitx
 
-echo "DESKTOP DOWNLOAD TEMPLATES PUBLICSHARE DOCUMENTS MUSIC PICTURES VIDEOS" |xargs -I {} xdg-user-dirs-update --set {} ~
+im-config -l
+im-config -o fcitx
+im-config -n fcitx
+
+echo "DESKTOP DOWNLOAD TEMPLATES PUBLICSHARE DOCUMENTS MUSIC PICTURES VIDEOS" \
+    | xargs -I {} xdg-user-dirs-update --set {} ~
 
 xset -b
 xset -dpms
@@ -12,7 +17,8 @@ xset s noblank
 xset s off
 
 (mate-session 2>/dev/null) &
-(sleep 2 && fcitx -d) &
-(sleep 15 && hsetroot -full /usr/share/awesome/themes/default/background.png) &
+(sleep 5 && pkill mate-maximus) &
+(sleep 5 && pkill nm-applet) &
+(sleep 5 && fcitx -d) &
 
 awesome

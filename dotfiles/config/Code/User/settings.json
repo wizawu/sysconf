@@ -32,17 +32,8 @@
     "html.autoClosingTags": false,
     "javascript.autoClosingTags": false,
     "keyboard.dispatch": "keyCode",
-    "python.autoComplete.extraPaths": [
-        "${workspaceFolder}/lib"
-    ],
-    "python.formatting.provider": "yapf",
-    "python.formatting.yapfPath": "/usr/bin/yapf",
-    "python.linting.pylintArgs": [
-        "--disable-msg=E0401",
-        "--errors-only"
-    ],
-    "python.linting.pylintPath": "/usr/local/bin/pylint",
-    "python.pythonPath": "/usr/bin/python3.6",
+    "powermode.enabled": true,
+    "powermode.presets": "magic",
     "typescript.autoClosingTags": false,
     "vim.cursorStylePerMode.normal": "line",
     "vim.useCtrlKeys": true,
