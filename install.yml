@@ -17,7 +17,7 @@
     user: name={{user}} state=present group=root shell=/bin/bash
 
   - name: clone repo
-    git: repo=https://github.com/wizawu/sysconf dest=/home/{{user}}/.sysconf force=yes
+    git: repo=git@github.com:wizawu/sysconf dest=/home/{{user}}/.sysconf force=yes
     become: true
     become_user: "{{user}}"
 
@@ -51,6 +51,7 @@
       autoclean: yes
       name:
       - ack-grep
+      - acpi
       - alsa-oss
       - alsa-tools
       - alsa-utils
@@ -72,6 +73,7 @@
       - dstat
       - entr
       - fcitx
+      - fcitx-frontend-gtk3
       - fcitx-googlepinyin
       - fcitx-ui-classic
       - fio
@@ -91,6 +93,7 @@
       - httpie
       - httrack
       - iftop
+      - im-config
       - inkscape
       - iotop
       - less
@@ -102,10 +105,10 @@
       - locate
       - lshw
       - lsof
+      - m4
       - make
       - manpages-dev
       - mate-desktop-environment-core
-      - mate-utils
       - mtr
       - mupdf
       - mycli
@@ -118,6 +121,7 @@
       - openjdk-8-jdk
       - p7zip-full
       - parallel
+      - perf-tools-unstable
       - pluma
       - pm-utils
       - pppoeconf
@@ -180,7 +184,6 @@
     - losetup
     - lscpu
     - lsusb
-    - perf
     - pmap
     - trap
 
@@ -200,19 +203,32 @@
       autoremove: yes
       purge: yes
       name:
-      - fcitx-module-dbus
-      - fcitx-ui-light
+      - apport
+      - blueman
       - gnome-keyring
       - lightdm
+      - mate-applets
+      - mate-power-manager
+      - mate-screensaver
       - mate-user-guide
       - mate-utils
       - mate-utils-common
+      - nm-tray
+      - packagekit
+      - snapd
+      - system-config-printer
+      - update-notifier
+      - whoopsie
       - xscreensaver
+
+  - name: install npm
+    shell: "command -v npm || apt install npm"
 
   - name: install npm packages
     shell: "npm -g install {{item}}"
     with_items:
     - http-proxy-to-socks
+    - object-path-cli
     - yarn
 
   - name: download gradle
@@ -225,26 +241,19 @@
   - name: download pt-summary
     get_url: url=http://percona.com/get/pt-summary dest=/usr/bin/pt-summary mode=0755
 
-  - name: disable autostart programs
-    command: mv /usr/bin/{{item.src}} /usr/bin/{{item.dest}}
-    with_items:
-    - { src: "caja", dest: "Caja" }
-    ignore_errors: yes
+  - name: remove default font config
+    file: dest=/etc/fonts/conf.d state=absent
 
   - name: create etc directories
     file: dest=/{{item}} state=directory recurse=yes
     with_items:
     - etc/X11/xorg.conf.d
     - etc/apt/apt.conf.d
-    - etc/fonts/conf.available
     - etc/fonts/conf.d
     - etc/security/limits.d
     - etc/supervisor/conf.d
     - etc/sysctl.d
     - etc/xdg/awesome
-
-  - name: remove default font config
-    shell: "mv /etc/fonts/conf.d/*.conf /etc/fonts/conf.available/"
 
   - name: create symbolic link to global config
     file: src=/home/{{user}}/.sysconf/{{item}} dest=/{{item}} state=link force=yes
@@ -269,6 +278,12 @@
       dest: /etc/tsocks.conf
       regexp: '^server\s{0,}='
       line: 'server = 127.0.0.1'
+
+  - name: disable splash screen and fix Ryzen CPU
+    lineinfile:
+      dest: /etc/default/grub
+      regexp: '^GRUB_CMDLINE_LINUX_DEFAULT\s{0,}='
+      line: 'GRUB_CMDLINE_LINUX_DEFAULT="idle=nomwait"'
 
   - name: update systemd logind.conf
     lineinfile:
@@ -297,3 +312,14 @@
     - tmux.conf
     - vimrc
     - xinitrc
+
+  - name: install vscode extensions
+    shell: "code --install-extension {{item}}"
+    with_items:
+    - henriiik.vscode-sort
+    - hoovercj.vscode-power-mode
+    - michelemelluso.code-beautifier
+    - tobiasalthoff.atom-material-theme
+    - vscodevim.vim
+    become: true
+    become_user: "{{user}}"
