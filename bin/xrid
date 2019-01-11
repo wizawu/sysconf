@@ -1,0 +1,27 @@
+#!/bin/bash
+
+xset -b
+xset -dpms
+xset s noblank
+xset s off
+
+# background
+hsetroot -full /usr/share/awesome/themes/default/background.png &
+
+# reset keyboard
+setxkbmap -layout us
+
+# 105 <- Alt_R
+xmodmap -e "keycode 108 = Mode_switch"
+
+# 9 <- Escape
+# Shift + 9 -> ~
+# Mode_switch + 9 -> `
+xmodmap -e "keycode 49 = Escape asciitilde grave"
+
+# input method
+fcitx -d
+
+# kill process
+pkill mate-maximus
+pkill nm-applet
