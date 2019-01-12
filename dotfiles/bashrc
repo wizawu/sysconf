@@ -24,6 +24,8 @@ source /usr/share/bash-completion/bash_completion
 source /usr/share/bash-completion/completions/git
 
 # alias
+alias apt='sudo apt'
+alias aptc='apt-cache'
 alias clangfmt='clang-format -style="{IndentWidth: 2, ColumnLimit: 120}"'
 alias cmemchk='valgrind --tool=memcheck --leak-check=full'
 alias g++='g++ -std=c++11'
