@@ -46,7 +46,7 @@
 
   - name: install apt packages
     apt:
-      update_cache: yes
+      update_cache: no
       install_recommends: no
       autoclean: yes
       name:
@@ -108,6 +108,7 @@
       - m4
       - make
       - manpages-dev
+      - mate-desktop
       - mate-desktop-environment-core
       - mtr
       - mupdf
@@ -189,7 +190,6 @@
 
   - name: install ocaml
     apt:
-      update_cache: yes
       install_recommends: no
       autoclean: yes
       name:
@@ -317,7 +317,6 @@
     shell: "code --install-extension {{item}}"
     with_items:
     - henriiik.vscode-sort
-    - hoovercj.vscode-power-mode
     - michelemelluso.code-beautifier
     - tobiasalthoff.atom-material-theme
     - vscodevim.vim
