@@ -32,8 +32,6 @@
     "html.autoClosingTags": false,
     "javascript.autoClosingTags": false,
     "keyboard.dispatch": "keyCode",
-    "powermode.enabled": true,
-    "powermode.presets": "magic",
     "typescript.autoClosingTags": false,
     "vim.cursorStylePerMode.normal": "line",
     "vim.useCtrlKeys": true,
