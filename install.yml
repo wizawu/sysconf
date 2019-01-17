@@ -108,6 +108,7 @@
       - m4
       - make
       - manpages-dev
+      - mariadb-server
       - mate-desktop
       - mate-desktop-environment-core
       - mtr
