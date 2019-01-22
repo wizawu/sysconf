@@ -80,8 +80,6 @@
       - firefox
       - fiu-utils
       - fontforge
-      - fonts-noto
-      - fonts-noto-cjk
       - fping
       - g++
       - gcc-doc
@@ -208,6 +206,8 @@
       name:
       - apport
       - blueman
+      - fonts-noto
+      - fonts-noto-cjk
       - gnome-keyring
       - lightdm
       - mate-applets
