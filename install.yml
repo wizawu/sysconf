@@ -206,9 +206,6 @@
       name:
       - apport
       - blueman
-      - fonts-droid-fallback
-      - fonts-noto
-      - fonts-noto-cjk
       - gnome-keyring
       - lightdm
       - mate-applets
