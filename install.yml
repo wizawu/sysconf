@@ -176,7 +176,7 @@
       - xserver-xorg-input-kbd
       - xserver-xorg-input-libinput
       - xserver-xorg-input-synaptics
-      - yapf
+      - yarnpkg
 
   - name: check built-in tools
     shell: command -v {{item}}
@@ -219,6 +219,7 @@
       - snapd
       - system-config-printer
       - update-notifier
+      - usbmuxd
       - whoopsie
       - xscreensaver
 
@@ -230,7 +231,6 @@
     with_items:
     - http-proxy-to-socks
     - object-path-cli
-    - yarn
 
   - name: download gradle
     unarchive:
