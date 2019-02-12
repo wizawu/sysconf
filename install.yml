@@ -286,18 +286,6 @@
       regexp: '^GRUB_CMDLINE_LINUX_DEFAULT\s{0,}='
       line: 'GRUB_CMDLINE_LINUX_DEFAULT="idle=nomwait"'
 
-  - name: set grub normal color
-    lineinfile:
-      dest: /etc/default/grub
-      regexp: '^GRUB_COLOR_NORMAL\s{0,}='
-      line: 'GRUB_COLOR_NORMAL="white/black"'
-
-  - name: set grub highlight color
-    lineinfile:
-      dest: /etc/default/grub
-      regexp: '^GRUB_COLOR_HIGHLIGHT\s{0,}='
-      line: 'GRUB_COLOR_HIGHLIGHT="black/white"'
-
   - name: update systemd logind.conf
     lineinfile:
       dest: /etc/systemd/logind.conf
