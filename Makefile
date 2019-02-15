@@ -1,3 +1,5 @@
+default: install clean
+
 install:
 	git fetch origin
 	git reset --hard origin/master
@@ -20,6 +22,7 @@ clean:
 	apt autoremove --purge -y
 	apt autoclean -y
 	apt clean -y
+	yarn cache clean
 
 all: apt ssh install clean
 
