@@ -209,6 +209,7 @@
       - gnome-keyring
       - lightdm
       - mate-applets
+      - mate-desktop-environment-core
       - mate-power-manager
       - mate-screensaver
       - mate-user-guide
@@ -317,6 +318,7 @@
   - name: install vscode extensions
     shell: "code --install-extension {{item}}"
     with_items:
+    - hackwaly.ocaml
     - henriiik.vscode-sort
     - michelemelluso.code-beautifier
     - tobiasalthoff.atom-material-theme
