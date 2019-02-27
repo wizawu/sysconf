@@ -4,7 +4,6 @@ install:
 	git fetch origin
 	git reset --hard origin/master
 	ansible-playbook install.yml -i inventory -e user=wizawu
-	update-grub2
 
 apt:
 	echo "deb http://mirrors.ustc.edu.cn/debian/ sid main" > /etc/apt/sources.list
