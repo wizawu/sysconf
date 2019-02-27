@@ -25,3 +25,5 @@ fcitx -d
 # kill process
 pkill mate-maximus
 pkill nm-applet
+
+mate-settings-daemon &

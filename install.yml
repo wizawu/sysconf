@@ -111,6 +111,7 @@
       - mariadb-server
       - mate-desktop
       - mate-desktop-environment-core
+      - mate-settings-daemon
       - mtr
       - mupdf
       - mycli
@@ -209,7 +210,6 @@
       - gnome-keyring
       - lightdm
       - mate-applets
-      - mate-desktop-environment-core
       - mate-power-manager
       - mate-screensaver
       - mate-user-guide
