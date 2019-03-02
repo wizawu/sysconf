@@ -4,12 +4,13 @@ export XMODIFIERS="@im=fcitx"
 export QT_IM_MODULE=fcitx
 export GTK_IM_MODULE=fcitx
 
+echo "DESKTOP DOWNLOAD TEMPLATES PUBLICSHARE DOCUMENTS MUSIC PICTURES VIDEOS" \
+    | xargs -I {} xdg-user-dirs-update --set {} ~
+
 im-config -l
 im-config -o fcitx
 im-config -n fcitx
-
-echo "DESKTOP DOWNLOAD TEMPLATES PUBLICSHARE DOCUMENTS MUSIC PICTURES VIDEOS" \
-    | xargs -I {} xdg-user-dirs-update --set {} ~
+(sleep 2 && fcitx -d) &
 
 mate-session 2>/dev/null &
 awesome
