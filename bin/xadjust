@@ -19,9 +19,6 @@ xmodmap -e "keycode 108 = Mode_switch"
 # Mode_switch + 9 -> `
 xmodmap -e "keycode 9 = Escape asciitilde grave"
 
-# input method
-fcitx -d
-
 # kill process
 pkill mate-maximus
 pkill nm-applet
