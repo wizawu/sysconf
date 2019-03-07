@@ -98,7 +98,8 @@
       - iotop
       - less
       - lftp
-      - libreoffice
+      - libreoffice-calc
+      - libreoffice-writer
       - linux-headers-amd64
       - linux-image-amd64
       - lm-sensors
@@ -254,7 +255,6 @@
     - etc/fonts/conf.d
     - etc/security/limits.d
     - etc/supervisor/conf.d
-    - etc/sysctl.d
     - etc/xdg/awesome
 
   - name: create symbolic link to global config
@@ -264,7 +264,6 @@
     - etc/apt/apt.conf.d/99default
     - etc/fonts/conf.d/99-default.conf
     - etc/rc.local
-    - etc/sysctl.d/99-default.conf
     - etc/xdg/awesome/rc.lua
 
   - name: create template config
@@ -298,6 +297,15 @@
     with_items:
     - { key: "HandleLidSwitch", value: "suspend" }
     - { key: "HandlePowerKey", value: "suspend" }
+
+  - name: increase max_user_watches
+    lineinfile:
+      dest: /etc/sysctl.conf
+      regexp: '^fs.inotify.max_user_watches\s{0,}='
+      line: 'fs.inotify.max_user_watches=524288'
+
+  - name: update max_user_watches
+    command: sysctl -p
 
   - name: create user directories
     file: dest=/home/{{user}}/{{item}} state=directory recurse=yes owner={{user}}
