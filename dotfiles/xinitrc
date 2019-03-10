@@ -4,8 +4,15 @@ export XMODIFIERS="@im=fcitx"
 export QT_IM_MODULE=fcitx
 export GTK_IM_MODULE=fcitx
 
-echo "DESKTOP DOWNLOAD TEMPLATES PUBLICSHARE DOCUMENTS MUSIC PICTURES VIDEOS" \
-    | xargs -I {} xdg-user-dirs-update --set {} ~
+xdg-user-dirs-update --set DESKTOP ~
+xdg-user-dirs-update --set DOCUMENTS ~
+xdg-user-dirs-update --set DOWNLOAD ~
+xdg-user-dirs-update --set MUSIC ~
+xdg-user-dirs-update --set PICTURES ~
+xdg-user-dirs-update --set PUBLIC ~
+xdg-user-dirs-update --set SHARE ~
+xdg-user-dirs-update --set TEMPLATES ~
+xdg-user-dirs-update --set VIDEOS ~
 
 im-config -l
 im-config -o fcitx
