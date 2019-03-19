@@ -329,7 +329,7 @@
   - name: install vscode extensions
     shell: "code --install-extension {{item}}"
     with_items:
-    - hackwaly.ocaml
+    - freebroccolo.reasonml
     - henriiik.vscode-sort
     - michelemelluso.code-beautifier
     - tobiasalthoff.atom-material-theme
