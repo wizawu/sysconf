@@ -1,7 +1,3 @@
 Host *
     ServerAliveInterval 60
     User root
-
-Host gitee.com
-    IdentityFile ~/.ssh/gitee
-    User git
