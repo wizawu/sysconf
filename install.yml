@@ -332,6 +332,7 @@
     - freebroccolo.reasonml
     - henriiik.vscode-sort
     - michelemelluso.code-beautifier
+    - mikeburgh.xml-format
     - tobiasalthoff.atom-material-theme
     - vscodevim.vim
     become: true
