@@ -19,5 +19,6 @@ im-config -o fcitx
 im-config -n fcitx
 (sleep 2 && fcitx -d) &
 
+sudo sysctl -p
 mate-session 2>/dev/null &
 awesome

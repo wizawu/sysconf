@@ -125,7 +125,6 @@
       - openjdk-8-jdk
       - p7zip-full
       - parallel
-      - perf-tools-unstable
       - pluma
       - pm-utils
       - pppoeconf
