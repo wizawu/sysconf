@@ -38,7 +38,6 @@
   - name: add apt keys
     apt_key: keyserver=keyserver.ubuntu.com id={{item}}
     with_items:
-    - 1397BC53640DB551      # chrome
     - 1655A0AB68576280      # node
     - 7638D0442B90D010      # debian
     - EB3E94ADBE1229CF      # vscode
