@@ -97,8 +97,6 @@
       - iotop
       - less
       - lftp
-      - libreoffice-calc
-      - libreoffice-writer
       - linux-headers-amd64
       - linux-image-amd64
       - lm-sensors
