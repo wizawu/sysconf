@@ -1,7 +1,7 @@
 {
     "beautify.options": {
         "preserve_newlines": true,
-        "selector_separator_newline": false
+        "selector_separator_newline": false,
     },
     "editor.detectIndentation": false,
     "editor.fontFamily": "Courier Prime Code",
@@ -12,18 +12,18 @@
     "editor.quickSuggestions": {
         "comments": true,
         "other": true,
-        "strings": true
+        "strings": true,
     },
     "editor.rulers": [
         80,
-        120
+        120,
     ],
     "explorer.openEditors.visible": 0,
     "files.autoSave": "off",
     "files.exclude": {
         "**/*.retry": true,
         "**/__pycache__": true,
-        "**/node_modules/": true
+        "**/node_modules/": true,
     },
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
@@ -32,12 +32,19 @@
     "html.autoClosingTags": false,
     "javascript.autoClosingTags": false,
     "keyboard.dispatch": "keyCode",
+    "python.formatting.provider": "yapf",
+    "python.formatting.yapfPath": "/usr/bin/yapf",
+    "python.linting.pylintArgs": [
+        "--init-hook='import sys; sys.path.append(\"/usr/local/lib/python3.7/dist-packages\")'"
+    ],
+    "python.linting.pylintPath": "/usr/bin/pylint",
+    "python.pythonPath": "/usr/bin/python3.7",
     "typescript.autoClosingTags": false,
     "vim.cursorStylePerMode.normal": "line",
     "vim.useCtrlKeys": true,
     "vim.useSystemClipboard": false,
     "window.openFoldersInNewWindow": "on",
+    "workbench.colorTheme": "Atom Material Theme",
     "workbench.editor.enablePreview": false,
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "Atom Material Theme"
 }

@@ -187,7 +187,7 @@
     - pmap
     - trap
 
-  - name: install ocaml
+  - name: install ocaml packages
     apt:
       install_recommends: no
       autoclean: yes
@@ -195,6 +195,14 @@
       - menhir
       - ocaml
       - opam
+
+  - name: install python packages
+    apt:
+      install_recommends: no
+      autoclean: yes
+      name:
+      - pylint
+      - yapf
 
   - name: remove apt packages
     apt:
@@ -329,6 +337,7 @@
     - henriiik.vscode-sort
     - michelemelluso.code-beautifier
     - mikeburgh.xml-format
+    - ms-python.python
     - tobiasalthoff.atom-material-theme
     - vscodevim.vim
     become: true
