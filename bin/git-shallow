@@ -1,3 +1,0 @@
-#!/bin/sh
-
-git clone --depth 1 -b $2 $1
