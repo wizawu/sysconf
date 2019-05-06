@@ -5,6 +5,7 @@
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export EDITOR=vim
+export GERRIT_REF=HEAD:refs/for/master
 export JAVA_HOME=/usr/lib/jvm/default-java
 export GRADLE_HOME=/usr/local/lib/gradle-3.5.1
 export PATH=$HOME/.sysconf/bin:$JAVA_HOME/bin:$GRADLE_HOME/bin:/usr/sbin:/sbin:$PATH
