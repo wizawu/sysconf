@@ -1,0 +1,6 @@
+#!/bin/bash
+
+local_ip=192.168.99.$(echo {0..255} | sed -e 's/ /,192.168.99./g')
+no_proxy=$no_proxy,$local_ip minikube start --logtostderr \
+    --image-repository=registry.cn-hangzhou.aliyuncs.com/google_containers \
+    $@
