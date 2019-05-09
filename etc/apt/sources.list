@@ -1,6 +1,7 @@
+deb [arch=amd64,i386] https://mirrors.ustc.edu.cn/debian/ buster main contrib non-free
+deb [arch=amd64,i386] https://mirrors.ustc.edu.cn/debian/ sid main contrib non-free
 deb [arch=amd64] http://mirrors.tuna.tsinghua.edu.cn/mariadb/repo/10.2/debian sid main
 deb [arch=amd64] https://deb.nodesource.com/node_8.x sid main
 deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main
-deb [arch=amd64] https://mirrors.ustc.edu.cn/debian/ buster main contrib non-free
-deb [arch=amd64] https://mirrors.ustc.edu.cn/debian/ sid main contrib non-free
 deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main
+deb [arch=i386 trusted=yes] http://mirrors.tuna.tsinghua.edu.cn/deepin/ lion main contrib non-free
