@@ -299,7 +299,7 @@
       regexp: '^{{item.key}}\s{0,}='
       line: '{{item.key}}={{item.value}}'
     with_items:
-    - { key: "HandleLidSwitch", value: "suspend" }
+    - { key: "HandleLidSwitch", value: "ignore" }
     - { key: "HandlePowerKey", value: "suspend" }
 
   - name: increase max_user_watches
