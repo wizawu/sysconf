@@ -119,7 +119,6 @@
       - nodejs
       - ntfs-3g
       - ntpdate
-      - openjdk-8-jdk
       - p7zip-full
       - parallel
       - pluma
@@ -277,6 +276,21 @@
     - etc/sudoers.d/default
     - etc/supervisor/conf.d/ss-local.conf
     - etc/supervisor/conf.d/unix_http_server.conf
+
+  - name: remove font dir
+    lineinfile:
+      dest: /etc/fonts/fonts.conf
+      regexp: '^\s{0,}<dir'
+      state: absent
+
+  - name: add font dir
+    lineinfile:
+      dest: /etc/fonts/fonts.conf
+      line: "\t{{item}}"
+      insertafter: '<fontconfig'
+    with_items:
+    - '<dir>~/.fonts</dir>'
+    - '<dir>/usr/share/fonts/cmap</dir>'
 
   - name: update tsocks config
     lineinfile:
