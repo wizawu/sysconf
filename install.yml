@@ -125,6 +125,7 @@
       - pm-utils
       - pppoeconf
       - psmisc
+      - pulseaudio
       - qbittorrent
       - redis-server
       - rinetd
