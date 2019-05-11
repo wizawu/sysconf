@@ -19,6 +19,8 @@ im-config -o fcitx
 im-config -n fcitx
 (sleep 2 && fcitx -d) &
 
+pulseaudio --check || pulseaudio --start -D
+
 sudo sysctl -p
 mate-session 2>/dev/null &
 awesome
