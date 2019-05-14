@@ -116,6 +116,7 @@
       - netcat
       - nginx
       - nmap
+      - nethogs
       - nodejs
       - ntfs-3g
       - ntpdate
@@ -291,7 +292,7 @@
       insertafter: '<fontconfig'
     with_items:
     - '<dir>~/.fonts</dir>'
-    - '<dir>/usr/share/fonts/cmap</dir>'
+    - '<dir>/usr/share/fonts</dir>'
 
   - name: update tsocks config
     lineinfile:
@@ -353,6 +354,7 @@
     - michelemelluso.code-beautifier
     - mikeburgh.xml-format
     - ms-python.python
+    - octref.vetur
     - tobiasalthoff.atom-material-theme
     - vscodevim.vim
     become: true
