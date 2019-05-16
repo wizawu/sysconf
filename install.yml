@@ -83,6 +83,7 @@
       - g++
       - gcc-doc
       - gimp
+      - git-lfs
       - google-chrome-stable
       - google-perftools
       - gufw
