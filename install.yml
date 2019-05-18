@@ -293,7 +293,6 @@
       insertafter: '<fontconfig'
     with_items:
     - '<dir>~/.fonts</dir>'
-    - '<dir>/usr/share/fonts</dir>'
 
   - name: update tsocks config
     lineinfile:
