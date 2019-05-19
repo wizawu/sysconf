@@ -83,7 +83,6 @@
       - g++
       - gcc-doc
       - gimp
-      - git-lfs
       - google-chrome-stable
       - google-perftools
       - gufw
@@ -235,7 +234,7 @@
     shell: "command -v npm || apt install npm"
 
   - name: install npm packages
-    shell: "npm -g install {{item}}"
+    shell: "yarn global add {{item}}"
     with_items:
     - http-proxy-to-socks
     - object-path-cli
@@ -277,7 +276,7 @@
     with_items:
     - etc/security/limits.d/default.conf
     - etc/sudoers.d/default
-    - etc/supervisor/conf.d/ss-local.conf
+    - etc/supervisor/conf.d/shadowsocks.conf
     - etc/supervisor/conf.d/unix_http_server.conf
 
   - name: remove font dir
