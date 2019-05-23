@@ -17,9 +17,17 @@
     user: name={{user}} state=present group=root shell=/bin/bash
 
   - name: clone repo
-    git: repo=git@github.com:wizawu/sysconf dest=/home/{{user}}/.sysconf force=yes
+    git:
+      repo: https://github.com/wizawu/sysconf.git
+      dest: /home/{{user}}/.sysconf
+      force: yes
     become: true
     become_user: "{{user}}"
+
+  - name: change remote url
+    command: git remote set-url origin git@github.com:wizawu/sysconf.git
+    args:
+      chdir: /home/{{user}}/.sysconf
 
   - name: locale-gen
     locale_gen: name={{item}} state=present
@@ -39,13 +47,19 @@
     apt_key: keyserver=keyserver.ubuntu.com id={{item}}
     with_items:
     - 1655A0AB68576280      # node
+    - 425956BB3E31DF51      # deepin
     - 7638D0442B90D010      # debian
     - EB3E94ADBE1229CF      # vscode
     - F1656F24C74CD1D8      # mariadb
 
+  - name: add apt keys
+    apt_key: keyserver=keys.gnupg.net id={{item}}
+    with_items:
+    - 6494C6D6997C215E      # chrome
+
   - name: install apt packages
     apt:
-      update_cache: no
+      update_cache: yes
       install_recommends: no
       autoclean: yes
       name:
@@ -175,7 +189,6 @@
       - xserver-xorg-input-kbd
       - xserver-xorg-input-libinput
       - xserver-xorg-input-synaptics
-      - yarnpkg
 
   - name: check built-in tools
     shell: command -v {{item}}
@@ -213,8 +226,8 @@
       name:
       - apport
       - blueman
-      - gnome-keyring
-      - lightdm
+      - gnome*
+      - lightdm*
       - mate-applets
       - mate-power-manager
       - mate-screensaver
@@ -228,10 +241,14 @@
       - update-notifier
       - usbmuxd
       - whoopsie
+      - xfce*
       - xscreensaver
 
   - name: install npm
     shell: "command -v npm || apt install npm"
+
+  - name: install yarn
+    shell: "npm install -g yarn"
 
   - name: install npm packages
     shell: "yarn global add {{item}}"
