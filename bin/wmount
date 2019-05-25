@@ -1,4 +1,0 @@
-#!/bin/bash
-
-set -x
-sudo mount -o rw,uid=$UID,iocharset=utf8 $@
