@@ -1,3 +1,0 @@
-#!/bin/sh
-
-unzip -O cp936 $@
