@@ -100,6 +100,7 @@
       - google-chrome-stable
       - google-perftools
       - gufw
+      - haproxy
       - hdparm
       - hsetroot
       - htop
@@ -121,11 +122,9 @@
       - make
       - manpages-dev
       - mariadb-server
-      - mate-desktop
-      - mate-desktop-environment-core
+      - mate-control-center
       - mate-settings-daemon
       - mtr
-      - mupdf
       - mycli
       - netcat
       - nginx
@@ -142,6 +141,7 @@
       - psmisc
       - pulseaudio
       - qbittorrent
+      - qpdfview
       - redis-server
       - rinetd
       - rlwrap
@@ -226,9 +226,12 @@
       name:
       - apport
       - blueman
+      - cups-*
       - gnome*
       - lightdm*
       - mate-applets
+      - mate-polkit
+      - mate-polkit-common
       - mate-power-manager
       - mate-screensaver
       - mate-user-guide
@@ -243,6 +246,7 @@
       - whoopsie
       - xfce*
       - xscreensaver
+      - yad
 
   - name: install npm
     shell: "command -v npm || apt install npm"
@@ -286,6 +290,7 @@
     - etc/apt/apt.conf.d/99default
     - etc/fonts/conf.d/99-default.conf
     - etc/rc.local
+    - etc/supervisor/conf.d/unix_http_server.conf
     - etc/xdg/awesome/rc.lua
 
   - name: create template config
@@ -294,7 +299,6 @@
     - etc/security/limits.d/default.conf
     - etc/sudoers.d/default
     - etc/supervisor/conf.d/shadowsocks.conf
-    - etc/supervisor/conf.d/unix_http_server.conf
 
   - name: remove font dir
     lineinfile:
