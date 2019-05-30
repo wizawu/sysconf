@@ -377,5 +377,6 @@
     - octref.vetur
     - tobiasalthoff.atom-material-theme
     - vscodevim.vim
+    - vscoss.vscode-ansible
     become: true
     become_user: "{{user}}"
