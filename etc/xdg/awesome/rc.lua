@@ -215,9 +215,6 @@ awful.screen.connect_for_each_screen(function(s)
     cpuwidget = wibox.widget.textbox()
     vicious.register(cpuwidget, vicious.widgets.cpu, " CPU $1%", 1)
 
-    cputempwidget = wibox.widget.textbox()
-    vicious.register(cputempwidget, vicious.widgets.thermal, " $1°C |", 1, "thermal_zone0")
-
     memwidget = wibox.widget.textbox()
     vicious.register(memwidget, vicious.widgets.mem, " MEM $1% $2/$3MiB |", 1)
 
@@ -245,7 +242,6 @@ awful.screen.connect_for_each_screen(function(s)
             -- @end --
             wibox.widget.systray(),
             cpuwidget,
-            cputempwidget,
             memwidget,
             fswidget,
             batwidget,
