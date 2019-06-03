@@ -114,6 +114,7 @@
       - lftp
       - linux-headers-amd64
       - linux-image-amd64
+      - linux-perf
       - lm-sensors
       - locate
       - lshw
