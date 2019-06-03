@@ -9,6 +9,7 @@ export GERRIT_REF=HEAD:refs/for/master
 export JAVA_HOME=/usr/lib/jvm/default-java
 export GRADLE_HOME=/usr/local/lib/gradle-3.5.1
 export PATH=$HOME/.sysconf/bin:$JAVA_HOME/bin:$GRADLE_HOME/bin:/usr/sbin:/sbin:$PATH
+export TERM=rxvt
 which opam >/dev/null && eval $(opam env 2>/dev/null)
 
 # terminal
