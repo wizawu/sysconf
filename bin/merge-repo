@@ -1,3 +1,0 @@
-#!/bin/bash
-
-tsocks git subtree add --prefix=$1 git@github.com:wizawu/$1.git master
