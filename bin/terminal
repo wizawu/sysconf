@@ -1,10 +1,5 @@
 #!/bin/bash
 
-if [ $(xrandr --listactivemonitors | head -1 | awk '{print $2}') -gt 1 ]; then
-    eDP=$(xrandr --listactivemonitors | grep eDP | awk '{print $NF}')
-    xrandr --output $eDP --off
-fi
-
 PERLLIB=$(cd $(dirname $0)/../dotfiles/urxvt && pwd)
 EN_FONT=$(test -n "$xft" && echo "$xft" || echo "Courier Prime Code")
 

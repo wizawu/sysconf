@@ -6,7 +6,7 @@
     "editor.detectIndentation": false,
     "editor.fontFamily": "Courier Prime Code",
     "editor.fontSize": 14,
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.letterSpacing": -1,
     "editor.lineHeight": 24,
     "editor.quickSuggestions": {
