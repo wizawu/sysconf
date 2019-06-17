@@ -190,6 +190,7 @@
       - xserver-xorg-input-kbd
       - xserver-xorg-input-libinput
       - xserver-xorg-input-synaptics
+      - xtrlock
 
   - name: check built-in tools
     shell: command -v {{item}}
