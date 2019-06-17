@@ -375,6 +375,7 @@
     - michelemelluso.code-beautifier
     - mikeburgh.xml-format
     - ms-python.python
+    - mtxr.sqltools
     - octref.vetur
     - tobiasalthoff.atom-material-theme
     - vscodevim.vim
