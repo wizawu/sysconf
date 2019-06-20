@@ -38,7 +38,7 @@ alias la='ls -A'
 alias lh='ls -lh'
 alias ll='ls -l'
 alias ls='ls --color=auto'
-alias psync='rsync -p --info=progress2'
+alias psync='rsync -Pz --info=progress2'
 alias tgit="tsocks git"
 alias timev="/usr/bin/time -v"
 alias tree='tree -C'
