@@ -7,8 +7,8 @@ set -ex
 [[ `fc-match Consolas` = *Consolas* ]]
 [[ `fc-match Courier` = *Courier* ]]
 [[ `fc-match Lato` = *Lato* ]]
-[[ `fc-match Menlo` = `fc-match monospace` ]]
-[[ `fc-match monospace` = *Courier\ Prime\ Code* ]]
+[[ `fc-match Menlo` = *SFMono* ]]
+[[ `fc-match monospace` = *Courier* ]]
 [[ `fc-match sans` != `fc-match monospace` ]]
 
 echo OK
