@@ -6,7 +6,6 @@ append() {
 
 if [[ -z "$1" || $1 = help ]]; then
     echo "iface scan"
-    echo "iface vault [ssid]"
     echo "iface wifi <interface> [ssid [psk [address/mask gateway]]]"
     echo "iface eth <interface> [address/mask gateway]"
     exit
@@ -41,10 +40,6 @@ if [ $1 = wifi ]; then
     append "iface $2 inet $inet" $conf
     if [ -z "$4" ]; then
         append "    wireless-essid $3" $conf
-    elif [ "$4" = "-" ]; then
-        psk=$($0 vault "$3" | awk '{print $2}')
-        append "    wpa-ssid $3" $conf
-        append "    wpa-psk $psk" $conf
     else
         append "    wpa-ssid $3" $conf
         append "    wpa-psk $4" $conf
@@ -78,18 +73,4 @@ if [ $1 = eth ]; then
     fi
     sudo ifdown $2
     sudo ifup $2
-fi
-
-if [ $1 = vault ]; then
-    vault="jA0EAwMCK7gY0OAukfFgybu/iWvZ4ukdrxPvp+vcM6Uslmyg+O4xRqAudhvAt14cd2QUklRZdnU4Z/rKukbkjIEg7RXA11b/W/GOnUffmaFjnv3n67Sdur9S7q1jF4X8VhlwInuq8jmQay0gpyyTdTQZiOHehtuaSvziv7fSTUFEMev7H/k1sJm1KroP3YdHDnoUMljtMCMe/DIspWfOB/we1R49mytq5SJwU5GQqFnqdkKw8uPiAHDnQ6Sx3x1BT7CnygbkXZUoZZuc"
-    if [ -z "$2" ]; then
-        echo $vault | base64 -d | gnupg -d
-    else
-        echo $vault | base64 -d | gnupg -d | grep "^$2::::" | sed -e 's/::::/ /g'
-    fi
-fi
-
-if [ $1 = ":vault" ]; then
-    echo CTRL-D
-    gnupg -c | base64 -w 0
 fi
