@@ -1,15 +1,10 @@
 default: install clean
-
-install:
-	git fetch origin
-	git reset --hard origin/master
-	ansible-playbook install.yml -i inventory -e user=wizawu
+all: apt ssh install clean
 
 apt:
 	echo "deb http://mirrors.ustc.edu.cn/debian/ sid main" > /etc/apt/sources.list
-	apt-key adv --recv-key 8B48AD6246925553
 	apt update
-	apt install -y ansible apt-transport-https dirmngr openssh-client openssh-server sudo
+	apt install -y ansible dirmngr openssh-client openssh-server python-minimal sudo
 
 ssh:
 	rm -f ~/.ssh/id_rsa
@@ -17,10 +12,13 @@ ssh:
 	cp /root/.ssh/id_rsa.pub /root/.ssh/authorized_keys
 	ssh -o "StrictHostKeyChecking=no" root@127.0.0.1 echo ok
 
+install:
+	git fetch origin
+	git reset --hard origin/master
+	ansible-playbook install.yml -i inventory -e user=wizawu -v
+
 clean:
 	apt autoremove --purge -y
 	apt autoclean -y
 	apt clean -y
 	yarn cache clean
-
-all: apt ssh install clean

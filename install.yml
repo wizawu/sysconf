@@ -20,7 +20,9 @@
     git:
       repo: https://github.com/wizawu/sysconf.git
       dest: /home/{{user}}/.sysconf
+      depth: 1
       force: yes
+      update: yes
     become: true
     become_user: "{{user}}"
 
@@ -142,6 +144,7 @@
       - pppoeconf
       - psmisc
       - pulseaudio
+      - putty-tools
       - qbittorrent
       - qpdfview
       - redis-server
@@ -169,7 +172,7 @@
       - tmux
       - tree
       - tsocks
-      - unrar
+      - unrar-free
       - unzip
       - upower
       - valgrind
@@ -252,7 +255,9 @@
       - yad
 
   - name: install npm
-    shell: "command -v npm || apt install npm"
+    package:
+      name: npm
+      state: latest
 
   - name: install yarn
     shell: "npm install -g yarn"
@@ -272,9 +277,6 @@
 
   - name: download pt-summary
     get_url: url=http://percona.com/get/pt-summary dest=/usr/bin/pt-summary mode=0755
-
-  - name: remove default font config
-    file: dest=/etc/fonts/conf.d state=absent
 
   - name: create etc directories
     file: dest=/{{item}} state=directory recurse=yes
@@ -323,11 +325,11 @@
       regexp: '^server\s{0,}='
       line: 'server = 127.0.0.1'
 
-  - name: disable splash screen and fix Ryzen CPU
+  - name: disable splash screen
     lineinfile:
       dest: /etc/default/grub
       regexp: '^GRUB_CMDLINE_LINUX_DEFAULT\s{0,}='
-      line: 'GRUB_CMDLINE_LINUX_DEFAULT="idle=nomwait"'
+      line: 'GRUB_CMDLINE_LINUX_DEFAULT=""'
 
   - name: update grub config
     command: update-grub2
