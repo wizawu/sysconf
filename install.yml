@@ -85,6 +85,7 @@
       - dnsutils
       - dstat
       - entr
+      - expect
       - fcitx
       - fcitx-frontend-gtk3
       - fcitx-googlepinyin
