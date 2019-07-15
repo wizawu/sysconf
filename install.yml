@@ -268,13 +268,6 @@
     - http-proxy-to-socks
     - object-path-cli
 
-  - name: download gradle
-    unarchive:
-      src: https://downloads.gradle.org/distributions/gradle-3.5.1-bin.zip
-      dest: /usr/local/lib
-      remote_src: yes
-    when: false
-
   - name: download pt-summary
     get_url: url=http://percona.com/get/pt-summary dest=/usr/bin/pt-summary mode=0755
 
