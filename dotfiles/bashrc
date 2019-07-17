@@ -5,7 +5,6 @@
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export EDITOR=vim
-export GERRIT_REF=HEAD:refs/for/master
 export JAVA_HOME=/usr/lib/jvm/default-java
 export GRADLE_HOME=/opt/gradle
 export PATH=$HOME/.sysconf/bin:$JAVA_HOME/bin:$GRADLE_HOME/bin:/usr/sbin:/sbin:$PATH
@@ -33,6 +32,7 @@ alias cmemchk='valgrind --tool=memcheck --leak-check=full'
 alias dnstest='fping -c5 1.0.0.1 8.8.8.8 114.114.114.114'
 alias g++='g++ -std=c++11'
 alias gcc='gcc -std=c11 -fms-extensions'
+alias gerrit-push='git push origin HEAD:refs/for/master'
 alias git-amend='git commit --amend --no-edit'
 alias la='ls -A'
 alias lh='ls -lh'
