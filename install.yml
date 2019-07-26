@@ -106,6 +106,7 @@
       - haproxy
       - hdparm
       - hsetroot
+      - hsqldb-utils
       - htop
       - httpie
       - httrack
