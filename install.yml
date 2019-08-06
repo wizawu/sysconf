@@ -140,6 +140,7 @@
       - ntpdate
       - p7zip-full
       - parallel
+      - pgformatter
       - pluma
       - pm-utils
       - pppoeconf
