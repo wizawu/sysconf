@@ -106,7 +106,6 @@
       - haproxy
       - hdparm
       - hsetroot
-      - hsqldb-utils
       - htop
       - httpie
       - httrack
@@ -126,7 +125,6 @@
       - m4
       - make
       - manpages-dev
-      - mariadb-server
       - mate-control-center
       - mate-settings-daemon
       - mtr
@@ -140,7 +138,6 @@
       - ntpdate
       - p7zip-full
       - parallel
-      - pgformatter
       - pluma
       - pm-utils
       - pppoeconf
@@ -149,7 +146,6 @@
       - putty-tools
       - qbittorrent
       - qpdfview
-      - redis-server
       - rinetd
       - rlwrap
       - rsync
@@ -208,6 +204,14 @@
     - lsusb
     - pmap
     - trap
+
+  - name: install database packages
+    apt:
+      name:
+      - hsqldb-utils
+      - mariadb-server
+      - pgformatter
+      - redis-server
 
   - name: install ocaml packages
     apt:
