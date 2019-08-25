@@ -23,4 +23,4 @@ xmodmap -e "keycode 9 = Escape asciitilde grave"
 pkill mate-maximus
 pkill nm-applet
 
-mate-settings-daemon &
+mate-settings-daemon 2>/dev/null &
