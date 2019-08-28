@@ -8,7 +8,8 @@
   "editor.fontSize": 14,
   "editor.formatOnSave": false,
   "editor.letterSpacing": -1,
-  "editor.lineHeight": 24,
+  "editor.lineHeight": 22,
+  "editor.minimap.enabled": false,
   "editor.quickSuggestions": {
     "comments": true,
     "other": true,
