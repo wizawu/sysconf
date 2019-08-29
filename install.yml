@@ -23,7 +23,7 @@
       depth: 1
       force: yes
       update: yes
-    become: true
+    become: yes
     become_user: "{{user}}"
 
   - name: change remote url
@@ -379,10 +379,9 @@
     - michelemelluso.code-beautifier
     - mikeburgh.xml-format
     - ms-python.python
-    - mtxr.sqltools
     - octref.vetur
     - tobiasalthoff.atom-material-theme
     - vscodevim.vim
     - vscoss.vscode-ansible
-    become: true
+    become: yes
     become_user: "{{user}}"
