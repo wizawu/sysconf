@@ -194,6 +194,7 @@
       - xserver-xorg-input-libinput
       - xserver-xorg-input-synaptics
       - xtrlock
+      - yamllint
 
   - name: check built-in tools
     shell: command -v {{item}}
