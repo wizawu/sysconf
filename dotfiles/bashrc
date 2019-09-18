@@ -2,11 +2,12 @@
 [[ $- != *i* ]] && return
 
 # basic
+export EDITOR=vim
+export GRADLE_HOME=/opt/gradle
+export JAVA_HOME=/usr/lib/jvm/default-java
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-export EDITOR=vim
-export JAVA_HOME=/usr/lib/jvm/default-java
-export GRADLE_HOME=/opt/gradle
+export NPM_CONFIG_REGISTRY=http://registry.npm.taobao.org
 export PATH=$HOME/.sysconf/bin:$JAVA_HOME/bin:$GRADLE_HOME/bin:/usr/sbin:/sbin:$PATH
 export TERM=rxvt
 which opam >/dev/null && eval $(opam env 2>/dev/null)
