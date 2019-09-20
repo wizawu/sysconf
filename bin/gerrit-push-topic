@@ -1,6 +1,6 @@
 #!/bin/sh
 
 set -ex
+test -n "$1"
 GERRIT_TOPIC="$1"
-test -n "$GERRIT_TOPIC"
 git push origin HEAD:refs/for/master/$GERRIT_TOPIC
