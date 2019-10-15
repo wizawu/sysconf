@@ -141,7 +141,6 @@
       - pluma
       - pm-utils
       - pppoeconf
-      - protobuf-compiler-grpc
       - psmisc
       - pulseaudio
       - putty-tools
