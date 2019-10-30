@@ -90,7 +90,6 @@
       - expect
       - fcitx
       - fcitx-frontend-gtk3
-      - fcitx-googlepinyin
       - fcitx-ui-classic
       - fio
       - firefox
@@ -148,11 +147,13 @@
       - qpdfview
       - rinetd
       - rlwrap
+      - rpm2archive
       - rsync
       - rxvt-unicode-256color
       - samba
       - smbclient
       - smplayer
+      - software-properties-common
       - ssh
       - sshfs
       - sshpass
@@ -185,7 +186,6 @@
       - wrk
       - x11-xkb-utils
       - x11-xserver-utils
-      - xclip
       - xdg-user-dirs
       - xorg
       - xsel
@@ -230,6 +230,21 @@
       name:
       - pylint
       - yapf
+
+  - name: install sogou pinyin dependencies
+    apt:
+      name:
+        - fcitx-frontend-qt4
+        - fcitx-frontend-qt5
+        - fcitx-libs
+        - libfcitx-qt0
+        - libopencc2
+        - libqt4-declarative
+        - libqtwebkit4:amd64
+
+  - name: install sogou pinyin
+    apt:
+      deb: http://cdn2.ime.sogou.com/dl/index/1571302197/sogoupinyin_2.3.1.0112_amd64.deb
 
   - name: remove apt packages
     apt:

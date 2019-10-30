@@ -5,4 +5,4 @@ deb [arch=amd64] https://dl.google.com/linux/chrome/deb stable main
 deb [arch=amd64] https://mirrors.aliyun.com/kubernetes/apt kubernetes-xenial main
 deb [arch=amd64] https://mirrors.tuna.tsinghua.edu.cn/mariadb/repo/10.3/ubuntu cosmic main
 deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main
-deb [arch=i386] https://mirrors.tuna.tsinghua.edu.cn/deepin stable main non-free
+deb [arch=amd64,i386] https://mirrors.tuna.tsinghua.edu.cn/deepin stable main non-free
