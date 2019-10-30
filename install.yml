@@ -52,7 +52,6 @@
     - 425956BB3E31DF51      # deepin
     - 7638D0442B90D010      # debian
     - EB3E94ADBE1229CF      # vscode
-    - F1656F24C74CD1D8      # mariadb
 
   - name: add apt keys
     apt_key: keyserver=keys.gnupg.net id={{item}}
@@ -210,7 +209,7 @@
     apt:
       name:
       - hsqldb-utils
-      - mariadb-server
+      - percona-xtradb-cluster-server
       - pgformatter
       - redis-server
 
