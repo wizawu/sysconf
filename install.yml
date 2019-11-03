@@ -26,11 +26,6 @@
     become: yes
     become_user: "{{user}}"
 
-  - name: change remote url
-    command: git remote set-url origin git@github.com:wizawu/sysconf.git
-    args:
-      chdir: /home/{{user}}/.sysconf
-
   - name: locale-gen
     locale_gen: name={{item}} state=present
     with_items:
@@ -378,3 +373,10 @@
     - vscoss.vscode-ansible
     become: yes
     become_user: "{{user}}"
+
+  - name: unshallow git repo
+    shell: |
+      git fetch --unshallow
+      git remote set-url origin git@github.com:wizawu/sysconf.git
+    args:
+      chdir: /home/{{user}}/.sysconf
