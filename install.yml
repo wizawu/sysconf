@@ -374,6 +374,9 @@
     become: yes
     become_user: "{{user}}"
 
+  - name: fix timezone
+    command: dpkg-reconfigure -f noninteractive tzdata
+
   - name: unshallow git repo
     shell: |
       git fetch --unshallow
