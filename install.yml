@@ -89,6 +89,7 @@
       - expect
       - fcitx
       - fcitx-frontend-gtk3
+      - fcitx-googlepinyin
       - fcitx-ui-classic
       - fio
       - firefox
@@ -146,7 +147,6 @@
       - qpdfview
       - rinetd
       - rlwrap
-      - rpm2archive
       - rsync
       - rxvt-unicode-256color
       - samba
@@ -230,21 +230,6 @@
       - pylint
       - yapf
 
-  - name: install sogou pinyin dependencies
-    apt:
-      name:
-        - fcitx-frontend-qt4
-        - fcitx-frontend-qt5
-        - fcitx-libs
-        - libfcitx-qt0
-        - libopencc2
-        - libqt4-declarative
-        - libqtwebkit4:amd64
-
-  - name: install sogou pinyin
-    apt:
-      deb: http://cdn2.ime.sogou.com/dl/index/1571302197/sogoupinyin_2.3.1.0112_amd64.deb
-
   - name: remove apt packages
     apt:
       state: absent
@@ -257,8 +242,6 @@
       - gnome*
       - lightdm*
       - mate-applets
-      - mate-polkit
-      - mate-polkit-common
       - mate-power-manager
       - mate-screensaver
       - mate-user-guide
@@ -357,14 +340,10 @@
     - { key: "HandleLidSwitch", value: "ignore" }
     - { key: "HandlePowerKey", value: "suspend" }
 
-  - name: increase max_user_watches
-    lineinfile:
-      dest: /etc/sysctl.conf
-      regexp: '^fs.inotify.max_user_watches\s{0,}='
-      line: 'fs.inotify.max_user_watches=524288'
-
-  - name: update max_user_watches
-    command: sysctl -p
+  - name: set fs.inotify.max_user_watches
+    sysctl:
+      name: fs.inotify.max_user_watches
+      value: '524288'
 
   - name: create user directories
     file: dest=/home/{{user}}/{{item}} state=directory recurse=yes owner={{user}}
