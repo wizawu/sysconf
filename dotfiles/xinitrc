@@ -19,6 +19,6 @@ im-config -o fcitx
 im-config -n fcitx
 (sleep 2 && fcitx -d) &
 
-sudo sysctl -p
-mate-session 2>/dev/null &
+mate-session 2>>/tmp/xinit.err &
+mate-settings-daemon 2>>/tmp/xinit.err &
 awesome
