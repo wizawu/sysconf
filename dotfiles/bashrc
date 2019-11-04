@@ -27,6 +27,7 @@ source /usr/share/bash-completion/completions/git
 
 # alias
 alias ansible-hostvars='ansible -m debug -a var=hostvars -i'
+alias apt-find='apt-cache search'
 alias apt='sudo apt'
 alias clangfmt='clang-format -style="{IndentWidth: 2, ColumnLimit: 120}"'
 alias cmemchk='valgrind --tool=memcheck --leak-check=full'
