@@ -225,6 +225,22 @@
       - pylint
       - yapf
 
+  - name: install input method
+    apt:
+      name:
+        - fcitx
+        - fcitx-frontend-gtk2
+        - fcitx-frontend-gtk3
+        - fcitx-frontend-qt4
+        - fcitx-frontend-qt5:amd64
+        - fcitx-googlepinyin:amd64
+        - fcitx-libs
+        - fcitx-module-dbus
+        - fcitx-module-kimpanel
+        - fcitx-module-x11
+        - fcitx-ui-classic
+        - sogoupinyin
+
   - name: remove apt packages
     apt:
       state: absent
