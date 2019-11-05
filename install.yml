@@ -82,10 +82,6 @@
       - dstat
       - entr
       - expect
-      - fcitx
-      - fcitx-frontend-gtk3
-      - fcitx-googlepinyin
-      - fcitx-ui-classic
       - fio
       - firefox
       - fiu-utils
@@ -229,17 +225,10 @@
     apt:
       name:
         - fcitx
-        - fcitx-frontend-gtk2
-        - fcitx-frontend-gtk3
-        - fcitx-frontend-qt4
-        - fcitx-frontend-qt5:amd64
-        - fcitx-googlepinyin:amd64
-        - fcitx-libs
+        - fcitx-googlepinyin
         - fcitx-module-dbus
-        - fcitx-module-kimpanel
-        - fcitx-module-x11
         - fcitx-ui-classic
-        - sogoupinyin
+        - fcitx-ui-light
 
   - name: remove apt packages
     apt:

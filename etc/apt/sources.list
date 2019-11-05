@@ -3,4 +3,5 @@ deb [arch=amd64,i386] https://mirrors.tuna.tsinghua.edu.cn/deepin stable main no
 deb [arch=amd64,i386] https://mirrors.tuna.tsinghua.edu.cn/ubuntu disco main universe
 deb [arch=amd64] https://deb.nodesource.com/node_8.x sid main
 deb [arch=amd64] https://dl.google.com/linux/chrome/deb stable main
+deb [arch=amd64] https://mirrors.aliyun.com/kubernetes/apt kubernetes-xenial main
 deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main
