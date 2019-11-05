@@ -224,11 +224,12 @@
   - name: install input method
     apt:
       name:
-        - fcitx
-        - fcitx-googlepinyin
-        - fcitx-module-dbus
-        - fcitx-ui-classic
-        - fcitx-ui-light
+      - fcitx
+      - fcitx-frontend-gtk3
+      - fcitx-googlepinyin
+      - fcitx-module-dbus
+      - fcitx-ui-classic
+      - fcitx-ui-light
 
   - name: remove apt packages
     apt:
