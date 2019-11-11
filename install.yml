@@ -274,7 +274,13 @@
     - object-path-cli
 
   - name: download pt-summary
-    get_url: url=http://percona.com/get/pt-summary dest=/usr/bin/pt-summary mode=0755
+    get_url:
+      url: http://percona.com/get/pt-summary
+      dest: /usr/local/bin/pt-summary
+      mode: 0755
+
+  - name: rename caja to Caja
+    shell: mv /usr/bin/caja /usr/local/bin/Caja || echo
 
   - name: create etc directories
     file: dest=/{{item}} state=directory recurse=yes
