@@ -225,6 +225,7 @@
     apt:
       name:
       - fcitx
+      - fcitx-config-gtk
       - fcitx-frontend-gtk3
       - fcitx-googlepinyin
       - fcitx-module-dbus
