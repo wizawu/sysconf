@@ -22,3 +22,9 @@ clean:
 	apt autoclean -y
 	apt clean -y
 	yarn cache clean
+
+swap:
+	echo 60 >> /proc/sys/vm/swappiness
+	dd if=/dev/zero of=/var/swap bs=4M count=512
+	chmod 600 /var/swap && mkswap /var/swap
+	swapon /var/swap && swapon -s
