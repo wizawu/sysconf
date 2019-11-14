@@ -15,7 +15,7 @@ ssh:
 install:
 	git fetch origin
 	git reset --hard origin/master
-	ansible-playbook install.yml -e user=wizawu -v
+	ansible-playbook install.yml -b -e user=wizawu -v
 
 clean:
 	apt autoremove --purge -y

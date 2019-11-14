@@ -372,6 +372,12 @@
     - vimrc
     - xinitrc
 
+  - name: copy modified background
+    copy:
+      src: dotfiles/config/background.png
+      dest: /usr/share/awesome/themes/default/background.png
+      remote_src: yes
+
   - name: install vscode extensions
     shell: "code --install-extension {{item}}"
     with_items:
@@ -387,8 +393,11 @@
     become: yes
     become_user: "{{user}}"
 
-  - name: fix timezone
-    command: dpkg-reconfigure -f noninteractive tzdata
+  - name: reconfigure tzdata
+    cron:
+      name: reconfigure tzdata
+      special_time: reboot
+      job: "dpkg-reconfigure -f noninteractive tzdata"
 
   - name: unshallow git repo
     shell: |
