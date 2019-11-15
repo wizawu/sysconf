@@ -69,7 +69,6 @@
       - awesome
       - awesome-extra
       - bash-completion
-      - caja
       - cifs-utils
       - clang-format
       - cmake
@@ -119,6 +118,7 @@
       - mate-settings-daemon
       - mtr
       - mycli
+      - nautilus
       - netcat
       - nginx
       - nmap
@@ -279,9 +279,6 @@
       url: http://percona.com/get/pt-summary
       dest: /usr/local/bin/pt-summary
       mode: 0755
-
-  - name: rename caja to Caja
-    shell: mv /usr/bin/caja /usr/local/bin/Caja || echo
 
   - name: create etc directories
     file: dest=/{{item}} state=directory recurse=yes
