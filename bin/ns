@@ -2,14 +2,13 @@
 
 sudo chattr -i /etc/resolv.conf
 
-if [ "$1" = "" ]; then
-    cat /etc/resolv.conf
-else
+if [ -n "$1" ]; then
     echo nameserver $1 | sudo tee /etc/resolv.conf
-fi
-
-if [ "$(grep wizawu.com /etc/resolv.conf)" = "" ]; then
-    echo "search wizawu.com" | sudo tee -a /etc/resolv.conf
+    if [ -n "$2" ]; then
+        echo nameserver $2 | sudo tee -a /etc/resolv.conf
+    fi
+else
+    cat /etc/resolv.conf
 fi
 
 sudo chattr +i /etc/resolv.conf
