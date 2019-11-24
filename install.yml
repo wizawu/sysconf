@@ -66,8 +66,6 @@
       - alsa-utils
       - apache2-utils
       - autossh
-      - awesome
-      - awesome-extra
       - bash-completion
       - cifs-utils
       - clang-format
@@ -114,11 +112,8 @@
       - m4
       - make
       - manpages-dev
-      - mate-control-center
-      - mate-settings-daemon
       - mtr
       - mycli
-      - nautilus
       - netcat
       - nginx
       - nmap
@@ -128,21 +123,17 @@
       - ntpdate
       - p7zip-full
       - parallel
-      - pluma
       - pm-utils
       - pppoeconf
       - psmisc
       - pulseaudio
       - putty-tools
-      - qbittorrent
-      - qpdfview
       - rinetd
       - rlwrap
       - rsync
       - rxvt-unicode-256color
       - samba
       - smbclient
-      - smplayer
       - software-properties-common
       - ssh
       - sshfs
@@ -165,8 +156,6 @@
       - unzip
       - upower
       - valgrind
-      - viewnior
-      - vifm
       - vim-gtk
       - vsftpd
       - whois
@@ -220,6 +209,21 @@
       name:
       - pylint
       - yapf
+
+  - name: install desktop
+    apt:
+      name:
+      - awesome
+      - awesome-extra
+      - mate-control-center
+      - mate-settings-daemon
+      - materia-gtk-theme
+      - nautilus
+      - pluma
+      - qbittorrent
+      - qpdfview
+      - smplayer
+      - viewnior
 
   - name: install input method
     apt:
