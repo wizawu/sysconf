@@ -10,5 +10,3 @@ if [ -n "$1" ]; then
 else
     cat /etc/resolv.conf
 fi
-
-sudo chattr +i /etc/resolv.conf
