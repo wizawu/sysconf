@@ -79,6 +79,7 @@
       - dstat
       - entr
       - expect
+      - f2fs-tools
       - fio
       - firefox
       - fiu-utils
