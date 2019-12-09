@@ -86,6 +86,7 @@
       - fping
       - g++
       - gcc-doc
+      - gcp
       - gimp
       - google-chrome-stable
       - google-perftools
