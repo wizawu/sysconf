@@ -113,7 +113,6 @@
       - make
       - manpages-dev
       - mtr
-      - mycli
       - netcat
       - nginx
       - nmap
@@ -189,6 +188,7 @@
     apt:
       name:
       - hsqldb-utils
+      - mycli
       - percona-xtradb-cluster-server
       - pgformatter
       - redis-server
@@ -205,7 +205,6 @@
   - name: install python packages
     apt:
       install_recommends: no
-      autoclean: yes
       name:
       - pylint
       - yapf
@@ -384,10 +383,12 @@
     with_items:
     - freebroccolo.reasonml
     - henriiik.vscode-sort
+    - joaompinto.asciidoctor-vscode
     - michelemelluso.code-beautifier
     - mikeburgh.xml-format
     - ms-python.python
     - octref.vetur
+    - shd101wyy.markdown-preview-enhanced
     - tobiasalthoff.atom-material-theme
     - vscodevim.vim
     - vscoss.vscode-ansible
