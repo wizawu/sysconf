@@ -1,6 +1,6 @@
 [program:shadowsocks]
 autorestart=true
-command=/home/{{user}}/.sysconf/bin/shadowsocks -c /home/{{user}}/repos/vpsconf/templates/shadowsocks.json
+command=/home/{{user}}/.sysconf/bin/shadowsocks -c /home/{{user}}/github/vpsconf/templates/shadowsocks.json
 killasgroup=true
 redirect_stderr=false
 startretries=99
