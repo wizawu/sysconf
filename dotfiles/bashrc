@@ -10,6 +10,7 @@ export LC_ALL=en_US.UTF-8
 export NPM_CONFIG_REGISTRY=http://registry.npm.taobao.org
 export PATH=$HOME/.sysconf/bin:$JAVA_HOME/bin:$GRADLE_HOME/bin:/usr/sbin:/sbin:$PATH
 export TERM=rxvt
+export TRASH_DIR=$HOME/.local/share/Trash
 which opam >/dev/null && eval $(opam env 2>/dev/null)
 
 # terminal
