@@ -119,6 +119,7 @@
       - nginx
       - nmap
       - nethogs
+      - nfs-common
       - nodejs
       - ntfs-3g
       - ntpdate
@@ -284,6 +285,14 @@
       url: http://percona.com/get/pt-summary
       dest: /usr/local/bin/pt-summary
       mode: 0755
+
+  - name: download osquery
+    get_url:
+      url: https://pkg.osquery.io/deb/osquery_4.1.2_1.linux.amd64.deb
+      dest: /tmp/osquery.deb
+
+  - name: install osquery
+    apt: deb=/tmp/osquery.deb
 
   - name: create etc directories
     file: dest=/{{item}} state=directory recurse=yes
