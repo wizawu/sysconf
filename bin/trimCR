@@ -1,3 +1,0 @@
-#!/bin/bash
-
-vi -c ":set ff=unix" -c ":wq" $@
