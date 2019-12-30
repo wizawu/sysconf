@@ -392,17 +392,18 @@
   - name: install vscode extensions
     shell: "code --install-extension {{item}}"
     with_items:
-    - freebroccolo.reasonml
-    - henriiik.vscode-sort
-    - joaompinto.asciidoctor-vscode
-    - michelemelluso.code-beautifier
-    - mikeburgh.xml-format
-    - ms-python.python
-    - octref.vetur
-    - shd101wyy.markdown-preview-enhanced
-    - tobiasalthoff.atom-material-theme
-    - vscodevim.vim
-    - vscoss.vscode-ansible
+      - freebroccolo.reasonml
+      - henriiik.vscode-sort
+      - joaompinto.asciidoctor-vscode
+      - michelemelluso.code-beautifier
+      - mikeburgh.xml-format
+      - ms-azuretools.vscode-docker
+      - ms-python.python
+      - octref.vetur
+      - shd101wyy.markdown-preview-enhanced
+      - tobiasalthoff.atom-material-theme
+      - vscodevim.vim
+      - vscoss.vscode-ansible
     become: yes
     become_user: "{{user}}"
 
