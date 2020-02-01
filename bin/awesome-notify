@@ -1,0 +1,10 @@
+#!/bin/sh
+
+$@
+
+awesome-client '
+    naughty = require("naughty")
+    naughty.notify({
+        text="'$1' exited with '$?'"
+    })
+'
