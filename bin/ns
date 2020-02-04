@@ -3,10 +3,10 @@
 sudo chattr -i /etc/resolv.conf
 
 if [ -n "$1" ]; then
-    echo nameserver $1 | sudo tee /etc/resolv.conf
-    if [ -n "$2" ]; then
-        echo nameserver $2 | sudo tee -a /etc/resolv.conf
-    fi
+    sudo rm /etc/resolv.conf
+    for s in $@; do
+        echo nameserver $s | sudo tee -a /etc/resolv.conf
+    done
 else
     cat /etc/resolv.conf
 fi
