@@ -65,6 +65,7 @@
       - alsa-tools
       - alsa-utils
       - apache2-utils
+      - apt-file
       - autossh
       - bash-completion
       - cifs-utils
