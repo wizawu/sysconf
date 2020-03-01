@@ -180,7 +180,6 @@
     - name: install database packages
       apt:
         name:
-          - hsqldb-utils
           - mycli
           - percona-xtradb-cluster-server
           - pgformatter
