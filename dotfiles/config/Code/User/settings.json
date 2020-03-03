@@ -58,4 +58,5 @@
   "[vue]": {
     "editor.formatOnSave": false,
   },
+  "yaml.validate": false,
 }
