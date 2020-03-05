@@ -1,0 +1,6 @@
+#!/bin/sh
+
+if [ -n "$1" ]; then
+    command="git rm -rf --cached --ignore-unmatch $@"
+    git filter-branch -f --index-filter "$command" --prune-empty HEAD
+fi
