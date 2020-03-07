@@ -19,6 +19,10 @@ xmodmap -e "keycode 108 = Mode_switch"
 # Mode_switch + 9 -> `
 xmodmap -e "keycode 9 = Escape asciitilde grave"
 
-# kill process
-pkill mate-maximus
-pkill nm-applet
+# fcitx
+fcitx -rd && im-config -n fcitx
+
+# xfce
+pkill xfce4-panel
+pkill xfce4-session
+xfce4-session &
