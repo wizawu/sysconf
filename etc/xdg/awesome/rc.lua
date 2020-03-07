@@ -1,7 +1,3 @@
--- @wizawu --
-local vicious = require("vicious")
--- @end --
-
 -- Standard awesome library
 local gears = require("gears")
 local awful = require("awful")
@@ -47,10 +43,12 @@ end
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init(awful.util.get_themes_dir() .. "default/theme.lua")
 
--- This is used later as the default terminal and editor to run.
 -- @wizawu --
+beautiful.get().font = "MonoSpatial 11"
 terminal = "terminal"
+local vicious = require("vicious")
 -- @end --
+
 editor = os.getenv("EDITOR") or "editor"
 editor_cmd = terminal .. " -e " .. editor
 

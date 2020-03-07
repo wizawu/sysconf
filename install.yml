@@ -151,7 +151,6 @@
           - vim-gtk
           - vsftpd
           - whois
-          - wicd-gtk
           - wpasupplicant
           - wput
           - wrk
@@ -182,7 +181,6 @@
         name:
           - mycli
           - percona-xtradb-cluster-server
-          - pgformatter
           - redis-server
 
     - name: install ocaml packages
@@ -206,15 +204,15 @@
         name:
           - awesome
           - awesome-extra
-          - mate-control-center
-          - mate-settings-daemon
-          - materia-gtk-theme
-          - nautilus
-          - pluma
+          - leafpad
           - qbittorrent
           - qpdfview
           - smplayer
+          - thunar
           - viewnior
+          - wicd-gtk
+          - xfce4-panel
+          - xfce4-session
 
     - name: install input method
       apt:
@@ -235,23 +233,21 @@
         name:
           - apport
           - blueman
+          - clipit
           - cups-*
           - gnome*
           - lightdm*
-          - mate-applets
-          - mate-power-manager
-          - mate-screensaver
-          - mate-user-guide
-          - mate-utils
-          - mate-utils-common
           - nm-tray
           - packagekit
+          - policykit-1
           - snapd
           - system-config-printer
+          - tracker
           - update-notifier
           - usbmuxd
+          - volumeicon-alsa
           - whoopsie
-          - xfce*
+          - xfdesktop
           - xscreensaver
           - yad
 

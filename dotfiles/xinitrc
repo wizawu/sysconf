@@ -14,11 +14,4 @@ xdg-user-dirs-update --set SHARE ~
 xdg-user-dirs-update --set TEMPLATES ~
 xdg-user-dirs-update --set VIDEOS ~
 
-im-config -l &
-im-config -o fcitx &
-im-config -n fcitx &
-(sleep 2 && fcitx -d) &
-
-mate-session 2>>/tmp/xinit.err &
-mate-settings-daemon 2>>/tmp/xinit.err &
 awesome
