@@ -9,9 +9,6 @@
       git:
         repo: https://github.com/wizawu/sysconf.git
         dest: /home/{{user}}/.sysconf
-        depth: 1
-        force: yes
-        update: yes
       become: yes
       become_user: "{{user}}"
 
@@ -30,17 +27,16 @@
         - etc/apt/sources.list
 
     - name: add apt keys
-      apt_key: keyserver=keyserver.ubuntu.com id={{item}}
+      shell: apt-key adv --keyserver keyserver.ubuntu.com --recv {{item}}
       with_items:
-        - 1655A0AB68576280 # node
-        - 425956BB3E31DF51 # deepin
-        - 7638D0442B90D010 # debian
-        - EB3E94ADBE1229CF # vscode
-
-    - name: add apt keys
-      apt_key: keyserver=keys.gnupg.net id={{item}}
-      with_items:
-        - 6494C6D6997C215E # chrome
+        - 04EE7237B7D453EC  # aliyun debian
+        - 1655A0AB68576280  # node
+        - 3B4FE6ACC0B21F32  # aliyun ubuntu
+        - 425956BB3E31DF51  # deepin
+        - 6494C6D6997C215E  # chrome
+        - 6A030B21BA07F4FB  # aliyun kubernetes
+        - 7638D0442B90D010  # debian
+        - EB3E94ADBE1229CF  # vscode
 
     - name: install apt packages
       apt:
@@ -60,10 +56,8 @@
           - cifs-utils
           - clang-format
           - cmake
-          - code
           - colortail
           - debootstrap
-          - deepin-screenshot
           - di
           - dnsutils
           - dstat
@@ -71,17 +65,12 @@
           - expect
           - f2fs-tools
           - fio
-          - firefox
           - fiu-utils
-          - fontforge
           - fping
           - g++
           - gcc-doc
           - gcp
-          - gimp
-          - google-chrome-stable
           - google-perftools
-          - gufw
           - haproxy
           - hdparm
           - hsetroot
@@ -90,7 +79,6 @@
           - httrack
           - iftop
           - im-config
-          - inkscape
           - iotop
           - less
           - lftp
@@ -123,7 +111,6 @@
           - rinetd
           - rlwrap
           - rsync
-          - rxvt-unicode-256color
           - samba
           - smbclient
           - software-properties-common
@@ -148,21 +135,11 @@
           - unzip
           - upower
           - valgrind
-          - vim-gtk
           - vsftpd
           - whois
           - wpasupplicant
           - wput
           - wrk
-          - x11-xkb-utils
-          - x11-xserver-utils
-          - xdg-user-dirs
-          - xorg
-          - xsel
-          - xserver-xorg-input-kbd
-          - xserver-xorg-input-libinput
-          - xserver-xorg-input-synaptics
-          - xtrlock
           - yamllint
 
     - name: check built-in tools
@@ -204,15 +181,32 @@
         name:
           - awesome
           - awesome-extra
+          - code
+          - deepin-screenshot
+          - fontforge
+          - gimp
+          - google-chrome-stable
           - leafpad
           - qbittorrent
           - qpdfview
+          - rxvt-unicode-256color
           - smplayer
+          - synaptic
           - thunar
           - viewnior
+          - vim-gtk
           - wicd-gtk
+          - x11-xkb-utils
+          - x11-xserver-utils
+          - xdg-user-dirs
           - xfce4-panel
           - xfce4-session
+          - xorg
+          - xsel
+          - xserver-xorg-input-all
+          - xserver-xorg-input-kbd
+          - xserver-xorg-input-synaptics
+          - xtrlock
 
     - name: install input method
       apt:
@@ -235,11 +229,10 @@
           - blueman
           - clipit
           - cups-*
-          - gnome*
-          - lightdm*
+          - gnome-*
+          - mate-*
           - nm-tray
           - packagekit
-          - policykit-1
           - snapd
           - system-config-printer
           - tracker
@@ -247,7 +240,7 @@
           - usbmuxd
           - volumeicon-alsa
           - whoopsie
-          - xfdesktop
+          - xfdesktop4
           - xscreensaver
           - yad
 
@@ -256,28 +249,11 @@
         name: npm
         state: latest
 
-    - name: install yarn
-      shell: "npm install -g yarn"
-
     - name: install npm packages
-      shell: "yarn global add {{item}}"
+      shell: "npm install -g {{item}}"
       with_items:
         - http-proxy-to-socks
         - object-path-cli
-
-    - name: download pt-summary
-      get_url:
-        url: http://percona.com/get/pt-summary
-        dest: /usr/local/bin/pt-summary
-        mode: 0755
-
-    - name: download osquery
-      get_url:
-        url: https://pkg.osquery.io/deb/osquery_4.1.2_1.linux.amd64.deb
-        dest: /tmp/osquery.deb
-
-    - name: install osquery
-      apt: deb=/tmp/osquery.deb
 
     - name: create etc directories
       file: dest=/{{item}} state=directory recurse=yes
@@ -399,9 +375,7 @@
         special_time: reboot
         job: "dpkg-reconfigure -f noninteractive tzdata"
 
-    - name: unshallow git repo
-      shell: |
-        git fetch --unshallow
-        git remote set-url origin git@github.com:wizawu/sysconf.git
+    - name: change git origin url
+      shell: git remote set-url origin git@github.com:wizawu/sysconf.git
       args:
         chdir: /home/{{user}}/.sysconf

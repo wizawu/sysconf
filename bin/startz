@@ -23,6 +23,14 @@ xmodmap -e "keycode 9 = Escape asciitilde grave"
 fcitx -rd && im-config -n fcitx
 
 # xfce
+pkill wicd-client
 pkill xfce4-panel
 pkill xfce4-session
 xfce4-session &
+
+# reload awesome
+until [ -n "$(pgrep xfce4-session)" ]; do
+    sleep 1
+done
+sleep 1
+awesome-client 'awesome.restart()'
