@@ -19,9 +19,7 @@ install:
 
 clean:
 	apt autoremove --purge -y
-	apt autoclean -y
 	apt clean -y
-	yarn cache clean
 
 swap:
 	echo 60 >> /proc/sys/vm/swappiness
