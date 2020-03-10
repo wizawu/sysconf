@@ -25,6 +25,7 @@
       file: src=/home/{{user}}/.sysconf/{{item}} dest=/{{item}} state=link force=yes
       with_items:
         - etc/apt/sources.list
+        - etc/apt/sources.list.d/vscode.list
 
     - name: add apt keys
       shell: apt-key adv --keyserver keyserver.ubuntu.com --recv {{item}}
