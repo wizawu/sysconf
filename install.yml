@@ -1,5 +1,4 @@
 - hosts: localhost
-  remote_user: root
 
   tasks:
     - name: create user
@@ -30,21 +29,19 @@
     - name: add apt keys
       shell: apt-key adv --keyserver keyserver.ubuntu.com --recv {{item}}
       with_items:
-        - 04EE7237B7D453EC  # aliyun debian
-        - 1655A0AB68576280  # node
-        - 3B4FE6ACC0B21F32  # aliyun ubuntu
-        - 425956BB3E31DF51  # deepin
-        - 6494C6D6997C215E  # chrome
-        - 6A030B21BA07F4FB  # aliyun kubernetes
-        - 7638D0442B90D010  # debian
-        - 9334A25F8507EFA5  # percona
-        - EB3E94ADBE1229CF  # vscode
+        - 04EE7237B7D453EC # aliyun debian
+        - 1655A0AB68576280 # node
+        - 3B4FE6ACC0B21F32 # aliyun ubuntu
+        - 425956BB3E31DF51 # deepin
+        - 6494C6D6997C215E # chrome
+        - 6A030B21BA07F4FB # aliyun kubernetes
+        - 7638D0442B90D010 # debian
+        - EB3E94ADBE1229CF # vscode
 
     - name: install apt packages
       apt:
         update_cache: yes
         install_recommends: no
-        autoclean: yes
         name:
           - ack-grep
           - acpi
@@ -62,6 +59,7 @@
           - debootstrap
           - di
           - dnsutils
+          - docker-ce
           - dstat
           - entr
           - expect
@@ -157,13 +155,12 @@
       apt:
         name:
           - mycli
-          - percona-server-server-5.7
+          - mysql-client
           - redis-server
 
     - name: install ocaml packages
       apt:
         install_recommends: no
-        autoclean: yes
         name:
           - menhir
           - ocaml
@@ -173,6 +170,7 @@
       apt:
         install_recommends: no
         name:
+          - python3-pip
           - pylint
           - yapf
 

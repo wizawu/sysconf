@@ -1,0 +1,11 @@
+- hosts: localhost
+  tasks:
+    - name: install python docker module
+      pip:
+        name: docker
+        executable: pip3
+        extra_args: -i https://mirrors.aliyun.com/pypi/simple
+
+- hosts: localhost
+  roles:
+    - percona
