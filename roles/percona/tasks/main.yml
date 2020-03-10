@@ -1,0 +1,22 @@
+- name: create data directory
+  file:
+    path: /var/lib/mysql
+    state: directory
+    recurse: yes
+    mode: 0777
+
+- name: start mysql
+  docker_container:
+    name: percona
+    image: percona:5.7.29
+    state: started
+    recreate: yes
+    restart_policy: always
+    network_mode: host
+    volumes:
+      - /var/lib/mysql:/var/lib/mysql
+    env:
+      INIT_ROCKSDB: "yes"
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+  vars:
+    ansible_python_interpreter: python3
