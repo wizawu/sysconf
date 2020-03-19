@@ -1,0 +1,13 @@
+- name: start phpmyadmin
+  docker_container:
+    name: phpmyadmin
+    image: phpmyadmin/phpmyadmin:5.0.1
+    state: started
+    recreate: yes
+    restart_policy: always
+    ports:
+      - 3309:80
+    env:
+      PMA_ARBITRARY: "1"
+  vars:
+    ansible_python_interpreter: python3
