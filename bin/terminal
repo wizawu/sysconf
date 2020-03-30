@@ -8,4 +8,4 @@ EN_FONT=$(test -n "$xft" && echo "$xft" || echo "Courier Prime Code")
     -lsp 7 -letsp -2 \
     -fn "xft:$EN_FONT:size=11,xft:造字工房典黑（非商用）:size=9" \
     $@ \
-    -e fish
+    -e bash

@@ -135,7 +135,6 @@
     - name: install cli tools
       apt:
         name:
-          - fish
           - tmux
           - tree
           - tsocks
@@ -334,7 +333,6 @@
       file: dest=/home/{{user}}/{{item}} state=directory recurse=yes owner={{user}}
       with_items:
         - .config/Code/User
-        - .config/fish
         - .ssh
 
     - name: create symbolic link to user config
@@ -344,7 +342,6 @@
         - bashrc
         - config/Code/User/keybindings.json
         - config/Code/User/settings.json
-        - config/fish/config.fish
         - gitconfig
         - ssh/config
         - tmux.conf
