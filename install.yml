@@ -117,9 +117,9 @@
           - sshfs
           - sshpass
           - strace
-          - sudo
           - supervisor
           - sysbench
+          - syslog-ng
           - sysstat
           - systemd-sysv
           - tcpdump
@@ -372,12 +372,6 @@
         - vscoss.vscode-ansible
       become: yes
       become_user: "{{user}}"
-
-    - name: reconfigure tzdata
-      cron:
-        name: reconfigure tzdata
-        special_time: reboot
-        job: "dpkg-reconfigure -f noninteractive tzdata"
 
     - name: change git origin url
       shell: git remote set-url origin git@github.com:wizawu/sysconf.git

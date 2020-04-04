@@ -4,7 +4,7 @@ all: apt ssh install clean
 apt:
 	echo "deb http://mirrors.ustc.edu.cn/debian/ sid main" > /etc/apt/sources.list
 	apt update
-	apt install -y ansible dirmngr openssh-client openssh-server python-minimal sudo
+	apt install -y ansible openssh-client openssh-server sudo
 
 ssh:
 	rm -f ~/.ssh/id_rsa

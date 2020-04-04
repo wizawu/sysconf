@@ -1,0 +1,23 @@
+- hosts: localhost
+  become: true
+
+  tasks:
+    - name: reconfigure tzdata
+      cron:
+        name: reconfigure tzdata
+        special_time: reboot
+        job: dpkg-reconfigure -f noninteractive tzdata
+
+    - name: mount sd card
+      cron:
+        name: mount sd card
+        special_time: reboot
+        job: mount /dev/mmcblk0p1 /media/sd
+
+    - name: save github starred
+      cron:
+        name: save github starred
+        special_time: hourly
+        job: >-
+          curl -sk https://api.github.com/users/wizawu/starred
+          -o /home/wizawu/github/starred/$(date +\%F).json
