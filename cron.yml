@@ -19,5 +19,5 @@
         name: save github starred
         special_time: hourly
         job: >-
-          curl -sk https://api.github.com/users/wizawu/starred
+          curl -sk 'https://api.github.com/users/wizawu/starred?per_page=99'
           -o /home/wizawu/github/starred/$(date +\%F).json

@@ -135,6 +135,7 @@
     - name: install cli tools
       apt:
         name:
+          - fish
           - tmux
           - tree
           - tsocks
