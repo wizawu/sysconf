@@ -136,6 +136,7 @@
       apt:
         name:
           - fish
+          - jq
           - tmux
           - tree
           - tsocks
@@ -258,7 +259,6 @@
       shell: "npm install -g {{item}}"
       with_items:
         - http-proxy-to-socks
-        - object-path-cli
 
     - name: create etc directories
       file: dest=/{{item}} state=directory recurse=yes
