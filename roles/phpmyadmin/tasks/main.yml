@@ -5,8 +5,9 @@
     state: started
     recreate: yes
     restart_policy: always
-    ports:
-      - 3309:80
+    network_mode: host
+    volumes:
+      - "{{role_path}}/templates/apache2/ports.conf:/etc/apache2/ports.conf"
     env:
       PMA_ARBITRARY: "1"
   vars:
