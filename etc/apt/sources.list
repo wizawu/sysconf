@@ -1,6 +1,6 @@
 deb [arch=amd64,i386] https://mirrors.aliyun.com/debian sid main
 deb [arch=amd64,i386] https://mirrors.aliyun.com/deepin stable main non-free
-deb [arch=amd64,i386] https://mirrors.aliyun.com/ubuntu disco main universe
 deb [arch=amd64] https://deb.nodesource.com/node_8.x sid main
 deb [arch=amd64] https://dl.google.com/linux/chrome/deb stable main
+deb [arch=amd64] https://mirrors.aliyun.com/docker-ce/linux/debian stretch stable
 deb [arch=amd64] https://mirrors.aliyun.com/kubernetes/apt kubernetes-xenial main
