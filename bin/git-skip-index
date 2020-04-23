@@ -1,0 +1,3 @@
+#!/bin/sh
+
+git update-index --skip-worktree $1
