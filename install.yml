@@ -136,7 +136,6 @@
       apt:
         name:
           - cmatrix
-          - fish
           - jq
           - tmux
           - tree
@@ -361,10 +360,10 @@
       with_items:
         - freebroccolo.reasonml
         - henriiik.vscode-sort
+        - jeff-hykin.better-dockerfile-syntax
         - joaompinto.asciidoctor-vscode
         - michelemelluso.code-beautifier
         - mikeburgh.xml-format
-        - ms-azuretools.vscode-docker
         - ms-python.python
         - octref.vetur
         - redhat.vscode-yaml
