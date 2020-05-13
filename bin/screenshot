@@ -1,0 +1,4 @@
+#!/bin/sh
+
+mkdir -p ~/tmp
+deepin-screenshot -s ~/tmp/ "$@"
