@@ -359,6 +359,7 @@
       shell: "code --install-extension {{item}}"
       with_items:
         - freebroccolo.reasonml
+        - hediet.vscode-drawio
         - henriiik.vscode-sort
         - jeff-hykin.better-dockerfile-syntax
         - joaompinto.asciidoctor-vscode
