@@ -55,7 +55,6 @@
           - cifs-utils
           - clang-format
           - colortail
-          - curl=7.52.*
           - debootstrap
           - di
           - dnsutils
@@ -122,26 +121,26 @@
           - syslog-ng
           - sysstat
           - systemd-sysv
-          - tcpdump
-          - time
           - tlp
           - tlp-rdw
-          - upower
-          - valgrind
           - vsftpd
-          - whois
           - wpasupplicant
 
     - name: install cli tools
       apt:
         name:
           - cmatrix
+          - curl
           - jq
+          - time
           - tmux
           - tree
           - tsocks
           - unrar-free
           - unzip
+          - upower
+          - valgrind
+          - whois
           - wput
           - wrk
           - yamllint
@@ -171,6 +170,7 @@
           - menhir
           - ocaml
           - opam
+          - utop
 
     - name: install python packages
       apt:
