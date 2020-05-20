@@ -193,6 +193,7 @@
           - gtk-theme-switch
           - gtk2-engines-*
           - leafpad
+          - palemoon
           - qbittorrent
           - qpdfview
           - rxvt-unicode-256color
