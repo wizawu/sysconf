@@ -29,7 +29,6 @@
     - name: add apt keys
       shell: apt-key adv --keyserver keyserver.ubuntu.com --recv {{item}}
       with_items:
-        - 04EE7237B7D453EC # aliyun debian
         - 7EA0A9C3F273FCD8 # aliyun docker
         - 1655A0AB68576280 # node
         - 425956BB3E31DF51 # deepin
@@ -220,9 +219,10 @@
         name:
           - fcitx
           - fcitx-config-gtk
-          - fcitx-frontend-gtk3
+          - fcitx-frontend-all
           - fcitx-googlepinyin
           - fcitx-module-dbus
+          - fcitx-tools
           - fcitx-ui-classic
           - fcitx-ui-light
 
