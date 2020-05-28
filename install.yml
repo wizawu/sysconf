@@ -4,12 +4,12 @@
     - name: create user
       user: name={{user}} state=present group=root shell=/bin/bash
 
-    - name: clone repo
-      git:
-        repo: https://github.com/wizawu/sysconf.git
+    - name: change file mode of this repo
+      file:
         dest: /home/{{user}}/.sysconf
-      become: yes
-      become_user: "{{user}}"
+        state: directory
+        recurse: yes
+        owner: "{{user}}"
 
     - name: locale-gen
       locale_gen: name={{item}} state=present
@@ -23,7 +23,8 @@
     - name: create symbolic link to apt sources.list
       file: src=/home/{{user}}/.sysconf/{{item}} dest=/{{item}} state=link force=yes
       with_items:
-        - etc/apt/sources.list
+        - etc/apt/sources.list.d/default.list
+        - etc/apt/sources.list.d/google-chrome.list
         - etc/apt/sources.list.d/vscode.list
 
     - name: add apt keys
@@ -52,7 +53,6 @@
           - autossh
           - bash-completion
           - cifs-utils
-          - clang-format
           - colortail
           - debootstrap
           - di
@@ -68,6 +68,7 @@
           - g++
           - gcc-doc
           - gcp
+          - grub2-common
           - haproxy
           - hdparm
           - hsetroot
@@ -79,8 +80,6 @@
           - iotop
           - less
           - lftp
-          - linux-headers-amd64
-          - linux-image-amd64
           - linux-perf
           - lm-sensors
           - locate
@@ -91,10 +90,10 @@
           - manpages-dev
           - mtr
           - netcat
-          - nginx
-          - nmap
           - nethogs
           - nfs-common
+          - nginx
+          - nmap
           - nodejs
           - ntfs-3g
           - ntpdate
@@ -187,21 +186,21 @@
           - code
           - deepin-screenshot
           - fontforge
-          - gimp
           - google-chrome-stable
           - gtk-theme-switch
           - gtk2-engines-*
           - leafpad
+          - nautilus
           - palemoon
           - qbittorrent
           - qpdfview
           - rxvt-unicode-256color
           - smplayer
           - synaptic
-          - thunar
           - viewnior
           - vim-gtk
           - wicd-gtk
+          - wps-office
           - x11-xkb-utils
           - x11-xserver-utils
           - xdg-user-dirs
@@ -219,12 +218,13 @@
         name:
           - fcitx
           - fcitx-config-gtk
-          - fcitx-frontend-all
+          - fcitx-frontend-gtk3
           - fcitx-googlepinyin
-          - fcitx-module-dbus
+          - fcitx-modules
           - fcitx-tools
           - fcitx-ui-classic
           - fcitx-ui-light
+          - libgtk-3-bin
 
     - name: remove apt packages
       apt:
@@ -375,8 +375,3 @@
         - vscoss.vscode-ansible
       become: yes
       become_user: "{{user}}"
-
-    - name: change git origin url
-      shell: git remote set-url origin git@github.com:wizawu/sysconf.git
-      args:
-        chdir: /home/{{user}}/.sysconf

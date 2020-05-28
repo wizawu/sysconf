@@ -1,9 +1,13 @@
 - hosts: localhost
   tasks:
+    - name: create links
+      shell: |
+        ln -sf /usr/share/sangfor/EasyConnect/EasyConnect /usr/local/bin/easyconnect
+
     - name: install python docker module
       pip:
-        name: docker
-        executable: pip3
+        name: docker-py
+        executable: pip2
         extra_args: -i https://mirrors.aliyun.com/pypi/simple
 
 - hosts: localhost

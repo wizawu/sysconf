@@ -2,7 +2,7 @@ default: install clean
 all: apt ssh install clean
 
 apt:
-	echo "deb http://mirrors.ustc.edu.cn/debian/ sid main" > /etc/apt/sources.list
+	echo "deb http://mirrors.ustc.edu.cn/debian stretch main" > /etc/apt/sources.list
 	apt update
 	apt install -y ansible openssh-client openssh-server sudo
 
@@ -13,8 +13,6 @@ ssh:
 	ssh -o "StrictHostKeyChecking=no" root@127.0.0.1 echo ok
 
 install:
-	git fetch origin
-	git reset --hard origin/master
 	ansible-playbook install.yml -b -e user=wizawu -v
 
 clean:

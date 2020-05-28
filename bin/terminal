@@ -3,6 +3,7 @@
 PERLLIB=$(cd $(dirname $0)/../dotfiles/urxvt && pwd)
 EN_FONT=$(test -n "$xft" && echo "$xft" || echo "Courier Prime Code")
 
+pkill xfce4-panel
 /usr/bin/urxvt \
     --perl-lib $PERLLIB -pe newterm \
     -lsp 7 -letsp -2 \
