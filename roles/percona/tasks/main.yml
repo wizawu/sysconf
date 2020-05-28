@@ -19,4 +19,4 @@
       INIT_ROCKSDB: "yes"
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
   vars:
-    ansible_python_interpreter: python3
+    ansible_python_interpreter: python2

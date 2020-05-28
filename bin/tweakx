@@ -13,7 +13,6 @@ fcitx -rd && im-config -n fcitx
 
 # xfce
 pkill wicd-client
-pkill xfce4-panel
 pkill xfce4-session
 xfce4-session &
 
