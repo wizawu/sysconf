@@ -326,6 +326,9 @@
         - { key: "HandleLidSwitch", value: "ignore" }
         - { key: "HandlePowerKey", value: "suspend" }
 
+    - name: disable grp:alt_shift_toggle
+      shell: sed -i -e 's/grp:alt_shift_toggle,\?//g' /etc/default/keyboard
+
     - name: set fs.inotify.max_user_watches
       sysctl:
         name: fs.inotify.max_user_watches
