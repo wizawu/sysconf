@@ -104,6 +104,7 @@
           - psmisc
           - pulseaudio
           - putty-tools
+          - python3-pip
           - rinetd
           - rlwrap
           - rsync
@@ -171,12 +172,12 @@
           - utop
 
     - name: install python packages
-      apt:
-        install_recommends: no
+      pip:
         name:
-          - python3-pip
-          - pylint
-          - yapf
+          - ansible==2.9.9
+          - base58==2.0.0
+        executable: pip3
+        extra_args: -i https://pypi.tuna.tsinghua.edu.cn/simple
 
     - name: install desktop
       apt:
