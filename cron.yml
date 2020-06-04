@@ -8,18 +8,6 @@
         special_time: reboot
         job: dpkg-reconfigure -f noninteractive tzdata
 
-    - name: create /media/sd
-      file:
-        dest: /media/sd
-        state: directory
-        mode: 0777
-
-    - name: mount sd card
-      cron:
-        name: mount sd card
-        special_time: reboot
-        job: mount /dev/mmcblk0p1 /media/sd
-
     - name: save github starred
       cron:
         name: save github starred

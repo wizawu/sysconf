@@ -49,7 +49,6 @@
           - alsa-tools
           - alsa-utils
           - apache2-utils
-          - apt-file
           - autossh
           - bash-completion
           - cifs-utils
@@ -66,21 +65,18 @@
           - fiu-utils
           - fping
           - g++
-          - gcc-doc
           - gcp
           - grub2-common
           - haproxy
           - hdparm
           - hsetroot
           - htop
-          - httpie
           - httrack
           - iftop
           - im-config
           - iotop
           - less
           - lftp
-          - linux-perf
           - lm-sensors
           - locate
           - lshw
@@ -105,6 +101,7 @@
           - pulseaudio
           - putty-tools
           - python3-pip
+          - rcconf
           - rinetd
           - rlwrap
           - rsync
@@ -122,7 +119,6 @@
           - systemd-sysv
           - tlp
           - tlp-rdw
-          - vsftpd
           - wpasupplicant
 
     - name: install cli tools
@@ -186,21 +182,15 @@
           - awesome-extra
           - code
           - deepin-screenshot
-          - fontforge
           - google-chrome-stable
           - gtk-theme-switch
-          - gtk2-engines-*
           - leafpad
-          - nautilus
           - palemoon
           - qbittorrent
           - qpdfview
           - rxvt-unicode-256color
           - smplayer
-          - synaptic
           - viewnior
-          - vim-gtk
-          - wicd-gtk
           - wps-office
           - x11-xkb-utils
           - x11-xserver-utils
@@ -227,6 +217,14 @@
           - fcitx-ui-light
           - libgtk-3-bin
 
+    - name: conflicted packages
+      apt:
+        name:
+          - apt-file
+          - fontforge
+          - wicd-gtk
+      when: false
+
     - name: remove apt packages
       apt:
         state: absent
@@ -238,16 +236,21 @@
           - clipit
           - cups-*
           - gnome-*
+          - lightdm
           - mate-*
           - nm-tray
           - packagekit
+          - pidgin
           - snapd
           - system-config-printer
+          - thunderbird
           - tracker
           - update-notifier
           - usbmuxd
           - volumeicon-alsa
           - whoopsie
+          - xfce4-power-manager
+          - xfce4-screensaver
           - xfdesktop4
           - xscreensaver
           - yad
