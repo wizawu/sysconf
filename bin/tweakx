@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -ex
+
 xset -b
 xset -dpms
 xset s noblank
@@ -12,8 +14,7 @@ hsetroot -full /usr/share/awesome/themes/default/background.png &
 fcitx -rd && im-config -n fcitx
 
 # xfce
-pkill wicd-client
-pkill xfce4-session
+pkill xfce4-session || echo
 xfce4-session &
 
 # reload awesome
