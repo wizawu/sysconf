@@ -15,4 +15,7 @@ if [ $(xrandr | grep -w connected | wc -l) -gt 1 ]; then
         xrandr --output $monitor1 --auto
         xrandr --output $monitor2 --auto
     fi
+else
+    monitor1=$(xrandr | grep -w connected | awk 'NR==1{print $1}')
+    xrandr --output $monitor1 --auto
 fi

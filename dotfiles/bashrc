@@ -3,7 +3,7 @@
 
 # basic
 export EDITOR=vim
-export GOPATH=$HOME/go
+export GOPATH=$HOME/github/go
 export GRADLE_HOME=/opt/gradle
 export JAVA_HOME=/usr/lib/jvm/default-java
 export LANG=en_US.UTF-8
