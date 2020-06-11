@@ -1,17 +1,13 @@
 - hosts: localhost
-  tasks:
-    - name: create links
-      shell: |
-        ln -sf /usr/share/sangfor/EasyConnect/EasyConnect /usr/local/bin/easyconnect
-
-    - name: install python docker module
-      pip:
-        name: docker-py
-        executable: pip2
-        extra_args: -i https://mirrors.aliyun.com/pypi/simple
-
-- hosts: localhost
-  become: yes
+  vars:
+    ansible_python_interpreter: python3
   roles:
     - percona
     - phpmyadmin
+  tasks:
+    - name: create easyconnect link
+      file:
+        src: /usr/share/sangfor/EasyConnect/EasyConnect
+        dest: /usr/local/bin/easyconnect
+        state: link
+        force: yes

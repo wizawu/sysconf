@@ -35,7 +35,6 @@
         - 425956BB3E31DF51 # deepin
         - 6494C6D6997C215E # chrome
         - 6A030B21BA07F4FB # aliyun kubernetes
-        - 7638D0442B90D010 # debian
         - EB3E94ADBE1229CF # vscode
 
     - name: install apt packages
@@ -101,6 +100,7 @@
           - pulseaudio
           - putty-tools
           - python3-pip
+          - python3-setuptools
           - rcconf
           - rinetd
           - rlwrap
@@ -124,6 +124,8 @@
     - name: install cli tools
       apt:
         name:
+          - apt-file
+          - cmake
           - cmatrix
           - curl
           - jq
@@ -135,6 +137,7 @@
           - unzip
           - upower
           - valgrind
+          - vim
           - whois
           - wput
           - wrk
@@ -167,13 +170,16 @@
           - opam
           - utop
 
+    - name: set pip index url
+      shell: pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
     - name: install python packages
       pip:
         name:
           - ansible==2.9.9
           - base58==2.0.0
+          - docker==4.2.1
         executable: pip3
-        extra_args: -i https://pypi.tuna.tsinghua.edu.cn/simple
 
     - name: install desktop
       apt:
@@ -181,7 +187,6 @@
           - awesome
           - awesome-extra
           - code
-          - deepin-screenshot
           - google-chrome-stable
           - gtk-theme-switch
           - leafpad
@@ -189,7 +194,6 @@
           - qbittorrent
           - qpdfview
           - rxvt-unicode-256color
-          - smplayer
           - viewnior
           - wps-office
           - x11-xkb-utils
@@ -203,6 +207,12 @@
           - xserver-xorg-input-kbd
           - xserver-xorg-input-synaptics
           - xtrlock
+          #
+          - libdtkwidget-dev=2.0.9.17-1
+          - deepin-screenshot=4.1.8-1
+          #
+          - libva2=2.4.0-1
+          - smplayer
 
     - name: install input method
       apt:
@@ -220,7 +230,6 @@
     - name: conflicted packages
       apt:
         name:
-          - apt-file
           - fontforge
           - wicd-gtk
       when: false
@@ -254,11 +263,6 @@
           - xfdesktop4
           - xscreensaver
           - yad
-
-    - name: install npm
-      apt:
-        name: npm
-        state: latest
 
     - name: install npm packages
       shell: "npm install -g {{item}}"
@@ -332,6 +336,12 @@
 
     - name: disable grp:alt_shift_toggle
       shell: sed -i -e 's/grp:alt_shift_toggle,\?//g' /etc/default/keyboard
+
+    - name: replace xfwm4 with awesome
+      replace:
+        path: /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml
+        regexp: "xfwm4"
+        replace: "awesome"
 
     - name: set fs.inotify.max_user_watches
       sysctl:
