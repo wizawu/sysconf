@@ -10,5 +10,3 @@
       - "{{role_path}}/templates/apache2/ports.conf:/etc/apache2/ports.conf"
     env:
       PMA_ARBITRARY: "1"
-  vars:
-    ansible_python_interpreter: python2

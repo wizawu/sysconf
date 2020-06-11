@@ -2,9 +2,11 @@ default: install clean
 all: apt ssh install clean
 
 apt:
-	echo "deb http://mirrors.ustc.edu.cn/debian stretch main" > /etc/apt/sources.list
+	apt-key adv --keyserver keyserver.ubuntu.com --recv 04EE7237B7D453EC
+	echo "deb http://mirrors.tuna.tsinghua.edu.cn/debian buster main" > /etc/apt/sources.list
 	apt update
 	apt install -y ansible openssh-client openssh-server sudo
+	echo > /etc/apt/sources.list
 
 ssh:
 	rm -f ~/.ssh/id_rsa
