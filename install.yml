@@ -159,6 +159,7 @@
         name:
           - mycli
           - mysql-client
+          - postgresql-client
           - redis-server
 
     - name: install ocaml packages
