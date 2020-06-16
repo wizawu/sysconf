@@ -223,7 +223,6 @@
           - fcitx-frontend-gtk3
           - fcitx-googlepinyin
           - fcitx-modules
-          - fcitx-tools
           - fcitx-ui-classic
           - fcitx-ui-light
           - libgtk-3-bin
@@ -245,12 +244,13 @@
           - blueman
           - clipit
           - cups-*
+          - firefox
           - gnome-*
           - lightdm
           - mate-*
-          - nm-tray
           - packagekit
           - pidgin
+          - sane-utils
           - snapd
           - system-config-printer
           - thunderbird
