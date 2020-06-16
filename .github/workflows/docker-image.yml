@@ -1,16 +1,19 @@
-name: Docker Image CI
-
+name: build docker images
 on:
   push:
-    branches: [ master ]
-
+    branches:
+      - main
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-    - name: Build the Docker image
-      run: cd files/docker/brook && docker build . -t brook:$(date +%s)
+      - uses: actions/checkout@v2
+
+      - name: login registry
+        run: echo ${{secrets.DOCKER_HUB_PASSWORD}} | docker login -u wizawu --password-stdin
+
+      - name: build brook image
+        run: cd files/docker/brook && docker build . -t wizawu/brook:0.1
+
+      - name: push brook image
+        run: docker push wizawu/brook:0.1
