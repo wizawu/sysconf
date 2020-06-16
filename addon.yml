@@ -2,6 +2,7 @@
   vars:
     ansible_python_interpreter: python3
   roles:
+    - brook
     - percona
     - phpmyadmin
   tasks:

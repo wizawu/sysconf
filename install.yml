@@ -287,7 +287,6 @@
         - etc/apt/apt.conf.d/99default
         - etc/fonts/conf.d/99-default.conf
         - etc/rc.local
-        - etc/supervisor/conf.d/unix_http_server.conf
         - etc/xdg/awesome/rc.lua
 
     - name: create template config
@@ -295,7 +294,6 @@
       with_items:
         - etc/security/limits.d/default.conf
         - etc/sudoers.d/default
-        - etc/supervisor/conf.d/shadowsocks.conf
 
     - name: remove font dir
       lineinfile:

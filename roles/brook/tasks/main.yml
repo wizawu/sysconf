@@ -1,0 +1,22 @@
+- name: get server
+  shell: jq .server /home/wizawu/github/vpsconf/templates/shadowsocks.json
+  register: server
+
+- name: get password
+  shell: jq .password /home/wizawu/github/vpsconf/templates/shadowsocks.json
+  register: password
+
+- name: start brook
+  docker_container:
+    name: brook
+    image: wizawu/brook:0.2
+    state: started
+    recreate: yes
+    restart_policy: always
+    network_mode: host
+    command: >-
+      ssclient
+      -i 127.0.0.1
+      -l 127.0.0.1:1080
+      -p {{password.stdout}}
+      -s {{server.stdout}}:3308

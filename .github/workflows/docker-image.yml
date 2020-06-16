@@ -13,7 +13,7 @@ jobs:
         run: echo ${{secrets.DOCKER_HUB_PASSWORD}} | docker login -u wizawu --password-stdin
 
       - name: build brook image
-        run: cd files/docker/brook && docker build . -t wizawu/brook:0.1
+        run: cd files/docker/brook && docker build . -t wizawu/brook:0.2
 
       - name: push brook image
-        run: docker push wizawu/brook:0.1
+        run: docker push wizawu/brook:0.2
