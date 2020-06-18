@@ -42,18 +42,15 @@
         update_cache: yes
         install_recommends: no
         name:
-          - ack-grep
           - acpi
           - alsa-oss
           - alsa-tools
           - alsa-utils
           - apache2-utils
-          - autossh
           - bash-completion
           - cifs-utils
           - colortail
           - debootstrap
-          - di
           - dnsutils
           - docker-ce
           - dstat
@@ -62,19 +59,14 @@
           - f2fs-tools
           - fio
           - fiu-utils
-          - fping
           - g++
           - gcp
+          - glusterfs-client=5.5-3
           - grub2-common
           - haproxy
           - hdparm
           - hsetroot
-          - htop
-          - httrack
-          - iftop
           - im-config
-          - iotop
-          - less
           - lftp
           - lm-sensors
           - locate
@@ -83,7 +75,6 @@
           - m4
           - make
           - manpages-dev
-          - mtr
           - netcat
           - nethogs
           - nfs-common
@@ -124,11 +115,21 @@
     - name: install cli tools
       apt:
         name:
+          - ack-grep
           - apt-file
+          - autossh
           - cmake
           - cmatrix
           - curl
+          - di
+          - fping
+          - htop
+          - httrack
+          - iftop
+          - iotop
           - jq
+          - less
+          - mtr
           - time
           - tmux
           - tree
