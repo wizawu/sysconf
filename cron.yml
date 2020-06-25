@@ -8,6 +8,12 @@
         special_time: reboot
         job: dpkg-reconfigure -f noninteractive tzdata
 
+    - name: updatedb
+      cron:
+        name: updatedb
+        special_time: daily
+        job: updatedb
+
     - name: save github starred
       cron:
         name: save github starred

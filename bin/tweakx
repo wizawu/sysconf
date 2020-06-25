@@ -15,7 +15,7 @@ fcitx -rd && im-config -n fcitx
 
 # xfce
 pkill xfce4-session || echo
-xfce4-session &
+xfce4-session &>/dev/null &
 
 # reload awesome
 until [ -n "$(pgrep xfce4-session)" ]; do
