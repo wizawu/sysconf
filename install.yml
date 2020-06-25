@@ -123,6 +123,7 @@
           - curl
           - di
           - fping
+          - gnupg1
           - htop
           - httrack
           - iftop
