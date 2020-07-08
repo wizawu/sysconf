@@ -164,15 +164,6 @@
           - postgresql-client
           - redis-server
 
-    - name: install ocaml packages
-      apt:
-        install_recommends: no
-        name:
-          - menhir
-          - ocaml
-          - opam
-          - utop
-
     - name: set pip index url
       shell: pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
@@ -380,7 +371,6 @@
     - name: install vscode extensions
       shell: "code --install-extension {{item}}"
       with_items:
-        - freebroccolo.reasonml
         - hediet.vscode-drawio
         - henriiik.vscode-sort
         - jeff-hykin.better-dockerfile-syntax
