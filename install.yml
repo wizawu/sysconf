@@ -139,7 +139,6 @@
           - unzip
           - upower
           - valgrind
-          - vim
           - whois
           - wput
           - wrk
@@ -192,6 +191,7 @@
           - redshift
           - rxvt-unicode-256color
           - viewnior
+          - vim-gtk
           - wps-office
           - x11-xkb-utils
           - x11-xserver-utils
