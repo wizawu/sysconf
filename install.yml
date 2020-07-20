@@ -264,7 +264,9 @@
     - name: install npm packages
       shell: "npm install -g {{item}}"
       with_items:
+        - fmt2
         - http-proxy-to-socks
+        - typescript
 
     - name: create etc directories
       file: dest=/{{item}} state=directory recurse=yes
