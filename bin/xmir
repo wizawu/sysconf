@@ -1,4 +1,5 @@
 #!/bin/bash
+# Best DPI for 2560x1440 is 144
 
 set -ex
 if [ $(xrandr | grep -w connected | wc -l) -gt 1 ]; then

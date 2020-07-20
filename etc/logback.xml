@@ -1,0 +1,9 @@
+<configuration>
+  <appender>
+    <encoder>
+      <pattern>
+        %d{YYYY/MM/dd HH:mm:ss} %-5level %-48([%10.10t] %.35logger) #%4line - %m%n
+      </pattern>
+    </encoder>
+  </appender>
+</configuration>
