@@ -264,7 +264,7 @@
     - name: install npm packages
       shell: "npm install -g {{item}}"
       with_items:
-        - fmt2
+        - fmt2i
         - http-proxy-to-socks
         - typescript
 

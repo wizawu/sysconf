@@ -8,7 +8,6 @@ export GRADLE_HOME=/opt/gradle
 export JAVA_HOME=/usr/lib/jvm/default-jdk
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-export NPM_CONFIG_REGISTRY=http://registry.npm.taobao.org
 export PATH=$HOME/.sysconf/bin:$GOPATH/bin:$GRADLE_HOME/bin:/usr/sbin:/sbin:$PATH
 export TERM=rxvt
 export TRASH_DIR=$HOME/.local/share/Trash
