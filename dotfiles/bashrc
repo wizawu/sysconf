@@ -6,6 +6,7 @@ export EDITOR=vim
 export GOPATH=$HOME/github/go
 export GRADLE_HOME=/opt/gradle
 export JAVA_HOME=/usr/lib/jvm/default-jdk
+export JAVA_TOOL_OPTIONS="-XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -XX:MaxRAMPercentage=25.0"
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export PATH=$HOME/.sysconf/bin:$GOPATH/bin:$GRADLE_HOME/bin:/usr/sbin:/sbin:$PATH

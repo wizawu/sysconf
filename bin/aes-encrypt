@@ -1,4 +1,4 @@
-#!/usr/lib/jvm/default-java/bin/jjs
+#!/usr/lib/jvm/default-jdk/bin/jjs
 
 var Base64 = Packages.java.util.Base64
 var Cipher = Packages.javax.crypto.Cipher
