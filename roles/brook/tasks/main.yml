@@ -14,6 +14,9 @@
     recreate: yes
     restart_policy: always
     network_mode: host
+    dns_servers:
+      - 223.5.5.5
+      - 8.8.8.8
     command: >-
       ssclient
       -i 127.0.0.1
