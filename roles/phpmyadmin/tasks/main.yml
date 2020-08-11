@@ -3,7 +3,7 @@
     name: phpmyadmin
     image: phpmyadmin/phpmyadmin:5.0.1
     state: started
-    recreate: yes
+    recreate: true
     restart_policy: always
     network_mode: host
     volumes:

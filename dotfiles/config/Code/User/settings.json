@@ -1,7 +1,7 @@
 {
   "beautify.options": {
     "preserve_newlines": true,
-    "selector_separator_newline": false,
+    "selector_separator_newline": false
   },
   "editor.detectIndentation": false,
   "editor.fontFamily": "Courier Prime Code, OPPOSans",
@@ -13,18 +13,18 @@
   "editor.quickSuggestions": {
     "comments": true,
     "other": true,
-    "strings": true,
+    "strings": true
   },
   "editor.rulers": [
     80,
-    120,
+    120
   ],
   "explorer.openEditors.visible": 0,
   "files.autoSave": "off",
   "files.exclude": {
     "**/*.retry": true,
     "**/__pycache__": true,
-    "**/node_modules/": true,
+    "**/node_modules/": true
   },
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
@@ -56,7 +56,7 @@
     "editor.insertSpaces": true
   },
   "[vue]": {
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": false
   },
-  "yaml.validate": false,
+  "yaml.validate": false
 }

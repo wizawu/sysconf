@@ -2,7 +2,7 @@
   file:
     path: /var/lib/mysql
     state: directory
-    recurse: yes
+    recurse: true
     mode: 0777
 
 - name: start mysql
@@ -10,14 +10,13 @@
     name: percona
     image: percona:5.7.29
     state: started
-    recreate: yes
+    recreate: true
     restart_policy: always
     network_mode: host
     volumes:
       - /var/lib/mysql:/var/lib/mysql
     command: >-
-      --character-set-server=utf8mb4
-      --collation-server=utf8mb4_bin
+      --character-set-server=utf8mb4 --collation-server=utf8mb4_bin
     env:
       INIT_ROCKSDB: "yes"
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
