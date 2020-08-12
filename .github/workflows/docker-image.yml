@@ -17,3 +17,9 @@ jobs:
 
       - name: push brook image
         run: docker push wizawu/brook:0.2
+
+      - name: build gotunnel image
+        run: cd files/docker/gotunnel && docker build . -t wizawu/gotunnel:0.1
+
+      - name: push gotunnel image
+        run: docker push wizawu/gotunnel:0.1
