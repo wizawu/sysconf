@@ -9,7 +9,7 @@
 - name: start brook
   docker_container:
     name: brook
-    image: wizawu/brook:0.2
+    image: wizawu/brook:latest
     state: started
     recreate: true
     restart_policy: always

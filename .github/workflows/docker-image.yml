@@ -13,13 +13,13 @@ jobs:
         run: echo ${{secrets.DOCKER_HUB_PASSWORD}} | docker login -u wizawu --password-stdin
 
       - name: build brook image
-        run: cd files/docker/brook && docker build . -t wizawu/brook:0.2
+        run: cd files/docker/brook && docker build . -t wizawu/brook:latest
 
       - name: push brook image
-        run: docker push wizawu/brook:0.2
+        run: docker push wizawu/brook:latest
 
       - name: build gotunnel image
-        run: cd files/docker/gotunnel && docker build . -t wizawu/gotunnel:0.1
+        run: cd files/docker/gotunnel && docker build . -t wizawu/gotunnel:latest
 
       - name: push gotunnel image
-        run: docker push wizawu/gotunnel:0.1
+        run: docker push wizawu/gotunnel:latest
