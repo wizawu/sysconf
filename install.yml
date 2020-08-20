@@ -116,6 +116,7 @@
       apt:
         name:
           - ack-grep
+          - antlr4
           - apt-file
           - autossh
           - cmake
@@ -264,6 +265,7 @@
     - name: install npm packages
       shell: "npm install -g {{item}}"
       with_items:
+        - antlr4
         - fmt2i
         - http-proxy-to-socks
         - typescript
