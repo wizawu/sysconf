@@ -7,16 +7,14 @@
 
 - name: start mysql
   docker_container:
-    name: percona
-    image: percona:5.7.29
+    name: mysql
+    image: mysql:5.7.31
     state: started
     recreate: true
     restart_policy: always
     network_mode: host
     volumes:
-      - /var/lib/mysql:/var/lib/mysql
-    command: >-
-      --character-set-server=utf8mb4 --collation-server=utf8mb4_bin
+      - "/var/lib/mysql:/var/lib/mysql"
+      - "{{playbook_dir}}/roles/mysql/files/conf.d:/etc/mysql/conf.d"
     env:
-      INIT_ROCKSDB: "yes"
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"

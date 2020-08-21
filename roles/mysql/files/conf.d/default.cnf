@@ -1,0 +1,25 @@
+[mysqld]
+server_id=1 # 2
+
+binlog_format=row
+character_set_server=utf8mb4
+collation_server=utf8mb4_bin
+log_bin=mysql-bin
+lower_case_table_names=1
+max_allowed_packet=100m
+sql_mode=ansi
+
+# storage engine settings
+default_storage_engine=innodb
+innodb_file_format=barracuda
+innodb_file_per_table=on
+innodb_flush_log_at_trx_commit=2
+innodb_large_prefix=on
+
+# master-slave settings
+auto_increment_increment=2
+auto_increment_offset=1 # 2
+enforce_gtid_consistency=on
+gtid_mode=on
+log_slave_updates=on
+slave_skip_errors=all
