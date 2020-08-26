@@ -40,6 +40,7 @@
   ],
   "python.linting.pylintPath": "/usr/bin/pylint",
   "python.pythonPath": "/usr/bin/python3.7",
+  "terminal.integrated.fontSize": 12,
   "typescript.autoClosingTags": false,
   "vetur.format.defaultFormatter.ts": "vscode-typescript",
   "vim.cursorStylePerMode.normal": "line",
