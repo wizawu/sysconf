@@ -171,7 +171,6 @@
       pip:
         name:
           - ansible==2.9.9
-          - base58==2.0.0
           - docker==4.2.1
         executable: pip3
 
@@ -265,10 +264,11 @@
     - name: install npm packages
       shell: "npm install -g {{item}}"
       with_items:
-        - antlr4
-        - fmt2i
-        - http-proxy-to-socks
-        - typescript
+        - antlr4@4.8.x
+        - base-x-bin@1.0.x
+        - fmt2i@latest
+        - http-proxy-to-socks@1.1.x
+        - typescript@latest
 
     - name: create etc directories
       file: dest=/{{item}} state=directory recurse=yes

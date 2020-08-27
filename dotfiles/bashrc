@@ -29,6 +29,8 @@ source /usr/share/bash-completion/completions/git
 # alias
 alias apt-find='apt-cache search'
 alias apt='sudo apt'
+alias base58='basex -i 123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'
+alias base62='basex -i 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
 alias clangfmt='clang-format -style="{IndentWidth: 2, ColumnLimit: 120}"'
 alias cmemchk='valgrind --tool=memcheck --leak-check=full'
 alias datev='date +%Y%m%d%H%M%S'
