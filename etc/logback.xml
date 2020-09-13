@@ -1,9 +1,12 @@
 <configuration>
-  <appender>
+  <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
     <encoder>
       <pattern>
-        %d{YYYY/MM/dd HH:mm:ss} %-5level %-48([%10.10t] %.35logger{35}) #%4line - %m%n
+        %d{YYYY/MM/dd HH:mm:ss} %-5level [%9.9t] %36.36logger{36} #%4line - %m%n
       </pattern>
     </encoder>
   </appender>
+  <root>
+    <appender-ref ref="console"/>
+  </root>
 </configuration>
