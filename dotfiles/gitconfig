@@ -9,5 +9,6 @@
     co = checkout
     dc = diff --cached
     df = diff
-    rb = rebase -i HEAD~10
+    rb = rebase
+    rbi = rebase -i HEAD~10
     st = status
