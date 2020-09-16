@@ -4,9 +4,11 @@ server_id=1 # 2
 binlog_format=row
 character_set_server=utf8mb4
 collation_server=utf8mb4_bin
+default_time_zone=+08:00
 log_bin=mysql-bin
 lower_case_table_names=1
 max_allowed_packet=100m
+max_connections=500
 sql_mode=ansi
 
 # storage engine settings
