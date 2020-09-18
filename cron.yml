@@ -20,7 +20,5 @@
         special_time: hourly
         job: >-
           bash -c "curl -sk -m 60 --socks5 127.0.0.1:1080
-          'https://api.github.com/users/wizawu/starred?per_page=99' |
-          jq '.[].svn_url' > /home/wizawu/github/starred/\$(date +\%F).json
-          && cp /home/wizawu/github/starred/\$(date +\%F).json
-          /home/wizawu/github/starred/LATEST.json"
+          'https://api.github.com/users/wizawu/starred?per_page=99' | jq -r
+          '.[].svn_url' > /home/wizawu/github/starred/\$(date +\%F).json"
