@@ -1,0 +1,9 @@
+#!/bin/sh
+
+MODELINE=$(cvt $2 $3 $4 | tail -1 | cut -b 9-)
+MODE=$(cvt $2 $3 $4 | tail -1 | awk '{print $2}')
+
+set -ex
+xrandr --newmode $MODELINE
+xrandr --addmode $1 $MODE
+xrandr --output $1 --mode $MODE
