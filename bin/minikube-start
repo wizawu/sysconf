@@ -1,3 +1,0 @@
-#!/bin/bash
-
-minikube start --image-repository=registry.cn-hangzhou.aliyuncs.com/google_containers $@
