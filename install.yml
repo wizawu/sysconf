@@ -21,11 +21,11 @@
         - zh_CN.UTF-8
 
     - name: create symbolic link to apt sources.list
-      file: src=/home/{{user}}/.sysconf/{{item}} dest=/{{item}} state=link force=yes
-      with_items:
-        - etc/apt/sources.list.d/default.list
-        - etc/apt/sources.list.d/google-chrome.list
-        - etc/apt/sources.list.d/vscode.list
+      file:
+        src: /home/{{user}}/.sysconf/etc/apt/sources.list.d
+        dest: /etc/apt/sources.list.d
+        state: link
+        force: yes
 
     - name: add apt keys
       shell: apt-key adv --keyserver keyserver.ubuntu.com --recv {{item}}
@@ -184,7 +184,6 @@
           - google-chrome-stable
           - gtk-theme-switch
           - leafpad
-          - palemoon
           - pavucontrol
           - qbittorrent
           - qpdfview
@@ -204,6 +203,7 @@
           - xserver-xorg-input-kbd
           - xserver-xorg-input-synaptics
           - xtrlock
+          - yandex-browser-beta
           #
           - libdtkwidget-dev=2.0.9.17-1
           - deepin-screenshot=4.1.8-1
