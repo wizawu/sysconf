@@ -1,3 +1,0 @@
-#!/bin/sh
-
-google-chrome-stable --disable-http2
