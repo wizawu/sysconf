@@ -1,0 +1,11 @@
+- name: start adminer
+  docker_container:
+    name: adminer
+    image: xxxx.mirror.aliyuncs.com/library/adminer:4.7.7-standalone
+    state: started
+    recreate: true
+    restart_policy: always
+    ports:
+      - 3309:8080
+    env:
+      ADMINER_DESIGN: pepa-linha
