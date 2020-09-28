@@ -1,0 +1,35 @@
+#!/bin/bash
+
+DISPLAYS=("" $(xrandr | grep connected | awk '{print $1}'))
+
+for i in {1..9}; do
+    if [ -z "${DISPLAYS[i]}" ]; then
+        break
+    fi
+    echo [$i] ${DISPLAYS[i]}
+done
+
+echo -n "Choose output: "
+read
+OUTPUT=${DISPLAYS[REPLY]}
+
+echo -n "Set width: "
+read
+WIDTH=$REPLY
+
+echo "Proper height: $((WIDTH*9/16))(16:9) $((WIDTH*10/16))(16:10) $((WIDTH*3/4))(4:3)"
+echo -n "Set height: "
+read
+HEIGHT=$REPLY
+
+echo -n "Set refresh: "
+read
+REFRESH=$REPLY
+
+MODE=${WIDTH}x${HEIGHT}x${REFRESH}
+MODELINE=$(cvt $WIDTH $HEIGHT $REFRESH | tail -1 | cut -d " " -f 3-)
+
+set -x
+xrandr --newmode $MODE $MODELINE
+xrandr --addmode $OUTPUT $MODE
+xrandr --output $OUTPUT --mode $MODE
