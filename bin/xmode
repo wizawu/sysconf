@@ -20,7 +20,11 @@ WIDTH=$REPLY
 echo "Proper height: $((WIDTH*9/16))(16:9) $((WIDTH*10/16))(16:10) $((WIDTH*3/4))(4:3)"
 echo -n "Set height: "
 read
-HEIGHT=$REPLY
+if [ -z "$REPLY" ]; then
+    HEIGHT=$((WIDTH*9/16))
+else
+    HEIGHT=$REPLY
+fi
 
 echo -n "Set refresh: "
 read
