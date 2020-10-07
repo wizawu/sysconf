@@ -178,7 +178,6 @@
         name:
           - awesome
           - awesome-extra
-          - chromium
           - code
           - gimp
           - gtk-theme-switch
@@ -209,6 +208,10 @@
           #
           - libva2=2.4.0-1
           - smplayer
+
+    - name: install chrome
+      apt:
+        deb: https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
     - name: install input method
       apt:
