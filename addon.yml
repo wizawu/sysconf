@@ -4,7 +4,7 @@
   roles:
     - brook
     - mysql
-    - adminer
+    - phpmyadmin
   tasks:
     - name: create easyconnect link
       file:

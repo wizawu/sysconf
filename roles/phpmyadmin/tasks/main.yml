@@ -1,0 +1,11 @@
+- name: start phpmyadmin
+  docker_container:
+    name: phpmyadmin
+    image: xxxx.mirror.aliyuncs.com/library/phpmyadmin:5.0.2
+    state: started
+    recreate: true
+    restart_policy: always
+    ports:
+      - 3309:80
+    env:
+      PMA_ARBITRARY: "1"

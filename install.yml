@@ -131,6 +131,7 @@
           - jq
           - less
           - mtr
+          - nethogs
           - time
           - tmux
           - tree
