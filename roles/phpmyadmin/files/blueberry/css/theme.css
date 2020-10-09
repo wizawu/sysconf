@@ -1232,7 +1232,6 @@ h1 {
 h2 {
 	font-size: 2em;
 	font-weight: normal;
-	text-shadow: 0 1px 0 #fff;
 	padding: 10px 0 10px;
 	padding-left: 3px;
 	color: #777
@@ -1501,9 +1500,9 @@ th.fillPage {
 }
 
 fieldset {
-	margin-top: 1em;	
+	margin-top: 1em;
 	padding: .5em;
-	background: #eee;	
+	background: #eee;
 }
 
 fieldset fieldset {
@@ -1551,7 +1550,6 @@ table td {
 	padding: 0.3rem 0.3rem;
 	margin: .1em;
 	vertical-align: middle;
-	text-shadow: 0 1px 0 #fff
 }
 
 thead th {
@@ -1669,7 +1667,6 @@ td.vbottom {
 
 .separator {
 	color: #fff;
-	text-shadow: 0 1px 0 #000
 }
 
 div.tools {
@@ -1889,7 +1886,7 @@ div.error h1 {
 div.success,
 div.notice,
 div.error {
-	background-repeat: no-repeat;	
+	background-repeat: no-repeat;
 	-moz-box-shadow: 0 1px 1px #fff inset;
 	-webkit-box-shadow: 0 1px 1px #fff inset;
 	box-shadow: 0 1px 1px #fff inset;
@@ -2147,10 +2144,6 @@ li.last.database {
 	padding: .1em .3em
 }
 
-#topmenu a {
-	/* text-shadow: 0 1px 0 #fff */
-}
-
 #topmenu .error {
 	background: #eee;
 	border: 0 !important;
@@ -2205,7 +2198,7 @@ ul#topmenu2 a {
 	margin-left: 0;
 	padding: 4px 10px;
 	white-space: nowrap;
-	border: 1px solid #ddd;	
+	border: 1px solid #ddd;
 	background: #f2f2f2
 }
 
@@ -2274,7 +2267,7 @@ ul#topmenu>li>.tabactive {
 
 ul#topmenu2 a.tab:hover,
 ul#topmenu2 a.tabactive {
-	background-color: #e5e5e5;	
+	background-color: #e5e5e5;
 	text-decoration: none
 }
 
@@ -2352,7 +2345,6 @@ div#tablestatistics table {
 	background: #269fff;
 	padding: 0.6rem;
 	padding-left: 2.2em;
-	text-shadow: 0 1px 0 #000;
 	max-width: 100%;
 	max-height: 16px;
 	overflow: hidden;
@@ -2780,17 +2772,17 @@ div#profilingchart {
 #sectionlinks {
 	margin-bottom: 15px;
 	padding: 1rem;
-	background: #f3f3f3;	
+	background: #f3f3f3;
 }
 
 #sectionlinks a,
 .buttonlinks a,
 a.button {
-	font-weight: bold;		
+	font-weight: bold;
 	border: 1px solid #aaa;
 	padding: 7px;
 	color: #111 !important;
-	text-decoration: none;	
+	text-decoration: none;
 	white-space: nowrap;
 }
 
@@ -3022,7 +3014,6 @@ div.sqlvalidate {
 	color: #fff;
 	font-size: 1.4em;
 	font-weight: normal;
-	/* text-shadow: 0 1px 0 #777; */
 	/* -moz-box-shadow: 1px 1px 15px #999 inset;
 	-webkit-box-shadow: 1px 1px 15px #999 inset;
 	box-shadow: 1px 1px 15px #999 inset */
@@ -3113,7 +3104,7 @@ select.invalid_value,
 	margin-top: 200px;
 	margin-right: auto;
 	margin-bottom: 0;
-	margin-left: auto;	
+	margin-left: auto;
 	z-index: 1100;
 	text-align: center;
 	display: inline;
@@ -3121,7 +3112,7 @@ select.invalid_value,
 	right: 0;
 	background-image: url("../img/ajax_clock_small.gif");
 	background-repeat: no-repeat;
-	background-position: 2%;	
+	background-position: 2%;
 	box-shadow: 0 5px 90px #888;
 	-moz-box-shadow: 0 5px 90px #888;
 	-webkit-box-shadow: 0 5px 90px #888
@@ -3417,7 +3408,6 @@ table#index_columns select {
 	border-radius: 5px 5px 0 0;
 	background: #f2f2f2;
 	color: #555;
-	text-shadow: 0 1px 0 #fff
 }
 
 .config-form ul.tabs li a:hover,
@@ -3705,7 +3695,6 @@ input#auto_increment_opt {
 .toggleButton .toggleOn {
 	color: #fff;
 	padding: 0 1em;
-	text-shadow: 0 0 .2em #000
 }
 
 .toggleButton .toggleOff {
@@ -3864,7 +3853,6 @@ input#auto_increment_opt {
 	margin: .1em;
 	padding: .3em;
 	position: absolute;
-	text-shadow: -1px -1px #000;
 	-moz-box-shadow: 0 0 .7em #000;
 	-webkit-box-shadow: 0 0 .7em #000;
 	box-shadow: 0 0 .7em #000;
@@ -3889,7 +3877,6 @@ input#auto_increment_opt {
 	-moz-border-radius: .3em !important;
 	-webkit-border-radius: .3em !important;
 	border-radius: .3em !important;
-	text-shadow: -1px -1px #000 !important;
 	font-size: .8em !important;
 	font-weight: bold !important;
 	padding: 1px 3px !important
@@ -4030,7 +4017,6 @@ input#auto_increment_opt {
 	text-align: center;
 	height: 1.4em;
 	width: 1.2em;
-	text-shadow: 1px 0 #fff
 }
 
 .cEdit {
@@ -4702,7 +4688,6 @@ table.show_create td {
 	color: #fff;
 	font-size: 1.6em;
 	font-weight: normal;
-	text-shadow: 0 1px 0 #777;
 	-moz-box-shadow: 1px 1px 15px #999 inset;
 	-webkit-box-shadow: 1px 1px 15px #999 inset;
 	box-shadow: 1px 1px 15px #999 inset
@@ -4716,7 +4701,6 @@ table.show_create td {
 	color: #fff;
 	font-size: 1.6em;
 	font-weight: normal;
-	text-shadow: 0 1px 0 #777;
 	-moz-box-shadow: 1px 1px 15px #999 inset;
 	-webkit-box-shadow: 1px 1px 15px #999 inset;
 	box-shadow: 1px 1px 15px #999 inset
@@ -4885,7 +4869,7 @@ body .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
 }
 
 .btn-primary,
-.btn-secondary {	
+.btn-secondary {
 	background: #fff;
 }
 
@@ -5478,7 +5462,6 @@ html.ie.ie8 li.fast_filter input {
     text-align: center;
     cursor: pointer;
     z-index: 800;
-    text-shadow: 0 1px 0 #fff;
 }
 
 .pma_quick_warp {
@@ -5548,7 +5531,7 @@ html.ie.ie8 li.fast_filter input {
 
 .pma_quick_warp .drop_button {
 	padding: .3em;
-	border: 1px solid #ddd;	
+	border: 1px solid #ddd;
 	background: #e0e0e0;
 	cursor: pointer
 }

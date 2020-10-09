@@ -9,5 +9,6 @@
       - 3309:80
     volumes:
       - "{{role_path}}/files/blueberry:/var/www/html/themes/blueberry"
+      - "{{role_path}}/files/config.php:/var/www/html/libraries/config.default.php"
     env:
       PMA_ARBITRARY: "1"
