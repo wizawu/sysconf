@@ -7,5 +7,7 @@
     restart_policy: always
     ports:
       - 3309:80
+    volumes:
+      - "{{role_path}}/files/blueberry:/var/www/html/themes/blueberry"
     env:
       PMA_ARBITRARY: "1"

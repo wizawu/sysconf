@@ -1,0 +1,10 @@
+{
+    "name": "Blue Berry",
+    "version": "5.0",
+    "description": "Default phpMyAdmin theme",
+    "author": "phpMyAdmin developers",
+    "url": "https://github.com/piyushdolar/phpmyadmin-blueberry-theme",
+    "supports": [
+        "5.0"
+    ]
+}
