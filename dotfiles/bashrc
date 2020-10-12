@@ -5,6 +5,8 @@
 export EDITOR=vim
 export GOPATH=$HOME/github/go
 export GRADLE_HOME=/opt/gradle
+export HISTFILESIZE=10000
+export HISTSIZE=10000
 export HISTTIMEFORMAT="%d/%m/%y %T "
 export JAVA_HOME=/usr/lib/jvm/default-jdk
 export JAVA_TOOL_OPTIONS="-XX:MaxRAMPercentage=25.0"

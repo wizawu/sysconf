@@ -132,11 +132,12 @@
           - less
           - mtr
           - nethogs
+          - rar
           - time
           - tmux
           - tree
           - tsocks
-          - unrar-free
+          - unrar
           - unzip
           - upower
           - valgrind
