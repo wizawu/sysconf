@@ -203,7 +203,6 @@
           - xserver-xorg-input-kbd
           - xserver-xorg-input-synaptics
           - xtrlock
-          - yandex-browser-beta
           #
           - libdtkwidget-dev=2.0.9.17-1
           - deepin-screenshot=4.1.8-1
