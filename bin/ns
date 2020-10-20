@@ -1,12 +1,30 @@
 #!/bin/bash
 
 sudo chattr -i /etc/resolv.conf
+cat /etc/resolv.conf
 
-if [ -n "$1" ]; then
-    sudo rm /etc/resolv.conf
-    for s in $@; do
-        echo nameserver $s | sudo tee -a /etc/resolv.conf
+servers='
+    10.212.132.64
+    10.212.132.65
+    223.5.5.5
+    223.6.6.6
+    8.8.4.4
+    8.8.8.8
+    1.0.0.1
+    1.1.1.1
+'
+
+if [ "$1" = "-a" ]; then
+    for host in $servers; do
+        fping -q -c1 $host
+        echo -n "append: "
+        read -n 1
+        if [ "$REPLY" = x ]; then
+            echo
+        else
+            echo
+            echo "nameserver $host" | sudo tee -a /etc/resolv.conf
+        fi
     done
-else
     cat /etc/resolv.conf
 fi
