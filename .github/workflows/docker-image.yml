@@ -23,3 +23,9 @@ jobs:
 
       - name: push gotunnel image
         run: docker push wizawu/gotunnel:latest
+
+      - name: build haproxy-basic-auth image
+        run: cd files/docker/haproxy-basic-auth && docker build . -t wizawu/haproxy-basic-auth:latest
+
+      - name: push haproxy-basic-auth image
+        run: docker push wizawu/haproxy-basic-auth:latest
