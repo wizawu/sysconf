@@ -1,12 +1,12 @@
 #!/bin/bash
 
 PERLLIB=$(cd $(dirname $0)/../dotfiles/urxvt && pwd)
-EN_FONT=$(test -n "$xft" && echo "$xft" || echo "Courier Prime Code")
+EN_FONT=$(test -n "$xft" && echo "$xft" || echo "Antikor Mono Book")
 
 pkill xfce4-panel
 /usr/bin/urxvt \
     --perl-lib $PERLLIB -pe newterm \
-    -lsp 7 -letsp -2 \
-    -fn "xft:$EN_FONT:size=11,xft:SF Mono:size=11,xft:造字工房典黑（非商用）:size=9" \
+    -lsp 4 -letsp -2 \
+    -fn "xft:$EN_FONT:size=10,xft:SF Mono:size=11,xft:OPPOSans:size=9" \
     $@ \
     -e bash
