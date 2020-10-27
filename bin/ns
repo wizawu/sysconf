@@ -17,12 +17,12 @@ servers='
 if [ "$1" = "-a" ]; then
     for host in $servers; do
         fping -q -c1 $host
-        echo -n "append: "
+        echo -n "y/n/q: "
         read -n 1
-        if [ "$REPLY" = x ]; then
-            echo
-        else
-            echo
+        echo
+        if [ "$REPLY" = q ]; then
+            break
+        elif [ "$REPLY" = y ]; then
             echo "nameserver $host" | sudo tee -a /etc/resolv.conf
         fi
     done
