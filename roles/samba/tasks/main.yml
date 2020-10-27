@@ -1,0 +1,19 @@
+- name: create data directory
+  file:
+    path: "{{lookup('env', 'HOME')}}/local/share"
+    state: directory
+    recurse: true
+
+- name: start samba
+  docker_container:
+    name: samba
+    image: xxxx.mirror.aliyuncs.com/dperson/samba:latest
+    state: started
+    recreate: true
+    restart_policy: on-failure
+    ports:
+      - 139:139
+      - 445:445
+    volumes:
+      - "{{lookup('env', 'HOME')}}/local/share:/share"
+    command: -s "public;/share;yes;no;yes"

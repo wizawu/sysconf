@@ -95,7 +95,6 @@
           - rinetd
           - rlwrap
           - rsync
-          - samba
           - smbclient
           - software-properties-common
           - ssh
