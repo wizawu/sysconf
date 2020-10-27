@@ -1,5 +1,4 @@
 #!/bin/bash
-# Best DPI for 2560x1440 is 144
 
 set -ex
 if [ $(xrandr | grep -w connected | wc -l) -gt 1 ]; then
@@ -10,11 +9,11 @@ if [ $(xrandr | grep -w connected | wc -l) -gt 1 ]; then
         xrandr --output $monitor2 --off
     elif [ "$1" == "2" ]; then
         xrandr --output $monitor1 --off
-        xrandr --output $monitor2 --auto --mode 2560x1440
+        xrandr --output $monitor2 --auto --mode 1920x1080
     else
         xrandr --output $monitor1 --same-as $monitor2
         xrandr --output $monitor1 --auto
-        xrandr --output $monitor2 --auto --mode 2560x1440 --primary
+        xrandr --output $monitor2 --auto --mode 1920x1080 --primary
     fi
 else
     monitor1=$(xrandr | grep -w connected | awk 'NR==1{print $1}')

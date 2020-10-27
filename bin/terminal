@@ -7,6 +7,6 @@ pkill xfce4-panel
 /usr/bin/urxvt \
     --perl-lib $PERLLIB -pe newterm \
     -lsp 4 -letsp -2 \
-    -fn "xft:$EN_FONT:size=10,xft:SF Mono:size=11,xft:OPPOSans:size=9" \
+    -fn "xft:$EN_FONT:size=10,xft:SF Mono:size=11,xft:迷你简准圆:size=9" \
     $@ \
     -e bash

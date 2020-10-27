@@ -127,6 +127,7 @@
           - htop
           - httrack
           - iftop
+          - inotify-tools
           - iotop
           - jq
           - less
@@ -279,6 +280,7 @@
         - etc/X11/xorg.conf.d
         - etc/apt/apt.conf.d
         - etc/fonts/conf.d
+        - etc/opt/chrome/policies/managed
         - etc/security/limits.d
         - etc/supervisor/conf.d
         - etc/xdg/awesome
@@ -289,6 +291,7 @@
         - etc/X11/xorg.conf.d/99-synaptics.conf
         - etc/apt/apt.conf.d/99default
         - etc/fonts/conf.d/99-default.conf
+        - etc/opt/chrome/policies/managed/blocklist.json
         - etc/rc.local
         - etc/xdg/awesome/rc.lua
 

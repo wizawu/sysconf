@@ -1,0 +1,6 @@
+{
+  "URLBlocklist": [
+    "bytedance://*",
+    "whatsapp://*"
+  ]
+}
