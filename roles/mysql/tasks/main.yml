@@ -8,7 +8,7 @@
 - name: start mysql
   docker_container:
     name: mysql
-    image: xxxx.mirror.aliyuncs.com/library/mysql:5.7.31
+    image: xxxx.mirror.aliyuncs.com/library/mysql:8.0.22
     state: started
     recreate: true
     restart_policy: always
