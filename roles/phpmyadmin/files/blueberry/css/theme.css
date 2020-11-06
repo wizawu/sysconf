@@ -1189,7 +1189,6 @@ textarea {
 }
 
 body {
-	font-family: 'Antikor Mono';
 	padding: 0;
 	margin: 0;
 	margin-left: 240px;
@@ -7152,5 +7151,9 @@ ul.resizable-menu ul li {
 	background-image: url("../img/s_fulltext.png")
 }
 
+body {
+    font-family: 'Antikor Mono';
+    font-size: 11px;
+}
 
 /*# sourceMappingURL=theme.css.map */
