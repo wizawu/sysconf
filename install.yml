@@ -8,7 +8,7 @@
       file:
         dest: /home/{{user}}/.sysconf
         state: directory
-        recurse: yes
+        recurse: true
         owner: "{{user}}"
 
     - name: locale-gen
@@ -25,7 +25,7 @@
         src: /home/{{user}}/.sysconf/etc/apt/sources.list.d
         dest: /etc/apt/sources.list.d
         state: link
-        force: yes
+        force: true
 
     - name: add apt keys
       shell: apt-key adv --keyserver keyserver.ubuntu.com --recv {{item}}
@@ -38,8 +38,8 @@
 
     - name: install apt packages
       apt:
-        update_cache: yes
-        install_recommends: no
+        update_cache: true
+        install_recommends: false
         name:
           - acpi
           - alsa-oss
@@ -181,6 +181,7 @@
           - awesome
           - awesome-extra
           - code
+          - deepin-screenshot=4.1.8-1
           - gimp
           - gtk-theme-switch
           - leafpad
@@ -189,6 +190,7 @@
           - qpdfview
           - redshift
           - rxvt-unicode-256color
+          - smplayer
           - viewnior
           - vim-gtk
           - wps-office
@@ -203,12 +205,6 @@
           - xserver-xorg-input-kbd
           - xserver-xorg-input-synaptics
           - xtrlock
-          #
-          - libdtkwidget-dev=2.0.9.17-1
-          - deepin-screenshot=4.1.8-1
-          #
-          - libva2=2.4.0-1
-          - smplayer
 
     - name: install chrome
       apt:
@@ -236,8 +232,8 @@
     - name: remove apt packages
       apt:
         state: absent
-        autoremove: yes
-        purge: yes
+        autoremove: true
+        purge: true
         name:
           - apport
           - blueman
@@ -359,7 +355,12 @@
         - .ssh
 
     - name: create symbolic link to user config
-      file: src=/home/{{user}}/.sysconf/dotfiles/{{item}} dest=/home/{{user}}/.{{item}} state=link force=yes owner={{user}}
+      file:
+        src: /home/{{user}}/.sysconf/dotfiles/{{item}}
+        dest: /home/{{user}}/.{{item}}
+        state: link
+        force: true
+        owner: "{{user}}"
       with_items:
         - Xdefaults
         - bashrc
@@ -375,16 +376,16 @@
       copy:
         src: dotfiles/config/background.png
         dest: /usr/share/awesome/themes/default/background.png
-        remote_src: yes
+        remote_src: true
 
     - name: install vscode extensions
       shell: "code --install-extension {{item}}"
       with_items:
         - hediet.vscode-drawio
         - henriiik.vscode-sort
-        - jeff-hykin.better-dockerfile-syntax
         - michelemelluso.code-beautifier
         - mikeburgh.xml-format
+        - ms-azuretools.vscode-docker
         - ms-python.python
         - octref.vetur
         - redhat.vscode-yaml
@@ -392,5 +393,5 @@
         - tobiasalthoff.atom-material-theme
         - vscodevim.vim
         - vscoss.vscode-ansible
-      become: yes
+      become: true
       become_user: "{{user}}"
