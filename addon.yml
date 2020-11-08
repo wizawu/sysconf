@@ -3,9 +3,9 @@
     ansible_python_interpreter: python3
   roles:
     - brook
-    - mysocks5
     - mysql
     - phpmyadmin
+    - socks5proxy
   tasks:
     - name: create easyconnect link
       file:

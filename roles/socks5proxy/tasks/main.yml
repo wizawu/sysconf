@@ -1,6 +1,6 @@
-- name: start mysocks5
+- name: start socks5proxy
   docker_container:
-    name: mysocks5
+    name: socks5proxy
     image: xxxx.mirror.aliyuncs.com/library/node:10.23-alpine
     state: started
     recreate: true
@@ -9,4 +9,4 @@
     command: npm run start
     working_dir: /opt/app
     volumes:
-      - /home/wizawu/github/jskit/mysocks5:/opt/app
+      - "{{role_path}}/files:/opt/app"
