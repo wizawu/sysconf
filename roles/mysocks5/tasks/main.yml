@@ -1,0 +1,12 @@
+- name: start mysocks5
+  docker_container:
+    name: mysocks5
+    image: xxxx.mirror.aliyuncs.com/library/node:10.23-alpine
+    state: started
+    recreate: true
+    restart_policy: always
+    network_mode: host
+    command: npm run start
+    working_dir: /opt/app
+    volumes:
+      - /home/wizawu/github/jskit/mysocks5:/opt/app

@@ -50,9 +50,8 @@ alias ls='ls --color=auto'
 alias myip='curl -s http://ip-api.com/json | jq -r .query'
 alias psync='rsync -Pz --info=progress2'
 alias rm='rm -I'
-alias sar-dp='sar -dp'
 alias systemctl='sudo systemctl'
-alias tar-strip='bash -c "tar xf \$0 --strip-components=\$1"'
+alias tarsc='bash -c "tar xf \$0 --strip-components=\$1"'
 alias tgit="tsocks git"
 alias timev="/usr/bin/time -v"
 alias tree='tree -C'

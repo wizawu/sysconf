@@ -3,6 +3,7 @@
     ansible_python_interpreter: python3
   roles:
     - brook
+    - mysocks5
     - mysql
     - phpmyadmin
   tasks:
