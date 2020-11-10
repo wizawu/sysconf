@@ -10,7 +10,7 @@
     image: xxxx.mirror.aliyuncs.com/dperson/samba:latest
     state: started
     recreate: true
-    restart_policy: on-failure
+    restart_policy: no
     ports:
       - 139:139
       - 445:445
