@@ -2728,7 +2728,7 @@ $cfg['CharTextareaRows'] = 2;
  *
  * @global integer $cfg['LimitChars']
  */
-$cfg['LimitChars'] = 50;
+$cfg['LimitChars'] = 191;
 
 /**
  * Where to show the edit/copy/delete links in browse mode
