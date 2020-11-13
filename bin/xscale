@@ -1,0 +1,5 @@
+#!/bin/sh
+
+OUTPUT=$(xrandr --current | grep -w connected | cut -d ' ' -f 1)
+set -x
+xrandr --output $OUTPUT --scale $1x$1
