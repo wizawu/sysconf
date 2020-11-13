@@ -1,6 +1,6 @@
-import * as http from "http"
-import * as diskdb from "diskdb"
+import * as Database from "better-sqlite3"
 import * as LoggerFactory from "log4js"
+import * as http from "http"
 
 interface Backend {
     _id: number
@@ -10,8 +10,7 @@ interface Backend {
 
 export const log = LoggerFactory.getLogger("\t\b\b\b\b\b\b\b")
 log.level = "debug"
-let db = diskdb.connect("db", ["domains"])
-let backends: Backend[] = [{
+const backends: Backend[] = [{
     _id: 0,
     host: "127.0.0.1",
     port: 1080
@@ -21,18 +20,21 @@ let backends: Backend[] = [{
     port: 1085
 }]
 
-setInterval(() => {
-    db.domains.find({}).forEach(it => {
-        if (Date.now() - (it.time || 0) > 30 * 86400 * 1000) {
-            db.domains.remove({ _id: it._id })
-            log.warn("Purge " + it.domain)
-        }
-    })
-}, 3600 * 1000)
+const db = new Database("test.db", { versbose: console.log })
+db.exec(`
+    create table if not exists domain(
+        domain text,
+        prefer short,
+        time long,
+        primary key (domain)
+    )
+`)
 
 export function select(upstream: string): Backend {
     if (/\d$/.test(upstream)) return backends[0]
-    let result = db.domains.findOne({ domain: upstream })
+    let result = db.prepare(`
+        select * from domain where domain = @domain
+    `).get({ domain: upstream })
     if (result) {
         return backends[result.prefer]
     } else {
@@ -47,7 +49,7 @@ export function select(upstream: string): Backend {
             })
         })
             .on("error", e => {
-                log.error(`Test ${upstream}: ${e.message}`)
+                log.error(`Ping ${upstream}: ${e.message}`)
                 updateDomain(upstream, 1)
             })
             .on("timeout", () => {
@@ -60,7 +62,9 @@ export function select(upstream: string): Backend {
 
 function selectParent(upstream: string): Backend {
     let parent = upstream.split(".").slice(1).join(".")
-    let result = db.domains.findOne({ domain: parent })
+    let result = db.prepare(`
+        select * from domain where domain = @domain
+    `).get({ domain: parent })
     if (result) {
         return backends[result.prefer]
     } else {
@@ -69,20 +73,16 @@ function selectParent(upstream: string): Backend {
 }
 
 export function updateDomain(domain: string, prefer: number) {
-    db.domains.update(
-        { domain },
-        { domain, prefer, time: Date.now() },
-        { upsert: true }
-    )
+    db.exec(`
+        replace into domain(domain, prefer, time) values(
+            '${domain}', ${prefer}, ${Date.now()}
+        )
+    `)
 }
 
-export function preferAnother(domain: string) {
-    let record = db.domains.findOne({ domain })
-    if (record) {
-        db.domains.update(
-            { domain },
-            { prefer: 1 - record.prefer },
-            { upsert: false }
-        )
-    }
+export function preferAnother(domain: string, prefer?: number) {
+    db.exec(`
+        update domain set prefer = ${prefer === undefined ? "1 - prefer" : prefer}
+        where domain = '${domain}'
+    `)
 }

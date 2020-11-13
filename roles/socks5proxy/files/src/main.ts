@@ -12,7 +12,9 @@ server.on("connection", conn => {
     let clientData2: Buffer | null = null
     conn.on("error", e => {
         log.error(`Router error (${upstream}): ${e.message}`)
-        preferAnother(upstream!)
+        if (!/ended by the other party/.test(e.message)) {
+            preferAnother(upstream!)
+        }
     })
     conn.on("data", data => {
         if (upstream === null) {
@@ -32,7 +34,7 @@ server.on("connection", conn => {
                 setTimeout(() => {
                     if (contentLength <= 16) {
                         log.warn(`Content length (${upstream}): ${contentLength}`)
-                        preferAnother(upstream!)
+                        preferAnother(upstream!, 1 - backend._id)
                     }
                 }, 5000)
             })

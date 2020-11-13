@@ -164,6 +164,7 @@
           - mysql-client
           - postgresql-client
           - redis-server
+          - sqlite3
 
     - name: set pip index url
       shell: pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
@@ -367,6 +368,7 @@
         - config/Code/User/keybindings.json
         - config/Code/User/settings.json
         - gitconfig
+        - sqliterc
         - ssh/config
         - tmux.conf
         - vimrc
