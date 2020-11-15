@@ -14,6 +14,7 @@ hsetroot -full /usr/share/awesome/themes/default/background.png &
 fcitx -rd && im-config -n fcitx
 
 # xfce
+pkill dbus-launch || echo
 pkill xfce4-session || echo
 xfce4-session &>/dev/null &
 
@@ -22,4 +23,10 @@ until [ -n "$(pgrep xfce4-session)" ]; do
     sleep 1
 done
 sleep 1
-awesome-client 'awesome.restart()'
+awesome-client 'awesome.restart()' || echo
+
+# kill xfce panel
+for _ in {1..5}; do
+    pkill xfce4-panel
+    sleep 2
+done

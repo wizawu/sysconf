@@ -4,6 +4,7 @@ import { log, select, preferAnother } from "./service"
 
 let server = net.createServer()
 let lastUpstream = ""
+let errorMsg = {}
 
 server.on("connection", conn => {
     let client: net.Socket | null = null
@@ -11,7 +12,10 @@ server.on("connection", conn => {
     let clientData1: Buffer | null = null
     let clientData2: Buffer | null = null
     conn.on("error", e => {
-        log.error(`Router error (${upstream}): ${e.message}`)
+        if (upstream !== null && errorMsg[upstream] !== e.message) {
+            errorMsg[upstream] = e.message
+            log.error(`Router error (${upstream}): ${e.message}`)
+        }
         if (!/ended by the other party/.test(e.message)) {
             preferAnother(upstream!)
         }
