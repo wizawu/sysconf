@@ -12,6 +12,7 @@ export JAVA_HOME=/usr/lib/jvm/default-jdk
 export JAVA_TOOL_OPTIONS="-XX:MaxRAMPercentage=25.0"
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+export NODE_PATH=/usr/lib/node_modules:$NODE_PATH
 export PATH=$HOME/.sysconf/bin:$GOPATH/bin:$GRADLE_HOME/bin:/usr/sbin:/sbin:$PATH
 export TERM=rxvt
 export TRASH_DIR=$HOME/.local/share/Trash
@@ -30,6 +31,7 @@ source /usr/share/bash-completion/bash_completion
 source /usr/share/bash-completion/completions/git
 
 # alias
+alias 2fa='node -e "console.log(require(\"otplib\").authenticator.generate(process.argv[1]))"'
 alias alsamixer='pacmd set-default-sink alsa_output.pci-0000_03_00.6.analog-stereo && /usr/bin/alsamixer -c 1'
 alias apt-find='apt-cache search'
 alias apt='sudo apt'

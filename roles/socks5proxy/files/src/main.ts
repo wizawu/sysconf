@@ -30,6 +30,7 @@ server.on("connection", conn => {
             clientData2 = data
             let backend = select(upstream)
             let contentLength = 0
+            let startTime = Date.now()
             client = net.createConnection(backend, () => {
                 if (upstream !== lastUpstream) {
                     log.debug(`Select backend :${backend.port} for ${upstream}`)
@@ -56,6 +57,9 @@ server.on("connection", conn => {
             })
             client.on("error", e => {
                 log.error(`Backend error (${upstream}): ${e.message}`)
+            })
+            client.on("end", e => {
+                log.debug(`Close connection (${upstream}): ${contentLength}B/${Date.now() - startTime}ms`)
             })
         } else {
             client?.write(data)
