@@ -1,1 +1,4 @@
-/opt/google/chrome/chrome
+#!/bin/sh
+
+pacmd set-default-sink alsa_output.pci-0000_03_00.6.analog-stereo
+/opt/google/chrome/chrome "$@"

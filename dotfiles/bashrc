@@ -32,7 +32,6 @@ source /usr/share/bash-completion/completions/git
 
 # alias
 alias 2fa='node -e "console.log(require(\"otplib\").authenticator.generate(process.argv[1]))"'
-alias alsamixer='pacmd set-default-sink alsa_output.pci-0000_03_00.6.analog-stereo && /usr/bin/alsamixer -c 1'
 alias apt-find='apt-cache search'
 alias apt='sudo apt'
 alias base58='basex -i 123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'
