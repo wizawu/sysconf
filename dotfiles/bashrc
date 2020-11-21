@@ -49,10 +49,11 @@ alias lh='ls -lh'
 alias ll='ls -l'
 alias ls='ls --color=auto'
 alias myip='curl -s http://ip-api.com/json | jq -r .query'
+alias paoff='bash -c "pacmd set-card-profile \$0 off"'
 alias psync='rsync -Pz --info=progress2'
 alias rm='rm -I'
 alias systemctl='sudo systemctl'
-alias tarsc='bash -c "tar xf \$0 --strip-components=\$1"'
+alias tarsc='bash -c "tar xf \$0 --strip-components=1"'
 alias tgit="tsocks git"
 alias timev="/usr/bin/time -v"
 alias tree='tree -C'
