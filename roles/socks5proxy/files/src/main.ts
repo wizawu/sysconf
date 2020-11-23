@@ -59,7 +59,7 @@ server.on("connection", conn => {
                 log.error(`Backend error (${upstream}): ${e.message}`)
             })
             client.on("end", e => {
-                log.debug(`Close connection (${upstream}): ${contentLength}B/${Date.now() - startTime}ms`)
+                log.debug(`Close connection (:${backend.port}) to ${upstream}: ${contentLength}B/${Date.now() - startTime}ms`)
             })
         } else {
             client?.write(data)
