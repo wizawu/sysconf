@@ -1,5 +1,6 @@
 #!/bin/bash
 
+pacmd set-card-profile 0 off
 DISPLAYS=("" $(xrandr | grep connected | awk '{print $1}'))
 
 for i in {1..9}; do
