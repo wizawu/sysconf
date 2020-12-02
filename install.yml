@@ -186,14 +186,14 @@
           - deepin-screenshot=4.1.8-1
           - gimp
           - gtk-theme-switch
-          - leafpad
+          - mirage
+          - mousepad
           - pavucontrol
           - qbittorrent
           - qpdfview
           - redshift
           - rxvt-unicode-256color
           - smplayer
-          - viewnior
           - vim-gtk
           - wps-office
           - x11-xkb-utils
