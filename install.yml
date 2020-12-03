@@ -32,7 +32,6 @@
       with_items:
         - 7EA0A9C3F273FCD8 # aliyun docker
         - 1655A0AB68576280 # node
-        - 425956BB3E31DF51 # deepin
         - 6A030B21BA07F4FB # aliyun kubernetes
         - EB3E94ADBE1229CF # vscode
 
