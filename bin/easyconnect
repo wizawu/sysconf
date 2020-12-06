@@ -1,0 +1,4 @@
+#!/bin/sh
+
+sudo systemctl restart EasyMonitor.service
+exec /usr/share/sangfor/EasyConnect/EasyConnect "$@"

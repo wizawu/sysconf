@@ -16,7 +16,7 @@ servers='
 
 if [ "$1" = "-a" ]; then
     for host in $servers; do
-        nc -uvz -w 1 $host 53
+        grep -q $host /etc/resolv.conf && continue || nc -uvz -w 1 $host 53
         echo -n "y/n/q: "
         read -n 1
         echo
