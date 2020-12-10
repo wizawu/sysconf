@@ -13,7 +13,7 @@ export JAVA_TOOL_OPTIONS="-XX:MaxRAMPercentage=25.0"
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export NODE_PATH=/usr/lib/node_modules:$NODE_PATH
-export PATH=$HOME/.sysconf/bin:$GOPATH/bin:$GRADLE_HOME/bin:/usr/sbin:/sbin:$PATH
+export PATH=$HOME/.sysconf/bin:$GOPATH/bin:$GRADLE_HOME/bin:$JAVA_HOME/bin:/usr/sbin:/sbin:$PATH
 export TERM=rxvt
 export TRASH_DIR=$HOME/.local/share/Trash
 

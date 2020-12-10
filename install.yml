@@ -81,6 +81,7 @@
           - nodejs
           - ntfs-3g
           - ntpdate
+          - openjdk-11-jdk
           - p7zip-full
           - parallel
           - pm-utils
@@ -222,13 +223,6 @@
           - fcitx-ui-classic
           - fcitx-ui-light
           - libgtk-3-bin
-
-    - name: conflicted packages
-      apt:
-        name:
-          - fontforge
-          - wicd-gtk
-      when: false
 
     - name: remove apt packages
       apt:
