@@ -2,8 +2,7 @@
   "beautify.options": {
     "preserve_newlines": true,
     "selector_separator_newline": false
-  },
-  "editor.detectIndentation": false,
+},
   "editor.fontFamily": "Courier Prime Code, OPPOSans",
   "editor.fontSize": 12,
   "editor.formatOnSave": false,
@@ -43,13 +42,15 @@
   "workbench.colorTheme": "Atom Material Theme",
   "workbench.editor.enablePreview": false,
   "workbench.startupEditor": "newUntitledFile",
-  "[json]": {
-    "editor.detectIndentation": false,
+  "[html]": {
+    "editor.detectIndentation": true,
     "editor.tabSize": 2,
     "editor.insertSpaces": true
   },
-  "[vue]": {
-    "editor.formatOnSave": false
+  "[json]": {
+    "editor.detectIndentation": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
   },
   "yaml.validate": false,
   "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W3tcIm5hbWVcIjpcIk9QUE9TYW5zXCJ9XSxcImxpYnJhcmllc1wiOlwiZ2VuZXJhbDthenVyZTttc2NhZTtnY3AyO2libTtrdWJlcm5ldGVzO25ldHdvcms7b2ZmaWNlO3JhY2s7dnZkXCIsXCJjdXN0b21MaWJyYXJpZXNcIjpbXCJMLnNjcmF0Y2hwYWRcIl0sXCJwbHVnaW5zXCI6W10sXCJyZWNlbnRDb2xvcnNcIjpbXCIwMDAwMDBcIl0sXCJmb3JtYXRXaWR0aFwiOlwiMjQwXCIsXCJjcmVhdGVUYXJnZXRcIjpmYWxzZSxcInBhZ2VGb3JtYXRcIjp7XCJ4XCI6MCxcInlcIjowLFwid2lkdGhcIjo4NTAsXCJoZWlnaHRcIjoxMTAwfSxcInNlYXJjaFwiOnRydWUsXCJzaG93U3RhcnRTY3JlZW5cIjp0cnVlLFwiZ3JpZENvbG9yXCI6XCIjZDBkMGQwXCIsXCJkYXJrR3JpZENvbG9yXCI6XCIjNmU2ZTZlXCIsXCJhdXRvc2F2ZVwiOnRydWUsXCJyZXNpemVJbWFnZXNcIjpudWxsLFwib3BlbkNvdW50ZXJcIjowLFwidmVyc2lvblwiOjE4LFwidW5pdFwiOjEsXCJpc1J1bGVyT25cIjpmYWxzZSxcInVpXCI6XCJcIn0ifQ==",

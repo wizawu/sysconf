@@ -16,15 +16,24 @@ servers='
 
 if [ "$1" = "-a" ]; then
     for host in $servers; do
-        grep -q $host /etc/resolv.conf && continue || nc -uvz -w 1 $host 53
-        echo -n "y/n/q: "
+        grep -q $host /etc/resolv.conf && continue || echo
+        echo -n "append $host, y/n/q: "
         read -n 1
         echo
         if [ "$REPLY" = q ]; then
             break
         elif [ "$REPLY" = y ]; then
+            ns_list="$ns_list $host"
             echo "nameserver $host" | sudo tee -a /etc/resolv.conf
         fi
     done
-    cat /etc/resolv.conf
+    test -z "$ns_list" || parallel nc -uvz -w 1 {1} 53 ::: $ns_list
+    echo -n "continue to edit, y/n: "
+    read -n 1
+    echo
+    if [ "$REPLY" = y ]; then
+        sudo vi /etc/resolv.conf
+    else
+        cat /etc/resolv.conf
+    fi
 fi
