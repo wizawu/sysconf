@@ -81,7 +81,6 @@
           - nodejs
           - ntfs-3g
           - ntpdate
-          - openjdk-11-jdk
           - p7zip-full
           - parallel
           - pm-utils
@@ -186,8 +185,9 @@
           - deepin-screenshot=4.1.8-1
           - gimp
           - gtk-theme-switch
-          - mirage
-          - mousepad
+          - mirage # image viewer
+          - mousepad # text editor
+          - nm-applet
           - pavucontrol
           - qbittorrent
           - qpdfview

@@ -19,6 +19,6 @@
         name: save github starred
         special_time: hourly
         job: >-
-          bash -c "curl -sk -m 60 --socks5 127.0.0.1:1080
+          bash -c "curl -sk -m 60 --socks5 127.0.0.1:1085
           'https://api.github.com/users/wizawu/starred?per_page=99' | jq -r
           '.[].svn_url' > /home/wizawu/github/starred/\$(date -I)"
