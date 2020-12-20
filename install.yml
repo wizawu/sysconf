@@ -159,7 +159,6 @@
     - name: install database packages
       apt:
         name:
-          - mycli
           - mysql-client
           - pgformatter
           - postgresql-client
@@ -174,6 +173,8 @@
         name:
           - ansible==2.9.9
           - docker==4.2.1
+          - mycli==1.22.2
+          - wheel==0.36.2
         executable: pip3
 
     - name: install desktop
