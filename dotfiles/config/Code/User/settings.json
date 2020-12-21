@@ -42,6 +42,16 @@
   "workbench.colorTheme": "Atom Material Theme",
   "workbench.editor.enablePreview": false,
   "workbench.startupEditor": "newUntitledFile",
+  "[css]": {
+    "editor.detectIndentation": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "[less]": {
+    "editor.detectIndentation": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
   "[html]": {
     "editor.detectIndentation": true,
     "editor.tabSize": 2,
@@ -52,7 +62,17 @@
     "editor.tabSize": 2,
     "editor.insertSpaces": true
   },
-  "[tsx]": {
+  "[javascript]": {
+    "editor.detectIndentation": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "[typescript]": {
+    "editor.detectIndentation": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "[typescriptreact]": {
     "editor.detectIndentation": true,
     "editor.tabSize": 2,
     "editor.insertSpaces": true
