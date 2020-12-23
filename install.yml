@@ -349,6 +349,7 @@
       file: dest=/home/{{user}}/{{item}} state=directory recurse=yes owner={{user}}
       with_items:
         - .config/Code/User
+        - .gradle
         - .ssh
 
     - name: create symbolic link to user config
@@ -364,6 +365,7 @@
         - config/Code/User/keybindings.json
         - config/Code/User/settings.json
         - gitconfig
+        - gradle/gradle.properties
         - sqliterc
         - ssh/config
         - tmux.conf
