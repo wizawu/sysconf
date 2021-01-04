@@ -11,12 +11,13 @@ server.on("connection", conn => {
     let upstream: string | null = null
     let clientData1: Buffer | null = null
     let clientData2: Buffer | null = null
+    let contentLength = 0
     conn.on("error", e => {
         if (upstream !== null && errorMsg[upstream] !== e.message) {
             errorMsg[upstream] = e.message
             log.error(`Router error (${upstream}): ${e.message}`)
         }
-        if (!/ended by the other party/.test(e.message)) {
+        if (!/ended by the other party/.test(e.message) && contentLength < 1024) {
             preferAnother(upstream!)
         }
     })
@@ -29,7 +30,6 @@ server.on("connection", conn => {
             upstream = data.slice(5, -2).toString()
             clientData2 = data
             let backend = select(upstream)
-            let contentLength = 0
             let startTime = Date.now()
             client = net.createConnection(backend, () => {
                 if (upstream !== lastUpstream) {
