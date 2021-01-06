@@ -389,6 +389,7 @@
         - ms-azuretools.vscode-docker
         - redhat.vscode-yaml
         - shd101wyy.markdown-preview-enhanced
+        - streetsidesoftware.code-spell-checker
         - tobiasalthoff.atom-material-theme
         - vscodevim.vim
         - vscoss.vscode-ansible
