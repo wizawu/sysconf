@@ -44,7 +44,7 @@ end
 beautiful.init(awful.util.get_themes_dir() .. "default/theme.lua")
 
 -- @wizawu --
-beautiful.get().font = "Mallanna 11"
+beautiful.get().font = "Padauk 11"
 terminal = "terminal"
 local vicious = require("vicious")
 -- @end --
@@ -123,7 +123,7 @@ mykeyboardlayout = awful.widget.keyboardlayout()
 
 -- {{{ Wibar
 -- Create a textclock widget
-mytextclock = wibox.widget.textclock()
+mytextclock = wibox.widget.textclock(" %Y-%m-%d %H:%M ")
 
 -- Create a wibox for each screen and add it
 local taglist_buttons = awful.util.table.join(
@@ -212,7 +212,7 @@ awful.screen.connect_for_each_screen(function(s)
     s.mytasklist = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, tasklist_buttons)
 
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s })
+    s.mywibox = awful.wibar({ position = "top", height = 25, screen = s })
 
     -- @wizawu --
     cpuwidget = wibox.widget.textbox()

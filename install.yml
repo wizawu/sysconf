@@ -202,12 +202,14 @@
           - xdg-user-dirs
           - xfce4-panel
           - xfce4-session
+          - xfreerdp
           - xorg
           - xsel
           - xserver-xorg-input-all
           - xserver-xorg-input-kbd
           - xserver-xorg-input-synaptics
           - xtrlock
+          - xvfb
 
     - name: install chrome
       apt:
