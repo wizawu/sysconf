@@ -27,7 +27,7 @@ if [ "$1" = "-a" ]; then
             echo "nameserver $host" | sudo tee -a /etc/resolv.conf
         fi
     done
-    test -z "$ns_list" || parallel nc -uvz -w 1 {1} 53 ::: $ns_list
+    test -z "$ns_list" || fping -c1 -q -t100 $ns_list
     echo -n "continue to edit, y/n: "
     read -n 1
     echo

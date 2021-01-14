@@ -2,6 +2,7 @@
 server_id=1 # 2
 
 binlog_format=row
+binlog_expire_logs_seconds=2592000
 character_set_server=utf8mb4
 collation_server=utf8mb4_bin
 default_time_zone=+08:00
