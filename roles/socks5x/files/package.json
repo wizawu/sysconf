@@ -1,12 +1,13 @@
 {
   "scripts": {
-    "build": "tsc --outDir dist src/main.ts",
+    "build": "tsc --outDir dist src/*.d.ts src/main.ts",
     "start": "npm run build && node dist/main.js"
   },
   "dependencies": {
     "@types/node": "^10.17.44",
     "better-sqlite3": "^7.1.1",
-    "log4js": "^6.3.0"
+    "log4js": "^6.3.0",
+    "nanoid-base58": "^0.1.0"
   },
   "devDependencies": {
     "typescript": "^3.9.7"

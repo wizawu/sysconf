@@ -1,12 +1,12 @@
-- name: start socks5proxy
+- name: start container
   docker_container:
-    name: socks5proxy
-    image: xxxx.mirror.aliyuncs.com/library/node:10.23-stretch-slim
+    name: socks5x
+    image: xxxx.mirror.aliyuncs.com/library/node:12.20-buster-slim
     state: started
     recreate: true
     restart_policy: always
     network_mode: host
-    command: npm run start
+    command: bash start.sh
     working_dir: /opt/app
     volumes:
       - "{{role_path}}/files:/opt/app"
