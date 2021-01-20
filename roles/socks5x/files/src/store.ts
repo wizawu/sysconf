@@ -56,7 +56,7 @@ export function createHistory(domain: string, choose: number, duration: number, 
 }
 
 export function countErrors(domain: string) {
-    db.exec(`delete from history where time < ${Date.now() - 86400 * 30}`)
+    db.exec(`delete from history where time < ${Date.now() - 30 * 86400 * 1000}`)
     return db.prepare(`
         select
             sum(case when choose = 0 then 1 else 0 end) as error0,
