@@ -1,7 +1,11 @@
 #!/bin/bash
 
-if [[ "$1" =~ ~* ]]; then
-    git push origin HEAD$1:refs/for/master
-else
+if [[ "$1" = "" ]]; then
     git push origin HEAD:refs/for/master
+elif [[ "$1" = ~* ]]; then
+    PUSH_HEAD=HEAD$1
+    shift
+    git push origin $PUSH_HEAD:refs/for/$@
+else
+    git push origin HEAD:refs/for/$1
 fi

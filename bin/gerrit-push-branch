@@ -1,3 +1,0 @@
-#!/bin/sh
-
-test -n "$1" && git push origin HEAD:refs/for/$1

@@ -44,18 +44,6 @@ export function updateDomain(domain: string, prefer: number) {
     `)
 }
 
-export function selectParent(domain: string) {
-    let parent = domain.split(".").slice(1).join(".")
-    let result = db.prepare(`
-        select * from domain where domain = @domain
-    `).get({ domain: parent })
-    if (result) {
-        return backendList[result.prefer]
-    } else {
-        return backendList[0]
-    }
-}
-
 export function createHistory(domain: string, choose: number, duration: number, traffic: number, error?: string) {
     db.prepare(`
         replace into history(time, history_id, domain, choose, duration, traffic, error)

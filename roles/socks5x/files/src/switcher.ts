@@ -1,4 +1,4 @@
-import * as http from "http"
+import { spawnSync } from "child_process"
 import * as store from "./store"
 
 export function select(upstream: string): Backend {
@@ -16,20 +16,9 @@ export function select(upstream: string): Backend {
             return store.backendList[result.prefer]
         }
     } else {
-        http.request(`http://${upstream}`, {
-            method: "HEAD",
-            path: "/",
-            timeout: 2000,
-        }, res => {
-            res.on("data", () => { })
-            res.on("end", () => {
-                store.updateDomain(upstream, 0)
-            })
-        }).on("error", e => {
-            store.updateDomain(upstream, 1)
-        }).on("timeout", () => {
-            store.updateDomain(upstream, 1)
-        }).end()
-        return store.selectParent(upstream)
+        let child = spawnSync("curl", `-I -m 0.5 http://${upstream}/`.split(" "))
+        let prefer = child.status === 0 ? 0 : 1
+        store.updateDomain(upstream, prefer)
+        return store.backendList[prefer]
     }
 }

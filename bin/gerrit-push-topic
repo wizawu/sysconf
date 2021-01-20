@@ -1,3 +1,0 @@
-#!/bin/sh
-
-test -n "$1" && git push -o topic=$1 origin HEAD:refs/for/master
