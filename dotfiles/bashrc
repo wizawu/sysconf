@@ -14,7 +14,6 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export NODE_PATH=/usr/lib/node_modules:$NODE_PATH
 export PATH=$HOME/.sysconf/bin:$GOPATH/bin:$GRADLE_HOME/bin:$JAVA_HOME/bin:/usr/sbin:$PATH
-export TERM=rxvt
 export TRASH_DIR=$HOME/.local/share/Trash
 
 # terminal
@@ -22,7 +21,7 @@ git config --global color.ui true
 function current_git_branch {
     git branch --no-color 2> /dev/null | grep '^\*' | sed -e 's/^\* /^/'
 }
-PS1='${debian_chroot:+($debian_chroot)}\033[34m\u\033[90m@\033[33m\h\033[90m:\033[94m\w \033[90m$(current_git_branch)\n\[\033[93m\]\$ \[\033[0m\]'
+PS1='${debian_chroot:+($debian_chroot)}\033[1;34m\u\033[90m@\033[33m\h\033[90m:\033[94m\w \033[90m$(current_git_branch)\n\[\033[93m\]\$ \[\033[0m\]'
 echo -e -n "\x1b[\x35 q"
 
 # complete

@@ -186,6 +186,7 @@
           - deepin-screenshot=4.1.8-1
           - gimp
           - gtk-theme-switch
+          - hyper=3.0.2-3440
           - mirage # image viewer
           - mousepad # text editor
           - nm-applet
@@ -193,7 +194,6 @@
           - qbittorrent
           - qpdfview
           - redshift
-          - rxvt-unicode-256color
           - smplayer
           - vim-gtk
           - wps-office
@@ -362,12 +362,12 @@
         force: true
         owner: "{{user}}"
       with_items:
-        - Xdefaults
         - bashrc
         - config/Code/User/keybindings.json
         - config/Code/User/settings.json
         - gitconfig
         - gradle/gradle.properties
+        - hyper.js
         - sqliterc
         - ssh/config
         - tmux.conf
