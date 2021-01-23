@@ -16,7 +16,6 @@ module.exports = {
     webGLRenderer: true,
     windowSize: [600, 400],
   },
-  plugins: [
-    'hyperminimal',
-  ]
+  localPlugins: ['newcwd'],
+  plugins: ['hyperminimal'],
 }

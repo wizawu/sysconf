@@ -352,6 +352,7 @@
       with_items:
         - .config/Code/User
         - .gradle
+        - .hyper_plugins/local
         - .ssh
 
     - name: create symbolic link to user config
@@ -368,6 +369,7 @@
         - gitconfig
         - gradle/gradle.properties
         - hyper.js
+        - hyper_plugins/local/newcwd
         - sqliterc
         - ssh/config
         - tmux.conf
