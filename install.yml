@@ -183,6 +183,7 @@
           - awesome
           - awesome-extra
           - code
+          - dbus-x11
           - deepin-screenshot=4.1.8-1
           - gimp
           - gtk-theme-switch

@@ -14,7 +14,6 @@ hsetroot -full /usr/share/awesome/themes/default/background.png &
 fcitx -rd && im-config -n fcitx
 
 # xfce
-pkill dbus-launch || echo
 pkill xfce4-session || echo
 xfce4-session &>/dev/null &
 
