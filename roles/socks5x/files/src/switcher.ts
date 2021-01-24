@@ -5,7 +5,7 @@ export function select(upstream: string): Backend {
     if (/\d$/.test(upstream)) return store.backendList[0]
     let result = store.selectDomain(upstream)
     if (result) {
-        let stats = store.countErrors(upstream)
+        let stats = store.countConnErr(upstream)
         if (stats.error0 > stats.error1) {
             store.updateDomain(upstream, 1)
             return store.backendList[1]
@@ -13,7 +13,13 @@ export function select(upstream: string): Backend {
             store.updateDomain(upstream, 0)
             return store.backendList[0]
         } else {
-            return store.backendList[result.prefer]
+            stats = store.countReadErr(upstream, result.prefer)
+            if (stats.ok > stats.fail) {
+                return store.backendList[result.prefer]
+            } else {
+                store.updateDomain(upstream, 1 - result.prefer)
+                return store.backendList[1 - result.prefer]
+            }
         }
     } else {
         let child = spawnSync("curl", `-I -m 0.5 http://${upstream}/`.split(" "))
