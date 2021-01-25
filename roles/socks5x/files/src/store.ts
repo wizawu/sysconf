@@ -30,6 +30,8 @@ db.exec(`
     )
 `)
 
+db.exec("create index if not exists history_idx_domain on history(domain)")
+
 export function selectDomain(domain: string) {
     return db.prepare(`
         select * from domain where domain = @domain

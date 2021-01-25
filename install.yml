@@ -120,6 +120,7 @@
           - cmatrix
           - curl
           - di
+          - fonttools=3.0-1
           - fping
           - gnupg1
           - htop
