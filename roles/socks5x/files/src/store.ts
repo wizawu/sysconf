@@ -3,10 +3,11 @@ import * as Database from "better-sqlite3"
 
 export const backendList: Backend[] = [
     { _id: 0, host: "127.0.0.1", port: 1080 },
-    { _id: 1, host: "127.0.0.1", port: 1085 },
+    { _id: 1, host: "127.0.0.1", port: 1081 },
 ]
 
 export const db = new Database("sqlite.db")
+db.pragma("journal_mode=WAL")
 
 db.exec(`
     create table if not exists domain(
