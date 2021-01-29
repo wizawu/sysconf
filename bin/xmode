@@ -7,6 +7,7 @@ for i in {1..9}; do
         break
     fi
     echo [$i] ${DISPLAYS[i]}
+    xrandr --output ${DISPLAYS[i]} --auto
 done
 
 echo -n "Choose output: "
