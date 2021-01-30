@@ -36,9 +36,7 @@ server.on("connection", conn => {
             upstream = data.slice(5, -2).toString()
             clientData2 = data
             backend = switcher.select(upstream)
-            client = net.createConnection(backend, () => {
-                log.debug(`Select ${backend?.host}:${backend?.port} for ${upstream}`)
-            })
+            client = net.createConnection(backend, () => 0)
             client.on("connect", () => {
                 client?.write(clientData1)
             })

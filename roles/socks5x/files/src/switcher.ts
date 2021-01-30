@@ -18,7 +18,7 @@ export function select(upstream: string): Backend {
         }, 0)
         return store.backendList[result.prefer]
     } else {
-        let child = spawnSync("curl", `-I -m 0.5 http://${upstream}/`.split(" "))
+        let child = spawnSync("curl", `-I -L -m 0.5 http://${upstream}/`.split(" "))
         let prefer = child.status === 0 ? 0 : 1
         store.updateDomain(upstream, prefer)
         return store.backendList[prefer]

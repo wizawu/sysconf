@@ -32,6 +32,7 @@ db.exec(`
 `)
 
 db.exec("create index if not exists history_idx_domain_traffic on history(domain, traffic)")
+db.exec("create index if not exists history_idx_time on history(time)")
 
 export function selectDomain(domain: string) {
     return db.prepare(`
