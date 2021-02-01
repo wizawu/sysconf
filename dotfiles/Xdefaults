@@ -1,0 +1,5 @@
+URxvt.background:   #111
+URxvt.font:         xft:BPMono:size=9
+URxvt.foreground:   #ddd
+URxvt.geometry:     80x30
+URxvt.scrollBar:    false
