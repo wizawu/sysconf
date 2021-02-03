@@ -1,14 +1,14 @@
-#!/usr/lib/jvm/default-jdk/bin/jjs
+#!/usr/bin/env graaljs
 
 var Base64 = Packages.java.util.Base64
 var Cipher = Packages.javax.crypto.Cipher
 var SecretKeySpec = Packages.javax.crypto.spec.SecretKeySpec
 
-var key = arguments[0]
-var secret = Base64.getDecoder().decode(arguments[1])
+var key = process.argv[2]
+var secret = Base64.getDecoder().decode(process.argv[3])
 
 var cipher = Cipher.getInstance("AES")
 var keySpec = new SecretKeySpec(key.getBytes(), "AES")
 cipher.init(Cipher.DECRYPT_MODE, keySpec)
 var result = new java.lang.String(cipher.doFinal(secret))
-echo(result)
+console.log(result)
