@@ -60,14 +60,13 @@ export function createHistory(domain: string, choose: number, duration: number, 
 }
 
 export function countConnErr(domain: string) {
-    db.exec(`delete from history where time < ${Date.now() - 30 * 86400 * 1000}`)
     return db.prepare(`
         select
             sum(case when choose = 0 then 1 else 0 end) as error0,
             sum(case when choose = 1 then 1 else 0 end) as error1
         from history
-        where domain = @domain and duration < 32000 and traffic < 32 and error > ''
-    `).get({ domain })
+        where domain = @domain and duration < 32000 and traffic < 32 and error > '' and time > @lastDay
+    `).get({ domain, lastDay: Date.now() - 86400 * 1000 })
 }
 
 export function countReadErr(domain: string, prefer: number) {

@@ -120,6 +120,7 @@
           - cmatrix
           - curl
           - di
+          - fish
           - fonttools=3.0-1
           - fping
           - gnupg1
@@ -366,7 +367,6 @@
         force: true
         owner: "{{user}}"
       with_items:
-        - Xdefaults
         - bashrc
         - config/Code/User/keybindings.json
         - config/Code/User/settings.json

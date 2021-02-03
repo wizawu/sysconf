@@ -1,0 +1,7 @@
+#!/bin/sh
+
+/usr/bin/urxvt \
+    -bg '#111' -fg '#ddd' \
+    -geometry 80x30 +sb -lsp 5 \
+    -fn 'xft:CourierPrimeCode:size=10' \
+    -e fish
