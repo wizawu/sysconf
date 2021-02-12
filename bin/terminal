@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if [ -n "which hyper" ]; then
+    exec hyper $@
+else
+    exec xfce4-terminal $@
+fi

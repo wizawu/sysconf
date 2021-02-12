@@ -14,6 +14,7 @@ module.exports = {
     padding: '2px 2px',
     copyOnSelect: false,
     webGLRenderer: false,
+    webLinksActivationKey: 'ctrl',
     windowSize: [600, 400],
   },
   localPlugins: ['newcwd'],

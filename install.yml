@@ -190,7 +190,6 @@
           - deepin-screenshot=4.1.8-1
           - gimp
           - gtk-theme-switch
-          - hyper=3.0.2-3440
           - mirage # image viewer
           - mousepad # text editor
           - nm-applet
@@ -206,6 +205,7 @@
           - xdg-user-dirs
           - xfce4-panel
           - xfce4-session
+          - xfce4-terminal
           - xfreerdp
           - xorg
           - xsel

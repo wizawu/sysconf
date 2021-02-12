@@ -45,7 +45,7 @@ beautiful.init(awful.util.get_themes_dir() .. "default/theme.lua")
 
 -- @wizawu --
 beautiful.get().font = "Padauk 11"
-terminal = "hyper"
+terminal = "terminal"
 local vicious = require("vicious")
 -- @end --
 
