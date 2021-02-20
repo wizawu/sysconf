@@ -26,11 +26,3 @@ swap:
 	dd if=/dev/zero of=/var/swap bs=4M count=512
 	chmod 600 /var/swap && mkswap /var/swap
 	swapon /var/swap && swapon -s
-
-jdk:
-	tsocks wget -c 'https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-20.3.0/graalvm-ce-java11-linux-amd64-20.3.0.tar.gz' -O ~/tmp/graalvm-ce-java11-linux-amd64.tgz
-	sudo mkdir -p /usr/lib/jvm/graalvm-ce-java11-linux-amd64
-	sudo tar xf ~/tmp/graalvm-ce-java11-linux-amd64.tgz -C /usr/lib/jvm/graalvm-ce-java11-linux-amd64 --strip-components=1
-	sudo rm -f /usr/lib/jvm/default-jdk
-	sudo ln -s /usr/lib/jvm/graalvm-ce-java11-linux-amd64 /usr/lib/jvm/default-jdk
-	sudo bash -c "rm /usr/lib/jvm/default-jdk/bin/{node,npm,npx}"

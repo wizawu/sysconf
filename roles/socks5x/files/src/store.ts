@@ -65,7 +65,7 @@ export function countConnErr(domain: string) {
             sum(case when choose = 0 then 1 else 0 end) as error0,
             sum(case when choose = 1 then 1 else 0 end) as error1
         from history
-        where domain = @domain and traffic <= 26 and (error > '' or duration < 1000)
+        where domain = @domain and (traffic <= 26 or error = 'Connection timeout')
     `).get({ domain })
 }
 

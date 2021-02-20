@@ -37,6 +37,12 @@ server.on("connection", conn => {
             clientData2 = data
             backend = switcher.select(upstream)
             client = net.createConnection(backend, () => 0)
+            setTimeout(() => {
+                if (contentLength <= 26) {
+                    store.createHistory(upstream!!, backend!._id, Date.now() - startTime, 0, "Connection timeout")
+                    conn.destroy()
+                }
+            }, 5000)
             client.on("connect", () => {
                 client?.write(clientData1)
             })
