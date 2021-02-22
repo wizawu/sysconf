@@ -1,3 +1,4 @@
 #!/bin/bash
 
-$JAVA_HOME/languages/js/bin/node --jvm --experimental-options --js.nashorn-compat=true $@
+~/local/graalvm-ce-java11/languages/js/bin/node \
+    --jvm --experimental-options --js.nashorn-compat=true "$@"

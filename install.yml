@@ -395,6 +395,7 @@
         - mike-lischke.vscode-antlr4
         - mikeburgh.xml-format
         - ms-azuretools.vscode-docker
+        - ms-python.python
         - redhat.vscode-yaml
         - shd101wyy.markdown-preview-enhanced
         - streetsidesoftware.code-spell-checker
