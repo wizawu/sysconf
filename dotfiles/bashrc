@@ -34,6 +34,7 @@ alias 2fa='node -e "console.log(require(\"otplib\").authenticator.generate(proce
 alias alsamixer='pacmd set-card-profile 0 off; alsamixer -c 1'
 alias apt-find='apt-cache search'
 alias apt='sudo apt'
+alias apthi='bash -c "sudo apt -o Acquire::http::Proxy=http://\$0 install \$1"'
 alias base58='basex -i $(echo {0..9} {A..Z} {a..z} | tr -d " 0IOl")'
 alias base62='basex -i $(echo {0..9} {A..Z} {a..z} | tr -d " ")'
 alias clangfmt='clang-format -style="{IndentWidth: 2, ColumnLimit: 120}"'
