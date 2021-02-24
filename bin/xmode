@@ -10,6 +10,10 @@ for i in {1..9}; do
     xrandr --output ${DISPLAYS[i]} --auto
 done
 
+if [ "$1" = "-a" ]; then
+    exit
+fi
+
 echo -n "Choose output: "
 read
 OUTPUT=${DISPLAYS[REPLY]}
