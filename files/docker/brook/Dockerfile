@@ -7,10 +7,12 @@ RUN apt update -o Acquire::AllowInsecureRepositories=true -y && \
         curl \
         dante-server \
         nodejs \
+        wget \
         && \
     apt clean
 
-RUN curl -sk https://github.com/txthinking/brook/releases/download/v20200502/brook_linux_amd64 -o /usr/bin/brook
+RUN wget --no-check-certificate -q -O /usr/bin/brook \
+        https://github.com/txthinking/brook/releases/download/v20200502/brook_linux_amd64
 RUN chmod a+x /usr/bin/brook
 
 ENTRYPOINT ["/usr/bin/brook"]

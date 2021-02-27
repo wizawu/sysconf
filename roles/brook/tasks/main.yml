@@ -19,7 +19,7 @@
       - 8.8.8.8
     entrypoint: /bin/sh
     command: >-
-      -c "sockd -D && brook ssclient -i 127.0.0.1 -l 127.0.0.1:1081
+      -c "danted -D && brook ssclient -i 127.0.0.1 -l 127.0.0.1:1081
       -p {{password.stdout}} -s {{server.stdout}}:3308"
     volumes:
-      - "{{role_path}}/files/sockd.conf:/etc/sockd.conf"
+      - "{{role_path}}/files/danted.conf:/etc/danted.conf"
