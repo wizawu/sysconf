@@ -1,12 +1,13 @@
 - name: start container
   docker_container:
     name: socks5x
-    image: xxxx.mirror.aliyuncs.com/library/node:12.20-buster-slim
+    image: wizawu/brook:latest
     state: started
     recreate: true
     restart_policy: always
     network_mode: host
-    command: bash start.sh
+    entrypoint: /usr/local/bin/npm
+    command: run start
     working_dir: /opt/app
     volumes:
       - "{{role_path}}/files:/opt/app"
