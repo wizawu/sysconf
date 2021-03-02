@@ -186,6 +186,7 @@
           - awesome
           - awesome-extra
           - code
+          - cups # printer
           - dbus-x11
           - deepin-screenshot=4.1.8-1
           - geany # text editor
@@ -240,7 +241,6 @@
           - apport
           - blueman
           - clipit
-          - cups-*
           - firefox
           - gnome-*
           - lightdm
