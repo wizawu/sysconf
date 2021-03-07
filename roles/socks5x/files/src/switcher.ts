@@ -6,7 +6,7 @@ export function select(upstream: string): Backend {
     let result = store.selectDomain(upstream)
     if (result) {
         setTimeout(() => {
-            store.trimHistory(30)
+            store.trimHistory(20)
             let { error0, error1 } = store.countConnErr(upstream)
             if (error0 > error1) {
                 store.updateDomain(upstream, 1)

@@ -8,6 +8,8 @@ export const backendList: Backend[] = [
 
 export const db = new Database("sqlite.db")
 db.pragma("journal_mode=WAL")
+db.pragma("wal_checkpoint=TRUNCATE")
+db.exec("vacuum")
 
 db.exec(`
     create table if not exists domain(
