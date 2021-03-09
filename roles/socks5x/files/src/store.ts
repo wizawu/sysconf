@@ -5,8 +5,8 @@ import nanoid58 from "nanoid-base58"
 const log = LoggerFactory.getLogger("\t\b\b\b\b\b\b\b")
 
 export const backendList: Backend[] = [
-    { _id: 0, host: "127.0.0.1", port: 1080 },
-    { _id: 1, host: "127.0.0.1", port: 1081 },
+  { _id: 0, host: "127.0.0.1", port: 1080 },
+  { _id: 1, host: "127.0.0.1", port: 1081 },
 ]
 
 export const db = new Database("sqlite.db")
@@ -40,16 +40,16 @@ db.exec("create index if not exists history_idx_domain_traffic on history(domain
 db.exec("create index if not exists history_idx_time on history(time)")
 
 export function selectDomain(domain: string) {
-    let start = Date.now()
-    let result = db.prepare(`
+  const start = Date.now()
+  const result = db.prepare(`
         select * from domain where domain = @domain
     `).get({ domain })
-    if (Date.now() - start) log.warn("Slow query: " + (Date.now() - start) + "ms")
-    return result
+  if (Date.now() - start > 1) log.warn("Slow query: " + (Date.now() - start) + "ms")
+  return result
 }
 
 export function updateDomain(domain: string, prefer: number) {
-    db.exec(`
+  db.exec(`
         replace into domain(domain, prefer, time) values(
             '${domain}', ${prefer}, ${Date.now()}
         )
@@ -57,7 +57,7 @@ export function updateDomain(domain: string, prefer: number) {
 }
 
 export function createHistory(domain: string, choose: number, duration: number, traffic: number, error?: string) {
-    db.prepare(`
+  db.prepare(`
         replace into history(time, history_id, domain, choose, duration, traffic, error)
             values(
                 ${Date.now()}, '${nanoid58(20)}', '${domain}',
@@ -68,7 +68,7 @@ export function createHistory(domain: string, choose: number, duration: number, 
 }
 
 export function countConnErr(domain: string) {
-    return db.prepare(`
+  return db.prepare(`
         select
             sum(case when choose = 0 then 1 else 0 end) as error0,
             sum(case when choose = 1 then 1 else 0 end) as error1
@@ -78,7 +78,7 @@ export function countConnErr(domain: string) {
 }
 
 export function countReadErr(domain: string, prefer: number) {
-    return db.prepare(`
+  return db.prepare(`
         select
             sum(case when error = '' then 1 else 0 end) as ok,
             sum(case when error > '' then 1 else 0 end) as fail
@@ -88,5 +88,5 @@ export function countReadErr(domain: string, prefer: number) {
 }
 
 export function trimHistory(days: number) {
-    db.exec(`delete from history where time < ${Date.now() - days * 86400 * 1000}`)
+  db.exec(`delete from history where time < ${Date.now() - days * 86400 * 1000}`)
 }
