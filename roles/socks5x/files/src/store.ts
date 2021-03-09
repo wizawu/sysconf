@@ -1,5 +1,8 @@
-import nanoid58 from "nanoid-base58"
 import * as Database from "better-sqlite3"
+import * as LoggerFactory from "log4js"
+import nanoid58 from "nanoid-base58"
+
+const log = LoggerFactory.getLogger("\t\b\b\b\b\b\b\b")
 
 export const backendList: Backend[] = [
     { _id: 0, host: "127.0.0.1", port: 1080 },
@@ -37,9 +40,12 @@ db.exec("create index if not exists history_idx_domain_traffic on history(domain
 db.exec("create index if not exists history_idx_time on history(time)")
 
 export function selectDomain(domain: string) {
-    return db.prepare(`
+    let start = Date.now()
+    let result = db.prepare(`
         select * from domain where domain = @domain
     `).get({ domain })
+    if (Date.now() - start) log.warn("Slow query: " + (Date.now() - start) + "ms")
+    return result
 }
 
 export function updateDomain(domain: string, prefer: number) {

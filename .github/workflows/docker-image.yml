@@ -13,19 +13,19 @@ jobs:
         run: echo ${{secrets.DOCKER_HUB_PASSWORD}} | docker login -u wizawu --password-stdin
 
       - name: build brook image
-        run: cd files/docker/brook && docker build . -t wizawu/brook:latest
+        run: cd roles/brook/files && docker build . -t wizawu/brook:latest
 
       - name: push brook image
         run: docker push wizawu/brook:latest
 
       - name: build gotunnel image
-        run: cd files/docker/gotunnel && docker build . -t wizawu/gotunnel:latest
+        run: cd roles/gotunnel/files && docker build . -t wizawu/gotunnel:latest
 
       - name: push gotunnel image
         run: docker push wizawu/gotunnel:latest
 
       - name: build haproxy-basic-auth image
-        run: cd files/docker/haproxy-basic-auth && docker build . -t wizawu/haproxy-basic-auth:latest
+        run: cd roles/haproxy-basic-auth/files && docker build . -t wizawu/haproxy-basic-auth:latest
 
       - name: push haproxy-basic-auth image
         run: docker push wizawu/haproxy-basic-auth:latest

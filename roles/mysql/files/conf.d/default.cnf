@@ -10,6 +10,7 @@ log_bin=mysql-bin
 lower_case_table_names=1
 max_allowed_packet=100m
 max_connections=500
+secure_file_priv=/tmp
 sql_mode=ansi
 
 # storage engine settings
