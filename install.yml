@@ -391,7 +391,6 @@
     - name: install vscode extensions
       shell: "code --install-extension {{item}}"
       with_items:
-        - hediet.vscode-drawio
         - henriiik.vscode-sort
         - michelemelluso.code-beautifier
         - mike-lischke.vscode-antlr4

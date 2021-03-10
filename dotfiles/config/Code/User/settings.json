@@ -1,38 +1,38 @@
 {
   "[css]": {
     "editor.detectIndentation": true,
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
   },
   "[html]": {
     "editor.detectIndentation": true,
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
   },
   "[javascript]": {
     "editor.detectIndentation": true,
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
   },
   "[json]": {
     "editor.detectIndentation": true,
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
   },
   "[less]": {
     "editor.detectIndentation": true,
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
   },
   "[typescript]": {
     "editor.detectIndentation": true,
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
   },
   "[typescriptreact]": {
     "editor.detectIndentation": true,
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
   },
   "beautify.options": {
     "preserve_newlines": true,
@@ -64,11 +64,10 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "git.enabled": false,
-  "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W3tcIm5hbWVcIjpcIk9QUE9TYW5zXCJ9XSxcImxpYnJhcmllc1wiOlwiZ2VuZXJhbDthenVyZTttc2NhZTtnY3AyO2libTtrdWJlcm5ldGVzO25ldHdvcms7b2ZmaWNlO3JhY2s7dnZkXCIsXCJjdXN0b21MaWJyYXJpZXNcIjpbXCJMLnNjcmF0Y2hwYWRcIl0sXCJwbHVnaW5zXCI6W10sXCJyZWNlbnRDb2xvcnNcIjpbXCIwMDAwMDBcIl0sXCJmb3JtYXRXaWR0aFwiOlwiMjQwXCIsXCJjcmVhdGVUYXJnZXRcIjpmYWxzZSxcInBhZ2VGb3JtYXRcIjp7XCJ4XCI6MCxcInlcIjowLFwid2lkdGhcIjo4NTAsXCJoZWlnaHRcIjoxMTAwfSxcInNlYXJjaFwiOnRydWUsXCJzaG93U3RhcnRTY3JlZW5cIjp0cnVlLFwiZ3JpZENvbG9yXCI6XCIjZDBkMGQwXCIsXCJkYXJrR3JpZENvbG9yXCI6XCIjNmU2ZTZlXCIsXCJhdXRvc2F2ZVwiOnRydWUsXCJyZXNpemVJbWFnZXNcIjpudWxsLFwib3BlbkNvdW50ZXJcIjowLFwidmVyc2lvblwiOjE4LFwidW5pdFwiOjEsXCJpc1J1bGVyT25cIjpmYWxzZSxcInVpXCI6XCJcIn0ifQ==",
-  "hediet.vscode-drawio.theme": "atlas",
   "html.autoClosingTags": false,
   "javascript.autoClosingTags": false,
   "keyboard.dispatch": "keyCode",
+  "python.formatting.provider": "black",
   "terminal.integrated.fontSize": 12,
   "typescript.autoClosingTags": false,
   "vim.cursorStylePerMode.normal": "line",
