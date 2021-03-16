@@ -11,4 +11,5 @@
     df = diff
     rb = rebase
     rbi = rebase -i HEAD~10
+    rh = reset HEAD
     st = status
