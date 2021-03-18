@@ -12,6 +12,7 @@ module.exports = {
     backgroundColor: "#111",
     borderColor: "#222",
     padding: "2px 2px",
+    scrollback: 5000,
     copyOnSelect: false,
     webGLRenderer: false,
     webLinksActivationKey: "ctrl",
