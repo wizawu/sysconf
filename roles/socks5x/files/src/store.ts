@@ -36,16 +36,16 @@ db.exec(`
 db.exec("create index if not exists history_idx_domain_traffic on history(domain, traffic)")
 db.exec("create index if not exists history_idx_time on history(time)")
 
-export function selectDomain(domain: string) {
+export function selectDomain(domain: string): Record<string, any> {
   const start = Date.now()
   const result = db.prepare(`
         select * from domain where domain = @domain
     `).get({ domain })
-  if (Date.now() - start > 1) log.warn("Slow query: " + (Date.now() - start) + "ms")
+  if (Date.now() - start > 1) log.warn(`slow query: ${Date.now() - start}ms`)
   return result
 }
 
-export function updateDomain(domain: string, prefer: number) {
+export function updateDomain(domain: string, prefer: number): void {
   db.exec(`
         replace into domain(domain, prefer, time) values(
             '${domain}', ${prefer}, ${Date.now()}
@@ -53,7 +53,7 @@ export function updateDomain(domain: string, prefer: number) {
     `)
 }
 
-export function createHistory(domain: string, choose: number, duration: number, traffic: number, error?: string) {
+export function createHistory(domain: string, choose: number, duration: number, traffic: number, error?: string): void {
   db.prepare(`
         replace into history(time, history_id, domain, choose, duration, traffic, error)
             values(
@@ -64,7 +64,7 @@ export function createHistory(domain: string, choose: number, duration: number, 
     `).run({ error: error || "" })
 }
 
-export function countConnErr(domain: string) {
+export function countConnErr(domain: string): Record<string, any> {
   return db.prepare(`
         select
             sum(case when choose = 0 then 1 else 0 end) as error0,
@@ -74,16 +74,24 @@ export function countConnErr(domain: string) {
     `).get({ domain })
 }
 
-export function countReadErr(domain: string, prefer: number) {
+export function countReadErr(domain: string, prefer: number): Record<string, any> {
   return db.prepare(`
         select
-            sum(case when error = '' then 1 else 0 end) as ok,
-            sum(case when error > '' then 1 else 0 end) as fail
+            sum(case when error = '' then time else 0 end) as ok,
+            sum(case when error > '' then time else 0 end) as fail
         from history
         where domain = @domain and choose = @prefer and traffic > 26
     `).get({ domain, prefer })
 }
 
-export function trimHistory(days: number) {
+export function averageDuration(domain: string, prefer: number): Record<string, any> {
+  return db.prepare(`
+        select count(1) / sum(1.0 / duration) as duration
+        from history
+        where domain = @domain and choose = @prefer and error = ''
+    `).get({ domain, prefer })
+}
+
+export function trimHistory(days: number): void {
   db.exec(`delete from history where time < ${Date.now() - days * 86400 * 1000}`)
 }
