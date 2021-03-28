@@ -13,9 +13,3 @@
         name: updatedb
         special_time: daily
         job: updatedb
-
-    - name: save github starred
-      cron:
-        name: save github starred
-        special_time: hourly
-        job: /home/wizawu/github/starred/save
