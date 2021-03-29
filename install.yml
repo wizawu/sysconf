@@ -398,10 +398,10 @@
         - ms-azuretools.vscode-docker
         - ms-python.python
         - redhat.vscode-yaml
-        - shd101wyy.markdown-preview-enhanced
         - streetsidesoftware.code-spell-checker
         - tobiasalthoff.atom-material-theme
         - vscodevim.vim
         - vscoss.vscode-ansible
+        - yzhang.markdown-all-in-one
       become: true
       become_user: "{{user}}"
