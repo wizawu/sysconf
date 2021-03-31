@@ -1,6 +1,7 @@
 import * as Database from "better-sqlite3"
 import * as LoggerFactory from "log4js"
 import nanoid58 from "nanoid-base58"
+import { spawnSync } from "child_process"
 
 const log = LoggerFactory.getLogger("\t\b\b\b\b\b\b\b")
 
@@ -10,6 +11,13 @@ export const backendList: Backend[] = [
 ]
 
 export const db = new Database("sqlite.db")
+
+let online = true
+setInterval(() => {
+    const child = spawnSync("curl", "-I -L -m 1 http://223.5.5.5/".split(" "))
+    online = child.status === 0
+    if (!online) log.warn("I am offline")
+}, 5000)
 
 db.exec(`
     create table if not exists domain(
@@ -46,6 +54,7 @@ export function selectDomain(domain: string): Record<string, any> {
 }
 
 export function updateDomain(domain: string, prefer: number): void {
+  if (!online) return
   db.exec(`
         replace into domain(domain, prefer, time) values(
             '${domain}', ${prefer}, ${Date.now()}
@@ -54,6 +63,7 @@ export function updateDomain(domain: string, prefer: number): void {
 }
 
 export function createHistory(domain: string, choose: number, duration: number, traffic: number, error?: string): void {
+  if (!online) return
   db.prepare(`
         replace into history(time, history_id, domain, choose, duration, traffic, error)
             values(
