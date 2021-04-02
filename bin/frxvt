@@ -2,6 +2,6 @@
 
 /usr/bin/urxvt \
     -bg '#111' -fg '#ddd' \
-    -geometry 80x20 +sb -lsp 5 \
-    -fn 'xft:LektonCode:size=11' \
+    -geometry 80x25 +sb -lsp 5 -letsp -2 \
+    -fn 'xft:CourierPrimeCode:size=11' \
     -e fish
