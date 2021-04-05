@@ -391,6 +391,7 @@
     - name: install vscode extensions
       shell: "code --install-extension {{item}}"
       with_items:
+        - bierner.markdown-preview-github-styles
         - henriiik.vscode-sort
         - michelemelluso.code-beautifier
         - mike-lischke.vscode-antlr4
@@ -402,6 +403,5 @@
         - tobiasalthoff.atom-material-theme
         - vscodevim.vim
         - vscoss.vscode-ansible
-        - yzhang.markdown-all-in-one
       become: true
       become_user: "{{user}}"
