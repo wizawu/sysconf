@@ -9,27 +9,25 @@ export function select(upstream: string): Backend {
       store.trimHistory(20)
       const { error0, error1 } = store.countConnErr(upstream)
       if (error0 > error1) {
-        store.updateDomain(upstream, 1)
+        store.updateDomain(upstream, 1, "CONNECT_ERROR")
       } else if (error0 < error1) {
-        store.updateDomain(upstream, 0)
+        store.updateDomain(upstream, 0, "CONNECT_ERROR")
       } else {
         const { ok, fail } = store.countReadErr(upstream, result.prefer)
-        if (ok < fail) {
-          store.updateDomain(upstream, 1 - result.prefer)
-        } else if (result.prefer === 1) {
-          const { duration } = store.averageDuration(upstream, 1)
-          if (duration > 1000) {
-            const child = spawnSync("curl", `-I -L -m 1 http://${upstream}/`.split(" "))
-            if (child.status === 0) store.updateDomain(upstream, 0)
-          }
-        }
+        if (ok < fail) store.updateDomain(upstream, 1 - result.prefer, "READ_ERROR")
       }
     }, 0)
     return store.backendList[result.prefer]
   } else {
-    const child = spawnSync("curl", `-I -L -m 1 http://${upstream}/`.split(" "))
-    const prefer = child.status === 0 ? 0 : 1
-    store.updateDomain(upstream, prefer)
+    let prefer = 1
+    for (const t of [2, 3, 5]) {
+      const child = spawnSync("curl", `-I -L -m 0.${t} http://${upstream}/`.split(" "))
+      if (child.status === 0) {
+        prefer = 0
+        break
+      }
+    }
+    store.updateDomain(upstream, prefer, "INIT")
     return store.backendList[prefer]
   }
 }

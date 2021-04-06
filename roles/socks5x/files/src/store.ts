@@ -14,9 +14,9 @@ export const db = new Database("sqlite.db")
 
 let online = true
 setInterval(() => {
-    const child = spawnSync("curl", "-I -L -m 1 http://223.5.5.5/".split(" "))
-    online = child.status === 0
-    if (!online) log.warn("I am offline")
+  const child = spawnSync("curl", "-I -L -m 1 http://223.5.5.5/".split(" "))
+  online = child.status === 0
+  if (!online) log.warn("I am offline")
 }, 5000)
 
 db.exec(`
@@ -24,6 +24,7 @@ db.exec(`
         domain text,
         prefer short,
         time long,
+        reason text,
         primary key (domain)
     )
 `)
@@ -53,11 +54,11 @@ export function selectDomain(domain: string): Record<string, any> {
   return result
 }
 
-export function updateDomain(domain: string, prefer: number): void {
+export function updateDomain(domain: string, prefer: number, reason: string): void {
   if (!online) return
   db.exec(`
-        replace into domain(domain, prefer, time) values(
-            '${domain}', ${prefer}, ${Date.now()}
+        replace into domain(domain, prefer, time, reason) values(
+            '${domain}', ${prefer}, ${Date.now()}, '${reason}'
         )
     `)
 }
@@ -91,14 +92,6 @@ export function countReadErr(domain: string, prefer: number): Record<string, any
             sum(case when error > '' then time else 0 end) as fail
         from history
         where domain = @domain and choose = @prefer and traffic > 26
-    `).get({ domain, prefer })
-}
-
-export function averageDuration(domain: string, prefer: number): Record<string, any> {
-  return db.prepare(`
-        select count(1) / sum(1.0 / duration) as duration
-        from history
-        where domain = @domain and choose = @prefer and error = ''
     `).get({ domain, prefer })
 }
 
