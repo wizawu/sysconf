@@ -1,6 +1,6 @@
 module.exports = {
   config: {
-    fontSize: 12,
+    fontSize: 11,
     fontFamily: "Courier Prime Code, CloudYuanZhunGBK, Noto Color Emoji",
     fontWeightBold: "normal",
     lineHeight: 1.2,
