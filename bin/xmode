@@ -14,6 +14,16 @@ if [ "$1" = "-a" ]; then
     exit
 fi
 
+if [[ "$1" = 0?? ]]; then
+    MODELINE=$(cvt 2560 1440 $1 | tail -1 | cut -d " " -f 3-)
+    xrandr --newmode 2560x1440x$1 $MODELINE
+    xrandr --addmode ${DISPLAYS[2]} 2560x1440x$1
+    xrandr --output ${DISPLAYS[2]} --mode 2560x1440x$1
+    xrandr --output ${DISPLAYS[1]} --off
+    xset m 0.1 10
+    exit
+fi
+
 echo -n "Choose output: "
 read
 OUTPUT=${DISPLAYS[REPLY]}
