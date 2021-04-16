@@ -174,6 +174,7 @@
     - name: install python packages
       pip:
         name:
+          - ansible-lint==5.0.7
           - ansible==2.9.9
           - black==20.8b1
           - docker==4.2.1
@@ -402,6 +403,6 @@
         - streetsidesoftware.code-spell-checker
         - tobiasalthoff.atom-material-theme
         - vscodevim.vim
-        - vscoss.vscode-ansible
+        - zbr.vscode-ansible
       become: true
       become_user: "{{user}}"
