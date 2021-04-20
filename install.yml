@@ -120,7 +120,6 @@
           - cmatrix
           - curl
           - di
-          - fish
           - fonttools=3.0-1
           - fping
           - gnupg1
@@ -134,7 +133,6 @@
           - mtr
           - nethogs
           - rar
-          - rxvt-unicode
           - time
           - tmux
           - tree
