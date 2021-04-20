@@ -194,8 +194,8 @@
           - deepin-screenshot=4.1.8-1
           - geany # text editor
           - gimp
+          - gthumb # image viewer
           - gtk-theme-switch
-          - mirage # image viewer
           - nm-applet
           - pavucontrol
           - qbittorrent
