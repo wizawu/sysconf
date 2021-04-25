@@ -1,7 +1,3 @@
-- name: get server
-  shell: jq .server /home/wizawu/github/vpsconf/templates/shadowsocks.json
-  register: server
-
 - name: get password
   shell: jq .password /home/wizawu/github/vpsconf/templates/shadowsocks.json
   register: password
@@ -20,6 +16,6 @@
     entrypoint: /bin/sh
     command: >-
       -c "danted -D && brook ssclient -i 127.0.0.1 -l 127.0.0.1:1081
-      -p {{password.stdout}} -s {{server.stdout}}:3308"
+      -p {{password.stdout}} -s shadowsocks.local:3308"
     volumes:
       - "{{role_path}}/files/danted.conf:/etc/danted.conf"

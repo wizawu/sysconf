@@ -54,6 +54,9 @@
     120
   ],
   "explorer.openEditors.visible": 0,
+  "files.associations": {
+    "**/inventories/**/*.yml": "ansible"
+  },
   "files.autoSave": "off",
   "files.exclude": {
     "**/*.retry": true,
