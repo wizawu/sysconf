@@ -14,7 +14,7 @@ export const db = new Database("sqlite.db")
 
 let online = true
 setInterval(() => {
-  const child = spawnSync("curl", "-I -L -m 1 http://223.5.5.5/".split(" "))
+  const child = spawnSync("curl", "-I -L -m 3 http://223.5.5.5/".split(" "))
   online = child.status === 0
   if (!online) log.warn("I am offline")
 }, 5000)

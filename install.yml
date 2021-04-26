@@ -391,14 +391,13 @@
       shell: "code --install-extension {{item}}"
       with_items:
         - bierner.markdown-preview-github-styles
-        - haaaad.ansible
         - henriiik.vscode-sort
         - michelemelluso.code-beautifier
         - mike-lischke.vscode-antlr4
         - mikeburgh.xml-format
         - ms-azuretools.vscode-docker
         - ms-python.python
-        - ms-toolsai.jupyter
+        - redhat.vscode-yaml
         - streetsidesoftware.code-spell-checker
         - tobiasalthoff.atom-material-theme
         - vscodevim.vim
