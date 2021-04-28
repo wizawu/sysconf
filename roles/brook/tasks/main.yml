@@ -12,7 +12,9 @@
     network_mode: host
     dns_servers:
       - 223.5.5.5
+      - 223.6.6.6
       - 8.8.8.8
+      - 8.8.4.4
     entrypoint: /bin/sh
     command: >-
       -c "danted -D && brook ssclient -i 127.0.0.1 -l 127.0.0.1:1081

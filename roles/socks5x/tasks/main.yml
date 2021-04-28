@@ -6,6 +6,11 @@
     recreate: true
     restart_policy: always
     network_mode: host
+    dns_servers:
+      - 223.5.5.5
+      - 223.6.6.6
+      - 8.8.8.8
+      - 8.8.4.4
     entrypoint: /usr/local/bin/npm
     command: run start
     working_dir: /opt/app
