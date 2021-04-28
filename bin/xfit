@@ -13,8 +13,14 @@ hsetroot -full /usr/share/awesome/themes/default/background.png &
 # fcitx
 fcitx -rd && im-config -n fcitx
 
+# indicator-cpufreq
+pkill -ef indicator-cpufreq || echo
+
+# nm-applet
+pkill -e nm-applet || echo
+
 # xfce
-pkill xfce4-session || echo
+pkill -e xfce4-session || echo
 xfce4-session &>/dev/null &
 
 # reload awesome
@@ -26,6 +32,6 @@ awesome-client 'awesome.restart()' || echo
 
 # kill xfce panel
 for _ in {1..5}; do
-    pkill xfce4-panel
+    pkill -e xfce4-panel
     sleep 2
 done

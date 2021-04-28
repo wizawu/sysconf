@@ -195,6 +195,7 @@
           - gimp
           - gthumb # image viewer
           - gtk-theme-switch
+          - indicator-cpufreq
           - nm-applet
           - pavucontrol
           - qbittorrent
