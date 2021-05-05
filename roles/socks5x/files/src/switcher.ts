@@ -7,14 +7,16 @@ export function select(upstream: string): Backend {
   if (result) {
     setTimeout(() => {
       store.trimHistory(20)
-      const { error0, error1 } = store.countConnErr(upstream)
-      if (error0 > error1) {
-        store.updateDomain(upstream, 1, "CONNECT_ERROR")
-      } else if (error0 < error1) {
-        store.updateDomain(upstream, 0, "CONNECT_ERROR")
-      } else {
-        const { ok, fail } = store.countReadErr(upstream, result.prefer)
-        if (ok < fail) store.updateDomain(upstream, 1 - result.prefer, "READ_ERROR")
+      const { ok, fail } = store.countReadErr(upstream, result.prefer)
+      if (ok < fail) {
+        store.updateDomain(upstream, 1 - result.prefer, "READ_ERROR")
+      } else if (ok - fail < Date.now()) {
+        const { error0, error1 } = store.countConnErr(upstream)
+        if (error0 > error1) {
+          store.updateDomain(upstream, 1, "CONNECT_ERROR")
+        } else if (error0 < error1) {
+          store.updateDomain(upstream, 0, "CONNECT_ERROR")
+        }
       }
     }, 0)
     return store.backendList[result.prefer]
