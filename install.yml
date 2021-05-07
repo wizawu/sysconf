@@ -191,6 +191,7 @@
           - cups # printer
           - dbus-x11
           - deepin-screenshot=4.1.8-1
+          - deepin-wine5-i386
           - geany # text editor
           - gimp
           - gthumb # image viewer
