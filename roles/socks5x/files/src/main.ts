@@ -47,6 +47,10 @@ server.on("connection", conn => {
         client?.write(clientData1)
       })
       client.on("data", data => {
+        if (Date.now() - startTime > 30000) {
+          log.warn(`Long connection to ${upstream}: ${Date.now() - startTime}ms`)
+          if (conn.destroyed) client?.destroy()
+        }
         if (clientData2 === null) {
           contentLength += data.length
           conn.write(data)

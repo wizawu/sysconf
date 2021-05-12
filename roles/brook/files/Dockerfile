@@ -5,7 +5,6 @@ RUN apt update -o Acquire::AllowInsecureRepositories=true -y && \
     apt install --allow-unauthenticated --no-install-recommends -y \
         libc6=2.31-0ubuntu9 \
         curl \
-        dante-server \
         nodejs \
         wget \
         && \
