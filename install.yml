@@ -322,6 +322,20 @@
         regexp: '^server\s{0,}='
         line: "server = 127.0.0.1"
 
+    - name: disable NetworkManager dns
+      lineinfile:
+        dest: /etc/NetworkManager/NetworkManager.conf
+        regexp: '^dns\s{0,}='
+        line: "dns=none"
+        insertafter: "[main]"
+      ignore_errors: true
+
+    - name: restart NetworkManager
+      service:
+        name: NetworkManager
+        state: restarted
+      ignore_errors: true
+
     - name: disable splash screen
       lineinfile:
         dest: /etc/default/grub
