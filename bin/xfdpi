@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -x
+xfconf-query -c xsettings -p /Xft/DPI -s $1
+xfconf-query -c xsettings -p /Gdk/WindowScalingFactor -s $2
