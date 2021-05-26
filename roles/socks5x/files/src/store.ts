@@ -16,7 +16,11 @@ let online = true
 setInterval(() => {
   const child = spawnSync("curl", "-I -L -m 3 http://223.5.5.5/".split(" "))
   online = child.status === 0
-  if (!online) log.warn("I am offline")
+  if (!online) {
+    log.warn("I am offline")
+    trimHistory(14)
+    db.exec("VACUUM")
+  }
 }, 5000)
 
 db.exec(`

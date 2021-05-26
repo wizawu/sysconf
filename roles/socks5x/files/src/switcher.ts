@@ -6,7 +6,6 @@ export function select(upstream: string): Backend {
   const result = store.selectDomain(upstream)
   if (result) {
     setTimeout(() => {
-      store.trimHistory(20)
       const { ok, fail } = store.countReadErr(upstream, result.prefer)
       if (ok < fail) {
         store.updateDomain(upstream, 1 - result.prefer, "READ_ERROR")
