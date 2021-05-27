@@ -92,8 +92,8 @@ export function countConnErr(domain: string): Record<string, any> {
 export function countReadErr(domain: string, prefer: number): Record<string, any> {
   return db.prepare(`
         select
-            sum(case when error = '' then time else 0 end) as ok,
-            sum(case when error > '' then time else 0 end) as fail
+            sum(case when error = '' then (traffic + 0.0)/duration else 0 end) as ok,
+            sum(case when error > '' then (traffic + 0.0)/duration else 0 end) as fail
         from history
         where domain = @domain and choose = @prefer and traffic > 26
     `).get({ domain, prefer })

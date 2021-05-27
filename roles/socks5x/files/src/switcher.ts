@@ -9,7 +9,7 @@ export function select(upstream: string): Backend {
       const { ok, fail } = store.countReadErr(upstream, result.prefer)
       if (ok < fail) {
         store.updateDomain(upstream, 1 - result.prefer, "READ_ERROR")
-      } else if (ok - fail < Date.now()) {
+      } else if (ok < 1) {
         const { error0, error1 } = store.countConnErr(upstream)
         if (error0 > error1) {
           store.updateDomain(upstream, 1, "CONNECT_ERROR")
@@ -22,7 +22,7 @@ export function select(upstream: string): Backend {
   } else {
     let prefer = 1
     for (const t of [2, 3, 5]) {
-      const child = spawnSync("curl", `-I -L -m 0.${t} http://${upstream}/`.split(" "))
+      const child = spawnSync("curl", `-I -L -k -m 0.${t} http://${upstream}/`.split(" "))
       if (child.status === 0) {
         prefer = 0
         break
