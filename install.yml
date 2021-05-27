@@ -411,6 +411,8 @@
         - mikeburgh.xml-format
         - ms-azuretools.vscode-docker
         - ms-python.python
+        - ms-python.vscode-pylance
+        - ms-toolsai.jupyter
         - redhat.vscode-yaml
         - streetsidesoftware.code-spell-checker
         - tobiasalthoff.atom-material-theme

@@ -38,6 +38,7 @@
     "preserve_newlines": true,
     "selector_separator_newline": false
   },
+  "debug.javascript.codelens.npmScripts": "never",
   "editor.fontFamily": "Courier Prime Code, OPPOSans",
   "editor.fontSize": 12,
   "editor.formatOnSave": false,
