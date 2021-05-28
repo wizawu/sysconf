@@ -30,5 +30,10 @@
     {
         "key": "ctrl+shift+o",
         "command": "workbench.action.files.openFolder"
+    },
+    {
+        "key": "shift+alt+s",
+        "command": "stableSort.sortAscending",
+        "when": "editorTextFocus"
     }
 ]

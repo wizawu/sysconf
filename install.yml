@@ -405,7 +405,6 @@
       shell: "code --install-extension {{item}}"
       with_items:
         - bierner.markdown-preview-github-styles
-        - henriiik.vscode-sort
         - michelemelluso.code-beautifier
         - mike-lischke.vscode-antlr4
         - mikeburgh.xml-format
@@ -414,6 +413,7 @@
         - ms-python.vscode-pylance
         - ms-toolsai.jupyter
         - redhat.vscode-yaml
+        - sgryjp.vscode-stable-sort
         - streetsidesoftware.code-spell-checker
         - tobiasalthoff.atom-material-theme
         - vscodevim.vim
