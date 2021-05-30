@@ -213,6 +213,7 @@
           - xdg-user-dirs
           - xfce4-panel
           - xfce4-session
+          - xinput
           - xorg
           - xsel
           - xserver-xorg-input-all

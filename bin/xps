@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -ex
+device="Razer Razer DeathAdder V2"
+xinput list --short
+xinput list-props "pointer:$device"
+xinput set-prop "pointer:$device" "libinput Accel Speed" $1
