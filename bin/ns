@@ -28,12 +28,8 @@ if [ "$1" = "-a" ]; then
         fi
     done
     test -z "$ns_list" || fping -c1 -q -t100 $ns_list
-    echo -n "continue to edit, y/n: "
-    read -n 1
-    echo
-    if [ "$REPLY" = y ]; then
-        sudo vi /etc/resolv.conf
-    else
-        cat /etc/resolv.conf
-    fi
+fi
+
+if [ "$1" = "-e" ]; then
+    sudo vi /etc/resolv.conf
 fi
