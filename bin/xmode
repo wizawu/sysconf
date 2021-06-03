@@ -22,7 +22,7 @@ if [[ "$1" = x?? ]]; then
     xrandr --addmode ${DISPLAYS[2]} 2560x1440$1
     xrandr --output ${DISPLAYS[2]} --mode 2560x1440$1
     xrandr --output ${DISPLAYS[1]} --off
-    xset m 0.1 10
+    awesome-client 'awesome.restart()'
     exit
 fi
 
