@@ -49,6 +49,7 @@ alias gl='git log --pretty=format:"%Cblue%<(22,trunc)%cd %Cgreen%h%Creset %s" --
 alias grep='grep --color'
 alias ip4='ip -4 -br'
 alias isp='curl -s http://ip-api.com/json | jq'
+alias jdump='bash -c "set -x; jmap -dump:format=b,file=\$0.dump \$0"'
 alias la='ls -A'
 alias lh='ls -lh'
 alias ll='ls -l'
