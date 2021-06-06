@@ -370,6 +370,11 @@
         name: fs.inotify.max_user_watches
         value: "524288"
 
+    - name: set kernel.pid_max
+      sysctl:
+        name: kernel.pid_max
+        value: "999999"
+
     - name: create user directories
       file: dest=/home/{{user}}/{{item}} state=directory recurse=yes owner={{user}}
       with_items:
