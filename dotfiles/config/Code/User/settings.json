@@ -24,6 +24,11 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 2
   },
+  "[scss]": {
+    "editor.detectIndentation": true,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
   "[typescript]": {
     "editor.detectIndentation": true,
     "editor.insertSpaces": true,
