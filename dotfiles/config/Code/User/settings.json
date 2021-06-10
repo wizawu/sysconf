@@ -45,10 +45,10 @@
   },
   "debug.javascript.codelens.npmScripts": "never",
   "editor.fontFamily": "Courier Prime Code, OPPOSans",
-  "editor.fontSize": 12,
+  "editor.fontSize": 11,
   "editor.formatOnSave": false,
   "editor.letterSpacing": -1,
-  "editor.lineHeight": 20,
+  "editor.lineHeight": 16,
   "editor.minimap.enabled": false,
   "editor.quickSuggestions": {
     "comments": true,
@@ -74,6 +74,7 @@
   "javascript.autoClosingTags": false,
   "keyboard.dispatch": "keyCode",
   "python.formatting.provider": "black",
+  "redhat.telemetry.enabled": true,
   "terminal.integrated.fontSize": 12,
   "typescript.autoClosingTags": false,
   "vim.cursorStylePerMode.normal": "line",
@@ -81,16 +82,13 @@
   "vim.useSystemClipboard": false,
   "window.openFoldersInNewWindow": "on",
   "window.restoreWindows": "none",
-  "window.zoomLevel": 0.5,
+  "window.zoomLevel": 0.8,
   "workbench.colorTheme": "Atom Material Theme",
   "workbench.editor.enablePreview": false,
   "workbench.editor.restoreViewState": false,
-  "workbench.editorAssociations": [
-    {
-      "filenamePattern": "*.ipynb",
-      "viewType": "jupyter.notebook.ipynb"
-    }
-  ],
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
   "workbench.startupEditor": "none",
   "yaml.validate": false
 }
