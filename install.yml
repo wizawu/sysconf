@@ -164,7 +164,7 @@
           - mysql-client
           - pgformatter
           - postgresql-client
-          - redis-server
+          - redis-tools
           - sqlite3
 
     - name: set pip index url

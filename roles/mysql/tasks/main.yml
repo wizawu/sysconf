@@ -3,7 +3,6 @@
     path: /var/lib/mysql
     state: directory
     recurse: true
-    mode: 0777
 
 - name: start mysql
   docker_container:

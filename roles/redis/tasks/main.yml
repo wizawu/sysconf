@@ -1,0 +1,17 @@
+- name: create data directory
+  file:
+    path: /var/lib/redis
+    state: directory
+    recurse: true
+
+- name: start redis
+  docker_container:
+    name: redis
+    image: xxxx.mirror.aliyuncs.com/library/redis:6.2.4
+    state: started
+    recreate: true
+    restart_policy: always
+    network_mode: host
+    volumes:
+      - "/var/lib/redis:/data"
+    command: redis-server --appendonly yes

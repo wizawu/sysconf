@@ -1,5 +1,4 @@
 *.db
-*.db-*
 *.log
 *.retry
 *.swp
