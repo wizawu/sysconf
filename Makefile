@@ -23,6 +23,12 @@ clean:
 
 swap:
 	echo 60 >> /proc/sys/vm/swappiness
-	dd if=/dev/zero of=/var/swap bs=4M count=512
-	chmod 600 /var/swap && mkswap /var/swap
-	swapon /var/swap && swapon -s
+	dd if=/dev/zero of=/swap bs=4M count=1024
+	chmod 600 /swap && mkswap /swap
+	swapon /swap && swapon -s
+
+proxy:
+	ansible-playbook proxy.yml
+
+samba:
+	ansible-playbook samba.yml

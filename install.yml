@@ -51,6 +51,7 @@
           - debootstrap
           - dnsutils
           - docker-ce
+          - docker-compose
           - dstat
           - entr
           - expect
