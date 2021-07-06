@@ -1,16 +1,29 @@
 #!/bin/bash
 
-if [[ "$1" = ~* ]]; then
-    PUSH_HEAD=HEAD$1
-    shift
-else
-    PUSH_HEAD=HEAD
-fi
+branch=""
+head="HEAD"
+opts=""
+topic=""
 
-if [[ "$1" = "" ]]; then
+for arg in $@; do
+    if [[ "$arg" = -* ]]; then
+        opts="$opts $arg"
+    elif [[ "$arg" = ~* ]]; then
+        head="HEAD$arg"
+    elif [[ "$branch" = "" ]]; then
+        branch="$arg"
+    else
+        topic="$arg"
+    fi
+done
+
+if [[ "$branch" = "" ]]; then
     set -x
-    git push origin $PUSH_HEAD:refs/for/master
+    git push $opts origin $head:refs/for/master
+elif [[ "$topic" = "" ]]; then
+    set -x
+    git push $opts origin $head:refs/for/$branch
 else
     set -x
-    git push origin $PUSH_HEAD:refs/for/$@
+    git push $opts -o topic=$topic origin $head:refs/for/$branch
 fi
