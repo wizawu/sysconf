@@ -3,7 +3,11 @@ import * as LoggerFactory from "log4js"
 import nanoid58 from "nanoid-base58"
 import { spawnSync } from "child_process"
 
-const log = LoggerFactory.getLogger("\t\b\b\b\b\b\b\b")
+export interface Backend {
+  _id: number
+  host: string
+  port: number
+}
 
 export const backendList: Backend[] = [
   { _id: 0, host: "127.0.0.1", port: 1080 },
@@ -11,6 +15,7 @@ export const backendList: Backend[] = [
 ]
 
 export const db = new Database("sqlite.db")
+const log = LoggerFactory.getLogger("\t\b\b\b\b\b\b\b")
 
 let online = true
 setInterval(() => {
@@ -92,8 +97,8 @@ export function countConnErr(domain: string): Record<string, any> {
 export function countReadErr(domain: string, prefer: number): Record<string, any> {
   return db.prepare(`
         select
-            sum(case when error = '' then (traffic + 0.0)/duration else 0 end) as ok,
-            sum(case when error > '' then (traffic + 0.0)/duration else 0 end) as fail
+            sum(case when error = '' then duration else 0 end) as ok,
+            sum(case when error > '' then duration else 0 end) as fail
         from history
         where domain = @domain and choose = @prefer and traffic > 26
     `).get({ domain, prefer })

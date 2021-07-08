@@ -1,6 +1,3 @@
-*.db
 *.log
 *.retry
 *.swp
-dist/
-node_modules/

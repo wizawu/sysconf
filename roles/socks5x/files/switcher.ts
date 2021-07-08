@@ -1,7 +1,7 @@
 import { spawnSync } from "child_process"
 import * as store from "./store"
 
-export function select(upstream: string): Backend {
+export function select(upstream: string): store.Backend {
   if (/\d$/.test(upstream)) return store.backendList[0]
   const result = store.selectDomain(upstream)
   if (result) {
