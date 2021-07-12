@@ -887,7 +887,7 @@ $cfg['MaxNavigationItems'] = 50;
  *
  * @global boolean $cfg['NavigationTreeEnableGrouping']
  */
-$cfg['NavigationTreeEnableGrouping'] = true;
+$cfg['NavigationTreeEnableGrouping'] = false;
 
 /**
  * the separator to sub-tree the select-based light menu tree
