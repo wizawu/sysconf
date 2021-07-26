@@ -1,6 +1,7 @@
 {
   "URLBlocklist": [
     "bytedance://*",
+    "kiwi://*",
     "whatsapp://*"
   ]
 }
