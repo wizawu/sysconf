@@ -13,3 +13,9 @@
         name: updatedb
         special_time: daily
         job: updatedb
+
+    - name: update vscode
+      cron:
+        name: update vscode
+        special_time: daily
+        job: apt update && apt install -y code

@@ -32,3 +32,6 @@ proxy:
 
 samba:
 	ansible-playbook samba.yml
+
+cron:
+	ansible-playbook cron.yml
