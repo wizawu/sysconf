@@ -1,5 +1,8 @@
 import { spawnSync } from "child_process"
+import * as LoggerFactory from "log4js"
 import * as store from "./store"
+
+const log = LoggerFactory.getLogger("\t\b\b\b\b\b\b\b")
 
 export function select(upstream: string): store.Backend {
   if (/\d$/.test(upstream)) return store.backendList[0]
@@ -7,13 +10,15 @@ export function select(upstream: string): store.Backend {
   if (result) {
     setTimeout(() => {
       const { ok, fail } = store.countReadErr(upstream, result.prefer)
-      if (ok < fail) {
+      if (ok > 0.001 && fail > 0.001) {
         store.updateDomain(upstream, 1 - result.prefer, "READ_ERROR")
-      } else if (ok < 1) {
-        const { error0, error1 } = store.countConnErr(upstream)
-        if (error0 > error1) {
+      } else if (!ok) {
+        log.debug(`Read error: ${upstream} ${ok} ${fail}`)
+        const { err0, err1 } = store.countConnErr(upstream)
+        log.debug(`Conn error: ${upstream} ${err0} ${err1}`)
+        if (err0 > err1) {
           store.updateDomain(upstream, 1, "CONNECT_ERROR")
-        } else if (error0 < error1) {
+        } else {
           store.updateDomain(upstream, 0, "CONNECT_ERROR")
         }
       }

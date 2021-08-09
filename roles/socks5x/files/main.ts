@@ -8,6 +8,8 @@ const server = net.createServer()
 const log = LoggerFactory.getLogger("\t\b\b\b\b\b\b\b")
 log.level = "debug"
 
+const pulse: Record<string, number> = {}
+
 server.on("connection", conn => {
   const startTime = Date.now()
   let client: net.Socket | null = null
@@ -48,7 +50,10 @@ server.on("connection", conn => {
       })
       client.on("data", data => {
         if (Date.now() - startTime > 30000) {
-          log.warn(`Long connection to ${upstream}: ${Date.now() - startTime}ms`)
+          if (Date.now() - (pulse[upstream] || 0) > 1000) {
+            log.warn(`Long connection to ${upstream}: ${Date.now() - startTime}ms`)
+            pulse[upstream] = Date.now()
+          }
           if (conn.destroyed) client?.destroy()
         }
         if (clientData2 === null) {

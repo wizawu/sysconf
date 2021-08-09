@@ -87,8 +87,8 @@ export function createHistory(domain: string, choose: number, duration: number, 
 export function countConnErr(domain: string): Record<string, any> {
   return db.prepare(`
         select
-            sum(case when choose = 0 then 1 else 0 end) as error0,
-            sum(case when choose = 1 then 1 else 0 end) as error1
+            sum(case when choose = 0 then 1 else 0 end) as err0,
+            sum(case when choose = 1 then 1 else 0 end) as err1
         from history
         where domain = @domain and (traffic <= 26 or error = 'Connection timeout')
     `).get({ domain })
@@ -97,8 +97,8 @@ export function countConnErr(domain: string): Record<string, any> {
 export function countReadErr(domain: string, prefer: number): Record<string, any> {
   return db.prepare(`
         select
-            sum(case when error = '' then duration else 0 end) as ok,
-            sum(case when error > '' then duration else 0 end) as fail
+            avg(case when error = '' then 1.0/duration else null end) as ok,
+            avg(case when error > '' then 1.0/duration else null end) as fail
         from history
         where domain = @domain and choose = @prefer and traffic > 26
     `).get({ domain, prefer })
