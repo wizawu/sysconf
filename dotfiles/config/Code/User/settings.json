@@ -83,7 +83,7 @@
   "window.openFoldersInNewWindow": "on",
   "window.restoreWindows": "none",
   "window.zoomLevel": 0.8,
-  "workbench.colorTheme": "Atom Material Theme",
+  "workbench.colorTheme": "Andromeda",
   "workbench.editor.enablePreview": false,
   "workbench.editor.restoreViewState": false,
   "workbench.editorAssociations": {

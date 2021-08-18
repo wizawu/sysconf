@@ -412,6 +412,7 @@
       shell: "code --install-extension {{item}}"
       with_items:
         - bierner.markdown-preview-github-styles
+        - EliverLara.andromeda
         - michelemelluso.code-beautifier
         - mike-lischke.vscode-antlr4
         - mikeburgh.xml-format
@@ -419,6 +420,7 @@
         - ms-python.python
         - ms-python.vscode-pylance
         - ms-toolsai.jupyter
+        - pawelgrzybek.gatito-theme
         - redhat.vscode-yaml
         - sgryjp.vscode-stable-sort
         - streetsidesoftware.code-spell-checker

@@ -35,5 +35,13 @@
         "key": "shift+alt+s",
         "command": "stableSort.sortAscending",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+t",
+        "command": "workbench.action.selectTheme"
+    },
+    {
+        "key": "ctrl+k ctrl+t",
+        "command": "-workbench.action.selectTheme"
     }
 ]
