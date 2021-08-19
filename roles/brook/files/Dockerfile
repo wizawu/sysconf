@@ -1,4 +1,4 @@
-FROM node:12.20-buster-slim
+FROM node:14.16-buster-slim
 
 RUN echo "deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu focal main universe" > /etc/apt/sources.list
 RUN apt update -o Acquire::AllowInsecureRepositories=true -y && \
