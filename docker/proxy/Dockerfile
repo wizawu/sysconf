@@ -1,5 +1,5 @@
-FROM golang:1.15.0-alpine as intermediate
-RUN apk add git
+FROM golang:1.16-buster as intermediate
+RUN apt install -y git
 RUN go get github.com/wizawu/gotunnel
 
 FROM node:14.16-buster-slim
