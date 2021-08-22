@@ -12,14 +12,8 @@ jobs:
       - name: login registry
         run: echo ${{secrets.DOCKER_HUB_PASSWORD}} | docker login -u wizawu --password-stdin
 
-      - name: build brook image
-        run: cd roles/brook/files && docker build . -t wizawu/brook:latest
+      - name: build image
+        run: cd docker/proxy && docker build . -t wizawu/proxy:latest
 
-      - name: push brook image
-        run: docker push wizawu/brook:latest
-
-      - name: build gotunnel image
-        run: cd roles/gotunnel/files && docker build . -t wizawu/gotunnel:latest
-
-      - name: push gotunnel image
-        run: docker push wizawu/gotunnel:latest
+      - name: push image
+        run: docker push wizawu/proxy:latest

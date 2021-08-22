@@ -5,7 +5,7 @@
 - name: start brook
   docker_container:
     name: brook
-    image: wizawu/brook:latest
+    image: wizawu/proxy:latest
     state: started
     recreate: true
     restart_policy: always
@@ -22,5 +22,5 @@
       -p {{password.stdout}} -s shadowsocks.local:3308"
     log_driver: json-file
     log_options:
-        max-file: "10"
-        max-size: "100m"
+      max-file: "10"
+      max-size: "100m"

@@ -1,7 +1,7 @@
 - name: start container
   docker_container:
     name: socks5x
-    image: wizawu/brook:latest
+    image: wizawu/proxy:latest
     state: started
     recreate: true
     restart_policy: always
@@ -13,6 +13,6 @@
       - 8.8.4.4
     entrypoint: /usr/local/bin/npm
     command: run start
-    working_dir: /opt/app
+    working_dir: /opt/proxy
     volumes:
-      - "{{role_path}}/files:/opt/app"
+      - "{{role_path}}/files:/opt/proxy"
