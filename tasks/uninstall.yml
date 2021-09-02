@@ -1,0 +1,33 @@
+- name: remove apt packages
+  apt:
+    state: absent
+    autoremove: true
+    purge: true
+    name:
+      - apport
+      - avahi-autoipd
+      - avahi-daemon
+      - blueman
+      - clipit
+      - colord
+      - firefox
+      - gnome-*
+      - lightdm
+      - mate-*
+      - packagekit
+      - pidgin
+      - rpcbind
+      - sane-utils
+      - snapd
+      - system-config-printer
+      - thunderbird
+      - tracker
+      - update-notifier
+      - usbmuxd
+      - volumeicon-alsa
+      - whoopsie
+      - xfce4-power-manager
+      - xfce4-screensaver
+      - xfdesktop4
+      - xscreensaver
+      - yad

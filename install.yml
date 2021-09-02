@@ -1,4 +1,7 @@
 - hosts: localhost
+  vars_prompt:
+    - name: agree
+      prompt: Cancel the play with CTRL+C or continue with ENTER
 
   tasks:
     - name: create user
@@ -238,35 +241,7 @@
           - fcitx-ui-light
           - libgtk-3-bin
 
-    - name: remove apt packages
-      apt:
-        state: absent
-        autoremove: true
-        purge: true
-        name:
-          - apport
-          - blueman
-          - clipit
-          - firefox
-          - gnome-*
-          - lightdm
-          - mate-*
-          - packagekit
-          - pidgin
-          - sane-utils
-          - snapd
-          - system-config-printer
-          - thunderbird
-          - tracker
-          - update-notifier
-          - usbmuxd
-          - volumeicon-alsa
-          - whoopsie
-          - xfce4-power-manager
-          - xfce4-screensaver
-          - xfdesktop4
-          - xscreensaver
-          - yad
+    - include: tasks/uninstall.yml
 
     - name: install npm packages
       shell: "npm install -g {{item}}"
