@@ -13,9 +13,6 @@ hsetroot -full /usr/share/awesome/themes/default/background.png &
 # fcitx
 fcitx -rd && im-config -n fcitx
 
-# indicator-cpufreq
-pkill -ef indicator-cpufreq || echo
-
 # nm-applet
 pkill -e nm-applet || echo
 
