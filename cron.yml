@@ -18,4 +18,4 @@
       cron:
         name: update vscode
         special_time: daily
-        job: apt update && apt install -y code
+        job: apt update -y && apt install -y code
