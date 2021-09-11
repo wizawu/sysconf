@@ -124,6 +124,7 @@
           - curl
           - dconf-cli
           - di
+          - fish
           - fonttools=3.0-1
           - fping
           - gnupg1
