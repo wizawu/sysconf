@@ -1,0 +1,53 @@
+- name: install desktop
+  apt:
+    name:
+      - autorandr
+      - awesome
+      - awesome-extra
+      - code
+      - cups # printer
+      - dbus-x11
+      - deepin-screenshot=4.1.8-1
+      - deepin-wine5-i386
+      - freerdp-x11
+      - geany # text editor
+      - gimp
+      - gthumb # image viewer
+      - gtk-theme-switch
+      - nm-applet
+      - pavucontrol
+      - qbittorrent
+      - qpdfview
+      - redshift
+      - smplayer
+      - tilix
+      - vim-gtk
+      - wps-office
+      - x11-xkb-utils
+      - x11-xserver-utils
+      - xdg-user-dirs
+      - xfce4-panel
+      - xfce4-session
+      - xinput
+      - xorg
+      - xsel
+      - xserver-xorg-input-all
+      - xserver-xorg-input-kbd
+      - xserver-xorg-input-synaptics
+      - xtrlock
+
+- name: install chrome
+  apt:
+    deb: https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+- name: install input method
+  apt:
+    name:
+      - fcitx
+      - fcitx-config-gtk
+      - fcitx-frontend-gtk3
+      - fcitx-googlepinyin
+      - fcitx-modules
+      - fcitx-ui-classic
+      - fcitx-ui-light
+      - libgtk-3-bin
