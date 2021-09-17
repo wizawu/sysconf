@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [ "$1" = post ]; then
+    modprobe -r elan_i2c && modprobe elan_i2c
+    modprobe -r i2c_hid && modprobe i2c_hid
+fi
+
+ls /lib/systemd/system-sleep/touchpad
