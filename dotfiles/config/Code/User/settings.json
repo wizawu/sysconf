@@ -73,6 +73,8 @@
   "html.autoClosingTags": false,
   "javascript.autoClosingTags": false,
   "keyboard.dispatch": "keyCode",
+  "powermode.enableShake": false,
+  "powermode.enabled": true,
   "python.formatting.provider": "black",
   "redhat.telemetry.enabled": true,
   "terminal.integrated.fontSize": 12,

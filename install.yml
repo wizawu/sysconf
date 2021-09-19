@@ -33,10 +33,9 @@
     - name: add apt keys
       shell: apt-key adv --keyserver keyserver.ubuntu.com --recv {{item}}
       with_items:
-        - 7EA0A9C3F273FCD8 # aliyun docker
         - 1655A0AB68576280 # node
         - 6A030B21BA07F4FB # aliyun kubernetes
-        - EB3E94ADBE1229CF # vscode
+        - 7EA0A9C3F273FCD8 # aliyun docker
 
     - name: install apt packages
       apt:
@@ -188,6 +187,7 @@
         executable: pip3
 
     - include: tasks/desktop.yml
+    - include: tasks/vscode.yml
     - include: tasks/uninstall.yml
 
     - name: install npm packages
@@ -301,7 +301,6 @@
     - name: create user directories
       file: dest=/home/{{user}}/{{item}} state=directory recurse=yes owner={{user}}
       with_items:
-        - .config/Code/User
         - .gradle
         - .ssh
 
@@ -314,8 +313,6 @@
         owner: "{{user}}"
       with_items:
         - bashrc
-        - config/Code/User/keybindings.json
-        - config/Code/User/settings.json
         - gitconfig
         - gradle/gradle.properties
         - sqliterc
@@ -329,23 +326,3 @@
         src: dotfiles/config/background.png
         dest: /usr/share/awesome/themes/default/background.png
         remote_src: true
-
-    - name: install vscode extensions
-      shell: "code --install-extension {{item}}"
-      with_items:
-        - bierner.markdown-preview-github-styles
-        - jprestidge.theme-material-theme
-        - michelemelluso.code-beautifier
-        - mike-lischke.vscode-antlr4
-        - mikeburgh.xml-format
-        - ms-azuretools.vscode-docker
-        - ms-python.python
-        - ms-python.vscode-pylance
-        - ms-toolsai.jupyter
-        - redhat.vscode-yaml
-        - sgryjp.vscode-stable-sort
-        - streetsidesoftware.code-spell-checker
-        - tobiasalthoff.atom-material-theme
-        - vscodevim.vim
-      become: true
-      become_user: "{{user}}"

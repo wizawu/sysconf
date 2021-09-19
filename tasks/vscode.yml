@@ -1,0 +1,45 @@
+- set_fact: vscode_conf=config/Code/User
+
+- name: add apt key
+  shell: apt-key adv --keyserver keyserver.ubuntu.com --recv EB3E94ADBE1229CF
+
+- name: install vscode
+  apt: name=code update_cache=yes
+
+- name: create config directory
+  file:
+    dest: /home/{{user}}/.{{vscode_conf}}
+    state: directory
+    recurse: true
+    owner: "{{user}}"
+
+- name: create symbolic link to user config
+  file:
+    src: /home/{{user}}/.sysconf/dotfiles/{{vscode_conf}}/{{item}}
+    dest: /home/{{user}}/.{{vscode_conf}}/{{item}}
+    state: link
+    force: true
+    owner: "{{user}}"
+  with_items:
+    - keybindings.json
+    - settings.json
+
+- name: install vscode extensions
+  shell: "code --install-extension {{item}}"
+  with_items:
+    - bierner.markdown-preview-github-styles
+    - hoovercj.vscode-power-mode
+    - jeff-hykin.better-dockerfile-syntax
+    - jprestidge.theme-material-theme
+    - michelemelluso.code-beautifier
+    - mike-lischke.vscode-antlr4
+    - mikeburgh.xml-format
+    - ms-python.python
+    - ms-python.vscode-pylance
+    - redhat.vscode-yaml
+    - sgryjp.vscode-stable-sort
+    - streetsidesoftware.code-spell-checker
+    - tobiasalthoff.atom-material-theme
+    - vscodevim.vim
+  become: true
+  become_user: "{{user}}"
