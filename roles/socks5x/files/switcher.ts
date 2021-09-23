@@ -9,12 +9,16 @@ export function select(upstream: string): store.Backend {
   const result = store.selectDomain(upstream)
   if (result) {
     setTimeout(() => {
-      const { ok, fail } = store.countReadErr(upstream, result.prefer)
+      let { ok , fail } = store.countReadErr(upstream, result.prefer)
+      ok = ok || 0
+      fail = fail || 0
       if (ok > 0.001 && fail > 0.001) {
         store.updateDomain(upstream, 1 - result.prefer, "READ_ERROR")
       } else if (!ok) {
         log.debug(`Read error: ${upstream} ${ok} ${fail}`)
-        const { err0, err1 } = store.countConnErr(upstream)
+        let { err0 , err1 } = store.countConnErr(upstream)
+        err0 = err0 || 0
+        err1 = err1 || 0
         log.debug(`Conn error: ${upstream} ${err0} ${err1}`)
         if (err0 > err1) {
           store.updateDomain(upstream, 1, "CONNECT_ERROR")
