@@ -29,19 +29,19 @@ setInterval(() => {
 }, 5000)
 
 db.exec(`
-    create table if not exists domain(
-        domain text,
+    create table if not exists site(
+        site text,
         prefer short,
         time long,
         reason text,
-        primary key (domain)
+        primary key (site)
     )
 `)
 
 db.exec(`
     create table if not exists history(
         history_id text,
-        domain text,
+        site text,
         choose short,
         duration long,
         traffic long,
@@ -51,57 +51,57 @@ db.exec(`
     )
 `)
 
-db.exec("create index if not exists history_idx_domain_traffic on history(domain, traffic)")
+db.exec("create index if not exists history_idx_site_traffic on history(site, traffic)")
 db.exec("create index if not exists history_idx_time on history(time)")
 
-export function selectDomain(domain: string): Record<string, any> {
+export function selectDomain(site: string): Record<string, any> {
   const start = Date.now()
   const result = db.prepare(`
-        select * from domain where domain = @domain
-    `).get({ domain })
+        select * from site where site = @site
+    `).get({ site })
   if (Date.now() - start > 1) log.warn(`slow query: ${Date.now() - start}ms`)
   return result
 }
 
-export function updateDomain(domain: string, prefer: number, reason: string): void {
+export function updateDomain(site: string, prefer: number, reason: string): void {
   if (!online) return
   db.exec(`
-        replace into domain(domain, prefer, time, reason) values(
-            '${domain}', ${prefer}, ${Date.now()}, '${reason}'
+        replace into site(site, prefer, time, reason) values(
+            '${site}', ${prefer}, ${Date.now()}, '${reason}'
         )
     `)
 }
 
-export function createHistory(domain: string, choose: number, duration: number, traffic: number, error?: string): void {
+export function createHistory(site: string, choose: number, duration: number, traffic: number, error?: string): void {
   if (!online) return
   db.prepare(`
-        replace into history(time, history_id, domain, choose, duration, traffic, error)
+        replace into history(time, history_id, site, choose, duration, traffic, error)
             values(
-                ${Date.now()}, '${nanoid58(20)}', '${domain}',
+                ${Date.now()}, '${nanoid58(20)}', '${site}',
                 ${choose}, ${duration}, ${traffic},
                 @error
             )
     `).run({ error: error || "" })
 }
 
-export function countConnErr(domain: string): Record<string, any> {
+export function countConnErr(site: string): Record<string, any> {
   return db.prepare(`
         select
             sum(case when choose = 0 then 1 else 0 end) as err0,
             sum(case when choose = 1 then 1 else 0 end) as err1
         from history
-        where domain = @domain and (traffic <= 26 or error = 'Connection timeout')
-    `).get({ domain })
+        where site = @site and (traffic <= 26 or error = 'Connection timeout')
+    `).get({ site })
 }
 
-export function countReadErr(domain: string, prefer: number): Record<string, any> {
+export function countReadErr(site: string, prefer: number): Record<string, any> {
   return db.prepare(`
         select
             avg(case when error = '' then 1.0/duration else null end) as ok,
             avg(case when error > '' then 1.0/duration else null end) as fail
         from history
-        where domain = @domain and choose = @prefer and traffic > 26
-    `).get({ domain, prefer })
+        where site = @site and choose = @prefer and traffic > 26
+    `).get({ site, prefer })
 }
 
 export function trimHistory(days: number): void {
