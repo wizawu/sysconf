@@ -1,10 +1,12 @@
+[core]
+	quotePath = false
 [color]
 	ui = true
+[push]
+    default = upstream
 [user]
     email = wizawu@gmail.com
     name = wizawu
-[push]
-    default = upstream
 [alias]
     co = checkout
     dc = diff --cached
