@@ -4,6 +4,7 @@
     "start": "npm run build && node main.js"
   },
   "dependencies": {
+    "@tensorflow/tfjs-node": "^3.9.0",
     "@types/node": "^10.17.44",
     "better-sqlite3": "^7.4.3",
     "log4js": "^6.3.0",
