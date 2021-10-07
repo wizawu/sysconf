@@ -50,7 +50,7 @@ server.on("connection", conn => {
       })
       client.on("data", data => {
         if (Date.now() - startTime > 30000) {
-          if (Date.now() - (pulse[upstream] || 0) > 1000) {
+          if (upstream && Date.now() - (pulse[upstream] || 0) > 1000) {
             log.warn(`Long connection to ${upstream}: ${Date.now() - startTime}ms`)
             pulse[upstream] = Date.now()
           }
