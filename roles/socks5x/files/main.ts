@@ -18,15 +18,16 @@ server.on("connection", conn => {
   let clientData1: Buffer | null = null
   let clientData2: Buffer | null = null
   let contentLength = 0
+  let maxSpeed = 0
 
   conn.on("end", () => {
     if (upstream !== null && backend !== null) {
-      store.createHistory(upstream, backend._id, Date.now() - startTime, contentLength, "")
+      store.createHistory(upstream, backend._id, Date.now() - startTime, contentLength, maxSpeed, "")
     }
   })
   conn.on("error", e => {
     if (upstream !== null && backend !== null) {
-      store.createHistory(upstream, backend._id, Date.now() - startTime, contentLength, e.message)
+      store.createHistory(upstream, backend._id, Date.now() - startTime, contentLength, maxSpeed, e.message)
     }
   })
   conn.on("data", data => {
@@ -41,7 +42,7 @@ server.on("connection", conn => {
       client = net.createConnection(backend, () => 0)
       setTimeout(() => {
         if (contentLength <= 26) {
-          store.createHistory(upstream!, backend!._id, Date.now() - startTime, 0, "Connection timeout")
+          store.createHistory(upstream!, backend!._id, Date.now() - startTime, 0, maxSpeed, "Connection timeout")
           conn.destroy()
         }
       }, 5000)
@@ -58,6 +59,7 @@ server.on("connection", conn => {
         }
         if (clientData2 === null) {
           contentLength += data.length
+          maxSpeed = Math.max(contentLength / (Date.now() - startTime), maxSpeed)
           conn.write(data)
         } else {
           client?.write(clientData2)
@@ -65,10 +67,10 @@ server.on("connection", conn => {
         }
       })
       client.on("end", () => {
-        store.createHistory(upstream!, backend!._id, Date.now() - startTime, contentLength, "")
+        store.createHistory(upstream!, backend!._id, Date.now() - startTime, contentLength, maxSpeed, "")
       })
       client.on("error", e => {
-        store.createHistory(upstream!, backend!._id, Date.now() - startTime, contentLength, e.message)
+        store.createHistory(upstream!, backend!._id, Date.now() - startTime, contentLength, maxSpeed, e.message)
       })
     } else {
       client?.write(data)

@@ -1,6 +1,6 @@
 import * as Database from "better-sqlite3"
 import * as LoggerFactory from "log4js"
-import nanoid58 from "nanoid-base58"
+import { customAlphabet as nanoid } from "nanoid"
 import { spawnSync } from "child_process"
 
 export interface Backend {
@@ -45,6 +45,7 @@ db.exec(`
     choose short,
     duration long,
     traffic long,
+    speed real default 0,
     error text,
     time long,
     primary key (history_id)
@@ -70,17 +71,26 @@ export function updateDomain(site: string, prefer: number, reason: string): void
   `)
 }
 
-export function createHistory(site: string, choose: number, duration: number, traffic: number, error?: string): void {
+export function createHistory(
+  site: string,
+  choose: number,
+  duration: number,
+  traffic: number,
+  speed: number,
+  error?: string
+): void {
   if (!online) return
+  const now = Date.now()
+  const id = (now + nanoid("0123456789", 10)()).substr(0, 20)
   db.prepare(
     `
-    replace into history(time, history_id, site, choose, duration, traffic, error)
-    values(${Date.now()}, '${nanoid58(20)}', '${site}', ${choose}, ${duration}, ${traffic}, @error)
+    replace into history(time, history_id, site, choose, duration, traffic, speed, error)
+    values(${now}, '${id}', '${site}', ${choose}, ${duration}, ${traffic}, ${speed}, @error)
     `
   ).run({ error: error || "" })
 }
 
-export function countConnErr(site: string): Record<string, any> {
+export function countConnErr(site: string): Record<string, number> {
   return db
     .prepare(
       `
@@ -94,18 +104,18 @@ export function countConnErr(site: string): Record<string, any> {
     .get({ site })
 }
 
-export function countReadErr(site: string, prefer: number): Record<string, any> {
+export function averageSpeed(site: string): Record<string, number> {
   return db
     .prepare(
       `
-        select
-          avg(case when error = '' then 1.0/duration else null end) as ok,
-          avg(case when error > '' then 1.0/duration else null end) as fail
-        from history
-        where site = @site and choose = @prefer and traffic > 26
+      select
+        avg(case when choose = 0 then speed else null end) as spd0,
+        avg(case when choose = 1 then speed else null end) as spd1
+      from history
+      where site = @site and traffic > 26
       `
     )
-    .get({ site, prefer })
+    .get({ site })
 }
 
 export function trimHistory(days: number): void {
