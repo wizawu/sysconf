@@ -1,6 +1,6 @@
 - name: start container
   docker_container:
-    name: socks5x
+    name: socks
     image: wizawu/proxy:latest
     state: started
     recreate: true

@@ -109,8 +109,10 @@ export function averageSpeed(site: string): Record<string, number> {
     .prepare(
       `
       select
-        avg(case when choose = 0 then speed else null end) as spd0,
-        avg(case when choose = 1 then speed else null end) as spd1
+        count(case when choose = 0 then 1 else null end) /
+        sum(case when choose = 0 then 1/speed else 0 end) as spd0,
+        count(case when choose = 1 then 1 else null end) /
+        sum(case when choose = 1 then 1/speed else 0 end) as spd1
       from history
       where site = @site and traffic > 26
       `
