@@ -1,11 +1,12 @@
 {
   "scripts": {
-    "build": "tsc main.ts",
+    "build": "tsc main.ts && apt install -y --allow-unauthenticated libxext6 libx11-6",
     "start": "npm run build && node main.js"
   },
   "dependencies": {
     "@types/node": "^10.17.44",
     "better-sqlite3": "^7.4.3",
+    "brain.js": "^2.0.0-beta.3",
     "log4js": "^6.3.0",
     "nanoid": "^3.1.29"
   },

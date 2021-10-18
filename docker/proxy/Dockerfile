@@ -8,8 +8,10 @@ COPY --from=intermediate /go/bin/gotunnel /usr/bin/gotunnel
 RUN echo "deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu focal main universe" > /etc/apt/sources.list
 RUN apt update -o Acquire::AllowInsecureRepositories=true -y && \
     apt install --allow-unauthenticated --no-install-recommends -y \
-    libc6=2.31-0ubuntu9 \
     curl \
+    libc6=2.31-0ubuntu9 \
+    libx11-6 \
+    libxext6 \
     wget \
     && \
     apt clean
