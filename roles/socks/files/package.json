@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "tsc main.ts && apt install -y --allow-unauthenticated libxext6 libx11-6",
+    "build": "tsc main.ts",
     "start": "npm run build && node main.js"
   },
   "dependencies": {
