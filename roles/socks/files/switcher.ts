@@ -1,7 +1,7 @@
 import { spawnSync } from "child_process"
 
-import { classify } from "./train"
 import * as store from "./store"
+import * as train from "./train"
 
 export function select(upstream: string): store.Backend {
   if (/\d$/.test(upstream)) return store.backendList[0]
@@ -10,7 +10,7 @@ export function select(upstream: string): store.Backend {
     setTimeout(() => {
       const { err0, err1 } = store.countConnErr(upstream)
       const { spd0, spd1 } = store.averageSpeed(upstream)
-      const next = classify(upstream, [err0, err1, spd0, spd1])
+      const next = train.classify(upstream, [err0, err1, spd0, spd1])
       if (Number(result.prefer) !== next) {
         store.updateDomain(upstream, next, "TRAIN")
       }

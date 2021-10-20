@@ -1,0 +1,14 @@
+#!/bin/bash
+
+set -x
+xinput list --short
+
+device="Razer Razer DeathAdder V2"
+if [[ "$(xinput list --name-only)" =~ "$device" ]]; then
+    xinput set-prop "pointer:$device" "libinput Accel Speed" $1
+fi
+
+device="Game mouse"
+if [[ "$(xinput list --name-only)" =~ "$device" ]]; then
+    xinput set-prop "pointer:$device" "libinput Accel Speed" $1
+fi
