@@ -1,0 +1,2162 @@
+[
+  {
+    "site": "dict.youdao.com",
+    "err0": 4,
+    "err1": 5,
+    "spd0": 18.800655379454557,
+    "spd1": 4.360310549548228,
+    "prefer": 0
+  },
+  {
+    "site": "c.youdao.com",
+    "err0": 3,
+    "err1": 6,
+    "spd0": 155.62179957082614,
+    "spd1": 4.29064039408867,
+    "prefer": 0
+  },
+  {
+    "site": "rlogs.youdao.com",
+    "err0": 2,
+    "err1": 4,
+    "spd0": 1.0751748251748252,
+    "spd1": 0.47619047619047616,
+    "prefer": 0
+  },
+  {
+    "site": "shared.ydstatic.com",
+    "err0": 4,
+    "err1": 6,
+    "spd0": 65.20988407456393,
+    "spd1": 5.119274482556368,
+    "prefer": 0
+  },
+  {
+    "site": "gorgon.youdao.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 37.30213952378857,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "dsp-impr2.youdao.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 13.309383659165558,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "mtalk.google.com",
+    "err0": 26,
+    "err1": 49,
+    "spd0": 21.7384415197765,
+    "spd1": 21.807097803421847,
+    "prefer": 1
+  },
+  {
+    "site": "api.gettoby.com",
+    "err0": 20,
+    "err1": 13,
+    "spd0": 6.4798389308771585,
+    "spd1": 5.861640691924031,
+    "prefer": 1
+  },
+  {
+    "site": "mtalk.google.com",
+    "err0": 26,
+    "err1": 49,
+    "spd0": 21.7384415197765,
+    "spd1": 21.807097803421847,
+    "prefer": 1
+  },
+  {
+    "site": "www.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 365.7567567567568,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "hectorstatic.baidu.com",
+    "err0": 1,
+    "err1": 3,
+    "spd0": 4.511099314206019,
+    "spd1": 3.195951381235624,
+    "prefer": 0
+  },
+  {
+    "site": "sp1.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 2.3280644068839154,
+    "spd1": 0.9062663580215695,
+    "prefer": 0
+  },
+  {
+    "site": "sp2.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 12.264822406621368,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "fonts.gstatic.com",
+    "err0": 12,
+    "err1": 2,
+    "spd0": 3.2024040259450057,
+    "spd1": 1.6181716340409478,
+    "prefer": 1
+  },
+  {
+    "site": "passport.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 14.602047150863632,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "absaoss.github.io",
+    "err0": 3,
+    "err1": 17,
+    "spd0": 0.9749295582655058,
+    "spd1": 2.1010903372876566,
+    "prefer": 1
+  },
+  {
+    "site": "www.ehcache.org",
+    "err0": 2,
+    "err1": 20,
+    "spd0": 0.6471786071580101,
+    "spd1": 0.9108230266621545,
+    "prefer": 1
+  },
+  {
+    "site": "static001.infoq.cn",
+    "err0": 39,
+    "err1": 33,
+    "spd0": 4.104615238046749,
+    "spd1": 0.8484676095030221,
+    "prefer": 0
+  },
+  {
+    "site": "g.csdnimg.cn",
+    "err0": 21,
+    "err1": 3,
+    "spd0": 1.0038656428128974,
+    "spd1": 1.4364540450437275,
+    "prefer": 0
+  },
+  {
+    "site": "www.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 360.58973422106965,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "misc.360buyimg.com",
+    "err0": 8,
+    "err1": 13,
+    "spd0": 16.396131133188025,
+    "spd1": 6.31453283425989,
+    "prefer": 0
+  },
+  {
+    "site": "storage.360buyimg.com",
+    "err0": 3,
+    "err1": 1,
+    "spd0": 37.32541855675592,
+    "spd1": 12.250839762503805,
+    "prefer": 0
+  },
+  {
+    "site": "wl.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 100.94273852260547,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "mercury.jd.com",
+    "err0": 17,
+    "err1": 22,
+    "spd0": 9.059936582652286,
+    "spd1": 1.382209424710017,
+    "prefer": 0
+  },
+  {
+    "site": "passport.jd.com",
+    "err0": 3,
+    "err1": 2,
+    "spd0": 5.936023582255931,
+    "spd1": 2.1524752873189485,
+    "prefer": 0
+  },
+  {
+    "site": "floor.jd.com",
+    "err0": 18,
+    "err1": 0,
+    "spd0": 18.987456713748067,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "api.m.jd.com",
+    "err0": 2,
+    "err1": 4,
+    "spd0": 14.870913184635384,
+    "spd1": 5.357772431708143,
+    "prefer": 0
+  },
+  {
+    "site": "pjapi.jd.com",
+    "err0": 4,
+    "err1": 4,
+    "spd0": 7.654859845771713,
+    "spd1": 2.177839388462361,
+    "prefer": 0
+  },
+  {
+    "site": "lapi.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 12.570215960052508,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "fd.3.cn",
+    "err0": 3,
+    "err1": 3,
+    "spd0": 6.897878600901212,
+    "spd1": 2.4090876204838305,
+    "prefer": 0
+  },
+  {
+    "site": "img14.360buyimg.com",
+    "err0": 18,
+    "err1": 5,
+    "spd0": 41.48330420636043,
+    "spd1": 7.437501616035842,
+    "prefer": 0
+  },
+  {
+    "site": "vm.gtimg.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 178.46555890715035,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "im-x.jd.com",
+    "err0": 7,
+    "err1": 3,
+    "spd0": 6.251811815518572,
+    "spd1": 1.2631183429546318,
+    "prefer": 0
+  },
+  {
+    "site": "imgcps.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 88.9605607536339,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "www.googletagmanager.com",
+    "err0": 4,
+    "err1": 27,
+    "spd0": 0.6562803807821725,
+    "spd1": 7.348801714228727,
+    "prefer": 1
+  },
+  {
+    "site": "img10.360buyimg.com",
+    "err0": 6,
+    "err1": 10,
+    "spd0": 101.97806152590643,
+    "spd1": 3.8211016704412346,
+    "prefer": 0
+  },
+  {
+    "site": "img1.360buyimg.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 328.0048914237011,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "img11.360buyimg.com",
+    "err0": 6,
+    "err1": 11,
+    "spd0": 114.54637084580372,
+    "spd1": 7.568568286788915,
+    "prefer": 0
+  },
+  {
+    "site": "wq.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 7.300914764507356,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "nfa.jd.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 8.574734105849123,
+    "spd1": 3.3850561114871063,
+    "prefer": 0
+  },
+  {
+    "site": "www.taobao.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 33.245084135586424,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "g.alicdn.com",
+    "err0": 14,
+    "err1": 3,
+    "spd0": 19.575475454697898,
+    "spd1": 5.575531365561305,
+    "prefer": 0
+  },
+  {
+    "site": "blackhole-m.m.jd.com",
+    "err0": 1,
+    "err1": 2,
+    "spd0": 7.9889088036804115,
+    "spd1": 2.186193874455048,
+    "prefer": 0
+  },
+  {
+    "site": "gias.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 67.10201796685901,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "gia.jd.com",
+    "err0": 0,
+    "err1": 3,
+    "spd0": 29.007472787796406,
+    "spd1": 5.03810265189085,
+    "prefer": 0
+  },
+  {
+    "site": "img.alicdn.com",
+    "err0": 4,
+    "err1": 1,
+    "spd0": 54.278485744413686,
+    "spd1": 6.880544183954581,
+    "prefer": 0
+  },
+  {
+    "site": "at.alicdn.com",
+    "err0": 1,
+    "err1": 1,
+    "spd0": 111.00501907870475,
+    "spd1": 7.479232073791381,
+    "prefer": 0
+  },
+  {
+    "site": "h5api.m.taobao.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 13.056545828715844,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "textlink.simba.taobao.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 8.37991762516064,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "wwc.alicdn.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 31.522802581194007,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "gw.alicdn.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 36.206559618676984,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "suggest.taobao.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 6.137705463010816,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "atanx.alicdn.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 88.46461728837998,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "fourier.taobao.com",
+    "err0": 1,
+    "err1": 2,
+    "spd0": 82.06812223686116,
+    "spd1": 1.0745287784391868,
+    "prefer": 0
+  },
+  {
+    "site": "gtms03.alicdn.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 88.72002114433054,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "ynuf.alipay.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 46.796833773087066,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "img30.360buyimg.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 116.36115906237237,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "www.google.com",
+    "err0": 41,
+    "err1": 28,
+    "spd0": -1,
+    "spd1": 4.173022067958856,
+    "prefer": 1
+  },
+  {
+    "site": "github.com",
+    "err0": 77,
+    "err1": 74,
+    "spd0": 12.79778273029567,
+    "spd1": 4.499583151088925,
+    "prefer": 1
+  },
+  {
+    "site": "github.githubassets.com",
+    "err0": 12,
+    "err1": 29,
+    "spd0": 1.2426085056514797,
+    "spd1": 2.2565482788694506,
+    "prefer": 1
+  },
+  {
+    "site": "avatars.githubusercontent.com",
+    "err0": 37,
+    "err1": 80,
+    "spd0": 1.3165221371735472,
+    "spd1": 2.201719568916209,
+    "prefer": 1
+  },
+  {
+    "site": "alive.github.com",
+    "err0": 1,
+    "err1": 6,
+    "spd0": 4.012065441582718,
+    "spd1": 2.352368561093806,
+    "prefer": 1
+  },
+  {
+    "site": "api.github.com",
+    "err0": 4,
+    "err1": 28,
+    "spd0": 5.071089087025426,
+    "spd1": 3.931315501698178,
+    "prefer": 1
+  },
+  {
+    "site": "aa.google.com",
+    "err0": 2,
+    "err1": 1,
+    "spd0": -1,
+    "spd1": 28.34693448679869,
+    "prefer": 1
+  },
+  {
+    "site": "clients4.google.com",
+    "err0": 4,
+    "err1": 4,
+    "spd0": -1,
+    "spd1": 3.4860537033457195,
+    "prefer": 1
+  },
+  {
+    "site": "play.google.com",
+    "err0": 108,
+    "err1": 52,
+    "spd0": -1,
+    "spd1": 3.5213959445160046,
+    "prefer": 1
+  },
+  {
+    "site": "adservice.google.com",
+    "err0": 4,
+    "err1": 3,
+    "spd0": 5.4651262946078445,
+    "spd1": 2.889909956800171,
+    "prefer": 1
+  },
+  {
+    "site": "ogs.google.com",
+    "err0": 4,
+    "err1": 3,
+    "spd0": -1,
+    "spd1": 19.67777719314134,
+    "prefer": 1
+  },
+  {
+    "site": "abs.twimg.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": -1,
+    "spd1": 1.2946710161244195,
+    "prefer": 1
+  },
+  {
+    "site": "pbs.twimg.com",
+    "err0": 13,
+    "err1": 7,
+    "spd0": -1,
+    "spd1": 1.4118078921610464,
+    "prefer": 1
+  },
+  {
+    "site": "www.google-analytics.com",
+    "err0": 12,
+    "err1": 3,
+    "spd0": 5.274837383743608,
+    "spd1": 2.4671411546569724,
+    "prefer": 1
+  },
+  {
+    "site": "stackoverflow.com",
+    "err0": 4,
+    "err1": 13,
+    "spd0": 0.18642989989636008,
+    "spd1": 1.1350680691268236,
+    "prefer": 1
+  },
+  {
+    "site": "cdn.sstatic.net",
+    "err0": 17,
+    "err1": 9,
+    "spd0": 20.07160528338628,
+    "spd1": 2.2826071744936587,
+    "prefer": 0
+  },
+  {
+    "site": "i.stack.imgur.com",
+    "err0": 488,
+    "err1": 25,
+    "spd0": 5.6625185789642405,
+    "spd1": 1.4191884747449839,
+    "prefer": 1
+  },
+  {
+    "site": "miro.medium.com",
+    "err0": 31,
+    "err1": 17,
+    "spd0": -1,
+    "spd1": 1.1385032811125093,
+    "prefer": 1
+  },
+  {
+    "site": "accounts.google.com",
+    "err0": null,
+    "err1": null,
+    "spd0": -1,
+    "spd1": 18.863268458087042,
+    "prefer": 1
+  },
+  {
+    "site": "securepubads.g.doubleclick.net",
+    "err0": 89,
+    "err1": 16,
+    "spd0": 6.36416544409068,
+    "spd1": 1.43529951508994,
+    "prefer": 1
+  },
+  {
+    "site": "lh3.googleusercontent.com",
+    "err0": 148,
+    "err1": 56,
+    "spd0": -1,
+    "spd1": 3.118812274825282,
+    "prefer": 1
+  },
+  {
+    "site": "qa.sockets.stackexchange.com",
+    "err0": 1,
+    "err1": 17,
+    "spd0": 0.3915528713056499,
+    "spd1": 1.2011003057614134,
+    "prefer": 1
+  },
+  {
+    "site": "stats.g.doubleclick.net",
+    "err0": 1,
+    "err1": 3,
+    "spd0": 5.458449769092385,
+    "spd1": 2.26893842386641,
+    "prefer": 1
+  },
+  {
+    "site": "www.googletagservices.com",
+    "err0": 4,
+    "err1": 4,
+    "spd0": 8.947690193384572,
+    "spd1": 3.5128629939242764,
+    "prefer": 1
+  },
+  {
+    "site": "clc.stackoverflow.com",
+    "err0": 2,
+    "err1": 20,
+    "spd0": 3.738251681753826,
+    "spd1": 1.4041420020803024,
+    "prefer": 1
+  },
+  {
+    "site": "feedly.com",
+    "err0": 18,
+    "err1": 0,
+    "spd0": -1,
+    "spd1": 10.645265584830145,
+    "prefer": 1
+  },
+  {
+    "site": "visuals.feedly.com",
+    "err0": 40,
+    "err1": 16,
+    "spd0": -1,
+    "spd1": 1.67154258972435,
+    "prefer": 1
+  },
+  {
+    "site": "engagement.feedly.com",
+    "err0": 10,
+    "err1": 0,
+    "spd0": -1,
+    "spd1": 2.8076380147438913,
+    "prefer": 1
+  },
+  {
+    "site": "img.ithome.com",
+    "err0": 2,
+    "err1": 18,
+    "spd0": 0.4891772792876849,
+    "spd1": 4.060769457793821,
+    "prefer": 0
+  },
+  {
+    "site": "o115706.ingest.sentry.io",
+    "err0": 1,
+    "err1": 28,
+    "spd0": 1.1900360188856063,
+    "spd1": 2.491453973947276,
+    "prefer": 1
+  },
+  {
+    "site": "dss0.bdstatic.com",
+    "err0": 0,
+    "err1": 2,
+    "spd0": 102.64710897527581,
+    "spd1": 9.191768588099546,
+    "prefer": 0
+  },
+  {
+    "site": "t9.baidu.com",
+    "err0": 8,
+    "err1": 3,
+    "spd0": 13.105844942153679,
+    "spd1": 0.8571725286439912,
+    "prefer": 0
+  },
+  {
+    "site": "t7.baidu.com",
+    "err0": 11,
+    "err1": 7,
+    "spd0": 24.987255930439577,
+    "spd1": 1.2418341060601852,
+    "prefer": 0
+  },
+  {
+    "site": "pic.rmb.bdstatic.com",
+    "err0": 32,
+    "err1": 6,
+    "spd0": 16.80573615130006,
+    "spd1": 3.905494627485824,
+    "prefer": 0
+  },
+  {
+    "site": "pss.bdstatic.com",
+    "err0": 7,
+    "err1": 8,
+    "spd0": 33.59415364568763,
+    "spd1": 3.471291344430996,
+    "prefer": 0
+  },
+  {
+    "site": "ss1.bdstatic.com",
+    "err0": 12,
+    "err1": 0,
+    "spd0": 62.75375911621072,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "t11.baidu.com",
+    "err0": 24,
+    "err1": 25,
+    "spd0": 19.146900085438695,
+    "spd1": 4.373786291131904,
+    "prefer": 0
+  },
+  {
+    "site": "t10.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 9.983013919734095,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "t12.baidu.com",
+    "err0": 26,
+    "err1": 17,
+    "spd0": 15.306937758571177,
+    "spd1": 7.79456794960416,
+    "prefer": 0
+  },
+  {
+    "site": "t8.baidu.com",
+    "err0": 6,
+    "err1": 6,
+    "spd0": 8.211871980309482,
+    "spd1": 1.139863320824557,
+    "prefer": 0
+  },
+  {
+    "site": "pos.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 3.2911268164625196,
+    "spd1": 0.5263157894736842,
+    "prefer": 0
+  },
+  {
+    "site": "wn.pos.baidu.com",
+    "err0": 5,
+    "err1": 11,
+    "spd0": 4.322847004176168,
+    "spd1": 1.0454249850041464,
+    "prefer": 0
+  },
+  {
+    "site": "dup.baidustatic.com",
+    "err0": 1,
+    "err1": 2,
+    "spd0": 26.393400806530288,
+    "spd1": 0.15211179716160955,
+    "prefer": 0
+  },
+  {
+    "site": "eclick.baidu.com",
+    "err0": 5,
+    "err1": 10,
+    "spd0": 1.9068692660014497,
+    "spd1": 0.8443767413756971,
+    "prefer": 0
+  },
+  {
+    "site": "ss0.baidu.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 11.138777860228785,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "t15.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 29.127838976508414,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "t14.baidu.com",
+    "err0": 6,
+    "err1": 9,
+    "spd0": 68.932984095023,
+    "spd1": 4.927584080667904,
+    "prefer": 0
+  },
+  {
+    "site": "t13.baidu.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 31.797259575552122,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "dss2.bdstatic.com",
+    "err0": 3,
+    "err1": 10,
+    "spd0": 22.34385373809502,
+    "spd1": 1.6304131181438895,
+    "prefer": 0
+  },
+  {
+    "site": "tiebapic.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 25.858662076471074,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "fclick.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.701313307614287,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "tieba.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 4.499917755458345,
+    "spd1": 1.872815384022858,
+    "prefer": 0
+  },
+  {
+    "site": "hm.baidu.com",
+    "err0": 6,
+    "err1": 9,
+    "spd0": 2.5905703454215336,
+    "spd1": 0.9550973044957103,
+    "prefer": 0
+  },
+  {
+    "site": "tb3.bdstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 57.448957534329004,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "nsclick.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 8.459053045005996,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "tb1.bdstatic.com",
+    "err0": 1,
+    "err1": 6,
+    "spd0": 173.53888550710408,
+    "spd1": 11.297176913248014,
+    "prefer": 0
+  },
+  {
+    "site": "tb2.bdstatic.com",
+    "err0": 5,
+    "err1": 0,
+    "spd0": 31.885236706886506,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "tbmsg.baidu.com",
+    "err0": 3,
+    "err1": 0,
+    "spd0": 4.5867017035199735,
+    "spd1": 2.813858239010191,
+    "prefer": 0
+  },
+  {
+    "site": "gss0.bdstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 58.97460493503233,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "sofire.bdstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1040.0386613403703,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "fc1tn.baidu.com",
+    "err0": 3,
+    "err1": 5,
+    "spd0": 17.37317801084264,
+    "spd1": 8.297112931879504,
+    "prefer": 0
+  },
+  {
+    "site": "gsp0.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 10.195135678976488,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "ecma.bdimg.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 57.294814116416646,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "imgsa.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 109.11075008399129,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "miao.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 5.554354291003508,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "sfp.safe.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 30.26810477657935,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "sofire.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 68.04561348495737,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "sp0.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 4.241017667176357,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "api.gettoby.com",
+    "err0": 20,
+    "err1": 13,
+    "spd0": 6.4798389308771585,
+    "spd1": 5.861640691924031,
+    "prefer": 1
+  },
+  {
+    "site": "www.ithome.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 215.2546651026008,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "api.ithome.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 24.011706443839753,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "dyn.ithome.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 20.11268087134903,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "cmt.ithome.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 19.785704205042613,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "read.feedly.com",
+    "err0": 8,
+    "err1": 12,
+    "spd0": -1,
+    "spd1": 2.5238194937103624,
+    "prefer": 1
+  },
+  {
+    "site": "www.gstatic.com",
+    "err0": 2,
+    "err1": 8,
+    "spd0": 7.474814701395017,
+    "spd1": 2.374369928467872,
+    "prefer": 1
+  },
+  {
+    "site": "avatar.ithome.com",
+    "err0": 10,
+    "err1": 0,
+    "spd0": 62.25468757074024,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "ss1.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 10.382843323029448,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "ss2.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 12.377809652522899,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "ss3.baidu.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 10.825331003037224,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "vdposter.bdstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 13.8824120745882,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "pcrec.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 57.68137536108403,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "baijiahao.baidu.com",
+    "err0": 2,
+    "err1": 3,
+    "spd0": 8.849707479882728,
+    "spd1": 1.59037663870621,
+    "prefer": 0
+  },
+  {
+    "site": "mbdp01.bdstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 10.49670050725311,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "pics1.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 52.52299459903982,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "pics2.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 280.8886731950615,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "pics6.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 89.81054312226884,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "dlswbr.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": -1,
+    "spd1": 8.460558605276807,
+    "prefer": 0
+  },
+  {
+    "site": "pics4.baidu.com",
+    "err0": 0,
+    "err1": 1,
+    "spd0": -1,
+    "spd1": 13.58352361557513,
+    "prefer": 0
+  },
+  {
+    "site": "pics5.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 300.7469229798708,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "b.bdstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 16.56719083347658,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "hpd.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 4.133262701070781,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "mbd.baidu.com",
+    "err0": 3,
+    "err1": 14,
+    "spd0": 1.275658505221279,
+    "spd1": 1.3946474225149608,
+    "prefer": 0
+  },
+  {
+    "site": "ext.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 44.18654327749317,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "himg.bdimg.com",
+    "err0": 10,
+    "err1": 19,
+    "spd0": 87.14191377790677,
+    "spd1": 5.736597338595299,
+    "prefer": 0
+  },
+  {
+    "site": "mbdp03.bdstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 12.44648587832389,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "vmonitor.ws.netease.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 87.82051282051282,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "zz.bdstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 11.009910390268699,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "s4.cnzz.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 53.069677182914894,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "s95.cnzz.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 21.907859078590786,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "z11.cnzz.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 10.576128524751217,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "z4.cnzz.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 36.46590909090909,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "storage.googleapis.com",
+    "err0": 3,
+    "err1": 7,
+    "spd0": 1.0156667065871465,
+    "spd1": 6.062198264621408,
+    "prefer": 1
+  },
+  {
+    "site": "www.google.nl",
+    "err0": 142,
+    "err1": 128,
+    "spd0": -1,
+    "spd1": 3.1050388076016624,
+    "prefer": 1
+  },
+  {
+    "site": "adservice.google.nl",
+    "err0": 18,
+    "err1": 16,
+    "spd0": -1,
+    "spd1": 2.8048322843638536,
+    "prefer": 1
+  },
+  {
+    "site": "encrypted-tbn0.gstatic.com",
+    "err0": 54,
+    "err1": 39,
+    "spd0": -1,
+    "spd1": 2.853894044409942,
+    "prefer": 1
+  },
+  {
+    "site": "id.google.nl",
+    "err0": 6,
+    "err1": 2,
+    "spd0": -1,
+    "spd1": 2.6306704678806994,
+    "prefer": 1
+  },
+  {
+    "site": "id.google.com",
+    "err0": 5,
+    "err1": 4,
+    "spd0": -1,
+    "spd1": 5.325215219775663,
+    "prefer": 1
+  },
+  {
+    "site": "encrypted-vtbn0.gstatic.com",
+    "err0": 4,
+    "err1": 3,
+    "spd0": -1,
+    "spd1": 2.8973230335849793,
+    "prefer": 1
+  },
+  {
+    "site": "lh5.googleusercontent.com",
+    "err0": 12,
+    "err1": 3,
+    "spd0": -1,
+    "spd1": 5.806432467654061,
+    "prefer": 1
+  },
+  {
+    "site": "ssl.gstatic.com",
+    "err0": 1,
+    "err1": 2,
+    "spd0": 8.229094843172037,
+    "spd1": 4.520917613899061,
+    "prefer": 1
+  },
+  {
+    "site": "baikebcs.bdimg.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 9.552202470591457,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "gimg3.baidu.com",
+    "err0": 6,
+    "err1": 0,
+    "spd0": 79.79719366291759,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "imgsrc.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 44.64165730608461,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "cstm.baidu.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 2.597352501069424,
+    "spd1": 1.8992228212805167,
+    "prefer": 0
+  },
+  {
+    "site": "img2.baidu.com",
+    "err0": 0,
+    "err1": 3,
+    "spd0": 15.14910884318254,
+    "spd1": 11.448239429243618,
+    "prefer": 0
+  },
+  {
+    "site": "image.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 3.814684804246283,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "img1.bdstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 13.572231420741248,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "img0.bdstatic.com",
+    "err0": 12,
+    "err1": 7,
+    "spd0": 69.63016966140896,
+    "spd1": 0.7770504864593981,
+    "prefer": 0
+  },
+  {
+    "site": "img2.bdstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 4.1013338563577815,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "wappass.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 20.43549860694154,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "imgstat.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 6.2907643422634685,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "img1.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 26.428812602754963,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "img0.baidu.com",
+    "err0": 3,
+    "err1": 2,
+    "spd0": 17.783378893101528,
+    "spd1": 3.6983135453249245,
+    "prefer": 0
+  },
+  {
+    "site": "s1.bdstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 20.177777777777777,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "s9.cnzz.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 17.698633033026464,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "c.cnzz.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 13.486393007383903,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "hzs10.cnzz.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 7.207982643213094,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "hzvs1.cnzz.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 6.741600214735175,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "www.infoq.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 4.507861619238831,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "static001.geekbang.org",
+    "err0": 6,
+    "err1": 9,
+    "spd0": 9.46389308089605,
+    "spd1": 1.1915056284256325,
+    "prefer": 0
+  },
+  {
+    "site": "account.geekbang.org",
+    "err0": null,
+    "err1": null,
+    "spd0": 76.76843224430726,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "awps-assets.meituan.net",
+    "err0": null,
+    "err1": null,
+    "spd0": 113.39481289494186,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "a.geekbang.org",
+    "err0": null,
+    "err1": null,
+    "spd0": 2.3464922112392044,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "p0.meituan.net",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 123.11776859504133,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "account.infoq.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 11.623045686061475,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "p1.meituan.net",
+    "err0": 3,
+    "err1": 0,
+    "spd0": 51.328401542968784,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "fonts.googleapis.com",
+    "err0": 6,
+    "err1": 7,
+    "spd0": 9.163168994968364,
+    "spd1": -1,
+    "prefer": 1
+  },
+  {
+    "site": "raw.githubusercontent.com",
+    "err0": 13,
+    "err1": 8,
+    "spd0": -1,
+    "spd1": 8.740693475095332,
+    "prefer": 1
+  },
+  {
+    "site": "user-images.githubusercontent.com",
+    "err0": 4,
+    "err1": 1,
+    "spd0": 13.948146179690635,
+    "spd1": 18.325486639048872,
+    "prefer": 1
+  },
+  {
+    "site": "f7.baidu.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 10.038420764063778,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "gimg4.baidu.com",
+    "err0": 3,
+    "err1": 0,
+    "spd0": 265.3191591573635,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "www.bilibili.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 162.23840123059944,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "s1.hdslb.com",
+    "err0": 1,
+    "err1": 7,
+    "spd0": 5.963539257173957,
+    "spd1": 4.707039921182499,
+    "prefer": 0
+  },
+  {
+    "site": "data.bilibili.com",
+    "err0": 4,
+    "err1": 0,
+    "spd0": 27.68657281705992,
+    "spd1": 16.158121917964614,
+    "prefer": 0
+  },
+  {
+    "site": "i0.hdslb.com",
+    "err0": 4,
+    "err1": 15,
+    "spd0": 4.296398751341576,
+    "spd1": 1.7222679106351781,
+    "prefer": 0
+  },
+  {
+    "site": "i2.hdslb.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 22.710115039689263,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "i1.hdslb.com",
+    "err0": 4,
+    "err1": 3,
+    "spd0": 22.719540265163378,
+    "spd1": 1.6284637669447142,
+    "prefer": 0
+  },
+  {
+    "site": "api.bilibili.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 67.84461380694934,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "cm.bilibili.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 57.92291229663557,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "message.bilibili.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 99.50165016501651,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "api.live.bilibili.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 38.25732068182372,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "api.vc.bilibili.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 50.02277683547372,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "upos-sz-mirrorcos.bilivideo.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 518.0365138702228,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "static.hdslb.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 146.83521357349903,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "bvc.bilivideo.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 69.23694779116464,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "broadcast.chat.bilibili.com",
+    "err0": null,
+    "err1": null,
+    "spd0": -1,
+    "spd1": 13.652918814170762,
+    "prefer": 0
+  },
+  {
+    "site": "boss.hdslb.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 13.270769604809372,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "interface.bilibili.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 47.07103825136612,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "c2shb.ssp.yahoo.com",
+    "err0": 31,
+    "err1": 13,
+    "spd0": 10.865144813011243,
+    "spd1": 7.310177100794504,
+    "prefer": 1
+  },
+  {
+    "site": "htlb.casalemedia.com",
+    "err0": 2,
+    "err1": 79,
+    "spd0": 0.4829944296001087,
+    "spd1": 1.1176704162816264,
+    "prefer": 1
+  },
+  {
+    "site": "d1oykxszdrgjgl.cloudfront.net",
+    "err0": 0,
+    "err1": 1,
+    "spd0": 16.529577464788733,
+    "spd1": 28.830307624824457,
+    "prefer": 1
+  },
+  {
+    "site": "googleads.g.doubleclick.net",
+    "err0": 85,
+    "err1": 8,
+    "spd0": 9.757910675670136,
+    "spd1": 5.037015499917594,
+    "prefer": 1
+  },
+  {
+    "site": "googleads4.g.doubleclick.net",
+    "err0": 51,
+    "err1": 13,
+    "spd0": 4.950865825751869,
+    "spd1": 2.3073825650037376,
+    "prefer": 1
+  },
+  {
+    "site": "cm.g.doubleclick.net",
+    "err0": 23,
+    "err1": 2,
+    "spd0": 5.007049902934846,
+    "spd1": 1.699694171762945,
+    "prefer": 1
+  },
+  {
+    "site": "ssum-sec.casalemedia.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 0.19671756467442586,
+    "spd1": 4.0979040092046475,
+    "prefer": 1
+  },
+  {
+    "site": "dsum-sec.casalemedia.com",
+    "err0": 3,
+    "err1": 5,
+    "spd0": 1.023706505621354,
+    "spd1": 1.040140712779227,
+    "prefer": 1
+  },
+  {
+    "site": "px.ads.linkedin.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 5.689971445876957,
+    "spd1": -1,
+    "prefer": 1
+  },
+  {
+    "site": "c.bing.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 11.304779440556157,
+    "spd1": -1,
+    "prefer": 1
+  },
+  {
+    "site": "pr-bh.ybp.yahoo.com",
+    "err0": 4,
+    "err1": 1,
+    "spd0": 7.4543994124641495,
+    "spd1": 15.073313782991205,
+    "prefer": 1
+  },
+  {
+    "site": "ups.analytics.yahoo.com",
+    "err0": 5,
+    "err1": 13,
+    "spd0": 4.714358286610893,
+    "spd1": 6.724570699499735,
+    "prefer": 1
+  },
+  {
+    "site": "9304630.fls.doubleclick.net",
+    "err0": 3,
+    "err1": 0,
+    "spd0": 7.292152381940291,
+    "spd1": -1,
+    "prefer": 1
+  },
+  {
+    "site": "connect.facebook.net",
+    "err0": 10,
+    "err1": 7,
+    "spd0": -1,
+    "spd1": 5.3910577661828425,
+    "prefer": 1
+  },
+  {
+    "site": "m.one.impact-ad.jp",
+    "err0": null,
+    "err1": null,
+    "spd0": 10.15725806451613,
+    "spd1": -1,
+    "prefer": 1
+  },
+  {
+    "site": "www.facebook.com",
+    "err0": 29,
+    "err1": 25,
+    "spd0": -1,
+    "spd1": 1.931822260953964,
+    "prefer": 1
+  },
+  {
+    "site": "cdn.doubleverify.com",
+    "err0": 0,
+    "err1": 2,
+    "spd0": 1.262619946790235,
+    "spd1": 11.784878866679913,
+    "prefer": 1
+  },
+  {
+    "site": "imasdk.googleapis.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 54.296037858834026,
+    "spd1": 61.095759847335174,
+    "prefer": 1
+  },
+  {
+    "site": "bid.g.doubleclick.net",
+    "err0": null,
+    "err1": null,
+    "spd0": -1,
+    "spd1": 2.145784368335791,
+    "prefer": 1
+  },
+  {
+    "site": "cdn3.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": -1,
+    "spd1": 8.442459654051722,
+    "prefer": 1
+  },
+  {
+    "site": "rtb0.doubleverify.com",
+    "err0": 2,
+    "err1": 2,
+    "spd0": 1.6165419055100565,
+    "spd1": 13.733742678513554,
+    "prefer": 1
+  },
+  {
+    "site": "tps.doubleverify.com",
+    "err0": 4,
+    "err1": 2,
+    "spd0": 0.44382802700252316,
+    "spd1": 7.238007275775425,
+    "prefer": 1
+  },
+  {
+    "site": "csi.gstatic.com",
+    "err0": 1,
+    "err1": 5,
+    "spd0": 4.522682422212966,
+    "spd1": 1.8034696570819055,
+    "prefer": 1
+  },
+  {
+    "site": "tps20800.doubleverify.com",
+    "err0": 0,
+    "err1": 1,
+    "spd0": -1,
+    "spd1": 6.266957315696732,
+    "prefer": 1
+  },
+  {
+    "site": "tps20810.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 0.9072689119300411,
+    "spd1": -1,
+    "prefer": 1
+  },
+  {
+    "site": "tps20811.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": -1,
+    "spd1": 6.807675373067351,
+    "prefer": 1
+  },
+  {
+    "site": "tps800.doubleverify.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 1.3878303168441655,
+    "spd1": -1,
+    "prefer": 1
+  },
+  {
+    "site": "tps801.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 8.64109181011608,
+    "spd1": -1,
+    "prefer": 1
+  },
+  {
+    "site": "tps804.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 2.7266910421677175,
+    "spd1": -1,
+    "prefer": 1
+  },
+  {
+    "site": "tps810.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.2064156094195397,
+    "spd1": -1,
+    "prefer": 1
+  },
+  {
+    "site": "tps813.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 6.617910755384563,
+    "spd1": -1,
+    "prefer": 1
+  },
+  {
+    "site": "as-sec.casalemedia.com",
+    "err0": null,
+    "err1": null,
+    "spd0": -1,
+    "spd1": 4.090150091679579,
+    "prefer": 1
+  },
+  {
+    "site": "pubads.g.doubleclick.net",
+    "err0": 2,
+    "err1": 3,
+    "spd0": 10.235286709563574,
+    "spd1": 1.1933361629881154,
+    "prefer": 1
+  },
+  {
+    "site": "ad.doubleclick.net",
+    "err0": 3,
+    "err1": 3,
+    "spd0": 12.56976230072766,
+    "spd1": 2.2698121794452444,
+    "prefer": 1
+  },
+  {
+    "site": "tps806.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 4.389707572039842,
+    "spd1": -1,
+    "prefer": 1
+  },
+  {
+    "site": "tps20805.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.6936065155779585,
+    "spd1": -1,
+    "prefer": 1
+  },
+  {
+    "site": "dict.youdao.com",
+    "err0": 4,
+    "err1": 5,
+    "spd0": 18.800655379454557,
+    "spd1": 4.360310549548228,
+    "prefer": 0
+  },
+  {
+    "site": "c.youdao.com",
+    "err0": 3,
+    "err1": 6,
+    "spd0": 129.4962050005133,
+    "spd1": 4.29064039408867,
+    "prefer": 0
+  },
+  {
+    "site": "impservice.youdao.com",
+    "err0": 0,
+    "err1": 1,
+    "spd0": 6.72176610437864,
+    "spd1": 2.2665604901180076,
+    "prefer": 0
+  },
+  {
+    "site": "rlogs.youdao.com",
+    "err0": 2,
+    "err1": 4,
+    "spd0": 1.0751748251748252,
+    "spd1": 0.47619047619047616,
+    "prefer": 0
+  },
+  {
+    "site": "foundation.youdao.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 21.686295815991787,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "picdict.youdao.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 14.140083117587164,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "shared.ydstatic.com",
+    "err0": 4,
+    "err1": 6,
+    "spd0": 37.18907688893981,
+    "spd1": 5.119274482556368,
+    "prefer": 0
+  },
+  {
+    "site": "gorgon.youdao.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 38.405978413694946,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "www.op.gg",
+    "err0": 0,
+    "err1": 1,
+    "spd0": 43.34093864345124,
+    "spd1": 15.532434922481507,
+    "prefer": 1
+  },
+  {
+    "site": "tps20828.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 2.8576962153345433,
+    "spd1": -1,
+    "prefer": 1
+  },
+  {
+    "site": "d3hb14vkzrxvla.cloudfront.net",
+    "err0": null,
+    "err1": null,
+    "spd0": 14.270248979698808,
+    "spd1": -1,
+    "prefer": 1
+  },
+  {
+    "site": "cs.adingo.jp",
+    "err0": 0,
+    "err1": 1,
+    "spd0": 9.413498098859316,
+    "spd1": 11.705673758865249,
+    "prefer": 1
+  },
+  {
+    "site": "tps812.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 5.343592797874393,
+    "spd1": -1,
+    "prefer": 1
+  },
+  {
+    "site": "tps20835.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.4673465662216794,
+    "spd1": -1,
+    "prefer": 1
+  },
+  {
+    "site": "tps20814.doubleverify.com",
+    "err0": 4,
+    "err1": 2,
+    "spd0": 1.367951604682013,
+    "spd1": 3.137833069152908,
+    "prefer": 1
+  },
+  {
+    "site": "tps802.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 0.7614947719873811,
+    "spd1": -1,
+    "prefer": 1
+  },
+  {
+    "site": "a4624.casalemedia.com",
+    "err0": null,
+    "err1": null,
+    "spd0": -1,
+    "spd1": 5.326001128031585,
+    "prefer": 1
+  },
+  {
+    "site": "tps20813.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.207787574469737,
+    "spd1": -1,
+    "prefer": 1
+  },
+  {
+    "site": "ajax.googleapis.com",
+    "err0": 10,
+    "err1": 5,
+    "spd0": -1,
+    "spd1": 1.1157206015921897,
+    "prefer": 1
+  }
+]

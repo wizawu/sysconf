@@ -5,7 +5,11 @@ import brain from "brain.js"
 const log = LoggerFactory.getLogger("\t\b\b\b\b\b\b\b")
 log.level = "debug"
 
-const data = JSON.parse(fs.readFileSync("./data.json", "utf-8"))
+const data = [
+  ...JSON.parse(fs.readFileSync("./data.json", "utf-8")),
+  ...JSON.parse(fs.readFileSync("./data.163474.json", "utf-8")),
+  ...JSON.parse(fs.readFileSync("./data.163481.json", "utf-8")),
+]
 const net = new brain.NeuralNetwork()
 net.train(
   data.map(it => ({

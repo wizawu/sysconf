@@ -1,0 +1,1114 @@
+[
+  {
+    "site": "resources.jetbrains.com",
+    "err0": 0,
+    "err1": 1,
+    "spd0": null,
+    "spd1": 23.088483689926015,
+    "prefer": 1
+  },
+  {
+    "site": "data.services.jetbrains.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 5.017692680562288,
+    "spd1": null,
+    "prefer": 1
+  },
+  {
+    "site": "c.cnzz.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 12.14267849120234,
+    "spd1": null,
+    "prefer": 0
+  },
+  {
+    "site": "wn.pos.baidu.com",
+    "err0": 5,
+    "err1": 11,
+    "spd0": 4.322847004176168,
+    "spd1": 0.9335058413039989,
+    "prefer": 0
+  },
+  {
+    "site": "commons.apache.org",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 12.025267249757048,
+    "prefer": 1
+  },
+  {
+    "site": "maven.apache.org",
+    "err0": null,
+    "err1": null,
+    "spd0": 83.5047694753577,
+    "spd1": null,
+    "prefer": 1
+  },
+  {
+    "site": "api.segment.io",
+    "err0": 5,
+    "err1": 2,
+    "spd0": 2.924446055021207,
+    "spd1": 7.070103092783504,
+    "prefer": 1
+  },
+  {
+    "site": "www.googleapis.com",
+    "err0": 8,
+    "err1": 1,
+    "spd0": null,
+    "spd1": 4.914327807683151,
+    "prefer": 1
+  },
+  {
+    "site": "accounts.google.com",
+    "err0": 20,
+    "err1": 0,
+    "spd0": null,
+    "spd1": 19.958066538131117,
+    "prefer": 1
+  },
+  {
+    "site": "www.googleapis.com",
+    "err0": 4,
+    "err1": 1,
+    "spd0": -1,
+    "spd1": 4.924715238663134,
+    "prefer": 1
+  },
+  {
+    "site": "demo.dataease.io",
+    "err0": 2,
+    "err1": 1,
+    "spd0": 28.63928220451446,
+    "spd1": 28.127659574468083,
+    "prefer": 0
+  },
+  {
+    "site": "update.googleapis.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 5.749096401012216,
+    "spd1": 3.760815208692292,
+    "prefer": 1
+  },
+  {
+    "site": "mail.servyou.com.cn",
+    "err0": 12,
+    "err1": 1,
+    "spd0": 21.18485919262618,
+    "spd1": 2.6787016047442456,
+    "prefer": 0
+  },
+  {
+    "site": "lunkr.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 13.9057949094853,
+    "spd1": -1,
+    "prefer": 0
+  },
+  {
+    "site": "fonts.gstatic.com",
+    "err0": 12,
+    "err1": 4,
+    "spd0": 3.206223117711011,
+    "spd1": 1.905214690473253,
+    "prefer": 1
+  },
+  {
+    "site": "static001.infoq.cn",
+    "err0": 39,
+    "err1": 40,
+    "spd0": 4.121090780979727,
+    "spd1": 0.9781017331677263,
+    "prefer": 0
+  },
+  {
+    "site": "www.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 11.181572071490843,
+    "spd1": null,
+    "prefer": 0
+  },
+  {
+    "site": "hectorstatic.baidu.com",
+    "err0": 1,
+    "err1": 3,
+    "spd0": 4.8005613070538145,
+    "spd1": 3.195951381235624,
+    "prefer": 0
+  },
+  {
+    "site": "sp1.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 2.41445190089792,
+    "spd1": 0.9062663580215695,
+    "prefer": 0
+  },
+  {
+    "site": "sp2.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 11.946855065317992,
+    "spd1": null,
+    "prefer": 0
+  },
+  {
+    "site": "passport.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 14.551817781695433,
+    "spd1": null,
+    "prefer": 0
+  },
+  {
+    "site": "mtalk.google.com",
+    "err0": 26,
+    "err1": 49,
+    "spd0": 22.26115449170018,
+    "spd1": 21.808548309583486,
+    "prefer": 1
+  },
+  {
+    "site": "www.google.com",
+    "err0": 43,
+    "err1": 40,
+    "spd0": null,
+    "spd1": 3.8823326982259405,
+    "prefer": 1
+  },
+  {
+    "site": "aa.google.com",
+    "err0": 23,
+    "err1": 1,
+    "spd0": null,
+    "spd1": 28.34693448679869,
+    "prefer": 1
+  },
+  {
+    "site": "play.google.com",
+    "err0": 112,
+    "err1": 52,
+    "spd0": null,
+    "spd1": 3.567232481904334,
+    "prefer": 1
+  },
+  {
+    "site": "adservice.google.com",
+    "err0": 4,
+    "err1": 3,
+    "spd0": 5.365279043960746,
+    "spd1": 2.889909956800171,
+    "prefer": 1
+  },
+  {
+    "site": "ogs.google.com",
+    "err0": 18,
+    "err1": 3,
+    "spd0": null,
+    "spd1": 19.67777719314134,
+    "prefer": 1
+  },
+  {
+    "site": "encrypted-tbn0.gstatic.com",
+    "err0": 54,
+    "err1": 39,
+    "spd0": null,
+    "spd1": 2.941396792520746,
+    "prefer": 1
+  },
+  {
+    "site": "lh5.googleusercontent.com",
+    "err0": 12,
+    "err1": 3,
+    "spd0": null,
+    "spd1": 6.3958801248401915,
+    "prefer": 1
+  },
+  {
+    "site": "id.google.com",
+    "err0": 5,
+    "err1": 4,
+    "spd0": null,
+    "spd1": 5.569370138863147,
+    "prefer": 1
+  },
+  {
+    "site": "www.googleadservices.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 4.89186010273143,
+    "spd1": null,
+    "prefer": 1
+  },
+  {
+    "site": "github.com",
+    "err0": 77,
+    "err1": 74,
+    "spd0": 12.79778273029567,
+    "spd1": 4.549856543762858,
+    "prefer": 1
+  },
+  {
+    "site": "github.githubassets.com",
+    "err0": 12,
+    "err1": 29,
+    "spd0": 1.2426085056514797,
+    "spd1": 2.3050722186913517,
+    "prefer": 1
+  },
+  {
+    "site": "avatars.githubusercontent.com",
+    "err0": 37,
+    "err1": 80,
+    "spd0": 1.3165221371735472,
+    "spd1": 2.2236312503823306,
+    "prefer": 1
+  },
+  {
+    "site": "alive.github.com",
+    "err0": 1,
+    "err1": 6,
+    "spd0": 4.012065441582718,
+    "spd1": 2.422407083833068,
+    "prefer": 1
+  },
+  {
+    "site": "api.github.com",
+    "err0": 4,
+    "err1": 28,
+    "spd0": 5.071089087025426,
+    "spd1": 3.97428617130933,
+    "prefer": 1
+  },
+  {
+    "site": "stackoverflow.com",
+    "err0": 4,
+    "err1": 13,
+    "spd0": 0.18642989989636008,
+    "spd1": 1.1561165552889117,
+    "prefer": 1
+  },
+  {
+    "site": "absaoss.github.io",
+    "err0": 3,
+    "err1": 18,
+    "spd0": 0.9407677295342762,
+    "spd1": 2.1649832067820975,
+    "prefer": 1
+  },
+  {
+    "site": "www.ehcache.org",
+    "err0": 2,
+    "err1": 20,
+    "spd0": 0.6537177235822563,
+    "spd1": 0.9138187107870457,
+    "prefer": 1
+  },
+  {
+    "site": "cdn.sstatic.net",
+    "err0": 17,
+    "err1": 9,
+    "spd0": 17.397609323318225,
+    "spd1": 2.2826071744936587,
+    "prefer": 0
+  },
+  {
+    "site": "i.stack.imgur.com",
+    "err0": 488,
+    "err1": 25,
+    "spd0": 5.6625185789642405,
+    "spd1": 1.4189551315341802,
+    "prefer": 1
+  },
+  {
+    "site": "api.gettoby.com",
+    "err0": 20,
+    "err1": 17,
+    "spd0": 6.4798389308771585,
+    "spd1": 5.944484254220592,
+    "prefer": 1
+  },
+  {
+    "site": "securepubads.g.doubleclick.net",
+    "err0": 89,
+    "err1": 42,
+    "spd0": 6.36416544409068,
+    "spd1": 2.373195236131448,
+    "prefer": 1
+  },
+  {
+    "site": "www.google-analytics.com",
+    "err0": 21,
+    "err1": 9,
+    "spd0": 5.310632351011944,
+    "spd1": 2.507252413645248,
+    "prefer": 1
+  },
+  {
+    "site": "www.googletagservices.com",
+    "err0": 4,
+    "err1": 4,
+    "spd0": 9.871640980834396,
+    "spd1": 3.543472600170522,
+    "prefer": 1
+  },
+  {
+    "site": "clc.stackoverflow.com",
+    "err0": 2,
+    "err1": 20,
+    "spd0": 3.738251681753826,
+    "spd1": 1.448234763593815,
+    "prefer": 1
+  },
+  {
+    "site": "mail.servyou.com.cn",
+    "err0": 14,
+    "err1": 1,
+    "spd0": 4.949560095270798,
+    "spd1": 2.2818953758860996,
+    "prefer": 0
+  },
+  {
+    "site": "www.google.nl",
+    "err0": 142,
+    "err1": 128,
+    "spd0": null,
+    "spd1": 3.098615790090794,
+    "prefer": 1
+  },
+  {
+    "site": "id.google.nl",
+    "err0": 6,
+    "err1": 2,
+    "spd0": null,
+    "spd1": 2.643168229362022,
+    "prefer": 1
+  },
+  {
+    "site": "adservice.google.nl",
+    "err0": 18,
+    "err1": 16,
+    "spd0": null,
+    "spd1": 2.822286251499277,
+    "prefer": 1
+  },
+  {
+    "site": "ad.doubleclick.net",
+    "err0": 3,
+    "err1": 3,
+    "spd0": 12.90361402195769,
+    "spd1": 2.2698121794452444,
+    "prefer": 1
+  },
+  {
+    "site": "googleads4.g.doubleclick.net",
+    "err0": 51,
+    "err1": 22,
+    "spd0": 4.950865825751869,
+    "spd1": 1.9921314335116482,
+    "prefer": 1
+  },
+  {
+    "site": "qa.sockets.stackexchange.com",
+    "err0": 1,
+    "err1": 17,
+    "spd0": 0.3915528713056499,
+    "spd1": 1.2136533926949027,
+    "prefer": 1
+  },
+  {
+    "site": "stats.g.doubleclick.net",
+    "err0": 1,
+    "err1": 3,
+    "spd0": 4.74287699290335,
+    "spd1": 2.3122592815535965,
+    "prefer": 1
+  },
+  {
+    "site": "fonts.googleapis.com",
+    "err0": 12,
+    "err1": 7,
+    "spd0": 7.5341231266418145,
+    "spd1": 14.105839416058396,
+    "prefer": 1
+  },
+  {
+    "site": "www.gstatic.com",
+    "err0": 3,
+    "err1": 8,
+    "spd0": 6.307725125023199,
+    "spd1": 2.374369928467872,
+    "prefer": 1
+  },
+  {
+    "site": "www.gravatar.com",
+    "err0": 106,
+    "err1": 4,
+    "spd0": null,
+    "spd1": 1.8603234415211038,
+    "prefer": 1
+  },
+  {
+    "site": "g.csdnimg.cn",
+    "err0": 21,
+    "err1": 4,
+    "spd0": 1.0038656428128974,
+    "spd1": 1.6342198083515103,
+    "prefer": 0
+  },
+  {
+    "site": "fontlibrary.org",
+    "err0": 1,
+    "err1": 2,
+    "spd0": 5.439075919378843,
+    "spd1": 5.733451702115982,
+    "prefer": 1
+  },
+  {
+    "site": "ss0.baidu.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 11.319889423572624,
+    "spd1": null,
+    "prefer": 0
+  },
+  {
+    "site": "ss1.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 10.540581645383906,
+    "spd1": null,
+    "prefer": 0
+  },
+  {
+    "site": "ss2.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 12.44175199996165,
+    "spd1": null,
+    "prefer": 0
+  },
+  {
+    "site": "ss3.baidu.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 10.941276331668185,
+    "spd1": null,
+    "prefer": 0
+  },
+  {
+    "site": "clients4.google.com",
+    "err0": 4,
+    "err1": 4,
+    "spd0": null,
+    "spd1": 3.545423932323077,
+    "prefer": 1
+  },
+  {
+    "site": "www.googletagmanager.com",
+    "err0": 4,
+    "err1": 28,
+    "spd0": 0.6805287044768329,
+    "spd1": 6.3723008691639915,
+    "prefer": 1
+  },
+  {
+    "site": "googleads.g.doubleclick.net",
+    "err0": 85,
+    "err1": 33,
+    "spd0": 9.757910675670136,
+    "spd1": 4.090698479682543,
+    "prefer": 1
+  },
+  {
+    "site": "www.google.com.hk",
+    "err0": 14,
+    "err1": 8,
+    "spd0": null,
+    "spd1": 1.8229383635132217,
+    "prefer": 1
+  },
+  {
+    "site": "adservice.google.com.hk",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 5.633786132544229,
+    "prefer": 1
+  },
+  {
+    "site": "cc.adingo.jp",
+    "err0": 3,
+    "err1": 8,
+    "spd0": 2.7086818570468076,
+    "spd1": 2.3013168371074064,
+    "prefer": 1
+  },
+  {
+    "site": "cm.g.doubleclick.net",
+    "err0": 23,
+    "err1": 19,
+    "spd0": 4.979098622607788,
+    "spd1": 1.3585803048762035,
+    "prefer": 1
+  },
+  {
+    "site": "pr.ybp.yahoo.com",
+    "err0": 2,
+    "err1": 4,
+    "spd0": 10.688278486922927,
+    "spd1": 0.8014492563759433,
+    "prefer": 1
+  },
+  {
+    "site": "update.googleapis.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 5.749096401012216,
+    "spd1": 4.396068972213054,
+    "prefer": 1
+  },
+  {
+    "site": "blog.csdn.net",
+    "err0": 9,
+    "err1": 2,
+    "spd0": 9.95460211745174,
+    "spd1": 4.912390048057,
+    "prefer": 0
+  },
+  {
+    "site": "dup.baidustatic.com",
+    "err0": 1,
+    "err1": 2,
+    "spd0": 28.520568079992557,
+    "spd1": 0.15211179716160955,
+    "prefer": 0
+  },
+  {
+    "site": "event.csdn.net",
+    "err0": 2,
+    "err1": 1,
+    "spd0": 9.817387870806403,
+    "spd1": 4.284932406945933,
+    "prefer": 0
+  },
+  {
+    "site": "img-home.csdnimg.cn",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 24.74011345025262,
+    "spd1": 10.55341541805685,
+    "prefer": 0
+  },
+  {
+    "site": "img-blog.csdnimg.cn",
+    "err0": 33,
+    "err1": 24,
+    "spd0": 14.987157548403442,
+    "spd1": 5.037414191546419,
+    "prefer": 0
+  },
+  {
+    "site": "profile.csdnimg.cn",
+    "err0": 16,
+    "err1": 2,
+    "spd0": 8.34150805374485,
+    "spd1": 3.1080151236224385,
+    "prefer": 0
+  },
+  {
+    "site": "csdnimg.cn",
+    "err0": 0,
+    "err1": 3,
+    "spd0": 76.6394940095358,
+    "spd1": 2.966792074895176,
+    "prefer": 0
+  },
+  {
+    "site": "avatar.csdnimg.cn",
+    "err0": 2,
+    "err1": 1,
+    "spd0": 6.859446773106606,
+    "spd1": 5.764740657698536,
+    "prefer": 0
+  },
+  {
+    "site": "beacon.tingyun.com",
+    "err0": 2,
+    "err1": 6,
+    "spd0": 1.84829342540173,
+    "spd1": null,
+    "prefer": 0
+  },
+  {
+    "site": "silkroad.csdn.net",
+    "err0": null,
+    "err1": null,
+    "spd0": 12.67952073452625,
+    "spd1": null,
+    "prefer": 0
+  },
+  {
+    "site": "kunpeng.csdn.net",
+    "err0": null,
+    "err1": null,
+    "spd0": 9.020502770479585,
+    "spd1": null,
+    "prefer": 0
+  },
+  {
+    "site": "position.csdnimg.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 16.49422943553757,
+    "spd1": null,
+    "prefer": 0
+  },
+  {
+    "site": "msg.csdn.net",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 12.664483462749573,
+    "spd1": null,
+    "prefer": 0
+  },
+  {
+    "site": "hm.baidu.com",
+    "err0": 6,
+    "err1": 10,
+    "spd0": 2.5905703454215336,
+    "spd1": 0.9617355034816412,
+    "prefer": 0
+  },
+  {
+    "site": "zz.bdstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 11.213828404621632,
+    "spd1": null,
+    "prefer": 0
+  },
+  {
+    "site": "gsp0.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 8.84229334331732,
+    "spd1": null,
+    "prefer": 0
+  },
+  {
+    "site": "kunyu.csdn.net",
+    "err0": 5,
+    "err1": 3,
+    "spd0": 31.111111111111107,
+    "spd1": 6.787627459914526,
+    "prefer": 0
+  },
+  {
+    "site": "pos.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 3.504529267587839,
+    "spd1": 0.5263157894736842,
+    "prefer": 0
+  },
+  {
+    "site": "sp0.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 4.22762862877512,
+    "spd1": null,
+    "prefer": 0
+  },
+  {
+    "site": "statistic.csdn.net",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 13.90490675735212,
+    "spd1": null,
+    "prefer": 0
+  },
+  {
+    "site": "zhannei-dm.csdn.net",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 16.31745303010661,
+    "spd1": null,
+    "prefer": 0
+  },
+  {
+    "site": "eclick.baidu.com",
+    "err0": 5,
+    "err1": 11,
+    "spd0": 1.9068692660014497,
+    "spd1": 0.861722124055781,
+    "prefer": 0
+  },
+  {
+    "site": "www.baeldung.com",
+    "err0": 0,
+    "err1": 6,
+    "spd0": null,
+    "spd1": 17.733953245074943,
+    "prefer": 1
+  },
+  {
+    "site": "connect.facebook.net",
+    "err0": 10,
+    "err1": 7,
+    "spd0": null,
+    "spd1": 6.008145395993767,
+    "prefer": 1
+  },
+  {
+    "site": "www.facebook.com",
+    "err0": 29,
+    "err1": 36,
+    "spd0": null,
+    "spd1": 1.5371844615150467,
+    "prefer": 1
+  },
+  {
+    "site": "dggaenaawxe8z.cloudfront.net",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 28.695142612657015,
+    "prefer": 1
+  },
+  {
+    "site": "htlb.casalemedia.com",
+    "err0": 2,
+    "err1": 86,
+    "spd0": 0.4829944296001087,
+    "spd1": 1.1986381809098194,
+    "prefer": 1
+  },
+  {
+    "site": "at.alicdn.com",
+    "err0": 1,
+    "err1": 1,
+    "spd0": 116.58427873606949,
+    "spd1": 7.479232073791381,
+    "prefer": 0
+  },
+  {
+    "site": "camo.githubusercontent.com",
+    "err0": 8,
+    "err1": 16,
+    "spd0": 1.9380146869066903,
+    "spd1": 1.6088675291981267,
+    "prefer": 1
+  },
+  {
+    "site": "lh4.googleusercontent.com",
+    "err0": 0,
+    "err1": 1,
+    "spd0": null,
+    "spd1": 14.135907491374503,
+    "prefer": 1
+  },
+  {
+    "site": "lh3.googleusercontent.com",
+    "err0": 150,
+    "err1": 56,
+    "spd0": null,
+    "spd1": 3.2701101062082185,
+    "prefer": 1
+  },
+  {
+    "site": "graph.facebook.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 1.8629994647028763,
+    "prefer": 1
+  },
+  {
+    "site": "img-blog.csdn.net",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 35.13081785043985,
+    "spd1": null,
+    "prefer": 0
+  },
+  {
+    "site": "secure.gravatar.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 42.66091337980569,
+    "prefer": 1
+  },
+  {
+    "site": "apps.facebook.com",
+    "err0": 0,
+    "err1": 1,
+    "spd0": null,
+    "spd1": 7.442407789390126,
+    "prefer": 1
+  },
+  {
+    "site": "ssum-sec.casalemedia.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 0.23735338052709473,
+    "spd1": 4.343162503436883,
+    "prefer": 1
+  },
+  {
+    "site": "dsum-sec.casalemedia.com",
+    "err0": 3,
+    "err1": 5,
+    "spd0": 1.023706505621354,
+    "spd1": 1.0949110807563858,
+    "prefer": 1
+  },
+  {
+    "site": "cdn3.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.455546147332769,
+    "spd1": 6.795068719516892,
+    "prefer": 1
+  },
+  {
+    "site": "rtb0.doubleverify.com",
+    "err0": 2,
+    "err1": 2,
+    "spd0": 1.363641621544647,
+    "spd1": 13.733742678513554,
+    "prefer": 1
+  },
+  {
+    "site": "cdn.doubleverify.com",
+    "err0": 0,
+    "err1": 2,
+    "spd0": 1.101780419200016,
+    "spd1": 11.784878866679913,
+    "prefer": 1
+  },
+  {
+    "site": "ups.analytics.yahoo.com",
+    "err0": 5,
+    "err1": 13,
+    "spd0": 4.891830761888214,
+    "spd1": 6.739275780341475,
+    "prefer": 1
+  },
+  {
+    "site": "tps802.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 0.9115829294823545,
+    "spd1": 3.185416666666667,
+    "prefer": 1
+  },
+  {
+    "site": "9304630.fls.doubleclick.net",
+    "err0": 3,
+    "err1": 0,
+    "spd0": 5.458895035308696,
+    "spd1": 3.404462242562929,
+    "prefer": 1
+  },
+  {
+    "site": "tps809.doubleverify.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 2.1709747742614964,
+    "spd1": null,
+    "prefer": 1
+  },
+  {
+    "site": "tps814.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 4.035488921566515,
+    "spd1": null,
+    "prefer": 1
+  },
+  {
+    "site": "cs.adingo.jp",
+    "err0": 0,
+    "err1": 1,
+    "spd0": 8.585175552665799,
+    "spd1": 11.705673758865249,
+    "prefer": 1
+  },
+  {
+    "site": "tps.doubleverify.com",
+    "err0": 4,
+    "err1": 2,
+    "spd0": 0.550707629637431,
+    "spd1": 7.248301423104866,
+    "prefer": 1
+  },
+  {
+    "site": "as-sec.casalemedia.com",
+    "err0": 0,
+    "err1": 1,
+    "spd0": 5.102683780630105,
+    "spd1": 4.090150091679579,
+    "prefer": 1
+  },
+  {
+    "site": "imasdk.googleapis.com",
+    "err0": 2,
+    "err1": 1,
+    "spd0": 75.06087360166734,
+    "spd1": 32.63907670625496,
+    "prefer": 1
+  },
+  {
+    "site": "pubads.g.doubleclick.net",
+    "err0": 2,
+    "err1": 3,
+    "spd0": 10.469403995112643,
+    "spd1": 1.1933361629881154,
+    "prefer": 1
+  },
+  {
+    "site": "tps20813.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.2550523383702932,
+    "spd1": 17.505654281098547,
+    "prefer": 1
+  },
+  {
+    "site": "tps20806.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 22.95762711864407,
+    "spd1": null,
+    "prefer": 1
+  },
+  {
+    "site": "tps20807.doubleverify.com",
+    "err0": 0,
+    "err1": 5,
+    "spd0": 0.7162143748301667,
+    "spd1": 11.803921568627452,
+    "prefer": 1
+  },
+  {
+    "site": "tps20802.doubleverify.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 1.2942866611166215,
+    "spd1": 15.462328767123289,
+    "prefer": 1
+  },
+  {
+    "site": "tps20823.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 0.9530766666989832,
+    "spd1": null,
+    "prefer": 1
+  },
+  {
+    "site": "beap-bc.yahoo.com",
+    "err0": 5,
+    "err1": 12,
+    "spd0": 1.2301089301371322,
+    "spd1": 4.519023080981199,
+    "prefer": 1
+  },
+  {
+    "site": "dict.youdao.com",
+    "err0": 4,
+    "err1": 5,
+    "spd0": 20.64502019435491,
+    "spd1": 4.360310549548228,
+    "prefer": 0
+  },
+  {
+    "site": "c.youdao.com",
+    "err0": 3,
+    "err1": 6,
+    "spd0": 125.32273740570261,
+    "spd1": 4.29064039408867,
+    "prefer": 0
+  },
+  {
+    "site": "impservice.youdao.com",
+    "err0": 0,
+    "err1": 1,
+    "spd0": 7.546968350000058,
+    "spd1": 2.2665604901180076,
+    "prefer": 0
+  },
+  {
+    "site": "rlogs.youdao.com",
+    "err0": 2,
+    "err1": 4,
+    "spd0": 1.0751748251748252,
+    "spd1": 0.48387096774193544,
+    "prefer": 0
+  },
+  {
+    "site": "foundation.youdao.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 22.40096877501228,
+    "spd1": null,
+    "prefer": 0
+  },
+  {
+    "site": "picdict.youdao.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 14.882550796209772,
+    "spd1": null,
+    "prefer": 0
+  },
+  {
+    "site": "shared.ydstatic.com",
+    "err0": 4,
+    "err1": 6,
+    "spd0": 50.259558992073146,
+    "spd1": 5.119274482556368,
+    "prefer": 0
+  },
+  {
+    "site": "gorgon.youdao.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 39.17448469568582,
+    "spd1": null,
+    "prefer": 0
+  },
+  {
+    "site": "oimagec8.ydstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 146.856,
+    "spd1": null,
+    "prefer": 0
+  },
+  {
+    "site": "dsp-impr2.youdao.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 13.309383659165558,
+    "spd1": null,
+    "prefer": 0
+  },
+  {
+    "site": "cdn-go.cn",
+    "err0": 3,
+    "err1": 0,
+    "spd0": 279.12467716122563,
+    "spd1": 26.29368029739777,
+    "prefer": 0
+  }
+]

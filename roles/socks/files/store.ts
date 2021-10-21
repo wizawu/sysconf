@@ -23,7 +23,7 @@ setInterval(() => {
   online = child.status === 0
   if (!online) {
     log.warn("I am offline")
-    trimHistory(14)
+    trimHistory(30)
     db.exec("VACUUM")
   }
 }, 5000)
