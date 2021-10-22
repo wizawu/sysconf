@@ -23,7 +23,7 @@ setInterval(() => {
   online = child.status === 0
   if (!online) {
     log.warn("I am offline")
-    trimHistory(30)
+    db.exec(`delete from history where time < ${Date.now() - 30 * 86400 * 1000}`)
     db.exec("VACUUM")
   }
 }, 5000)
@@ -118,8 +118,4 @@ export function averageSpeed(site: string): Record<string, number> {
       `
     )
     .get({ site })
-}
-
-export function trimHistory(days: number): void {
-  db.exec(`delete from history where time < ${Date.now() - days * 86400 * 1000}`)
 }

@@ -7,8 +7,9 @@ log.level = "debug"
 
 const data = [
   ...JSON.parse(fs.readFileSync("./data.json", "utf-8")),
-  ...JSON.parse(fs.readFileSync("./data.163474.json", "utf-8")),
-  ...JSON.parse(fs.readFileSync("./data.163481.json", "utf-8")),
+  ...JSON.parse(fs.readFileSync("./data.17c9e.json", "utf-8")),
+  ...JSON.parse(fs.readFileSync("./data.17ca2.json", "utf-8")),
+  ...JSON.parse(fs.readFileSync("./data.17ca5.json", "utf-8")),
 ]
 const net = new brain.NeuralNetwork()
 net.train(
@@ -39,7 +40,7 @@ const mark: Record<string, number> = {}
 data.forEach(it => (mark[it.site] = it.prefer))
 function writeData(site: string, args: [number, number, number, number]): void {
   if (mark[site] === undefined) return
-  const file = `data.${Date.now().toString().substr(0, 6)}.json`
+  const file = `data.${Date.now().toString(16).substr(0, 5)}.json`
   fs.appendFileSync(
     file,
     JSON.stringify({

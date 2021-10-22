@@ -42,6 +42,7 @@ server.on("connection", conn => {
         if (contentLength <= 26) {
           store.createHistory(upstream!, backend!._id, Date.now() - startTime, 0, maxSpeed, "Connection timeout")
           conn.destroy()
+          log.warn(`disconnect ${upstream}`)
         }
       }, 5000)
       client.on("connect", () => {
