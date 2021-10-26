@@ -10,6 +10,7 @@ const data = [
   ...JSON.parse(fs.readFileSync("./data.1.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.2.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.3.json", "utf-8")),
+  ...JSON.parse(fs.readFileSync("./data.4.json", "utf-8")),
 ]
 const net = new brain.NeuralNetwork()
 net.train(
@@ -30,7 +31,7 @@ export function classify(site: string, args: [number, number, number, number, nu
   ])[0]
   if (Math.floor(Date.now() / 1000) > (pulse[site] || 0)) {
     pulse[site] = Math.floor(Date.now() / 1000)
-    log.debug(output.toFixed(16) + " - " + site)
+    log.debug(output.toFixed(6) + " - " + site)
   }
   return output < 0.5 ? 0 : 1
 }
