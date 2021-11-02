@@ -9,6 +9,7 @@
       - dbus-x11
       - deepin-screenshot=4.1.8-1
       - deepin-wine5-i386
+      - draw.io
       - freerdp-x11
       - geany # text editor
       - gimp
