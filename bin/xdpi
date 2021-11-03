@@ -1,5 +1,13 @@
 #!/bin/bash
 
 set -x
-xfconf-query -c xsettings -p /Gdk/WindowScalingFactor -s $1
-xfconf-query -c xsettings -p /Xft/DPI -s $2
+
+if [ -n "$1" ]; then
+    xfconf-query -c xsettings -p /Xft/DPI -s $1
+else
+    xfconf-query -c xsettings -p /Xft/DPI -s 144
+fi
+
+if [ -n "$2" ]; then
+    xfconf-query -c xsettings -p /Gdk/WindowScalingFactor -s $2
+fi
