@@ -1,0 +1,8542 @@
+[
+  {
+    "site": "0.client-channel.google.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 5.894124345246722,
+    "bw0": 0,
+    "bw1": 65.17385257301808,
+    "prefer": 1
+  },
+  {
+    "site": "1.bp.blogspot.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 10.113714944295044,
+    "bw0": 0,
+    "bw1": 10.113714944295044,
+    "prefer": 1
+  },
+  {
+    "site": "10679125.fls.doubleclick.net",
+    "err0": null,
+    "err1": null,
+    "spd0": 3.4089608580934585,
+    "spd1": null,
+    "bw0": 14.037861915367483,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "3.bp.blogspot.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 7.477968946705833,
+    "bw0": 0,
+    "bw1": 7.477968946705833,
+    "prefer": 1
+  },
+  {
+    "site": "4.bp.blogspot.com",
+    "err0": 0,
+    "err1": 1,
+    "spd0": null,
+    "spd1": 15.99249978282171,
+    "bw0": 0,
+    "bw1": 32.185929648241206,
+    "prefer": 1
+  },
+  {
+    "site": "7dhdh5ktgkfo7aolsutvui7duywx2i32-c2r.metric.gstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 4.02400548696845,
+    "bw0": 0,
+    "bw1": 4.02400548696845,
+    "prefer": 1
+  },
+  {
+    "site": "8136128.fls.doubleclick.net",
+    "err0": null,
+    "err1": null,
+    "spd0": 8.397340507167035,
+    "spd1": null,
+    "bw0": 62.24657534246575,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "9304630.fls.doubleclick.net",
+    "err0": 3,
+    "err1": 0,
+    "spd0": 4.884749396481865,
+    "spd1": 6.53745738823529,
+    "bw0": 23.785340314136125,
+    "bw1": 12.109333333333334,
+    "prefer": 1
+  },
+  {
+    "site": "9545401.fls.doubleclick.net",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.9794159996170728,
+    "spd1": null,
+    "bw0": 8.356020942408376,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "a.geekbang.org",
+    "err0": 1,
+    "err1": 3,
+    "spd0": 2.114837357782737,
+    "spd1": 2.1576242462897426,
+    "bw0": 46,
+    "bw1": 12.873134328358208,
+    "prefer": 0
+  },
+  {
+    "site": "a1.cnblogs.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 12.291083096382067,
+    "spd1": null,
+    "bw0": 108.39285714285714,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "a1886.casalemedia.com",
+    "err0": 0,
+    "err1": 1,
+    "spd0": null,
+    "spd1": 38.76712328767123,
+    "bw0": 0,
+    "bw1": 38.76712328767123,
+    "prefer": 1
+  },
+  {
+    "site": "a1889.casalemedia.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 6.983441324694025,
+    "bw0": 0,
+    "bw1": 6.983441324694025,
+    "prefer": 1
+  },
+  {
+    "site": "a1897.casalemedia.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 3.110854883874156,
+    "bw0": 0,
+    "bw1": 3.111367380560132,
+    "prefer": 1
+  },
+  {
+    "site": "a1927.casalemedia.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 2.355598965407241,
+    "bw0": 0,
+    "bw1": 3.1848229342327152,
+    "prefer": 1
+  },
+  {
+    "site": "a1943.casalemedia.com",
+    "err0": 0,
+    "err1": 2,
+    "spd0": null,
+    "spd1": null,
+    "bw0": null,
+    "bw1": null,
+    "prefer": 1
+  },
+  {
+    "site": "a4608.casalemedia.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 3.7782685512367493,
+    "bw0": 0,
+    "bw1": 3.7782685512367493,
+    "prefer": 1
+  },
+  {
+    "site": "a4619.casalemedia.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 4.676614481409002,
+    "spd1": null,
+    "bw0": 4.676614481409002,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "a4624.casalemedia.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 9.427747370552625,
+    "bw0": 0,
+    "bw1": 41.01449275362319,
+    "prefer": 1
+  },
+  {
+    "site": "a4635.casalemedia.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 5.16234158117079,
+    "bw0": 0,
+    "bw1": 5.16234158117079,
+    "prefer": 1
+  },
+  {
+    "site": "a4672.casalemedia.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 6.223307291666667,
+    "bw0": 0,
+    "bw1": 6.223307291666667,
+    "prefer": 1
+  },
+  {
+    "site": "a854.casalemedia.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 9.856978085351788,
+    "spd1": null,
+    "bw0": 9.856978085351788,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "a878.casalemedia.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 8.144671270171736,
+    "bw0": 0,
+    "bw1": 15.033391915641475,
+    "prefer": 1
+  },
+  {
+    "site": "a890.casalemedia.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 4.37321063394683,
+    "bw0": 0,
+    "bw1": 4.37321063394683,
+    "prefer": 1
+  },
+  {
+    "site": "a899.casalemedia.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 4.28000005082048,
+    "bw0": 0,
+    "bw1": 5.532988357050453,
+    "prefer": 1
+  },
+  {
+    "site": "aa.google.com",
+    "err0": 25,
+    "err1": 1,
+    "spd0": null,
+    "spd1": 28.61359358456782,
+    "bw0": 0,
+    "bw1": 63.70710059171598,
+    "prefer": 1
+  },
+  {
+    "site": "abs.twimg.com",
+    "err0": 2,
+    "err1": 1,
+    "spd0": null,
+    "spd1": 2.1427795792176116,
+    "bw0": 0,
+    "bw1": 2251.9969418960245,
+    "prefer": 1
+  },
+  {
+    "site": "absaoss.github.io",
+    "err0": 3,
+    "err1": 47,
+    "spd0": 0.9448966187581412,
+    "spd1": 2.1334604217034463,
+    "bw0": 17.904862579281183,
+    "bw1": 44.104166666666664,
+    "prefer": 1
+  },
+  {
+    "site": "acc.alicdn.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 235.65763989330716,
+    "spd1": null,
+    "bw0": 645.8169014084507,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "account.cnblogs.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 6.398428149901687,
+    "spd1": null,
+    "bw0": 108.39285714285714,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "account.geekbang.org",
+    "err0": null,
+    "err1": null,
+    "spd0": 20.653323238726514,
+    "spd1": null,
+    "bw0": 105.69014084507042,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "account.infoq.cn",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 7.909598555061562,
+    "spd1": null,
+    "bw0": 47.06849315068493,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "accounts.google.com",
+    "err0": 22,
+    "err1": 0,
+    "spd0": null,
+    "spd1": 15.742881827678808,
+    "bw0": 0,
+    "bw1": 222.73371104815865,
+    "prefer": 1
+  },
+  {
+    "site": "ad.doubleclick.net",
+    "err0": 15,
+    "err1": 3,
+    "spd0": 14.625088399866558,
+    "spd1": 2.2698121794452444,
+    "bw0": 288.29050279329607,
+    "bw1": 8.031799729364005,
+    "prefer": 1
+  },
+  {
+    "site": "addons-pa.clients6.google.com",
+    "err0": 5,
+    "err1": 5,
+    "spd0": null,
+    "spd1": 5.002625597237729,
+    "bw0": 0,
+    "bw1": 68.27083333333333,
+    "prefer": 1
+  },
+  {
+    "site": "adm.shinobi.jp",
+    "err0": null,
+    "err1": null,
+    "spd0": 17.784,
+    "spd1": null,
+    "bw0": 17.784,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "ads-ap.v.ssp.yahoo.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.5169306227510864,
+    "spd1": null,
+    "bw0": 33.075471698113205,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "ads.yahoo.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 8.195148653014929,
+    "bw0": 0,
+    "bw1": 39.642857142857146,
+    "prefer": 1
+  },
+  {
+    "site": "adservice.google.com",
+    "err0": 12,
+    "err1": 6,
+    "spd0": 5.613925244060627,
+    "spd1": 3.3413363790003645,
+    "bw0": 96.56521739130434,
+    "bw1": 33.315,
+    "prefer": 1
+  },
+  {
+    "site": "adservice.google.com.hk",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 5.746348618477716,
+    "bw0": 0,
+    "bw1": 25.38235294117647,
+    "prefer": 1
+  },
+  {
+    "site": "adservice.google.nl",
+    "err0": 18,
+    "err1": 20,
+    "spd0": null,
+    "spd1": 3.2168138573271787,
+    "bw0": 0,
+    "bw1": 29.06756756756757,
+    "prefer": 1
+  },
+  {
+    "site": "adx.g.doubleclick.net",
+    "err0": 3,
+    "err1": 0,
+    "spd0": 5.186861168466712,
+    "spd1": null,
+    "bw0": 11.180555555555555,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "aecpm.alicdn.com",
+    "err0": 3,
+    "err1": 1,
+    "spd0": 103.2811805635512,
+    "spd1": 3.3363772534485325,
+    "bw0": 466.9491525423729,
+    "bw1": 45.59340659340659,
+    "prefer": 0
+  },
+  {
+    "site": "ajax.googleapis.com",
+    "err0": 10,
+    "err1": 5,
+    "spd0": null,
+    "spd1": 2.9827878173222837,
+    "bw0": 0,
+    "bw1": 128.5048231511254,
+    "prefer": 1
+  },
+  {
+    "site": "alb.reddit.com",
+    "err0": 6,
+    "err1": 2,
+    "spd0": null,
+    "spd1": 5.462436700812205,
+    "bw0": 0,
+    "bw1": 17.9748427672956,
+    "prefer": 1
+  },
+  {
+    "site": "alive.github.com",
+    "err0": 1,
+    "err1": 9,
+    "spd0": 3.9273608387021803,
+    "spd1": 4.594923655377729,
+    "bw0": 6.4714285714285715,
+    "bw1": 6.7975,
+    "prefer": 1
+  },
+  {
+    "site": "als.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 11.285724226873873,
+    "spd1": null,
+    "bw0": 113.37837837837837,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "ampcid.google.cn",
+    "err0": 0,
+    "err1": 2,
+    "spd0": null,
+    "spd1": null,
+    "bw0": null,
+    "bw1": null,
+    "prefer": 0
+  },
+  {
+    "site": "ampcid.google.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 2.7863481228668943,
+    "bw0": 0,
+    "bw1": 2.7863481228668943,
+    "prefer": 1
+  },
+  {
+    "site": "analytics.twitter.com",
+    "err0": 28,
+    "err1": 11,
+    "spd0": null,
+    "spd1": 2.1298514433679654,
+    "bw0": 0,
+    "bw1": 35.0625,
+    "prefer": 1
+  },
+  {
+    "site": "android.clients.google.com",
+    "err0": 4,
+    "err1": 2,
+    "spd0": null,
+    "spd1": 10.99951590906894,
+    "bw0": 0,
+    "bw1": 48.27536231884058,
+    "prefer": 1
+  },
+  {
+    "site": "api.bilibili.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 19.65896415032974,
+    "spd1": null,
+    "bw0": 361.85714285714283,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "api.gettoby.com",
+    "err0": 20,
+    "err1": 79,
+    "spd0": 6.4798389308771585,
+    "spd1": 6.468827665874008,
+    "bw0": 12.005089058524174,
+    "bw1": 12.350785340314136,
+    "prefer": 1
+  },
+  {
+    "site": "api.github.com",
+    "err0": 4,
+    "err1": 43,
+    "spd0": 5.071089087025426,
+    "spd1": 5.523698662318474,
+    "bw0": 7.433242506811989,
+    "bw1": 38.40845070422535,
+    "prefer": 1
+  },
+  {
+    "site": "api.interaction.sohu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 7.363990001774098,
+    "spd1": null,
+    "bw0": 12.797979797979798,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "api.ithome.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 36.157672074971074,
+    "spd1": null,
+    "bw0": 199.05263157894737,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "api.live.bilibili.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 19.534940025210123,
+    "spd1": null,
+    "bw0": 168.6153846153846,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "api.m.jd.com",
+    "err0": 6,
+    "err1": 0,
+    "spd0": 13.112391478529108,
+    "spd1": null,
+    "bw0": 102.84615384615384,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "api.segment.io",
+    "err0": 20,
+    "err1": 4,
+    "spd0": 3.5851458519700756,
+    "spd1": 4.050523691366077,
+    "bw0": 10.144970414201184,
+    "bw1": 8.63727959697733,
+    "prefer": 1
+  },
+  {
+    "site": "api.share.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.435466946484785,
+    "spd1": 0.09233261339092873,
+    "bw0": 2.0655737704918034,
+    "bw1": 0.09233261339092873,
+    "prefer": 0
+  },
+  {
+    "site": "api.travis-ci.org",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 8.754820936639119,
+    "bw0": 0,
+    "bw1": 11.172259507829978,
+    "prefer": 1
+  },
+  {
+    "site": "api.vc.bilibili.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 24.819269633061587,
+    "spd1": null,
+    "bw0": 146,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "apidoc.gitee.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 12.445450846244105,
+    "spd1": null,
+    "bw0": 510.5777777777778,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "apis.google.com",
+    "err0": 6,
+    "err1": 4,
+    "spd0": null,
+    "spd1": 23.29097530229995,
+    "bw0": 0,
+    "bw1": 230.96656534954408,
+    "prefer": 1
+  },
+  {
+    "site": "apiv2.sohu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 6.827186686099936,
+    "spd1": null,
+    "bw0": 15.255411255411255,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "app.gitbook.com",
+    "err0": 2,
+    "err1": 13,
+    "spd0": 10.651847175293113,
+    "spd1": 0.6980686265494023,
+    "bw0": 560.4900793650794,
+    "bw1": 317.0835281284089,
+    "prefer": 1
+  },
+  {
+    "site": "apps.facebook.com",
+    "err0": 2,
+    "err1": 1,
+    "spd0": null,
+    "spd1": 3.310288445703114,
+    "bw0": 0,
+    "bw1": 16.053691275167786,
+    "prefer": 1
+  },
+  {
+    "site": "as-sec.casalemedia.com",
+    "err0": 0,
+    "err1": 1,
+    "spd0": 4.399396378269618,
+    "spd1": 1.6332223149545868,
+    "bw0": 5.102683780630105,
+    "bw1": 30.191176470588236,
+    "prefer": 1
+  },
+  {
+    "site": "ask.qcloudimg.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 67.81127999689467,
+    "spd1": null,
+    "bw0": 567.9090909090909,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "assets.alicdn.com",
+    "err0": 4,
+    "err1": 0,
+    "spd0": 37.464481897366674,
+    "spd1": null,
+    "bw0": 212.10227272727272,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "assets.gitee.com",
+    "err0": 8,
+    "err1": 1,
+    "spd0": 16.032908547243313,
+    "spd1": 19.061930092363404,
+    "bw0": 3563.8333333333335,
+    "bw1": 19.114893617021277,
+    "prefer": 0
+  },
+  {
+    "site": "assets.readthedocs.org",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 11.92541973762947,
+    "bw0": 0,
+    "bw1": 69.625,
+    "prefer": 1
+  },
+  {
+    "site": "at.alicdn.com",
+    "err0": 3,
+    "err1": 1,
+    "spd0": 37.80305894421289,
+    "spd1": 7.479232073791381,
+    "bw0": 1084.2413793103449,
+    "bw1": 25.421750663129973,
+    "prefer": 0
+  },
+  {
+    "site": "atanx.alicdn.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 50.05127896023401,
+    "spd1": null,
+    "bw0": 146.97560975609755,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "avatar.csdnimg.cn",
+    "err0": 3,
+    "err1": 1,
+    "spd0": 11.570740754614546,
+    "spd1": 6.816646056300601,
+    "bw0": 358.93939393939394,
+    "bw1": 56.28436018957346,
+    "prefer": 0
+  },
+  {
+    "site": "avatar.ithome.com",
+    "err0": 28,
+    "err1": 1,
+    "spd0": 143.17443911893196,
+    "spd1": 11.23157894736842,
+    "bw0": 2454.0542635658917,
+    "bw1": 11.23157894736842,
+    "prefer": 0
+  },
+  {
+    "site": "avatars.githubusercontent.com",
+    "err0": 37,
+    "err1": 124,
+    "spd0": 1.3165221371735472,
+    "spd1": 3.058002462717201,
+    "bw0": 145.56279961649088,
+    "bw1": 1218.1707317073171,
+    "prefer": 1
+  },
+  {
+    "site": "awcas.jd.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 9.522378671006031,
+    "spd1": null,
+    "bw0": 52.776315789473685,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "awps-assets.meituan.net",
+    "err0": null,
+    "err1": null,
+    "spd0": 116.85304833723025,
+    "spd1": null,
+    "bw0": 274.04,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "ax.ifeng.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 16.53330700299923,
+    "spd1": null,
+    "bw0": 34.846774193548384,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "b-plus.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.4571504014029777,
+    "spd1": null,
+    "bw0": 36.52884615384615,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "b.bdstatic.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 25.43591852146536,
+    "spd1": null,
+    "bw0": 808.0701754385965,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "b2b.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.8073810083980355,
+    "spd1": null,
+    "bw0": 94.07317073170732,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "back2.hellofont.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 2.5905206580397473,
+    "spd1": null,
+    "bw0": 72.84234234234235,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "back3.hellofont.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 23.99773717286254,
+    "spd1": null,
+    "bw0": 30.76875,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "baijiahao.baidu.com",
+    "err0": 3,
+    "err1": 3,
+    "spd0": 11.790569111396477,
+    "spd1": 1.59037663870621,
+    "bw0": 298.54545454545456,
+    "bw1": 24.062277580071175,
+    "prefer": 0
+  },
+  {
+    "site": "baike.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 7.085586047683389,
+    "spd1": 1.4649368329889139,
+    "bw0": 2442.8361344537816,
+    "bw1": 8.568558336270709,
+    "prefer": 0
+  },
+  {
+    "site": "baikebcs.bdimg.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 16.493829255956996,
+    "spd1": null,
+    "bw0": 1286.5071428571428,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "baozhang.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 21.32700382728216,
+    "spd1": null,
+    "bw0": 62.23684210526316,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "bat.bing.com",
+    "err0": 5,
+    "err1": 3,
+    "spd0": 8.60075471746014,
+    "spd1": 1.5440326615948672,
+    "bw0": 100.31460674157303,
+    "bw1": 25.554441260744987,
+    "prefer": 1
+  },
+  {
+    "site": "bdimg.share.baidu.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 49.81202337566382,
+    "spd1": null,
+    "bw0": 237.1103896103896,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "beacon.sina.com.cn",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 0.22162162162162163,
+    "spd1": null,
+    "bw0": 0.22162162162162163,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "beacon.tingyun.com",
+    "err0": 5,
+    "err1": 10,
+    "spd0": 3.027452773958722,
+    "spd1": 1.3667657489582785,
+    "bw0": 49.60606060606061,
+    "bw1": 16.207920792079207,
+    "prefer": 0
+  },
+  {
+    "site": "bean.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.9821428571428574,
+    "spd1": 2.6184475826277342,
+    "bw0": 1.9821428571428572,
+    "bw1": 6.356012658227848,
+    "prefer": 0
+  },
+  {
+    "site": "beap-bc.yahoo.com",
+    "err0": 5,
+    "err1": 29,
+    "spd0": 1.2301089301371322,
+    "spd1": 4.570667879544671,
+    "bw0": 13.075566750629722,
+    "bw1": 53.12244897959184,
+    "prefer": 1
+  },
+  {
+    "site": "bid.g.doubleclick.net",
+    "err0": 0,
+    "err1": 3,
+    "spd0": 25.110485847282913,
+    "spd1": 2.9717582477140603,
+    "bw0": 33.411764705882355,
+    "bw1": 52.23327615780446,
+    "prefer": 1
+  },
+  {
+    "site": "bk.r-ad.ne.jp",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 2.335840499022058,
+    "bw0": 0,
+    "bw1": 31.848958333333332,
+    "prefer": 1
+  },
+  {
+    "site": "bkssl.bdimg.com",
+    "err0": 5,
+    "err1": 6,
+    "spd0": 61.782857848126795,
+    "spd1": 7.691058251201966,
+    "bw0": 3948.689655172414,
+    "bw1": 535.2796798577145,
+    "prefer": 0
+  },
+  {
+    "site": "blackhole-m.m.jd.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 7.507208839232452,
+    "spd1": null,
+    "bw0": 61.707692307692305,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "blog-static.cnblogs.com",
+    "err0": 0,
+    "err1": 2,
+    "spd0": 423.174297445104,
+    "spd1": null,
+    "bw0": 501.24873096446703,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "blog.csdn.net",
+    "err0": 10,
+    "err1": 2,
+    "spd0": 16.3851886637187,
+    "spd1": 5.612560912778859,
+    "bw0": 84.79856115107914,
+    "bw1": 30.21301775147929,
+    "prefer": 0
+  },
+  {
+    "site": "boss.hdslb.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 29.568710915171785,
+    "spd1": null,
+    "bw0": 6557.321428571428,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "broadcast.chat.bilibili.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 15.738031311396574,
+    "spd1": 14.334058178701115,
+    "bw0": 129.33333333333334,
+    "bw1": 27.069767441860463,
+    "prefer": 0
+  },
+  {
+    "site": "bshare.optimix.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 29.751735303003255,
+    "spd1": null,
+    "bw0": 50,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "btshow.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 26.074077735697124,
+    "spd1": null,
+    "bw0": 63.06666666666667,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "bugou.jd.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 6.535206889047782,
+    "spd1": null,
+    "bw0": 59.79746835443038,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "bvc.bilivideo.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 55.37084585182938,
+    "spd1": null,
+    "bw0": 132.6875,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "bx01.optimix.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 26.947291361639827,
+    "spd1": null,
+    "bw0": 44.34939759036145,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "c.bing.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 17.202054769886775,
+    "spd1": null,
+    "bw0": 93.89333333333333,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "c.cnzz.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 11.997303985886687,
+    "spd1": null,
+    "bw0": 90.85714285714286,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "c.yes.youku.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 6.401960784313725,
+    "spd1": null,
+    "bw0": 6.401960784313726,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "c.youdao.com",
+    "err0": 9,
+    "err1": 6,
+    "spd0": 8.313792270534305,
+    "spd1": 4.29064039408867,
+    "bw0": 321.06451612903226,
+    "bw1": 4.29064039408867,
+    "prefer": 0
+  },
+  {
+    "site": "c0.ifengimg.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 5.381037227666267,
+    "spd1": null,
+    "bw0": 16.165584415584416,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "c2shb.ssp.yahoo.com",
+    "err0": 40,
+    "err1": 299,
+    "spd0": 10.602920227875293,
+    "spd1": 6.5967921589585865,
+    "bw0": 26.97142857142857,
+    "bw1": 48.98860398860399,
+    "prefer": 1
+  },
+  {
+    "site": "cache.soso.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 93.27644397944478,
+    "spd1": null,
+    "bw0": 113.67647058823529,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "camo.githubusercontent.com",
+    "err0": 8,
+    "err1": 42,
+    "spd0": 1.9380146869066903,
+    "spd1": 2.5973712842677705,
+    "bw0": 45.14098360655738,
+    "bw1": 1086.1279125059439,
+    "prefer": 1
+  },
+  {
+    "site": "cart.jd.com",
+    "err0": 0,
+    "err1": 2,
+    "spd0": 10.43969372732884,
+    "spd1": 1.1167336973484494,
+    "bw0": 68.18599033816425,
+    "bw1": 8.885619713129827,
+    "prefer": 0
+  },
+  {
+    "site": "cbjs.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 372.1756845774749,
+    "spd1": null,
+    "bw0": 692.8363636363637,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "cc.adingo.jp",
+    "err0": 4,
+    "err1": 13,
+    "spd0": 2.930192994009381,
+    "spd1": 4.3822955401733985,
+    "bw0": 30.28440366972477,
+    "bw1": 32.04854368932039,
+    "prefer": 1
+  },
+  {
+    "site": "cd.jd.com",
+    "err0": 6,
+    "err1": 5,
+    "spd0": 5.3558024287692385,
+    "spd1": 2.2037615730568123,
+    "bw0": 167.4102564102564,
+    "bw1": 29.558260869565217,
+    "prefer": 0
+  },
+  {
+    "site": "cdn-chat.sstatic.net",
+    "err0": null,
+    "err1": null,
+    "spd0": 5.067352666043031,
+    "spd1": null,
+    "bw0": 5.067352666043031,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "cdn-go.cn",
+    "err0": 3,
+    "err1": 0,
+    "spd0": 30.64288704770662,
+    "spd1": 29.17771090663915,
+    "bw0": 442.7959183673469,
+    "bw1": 37.377162629757784,
+    "prefer": 0
+  },
+  {
+    "site": "cdn-images-1.medium.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 317.4970842572896,
+    "bw0": 0,
+    "bw1": 808.5033924843424,
+    "prefer": 1
+  },
+  {
+    "site": "cdn.doubleverify.com",
+    "err0": 4,
+    "err1": 3,
+    "spd0": 1.224431363159018,
+    "spd1": 4.076513339033885,
+    "bw0": 93.33300970873786,
+    "bw1": 143.3858024691358,
+    "prefer": 1
+  },
+  {
+    "site": "cdn.sstatic.net",
+    "err0": 37,
+    "err1": 13,
+    "spd0": 14.57120664079548,
+    "spd1": 4.9380549678541215,
+    "bw0": 404.2491620111732,
+    "bw1": 575.9244264507422,
+    "prefer": 0
+  },
+  {
+    "site": "cdn.staticfile.org",
+    "err0": null,
+    "err1": null,
+    "spd0": 136.08751181635313,
+    "spd1": null,
+    "bw0": 3006.9385474860337,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "cdn.syndication.twimg.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 12.360424028268552,
+    "bw0": 0,
+    "bw1": 12.360424028268552,
+    "prefer": 1
+  },
+  {
+    "site": "cdn3.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.7290807272794393,
+    "spd1": 9.853717224482686,
+    "bw0": 6.963758389261745,
+    "bw1": 34.257425742574256,
+    "prefer": 1
+  },
+  {
+    "site": "cdn4.stackshare.io",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 66.61446492745286,
+    "bw0": 0,
+    "bw1": 340.666919000757,
+    "prefer": 1
+  },
+  {
+    "site": "cds.3.cn",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 11.860027092244772,
+    "spd1": null,
+    "bw0": 59.865671641791046,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "chat-pa.clients6.google.com",
+    "err0": 17,
+    "err1": 5,
+    "spd0": null,
+    "spd1": 3.7356178172174586,
+    "bw0": 0,
+    "bw1": 64.67105263157895,
+    "prefer": 1
+  },
+  {
+    "site": "chat.google.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 6.200638758826193,
+    "bw0": 0,
+    "bw1": 37.84659090909091,
+    "prefer": 1
+  },
+  {
+    "site": "chat1.jd.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 7.465580905546322,
+    "spd1": 1.5196850393700787,
+    "bw0": 59.0735294117647,
+    "bw1": 1.5196850393700787,
+    "prefer": 0
+  },
+  {
+    "site": "ci.apache.org",
+    "err0": 2,
+    "err1": 4,
+    "spd0": 0.9031401560706337,
+    "spd1": 1.2206373992072688,
+    "bw0": 18.268849633778544,
+    "bw1": 51.01150054764513,
+    "prefer": 1
+  },
+  {
+    "site": "ci3.googleusercontent.com",
+    "err0": 0,
+    "err1": 19,
+    "spd0": null,
+    "spd1": 9.064399230522667,
+    "bw0": 0,
+    "bw1": 641.3590888789638,
+    "prefer": 1
+  },
+  {
+    "site": "ci4.googleusercontent.com",
+    "err0": 0,
+    "err1": 13,
+    "spd0": null,
+    "spd1": 11.98784057305928,
+    "bw0": 0,
+    "bw1": 507.96758349705306,
+    "prefer": 1
+  },
+  {
+    "site": "ci5.googleusercontent.com",
+    "err0": 0,
+    "err1": 17,
+    "spd0": null,
+    "spd1": 6.154440411960675,
+    "bw0": 0,
+    "bw1": 900.228650137741,
+    "prefer": 1
+  },
+  {
+    "site": "ci6.googleusercontent.com",
+    "err0": 0,
+    "err1": 12,
+    "spd0": null,
+    "spd1": 23.961301698136758,
+    "bw0": 0,
+    "bw1": 1033.4973637961336,
+    "prefer": 1
+  },
+  {
+    "site": "ckm.aty.sohu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 10.597740102767814,
+    "spd1": null,
+    "bw0": 94.70270270270271,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "ckm.iqiyi.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 7.769294572232,
+    "spd1": null,
+    "bw0": 67,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "clc.stackoverflow.com",
+    "err0": 2,
+    "err1": 29,
+    "spd0": 3.738251681753826,
+    "spd1": 3.0805035783929027,
+    "bw0": 13.88974358974359,
+    "bw1": 66.08536585365853,
+    "prefer": 1
+  },
+  {
+    "site": "cli.vuejs.org",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 52.44638157894737,
+    "bw0": 0,
+    "bw1": 52.44638157894737,
+    "prefer": 0
+  },
+  {
+    "site": "click.simba.taobao.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 140.57575757575756,
+    "spd1": null,
+    "bw0": 149.6451612903226,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "clients1.google.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 2.558029499051215,
+    "bw0": 0,
+    "bw1": 23.964028776978417,
+    "prefer": 1
+  },
+  {
+    "site": "clients2.google.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 10.159694974514155,
+    "bw0": 0,
+    "bw1": 43.82236842105263,
+    "prefer": 1
+  },
+  {
+    "site": "clients4.google.com",
+    "err0": 4,
+    "err1": 8,
+    "spd0": null,
+    "spd1": 3.5727690143410182,
+    "bw0": 0,
+    "bw1": 46.263888888888886,
+    "prefer": 1
+  },
+  {
+    "site": "clients5.google.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 5.735142857142857,
+    "bw0": 0,
+    "bw1": 5.735142857142857,
+    "prefer": 1
+  },
+  {
+    "site": "clients6.google.com",
+    "err0": 4,
+    "err1": 3,
+    "spd0": null,
+    "spd1": 4.453744692324338,
+    "bw0": 0,
+    "bw1": 50.090225563909776,
+    "prefer": 1
+  },
+  {
+    "site": "cloud.tencent.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 68.50317477932455,
+    "spd1": null,
+    "bw0": 411.260162601626,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "cloudblogs.microsoft.com",
+    "err0": 0,
+    "err1": 1,
+    "spd0": null,
+    "spd1": 29.423423423423422,
+    "bw0": 0,
+    "bw1": 29.423423423423422,
+    "prefer": 1
+  },
+  {
+    "site": "cloudcache.tencent-cloud.com",
+    "err0": 0,
+    "err1": 17,
+    "spd0": null,
+    "spd1": 8.497189702506615,
+    "bw0": 0,
+    "bw1": 682.6147540983607,
+    "prefer": 0
+  },
+  {
+    "site": "club.jd.com",
+    "err0": 16,
+    "err1": 0,
+    "spd0": 7.083942938561013,
+    "spd1": 2.2220232646296276,
+    "bw0": 58.21739130434783,
+    "bw1": 9.75,
+    "prefer": 0
+  },
+  {
+    "site": "cm.bilibili.com",
+    "err0": 5,
+    "err1": 0,
+    "spd0": 13.141572925165185,
+    "spd1": null,
+    "bw0": 215.35,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "cm.g.doubleclick.net",
+    "err0": 51,
+    "err1": 59,
+    "spd0": 3.2037246558815524,
+    "spd1": 2.47456986001761,
+    "bw0": 60.57333333333333,
+    "bw1": 28.765822784810126,
+    "prefer": 1
+  },
+  {
+    "site": "cm.jd.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 5.049963600020155,
+    "spd1": 0.7361349558785697,
+    "bw0": 60.86363636363637,
+    "bw1": 1.125935162094763,
+    "prefer": 0
+  },
+  {
+    "site": "cmt.ithome.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 21.902283103789042,
+    "spd1": null,
+    "bw0": 244.28,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "code.jquery.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 22.405917046388314,
+    "spd1": null,
+    "bw0": 162.47646383467278,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "collect.hupu.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 1.2847250562172154,
+    "spd1": null,
+    "bw0": 52.08163265306123,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "comment.ifeng.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 8.444664031620553,
+    "spd1": null,
+    "bw0": 8.444664031620553,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "common.cnblogs.com",
+    "err0": 0,
+    "err1": 3,
+    "spd0": 4.093329706450717,
+    "spd1": 2.1170068177283294,
+    "bw0": 957.41,
+    "bw1": 93.92328042328042,
+    "prefer": 0
+  },
+  {
+    "site": "commons.apache.org",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 10.18404934759445,
+    "bw0": 0,
+    "bw1": 57.98740818467996,
+    "prefer": 1
+  },
+  {
+    "site": "completion.amazon.com",
+    "err0": 0,
+    "err1": 1,
+    "spd0": null,
+    "spd1": 1.4983145636157014,
+    "bw0": 0,
+    "bw1": 2.2268156424581007,
+    "prefer": 1
+  },
+  {
+    "site": "connect.facebook.net",
+    "err0": 10,
+    "err1": 9,
+    "spd0": null,
+    "spd1": 2.724890675312514,
+    "bw0": 0,
+    "bw1": 442.8363095238095,
+    "prefer": 1
+  },
+  {
+    "site": "contacts.google.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 31.64287007846301,
+    "bw0": 0,
+    "bw1": 324.484237074401,
+    "prefer": 1
+  },
+  {
+    "site": "count.cnblogs.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 8.425520272965539,
+    "spd1": null,
+    "bw0": 104.65517241379311,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "count.taobao.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 4.738940927448482,
+    "spd1": null,
+    "bw0": 118.74074074074075,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "cover.kancloud.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 20.267961165048543,
+    "spd1": null,
+    "bw0": 20.267961165048543,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "cpro.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 36.39763744783853,
+    "spd1": null,
+    "bw0": 100.0952380952381,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "cr-p3.ladsp.jp",
+    "err0": null,
+    "err1": null,
+    "spd0": 4.125561012830801,
+    "spd1": null,
+    "bw0": 7.57784911717496,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "cread.jd.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 4.522861973893112,
+    "spd1": 0.57563491843637,
+    "bw0": 60.77272727272727,
+    "bw1": 0.9394261424017003,
+    "prefer": 0
+  },
+  {
+    "site": "cs.adingo.jp",
+    "err0": 0,
+    "err1": 1,
+    "spd0": 3.217977690717567,
+    "spd1": 6.615230460921843,
+    "bw0": 17.747311827956988,
+    "bw1": 11.705673758865249,
+    "prefer": 1
+  },
+  {
+    "site": "cs.gssprt.jp",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.5236434108527133,
+    "spd1": null,
+    "bw0": 1.5236434108527133,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "cscssl.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 187.91549325516863,
+    "spd1": null,
+    "bw0": 409.6595744680851,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "csdnimg.cn",
+    "err0": 3,
+    "err1": 3,
+    "spd0": 50.99609011261273,
+    "spd1": 2.966792074895176,
+    "bw0": 2599.503448275862,
+    "bw1": 246.33949856144676,
+    "prefer": 0
+  },
+  {
+    "site": "cse.google.com",
+    "err0": 4,
+    "err1": 2,
+    "spd0": null,
+    "spd1": 6.069959272841803,
+    "bw0": 0,
+    "bw1": 197.69642857142858,
+    "prefer": 1
+  },
+  {
+    "site": "csi.gstatic.com",
+    "err0": 15,
+    "err1": 11,
+    "spd0": 0.9252731088129326,
+    "spd1": 1.894037061534868,
+    "bw0": 33.9765625,
+    "bw1": 16.418867924528303,
+    "prefer": 1
+  },
+  {
+    "site": "cstm.baidu.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 2.9908733563833154,
+    "spd1": 0.9803615107432585,
+    "bw0": 160.08333333333334,
+    "bw1": 12.88923076923077,
+    "prefer": 0
+  },
+  {
+    "site": "ct.epro.sogou.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 21.189855072463768,
+    "spd1": null,
+    "bw0": 21.189855072463768,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "d.ifengimg.com",
+    "err0": 3,
+    "err1": 0,
+    "spd0": 60.64782043817398,
+    "spd1": null,
+    "bw0": 734.739393939394,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "d16xvuom8mr9m8.cloudfront.net",
+    "err0": 1,
+    "err1": 4,
+    "spd0": 6.495738842414407,
+    "spd1": 16.685516021512395,
+    "bw0": 310.82983425414363,
+    "bw1": 687.8169533169533,
+    "prefer": 1
+  },
+  {
+    "site": "d1dwq032kyr03c.cloudfront.net",
+    "err0": 4,
+    "err1": 0,
+    "spd0": 10.837003535301502,
+    "spd1": null,
+    "bw0": 324.02533276084154,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "d1fto35gcfffzn.cloudfront.net",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 23.347529966657646,
+    "bw0": 0,
+    "bw1": 29.908935685828116,
+    "prefer": 1
+  },
+  {
+    "site": "d1lxz4vuik53pc.cloudfront.net",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 8.270588235294118,
+    "bw0": 0,
+    "bw1": 8.270588235294118,
+    "prefer": 1
+  },
+  {
+    "site": "d1oykxszdrgjgl.cloudfront.net",
+    "err0": 0,
+    "err1": 1,
+    "spd0": 14.440371170941841,
+    "spd1": 37.62330527328872,
+    "bw0": 48.61248654467169,
+    "bw1": 272.640243902439,
+    "prefer": 1
+  },
+  {
+    "site": "d2441bdvuxbh7t.cloudfront.net",
+    "err0": 0,
+    "err1": 2,
+    "spd0": 29.40521978021978,
+    "spd1": 11.412100109861617,
+    "bw0": 29.40521978021978,
+    "bw1": 69.88235294117646,
+    "prefer": 1
+  },
+  {
+    "site": "d2849lw36e7cot.cloudfront.net",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 26.2279792746114,
+    "bw0": 0,
+    "bw1": 26.2279792746114,
+    "prefer": 1
+  },
+  {
+    "site": "d2908q01vomqb2.cloudfront.net",
+    "err0": 0,
+    "err1": 1,
+    "spd0": null,
+    "spd1": 12.130238008676518,
+    "bw0": 0,
+    "bw1": 66.47084233261339,
+    "prefer": 1
+  },
+  {
+    "site": "d2zv5rkii46miq.cloudfront.net",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.8892561983471075,
+    "spd1": null,
+    "bw0": 1.8892561983471075,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "d39kqat1wpn1o5.cloudfront.net",
+    "err0": 0,
+    "err1": 1,
+    "spd0": null,
+    "spd1": 47.143423437506016,
+    "bw0": 0,
+    "bw1": 64.23723536737235,
+    "prefer": 1
+  },
+  {
+    "site": "d3hb14vkzrxvla.cloudfront.net",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 12.785297297375541,
+    "spd1": null,
+    "bw0": 34.31578947368421,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "d3i71xaburhd42.cloudfront.net",
+    "err0": null,
+    "err1": null,
+    "spd0": 5.643290842719108,
+    "spd1": null,
+    "bw0": 15.080645161290322,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "d3lopmpcew67el.cloudfront.net",
+    "err0": 0,
+    "err1": 4,
+    "spd0": 107.22954091816368,
+    "spd1": 529.3319832395894,
+    "bw0": 107.22954091816368,
+    "bw1": 896.0946196660483,
+    "prefer": 1
+  },
+  {
+    "site": "data.bilibili.com",
+    "err0": 16,
+    "err1": 8,
+    "spd0": 19.0221599500606,
+    "spd1": 7.116573322202987,
+    "bw0": 187.2608695652174,
+    "bw1": 30.54609929078014,
+    "prefer": 0
+  },
+  {
+    "site": "data.services.jetbrains.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 3.8635700976541396,
+    "spd1": null,
+    "bw0": 10.792,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "datasystemsgrouput.github.io",
+    "err0": null,
+    "err1": null,
+    "spd0": 13.772035839755723,
+    "spd1": null,
+    "bw0": 89.71176470588236,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "dc.3.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 161.64734947762193,
+    "spd1": null,
+    "bw0": 1090.7777777777778,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "dd-search.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 11.365675226097416,
+    "spd1": null,
+    "bw0": 54.945205479452056,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "demo.dataease.io",
+    "err0": 3,
+    "err1": 3,
+    "spd0": 12.758102649838278,
+    "spd1": 24.73012106524518,
+    "bw0": 932.2496803069054,
+    "bw1": 29.875706214689266,
+    "prefer": 0
+  },
+  {
+    "site": "descnew.taobao.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 20.047032354204777,
+    "spd1": null,
+    "bw0": 122.41891891891892,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "detailskip.taobao.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 12.987270887593079,
+    "spd1": null,
+    "bw0": 27.768115942028984,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "dggaenaawxe8z.cloudfront.net",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 23.990402253868712,
+    "bw0": 0,
+    "bw1": 34.31578947368421,
+    "prefer": 1
+  },
+  {
+    "site": "dict.youdao.com",
+    "err0": 31,
+    "err1": 5,
+    "spd0": 19.789975920818296,
+    "spd1": 4.360310549548228,
+    "bw0": 132.2929292929293,
+    "bw1": 31.286919831223628,
+    "prefer": 0
+  },
+  {
+    "site": "discuz.gtimg.cn",
+    "err0": 6,
+    "err1": 8,
+    "spd0": null,
+    "spd1": null,
+    "bw0": null,
+    "bw1": null,
+    "prefer": 0
+  },
+  {
+    "site": "disqus.com",
+    "err0": 4,
+    "err1": 0,
+    "spd0": null,
+    "spd1": 33.29824561403508,
+    "bw0": 0,
+    "bw1": 40.38297872340426,
+    "prefer": 1
+  },
+  {
+    "site": "diviner.jd.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 14.018226956369357,
+    "spd1": null,
+    "bw0": 78.4319248826291,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "division-data.alicdn.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 369.43994838200723,
+    "spd1": null,
+    "bw0": 732.968253968254,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "dlswbr.baidu.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 32.296031491485294,
+    "spd1": 8.460558605276807,
+    "bw0": 822.078947368421,
+    "bw1": 95.30243161094225,
+    "prefer": 0
+  },
+  {
+    "site": "docs.ansible.com",
+    "err0": 0,
+    "err1": 1,
+    "spd0": 0.8069051656741574,
+    "spd1": 5.766326694859451,
+    "bw0": 283.8317272053373,
+    "bw1": 7.846774193548387,
+    "prefer": 1
+  },
+  {
+    "site": "docs.microsoft.com",
+    "err0": 0,
+    "err1": 1,
+    "spd0": null,
+    "spd1": 25.663798401966808,
+    "bw0": 0,
+    "bw1": 35.7185628742515,
+    "prefer": 1
+  },
+  {
+    "site": "docs.oracle.com",
+    "err0": 1,
+    "err1": 9,
+    "spd0": 8.945183473794529,
+    "spd1": 25.148674050290413,
+    "bw0": 133.0235294117647,
+    "bw1": 200.71101113967438,
+    "prefer": 1
+  },
+  {
+    "site": "docs.python-requests.org",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 27.063758389261746,
+    "bw0": 0,
+    "bw1": 27.063758389261746,
+    "prefer": 1
+  },
+  {
+    "site": "docs.sentry.io",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 1.291389904293361,
+    "bw0": 0,
+    "bw1": 418.87702037948,
+    "prefer": 1
+  },
+  {
+    "site": "docs.spring.io",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 9.585811853907122,
+    "bw0": 0,
+    "bw1": 889.5535777856888,
+    "prefer": 1
+  },
+  {
+    "site": "doschzharf1i9.cloudfront.net",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 5.597285067873303,
+    "bw0": 0,
+    "bw1": 5.597285067873303,
+    "prefer": 1
+  },
+  {
+    "site": "dpjgrnd6i7dk0.cloudfront.net",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 35.95462609036697,
+    "bw0": 0,
+    "bw1": 61.91304347826087,
+    "prefer": 1
+  },
+  {
+    "site": "ds.uncn.jp",
+    "err0": null,
+    "err1": null,
+    "spd0": 6.280598920993078,
+    "spd1": null,
+    "bw0": 18.085910652920962,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "dsp-impr2.youdao.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 15.667753159964073,
+    "spd1": null,
+    "bw0": 47.78082191780822,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "dsp.djc888.cn",
+    "err0": 0,
+    "err1": 2,
+    "spd0": null,
+    "spd1": null,
+    "bw0": null,
+    "bw1": null,
+    "prefer": 0
+  },
+  {
+    "site": "dss0.bdstatic.com",
+    "err0": 12,
+    "err1": 2,
+    "spd0": 102.77777853974726,
+    "spd1": 9.191768588099546,
+    "bw0": 1034.531914893617,
+    "bw1": 64.13302752293578,
+    "prefer": 0
+  },
+  {
+    "site": "dss1.bdstatic.com",
+    "err0": 0,
+    "err1": 12,
+    "spd0": null,
+    "spd1": 3.4285502986899483,
+    "bw0": 0,
+    "bw1": 132.2,
+    "prefer": 0
+  },
+  {
+    "site": "dss2.bdstatic.com",
+    "err0": 30,
+    "err1": 10,
+    "spd0": 26.512094638125642,
+    "spd1": 1.6304131181438895,
+    "bw0": 2394.5149253731342,
+    "bw1": 243.24354838709678,
+    "prefer": 0
+  },
+  {
+    "site": "dsuggest.ydstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 11.119593915802627,
+    "spd1": null,
+    "bw0": 57.08474576271186,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "dsum-sec.casalemedia.com",
+    "err0": 3,
+    "err1": 9,
+    "spd0": 1.023706505621354,
+    "spd1": 1.2093047069388312,
+    "bw0": 13.118210862619808,
+    "bw1": 38.35964912280702,
+    "prefer": 1
+  },
+  {
+    "site": "dsum.casalemedia.com",
+    "err0": 0,
+    "err1": 2,
+    "spd0": null,
+    "spd1": 6.287805788670215,
+    "bw0": 0,
+    "bw1": 44.17171717171717,
+    "prefer": 1
+  },
+  {
+    "site": "duckduckgo.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 18.43454042930134,
+    "bw0": 0,
+    "bw1": 402.4216589861751,
+    "prefer": 1
+  },
+  {
+    "site": "dup.baidustatic.com",
+    "err0": 7,
+    "err1": 2,
+    "spd0": 37.54722122219545,
+    "spd1": 0.15211179716160955,
+    "bw0": 4051.7951807228915,
+    "bw1": 77.84375,
+    "prefer": 0
+  },
+  {
+    "site": "dyn.ithome.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 18.612488470839736,
+    "spd1": null,
+    "bw0": 193.88235294117646,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "e-goblin.hupu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 22.056025920178694,
+    "spd1": null,
+    "bw0": 186.63636363636363,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "e.so.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 56.97500000000001,
+    "spd1": null,
+    "bw0": 162.78571428571428,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "eclick.baidu.com",
+    "err0": 5,
+    "err1": 11,
+    "spd0": 2.440933383597695,
+    "spd1": 0.9490007331548043,
+    "bw0": 65.6875,
+    "bw1": 17.8135593220339,
+    "prefer": 0
+  },
+  {
+    "site": "ecma.bdimg.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 30.9255840350437,
+    "spd1": null,
+    "bw0": 393.1666666666667,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "encrypted-tbn0.gstatic.com",
+    "err0": 54,
+    "err1": 103,
+    "spd0": null,
+    "spd1": 4.650688905512127,
+    "bw0": 0,
+    "bw1": 256.4065040650407,
+    "prefer": 1
+  },
+  {
+    "site": "encrypted-tbn2.gstatic.com",
+    "err0": 26,
+    "err1": 23,
+    "spd0": null,
+    "spd1": 3.08427640154302,
+    "bw0": 0,
+    "bw1": 24.99425287356322,
+    "prefer": 1
+  },
+  {
+    "site": "encrypted-vtbn0.gstatic.com",
+    "err0": 4,
+    "err1": 6,
+    "spd0": null,
+    "spd1": 5.1878060578009535,
+    "bw0": 0,
+    "bw1": 384.96928746928745,
+    "prefer": 1
+  },
+  {
+    "site": "engagement.feedly.com",
+    "err0": 12,
+    "err1": 1,
+    "spd0": null,
+    "spd1": 4.103093429965656,
+    "bw0": 0,
+    "bw1": 30.47,
+    "prefer": 1
+  },
+  {
+    "site": "engineering.fb.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 0.5059098584231718,
+    "bw0": 0,
+    "bw1": 0.5059098584231718,
+    "prefer": 1
+  },
+  {
+    "site": "err.ifengcloud.ifeng.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 14.12091503267974,
+    "spd1": null,
+    "bw0": 54.69620253164557,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "event.csdn.net",
+    "err0": 2,
+    "err1": 1,
+    "spd0": 14.454024151699883,
+    "spd1": 3.902916202235304,
+    "bw0": 52.5625,
+    "bw1": 10.319018404907975,
+    "prefer": 0
+  },
+  {
+    "site": "ext.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 51.82237008475801,
+    "spd1": null,
+    "bw0": 150.81720430107526,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "external-content.duckduckgo.com",
+    "err0": 0,
+    "err1": 5,
+    "spd0": null,
+    "spd1": 14.580079078519312,
+    "bw0": 0,
+    "bw1": 102.31102362204724,
+    "prefer": 1
+  },
+  {
+    "site": "f-mall.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 18.076796071365827,
+    "spd1": null,
+    "bw0": 43.12903225806452,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "f7.baidu.com",
+    "err0": 16,
+    "err1": 0,
+    "spd0": 11.368538908263899,
+    "spd1": null,
+    "bw0": 1824.9421338155516,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "fc1tn.baidu.com",
+    "err0": 6,
+    "err1": 7,
+    "spd0": 22.40373483869308,
+    "spd1": 7.184095318509453,
+    "bw0": 983.3870967741935,
+    "bw1": 274.09100310237847,
+    "prefer": 0
+  },
+  {
+    "site": "fc2tn.baidu.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 52.970638296564076,
+    "spd1": null,
+    "bw0": 289.06636155606407,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "fc3tn.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 16.977482293406645,
+    "spd1": null,
+    "bw0": 226.67605633802816,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "fc4tn.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 31.03080976643653,
+    "spd1": null,
+    "bw0": 50.3235294117647,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "fclick.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 2.672879049266704,
+    "spd1": 1.9637518684603887,
+    "bw0": 110.2,
+    "bw1": 15.686567164179104,
+    "prefer": 0
+  },
+  {
+    "site": "fd.3.cn",
+    "err0": 8,
+    "err1": 3,
+    "spd0": 3.2254910666985164,
+    "spd1": 2.132764360446587,
+    "bw0": 56.49295774647887,
+    "bw1": 16.304878048780488,
+    "prefer": 0
+  },
+  {
+    "site": "feedly.com",
+    "err0": 18,
+    "err1": 112,
+    "spd0": null,
+    "spd1": 4.940819926879249,
+    "bw0": 0,
+    "bw1": 59.178494623655915,
+    "prefer": 1
+  },
+  {
+    "site": "fex.bdstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 58.14098184799458,
+    "spd1": null,
+    "bw0": 157.47916666666666,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "files.cnblogs.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.9409582737742734,
+    "spd1": null,
+    "bw0": 137.95454545454547,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "firebase.googleapis.com",
+    "err0": 0,
+    "err1": 2,
+    "spd0": null,
+    "spd1": 1.2341445427728615,
+    "bw0": 0,
+    "bw1": 1.2341445427728615,
+    "prefer": 1
+  },
+  {
+    "site": "firebaseinstallations.googleapis.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 1.4398003742981909,
+    "bw0": 0,
+    "bw1": 1.4398003742981909,
+    "prefer": 1
+  },
+  {
+    "site": "firestore.googleapis.com",
+    "err0": 0,
+    "err1": 2,
+    "spd0": null,
+    "spd1": 3.7270955165692006,
+    "bw0": 0,
+    "bw1": 3.7270955165692006,
+    "prefer": 1
+  },
+  {
+    "site": "flink.apache.org",
+    "err0": null,
+    "err1": null,
+    "spd0": 122.30499866345897,
+    "spd1": null,
+    "bw0": 122.30499866345897,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "floor.jd.com",
+    "err0": 48,
+    "err1": 0,
+    "spd0": 13.230418819919997,
+    "spd1": null,
+    "bw0": 96.08806818181819,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "fls-na.amazon.com",
+    "err0": 4,
+    "err1": 2,
+    "spd0": 1.4103134938571842,
+    "spd1": null,
+    "bw0": 11.42436974789916,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "flv.bn.netease.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 4868.2835820895525,
+    "spd1": null,
+    "bw0": 4868.2835820895525,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "fontlibrary.org",
+    "err0": 1,
+    "err1": 49,
+    "spd0": 5.439075919378843,
+    "spd1": 8.424702470223023,
+    "bw0": 242.9680777238029,
+    "bw1": 1031.7045951859957,
+    "prefer": 1
+  },
+  {
+    "site": "fonts.googleapis.com",
+    "err0": 17,
+    "err1": 37,
+    "spd0": 6.57088674295579,
+    "spd1": 4.114240906272493,
+    "bw0": 61.76315789473684,
+    "bw1": 37.23015873015873,
+    "prefer": 1
+  },
+  {
+    "site": "fonts.gstatic.com",
+    "err0": 14,
+    "err1": 74,
+    "spd0": 3.181434955987059,
+    "spd1": 2.0343359360746995,
+    "bw0": 457.7832167832168,
+    "bw1": 205.06209850107066,
+    "prefer": 1
+  },
+  {
+    "site": "foundation.youdao.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 16.03398784771704,
+    "spd1": null,
+    "bw0": 49.82857142857143,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "fourier.taobao.com",
+    "err0": 1,
+    "err1": 2,
+    "spd0": 57.97522650829624,
+    "spd1": 1.0745287784391868,
+    "bw0": 110.55172413793103,
+    "bw1": 23.866004962779158,
+    "prefer": 0
+  },
+  {
+    "site": "fts.jd.com",
+    "err0": 15,
+    "err1": 9,
+    "spd0": 3.0372090796125852,
+    "spd1": 1.455294769516244,
+    "bw0": 52.776315789473685,
+    "bw1": 13.281456953642385,
+    "prefer": 0
+  },
+  {
+    "site": "fundingchoicesmessages.google.com",
+    "err0": 4,
+    "err1": 2,
+    "spd0": null,
+    "spd1": 3.5644057011325514,
+    "bw0": 0,
+    "bw1": 73.14864864864865,
+    "prefer": 1
+  },
+  {
+    "site": "g-search1.alicdn.com",
+    "err0": 8,
+    "err1": 3,
+    "spd0": 50.643124328124124,
+    "spd1": 5.008705324670643,
+    "bw0": 2754.2938388625594,
+    "bw1": 249.39241706161138,
+    "prefer": 0
+  },
+  {
+    "site": "g-search2.alicdn.com",
+    "err0": 7,
+    "err1": 11,
+    "spd0": 51.16981034023551,
+    "spd1": 7.083042806985643,
+    "bw0": 953.2014925373135,
+    "bw1": 195.7177177177177,
+    "prefer": 0
+  },
+  {
+    "site": "g-search3.alicdn.com",
+    "err0": 9,
+    "err1": 14,
+    "spd0": 88.82145580975687,
+    "spd1": 4.169325897037583,
+    "bw0": 1819.2645161290322,
+    "bw1": 503.3905013192612,
+    "prefer": 0
+  },
+  {
+    "site": "g.alicdn.com",
+    "err0": 20,
+    "err1": 3,
+    "spd0": 27.259768483564024,
+    "spd1": 5.575531365561305,
+    "bw0": 1846.484,
+    "bw1": 146.59156976744185,
+    "prefer": 0
+  },
+  {
+    "site": "g.csdnimg.cn",
+    "err0": 29,
+    "err1": 12,
+    "spd0": 1.9476305656362167,
+    "spd1": 1.1179566998906378,
+    "bw0": 2490.5252525252527,
+    "bw1": 259.0325630252101,
+    "prefer": 0
+  },
+  {
+    "site": "game.gtimg.cn",
+    "err0": 1,
+    "err1": 5,
+    "spd0": 11.342407980457162,
+    "spd1": 2.397253299425765,
+    "bw0": 2604.277648878577,
+    "bw1": 817.2711575875486,
+    "prefer": 0
+  },
+  {
+    "site": "games.sina.com.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 11.294444444444444,
+    "spd1": null,
+    "bw0": 11.294444444444444,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "gcodex.alicdn.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 15.374066143839416,
+    "spd1": null,
+    "bw0": 64.75,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "gd1.alicdn.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 64.4460643560181,
+    "spd1": null,
+    "bw0": 743.1510416666666,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "gd2.alicdn.com",
+    "err0": 1,
+    "err1": 2,
+    "spd0": 69.85814957999479,
+    "spd1": 6.721580412439966,
+    "bw0": 546.4571428571429,
+    "bw1": 124.42947368421052,
+    "prefer": 0
+  },
+  {
+    "site": "gd3.alicdn.com",
+    "err0": 6,
+    "err1": 0,
+    "spd0": 50.42259279516288,
+    "spd1": 179.31029272898962,
+    "bw0": 1032.8628975265017,
+    "bw1": 179.31029272898962,
+    "prefer": 0
+  },
+  {
+    "site": "gd4.alicdn.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 220.3182521191418,
+    "spd1": null,
+    "bw0": 1294.8263157894737,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "gdp.alicdn.com",
+    "err0": 2,
+    "err1": 3,
+    "spd0": 42.28982571429165,
+    "spd1": 4.744567006707568,
+    "bw0": 2640.3228346456694,
+    "bw1": 242.2227772227772,
+    "prefer": 0
+  },
+  {
+    "site": "getsentry.github.io",
+    "err0": null,
+    "err1": null,
+    "spd0": 26.949395395063775,
+    "spd1": null,
+    "bw0": 26.949395395063775,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "gia.jd.com",
+    "err0": 8,
+    "err1": 0,
+    "spd0": 25.499589979053663,
+    "spd1": null,
+    "bw0": 76.29032258064517,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "gias.jd.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 36.061111916638296,
+    "spd1": null,
+    "bw0": 695.1904761904761,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "gimg2.baidu.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 0.9224133442880693,
+    "spd1": 1145.539176626826,
+    "bw0": 1112.4274028629857,
+    "bw1": 1145.539176626826,
+    "prefer": 0
+  },
+  {
+    "site": "gimg3.baidu.com",
+    "err0": 6,
+    "err1": 0,
+    "spd0": 55.71180164112434,
+    "spd1": null,
+    "bw0": 174.9296875,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "gimg4.baidu.com",
+    "err0": 7,
+    "err1": 0,
+    "spd0": 154.37504911091108,
+    "spd1": null,
+    "bw0": 1047.0113636363637,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "gist.github.com",
+    "err0": 16,
+    "err1": 15,
+    "spd0": null,
+    "spd1": 1.1227215555795416,
+    "bw0": 0,
+    "bw1": 25.891600118308194,
+    "prefer": 1
+  },
+  {
+    "site": "gitee.com",
+    "err0": 0,
+    "err1": 2,
+    "spd0": 8.415857353430162,
+    "spd1": 5.469343018473849,
+    "bw0": 77.20370370370371,
+    "bw1": 43.06590909090909,
+    "prefer": 0
+  },
+  {
+    "site": "github.com",
+    "err0": 77,
+    "err1": 102,
+    "spd0": 12.861588982058624,
+    "spd1": 8.891524424112612,
+    "bw0": 100.99864620938628,
+    "bw1": 180.65650969529085,
+    "prefer": 1
+  },
+  {
+    "site": "github.githubassets.com",
+    "err0": 12,
+    "err1": 39,
+    "spd0": 1.2426085056514797,
+    "spd1": 3.0207413187198107,
+    "bw0": 175.78708133971293,
+    "bw1": 418.62480857580397,
+    "prefer": 1
+  },
+  {
+    "site": "gitlab.com",
+    "err0": 1,
+    "err1": 2,
+    "spd0": 0.7204198244395682,
+    "spd1": null,
+    "bw0": 117.1926305015353,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "goblin.hupu.com",
+    "err0": 3,
+    "err1": 0,
+    "spd0": 11.184305420002486,
+    "spd1": null,
+    "bw0": 87.88235294117646,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "googleads.g.doubleclick.net",
+    "err0": 166,
+    "err1": 84,
+    "spd0": 10.202065832595567,
+    "spd1": 5.014600210899497,
+    "bw0": 693.3624454148471,
+    "bw1": 160.95046439628484,
+    "prefer": 1
+  },
+  {
+    "site": "googleads4.g.doubleclick.net",
+    "err0": 71,
+    "err1": 36,
+    "spd0": 5.247081033755647,
+    "spd1": 3.1927922064145435,
+    "bw0": 62.653333333333336,
+    "bw1": 25.835164835164836,
+    "prefer": 1
+  },
+  {
+    "site": "gorgon.youdao.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 14.87850113323286,
+    "spd1": null,
+    "bw0": 97.34883720930233,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "gqrcode.alicdn.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 36.755393382193965,
+    "spd1": null,
+    "bw0": 96.76923076923077,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "graph.facebook.com",
+    "err0": 8,
+    "err1": 8,
+    "spd0": null,
+    "spd1": 2.2734556574772604,
+    "bw0": 0,
+    "bw1": 31.893333333333334,
+    "prefer": 1
+  },
+  {
+    "site": "graphql.stackshare.io",
+    "err0": 13,
+    "err1": 6,
+    "spd0": 12.13430420711974,
+    "spd1": 14.521764032073307,
+    "bw0": 12.13430420711974,
+    "bw1": 28.97714285714286,
+    "prefer": 1
+  },
+  {
+    "site": "gsp0.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 8.04861089128308,
+    "spd1": null,
+    "bw0": 161.58125,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "gss0.baidu.com",
+    "err0": 4,
+    "err1": 0,
+    "spd0": 43.452740078250905,
+    "spd1": null,
+    "bw0": 139.53333333333333,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "gss0.bdstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 48.27070575269305,
+    "spd1": null,
+    "bw0": 311.9672131147541,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "gss3.bdstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 115.38398010350961,
+    "spd1": null,
+    "bw0": 305.2641509433962,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "gt1.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 37.27906236083944,
+    "spd1": null,
+    "bw0": 47.235955056179776,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "gt2.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 39.412499999999994,
+    "spd1": null,
+    "bw0": 48.32183908045977,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "gtd.alicdn.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 109.74281293068013,
+    "spd1": null,
+    "bw0": 116.41666666666667,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "gtms01.alicdn.com",
+    "err0": 9,
+    "err1": 0,
+    "spd0": 35.77778061281428,
+    "spd1": 5.648951924039853,
+    "bw0": 481.989010989011,
+    "bw1": 13.960464272760246,
+    "prefer": 0
+  },
+  {
+    "site": "gtms02.alicdn.com",
+    "err0": 3,
+    "err1": 0,
+    "spd0": 36.835968484086784,
+    "spd1": null,
+    "bw0": 278.7163120567376,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "gtms03.alicdn.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 121.67278422101694,
+    "spd1": null,
+    "bw0": 1706.2083333333333,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "gw.alicdn.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 43.185972137864965,
+    "spd1": null,
+    "bw0": 2950.6310160427806,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "h5.360buyimg.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 117.05329164363913,
+    "spd1": null,
+    "bw0": 895.3684210526316,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "h5api.m.taobao.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 19.130131867609645,
+    "spd1": null,
+    "bw0": 237.225,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "h5static.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 132.26025144118404,
+    "spd1": null,
+    "bw0": 188.39622641509433,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "hangouts.google.com",
+    "err0": 4,
+    "err1": 8,
+    "spd0": null,
+    "spd1": 7.981105443381022,
+    "bw0": 0,
+    "bw1": 840.4956195244055,
+    "prefer": 1
+  },
+  {
+    "site": "haoma.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 3.15126362757413,
+    "bw0": 0,
+    "bw1": 13.819672131147541,
+    "prefer": 0
+  },
+  {
+    "site": "haveaniceday.gitee.com",
+    "err0": 0,
+    "err1": 1,
+    "spd0": null,
+    "spd1": 11.375966268446941,
+    "bw0": 0,
+    "bw1": 14.66304347826087,
+    "prefer": 0
+  },
+  {
+    "site": "hdc1new.taobao.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 76.5690407991282,
+    "spd1": null,
+    "bw0": 129.88732394366198,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "hectorstatic.baidu.com",
+    "err0": 3,
+    "err1": 3,
+    "spd0": 6.458381352712322,
+    "spd1": 3.1188628552856916,
+    "bw0": 553.9298245614035,
+    "bw1": 62.56656346749226,
+    "prefer": 0
+  },
+  {
+    "site": "hermes.hupu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 14.670741087748072,
+    "spd1": null,
+    "bw0": 16.02409638554217,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "himg.bdimg.com",
+    "err0": 36,
+    "err1": 19,
+    "spd0": 81.00748954108026,
+    "spd1": 5.736597338595299,
+    "bw0": 3699.1011235955057,
+    "bw1": 444.98539176626826,
+    "prefer": 0
+  },
+  {
+    "site": "hiswd.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 12.68938716184713,
+    "spd1": null,
+    "bw0": 48.397590361445786,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "hm.baidu.com",
+    "err0": 5,
+    "err1": 0,
+    "spd0": 2.182718789921497,
+    "spd1": 0.5263157894736842,
+    "bw0": 152.29677419354837,
+    "bw1": 0.5263157894736842,
+    "prefer": 0
+  },
+  {
+    "site": "hmcdn.baidu.com",
+    "err0": 2,
+    "err1": 2,
+    "spd0": 49.20961501131167,
+    "spd1": 2.3932346723044398,
+    "bw0": 309.74418604651163,
+    "bw1": 2.3932346723044398,
+    "prefer": 0
+  },
+  {
+    "site": "hpd.baidu.com",
+    "err0": 3,
+    "err1": 0,
+    "spd0": 3.8727014225987664,
+    "spd1": 1.289536067149376,
+    "bw0": 107.7948717948718,
+    "bw1": 17.589958158995817,
+    "prefer": 0
+  },
+  {
+    "site": "htlb.casalemedia.com",
+    "err0": 6,
+    "err1": 125,
+    "spd0": 0.35119911347234517,
+    "spd1": 1.0211355271921645,
+    "bw0": 6.547226386806597,
+    "bw1": 91.28235294117647,
+    "prefer": 1
+  },
+  {
+    "site": "hzs10.cnzz.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 7.830616873102157,
+    "spd1": null,
+    "bw0": 37.31395348837209,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "hzvs1.cnzz.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 3.9896815612037466,
+    "spd1": null,
+    "bw0": 72.93181818181819,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "i.go.sohu.com",
+    "err0": 18,
+    "err1": 0,
+    "spd0": 1.9902891458468668,
+    "spd1": null,
+    "bw0": 18.465437788018434,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "i.sso.sina.com.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 17.74808681851172,
+    "spd1": null,
+    "bw0": 598.1836734693877,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "i.stack.imgur.com",
+    "err0": 488,
+    "err1": 102,
+    "spd0": 5.6625185789642405,
+    "spd1": 2.2593488733384297,
+    "bw0": 6.751381215469613,
+    "bw1": 532.8231497418244,
+    "prefer": 1
+  },
+  {
+    "site": "i0.hdslb.com",
+    "err0": 12,
+    "err1": 21,
+    "spd0": 3.031204754648846,
+    "spd1": 1.1019859785227193,
+    "bw0": 7775.330578512397,
+    "bw1": 1160.1141516810007,
+    "prefer": 0
+  },
+  {
+    "site": "i0.sinaimg.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 3.6170103259439794,
+    "spd1": null,
+    "bw0": 31.313953488372093,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "i1.hdslb.com",
+    "err0": 16,
+    "err1": 3,
+    "spd0": 14.961297800814533,
+    "spd1": 1.6284637669447142,
+    "bw0": 7397.735177865613,
+    "bw1": 62.608015640273706,
+    "prefer": 0
+  },
+  {
+    "site": "i1.hoopchina.com.cn",
+    "err0": 3,
+    "err1": 0,
+    "spd0": 6.85734011438641,
+    "spd1": null,
+    "bw0": 221.17073170731706,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "i1.sinaimg.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 6.356869104362164,
+    "spd1": null,
+    "bw0": 20.366412213740457,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "i11.hoopchina.com.cn",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 12.328341299902243,
+    "spd1": null,
+    "bw0": 665.3910256410256,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "i2.hdslb.com",
+    "err0": 5,
+    "err1": 0,
+    "spd0": 32.11851562550146,
+    "spd1": null,
+    "bw0": 5012.271739130435,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "i2.hoopchina.com.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 11.419711560537946,
+    "spd1": null,
+    "bw0": 124.50549450549451,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "i2.sinaimg.cn",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 2.701427734041811,
+    "spd1": null,
+    "bw0": 133.72727272727272,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "i3.sinaimg.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.8899298328256404,
+    "spd1": null,
+    "bw0": 24.023529411764706,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "iclick.cm.admaster.com.cn",
+    "err0": 0,
+    "err1": 2,
+    "spd0": null,
+    "spd1": null,
+    "bw0": null,
+    "bw1": null,
+    "prefer": 0
+  },
+  {
+    "site": "id.google.com",
+    "err0": 7,
+    "err1": 4,
+    "spd0": null,
+    "spd1": 5.955321271208915,
+    "bw0": 0,
+    "bw1": 46.263888888888886,
+    "prefer": 1
+  },
+  {
+    "site": "id.google.com.hk",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 11.659777487755239,
+    "bw0": 0,
+    "bw1": 26.47239263803681,
+    "prefer": 1
+  },
+  {
+    "site": "id.google.nl",
+    "err0": 6,
+    "err1": 4,
+    "spd0": null,
+    "spd1": 3.160348591426952,
+    "bw0": 0,
+    "bw1": 28.490066225165563,
+    "prefer": 1
+  },
+  {
+    "site": "ignite.apache.org",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 7.4375,
+    "bw0": 0,
+    "bw1": 7.4375,
+    "prefer": 1
+  },
+  {
+    "site": "im-x.jd.com",
+    "err0": 5,
+    "err1": 0,
+    "spd0": 2.117735084956807,
+    "spd1": 1.1270022078780464,
+    "bw0": 50.721518987341774,
+    "bw1": 13.40133779264214,
+    "prefer": 0
+  },
+  {
+    "site": "image.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 4.012152389385834,
+    "spd1": null,
+    "bw0": 595.083129584352,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "image2.sina.com.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 7.839212140314097,
+    "spd1": null,
+    "bw0": 74.66025360734587,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "images.gitee.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 139.84790750573774,
+    "spd1": null,
+    "bw0": 1901.2753623188405,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "images.sohu.com",
+    "err0": 8,
+    "err1": 0,
+    "spd0": 3.362778649881936,
+    "spd1": null,
+    "bw0": 412.6341463414634,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "imasdk.googleapis.com",
+    "err0": 2,
+    "err1": 1,
+    "spd0": 94.70460773863992,
+    "spd1": 32.63907670625496,
+    "bw0": 1216.5389221556886,
+    "bw1": 70.11392405063292,
+    "prefer": 1
+  },
+  {
+    "site": "img-blog.csdn.net",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 37.00606053640091,
+    "spd1": null,
+    "bw0": 745.2851985559566,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "img-blog.csdnimg.cn",
+    "err0": 55,
+    "err1": 24,
+    "spd0": 24.561952991130713,
+    "spd1": 2.996469788639205,
+    "bw0": 1676.6851549755302,
+    "bw1": 160.71003134796237,
+    "prefer": 0
+  },
+  {
+    "site": "img-home.csdnimg.cn",
+    "err0": 9,
+    "err1": 0,
+    "spd0": 21.84187812853497,
+    "spd1": 7.7172968930231285,
+    "bw0": 1377.5,
+    "bw1": 156.6685520361991,
+    "prefer": 0
+  },
+  {
+    "site": "img.36krcdn.com",
+    "err0": 7,
+    "err1": 2,
+    "spd0": 109.71652530863761,
+    "spd1": 12.964397539559434,
+    "bw0": 9928.120309050773,
+    "bw1": 18.82941176470588,
+    "prefer": 0
+  },
+  {
+    "site": "img.alicdn.com",
+    "err0": 4,
+    "err1": 17,
+    "spd0": 64.02213309447994,
+    "spd1": 2.785182721184492,
+    "bw0": 2668.4303278688526,
+    "bw1": 1091.904970760234,
+    "prefer": 0
+  },
+  {
+    "site": "img.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 22.123076923076923,
+    "spd1": null,
+    "bw0": 22.123076923076923,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "img.downg.com",
+    "err0": 21,
+    "err1": 8,
+    "spd0": null,
+    "spd1": 2.3296321190207916,
+    "bw0": 0,
+    "bw1": 562.9179834462002,
+    "prefer": 0
+  },
+  {
+    "site": "img.ithome.com",
+    "err0": 0,
+    "err1": 32,
+    "spd0": null,
+    "spd1": 6.774956359926653,
+    "bw0": 0,
+    "bw1": 1621.2787456445992,
+    "prefer": 0
+  },
+  {
+    "site": "img.kancloud.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 126.82085561497327,
+    "spd1": null,
+    "bw0": 126.82085561497327,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "img.stackshare.io",
+    "err0": 6,
+    "err1": 0,
+    "spd0": 45.02471882734316,
+    "spd1": null,
+    "bw0": 87.91288229842446,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "img.t.sinajs.cn",
+    "err0": 0,
+    "err1": 1,
+    "spd0": 87.48205377433256,
+    "spd1": 10.919122264519684,
+    "bw0": 350.875,
+    "bw1": 120.78442682047584,
+    "prefer": 0
+  },
+  {
+    "site": "img0.baidu.com",
+    "err0": 25,
+    "err1": 2,
+    "spd0": 6.621990176487948,
+    "spd1": 3.6983135453249245,
+    "bw0": 1988.9532710280373,
+    "bw1": 160.8633962264151,
+    "prefer": 0
+  },
+  {
+    "site": "img0.bdstatic.com",
+    "err0": 36,
+    "err1": 7,
+    "spd0": 109.57021263614519,
+    "spd1": 0.7770504864593981,
+    "bw0": 499.3333333333333,
+    "bw1": 9.445652173913043,
+    "prefer": 0
+  },
+  {
+    "site": "img1.360buyimg.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 123.99155883932934,
+    "spd1": null,
+    "bw0": 906.8166666666667,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "img1.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 16.643747897096393,
+    "spd1": null,
+    "bw0": 932.5038759689922,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "img1.bdstatic.com",
+    "err0": 20,
+    "err1": 0,
+    "spd0": 15.266111448359512,
+    "spd1": null,
+    "bw0": 623.4022988505748,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "img10.360buyimg.com",
+    "err0": 37,
+    "err1": 10,
+    "spd0": 49.57045348931621,
+    "spd1": 3.8211016704412346,
+    "bw0": 5353.492063492064,
+    "bw1": 215.7094211123723,
+    "prefer": 0
+  },
+  {
+    "site": "img11.360buyimg.com",
+    "err0": 71,
+    "err1": 11,
+    "spd0": 20.019813739018513,
+    "spd1": 7.568568286788915,
+    "bw0": 3528.2289156626507,
+    "bw1": 136.60023584905662,
+    "prefer": 0
+  },
+  {
+    "site": "img12.360buyimg.com",
+    "err0": 44,
+    "err1": 9,
+    "spd0": 18.454326130034058,
+    "spd1": 8.126732485732685,
+    "bw0": 2974.764705882353,
+    "bw1": 402.6018907563025,
+    "prefer": 0
+  },
+  {
+    "site": "img13.360buyimg.com",
+    "err0": 29,
+    "err1": 18,
+    "spd0": 73.00305347928602,
+    "spd1": 1.569788415612722,
+    "bw0": 3282.9164926931107,
+    "bw1": 211.27914110429447,
+    "prefer": 0
+  },
+  {
+    "site": "img14.360buyimg.com",
+    "err0": 31,
+    "err1": 9,
+    "spd0": 1.2608018172829911,
+    "spd1": 10.285794039303651,
+    "bw0": 7431.724950884087,
+    "bw1": 221.92025862068965,
+    "prefer": 0
+  },
+  {
+    "site": "img2.baidu.com",
+    "err0": 20,
+    "err1": 3,
+    "spd0": 29.405255798935585,
+    "spd1": 11.448239429243618,
+    "bw0": 1382.675,
+    "bw1": 166.58029084158414,
+    "prefer": 0
+  },
+  {
+    "site": "img2.bdstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 5.2438484807526775,
+    "spd1": null,
+    "bw0": 167.34615384615384,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "img20.360buyimg.com",
+    "err0": 25,
+    "err1": 5,
+    "spd0": 0.850135659964922,
+    "spd1": 6.026924338524076,
+    "bw0": 5748.1225490196075,
+    "bw1": 36.33584131326949,
+    "prefer": 0
+  },
+  {
+    "site": "img2020.cnblogs.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 45.56516202087003,
+    "spd1": null,
+    "bw0": 2736.635135135135,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "img30.360buyimg.com",
+    "err0": 4,
+    "err1": 0,
+    "spd0": 5.182999121290802,
+    "spd1": null,
+    "bw0": 6131.507836990596,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "imgcps.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 278.1939878940113,
+    "spd1": null,
+    "bw0": 1749.2857142857142,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "imgsa.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 15.869858873796998,
+    "spd1": null,
+    "bw0": 315.99604743083006,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "imgsrc.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 50.88427740545182,
+    "spd1": null,
+    "bw0": 488.37113402061857,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "imgstat.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 2.885742017658215,
+    "spd1": null,
+    "bw0": 116.77777777777777,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "imp.go.sohu.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 11.572443513595346,
+    "spd1": 7.728295819935692,
+    "bw0": 19.209876543209877,
+    "bw1": 7.728295819935691,
+    "prefer": 0
+  },
+  {
+    "site": "improving.duckduckgo.com",
+    "err0": 18,
+    "err1": 4,
+    "spd0": null,
+    "spd1": 3.829949190907809,
+    "bw0": 0,
+    "bw1": 30.26330532212885,
+    "prefer": 1
+  },
+  {
+    "site": "impservice.youdao.com",
+    "err0": 2,
+    "err1": 1,
+    "spd0": 13.263074253339932,
+    "spd1": 2.2665604901180076,
+    "bw0": 53.66153846153846,
+    "bw1": 9.427027027027027,
+    "prefer": 0
+  },
+  {
+    "site": "infoq.com.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.0714285714285714,
+    "spd1": null,
+    "bw0": 2.356020942408377,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "insight.adsrvr.cn",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 10.698976149027082,
+    "spd1": null,
+    "bw0": 103.53125,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "interface.bilibili.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 63.33823529411765,
+    "spd1": null,
+    "bw0": 113.34210526315789,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "item-soa.jd.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 13.442245817577474,
+    "spd1": 7.682086824320436,
+    "bw0": 72.10169491525424,
+    "bw1": 14.765652951699463,
+    "prefer": 0
+  },
+  {
+    "site": "item.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 47.66484387711272,
+    "spd1": null,
+    "bw0": 304.89,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "item.taobao.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 91.43446502884132,
+    "spd1": null,
+    "bw0": 127.78735632183908,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "iv.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 47.846820809248555,
+    "spd1": null,
+    "bw0": 63.06666666666667,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "ivs.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 74.69382649720933,
+    "spd1": null,
+    "bw0": 273.82,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "javadoc.io",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 18.73726995911397,
+    "bw0": 0,
+    "bw1": 88.72968598251862,
+    "prefer": 1
+  },
+  {
+    "site": "jcm.jd.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 5.925847614502272,
+    "spd1": null,
+    "bw0": 60.86363636363637,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "jetbrains.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 17.3271439420519,
+    "bw0": 0,
+    "bw1": 51.78947368421053,
+    "prefer": 1
+  },
+  {
+    "site": "js-nocaptcha.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 79.61678824548677,
+    "spd1": null,
+    "bw0": 1037.4,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "js.sohu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 3.802485547273188,
+    "bw0": 0,
+    "bw1": 3.951648351648352,
+    "prefer": 0
+  },
+  {
+    "site": "js.t.sinajs.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 24.351993238798947,
+    "bw0": 0,
+    "bw1": 630.6866473749483,
+    "prefer": 0
+  },
+  {
+    "site": "jscss.360buyimg.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 138.1959630730992,
+    "spd1": null,
+    "bw0": 432.87692307692305,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "jscss.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 72.70308123249299,
+    "spd1": null,
+    "bw0": 72.70308123249299,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "jshop-rec.jd.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 3.879424691150228,
+    "spd1": 2.6740119658629897,
+    "bw0": 47.75,
+    "bw1": 7.582230623818526,
+    "prefer": 0
+  },
+  {
+    "site": "jspassport.ssl.qhimg.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 25.08206261127174,
+    "spd1": null,
+    "bw0": 201.8,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "knicks.jd.com",
+    "err0": 0,
+    "err1": 14,
+    "spd0": 2.6035765152714037,
+    "spd1": 1.1707137545301527,
+    "bw0": 3.5153846153846153,
+    "bw1": 21,
+    "prefer": 0
+  },
+  {
+    "site": "kunpeng-sc.csdnimg.cn",
+    "err0": 0,
+    "err1": 7,
+    "spd0": null,
+    "spd1": 39.939358687317224,
+    "bw0": 0,
+    "bw1": 215.68810572687224,
+    "prefer": 0
+  },
+  {
+    "site": "kunpeng.csdn.net",
+    "err0": null,
+    "err1": null,
+    "spd0": 14.23968145582375,
+    "spd1": null,
+    "bw0": 56.08571428571429,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "kunyu.csdn.net",
+    "err0": 13,
+    "err1": 3,
+    "spd0": 30.939123090818537,
+    "spd1": 6.787627459914526,
+    "bw0": 50.149253731343286,
+    "bw1": 10.275229357798166,
+    "prefer": 0
+  },
+  {
+    "site": "lapi.jd.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 7.9726239060505195,
+    "spd1": null,
+    "bw0": 59.865671641791046,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "lewan.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 4.1175318315377085,
+    "spd1": null,
+    "bw0": 4.1175318315377085,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "lh3.googleusercontent.com",
+    "err0": 150,
+    "err1": 165,
+    "spd0": null,
+    "spd1": 4.063148533561847,
+    "bw0": 0,
+    "bw1": 631.5254010695187,
+    "prefer": 1
+  },
+  {
+    "site": "lh4.googleusercontent.com",
+    "err0": 0,
+    "err1": 3,
+    "spd0": null,
+    "spd1": 10.73015032167914,
+    "bw0": 0,
+    "bw1": 47.48101265822785,
+    "prefer": 1
+  },
+  {
+    "site": "lh5.googleusercontent.com",
+    "err0": 12,
+    "err1": 6,
+    "spd0": null,
+    "spd1": 5.024511355039123,
+    "bw0": 0,
+    "bw1": 163.85436893203882,
+    "prefer": 1
+  },
+  {
+    "site": "lh6.googleusercontent.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 9.792463539733525,
+    "bw0": 0,
+    "bw1": 44.91616766467066,
+    "prefer": 1
+  },
+  {
+    "site": "links.duckduckgo.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 14.419354838709678,
+    "bw0": 0,
+    "bw1": 20.421319796954315,
+    "prefer": 1
+  },
+  {
+    "site": "login.sina.com.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 75.78008786317899,
+    "spd1": null,
+    "bw0": 93.81666666666666,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "loldb.games.sina.com.cn",
+    "err0": 0,
+    "err1": 1,
+    "spd0": null,
+    "spd1": 5.332308726895161,
+    "bw0": 0,
+    "bw1": 30.470676691729324,
+    "prefer": 0
+  },
+  {
+    "site": "luimg.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 25.009404388714735,
+    "spd1": null,
+    "bw0": 25.009404388714735,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "lunkr.cn",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 15.271464921906116,
+    "spd1": null,
+    "bw0": 158.88571428571427,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "m.360buyimg.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 143.94787794229575,
+    "spd1": null,
+    "bw0": 3583.563025210084,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "m.hupu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 55.4813829787234,
+    "spd1": null,
+    "bw0": 55.4813829787234,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "m.one.impact-ad.jp",
+    "err0": null,
+    "err1": null,
+    "spd0": 7.027515645039994,
+    "spd1": null,
+    "bw0": 30.9079754601227,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "m.reachmax.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 2.3928305324050836,
+    "spd1": null,
+    "bw0": 11.28,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "mail-ads.google.com",
+    "err0": 14,
+    "err1": 2,
+    "spd0": 7.476810574636981,
+    "spd1": 5.792342049290328,
+    "bw0": 50.86259541984733,
+    "bw1": 43.54248366013072,
+    "prefer": 1
+  },
+  {
+    "site": "mail.google.com",
+    "err0": 6,
+    "err1": 5,
+    "spd0": null,
+    "spd1": 3.6685139595304888,
+    "bw0": 0,
+    "bw1": 529.0881467287161,
+    "prefer": 1
+  },
+  {
+    "site": "mail.servyou.com.cn",
+    "err0": 222,
+    "err1": 1,
+    "spd0": 6.302082254103245,
+    "spd1": 2.203116478345023,
+    "bw0": 1093.5677154582763,
+    "bw1": 263.2897012578616,
+    "prefer": 0
+  },
+  {
+    "site": "mall.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 45.11716701885184,
+    "spd1": null,
+    "bw0": 166.08854166666666,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "mapsnap0.bdimg.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 19.52099963048756,
+    "spd1": null,
+    "bw0": 146.30088495575222,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "maven.apache.org",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 17.39162967853605,
+    "spd1": null,
+    "bw0": 83.5047694753577,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "mbd.baidu.com",
+    "err0": 4,
+    "err1": 14,
+    "spd0": 2.630767335317453,
+    "spd1": 1.5692091439516556,
+    "bw0": 97.76744186046511,
+    "bw1": 27.24025974025974,
+    "prefer": 0
+  },
+  {
+    "site": "mbdp01.bdstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 10.315016427630244,
+    "spd1": null,
+    "bw0": 3094.2083333333335,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "mbdp03.bdstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 23.113284344395595,
+    "spd1": null,
+    "bw0": 307.5882352941176,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "mercury.jd.com",
+    "err0": 6,
+    "err1": 94,
+    "spd0": 8.13332329189535,
+    "spd1": 1.8410534956525675,
+    "bw0": 46.10344827586207,
+    "bw1": 33.07741116751269,
+    "prefer": 0
+  },
+  {
+    "site": "message.bilibili.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 47.22177616169547,
+    "spd1": null,
+    "bw0": 172.28,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "meta.stackexchange.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 171.62423500611996,
+    "bw0": 0,
+    "bw1": 171.62423500611996,
+    "prefer": 1
+  },
+  {
+    "site": "meta.stackoverflow.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 5.371557054525014,
+    "bw0": 0,
+    "bw1": 5.371557054525014,
+    "prefer": 1
+  },
+  {
+    "site": "miao.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 8.434450612599694,
+    "spd1": null,
+    "bw0": 110.39473684210526,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "miaosha.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": null,
+    "bw0": null,
+    "bw1": null,
+    "prefer": 0
+  },
+  {
+    "site": "miro.medium.com",
+    "err0": 31,
+    "err1": 17,
+    "spd0": null,
+    "spd1": 1.3644705511262114,
+    "bw0": 0,
+    "bw1": 932.1754827875735,
+    "prefer": 1
+  },
+  {
+    "site": "misc.360buyimg.com",
+    "err0": 14,
+    "err1": 0,
+    "spd0": 22.179759769980222,
+    "spd1": 5.699261099548914,
+    "bw0": 3127.840579710145,
+    "bw1": 44.94074749316317,
+    "prefer": 0
+  },
+  {
+    "site": "mmbiz.qlogo.cn",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 347.2616620565381,
+    "spd1": null,
+    "bw0": 1067.1604938271605,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "mmbiz.qpic.cn",
+    "err0": 0,
+    "err1": 2,
+    "spd0": null,
+    "spd1": 1.5832690863269554,
+    "bw0": 0,
+    "bw1": 21.543218602021344,
+    "prefer": 0
+  },
+  {
+    "site": "module-jshop.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": null,
+    "bw0": null,
+    "bw1": null,
+    "prefer": 0
+  },
+  {
+    "site": "mqtt-web.zhihu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 38.256000381162934,
+    "spd1": null,
+    "bw0": 205.3,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "ms.feedly.com",
+    "err0": 8,
+    "err1": 2,
+    "spd0": null,
+    "spd1": 4.785193305214644,
+    "bw0": 0,
+    "bw1": 30.18811881188119,
+    "prefer": 1
+  },
+  {
+    "site": "msg.csdn.net",
+    "err0": 4,
+    "err1": 0,
+    "spd0": 14.006398080218663,
+    "spd1": null,
+    "bw0": 42.139240506329116,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "mtalk.google.com",
+    "err0": 28,
+    "err1": 84,
+    "spd0": 21.842381336904733,
+    "spd1": 20.9752548173453,
+    "bw0": 58.876106194690266,
+    "bw1": 47.198581560283685,
+    "prefer": 1
+  },
+  {
+    "site": "my.oschina.net",
+    "err0": null,
+    "err1": null,
+    "spd0": 91.9375,
+    "spd1": null,
+    "bw0": 91.9375,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "mygiftcard.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 3.7007743350587368,
+    "spd1": null,
+    "bw0": 38.2,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "na.op.gg",
+    "err0": null,
+    "err1": null,
+    "spd0": 9.766477283090135,
+    "spd1": null,
+    "bw0": 86.72784810126582,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "news.sina.com.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 1.4831395348837209,
+    "bw0": 0,
+    "bw1": 1.4831395348837209,
+    "prefer": 0
+  },
+  {
+    "site": "nfa.jd.com",
+    "err0": 4,
+    "err1": 0,
+    "spd0": 12.54256259474805,
+    "spd1": null,
+    "bw0": 78.8,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "nocaptcha.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 26.36330611881466,
+    "spd1": null,
+    "bw0": 48.91463414634146,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "noscreenplz1.ifeng.com",
+    "err0": 3,
+    "err1": 0,
+    "spd0": 41.41345875525594,
+    "spd1": null,
+    "bw0": 50.24324324324324,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "nrb.ybp.yahoo.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 6.662417060068116,
+    "spd1": null,
+    "bw0": 25.061349693251532,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "nsclick.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 7.065709691509365,
+    "spd1": null,
+    "bw0": 100.35714285714286,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "o1.ingest.sentry.io",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 2.4426652324728035,
+    "spd1": null,
+    "bw0": 24.370967741935484,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "o1000929.ingest.sentry.io",
+    "err0": null,
+    "err1": null,
+    "spd0": 2.272165868153944,
+    "spd1": null,
+    "bw0": 12.591666666666667,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "o115706.ingest.sentry.io",
+    "err0": 4,
+    "err1": 39,
+    "spd0": 1.1900360188856063,
+    "spd1": 3.124546458042158,
+    "bw0": 1.6408977556109725,
+    "bw1": 41.97222222222222,
+    "prefer": 1
+  },
+  {
+    "site": "o448817.ingest.sentry.io",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 0.6866486002911707,
+    "spd1": null,
+    "bw0": 2.1192145862552594,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "odo.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 8.26505878276383,
+    "spd1": null,
+    "bw0": 48.397590361445786,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "ogs.google.com",
+    "err0": 20,
+    "err1": 3,
+    "spd0": null,
+    "spd1": 20.49542825515006,
+    "bw0": 0,
+    "bw1": 65.40974212034384,
+    "prefer": 1
+  },
+  {
+    "site": "ogs.google.com.hk",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 8.296733102177727,
+    "bw0": 0,
+    "bw1": 45.02036199095023,
+    "prefer": 1
+  },
+  {
+    "site": "oimagea3.ydstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 663.2851258140039,
+    "spd1": null,
+    "bw0": 1112.48,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "oimagea4.ydstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 343.36002153242754,
+    "spd1": null,
+    "bw0": 536.0909090909091,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "oimageb2.ydstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 59.35481225449381,
+    "spd1": null,
+    "bw0": 173.49462365591398,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "oimageb4.ydstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 44.2833366827628,
+    "spd1": null,
+    "bw0": 511.52298850574715,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "oimagec1.ydstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 126.82608695652173,
+    "spd1": null,
+    "bw0": 126.82608695652173,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "oimagec2.ydstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 81.31748313954225,
+    "spd1": null,
+    "bw0": 1462.09375,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "oimagec8.ydstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 256.2136072340077,
+    "spd1": null,
+    "bw0": 1088.7894736842106,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "opengraph.githubassets.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 68.3160677125957,
+    "bw0": 0,
+    "bw1": 211.44927536231884,
+    "prefer": 1
+  },
+  {
+    "site": "order.jd.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 13.448775005709157,
+    "spd1": null,
+    "bw0": 99.3852140077821,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "ordergw.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 10.279682848767822,
+    "spd1": 2.884648458207148,
+    "bw0": 25.95022624434389,
+    "bw1": 6.865222623345367,
+    "prefer": 0
+  },
+  {
+    "site": "orderop.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 8.83680544305848,
+    "spd1": null,
+    "bw0": 48.91463414634146,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "oscimg.oschina.net",
+    "err0": 5,
+    "err1": 4,
+    "spd0": 98.2468067835629,
+    "spd1": 6.458450203273424,
+    "bw0": 1640.8307692307692,
+    "bw1": 131.75815738963533,
+    "prefer": 0
+  },
+  {
+    "site": "p.3.cn",
+    "err0": 4,
+    "err1": 20,
+    "spd0": 6.978690078854137,
+    "spd1": 1.6194251888711442,
+    "bw0": 59.95522388059702,
+    "bw1": 34.333333333333336,
+    "prefer": 0
+  },
+  {
+    "site": "p0.itc.cn",
+    "err0": 5,
+    "err1": 0,
+    "spd0": 37.686109799960924,
+    "spd1": null,
+    "bw0": 566.7567567567568,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "p0.meituan.net",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 136.05196902469388,
+    "spd1": null,
+    "bw0": 322.90886998784936,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "p0.qhimg.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": null,
+    "spd1": null,
+    "bw0": null,
+    "bw1": null,
+    "prefer": 0
+  },
+  {
+    "site": "p1.meituan.net",
+    "err0": 3,
+    "err1": 0,
+    "spd0": 81.30944603383799,
+    "spd1": null,
+    "bw0": 6721.610852713178,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "p1.qhimg.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 2.894187779433681,
+    "spd1": null,
+    "bw0": 2.894187779433681,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "p2.itc.cn",
+    "err0": 1,
+    "err1": 4,
+    "spd0": 0.354492486967188,
+    "spd1": 1.5197285961147193,
+    "bw0": 0.354492486967188,
+    "bw1": 222.7822299651568,
+    "prefer": 0
+  },
+  {
+    "site": "p2.qhimg.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 7.854484617658256,
+    "spd1": null,
+    "bw0": 20.27751196172249,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "p2.ssl.qhimg.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 8.080565823366435,
+    "spd1": null,
+    "bw0": 41.07155322862129,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "p3.itc.cn",
+    "err0": 0,
+    "err1": 2,
+    "spd0": 145.90118521521018,
+    "spd1": 0.3489738251041047,
+    "bw0": 972.399870172022,
+    "bw1": 0.3489738251041047,
+    "prefer": 0
+  },
+  {
+    "site": "p3.qhimg.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 10.392002893381944,
+    "spd1": null,
+    "bw0": 112.65525525525526,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "p4-dyus2lokax46e-j5r7tly64hnabwbs-if-v6exp3-v4.metric.gstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 5.087134502923977,
+    "bw0": 0,
+    "bw1": 5.087134502923977,
+    "prefer": 1
+  },
+  {
+    "site": "p4-gbrqptvjt6rb4-4gttu73nnyjwjnq6-989001-i1-v6exp3.v4.metric.gstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 2.2516898608349902,
+    "bw0": 0,
+    "bw1": 2.2516898608349902,
+    "prefer": 1
+  },
+  {
+    "site": "p4-gbrqptvjt6rb4-4gttu73nnyjwjnq6-989001-i2-v6exp3.ds.metric.gstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 2.278068410462777,
+    "bw0": 0,
+    "bw1": 2.278068410462777,
+    "prefer": 1
+  },
+  {
+    "site": "p4-gbrqptvjt6rb4-4gttu73nnyjwjnq6-if-v6exp3-v4.metric.gstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 5.337935174069628,
+    "bw0": 0,
+    "bw1": 5.337935174069628,
+    "prefer": 1
+  },
+  {
+    "site": "p4-gyhxtxal2wefo-rhjvqyvui7sw5cnq-if-v6exp3-v4.metric.gstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 5.247652582159624,
+    "bw0": 0,
+    "bw1": 5.247652582159624,
+    "prefer": 1
+  },
+  {
+    "site": "p4-hx63igf6p6ory-55buawcdbhhjwwrw-if-v6exp3-v4.metric.gstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 4.853024307518372,
+    "bw0": 0,
+    "bw1": 4.853024307518372,
+    "prefer": 1
+  },
+  {
+    "site": "p4.itc.cn",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 20.742357037574077,
+    "spd1": 31.464919622398774,
+    "bw0": 2165.695340501792,
+    "bw1": 57.138691883372736,
+    "prefer": 0
+  },
+  {
+    "site": "p4.qhimg.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 8.107994976977816,
+    "spd1": null,
+    "bw0": 8.107994976977816,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "p5.itc.cn",
+    "err0": 0,
+    "err1": 1,
+    "spd0": 302.84415584415586,
+    "spd1": 40.33336536246927,
+    "bw0": 302.84415584415586,
+    "bw1": 68.89081752919748,
+    "prefer": 0
+  },
+  {
+    "site": "p5.qhimg.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 29.815533980582522,
+    "spd1": null,
+    "bw0": 29.815533980582526,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "p6.itc.cn",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 19.737101252497283,
+    "spd1": 8.055472263868065,
+    "bw0": 459.4901960784314,
+    "bw1": 8.055472263868065,
+    "prefer": 0
+  },
+  {
+    "site": "p7.itc.cn",
+    "err0": 0,
+    "err1": 1,
+    "spd0": 81.31818181818181,
+    "spd1": 104.80384868314383,
+    "bw0": 81.31818181818181,
+    "bw1": 544.1580178336501,
+    "prefer": 0
+  },
+  {
+    "site": "p7.qhimg.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 10.791871097064783,
+    "spd1": null,
+    "bw0": 51.70288461538462,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "p8.itc.cn",
+    "err0": 1,
+    "err1": 3,
+    "spd0": 1.5566902935188776,
+    "spd1": 0.3491295938104449,
+    "bw0": 3258.0429799426934,
+    "bw1": 0.3491295938104449,
+    "prefer": 0
+  },
+  {
+    "site": "p9.itc.cn",
+    "err0": 4,
+    "err1": 0,
+    "spd0": 12.917727731043097,
+    "spd1": null,
+    "bw0": 83.68487394957984,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "p9.qhimg.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 6.203649801180895,
+    "spd1": null,
+    "bw0": 27.85757492438823,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "paimgcdn.baidu.com",
+    "err0": 1,
+    "err1": 2,
+    "spd0": 6.764803043500369,
+    "spd1": 6.54860587792012,
+    "bw0": 1647.9905660377358,
+    "bw1": 6.603343465045593,
+    "prefer": 0
+  },
+  {
+    "site": "passport.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 15.321043425052304,
+    "spd1": null,
+    "bw0": 370.84375,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "passport.bdimg.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 42.24882717729819,
+    "spd1": null,
+    "bw0": 160.45833333333334,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "passport.jd.com",
+    "err0": 8,
+    "err1": 0,
+    "spd0": 4.63573467355143,
+    "spd1": null,
+    "bw0": 260.00680272108843,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "passport.weibo.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 24.10118666558422,
+    "spd1": null,
+    "bw0": 80.41428571428571,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "passport.weibo.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 6.604422382671479,
+    "bw0": 0,
+    "bw1": 33.11176470588235,
+    "prefer": 0
+  },
+  {
+    "site": "payrisk.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 144.53434751424766,
+    "spd1": null,
+    "bw0": 572.7058823529412,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "pbs.twimg.com",
+    "err0": 13,
+    "err1": 11,
+    "spd0": null,
+    "spd1": 1.929403805672233,
+    "bw0": 0,
+    "bw1": 666.4506627393225,
+    "prefer": 1
+  },
+  {
+    "site": "pcrec.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 29.190664998805424,
+    "spd1": null,
+    "bw0": 150.14285714285714,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "people-pa.clients6.google.com",
+    "err0": 2,
+    "err1": 3,
+    "spd0": null,
+    "spd1": 4.914966974133412,
+    "bw0": 0,
+    "bw1": 63.84415584415584,
+    "prefer": 1
+  },
+  {
+    "site": "pf.3.cn",
+    "err0": 0,
+    "err1": 1,
+    "spd0": 6.673928055751307,
+    "spd1": 2.320252952516406,
+    "bw0": 55.02739726027397,
+    "bw1": 6.650662251655629,
+    "prefer": 0
+  },
+  {
+    "site": "pic.cnblogs.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 22.285379569699582,
+    "spd1": null,
+    "bw0": 200.5686274509804,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "pic.ntimg.cn",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 669.490762306612,
+    "spd1": null,
+    "bw0": 968.0326797385621,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "pic.rmb.bdstatic.com",
+    "err0": 40,
+    "err1": 20,
+    "spd0": 18.020973423175427,
+    "spd1": 2.741931756756176,
+    "bw0": 6389.607142857143,
+    "bw1": 414.1784669397308,
+    "prefer": 0
+  },
+  {
+    "site": "pic1.ntimg.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 8.824834270497806,
+    "spd1": null,
+    "bw0": 51.975903614457835,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "pic1.zhimg.com",
+    "err0": 2,
+    "err1": 5,
+    "spd0": 17.093941191691087,
+    "spd1": 12.881741326018407,
+    "bw0": 2462.453125,
+    "bw1": 52.43386243386244,
+    "prefer": 0
+  },
+  {
+    "site": "pic2.ntimg.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 8.00349634671452,
+    "spd1": null,
+    "bw0": 53.25925925925926,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "pic2.zhimg.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 119.93556343661811,
+    "spd1": null,
+    "bw0": 2509.125,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "pic3.ntimg.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 14.275950737130582,
+    "spd1": null,
+    "bw0": 41.48076923076923,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "pic3.zhimg.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 108.37434027561402,
+    "spd1": null,
+    "bw0": 4908.781818181818,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "pic4.ntimg.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 12.742635021963785,
+    "spd1": null,
+    "bw0": 37.8421052631579,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "pic4.zhimg.com",
+    "err0": 3,
+    "err1": 0,
+    "spd0": 133.52577385461046,
+    "spd1": null,
+    "bw0": 1717.0588235294117,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "pica.zhimg.com",
+    "err0": 5,
+    "err1": 0,
+    "spd0": 87.1092861863215,
+    "spd1": 17.056542937328686,
+    "bw0": 1599.265306122449,
+    "bw1": 25.38266068759342,
+    "prefer": 0
+  },
+  {
+    "site": "picasso.alicdn.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 412.1814149131173,
+    "spd1": null,
+    "bw0": 3124.907894736842,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "picb.zhimg.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 203.60298833842901,
+    "spd1": null,
+    "bw0": 319.70588235294116,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "picdict.youdao.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 14.55154251682018,
+    "spd1": null,
+    "bw0": 44.151898734177216,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "pics0.baidu.com",
+    "err0": 4,
+    "err1": 0,
+    "spd0": 70.74940327841378,
+    "spd1": 37.415254776333455,
+    "bw0": 400.7421875,
+    "bw1": 1190.6721162579472,
+    "prefer": 0
+  },
+  {
+    "site": "pics1.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 62.16936349889943,
+    "spd1": null,
+    "bw0": 662.9722222222222,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "pics2.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 28.766966254198497,
+    "spd1": null,
+    "bw0": 2848.8636363636365,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "pics3.baidu.com",
+    "err0": 6,
+    "err1": 2,
+    "spd0": 214.13513723388667,
+    "spd1": 18.262279888785912,
+    "bw0": 693.1553398058253,
+    "bw1": 18.262279888785912,
+    "prefer": 0
+  },
+  {
+    "site": "pics4.baidu.com",
+    "err0": 0,
+    "err1": 1,
+    "spd0": 240.62827751685103,
+    "spd1": 13.58352361557513,
+    "bw0": 1673.1917808219177,
+    "bw1": 92.88073394495413,
+    "prefer": 0
+  },
+  {
+    "site": "pics5.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 266.71961396186174,
+    "spd1": null,
+    "bw0": 862.28,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "pics6.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 65.05826623555309,
+    "spd1": null,
+    "bw0": 662.9375,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "pics7.baidu.com",
+    "err0": 0,
+    "err1": 3,
+    "spd0": 402.1076923076923,
+    "spd1": 5.0438873450588755,
+    "bw0": 402.10769230769233,
+    "bw1": 91.02300884955753,
+    "prefer": 0
+  },
+  {
+    "site": "ping.cloud.tencent.com",
+    "err0": 0,
+    "err1": 16,
+    "spd0": 4.373360772408237,
+    "spd1": 1.1504829982814249,
+    "bw0": 45.120879120879124,
+    "bw1": 17.179916317991633,
+    "prefer": 0
+  },
+  {
+    "site": "pjapi.jd.com",
+    "err0": 9,
+    "err1": 0,
+    "spd0": 4.618847286765882,
+    "spd1": null,
+    "bw0": 50.77215189873418,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "platform.twitter.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": null,
+    "spd1": 9.67419217305056,
+    "bw0": 0,
+    "bw1": 338.24545454545455,
+    "prefer": 1
+  },
+  {
+    "site": "play-lh.googleusercontent.com",
+    "err0": 21,
+    "err1": 6,
+    "spd0": null,
+    "spd1": 195.80034572169404,
+    "bw0": 0,
+    "bw1": 195.80034572169404,
+    "prefer": 1
+  },
+  {
+    "site": "play.google.com",
+    "err0": 112,
+    "err1": 96,
+    "spd0": null,
+    "spd1": 5.024657851261024,
+    "bw0": 0,
+    "bw1": 75.66634950840469,
+    "prefer": 1
+  },
+  {
+    "site": "plugins-cdn.kancloud.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 90.9107096009568,
+    "spd1": null,
+    "bw0": 482.4227642276423,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "plugins.kancloud.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 49.25633103796145,
+    "spd1": null,
+    "bw0": 96.27659574468085,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "portrait.gitee.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 28.10214172035981,
+    "spd1": null,
+    "bw0": 1239,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "pos.baidu.com",
+    "err0": 20,
+    "err1": 0,
+    "spd0": 4.33132142974298,
+    "spd1": 1.1798117015201879,
+    "bw0": 117.08333333333333,
+    "bw1": 28.028005464480874,
+    "prefer": 0
+  },
+  {
+    "site": "position.csdnimg.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 16.742806163501193,
+    "spd1": null,
+    "bw0": 55.6986301369863,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "pr-bh.ybp.yahoo.com",
+    "err0": 6,
+    "err1": 2,
+    "spd0": 9.352347357209833,
+    "spd1": 10.54680632219073,
+    "bw0": 34.965986394557824,
+    "bw1": 25.95959595959596,
+    "prefer": 1
+  },
+  {
+    "site": "pr.ybp.yahoo.com",
+    "err0": 10,
+    "err1": 6,
+    "spd0": 11.59225775602186,
+    "spd1": 1.2667111208315587,
+    "bw0": 73.41684210526316,
+    "bw1": 20.425,
+    "prefer": 1
+  },
+  {
+    "site": "prod-m-node-2113.ssp.yahoo.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 5.001978535538589,
+    "spd1": null,
+    "bw0": 21.31788079470199,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "profile.csdnimg.cn",
+    "err0": 21,
+    "err1": 20,
+    "spd0": 11.144780834638283,
+    "spd1": 7.6059595256510715,
+    "bw0": 64.18562874251496,
+    "bw1": 19.931372549019606,
+    "prefer": 0
+  },
+  {
+    "site": "pss.bdstatic.com",
+    "err0": 23,
+    "err1": 8,
+    "spd0": 37.109823915764146,
+    "spd1": 3.471291344430996,
+    "bw0": 5106.69,
+    "bw1": 586.9220338983051,
+    "prefer": 0
+  },
+  {
+    "site": "pubads.g.doubleclick.net",
+    "err0": 2,
+    "err1": 3,
+    "spd0": 11.015112709604123,
+    "spd1": 1.1933361629881154,
+    "bw0": 68.08695652173913,
+    "bw1": 1.1933361629881154,
+    "prefer": 1
+  },
+  {
+    "site": "push.zhanzhang.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 6.978913553807504,
+    "spd1": null,
+    "bw0": 15.543478260869565,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "pv.sohu.com",
+    "err0": 10,
+    "err1": 0,
+    "spd0": 2.609635902206232,
+    "spd1": 1.1478528752147772,
+    "bw0": 12.88888888888889,
+    "bw1": 5.4174496644295305,
+    "prefer": 0
+  },
+  {
+    "site": "px.ads.linkedin.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 6.768575214050834,
+    "spd1": null,
+    "bw0": 138.44,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "pypi.org",
+    "err0": 0,
+    "err1": 1,
+    "spd0": 16.231046931407942,
+    "spd1": 21.875375,
+    "bw0": 16.231046931407942,
+    "bw1": 21.875375,
+    "prefer": 1
+  },
+  {
+    "site": "qa.sockets.stackexchange.com",
+    "err0": 1,
+    "err1": 20,
+    "spd0": 0.3915528713056499,
+    "spd1": 1.5117677941367,
+    "bw0": 9.067615658362989,
+    "bw1": 12.70074812967581,
+    "prefer": 1
+  },
+  {
+    "site": "qpb.sohu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.9295130837567813,
+    "spd1": null,
+    "bw0": 196.76923076923077,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "qpsearch.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.8453751105111516,
+    "spd1": 1.3776915645020424,
+    "bw0": 2.1666666666666665,
+    "bw1": 14.855555555555556,
+    "prefer": 0
+  },
+  {
+    "site": "qr.m.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 19.71681831218447,
+    "spd1": null,
+    "bw0": 56.49295774647887,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "qrimg.jd.com",
+    "err0": 1,
+    "err1": 2,
+    "spd0": 58.695633482824405,
+    "spd1": 7.226671834277997,
+    "bw0": 213,
+    "bw1": 7.397814207650273,
+    "prefer": 0
+  },
+  {
+    "site": "quan.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 4.377643552064686,
+    "spd1": null,
+    "bw0": 42.670212765957444,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "question.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 5.155073591248635,
+    "spd1": 8.165840662883628,
+    "bw0": 36.85321100917431,
+    "bw1": 19.110512129380055,
+    "prefer": 0
+  },
+  {
+    "site": "rabc1.iteye.com",
+    "err0": 8,
+    "err1": 2,
+    "spd0": 35.872477219742954,
+    "spd1": 4.343272708732741,
+    "bw0": 107.61864406779661,
+    "bw1": 10.440233236151604,
+    "prefer": 0
+  },
+  {
+    "site": "rate.taobao.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 7.808683846821142,
+    "spd1": null,
+    "bw0": 111.83720930232558,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "raw.githubusercontent.com",
+    "err0": 13,
+    "err1": 11,
+    "spd0": null,
+    "spd1": 7.184899966074559,
+    "bw0": 0,
+    "bw1": 1148.2660822847447,
+    "prefer": 1
+  },
+  {
+    "site": "read.feedly.com",
+    "err0": 13,
+    "err1": 22,
+    "spd0": null,
+    "spd1": 2.8340694853913466,
+    "bw0": 0,
+    "bw1": 35.45348837209303,
+    "prefer": 1
+  },
+  {
+    "site": "readmore.openwrite.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 538.8451882845188,
+    "spd1": null,
+    "bw0": 538.8451882845188,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "rel.discuz.soso.com",
+    "err0": 4,
+    "err1": 6,
+    "spd0": null,
+    "spd1": null,
+    "bw0": null,
+    "bw1": null,
+    "prefer": 0
+  },
+  {
+    "site": "reports.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 3.1135311807841224,
+    "spd1": 0.4868131868131868,
+    "bw0": 120.11428571428571,
+    "bw1": 0.492769744160178,
+    "prefer": 0
+  },
+  {
+    "site": "res.infoq.com",
+    "err0": 0,
+    "err1": 2,
+    "spd0": null,
+    "spd1": 831.4834782608696,
+    "bw0": 0,
+    "bw1": 831.4834782608696,
+    "prefer": 1
+  },
+  {
+    "site": "resource.hellofont.cn",
+    "err0": 5,
+    "err1": 0,
+    "spd0": 11.092398373487596,
+    "spd1": null,
+    "bw0": 1112.6175519630485,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "resources.jetbrains.com",
+    "err0": 0,
+    "err1": 13,
+    "spd0": null,
+    "spd1": 32.4710733492385,
+    "bw0": 0,
+    "bw1": 630.6138374899436,
+    "prefer": 1
+  },
+  {
+    "site": "retcode.alicdn.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 113.18739851997728,
+    "spd1": null,
+    "bw0": 145.85135135135135,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "retcode.taobao.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 15.664956536946601,
+    "spd1": null,
+    "bw0": 104.53260869565217,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "rlogs.youdao.com",
+    "err0": 2,
+    "err1": 7,
+    "spd0": 0.6470278800631246,
+    "spd1": 0.3766341060407251,
+    "bw0": 1.6849315068493151,
+    "bw1": 0.7142857142857143,
+    "prefer": 0
+  },
+  {
+    "site": "rms.shop.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 4.162520287842141,
+    "spd1": 2.4034967304487296,
+    "bw0": 8.129186602870814,
+    "bw1": 20.185929648241206,
+    "prefer": 0
+  },
+  {
+    "site": "rs.sinajs.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 25.97872340425532,
+    "spd1": null,
+    "bw0": 25.97872340425532,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "rt.gsspat.jp",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 12.397260273972602,
+    "bw0": 0,
+    "bw1": 12.397260273972602,
+    "prefer": 1
+  },
+  {
+    "site": "rtb-x.jd.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 8.753504108208313,
+    "spd1": 2.8009015777610817,
+    "bw0": 52.85526315789474,
+    "bw1": 2.8009015777610817,
+    "prefer": 0
+  },
+  {
+    "site": "rtb0.doubleverify.com",
+    "err0": 2,
+    "err1": 2,
+    "spd0": 1.3620471557011575,
+    "spd1": 12.300768884918892,
+    "bw0": 26.955223880597014,
+    "bw1": 24.853211009174313,
+    "prefer": 1
+  },
+  {
+    "site": "s.geekbang.org",
+    "err0": null,
+    "err1": null,
+    "spd0": 5.072662222648114,
+    "spd1": null,
+    "bw0": 53.813559322033896,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "s.go.sohu.com",
+    "err0": 16,
+    "err1": 1,
+    "spd0": 0.48100350008459225,
+    "spd1": 6.695402298850574,
+    "bw0": 105.9090909090909,
+    "bw1": 6.695402298850575,
+    "prefer": 0
+  },
+  {
+    "site": "s.search.bilibili.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 102.27072721361223,
+    "spd1": null,
+    "bw0": 130.42424242424244,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "s.taobao.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 72.20172574181605,
+    "spd1": null,
+    "bw0": 237.225,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "s.union.360.cn",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 5.945340175830518,
+    "spd1": null,
+    "bw0": 132.725,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "s0.qhimg.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 15.104084838963079,
+    "spd1": null,
+    "bw0": 15.104084838963079,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "s1.bdstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 28.549628121122197,
+    "spd1": null,
+    "bw0": 144.26724137931035,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "s1.feedly.com",
+    "err0": 15,
+    "err1": 1,
+    "spd0": null,
+    "spd1": 41.35072489300847,
+    "bw0": 0,
+    "bw1": 1491.9902597402597,
+    "prefer": 1
+  },
+  {
+    "site": "s1.hdslb.com",
+    "err0": 12,
+    "err1": 11,
+    "spd0": 9.912170160789884,
+    "spd1": 2.6895648803354235,
+    "bw0": 5097.881656804734,
+    "bw1": 822.5285792052259,
+    "prefer": 0
+  },
+  {
+    "site": "s23.cnzz.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 28.852574994996456,
+    "spd1": null,
+    "bw0": 94.4186046511628,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "s3-ap-southeast-1.amazonaws.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 41.90246701090074,
+    "bw0": 0,
+    "bw1": 41.90246701090074,
+    "prefer": 1
+  },
+  {
+    "site": "s3.amazonaws.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 4.623646178212193,
+    "spd1": null,
+    "bw0": 7.368327402135232,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "s4.51cto.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 5.564912552297976,
+    "spd1": null,
+    "bw0": 640.6025104602511,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "s4.cnzz.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 31.645739641605893,
+    "spd1": null,
+    "bw0": 102.25316455696202,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "s4.qhimg.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 0.8998063168629284,
+    "spd1": null,
+    "bw0": 5.809866392600205,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "s6.qhimg.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 0.9029774127310062,
+    "spd1": null,
+    "bw0": 0.9029774127310062,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "s8.qhimg.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 2.609719903542942,
+    "spd1": null,
+    "bw0": 2.609719903542942,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "s9.cnzz.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 19.423593598963663,
+    "spd1": null,
+    "bw0": 107.25333333333333,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "s95.cnzz.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 18.227555652881268,
+    "spd1": null,
+    "bw0": 76.98095238095237,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "sbeacon.sina.com.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 30.54023677751891,
+    "spd1": null,
+    "bw0": 93.92307692307692,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "search-x.jd.com",
+    "err0": 10,
+    "err1": 1,
+    "spd0": 14.914562863109039,
+    "spd1": 4.705924936656723,
+    "bw0": 176.41509433962264,
+    "bw1": 8.85430463576159,
+    "prefer": 0
+  },
+  {
+    "site": "search.bilibili.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 123.05714285714285,
+    "spd1": null,
+    "bw0": 159.5185185185185,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "search.jd.com",
+    "err0": 3,
+    "err1": 0,
+    "spd0": 15.030138320271519,
+    "spd1": 6.429603121942097,
+    "bw0": 150.44843049327355,
+    "bw1": 55.31447811447811,
+    "prefer": 0
+  },
+  {
+    "site": "search.sohu.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 9.108705595032099,
+    "spd1": null,
+    "bw0": 100.68571428571428,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "secure.gravatar.com",
+    "err0": 0,
+    "err1": 5,
+    "spd0": null,
+    "spd1": 8.10172391623561,
+    "bw0": 0,
+    "bw1": 88.27127659574468,
+    "prefer": 1
+  },
+  {
+    "site": "securepubads.g.doubleclick.net",
+    "err0": 147,
+    "err1": 72,
+    "spd0": 6.605756895367359,
+    "spd1": 2.422362521362737,
+    "bw0": 739.2923976608187,
+    "bw1": 230.22411347517732,
+    "prefer": 1
+  },
+  {
+    "site": "sensors.cloud.tencent.com",
+    "err0": 0,
+    "err1": 4,
+    "spd0": null,
+    "spd1": 1.598318228197241,
+    "bw0": 0,
+    "bw1": 19.023809523809526,
+    "prefer": 0
+  },
+  {
+    "site": "sentry.io",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 0.22145045891091983,
+    "spd1": null,
+    "bw0": 28.837985436893202,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "seq.jd.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 46.85431263590239,
+    "spd1": null,
+    "bw0": 66.61971830985915,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "service.idsync.analytics.yahoo.com",
+    "err0": 0,
+    "err1": 10,
+    "spd0": 9.101464435146443,
+    "spd1": 5.776968160352519,
+    "bw0": 9.101464435146443,
+    "bw1": 25.782122905027933,
+    "prefer": 1
+  },
+  {
+    "site": "sfp.safe.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 24.232034738930043,
+    "spd1": null,
+    "bw0": 38.51764705882353,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "sh.jd.com",
+    "err0": 0,
+    "err1": 43,
+    "spd0": 5.812483153501213,
+    "spd1": 1.7943360690328511,
+    "bw0": 6.623076923076923,
+    "bw1": 19.283653846153847,
+    "prefer": 0
+  },
+  {
+    "site": "shankapi.ifeng.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 21.695202360253656,
+    "spd1": null,
+    "bw0": 103.1593625498008,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "shared.ydstatic.com",
+    "err0": 9,
+    "err1": 6,
+    "spd0": 23.727529212427882,
+    "spd1": 5.119274482556368,
+    "bw0": 784.4363636363636,
+    "bw1": 226.32291666666666,
+    "prefer": 0
+  },
+  {
+    "site": "shence.hupu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 22.051120190684497,
+    "spd1": null,
+    "bw0": 87.88235294117646,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "shop.taobao.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 5.7792386986946775,
+    "spd1": null,
+    "bw0": 101.2421052631579,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "shp.qpic.cn",
+    "err0": 3,
+    "err1": 0,
+    "spd0": 66.81044800730145,
+    "spd1": null,
+    "bw0": 1570.5810276679842,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "signaler-pa.clients6.google.com",
+    "err0": 4,
+    "err1": 3,
+    "spd0": null,
+    "spd1": 4.344038436866316,
+    "bw0": 0,
+    "bw1": 64.67105263157895,
+    "prefer": 1
+  },
+  {
+    "site": "silkroad.csdn.net",
+    "err0": null,
+    "err1": null,
+    "spd0": 19.061035757166778,
+    "spd1": null,
+    "bw0": 74.61176470588235,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "skunotify.jd.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 11.379610699402429,
+    "spd1": null,
+    "bw0": 51.080882352941174,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "skywalking.apache.org",
+    "err0": null,
+    "err1": null,
+    "spd0": 27.666269417358226,
+    "spd1": null,
+    "bw0": 29.853107344632768,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "smetrics.ansible.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 3.0906821674739615,
+    "spd1": null,
+    "bw0": 8.283858998144712,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "sofire.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 16.826798225485724,
+    "spd1": null,
+    "bw0": 123.47058823529412,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "sofire.bdstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 703.394184789929,
+    "spd1": null,
+    "bw0": 1346.8181818181818,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "sp0.baidu.com",
+    "err0": 6,
+    "err1": 0,
+    "spd0": 3.0272736696176628,
+    "spd1": 2.732005745247133,
+    "bw0": 127.39393939393939,
+    "bw1": 29.194444444444443,
+    "prefer": 0
+  },
+  {
+    "site": "sp1.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 2.6290123596112003,
+    "spd1": 1.0131340430763434,
+    "bw0": 155.5457627118644,
+    "bw1": 27.12258064516129,
+    "prefer": 0
+  },
+  {
+    "site": "sp2.baidu.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 14.817699594082919,
+    "spd1": null,
+    "bw0": 144.9655172413793,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "spark.apache.org",
+    "err0": null,
+    "err1": null,
+    "spd0": 54.338602567625294,
+    "spd1": null,
+    "bw0": 173.91690312119985,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "spring-io.disqus.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 1.2258677151583897,
+    "bw0": 0,
+    "bw1": 10.904029304029304,
+    "prefer": 1
+  },
+  {
+    "site": "spring.io",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 5.090876366544868,
+    "bw0": 0,
+    "bw1": 18.437238688098113,
+    "prefer": 1
+  },
+  {
+    "site": "ss0.baidu.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 15.272036643551655,
+    "spd1": null,
+    "bw0": 866.968253968254,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "ss0.bdstatic.com",
+    "err0": 0,
+    "err1": 3,
+    "spd0": 86.56890514319007,
+    "spd1": 4.043965726174609,
+    "bw0": 295.80598221503635,
+    "bw1": 19.71171171171171,
+    "prefer": 0
+  },
+  {
+    "site": "ss1.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 13.233268612931376,
+    "spd1": null,
+    "bw0": 743.3448275862069,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "ss1.bdstatic.com",
+    "err0": 18,
+    "err1": 0,
+    "spd0": 94.44742482111258,
+    "spd1": null,
+    "bw0": 1750.8030303030303,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "ss2.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 16.665602655661118,
+    "spd1": null,
+    "bw0": 1091.1186440677966,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "ss3.baidu.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 15.436500400562016,
+    "spd1": null,
+    "bw0": 120.69444444444444,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "ssl.google-analytics.com",
+    "err0": 1,
+    "err1": 5,
+    "spd0": 20.1084186423876,
+    "spd1": 30.269602470941482,
+    "bw0": 186.15322580645162,
+    "bw1": 75.52614379084967,
+    "prefer": 1
+  },
+  {
+    "site": "ssl.gstatic.com",
+    "err0": 1,
+    "err1": 13,
+    "spd0": 9.77021748886311,
+    "spd1": 3.8435573877409146,
+    "bw0": 2003.8874680306906,
+    "bw1": 244.74375188196328,
+    "prefer": 1
+  },
+  {
+    "site": "sso.five-star.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 19.746922784044898,
+    "spd1": null,
+    "bw0": 35.6,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "sso.jcloud.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 19.710410201396755,
+    "spd1": null,
+    "bw0": 48.46987951807229,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "sso.jd.com",
+    "err0": 5,
+    "err1": 1,
+    "spd0": 11.076316342438975,
+    "spd1": 3.461432298022452,
+    "bw0": 59.95522388059702,
+    "bw1": 10.57338129496403,
+    "prefer": 0
+  },
+  {
+    "site": "sso.jd.hk",
+    "err0": null,
+    "err1": null,
+    "spd0": 13.313020020197278,
+    "spd1": null,
+    "bw0": 40.92857142857143,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "sso.jdbusiness.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 12.134398117908567,
+    "spd1": null,
+    "bw0": 45.45333333333333,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "sso.jdcloud.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 15.165918426872194,
+    "spd1": null,
+    "bw0": 50.2875,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "sso.jdl.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 11.586992247459126,
+    "spd1": null,
+    "bw0": 45.28947368421053,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "sso.jdpay.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 22.279628723093808,
+    "spd1": null,
+    "bw0": 49.592592592592595,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "sso.jdwl.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 16.103509363231254,
+    "spd1": null,
+    "bw0": 41.329268292682926,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "sso.jingxi.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 13.499193932908621,
+    "spd1": null,
+    "bw0": 36.46739130434783,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "sso.paipai.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 12.548484163586538,
+    "spd1": null,
+    "bw0": 50.1375,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "sso.piaogj.cn",
+    "err0": 24,
+    "err1": 0,
+    "spd0": null,
+    "spd1": null,
+    "bw0": null,
+    "bw1": null,
+    "prefer": 0
+  },
+  {
+    "site": "ssp-sync.i-mobile.co.jp",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 11.7123745819398,
+    "bw0": 0,
+    "bw1": 11.7123745819398,
+    "prefer": 1
+  },
+  {
+    "site": "ssum-sec.casalemedia.com",
+    "err0": 1,
+    "err1": 3,
+    "spd0": 0.2473765845981656,
+    "spd1": 2.6382562990487517,
+    "bw0": 9.09147609147609,
+    "bw1": 31.919708029197082,
+    "prefer": 1
+  },
+  {
+    "site": "ssum.casalemedia.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 25.51341890315053,
+    "bw0": 0,
+    "bw1": 40.49074074074074,
+    "prefer": 1
+  },
+  {
+    "site": "stackoverflow.com",
+    "err0": 4,
+    "err1": 18,
+    "spd0": 0.18642989989636008,
+    "spd1": 2.053040744208533,
+    "bw0": 59.984322508398655,
+    "bw1": 120.8191616766467,
+    "prefer": 1
+  },
+  {
+    "site": "stackshare.io",
+    "err0": null,
+    "err1": null,
+    "spd0": 25.333254814466894,
+    "spd1": null,
+    "bw0": 159.92992992992993,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "stacktrace.app.packages",
+    "err0": 0,
+    "err1": 1,
+    "spd0": null,
+    "spd1": null,
+    "bw0": null,
+    "bw1": null,
+    "prefer": 1
+  },
+  {
+    "site": "stadig.ifeng.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 6.8997332449898705,
+    "spd1": null,
+    "bw0": 34.184,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "static.360buyimg.com",
+    "err0": 3,
+    "err1": 7,
+    "spd0": 84.93616857394444,
+    "spd1": 9.053953951860215,
+    "bw0": 1567.2857142857142,
+    "bw1": 116.67959835691465,
+    "prefer": 0
+  },
+  {
+    "site": "static.bshare.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 7.588267592985895,
+    "spd1": null,
+    "bw0": 234,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "static.cnblogs.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 29.904528168596656,
+    "spd1": null,
+    "bw0": 117.5,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "static.googleadsserving.cn",
+    "err0": 4,
+    "err1": 1,
+    "spd0": 5.011828029129702,
+    "spd1": 2.5379796517471997,
+    "bw0": 143.9922480620155,
+    "bw1": 28.502083333333335,
+    "prefer": 0
+  },
+  {
+    "site": "static.hdslb.com",
+    "err0": 4,
+    "err1": 0,
+    "spd0": 50.17753269576475,
+    "spd1": null,
+    "bw0": 1640.6607142857142,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "static.kancloud.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 990.720994475138,
+    "spd1": null,
+    "bw0": 990.7209944751381,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "static.ntimg.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 13.22090132577014,
+    "spd1": null,
+    "bw0": 17.099548787366047,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "static.oschina.net",
+    "err0": 11,
+    "err1": 2,
+    "spd0": 94.35765790200016,
+    "spd1": 1.2722068544391218,
+    "bw0": 4055.04,
+    "bw1": 169.90103806228373,
+    "prefer": 0
+  },
+  {
+    "site": "static.sensorsdata.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 305.07254902738873,
+    "spd1": null,
+    "bw0": 406.60227272727275,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "static.zhihu.com",
+    "err0": 4,
+    "err1": 2,
+    "spd0": 188.54872629443994,
+    "spd1": 4.1970162948946435,
+    "bw0": 7721.120906801008,
+    "bw1": 128.51459412780656,
+    "prefer": 0
+  },
+  {
+    "site": "static001.geekbang.org",
+    "err0": 16,
+    "err1": 9,
+    "spd0": 3.6360479832609816,
+    "spd1": 1.1915056284256325,
+    "bw0": 4387.014492753623,
+    "bw1": 62.72286595088764,
+    "prefer": 0
+  },
+  {
+    "site": "static001.infoq.cn",
+    "err0": 119,
+    "err1": 131,
+    "spd0": 1.6247880033241189,
+    "spd1": 0.96443896112588,
+    "bw0": 1674.3917525773195,
+    "bw1": 509.0864516129032,
+    "prefer": 0
+  },
+  {
+    "site": "statics.itc.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 46.300802435664416,
+    "spd1": null,
+    "bw0": 1989.7589743589745,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "statistic.csdn.net",
+    "err0": 3,
+    "err1": 0,
+    "spd0": 16.345875167667337,
+    "spd1": null,
+    "bw0": 40.10843373493976,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "stats.g.doubleclick.net",
+    "err0": 4,
+    "err1": 9,
+    "spd0": 5.12834893635685,
+    "spd1": 2.981885723843768,
+    "bw0": 71.046875,
+    "bw1": 24.3048128342246,
+    "prefer": 1
+  },
+  {
+    "site": "storage.360buyimg.com",
+    "err0": 8,
+    "err1": 1,
+    "spd0": 2.011934968303449,
+    "spd1": 12.250839762503805,
+    "bw0": 2688.5275862068966,
+    "bw1": 90.24757281553399,
+    "prefer": 0
+  },
+  {
+    "site": "storage.googleapis.com",
+    "err0": 3,
+    "err1": 9,
+    "spd0": 1.3397343726028617,
+    "spd1": 10.441811618154496,
+    "bw0": 44.6651376146789,
+    "bw1": 1378.5718654434252,
+    "prefer": 1
+  },
+  {
+    "site": "sucimg.itc.cn",
+    "err0": 6,
+    "err1": 2,
+    "spd0": 36.95897774700986,
+    "spd1": 2.6547391226613284,
+    "bw0": 330.0428082191781,
+    "bw1": 6.43952802359882,
+    "prefer": 0
+  },
+  {
+    "site": "sugar.zhihu.com",
+    "err0": 7,
+    "err1": 4,
+    "spd0": 10.703676643659728,
+    "spd1": 3.2527953089648873,
+    "bw0": 189.34615384615384,
+    "bw1": 25.774869109947645,
+    "prefer": 0
+  },
+  {
+    "site": "suggest.taobao.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 7.5695147712836635,
+    "spd1": null,
+    "bw0": 279.0882352941176,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "survey.news.ifeng.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 6.86066763425254,
+    "spd1": null,
+    "bw0": 6.86066763425254,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "sync.dmp.fout.jp",
+    "err0": null,
+    "err1": null,
+    "spd0": 0.8933095160766482,
+    "spd1": null,
+    "bw0": 0.8933095160766482,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "syndication.twitter.com",
+    "err0": 10,
+    "err1": 1,
+    "spd0": null,
+    "spd1": 7.034400446375257,
+    "bw0": 0,
+    "bw1": 40.298850574712645,
+    "prefer": 1
+  },
+  {
+    "site": "t.go.sohu.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 5.627649884434658,
+    "spd1": 2.3727087576374744,
+    "bw0": 16.27659574468085,
+    "bw1": 2.3727087576374744,
+    "prefer": 0
+  },
+  {
+    "site": "t10.baidu.com",
+    "err0": 4,
+    "err1": 0,
+    "spd0": 10.506633176831992,
+    "spd1": null,
+    "bw0": 925.2755102040817,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "t11.baidu.com",
+    "err0": 44,
+    "err1": 29,
+    "spd0": 20.385588714348373,
+    "spd1": 3.7913071092293174,
+    "bw0": 977.2117647058824,
+    "bw1": 115.96995708154506,
+    "prefer": 0
+  },
+  {
+    "site": "t12.baidu.com",
+    "err0": 27,
+    "err1": 20,
+    "spd0": 18.145267385010218,
+    "spd1": 3.597259092599892,
+    "bw0": 776.4795918367347,
+    "bw1": 77.7250554323725,
+    "prefer": 0
+  },
+  {
+    "site": "t13.baidu.com",
+    "err0": 5,
+    "err1": 0,
+    "spd0": 27.87494020846952,
+    "spd1": null,
+    "bw0": 617.9135802469136,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "t14.baidu.com",
+    "err0": 6,
+    "err1": 14,
+    "spd0": 29.193972357895827,
+    "spd1": 6.016569765706379,
+    "bw0": 1683.3186813186812,
+    "bw1": 223.99736842105264,
+    "prefer": 0
+  },
+  {
+    "site": "t15.baidu.com",
+    "err0": 4,
+    "err1": 0,
+    "spd0": 33.23177787687648,
+    "spd1": null,
+    "bw0": 477.39285714285717,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "t7.baidu.com",
+    "err0": 26,
+    "err1": 7,
+    "spd0": 22.414403646496766,
+    "spd1": 1.2418341060601852,
+    "bw0": 1600.5,
+    "bw1": 31.910031023784903,
+    "prefer": 0
+  },
+  {
+    "site": "t8.baidu.com",
+    "err0": 35,
+    "err1": 6,
+    "spd0": 13.29657498945613,
+    "spd1": 1.139863320824557,
+    "bw0": 515.7961165048544,
+    "bw1": 11.258347978910368,
+    "prefer": 0
+  },
+  {
+    "site": "t9.baidu.com",
+    "err0": 26,
+    "err1": 3,
+    "spd0": 22.116571685343963,
+    "spd1": 0.8571725286439912,
+    "bw0": 1005.125,
+    "bw1": 22.53205128205128,
+    "prefer": 0
+  },
+  {
+    "site": "tanzu.vmware.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 39.417851012976364,
+    "spd1": null,
+    "bw0": 81.05374280230326,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "tb1.bdstatic.com",
+    "err0": 5,
+    "err1": 6,
+    "spd0": 61.446683573543304,
+    "spd1": 11.297176913248014,
+    "bw0": 2909.12,
+    "bw1": 694.9557705597789,
+    "prefer": 0
+  },
+  {
+    "site": "tb2.bdstatic.com",
+    "err0": 6,
+    "err1": 0,
+    "spd0": 22.58216520988044,
+    "spd1": null,
+    "bw0": 1592.1147540983607,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "tb3.bdstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 29.02242060351018,
+    "spd1": null,
+    "bw0": 634.3671875,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "tbmsg.baidu.com",
+    "err0": 3,
+    "err1": 0,
+    "spd0": 2.65250387528142,
+    "spd1": 2.813858239010191,
+    "bw0": 44.840425531914896,
+    "bw1": 16.951612903225808,
+    "prefer": 0
+  },
+  {
+    "site": "tce.alicdn.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 19.471904626746,
+    "spd1": null,
+    "bw0": 113.3125,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "tds.alicdn.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 6.988325989760096,
+    "spd1": null,
+    "bw0": 58.483870967741936,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "tech.ifeng.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 140.79445727482678,
+    "spd1": null,
+    "bw0": 140.79445727482678,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "textlink.simba.taobao.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 10.275615517091607,
+    "spd1": null,
+    "bw0": 299.2903225806452,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "tf.andfun.cn",
+    "err0": 0,
+    "err1": 5,
+    "spd0": 20.9898904130209,
+    "spd1": 2.930364871534056,
+    "bw0": 62.80542986425339,
+    "bw1": 22.667484662576687,
+    "prefer": 0
+  },
+  {
+    "site": "tfugcs.andfun.cn",
+    "err0": 4,
+    "err1": 0,
+    "spd0": 17.935538851381896,
+    "spd1": null,
+    "bw0": 2024.0586734693877,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "tieba.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 4.330300693518978,
+    "spd1": 1.872815384022858,
+    "bw0": 154.77791718946048,
+    "bw1": 33.802092050209204,
+    "prefer": 0
+  },
+  {
+    "site": "tiebapic.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 23.92963466301639,
+    "spd1": null,
+    "bw0": 7143.026086956522,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "timg01.bdimg.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 42.71388888888889,
+    "spd1": null,
+    "bw0": 42.71388888888889,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "tjs.sjs.sinajs.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 62.48900248863198,
+    "spd1": null,
+    "bw0": 234.19607843137254,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "ton.twimg.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 8.01063829787234,
+    "bw0": 0,
+    "bw1": 8.01063829787234,
+    "prefer": 1
+  },
+  {
+    "site": "tps.doubleverify.com",
+    "err0": 4,
+    "err1": 3,
+    "spd0": 0.5055818973825805,
+    "spd1": 7.5390510082883955,
+    "bw0": 26.048076923076923,
+    "bw1": 29.60655737704918,
+    "prefer": 1
+  },
+  {
+    "site": "tps20800.doubleverify.com",
+    "err0": 0,
+    "err1": 1,
+    "spd0": 0.22974658040039078,
+    "spd1": 7.775911543162679,
+    "bw0": 19.919117647058822,
+    "bw1": 24.405405405405407,
+    "prefer": 1
+  },
+  {
+    "site": "tps20802.doubleverify.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 1.2942866611166215,
+    "spd1": 8.832154035877236,
+    "bw0": 23.65938864628821,
+    "bw1": 26.429268292682927,
+    "prefer": 1
+  },
+  {
+    "site": "tps20803.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.346667270402361,
+    "spd1": null,
+    "bw0": 26.689655172413794,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "tps20804.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 2.407775999279507,
+    "spd1": null,
+    "bw0": 26.300970873786408,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "tps20805.doubleverify.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 0.8112870417735174,
+    "spd1": 15.151291512915131,
+    "bw0": 26.17391304347826,
+    "bw1": 15.15129151291513,
+    "prefer": 1
+  },
+  {
+    "site": "tps20806.doubleverify.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 2.55275553314207,
+    "spd1": null,
+    "bw0": 24.853211009174313,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "tps20807.doubleverify.com",
+    "err0": 2,
+    "err1": 5,
+    "spd0": 0.8442592259595458,
+    "spd1": 14.734265734265735,
+    "bw0": 26.048076923076923,
+    "bw1": 22.481327800829874,
+    "prefer": 1
+  },
+  {
+    "site": "tps20808.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 4.378209150174702,
+    "bw0": 0,
+    "bw1": 25.556603773584907,
+    "prefer": 1
+  },
+  {
+    "site": "tps20810.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.0180694220650404,
+    "spd1": 5.338502961338903,
+    "bw0": 9.505263157894737,
+    "bw1": 17.09148264984227,
+    "prefer": 1
+  },
+  {
+    "site": "tps20811.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.3993029022452839,
+    "spd1": 5.166740990366062,
+    "bw0": 10.707509881422926,
+    "bw1": 25.677725118483412,
+    "prefer": 1
+  },
+  {
+    "site": "tps20812.doubleverify.com",
+    "err0": 1,
+    "err1": 1,
+    "spd0": 0.7252293598804979,
+    "spd1": 9.833347628046816,
+    "bw0": 11.651612903225807,
+    "bw1": 24.1875,
+    "prefer": 1
+  },
+  {
+    "site": "tps20813.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.3150296291591783,
+    "spd1": 6.514206116184199,
+    "bw0": 9.40625,
+    "bw1": 20.36842105263158,
+    "prefer": 1
+  },
+  {
+    "site": "tps20814.doubleverify.com",
+    "err0": 4,
+    "err1": 2,
+    "spd0": 1.422394483727612,
+    "spd1": 5.036349689835089,
+    "bw0": 22.860759493670887,
+    "bw1": 25.923444976076556,
+    "prefer": 1
+  },
+  {
+    "site": "tps20815.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.6059840807198416,
+    "spd1": null,
+    "bw0": 20.838461538461537,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "tps20816.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.6657664845597497,
+    "spd1": null,
+    "bw0": 23.86784140969163,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "tps20817.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.539818572324117,
+    "spd1": 2.7896272689060946,
+    "bw0": 10.96761133603239,
+    "bw1": 15.392045454545455,
+    "prefer": 1
+  },
+  {
+    "site": "tps20819.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.1309890370690014,
+    "spd1": null,
+    "bw0": 14.762942779291553,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "tps20820.doubleverify.com",
+    "err0": 0,
+    "err1": 2,
+    "spd0": 10.989858012170385,
+    "spd1": 9.47500669878873,
+    "bw0": 10.989858012170385,
+    "bw1": 26.17391304347826,
+    "prefer": 1
+  },
+  {
+    "site": "tps20821.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 0.767259834105631,
+    "spd1": null,
+    "bw0": 23.454545454545453,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "tps20822.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 2.023494136145464,
+    "spd1": null,
+    "bw0": 28.51578947368421,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "tps20823.doubleverify.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 0.9530766666989832,
+    "spd1": 3.7630053872656606,
+    "bw0": 10.81437125748503,
+    "bw1": 21.41501976284585,
+    "prefer": 1
+  },
+  {
+    "site": "tps20824.doubleverify.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 2.595799802738193,
+    "spd1": null,
+    "bw0": 10.989858012170385,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "tps20825.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 2.6476022480679644,
+    "spd1": 6.706599143781978,
+    "bw0": 21.93522267206478,
+    "bw1": 15.658959537572255,
+    "prefer": 1
+  },
+  {
+    "site": "tps20826.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 10.285585130217425,
+    "bw0": 0,
+    "bw1": 26.821782178217823,
+    "prefer": 1
+  },
+  {
+    "site": "tps20828.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.1497490806792894,
+    "spd1": null,
+    "bw0": 18.878048780487806,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "tps20829.doubleverify.com",
+    "err0": 0,
+    "err1": 1,
+    "spd0": 1.2336314056586493,
+    "spd1": 7.6973615539394515,
+    "bw0": 10.241965973534972,
+    "bw1": 23.253218884120173,
+    "prefer": 1
+  },
+  {
+    "site": "tps20830.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.5166794861094137,
+    "spd1": null,
+    "bw0": 28.666666666666668,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "tps20831.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.54992727390551,
+    "spd1": null,
+    "bw0": 25.2,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "tps20832.doubleverify.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 10.33969465648855,
+    "spd1": null,
+    "bw0": 27.09,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "tps20833.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.0188319822269654,
+    "spd1": null,
+    "bw0": 24.967741935483872,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "tps20835.doubleverify.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 1.592270612970334,
+    "spd1": null,
+    "bw0": 27.927835051546392,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "tps20836.doubleverify.com",
+    "err0": 0,
+    "err1": 1,
+    "spd0": 1.8386435276568065,
+    "spd1": 2.653968969912407,
+    "bw0": 25.923444976076556,
+    "bw1": 16.619631901840492,
+    "prefer": 1
+  },
+  {
+    "site": "tps800.doubleverify.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 1.3878303168441655,
+    "spd1": 13.125511094874078,
+    "bw0": 22.764705882352942,
+    "bw1": 20.6793893129771,
+    "prefer": 1
+  },
+  {
+    "site": "tps801.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 0.8591998499448571,
+    "spd1": null,
+    "bw0": 24.405405405405407,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "tps802.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 0.9115829294823545,
+    "spd1": 8.404188438121219,
+    "bw0": 10.836,
+    "bw1": 15.05,
+    "prefer": 1
+  },
+  {
+    "site": "tps803.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.7341536424169497,
+    "spd1": null,
+    "bw0": 18.921658986175114,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "tps804.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 4.147835904039945,
+    "spd1": null,
+    "bw0": 27.927835051546392,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "tps805.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 3.6581875848926364,
+    "spd1": null,
+    "bw0": 11.171134020618556,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "tps806.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.0517597093922617,
+    "spd1": null,
+    "bw0": 28.819148936170212,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "tps807.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 6.48342972478237,
+    "spd1": null,
+    "bw0": 22.860759493670887,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "tps808.doubleverify.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 2.5615861852104853,
+    "spd1": null,
+    "bw0": 9.815217391304348,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "tps809.doubleverify.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 2.3143174922957055,
+    "spd1": 12.668341065151886,
+    "bw0": 11.171134020618556,
+    "bw1": 21.330708661417322,
+    "prefer": 1
+  },
+  {
+    "site": "tps810.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.4116146225084898,
+    "spd1": 15.797063785617167,
+    "bw0": 10.879518072289157,
+    "bw1": 21.672,
+    "prefer": 1
+  },
+  {
+    "site": "tps811.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 2.94897337411251,
+    "spd1": null,
+    "bw0": 25.8,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "tps812.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 1.20292239976699,
+    "spd1": null,
+    "bw0": 28.072538860103627,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "tps813.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 2.513824726117911,
+    "spd1": null,
+    "bw0": 24.295964125560538,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "tps814.doubleverify.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 4.367909240484612,
+    "spd1": null,
+    "bw0": 25.923444976076556,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "track.sohu.com",
+    "err0": 3,
+    "err1": 1,
+    "spd0": 2.2100123748654537,
+    "spd1": 3.9729425028184897,
+    "bw0": 106.78787878787878,
+    "bw1": 3.9729425028184893,
+    "prefer": 0
+  },
+  {
+    "site": "tui.taobao.com",
+    "err0": 2,
+    "err1": 2,
+    "spd0": 31.401709557152536,
+    "spd1": 1.3732591353288215,
+    "bw0": 140.8840579710145,
+    "bw1": 24.863779033270557,
+    "prefer": 0
+  },
+  {
+    "site": "tuijian.sogou.com",
+    "err0": 6,
+    "err1": 3,
+    "spd0": null,
+    "spd1": null,
+    "bw0": null,
+    "bw1": null,
+    "prefer": 0
+  },
+  {
+    "site": "tva2.sinaimg.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 39.625922539595415,
+    "spd1": null,
+    "bw0": 106.11538461538461,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "txt.go.sohu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 10.882417842122514,
+    "spd1": null,
+    "bw0": 62.410714285714285,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "uaction.alicdn.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 439.77365141956653,
+    "spd1": null,
+    "bw0": 765.0266666666666,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "unagi-na.amazon.com",
+    "err0": 0,
+    "err1": 1,
+    "spd0": null,
+    "spd1": 1.3020405590974047,
+    "bw0": 0,
+    "bw1": 4.574962518740629,
+    "prefer": 1
+  },
+  {
+    "site": "unagi.amazon.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 1.0464474902155754,
+    "bw0": 0,
+    "bw1": 7.69609079445145,
+    "prefer": 1
+  },
+  {
+    "site": "union-click.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": null,
+    "bw0": null,
+    "bw1": null,
+    "prefer": 0
+  },
+  {
+    "site": "unpkg.zhimg.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 146.0604155327011,
+    "spd1": null,
+    "bw0": 1561.139534883721,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "update.googleapis.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 6.109103950267994,
+    "spd1": 5.701480620172744,
+    "bw0": 67.04285714285714,
+    "bw1": 28.95679012345679,
+    "prefer": 1
+  },
+  {
+    "site": "upos-sz-mirrorcos.bilivideo.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 547.7284461243343,
+    "spd1": null,
+    "bw0": 1014.8734758791306,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "upos-sz-mirrorkodo.bilivideo.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 78.0006111773672,
+    "spd1": null,
+    "bw0": 4922.231578947369,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "upos-sz-mirrorkodoo1.bilivideo.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 96.30164574646348,
+    "spd1": null,
+    "bw0": 6745.532423208191,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "upos-sz-mirrorks3.bilivideo.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 3606.9822616258302,
+    "spd1": null,
+    "bw0": 5472.365591397849,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "ups.analytics.yahoo.com",
+    "err0": 8,
+    "err1": 15,
+    "spd0": 5.239094492798269,
+    "spd1": 8.673054990246566,
+    "bw0": 29.426160337552744,
+    "bw1": 49.85,
+    "prefer": 1
+  },
+  {
+    "site": "user-images.githubusercontent.com",
+    "err0": 4,
+    "err1": 2,
+    "spd0": 17.715717554808567,
+    "spd1": 47.24254927362471,
+    "bw0": 54.55719557195572,
+    "bw1": 1232.9604519774011,
+    "prefer": 1
+  },
+  {
+    "site": "v2.sohu.com",
+    "err0": 19,
+    "err1": 0,
+    "spd0": 6.582547914324108,
+    "spd1": null,
+    "bw0": 301.64686468646863,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "v4.passport.sohu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 31.211306923098217,
+    "spd1": null,
+    "bw0": 90.23684210526316,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "v6.cnzz.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 15.915797069713754,
+    "spd1": null,
+    "bw0": 39.97029702970297,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "vdposter.bdstatic.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 17.952688820548723,
+    "spd1": null,
+    "bw0": 523.4470588235295,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "visuals.feedly.com",
+    "err0": 44,
+    "err1": 26,
+    "spd0": null,
+    "spd1": 2.5481115219400112,
+    "bw0": 0,
+    "bw1": 39.06410256410256,
+    "prefer": 1
+  },
+  {
+    "site": "vm.gtimg.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 2.062149090534008,
+    "spd1": null,
+    "bw0": 1703.9411764705883,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "vmonitor.ws.netease.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 18.555433897429396,
+    "spd1": null,
+    "bw0": 122.32142857142857,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "w1.hoopchina.com.cn",
+    "err0": 3,
+    "err1": 0,
+    "spd0": 56.43866383199475,
+    "spd1": null,
+    "bw0": 7793.988095238095,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "w4.hoopchina.com.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 23.10672386988487,
+    "spd1": null,
+    "bw0": 51.142857142857146,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "wadehuanglearning.blogspot.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 17.347060894051392,
+    "bw0": 0,
+    "bw1": 17.347060894051392,
+    "prefer": 1
+  },
+  {
+    "site": "wappass.baidu.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 33.203258267797715,
+    "spd1": null,
+    "bw0": 746.4736842105264,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "widget.weibo.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 11.770605759682224,
+    "bw0": 0,
+    "bw1": 17.253275109170307,
+    "prefer": 0
+  },
+  {
+    "site": "wiki.archlinux.org",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 2.2784418051225988,
+    "bw0": 0,
+    "bw1": 35.397274275979555,
+    "prefer": 1
+  },
+  {
+    "site": "wl.jd.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 32.0889476392937,
+    "spd1": null,
+    "bw0": 585.9818181818182,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "wlssl.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 150.93015552436668,
+    "spd1": null,
+    "bw0": 370.28846153846155,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "wn.pos.baidu.com",
+    "err0": 5,
+    "err1": 12,
+    "spd0": 4.248177098264212,
+    "spd1": 1.1093952867510894,
+    "bw0": 127.39393939393939,
+    "bw1": 16.951612903225808,
+    "prefer": 0
+  },
+  {
+    "site": "wq.jd.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 6.066008404233949,
+    "spd1": null,
+    "bw0": 50.77215189873418,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "ww2.sinaimg.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 31.10597719969398,
+    "spd1": null,
+    "bw0": 837.5652173913044,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "wwc.alicdn.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 34.07630436452947,
+    "spd1": null,
+    "bw0": 80.27777777777777,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "www.amazon.com",
+    "err0": 0,
+    "err1": 1,
+    "spd0": null,
+    "spd1": 0.8862648947311946,
+    "bw0": 0,
+    "bw1": 104.89900811541929,
+    "prefer": 1
+  },
+  {
+    "site": "www.baeldung.com",
+    "err0": 2,
+    "err1": 6,
+    "spd0": null,
+    "spd1": 3.0701168163271286,
+    "bw0": 0,
+    "bw1": 253.36958234830576,
+    "prefer": 1
+  },
+  {
+    "site": "www.baidu.com",
+    "err0": 3,
+    "err1": 0,
+    "spd0": 4.022373379142207,
+    "spd1": null,
+    "bw0": 1286.9538461538461,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "www.bilibili.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 117.0493221513229,
+    "spd1": null,
+    "bw0": 223.73006134969324,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "www.cnblogs.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 101.12005035898373,
+    "spd1": null,
+    "bw0": 512.729490022173,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "www.cppblog.com",
+    "err0": 4,
+    "err1": 0,
+    "spd0": 77.25813664306189,
+    "spd1": null,
+    "bw0": 82.5625,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "www.downg.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 527.9581904336715,
+    "spd1": null,
+    "bw0": 1871.50634696756,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "www.ehcache.org",
+    "err0": 2,
+    "err1": 26,
+    "spd0": 0.6537177235822563,
+    "spd1": 0.9881633207441591,
+    "bw0": 3.602787456445993,
+    "bw1": 35.169133192389005,
+    "prefer": 1
+  },
+  {
+    "site": "www.facebook.com",
+    "err0": 29,
+    "err1": 65,
+    "spd0": null,
+    "spd1": 1.8877336462679595,
+    "bw0": 0,
+    "bw1": 36.09104938271605,
+    "prefer": 1
+  },
+  {
+    "site": "www.fastly.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 52.626575028636886,
+    "spd1": 25.919138775426187,
+    "bw0": 52.626575028636886,
+    "bw1": 39.614277852032394,
+    "prefer": 1
+  },
+  {
+    "site": "www.feedly.com",
+    "err0": 6,
+    "err1": 1,
+    "spd0": null,
+    "spd1": 10.09394843909504,
+    "bw0": 0,
+    "bw1": 35.870588235294115,
+    "prefer": 1
+  },
+  {
+    "site": "www.fonts.net.cn",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 3.2537220747209776,
+    "spd1": null,
+    "bw0": 93.68508287292818,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "www.gate.io",
+    "err0": 0,
+    "err1": 3,
+    "spd0": null,
+    "spd1": 88.18180539369465,
+    "bw0": 0,
+    "bw1": 229.2733776188043,
+    "prefer": 1
+  },
+  {
+    "site": "www.gitbook.com",
+    "err0": 0,
+    "err1": 4,
+    "spd0": 7.320574162679427,
+    "spd1": 0.6786739536920929,
+    "bw0": 7.320574162679426,
+    "bw1": 1.287037037037037,
+    "prefer": 1
+  },
+  {
+    "site": "www.gmail.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 9.727731126730653,
+    "bw0": 0,
+    "bw1": 27.716129032258063,
+    "prefer": 1
+  },
+  {
+    "site": "www.google-analytics.com",
+    "err0": 33,
+    "err1": 24,
+    "spd0": 4.22687747781838,
+    "spd1": 3.2858011546783805,
+    "bw0": 258.6575342465753,
+    "bw1": 102.06216216216217,
+    "prefer": 1
+  },
+  {
+    "site": "www.google.cn",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 10.928290598563537,
+    "spd1": 5.644174822877008,
+    "bw0": 33.09230769230769,
+    "bw1": 51.66016260162602,
+    "prefer": 0
+  },
+  {
+    "site": "www.google.com",
+    "err0": 43,
+    "err1": 75,
+    "spd0": null,
+    "spd1": 4.357518622738629,
+    "bw0": 0,
+    "bw1": 704.6112676056338,
+    "prefer": 1
+  },
+  {
+    "site": "www.google.com.hk",
+    "err0": 14,
+    "err1": 9,
+    "spd0": null,
+    "spd1": 2.29826678053735,
+    "bw0": 0,
+    "bw1": 338.74204545454546,
+    "prefer": 1
+  },
+  {
+    "site": "www.google.nl",
+    "err0": 142,
+    "err1": 215,
+    "spd0": null,
+    "spd1": 4.083958049715536,
+    "bw0": 0,
+    "bw1": 366.7985257985258,
+    "prefer": 1
+  },
+  {
+    "site": "www.googleadservices.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 5.659586276358646,
+    "spd1": 5.531212643740918,
+    "bw0": 137.44897959183675,
+    "bw1": 53.62204724409449,
+    "prefer": 1
+  },
+  {
+    "site": "www.googleapis.com",
+    "err0": 8,
+    "err1": 1,
+    "spd0": null,
+    "spd1": 6.047966513352466,
+    "bw0": 0,
+    "bw1": 35.82442748091603,
+    "prefer": 1
+  },
+  {
+    "site": "www.googleoptimize.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 72.5208607105288,
+    "spd1": null,
+    "bw0": 235.67368421052632,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "www.googletagmanager.com",
+    "err0": 8,
+    "err1": 36,
+    "spd0": 3.7640523533102783,
+    "spd1": 8.204382054934303,
+    "bw0": 741.340206185567,
+    "bw1": 245.30238726790452,
+    "prefer": 1
+  },
+  {
+    "site": "www.googletagservices.com",
+    "err0": 10,
+    "err1": 7,
+    "spd0": 6.865207999866029,
+    "spd1": 4.088715904530623,
+    "bw0": 280.47222222222223,
+    "bw1": 81.79127725856698,
+    "prefer": 1
+  },
+  {
+    "site": "www.gravatar.com",
+    "err0": 106,
+    "err1": 223,
+    "spd0": null,
+    "spd1": 2.2434405410483116,
+    "bw0": 0,
+    "bw1": 155.4848484848485,
+    "prefer": 1
+  },
+  {
+    "site": "www.gstatic.cn",
+    "err0": 9,
+    "err1": 5,
+    "spd0": 16.414931110627453,
+    "spd1": 1.5780497284904973,
+    "bw0": 63.44761904761905,
+    "bw1": 11.593709043250328,
+    "prefer": 0
+  },
+  {
+    "site": "www.gstatic.com",
+    "err0": 12,
+    "err1": 9,
+    "spd0": 3.496488111179188,
+    "spd1": 2.721161761113605,
+    "bw0": 1329.945945945946,
+    "bw1": 325.09016393442624,
+    "prefer": 1
+  },
+  {
+    "site": "www.hellofont.cn",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 2.7099255359929324,
+    "spd1": null,
+    "bw0": 323.9673913043478,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "www.ibm.com",
+    "err0": 2,
+    "err1": 1,
+    "spd0": 9.804160348349395,
+    "spd1": 12.243827105886647,
+    "bw0": 42.236584227718154,
+    "bw1": 28.323353293413174,
+    "prefer": 1
+  },
+  {
+    "site": "www.ifeng.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 9.749005042400166,
+    "spd1": null,
+    "bw0": 964.7111716621254,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "www.imdb.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 1.8782258064516129,
+    "bw0": 0,
+    "bw1": 1.8782258064516129,
+    "prefer": 1
+  },
+  {
+    "site": "www.infoq.cn",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 3.1282995414111716,
+    "spd1": null,
+    "bw0": 155.51822916666666,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "www.infoq.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 24.543529451282062,
+    "spd1": null,
+    "bw0": 35.00827129859388,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "www.inwaishe.com",
+    "err0": 0,
+    "err1": 2,
+    "spd0": 32.843489319858016,
+    "spd1": null,
+    "bw0": 4594.107438016529,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "www.ithome.com",
+    "err0": 3,
+    "err1": 0,
+    "spd0": 50.306249726514174,
+    "spd1": null,
+    "bw0": 594.6933333333334,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "www.jd.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 43.37474966546404,
+    "spd1": null,
+    "bw0": 1328.906976744186,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "www.jetbrains.com",
+    "err0": 15,
+    "err1": 0,
+    "spd0": 4.332392491389962,
+    "spd1": null,
+    "bw0": 277.16637115839245,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "www.kancloud.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 93.04109589041096,
+    "spd1": null,
+    "bw0": 94.33333333333333,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "www.kuaidaili.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 32.38651876481408,
+    "spd1": null,
+    "bw0": 403.0747330960854,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "www.linkedin.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 44.88781163434903,
+    "spd1": null,
+    "bw0": 124.17241379310344,
+    "bw1": 0,
+    "prefer": 1
+  },
+  {
+    "site": "www.lunkr.cn",
+    "err0": null,
+    "err1": null,
+    "spd0": 42.68623481781376,
+    "spd1": null,
+    "bw0": 329.484375,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "www.op.gg",
+    "err0": 0,
+    "err1": 1,
+    "spd0": 17.073384219686233,
+    "spd1": 20.415981206758044,
+    "bw0": 116.88279932546375,
+    "bw1": 584.9543080939948,
+    "prefer": 1
+  },
+  {
+    "site": "www.oracle.com",
+    "err0": 0,
+    "err1": 1,
+    "spd0": null,
+    "spd1": 12.95940466734713,
+    "bw0": 0,
+    "bw1": 507.2893617021277,
+    "prefer": 1
+  },
+  {
+    "site": "www.oracleimg.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 12.899764325616319,
+    "bw0": 0,
+    "bw1": 51.936,
+    "prefer": 1
+  },
+  {
+    "site": "www.oschina.net",
+    "err0": null,
+    "err1": null,
+    "spd0": 2.687566778385309,
+    "spd1": null,
+    "bw0": 98.06666666666666,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "www.percona.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 11.50969695383009,
+    "bw0": 0,
+    "bw1": 297.06538280883046,
+    "prefer": 1
+  },
+  {
+    "site": "www.redditstatic.com",
+    "err0": 2,
+    "err1": 3,
+    "spd0": null,
+    "spd1": 2.819271312938345,
+    "bw0": 0,
+    "bw1": 395.8523489932886,
+    "prefer": 1
+  },
+  {
+    "site": "www.sinaimg.cn",
+    "err0": 0,
+    "err1": 4,
+    "spd0": null,
+    "spd1": 4.226464134911278,
+    "bw0": 0,
+    "bw1": 37.88228699551569,
+    "prefer": 0
+  },
+  {
+    "site": "www.sohu.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 24.053737382444357,
+    "spd1": null,
+    "bw0": 678.7123287671233,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "www.taobao.com",
+    "err0": 8,
+    "err1": 0,
+    "spd0": 1.9632180564889188,
+    "spd1": null,
+    "bw0": 1335.6206896551723,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "www.zhihu.com",
+    "err0": 3,
+    "err1": 8,
+    "spd0": 57.070438525637144,
+    "spd1": 6.956222017773408,
+    "bw0": 269.9053497942387,
+    "bw1": 127.89180537772087,
+    "prefer": 0
+  },
+  {
+    "site": "x0.ifengimg.com",
+    "err0": 2,
+    "err1": 0,
+    "spd0": 18.888276115516856,
+    "spd1": null,
+    "bw0": 384.3375,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "x2.ifengimg.com",
+    "err0": 5,
+    "err1": 0,
+    "spd0": 6.947924593792287,
+    "spd1": null,
+    "bw0": 291.5791962174941,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "y0.ifengimg.com",
+    "err0": null,
+    "err1": null,
+    "spd0": null,
+    "spd1": 16.89762340036563,
+    "bw0": 0,
+    "bw1": 16.89762340036563,
+    "prefer": 0
+  },
+  {
+    "site": "ynuf.alipay.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 42.77170418006432,
+    "spd1": null,
+    "bw0": 52.16470588235294,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "yqintl.alicdn.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 7.957088240995618,
+    "spd1": null,
+    "bw0": 90.65,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "yushou.jd.com",
+    "err0": 0,
+    "err1": 2,
+    "spd0": 5.322613702333082,
+    "spd1": 4.439013983513673,
+    "bw0": 50.1375,
+    "bw1": 18.06756756756757,
+    "prefer": 0
+  },
+  {
+    "site": "z11.cnzz.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 13.38927296232379,
+    "spd1": null,
+    "bw0": 71.31111111111112,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "z12.cnzz.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 8.745171851211262,
+    "spd1": null,
+    "bw0": 78.26829268292683,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "z3.cnzz.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 59.425925925925924,
+    "spd1": null,
+    "bw0": 59.425925925925924,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "z4.cnzz.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 28.014040356034823,
+    "spd1": null,
+    "bw0": 80.225,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "z5.cnzz.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 2.8536563961224117,
+    "spd1": null,
+    "bw0": 48.621212121212125,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "zhannei-dm.csdn.net",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 19.224865052130866,
+    "spd1": null,
+    "bw0": 45.23684210526316,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "zhihu-web-analytics.zhihu.com",
+    "err0": 3,
+    "err1": 6,
+    "spd0": 2.7169346495027233,
+    "spd1": 0.8773146349823837,
+    "bw0": 41.7375,
+    "bw1": 9.622478386167147,
+    "prefer": 0
+  },
+  {
+    "site": "zhuanlan.zhihu.com",
+    "err0": 1,
+    "err1": 1,
+    "spd0": 2.5277376190279015,
+    "spd1": 13.781730196207258,
+    "bw0": 144.7941176470588,
+    "bw1": 49.98309492847854,
+    "prefer": 0
+  },
+  {
+    "site": "zuzuapi.jd.com",
+    "err0": null,
+    "err1": null,
+    "spd0": 46.7093023255814,
+    "spd1": null,
+    "bw0": 46.7093023255814,
+    "bw1": 0,
+    "prefer": 0
+  },
+  {
+    "site": "zz.bdstatic.com",
+    "err0": 1,
+    "err1": 0,
+    "spd0": 9.15400505678379,
+    "spd1": null,
+    "bw0": 140.16129032258064,
+    "bw1": 0,
+    "prefer": 0
+  }
+]
