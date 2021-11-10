@@ -37,10 +37,6 @@
       - xserver-xorg-input-synaptics
       - xtrlock
 
-- name: install chrome
-  apt:
-    deb: https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-
 - name: install input method
   apt:
     name:
@@ -52,3 +48,10 @@
       - fcitx-ui-classic
       - fcitx-ui-light
       - libgtk-3-bin
+
+- name: install chrome
+  apt:
+    deb: https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+- name: install SVG editor
+  shell: snap install boxy-svg
