@@ -49,9 +49,11 @@
       - fcitx-ui-light
       - libgtk-3-bin
 
+- name: install palemoon
+  apt: name=palemoon
+
 - name: install chrome
-  apt:
-    deb: https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  apt: deb=https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
 - name: install SVG editor
   shell: snap install boxy-svg
