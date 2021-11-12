@@ -182,7 +182,7 @@
           - docker==4.2.1
           - httpie==2.4.0
           - isort==5.7.0
-          - mycli==1.22.2
+          - mycli==1.24.1
           - wheel==0.36.2
         executable: pip3
 
