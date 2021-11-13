@@ -49,11 +49,13 @@
       - fcitx-ui-light
       - libgtk-3-bin
 
-- name: install palemoon
-  apt: name=palemoon
-
 - name: install chrome
   apt: deb=https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+- name: download waterfox
+  shell: >-
+    wget https://cdn.waterfox.net/releases/linux64/installer/waterfox-G4.0.2.en-US.linux-x86_64.tar.bz2
+    -qO - | tar -xjf - -C /home/{{user}}/local/
 
 - name: install SVG editor
   shell: snap install boxy-svg
