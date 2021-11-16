@@ -76,6 +76,9 @@
   "powermode.enableShake": false,
   "powermode.enabled": true,
   "python.formatting.provider": "black",
+  "python.analysis.extraPaths": [
+    "./lib"
+  ],
   "redhat.telemetry.enabled": true,
   "terminal.integrated.fontSize": 11,
   "typescript.autoClosingTags": false,
