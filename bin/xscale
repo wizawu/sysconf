@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set -ex
+test -n "$1"
+display=$(xrandr | grep -w connected | cut -d ' ' -f1)
+xrandr --output $display --scale $1x$1
