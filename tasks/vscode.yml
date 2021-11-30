@@ -28,7 +28,6 @@
   shell: "code --install-extension {{item}}"
   with_items:
     - bierner.markdown-preview-github-styles
-    - hoovercj.vscode-power-mode
     - jeff-hykin.better-dockerfile-syntax
     - jprestidge.theme-material-theme
     - michelemelluso.code-beautifier

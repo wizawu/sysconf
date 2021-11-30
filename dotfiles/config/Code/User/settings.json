@@ -73,8 +73,6 @@
   "html.autoClosingTags": false,
   "javascript.autoClosingTags": false,
   "keyboard.dispatch": "keyCode",
-  "powermode.enableShake": false,
-  "powermode.enabled": true,
   "python.formatting.provider": "black",
   "python.analysis.extraPaths": [
     "./lib"
