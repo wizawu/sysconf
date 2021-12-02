@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set -ex
+sudo sync
+test -n "$1"
+echo "$1" | sudo tee /proc/sys/vm/drop_caches

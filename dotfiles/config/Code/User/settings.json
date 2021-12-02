@@ -73,10 +73,10 @@
   "html.autoClosingTags": false,
   "javascript.autoClosingTags": false,
   "keyboard.dispatch": "keyCode",
-  "python.formatting.provider": "black",
   "python.analysis.extraPaths": [
     "./lib"
   ],
+  "python.formatting.provider": "black",
   "redhat.telemetry.enabled": true,
   "terminal.integrated.fontSize": 11,
   "typescript.autoClosingTags": false,
@@ -93,5 +93,6 @@
     "*.ipynb": "jupyter.notebook.ipynb"
   },
   "workbench.startupEditor": "none",
+  "workbench.tree.indent": 16,
   "yaml.validate": false
 }
