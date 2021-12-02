@@ -65,7 +65,7 @@ alias rm='rm -I'
 alias sqlfmt='pg_format'
 alias suspend='sudo systemctl suspend'
 alias systemctl='sudo systemctl'
-alias tari='tar --strip-components=1 -x -f'
+alias tarip='tar --strip-components=1 -x -f'
 alias tgit="tsocks git"
 alias timev="/usr/bin/time -v"
 alias tree='tree -C'

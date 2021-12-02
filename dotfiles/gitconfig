@@ -2,6 +2,8 @@
 	quotePath = false
 [color]
 	ui = true
+[diff]
+    algorithm = histogram
 [push]
     default = upstream
 [user]
