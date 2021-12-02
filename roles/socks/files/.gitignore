@@ -1,4 +1,5 @@
 *.db
 *.db-journal
 *.js
+data.[1-9]*.json
 node_modules/

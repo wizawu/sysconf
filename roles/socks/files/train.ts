@@ -7,19 +7,28 @@ const log = LoggerFactory.getLogger("\t\b\b\b\b\b\b\b")
 log.level = "debug"
 
 const data = [
-  ...JSON.parse(fs.readFileSync("./data.3.json", "utf-8")),
+  ...JSON.parse(fs.readFileSync("./data.0.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.4.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.5.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.6.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.7.json", "utf-8")),
 ]
+
 const net = new brain.NeuralNetwork()
-net.train(
-  data.map(it => ({
-    input: [it.err0 || 0, it.err1 || 0, it.spd0 || 0, it.spd1 || 0, it.bd0 || it.spd0 || 0, it.bd1 || it.spd1 || 0],
-    output: [it.prefer],
-  }))
-)
+if (fs.existsSync("model.json")) {
+  const model = fs.readFileSync("model.json", "utf8")
+  net.fromJSON(JSON.parse(model))
+}
+
+export function train() {
+  net.train(
+    data.map(it => ({
+      input: [it.err0 || 0, it.err1 || 0, it.spd0 || 0, it.spd1 || 0, it.bd0 || it.spd0 || 0, it.bd1 || it.spd1 || 0],
+      output: [it.prefer],
+    }))
+  )
+  fs.writeFileSync("model.json", JSON.stringify(net.toJSON(), null, 2))
+}
 
 export function classify(site: string, args: [number, number, number, number, number, number]): number {
   const output: number = net.run([
