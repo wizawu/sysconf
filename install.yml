@@ -164,30 +164,16 @@
     - name: install database packages
       apt:
         name:
+          - mydumper
           - mysql-client
           - pgformatter
           - postgresql-client
           - redis-tools
           - sqlite3
 
-    - name: set pip index url
-      shell: pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
-
-    - name: install python packages
-      pip:
-        name:
-          - ansible-lint==5.0.7
-          - ansible==2.9.9
-          - black==20.8b1
-          - docker==4.2.1
-          - httpie==2.4.0
-          - isort==5.7.0
-          - mycli==1.24.1
-          - wheel==0.36.2
-        executable: pip3
-
     - include: tasks/desktop.yml
     - include: tasks/vscode.yml
+    - include: tasks/pip.yml
     - include: tasks/npm.yml
     - include: tasks/uninstall.yml
 

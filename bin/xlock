@@ -1,0 +1,3 @@
+#!/bin/sh
+
+tilix --maximize -e "bash -c 'xtrlock -f && cmatrix'"
