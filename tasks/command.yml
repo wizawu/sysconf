@@ -1,0 +1,39 @@
+- name: install cli tools
+  apt:
+    name:
+      - ack-grep
+      - antlr4
+      - apt-file
+      - autossh
+      - cmake
+      - cmatrix
+      - curl
+      - dconf-cli
+      - di
+      - fish
+      - fonttools=3.0-1
+      - fping
+      - gnupg1
+      - htop
+      - httrack
+      - iftop
+      - inotify-tools
+      - iotop
+      - jq
+      - less
+      - mtr
+      - nethogs
+      - pv
+      - rar
+      - time
+      - tmux
+      - tree
+      - tsocks
+      - unrar
+      - unzip
+      - upower
+      - valgrind
+      - whois
+      - wput
+      - wrk
+      - yamllint

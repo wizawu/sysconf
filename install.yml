@@ -111,45 +111,6 @@
           - tlp-rdw
           - wpasupplicant
 
-    - name: install cli tools
-      apt:
-        name:
-          - ack-grep
-          - antlr4
-          - apt-file
-          - autossh
-          - cmake
-          - cmatrix
-          - curl
-          - dconf-cli
-          - di
-          - fish
-          - fonttools=3.0-1
-          - fping
-          - gnupg1
-          - htop
-          - httrack
-          - iftop
-          - inotify-tools
-          - iotop
-          - jq
-          - less
-          - mtr
-          - nethogs
-          - rar
-          - time
-          - tmux
-          - tree
-          - tsocks
-          - unrar
-          - unzip
-          - upower
-          - valgrind
-          - whois
-          - wput
-          - wrk
-          - yamllint
-
     - name: check built-in tools
       shell: command -v {{item}}
       with_items:
@@ -171,6 +132,7 @@
           - redis-tools
           - sqlite3
 
+    - include: tasks/command.yml
     - include: tasks/desktop.yml
     - include: tasks/vscode.yml
     - include: tasks/pip.yml
