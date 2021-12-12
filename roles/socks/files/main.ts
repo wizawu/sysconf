@@ -5,10 +5,14 @@ import * as store from "./store"
 import * as switcher from "./switcher"
 
 const server = net.createServer()
+const stats = { open: 0, end: 0, error: 0, timeout: 0 }
 const log = LoggerFactory.getLogger("\t\b\b\b\b\b\b\b")
 log.level = "debug"
 
+setInterval(() => log.info(stats), 60000)
+
 server.on("connection", conn => {
+  stats.open += 1
   const startTime = Date.now()
   let client: net.Socket | null = null
   let upstream: string | null = null
@@ -19,11 +23,13 @@ server.on("connection", conn => {
   let maxSpeed = 0
 
   conn.on("end", () => {
+    stats.end += 1
     if (upstream !== null && backend !== null) {
       store.createHistory(upstream, backend._id, Date.now() - startTime, contentLength, maxSpeed, "")
     }
   })
   conn.on("error", e => {
+    stats.error += 1
     if (upstream !== null && backend !== null) {
       store.createHistory(upstream, backend._id, Date.now() - startTime, contentLength, maxSpeed, e.message)
     }
@@ -40,6 +46,7 @@ server.on("connection", conn => {
       client = net.createConnection(backend, () => 0)
       setTimeout(() => {
         if (contentLength <= 26) {
+          stats.timeout += 1
           store.createHistory(upstream!, backend!._id, Date.now() - startTime, 0, maxSpeed, "Connection timeout")
           conn.destroy()
           log.warn(`disconnect ${upstream}`)
