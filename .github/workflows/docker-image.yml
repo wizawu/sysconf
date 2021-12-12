@@ -12,8 +12,14 @@ jobs:
       - name: login registry
         run: echo ${{secrets.DOCKER_HUB_PASSWORD}} | docker login -u wizawu --password-stdin
 
-      - name: build image
+      - name: build proxy image
         run: cd docker/proxy && docker build . -t wizawu/proxy:latest
 
-      - name: push image
+      - name: push proxy image
         run: docker push wizawu/proxy:latest
+
+      - name: build postgres image
+        run: cd docker/postgres && docker build . -t wizawu/postgres:latest
+
+      - name: push postgres image
+        run: docker push wizawu/postgres:latest
