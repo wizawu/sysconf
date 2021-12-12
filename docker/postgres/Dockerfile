@@ -1,14 +1,12 @@
 # https://github.com/hetykai/docker_pg_jieba/blob/master/Dockerfile
 FROM xxxx.mirror.aliyuncs.com/library/postgres:14.1-alpine
 
-RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.cloud.tencent.com/' /etc/apk/repositories && sed -i 's/http:/https:/' /etc/apk/repositories
-
-RUN set -ex \
-  && apk add --no-cache --virtual .fetch-deps ca-certificates cmake git openssl tar \
-  && git clone https://github.com/jaiminpan/pg_jieba \
+RUN apk add --no-cache --virtual .fetch-deps ca-certificates cmake git openssl tar \
+  && git clone --shallow-since=2021-08-01T00:00:00 https://github.com/jaiminpan/pg_jieba \
   && apk add --no-cache --virtual .build-deps gcc g++ libc-dev make postgresql-dev \
   && apk add --no-cache --virtual .rundeps libstdc++ \
   && cd /pg_jieba \
+  && git checkout ec499c5e \
   && git submodule update --init --recursive \
   && mkdir build \
   && cd build \
