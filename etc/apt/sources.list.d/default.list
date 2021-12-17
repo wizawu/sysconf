@@ -1,4 +1,4 @@
-deb [arch=amd64,i386] http://mirrors.tuna.tsinghua.edu.cn/debian buster main non-free
+deb [arch=amd64,i386] http://mirrors.tuna.tsinghua.edu.cn/debian stable main non-free
 deb [arch=amd64,i386] http://mirrors.tuna.tsinghua.edu.cn/ubuntu focal main universe
 deb [arch=amd64,i386] http://packages.deepin.com/deepin stable main contrib non-free
 deb [arch=amd64] http://deb.nodesource.com/node_14.x sid main

@@ -33,7 +33,7 @@ source /usr/share/bash-completion/completions/git
 alias 2fa='node -e "console.log(require(\"otplib\").authenticator.generate(process.argv[1]))"'
 alias ackj='ack --type kotlin --type java'
 alias ackng='ack --nogroup'
-alias apt-find='apt-cache search'
+alias apt-find='apt list -a'
 alias apt='sudo apt'
 alias apthi='bash -c "sudo apt -o Acquire::http::Proxy=http://\$0 install \$1"'
 alias base58='basex -i $(echo {0..9} {A..Z} {a..z} | tr -d " 0IOl")'
