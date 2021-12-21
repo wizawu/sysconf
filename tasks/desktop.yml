@@ -57,6 +57,3 @@
   shell: >-
     wget https://cdn.waterfox.net/releases/linux64/installer/waterfox-G4.0.2.en-US.linux-x86_64.tar.bz2
     -qO - | tar -xjf - -C /home/{{user}}/local/
-
-- name: install SVG editor
-  shell: snap install boxy-svg

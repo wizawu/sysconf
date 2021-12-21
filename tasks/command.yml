@@ -35,5 +35,4 @@
       - valgrind
       - whois
       - wput
-      - wrk
       - yamllint
