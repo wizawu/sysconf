@@ -26,8 +26,5 @@
       - usbmuxd
       - volumeicon-alsa
       - whoopsie
-      - xfce4-power-manager
-      - xfce4-screensaver
-      - xfdesktop4
       - xscreensaver
       - yad

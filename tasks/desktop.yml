@@ -9,6 +9,7 @@
       - dbus-x11
       - deepin-screenshot=4.1.8-1
       - deepin-wine5-i386
+      - dolphin
       - draw.io
       - freerdp-x11
       - geany # text editor
@@ -16,20 +17,22 @@
       - gthumb # image viewer
       - gtk-theme-switch
       - indicator-cpufreq
-      - nm-applet
+      - kde-config-gtk-style
+      - kde-config-screenlocker
       - pavucontrol
+      - plasma-desktop
+      - plasma-nm
       - qbittorrent
       - qpdfview
       - redshift
       - smplayer
+      - systemsettings # KDE settings center
       - tilix
       - vim-gtk
       - wps-office
       - x11-xkb-utils
       - x11-xserver-utils
       - xdg-user-dirs
-      - xfce4-panel
-      - xfce4-session
       - xinput
       - xorg
       - xsel
