@@ -13,6 +13,7 @@
       - fish
       - fonttools=3.0-1
       - fping
+      - git-extras
       - gnupg1
       - htop
       - httrack
