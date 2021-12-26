@@ -35,6 +35,7 @@
     - mikeburgh.xml-format
     - ms-python.python
     - ms-python.vscode-pylance
+    - redhat.ansible
     - redhat.vscode-yaml
     - sgryjp.vscode-stable-sort
     - streetsidesoftware.code-spell-checker
