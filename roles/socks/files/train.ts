@@ -12,6 +12,7 @@ const data = [
   ...JSON.parse(fs.readFileSync("./data.5.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.6.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.7.json", "utf-8")),
+  ...JSON.parse(fs.readFileSync("./data.8.json", "utf-8")),
 ]
 
 const net = new brain.NeuralNetwork()
