@@ -37,3 +37,13 @@
       - whois
       - wput
       - yamllint
+
+- name: remove useless git commands
+  file:
+    src: /usr/bin/{{item}}
+    state: absent
+  with_items:
+    - git-alias
+    - git-archive-file
+    - git-authors
+    - git-commits-since
