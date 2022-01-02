@@ -16,7 +16,6 @@
       - gimp
       - gthumb # image viewer
       - gtk-theme-switch
-      - indicator-cpufreq
       - kde-config-gtk-style
       - kde-config-screenlocker
       - pavucontrol
