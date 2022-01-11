@@ -34,6 +34,7 @@
       shell: apt-key adv --keyserver keyserver.ubuntu.com --recv {{item}}
       with_items:
         - 1655A0AB68576280 # node
+        - 3B4FE6ACC0B21F32 # tsinghua
         - 6A030B21BA07F4FB # aliyun kubernetes
         - 7EA0A9C3F273FCD8 # aliyun docker
 
