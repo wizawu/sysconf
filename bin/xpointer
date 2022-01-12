@@ -1,5 +1,5 @@
 #!/bin/bash
 
 set -x
-device=$(xinput --list | grep pointer | cut -f 1 | cut -c 11- | tail -1)
-xinput set-prop "$(echo pointer:$device)" "libinput Accel Speed" $1
+device=$(xinput --list | grep pointer | grep -iv touch | sed -e 's/\W\+\(.*\S\)\s*id=.*/\1/g' | tail -1)
+xinput set-prop "pointer:$device" "libinput Accel Speed" $1
