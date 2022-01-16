@@ -9,6 +9,7 @@ log.level = "debug"
 const data = [
   ...JSON.parse(fs.readFileSync("./data.0.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.1.json", "utf-8")),
+  ...JSON.parse(fs.readFileSync("./data.2.json", "utf-8")),
 ]
 
 const net = new brain.NeuralNetwork()
@@ -71,7 +72,6 @@ export function writeData(i: number): void {
 }
 
 const blackList = [
-  "360yield.com",
   "3lift.com",
   "4dex.io",
   "a-mo.net",
@@ -84,12 +84,12 @@ const blackList = [
   "adsrvr.org",
   "advertising.com",
   "agkn.com",
+  "alive.github.com",
   "amazon-adsystem.com",
   "analytics.yahoo.com",
   "aniview.com",
   "api.github.com",
   "avatars.githubusercontent.com",
-  "baidu.com",
   "betweendigital.com",
   "bh.contextweb.com",
   "bidswitch.net",
@@ -115,7 +115,6 @@ const blackList = [
   "google.co.jp",
   "google.com",
   "gstatic.com",
-  "hm.baidu.com",
   "id5-sync.com",
   "justpremium.com",
   "kargo.com",
@@ -128,11 +127,13 @@ const blackList = [
   "outbrain.com",
   "prebid.a-mo.net",
   "pubmatic.com",
+  "raw.githubusercontent.com",
   "rfihub.com",
   "richaudience.com",
   "rlcdn.com",
   "rubiconproject.com",
   "sharethrough.com",
+  "sidecar.gitter.im",
   "smaato.net",
   "smartadserver.com",
   "tapad.com",
