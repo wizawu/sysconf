@@ -14,13 +14,7 @@ if [ "$1" = "-a" ]; then
     exit
 fi
 
-if [[ "$1" = [3-9][0-9] ]]; then
-    set -x
-    MODELINE=$(cvt 2560 1440 $1 | tail -1 | cut -d " " -f 3-)
-    xrandr --newmode 2560x1440x$1 $MODELINE
-    xrandr --addmode ${DISPLAYS[2]} 2560x1440x$1
-    xrandr --output ${DISPLAYS[2]} --mode 2560x1440x$1
-    awesome-client 'awesome.restart()'
+if [ "$1" != "-c" ]; then
     exit
 fi
 
@@ -51,4 +45,4 @@ MODELINE=$(cvt $WIDTH $HEIGHT $REFRESH | tail -1 | cut -d " " -f 3-)
 set -x
 xrandr --newmode $MODE $MODELINE
 xrandr --addmode $OUTPUT $MODE
-xrandr --output $OUTPUT --mode $MODE
+xrandr --output $OUTPUT --mode $MODE --primary

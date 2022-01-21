@@ -86,7 +86,7 @@
   "window.openFoldersInNewWindow": "on",
   "window.restoreWindows": "none",
   "window.zoomLevel": 1.4,
-  "workbench.colorTheme": "Sublime Material Theme - Dark",
+  "workbench.colorTheme": "Atom Material Theme",
   "workbench.editor.enablePreview": false,
   "workbench.editor.restoreViewState": false,
   "workbench.editorAssociations": {

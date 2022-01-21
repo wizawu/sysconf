@@ -29,7 +29,6 @@
   with_items:
     - bierner.markdown-preview-github-styles
     - jeff-hykin.better-dockerfile-syntax
-    - jprestidge.theme-material-theme
     - michelemelluso.code-beautifier
     - mike-lischke.vscode-antlr4
     - mikeburgh.xml-format
