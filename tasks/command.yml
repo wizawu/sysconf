@@ -2,7 +2,6 @@
   apt:
     name:
       - ack-grep
-      - antlr4
       - apt-file
       - autossh
       - cmake
@@ -48,3 +47,8 @@
     - git-archive-file
     - git-authors
     - git-commits-since
+
+- name: download antlr4
+  get_url:
+    url: https://www.antlr.org/download/antlr-4.9.3-complete.jar
+    dest: /usr/share/java/antlr-complete.jar
