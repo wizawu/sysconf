@@ -78,6 +78,8 @@
   ],
   "python.formatting.provider": "black",
   "redhat.telemetry.enabled": true,
+  "sql-formatter.dialect": "db2",
+  "sql-formatter.uppercase": true,
   "terminal.integrated.fontSize": 12,
   "typescript.autoClosingTags": false,
   "vim.cursorStylePerMode.normal": "line",
