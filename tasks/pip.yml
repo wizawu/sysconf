@@ -12,4 +12,5 @@
       - isort==5.7.0
       - mycli==1.24.1
       - wheel==0.36.2
+      - yq==2.13.0
     executable: pip3
