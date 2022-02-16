@@ -13,6 +13,7 @@
       - firefox
       - gnome-*
       - lightdm
+      - lightdm-*
       - mate-*
       - packagekit
       - pidgin
