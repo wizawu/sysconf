@@ -63,7 +63,7 @@ alias ls='ls --color=auto'
 alias psync='rsync -Pz --info=progress2'
 alias pyfmt='bash -c "isort \$0 && black \$0"'
 alias rm='rm -I'
-alias suspend='sudo systemctl suspend'
+alias suspend='sudo systemctl suspend && docker restart socks'
 alias systemctl='sudo systemctl'
 alias tarip='tar --strip-components=1 -x -f'
 alias tgit="tsocks git"

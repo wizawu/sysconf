@@ -52,6 +52,10 @@
       - fcitx-ui-light
       - libgtk-3-bin
 
+- name: install sogou pinyin
+  apt:
+    deb: https://ime.sogouimecdn.com/202203030042/60dab1bb3843ee20ea272f288c2aeb80/dl/index/1639750479/sogoupinyin_3.4.0.9700_amd64.deb
+
 - name: install chrome
   apt: deb=https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
