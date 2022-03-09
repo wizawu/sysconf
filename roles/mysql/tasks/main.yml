@@ -7,7 +7,7 @@
 - name: start mysql
   docker_container:
     name: mysql
-    image: xxxx.mirror.aliyuncs.com/library/mysql:8.0.22
+    image: docker.mirrors.ustc.edu.cn/library/mysql:8.0.22
     state: started
     recreate: true
     restart_policy: always

@@ -2,7 +2,7 @@ version: "3.3"
 services:
   samba:
     container_name: samba
-    image: xxxx.mirror.aliyuncs.com/dperson/samba:latest
+    image: docker.mirrors.ustc.edu.cn/dperson/samba:latest
     restart: "no"
     ports:
       - 139:139

@@ -1,7 +1,7 @@
 - name: start phpmyadmin
   docker_container:
     name: phpmyadmin
-    image: xxxx.mirror.aliyuncs.com/library/phpmyadmin:5.0.2
+    image: docker.mirrors.ustc.edu.cn/library/phpmyadmin:5.0.2
     state: started
     recreate: true
     restart_policy: always

@@ -1,5 +1,5 @@
 # https://github.com/hetykai/docker_pg_jieba/blob/master/Dockerfile
-FROM xxxx.mirror.aliyuncs.com/library/postgres:14.1-alpine
+FROM docker.mirrors.ustc.edu.cn/library/postgres:14.1-alpine
 
 RUN apk add --no-cache --virtual .fetch-deps ca-certificates cmake git openssl tar \
   && git clone --shallow-since=2021-08-01T00:00:00 https://github.com/jaiminpan/pg_jieba \

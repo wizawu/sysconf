@@ -7,7 +7,7 @@
 - name: start redis
   docker_container:
     name: redis
-    image: xxxx.mirror.aliyuncs.com/library/redis:6.2.4
+    image: docker.mirrors.ustc.edu.cn/library/redis:6.2.4
     state: started
     recreate: true
     restart_policy: always
