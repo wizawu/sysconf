@@ -47,7 +47,7 @@
   "editor.fontFamily": "Courier Prime Code, OPPOSans",
   "editor.fontSize": 11,
   "editor.formatOnSave": false,
-  "editor.letterSpacing": -1,
+  "editor.letterSpacing": -0.5,
   "editor.lineHeight": 17,
   "editor.minimap.enabled": false,
   "editor.quickSuggestions": {
