@@ -4200,16 +4200,6 @@
     "prefer": 1
   },
   {
-    "site": "mail.servyou.com.cn",
-    "err0": 14,
-    "err1": 1,
-    "spd0": 4.949560095270798,
-    "spd1": 2.189321496843964,
-    "bw0": 1070.2745098039215,
-    "bw1": 263.2897012578616,
-    "prefer": 0
-  },
-  {
     "site": "mall.jd.com",
     "err0": null,
     "err1": null,
