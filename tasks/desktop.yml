@@ -28,6 +28,7 @@
       - systemsettings # KDE settings center
       - tilix
       - vim-gtk
+      - wireshark-gtk
       - wps-office
       - x11-xkb-utils
       - x11-xserver-utils
