@@ -6,6 +6,7 @@
       - autossh
       - cmake
       - cmatrix
+      - cpulimit
       - curl
       - dconf-cli
       - di
