@@ -2,17 +2,16 @@
   file:
     path: /var/lib/redis
     state: directory
-    recurse: true
 
 - name: start redis
-  docker_container:
-    name: redis
-    image: docker.mirrors.ustc.edu.cn/library/redis:6.2.4
-    state: started
-    recreate: true
-    restart_policy: always
-    ports:
-      - "127.0.0.1:6379:6379"
-    volumes:
-      - "/var/lib/redis:/data"
-    command: redis-server --appendonly yes
+  shell: >-
+    podman run
+    -d --replace
+    --name redis
+    --restart always
+    --network host
+    --log-opt max-file=10
+    --log-opt max-size=100m
+    -v /var/lib/redis:/data
+    docker.mirrors.ustc.edu.cn/library/redis:6.2.4
+    redis-server --appendonly yes

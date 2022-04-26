@@ -25,12 +25,14 @@
       - linux-cpupower
       - mtr
       - nethogs
+      - podman
       - pv
       - rar
       - time
       - tmux
       - tree
       - tsocks
+      - uidmap
       - unrar
       - unzip
       - upower

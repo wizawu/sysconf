@@ -1,13 +1,12 @@
 - name: start phpmyadmin
-  docker_container:
-    name: phpmyadmin
-    image: docker.mirrors.ustc.edu.cn/library/phpmyadmin:5.0.2
-    state: started
-    recreate: true
-    restart_policy: always
-    ports:
-      - 3309:80
-    volumes:
-      - "{{role_path}}/files/config.php:/var/www/html/libraries/config.default.php"
-    env:
-      PMA_ARBITRARY: "1"
+  shell: >-
+    podman run
+    -d --replace
+    --name phpmyadmin
+    --restart always
+    -p 3309:80
+    --log-opt max-file=10
+    --log-opt max-size=100m
+    -v {{role_path}}/files/config.php:/var/www/html/libraries/config.default.php
+    -e PMA_ARBITRARY=1
+    docker.mirrors.ustc.edu.cn/library/phpmyadmin:5.0.2
