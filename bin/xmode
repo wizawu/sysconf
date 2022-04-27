@@ -18,16 +18,16 @@ if [ "$1" != "-c" ]; then
     exit
 fi
 
-echo -n "Choose output: "
+echo -n "choose output: "
 read
 OUTPUT=${DISPLAYS[REPLY]}
 
-echo -n "Set width: "
+echo -n "set width: "
 read
 WIDTH=$REPLY
 
 echo "Proper height: $((WIDTH*9/16))(16:9) $((WIDTH*10/16))(16:10) $((WIDTH*3/4))(4:3)"
-echo -n "Set height: "
+echo -n "set height: "
 read
 if [ -z "$REPLY" ]; then
     HEIGHT=$((WIDTH*9/16))
@@ -35,7 +35,7 @@ else
     HEIGHT=$REPLY
 fi
 
-echo -n "Set refresh: "
+echo -n "set refresh: "
 read
 REFRESH=$REPLY
 
@@ -46,3 +46,17 @@ set -x
 xrandr --newmode $MODE $MODELINE
 xrandr --addmode $OUTPUT $MODE
 xrandr --output $OUTPUT --mode $MODE --primary
+
+set +x
+xinput --list | grep pointer
+
+echo -n "choose pointer: "
+read
+POINTER=$REPLY
+
+echo -n "slow down pointer: "
+read
+SPEED=$REPLY
+
+set -x
+xinput set-prop $POINTER "libinput Accel Speed" -0.$SPEED
