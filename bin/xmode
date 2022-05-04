@@ -7,12 +7,10 @@ for i in {1..9}; do
         break
     fi
     echo [$i] ${DISPLAYS[i]}
-    xrandr --output ${DISPLAYS[i]} --auto
+    if [ "$1" = "-a" ]; then
+        xrandr --output ${DISPLAYS[i]} --auto
+    fi
 done
-
-if [ "$1" = "-a" ]; then
-    exit
-fi
 
 if [ "$1" != "-c" ]; then
     exit
