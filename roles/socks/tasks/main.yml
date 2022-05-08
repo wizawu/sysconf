@@ -9,11 +9,11 @@
     --dns 223.6.6.6
     --dns 8.8.8.8
     --dns 8.8.4.4
-    --log-driver json-file
+    --log-driver k8s-file
     --log-opt max-file=10
     --log-opt max-size=100m
     -v {{role_path}}/files:/opt/proxy
     -w /opt/proxy
     --entrypoint /usr/local/bin/npm
-    wizawu/proxy:latest
+    docker.io/wizawu/proxy:latest
     run start
