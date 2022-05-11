@@ -59,6 +59,7 @@
           - f2fs-tools
           - fio
           - fiu-utils
+          - fuse-overlayfs
           - g++
           - gcp
           - glusterfs-client=5.5-3
@@ -142,6 +143,7 @@
       with_items:
         - etc/X11/xorg.conf.d
         - etc/apt/apt.conf.d
+        - etc/containers
         - etc/fonts/conf.d
         - etc/opt/chrome/policies/managed
         - etc/security/limits.d
@@ -153,6 +155,7 @@
       with_items:
         - etc/X11/xorg.conf.d/99-synaptics.conf
         - etc/apt/apt.conf.d/99default
+        - etc/containers/storage.conf
         - etc/fonts/conf.d/99-default.conf
         - etc/opt/chrome/policies/managed/blocklist.json
         - etc/rc.local
