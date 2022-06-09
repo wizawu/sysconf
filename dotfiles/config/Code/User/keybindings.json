@@ -32,16 +32,21 @@
         "command": "workbench.action.files.openFolder"
     },
     {
-        "key": "shift+alt+s",
-        "command": "stableSort.sortAscending",
-        "when": "editorTextFocus"
-    },
-    {
         "key": "ctrl+alt+t",
         "command": "workbench.action.selectTheme"
     },
     {
         "key": "ctrl+k ctrl+t",
         "command": "-workbench.action.selectTheme"
+    },
+    {
+        "key": "shift+alt+s",
+        "command": "smartSort.sortAscending",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+r",
+        "command": "-smartSort.sortAscending",
+        "when": "editorTextFocus"
     }
 ]
