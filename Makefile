@@ -28,7 +28,7 @@ swap:
 	swapon /swap && swapon -s
 
 proxy:
-	ansible-playbook proxy.yml
+	sudo ansible-playbook proxy.yml
 
 samba:
 	ansible-playbook samba.yml
