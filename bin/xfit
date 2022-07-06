@@ -24,7 +24,7 @@ sleep 1
 awesome-client 'awesome.restart()' || echo
 
 # kill plasma shell
-pgrep plasmashell && exit || echo
+pgrep plasmashell || exit
 for _ in {1..5}; do
     pkill plasmashell && exit
     sleep 2
