@@ -80,7 +80,7 @@
   "redhat.telemetry.enabled": true,
   "sql-formatter.dialect": "db2",
   "sql-formatter.uppercase": true,
-  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.fontSize": 11,
   "typescript.autoClosingTags": false,
   "vim.cursorStylePerMode.normal": "line",
   "vim.useCtrlKeys": true,

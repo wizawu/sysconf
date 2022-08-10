@@ -27,11 +27,14 @@ swap:
 	chmod 600 /swap && mkswap /swap
 	swapon /swap && swapon -s
 
+cron:
+	ansible-playbook cron.yml
+
 proxy:
 	sudo ansible-playbook proxy.yml
 
+addon:
+	sudo ansible-playbook addon.yml
+
 samba:
 	ansible-playbook samba.yml
-
-cron:
-	ansible-playbook cron.yml
