@@ -52,9 +52,13 @@ echo -n "choose pointer: "
 read
 POINTER=$REPLY
 
-echo -n "slow down pointer: "
+echo -n "accelerate pointer: "
 read
 SPEED=$REPLY
 
 set -x
-xinput set-prop $POINTER "libinput Accel Speed" -0.$SPEED
+if [[ "$SPEED" =~ -.* ]]; then
+    xinput set-prop $POINTER "libinput Accel Speed" -0$(echo $SPEED | tr - .)
+else
+    xinput set-prop $POINTER "libinput Accel Speed" 0.$SPEED
+fi
