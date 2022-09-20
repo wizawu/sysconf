@@ -5,5 +5,6 @@
     - fmt2i@latest
     - http-proxy-to-socks@1.1.x
     - otplib@12.x.x
-    - prettier@2.4.1
+    - pnpm@7.12.x
+    - prettier@2.4.x
     - typescript@latest
