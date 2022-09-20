@@ -1,7 +1,6 @@
 #!/bin/bash
 
-set -ex
-
+set -x
 xset -b
 xset -dpms
 xset s noblank
@@ -12,6 +11,7 @@ hsetroot -full /usr/share/awesome/themes/default/background.png &
 
 # fcitx
 fcitx -rd && im-config -n fcitx
+set -e
 
 # plasma session
 plasma_session &>/dev/null &
