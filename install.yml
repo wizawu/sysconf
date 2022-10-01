@@ -66,6 +66,7 @@
           - grub2-common
           - haproxy
           - hdparm
+          - hibernate
           - hsetroot
           - im-config
           - ipad-charge
