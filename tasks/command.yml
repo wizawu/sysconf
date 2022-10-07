@@ -4,6 +4,7 @@
       - ack-grep
       - apt-file
       - autossh
+      - cargo
       - cmake
       - cmatrix
       - cpulimit
@@ -15,6 +16,7 @@
       - fping
       - git-extras
       - gnupg1
+      - hibernate
       - htop
       - httrack
       - iftop
@@ -28,6 +30,7 @@
       - podman
       - pv
       - rar
+      - rustc
       - time
       - tmux
       - tree
