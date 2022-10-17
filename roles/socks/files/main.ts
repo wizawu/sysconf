@@ -18,11 +18,18 @@ server.on("connection", conn => {
   let contentLength = 0
   let maxSpeed = 0
 
-  conn.on("end", () => {
+  conn.on("close", (hadError => {
     if (upstream !== null && backend !== null) {
-      store.createHistory(upstream, backend._id, Date.now() - startTime, contentLength, maxSpeed, "")
+      store.createHistory(
+        upstream,
+        backend._id,
+        Date.now() - startTime,
+        contentLength,
+        maxSpeed,
+        hadError ? "close" : ""
+      )
     }
-  })
+  }) as any)
   conn.on("error", e => {
     if (upstream !== null && backend !== null) {
       store.createHistory(upstream, backend._id, Date.now() - startTime, contentLength, maxSpeed, e.message)
@@ -44,7 +51,7 @@ server.on("connection", conn => {
           conn.destroy()
           log.warn(`disconnect ${upstream}`)
         }
-      }, 5000)
+      }, 15_000)
       client.on("connect", () => {
         client?.write(clientData1)
       })
