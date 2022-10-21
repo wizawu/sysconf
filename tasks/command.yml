@@ -16,7 +16,6 @@
       - fping
       - git-extras
       - gnupg1
-      - hibernate
       - htop
       - httrack
       - iftop
