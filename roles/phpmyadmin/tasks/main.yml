@@ -2,11 +2,10 @@
   shell: >-
     podman run
     -d --replace
+    -p 3309:80
+    -e PMA_ARBITRARY=1
     --name phpmyadmin
     --restart always
-    -p 3309:80
     --log-opt max-file=10
     --log-opt max-size=100m
-    -v {{role_path}}/files/config.php:/var/www/html/libraries/config.default.php
-    -e PMA_ARBITRARY=1
-    docker.mirrors.ustc.edu.cn/library/phpmyadmin:5.0.2
+    phpmyadmin/phpmyadmin:5.2.0
