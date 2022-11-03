@@ -1,6 +1,5 @@
-- name: get password
-  shell: jq .password /home/wizawu/github/vpsconf/templates/shadowsocks.json
-  register: password
+- set_fact:
+    ss: "{{lookup('file', '/etc/shadowsocks/config.json') | from_json}}"
 
 - name: start brook
   shell: >-
@@ -20,4 +19,4 @@
     docker.io/wizawu/proxy:latest
     -c "brook socks5 -i 127.0.0.1 -l 127.0.0.1:1080
     & brook ssclient -i 127.0.0.1 -l 127.0.0.1:1081
-    -p {{password.stdout}} -s shadowsocks.local:3308"
+    -p {{ss.password}} -s {{ss.server}}:{{ss.server_port}}"
