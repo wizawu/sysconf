@@ -44,21 +44,3 @@ set -x
 xrandr --newmode $MODE $MODELINE
 xrandr --addmode $OUTPUT $MODE
 xrandr --output $OUTPUT --mode $MODE --primary
-
-set +x
-xinput --list | grep pointer
-
-echo -n "choose pointer: "
-read
-POINTER=$REPLY
-
-echo -n "accelerate pointer: "
-read
-SPEED=$REPLY
-
-set -x
-if [[ "$SPEED" =~ -.* ]]; then
-    xinput set-prop $POINTER "libinput Accel Speed" -0$(echo $SPEED | tr - .)
-else
-    xinput set-prop $POINTER "libinput Accel Speed" 0.$SPEED
-fi
