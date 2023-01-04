@@ -33,6 +33,7 @@
     - michelemelluso.code-beautifier
     - mike-lischke.vscode-antlr4
     - mikeburgh.xml-format
+    - ms-python.isort
     - ms-python.python
     - ms-python.vscode-pylance
     - redhat.ansible
