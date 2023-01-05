@@ -35,10 +35,3 @@ proxy:
 
 addon:
 	sudo ansible-playbook addon.yml
-
-samba:
-	ansible-playbook samba.yml
-
-chrome:
-	sudo sed -i -e '$$ d' /opt/google/chrome/google-chrome
-	echo 'exec -a "$$0" sudo -u wizawu "$$HERE/chrome" --disable-gpu --disable-http2 "$$@"' | sudo tee -a /opt/google/chrome/google-chrome

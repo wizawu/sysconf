@@ -7,10 +7,9 @@ const log = LoggerFactory.getLogger("\t\b\b\b\b\b\b\b")
 log.level = "debug"
 
 const data = [
-  ...JSON.parse(fs.readFileSync("./data.0.json", "utf-8")),
-  ...JSON.parse(fs.readFileSync("./data.1.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.2.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.3.json", "utf-8")),
+  ...JSON.parse(fs.readFileSync("./data.4.json", "utf-8")),
 ]
 
 const net = new brain.NeuralNetwork()
@@ -24,7 +23,12 @@ export function train() {
     data.map(it => ({
       input: [it.err0 || 0, it.err1 || 0, it.spd0 || 0, it.spd1 || 0, it.bd0 || it.spd0 || 0, it.bd1 || it.spd1 || 0],
       output: [it.prefer],
-    }))
+    })),
+    {
+      iterations: 30000,
+      log: it => log.debug(it),
+      logPeriod: 1000,
+    }
   )
   fs.writeFileSync("model.json", JSON.stringify(net.toJSON(), null, 2))
 }
@@ -52,25 +56,70 @@ export function writeData(i: number): void {
   data.forEach(it => (mark[it.site] = it.prefer))
   const buffer: string[] = []
   Object.keys(mark)
+    .concat(whiteList)
     .concat(blackList)
     .forEach(site => {
       const { err0, err1 } = store.countConnErr(site)
       const { spd0, spd1, bw0, bw1 } = store.measure(site)
-      buffer.push(
-        JSON.stringify({
-          site,
-          err0,
-          err1,
-          spd0,
-          spd1,
-          bw0,
-          bw1,
-          prefer: mark[site] === undefined ? 1 : mark[site],
-        })
-      )
+      if ([err0, err1, spd0, spd1, bw0, bw1].every(it => !it)) {
+        return
+      }
+      let prefer = mark[site]
+      if (whiteList.includes(site)) {
+        prefer = 0
+      } else if (blackList.includes(site)) {
+        prefer = 1
+      }
+      buffer.push(JSON.stringify({ site, err0, err1, spd0, spd1, bw0, bw1, prefer }))
     })
   fs.appendFileSync(`data.${i}.json`, "[" + buffer.join(",\n") + "]")
 }
+
+const whiteList = [
+  "aegis.qq.com",
+  "aiqicha.baidu.com",
+  "aiqicha.com",
+  "doc.weixin.qq.com",
+  "docrp.weixin.qq.com",
+  "docs.gtimg.com",
+  "docs.qq.com",
+  "eclick.baidu.com",
+  "fclick.baidu.com",
+  "gimg3.baidu.com",
+  "gsp0.baidu.com",
+  "hectorstatic.baidu.com",
+  "hm.baidu.com",
+  "hpd.baidu.com",
+  "map.baidu.com",
+  "mbd.baidu.com",
+  "miao.baidu.com",
+  "passport.baidu.com",
+  "passport.woa.com",
+  "pos.baidu.com",
+  "pub.idqqimg.com",
+  "report.idqqimg.com",
+  "report.qqweb.qq.com",
+  "res.wx.qq.com",
+  "sofire.baidu.com",
+  "sp0.baidu.com",
+  "sp1.baidu.com",
+  "ss0.baidu.com",
+  "t10.baidu.com",
+  "t11.baidu.com",
+  "t13.baidu.com",
+  "t14.baidu.com",
+  "t15.baidu.com",
+  "t7.baidu.com",
+  "t8.baidu.com",
+  "t9.baidu.com",
+  "tianshu.qq.com",
+  "trustrcv.baidu.com",
+  "ug.baidu.com",
+  "wn.pos.baidu.com",
+  "wwcdn.weixin.qq.com",
+  "www.aiqicha.com",
+  "www.baidu.com",
+]
 
 const blackList = [
   "3lift.com",
