@@ -7,9 +7,9 @@ const log = LoggerFactory.getLogger("\t\b\b\b\b\b\b\b")
 log.level = "debug"
 
 const data = [
-  ...JSON.parse(fs.readFileSync("./data.2.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.3.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.4.json", "utf-8")),
+  ...JSON.parse(fs.readFileSync("./data.6.json", "utf-8")),
 ]
 
 const net = new brain.NeuralNetwork()
@@ -90,6 +90,7 @@ const whiteList = [
   "hectorstatic.baidu.com",
   "hm.baidu.com",
   "hpd.baidu.com",
+  "img.ithome.com",
   "map.baidu.com",
   "mbd.baidu.com",
   "miao.baidu.com",
@@ -100,6 +101,7 @@ const whiteList = [
   "report.idqqimg.com",
   "report.qqweb.qq.com",
   "res.wx.qq.com",
+  "s3.ifanr.com",
   "sofire.baidu.com",
   "sp0.baidu.com",
   "sp1.baidu.com",
@@ -114,6 +116,7 @@ const whiteList = [
   "t9.baidu.com",
   "tianshu.qq.com",
   "trustrcv.baidu.com",
+  "tva4.sinaimg.cn",
   "ug.baidu.com",
   "wn.pos.baidu.com",
   "wwcdn.weixin.qq.com",
@@ -165,6 +168,7 @@ const blackList = [
   "google.co.jp",
   "google.com",
   "gstatic.com",
+  "i.stack.imgur.com",
   "id5-sync.com",
   "justpremium.com",
   "kargo.com",
@@ -186,6 +190,7 @@ const blackList = [
   "sidecar.gitter.im",
   "smaato.net",
   "smartadserver.com",
+  "stackoverflow.com",
   "tapad.com",
   "teads.tv",
   "tpmn.co.kr",
