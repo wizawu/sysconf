@@ -7,9 +7,9 @@ const log = LoggerFactory.getLogger("\t\b\b\b\b\b\b\b")
 log.level = "debug"
 
 const data = [
-  ...JSON.parse(fs.readFileSync("./data.3.json", "utf-8")),
-  ...JSON.parse(fs.readFileSync("./data.4.json", "utf-8")),
-  ...JSON.parse(fs.readFileSync("./data.5.json", "utf-8")),
+  ...JSON.parse(fs.readFileSync("./data.7.json", "utf-8")),
+  ...JSON.parse(fs.readFileSync("./data.8.json", "utf-8")),
+  ...JSON.parse(fs.readFileSync("./data.9.json", "utf-8")),
 ]
 
 const net = new brain.NeuralNetwork()
@@ -81,7 +81,10 @@ const whiteList = [
   "aegis.qq.com",
   "aiqicha.baidu.com",
   "aiqicha.com",
+  "aq.qq.com",
+  "at.idqqimg.com",
   "cdn.iciba.com",
+  "cube.weixinbridge.com",
   "doc.weixin.qq.com",
   "docrp.weixin.qq.com",
   "docs.gtimg.com",
@@ -91,6 +94,7 @@ const whiteList = [
   "gimg3.baidu.com",
   "gsp0.baidu.com",
   "hectorstatic.baidu.com",
+  "himg.bdimg.com",
   "hm.baidu.com",
   "hpd.baidu.com",
   "img.ithome.com",
@@ -126,6 +130,11 @@ const whiteList = [
   "www.aiqicha.com",
   "www.baidu.com",
   "www.iciba.com",
+  "www.inwaishe.com",
+  "xin-static.bj.bcebos.com",
+  "xinpub.bj.bcebos.com",
+  "xinpub.cdn.bcebos.com",
+  "zhengxin-pub.cdn.bcebos.com",
 ]
 
 const blackList = [
@@ -146,10 +155,17 @@ const blackList = [
   "google.com",
   "i.stack.imgur.com",
   "id5-sync.com",
+  "lh3.googleusercontent.com",
   "mtalk.google.com",
+  "ogs.google.com",
   "op.gg",
+  "play.google.com",
   "prebid.a-mo.net",
   "raw.githubusercontent.com",
+  "storage.googleapis.com",
+  "t0.gstatic.com",
+  "t1.gstatic.com",
+  "t3.gstatic.com",
   "www.clarity.ms",
   "www.google.com",
   "www.google.la",
