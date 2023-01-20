@@ -9,3 +9,6 @@
     - pnpm@7.12.x
     - prettier@2.4.x
     - typescript@latest
+
+- name: switch node version
+  shell: "n 16"
