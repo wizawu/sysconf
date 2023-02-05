@@ -3,5 +3,5 @@
 set -x
 sudo modprobe -r elan_i2c hid_multitouch i2c_hid
 sudo modprobe i2c_hid
-xinput set-prop 'pointer:Razer Razer DeathAdder' 'libinput Accel Speed' -0.8
-xinput set-prop 'pointer:Razer Razer DeathAdder V2' 'libinput Accel Speed' -0.4
+xinput set-prop 'pointer:Razer Razer DeathAdder' 'libinput Accel Speed' -0.9
+xinput set-prop 'pointer:Razer Razer DeathAdder V2' 'libinput Accel Speed' -0.5
