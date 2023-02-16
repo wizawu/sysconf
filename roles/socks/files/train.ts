@@ -7,9 +7,9 @@ const log = LoggerFactory.getLogger("\t\b\b\b\b\b\b\b")
 log.level = "debug"
 
 const data = [
-  ...JSON.parse(fs.readFileSync("./data.4.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.5.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.6.json", "utf-8")),
+  ...JSON.parse(fs.readFileSync("./data.7.json", "utf-8")),
 ]
 
 const net = new brain.NeuralNetwork()
@@ -79,11 +79,8 @@ export function writeData(i: number): void {
 
 const whiteList = [
   "aegis.qq.com",
-  "aiqicha.baidu.com",
-  "aiqicha.com",
   "aq.qq.com",
   "at.idqqimg.com",
-  "cdn.iciba.com",
   "cube.weixinbridge.com",
   "doc.weixin.qq.com",
   "docrp.weixin.qq.com",
@@ -127,13 +124,12 @@ const whiteList = [
   "t9.baidu.com",
   "tianshu.qq.com",
   "trustrcv.baidu.com",
-  "tva4.sinaimg.cn",
   "ug.baidu.com",
   "wn.pos.baidu.com",
+  "wq.360buyimg.com",
   "wwcdn.weixin.qq.com",
   "www.aiqicha.com",
   "www.baidu.com",
-  "www.iciba.com",
   "www.inwaishe.com",
   "x.jd.com",
   "xin-static.bj.bcebos.com",
@@ -153,7 +149,6 @@ const blackList = [
   "c.bing.com",
   "camo.githubusercontent.com",
   "cm.mgid.com",
-  "collector.githubapp.com",
   "eus.rubiconproject.com",
   "fonts.googleapis.com",
   "fonts.gstatic.com",
@@ -178,7 +173,5 @@ const blackList = [
   "www.clarity.ms",
   "www.google-analytics.com",
   "www.google.com",
-  "www.google.la",
-  "www.google.nl",
   "www.op.gg",
 ]
