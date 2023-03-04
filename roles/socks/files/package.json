@@ -2,7 +2,7 @@
   "scripts": {
     "build": "tsc main.ts",
     "start": "npm run build && node main.js",
-    "write": "npm run build && node -e 'require(\"./train.js\").writeData(9); process.exit()'",
+    "write": "npm run build && node -e 'require(\"./train.js\").writeData(10); process.exit()'",
     "train": "npm run build && node -e 'require(\"./train.js\").train(); process.exit()'"
   },
   "dependencies": {

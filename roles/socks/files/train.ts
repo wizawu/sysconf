@@ -10,6 +10,7 @@ const data = [
   ...JSON.parse(fs.readFileSync("./data.6.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.7.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.8.json", "utf-8")),
+  ...JSON.parse(fs.readFileSync("./data.10.json", "utf-8")),
 ]
 
 const net = new brain.NeuralNetwork()
@@ -94,8 +95,10 @@ const whiteList = [
   "docs.gtimg.com",
   "docs.qq.com",
   "eclick.baidu.com",
+  "err.www.mi.com",
   "fclick.baidu.com",
   "gimg3.baidu.com",
+  "go.buy.mi.com",
   "gsp0.baidu.com",
   "hectorstatic.baidu.com",
   "himg.bdimg.com",
@@ -106,6 +109,7 @@ const whiteList = [
   "map.baidu.com",
   "mbd.baidu.com",
   "mercury.jd.com",
+  "mi.com",
   "miao.baidu.com",
   "mp.weixin.qq.com",
   "open.weixin.qq.com",
@@ -123,6 +127,7 @@ const whiteList = [
   "res.wx.qq.com",
   "res2.wx.qq.com",
   "s.pc.qq.com",
+  "s1.mi.com",
   "s3.ifanr.com",
   "sh.jd.com",
   "sofire.baidu.com",
@@ -151,6 +156,7 @@ const whiteList = [
   "www.aiqicha.com",
   "www.baidu.com",
   "www.inwaishe.com",
+  "www.mi.com",
   "x.jd.com",
   "xin-static.bj.bcebos.com",
   "xinpub.bj.bcebos.com",
