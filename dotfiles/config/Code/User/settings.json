@@ -20,9 +20,13 @@
     "editor.tabSize": 2
   },
   "[less]": {
+    "editor.defaultFormatter": "michelemelluso.code-beautifier",
     "editor.detectIndentation": true,
     "editor.insertSpaces": true,
     "editor.tabSize": 2
+  },
+  "[python]": {
+    "editor.formatOnType": true
   },
   "[scss]": {
     "editor.detectIndentation": true,
