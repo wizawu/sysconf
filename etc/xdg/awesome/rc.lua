@@ -109,7 +109,8 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
                                     { "Debian", debian.menu.Debian_menu.Debian },
                                     { "open terminal", terminal },
                                     -- @wizawu --
-                                    { "autorandr", terminal .. " -e autorandr -l office" },
+                                    { "autorandr", "autorandr -l office" },
+                                    { "xinput", terminal .. " -e x -m" },
                                     -- @end --
                                   }
                         })
