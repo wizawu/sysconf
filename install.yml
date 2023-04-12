@@ -78,6 +78,7 @@
           - manpages-dev
           - netcat
           - nethogs
+          - network-manager
           - nfs-common
           - nginx
           - nmap

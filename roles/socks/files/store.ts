@@ -23,7 +23,7 @@ setInterval(() => {
   online = child.status === 0
   if (!online) {
     log.warn("I am offline")
-    db.exec(`delete from history where time < ${Date.now() - 21 * 86400 * 1000}`)
+    db.exec(`delete from history where time < ${Date.now() - 90 * 86400 * 1000}`)
     db.exec("VACUUM")
   }
 }, 5000)
