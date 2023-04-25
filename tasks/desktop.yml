@@ -22,6 +22,7 @@
       - plasma-desktop
       - plasma-nm
       - qbittorrent
+      - qml-module-org-kde-newstuff
       - qpdfview
       - redshift
       - smplayer
