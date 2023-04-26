@@ -7,10 +7,9 @@ const log = LoggerFactory.getLogger("\t\b\b\b\b\b\b\b")
 log.level = "debug"
 
 const data = [
-  ...JSON.parse(fs.readFileSync("./data.6.json", "utf-8")),
-  ...JSON.parse(fs.readFileSync("./data.7.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.8.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.10.json", "utf-8")),
+  ...JSON.parse(fs.readFileSync("./data.11.json", "utf-8")),
 ]
 
 const net = new brain.NeuralNetwork()
@@ -83,10 +82,13 @@ const whiteList = [
   "aegis.qq.com",
   "aq.qq.com",
   "at.idqqimg.com",
+  "avatar.ithome.com",
   "btrace.qq.com",
   "cache.soso.com",
   "cm.l.qq.com",
   "cube.weixinbridge.com",
+  "dat.ruanmei.com",
+  "digi.ithome.com",
   "discuz.gtimg.cn",
   "dldir1.qq.com",
   "doc.weixin.qq.com",
@@ -112,6 +114,7 @@ const whiteList = [
   "mi.com",
   "miao.baidu.com",
   "mp.weixin.qq.com",
+  "myapi.ruanmei.com",
   "open.weixin.qq.com",
   "openapi.guanjia.qq.com",
   "oth.str.beacon.qq.com",
@@ -120,7 +123,9 @@ const whiteList = [
   "pingjs.qq.com",
   "pos.baidu.com",
   "pub.idqqimg.com",
+  "qimg.ithome.com",
   "qpsearch.jd.com",
+  "quan.ithome.com",
   "rel.discuz.soso.com",
   "report.idqqimg.com",
   "report.qqweb.qq.com",
