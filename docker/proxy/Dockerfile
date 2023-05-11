@@ -1,9 +1,4 @@
-FROM golang:1.16-buster as gotunnel
-RUN apt install -y git
-RUN go get github.com/xjdrew/gotunnel
-
 FROM node:14.16-buster-slim
-COPY --from=gotunnel /go/bin/gotunnel /usr/bin/gotunnel
 
 RUN echo "deb http://hk.archive.ubuntu.com/ubuntu focal main universe" > /etc/apt/sources.list
 RUN apt update -o Acquire::AllowInsecureRepositories=true -y && \
@@ -19,5 +14,11 @@ RUN apt update -o Acquire::AllowInsecureRepositories=true -y && \
 RUN wget --no-check-certificate -q -O /usr/bin/brook \
     https://github.com/txthinking/brook/releases/download/v20200502/brook_linux_amd64
 
-RUN chmod a+x /usr/bin/brook /usr/bin/gotunnel
+RUN wget --no-check-certificate -q -O - \
+    https://github.com/xtaci/kcptun/releases/download/v20230214/kcptun-linux-amd64-20230214.tar.gz | \
+    tar -C /usr/bin/ -zxf -
+
+RUN mv /usr/bin/client_linux_amd64 /usr/bin/kcptun_client
+RUN mv /usr/bin/server_linux_amd64 /usr/bin/kcptun_server
+RUN chmod a+x /usr/bin/brook /usr/bin/kcptun_client /usr/bin/kcptun_server
 RUN ln -f /usr/share/zoneinfo/PRC /etc/localtime
