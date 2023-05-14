@@ -29,7 +29,6 @@ source /usr/share/bash-completion/completions/git
 # alias
 alias 2fa='node -e "console.log(require(\"otplib\").authenticator.generate(process.argv[1]))"'
 alias ackj='ack --type kotlin --type java'
-alias ackm='ack --type yaml --type xml'
 alias ackng='ack --nogroup'
 alias apt='sudo apt'
 alias apthi='bash -c "sudo apt -o Acquire::http::Proxy=http://\$0 install \$1"'

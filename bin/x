@@ -2,6 +2,8 @@
 
 if [[ "$1" = "-m" ]]; then
     set -x
+    setxkbmap -layout us
+    xmodmap -e "keycode 9 = Escape asciitilde grave"
     sudo modprobe -r elan_i2c hid_multitouch i2c_hid
     sudo modprobe i2c_hid
     xinput set-prop 'pointer:Razer Razer DeathAdder' 'libinput Accel Speed' -0.${2:-9}
