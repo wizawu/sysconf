@@ -58,9 +58,9 @@ for i in {1..9}; do
     if [ "$1" = "-a" ]; then
         xrandr --output ${DISPLAYS[i]} --auto
         xrandr --newmode 1920x1080x60 173.00 1920 2048 2248 2576 1080 1083 1088 1120 -hsync +vsync
-        xrandr --newmode 3680x2070x28 288.50 3680 3904 4288 4896 2070 2073 2078 2106 -hsync +vsync
+        xrandr --newmode 3840x2160x26 290.25 3840 4064 4464 5088 2160 2163 2168 2195 -hsync +vsync
         xrandr --addmode ${DISPLAYS[i]} 1920x1080x60
-        xrandr --addmode ${DISPLAYS[i]} 3680x2070x28
+        xrandr --addmode ${DISPLAYS[i]} 3840x2160x26
     fi
 done
 
