@@ -65,6 +65,7 @@
   ],
   "explorer.openEditors.visible": 0,
   "files.autoSave": "off",
+  "files.defaultLanguage": "json",
   "files.exclude": {
     "**/*.retry": true,
     "**/__pycache__": true,
