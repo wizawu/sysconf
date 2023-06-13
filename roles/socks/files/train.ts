@@ -7,9 +7,9 @@ const log = LoggerFactory.getLogger("\t\b\b\b\b\b\b\b")
 log.level = "debug"
 
 const data = [
-  ...JSON.parse(fs.readFileSync("./data.10.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.11.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.12.json", "utf-8")),
+  ...JSON.parse(fs.readFileSync("./data.13.json", "utf-8")),
 ]
 
 const net = new brain.NeuralNetwork()
@@ -237,33 +237,46 @@ const whiteList = [
 ]
 
 const blackList = [
+  "accounts.google.com",
   "ads.stickyadstv.com",
   "ads.yahoo.com",
+  "adservice.google.com",
   "alive.github.com",
   "api.github.com",
+  "apis.google.com",
   "avatars.githubusercontent.com",
   "bh.contextweb.com",
   "bing.com",
   "c.bing.com",
   "camo.githubusercontent.com",
+  "clients2.google.com",
   "cm.mgid.com",
   "eus.rubiconproject.com",
+  "feedly.com",
   "fonts.googleapis.com",
   "fonts.gstatic.com",
   "github.com",
   "github.githubassets.com",
   "google.com",
+  "history.google.com",
+  "hooks.stripe.com",
   "hub.docker.com",
   "i.stack.imgur.com",
+  "id.google.com",
   "id5-sync.com",
+  "js.stripe.com",
+  "lens.google.com",
   "lh3.googleusercontent.com",
   "m.stripe.network",
+  "mail.google.com",
   "mtalk.google.com",
   "ogs.google.com",
   "op.gg",
+  "pay.google.com",
   "play.google.com",
   "prebid.a-mo.net",
   "raw.githubusercontent.com",
+  "s1.feedly.com",
   "stats.g.doubleclick.net",
   "storage.googleapis.com",
   "t0.gstatic.com",
