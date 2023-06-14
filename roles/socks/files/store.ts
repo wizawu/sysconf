@@ -90,36 +90,30 @@ export function createHistory(
   ).run({ error: error || "" })
 }
 
-export function countConnErr(site: string): Record<string, number> {
-  return db
-    .prepare(
-      `
-      select
-        sum(case when choose = 0 then 1 else 0 end) as err0,
-        sum(case when choose = 1 then 1 else 0 end) as err1
-      from history
-      where site = @site and (traffic <= 26 or error = 'Connection timeout')
-      `
-    )
-    .get({ site })
-}
-
 export function measure(site: string): Record<string, number> {
   return db
     .prepare(
       `
       select
-        count(case when choose = 0 then 1 else null end) /
-        sum(case when choose = 0 then 1/speed else 0 end) as spd0,
+        count(case when choose = 0 and traffic <= 26 then 1 else null end) as err0,
 
-        count(case when choose = 1 then 1 else null end) /
-        sum(case when choose = 1 then 1/speed else 0 end) as spd1,
+        count(case when choose = 1 and traffic <= 26 then 1 else null end) as err1,
+
+        count(case when choose = 0 and speed > 0 then 1 else null end) /
+        sum(case when choose = 0 and speed > 0 then 1/speed else 0 end) as spd0,
+
+        count(case when choose = 1 and speed > 0 then 1 else null end) /
+        sum(case when choose = 1 and speed > 0 then 1/speed else 0 end) as spd1,
+
+        count(case when choose = 0 and speed = 0 then 1 else null end) as blk0,
+
+        count(case when choose = 1 and speed = 0 then 1 else null end) as blk1,
 
         max(case when choose = 0 then speed else 0 end) as bw0,
 
         max(case when choose = 1 then speed else 0 end) as bw1
       from history
-      where site = @site and traffic > 26
+      where site = @site
       `
     )
     .get({ site })

@@ -6,11 +6,7 @@ const pulse: Record<string, number> = {}
 const log = LoggerFactory.getLogger("\t\b\b\b\b\b\b\b")
 log.level = "debug"
 
-const data = [
-  ...JSON.parse(fs.readFileSync("./data.11.json", "utf-8")),
-  ...JSON.parse(fs.readFileSync("./data.12.json", "utf-8")),
-  ...JSON.parse(fs.readFileSync("./data.13.json", "utf-8")),
-]
+const data = [...JSON.parse(fs.readFileSync("./data.14.json", "utf-8"))]
 
 const net = new brain.NeuralNetwork()
 if (fs.existsSync("model.json")) {
@@ -21,19 +17,29 @@ if (fs.existsSync("model.json")) {
 export function train() {
   net.train(
     data.map(it => ({
-      input: [it.err0 || 0, it.err1 || 0, it.spd0 || 0, it.spd1 || 0, it.bd0 || it.spd0 || 0, it.bd1 || it.spd1 || 0],
+      input: [
+        it.err0 || 0,
+        it.err1 || 0,
+        it.spd0 || 0,
+        it.spd1 || 0,
+        it.blk0 || 0,
+        it.blk1 || 0,
+        it.bw0 || 0,
+        it.bw1 || 0,
+      ],
       output: [it.prefer],
     })),
     {
-      iterations: 30000,
+      iterations: 50000,
       log: it => log.debug(it),
       logPeriod: 1000,
+      learningRate: 0.1,
     }
   )
   fs.writeFileSync("model.json", JSON.stringify(net.toJSON(), null, 2))
 }
 
-export function classify(site: string, args: [number, number, number, number, number, number]): number {
+export function classify(site: string, args: [number, number, number, number, number, number, number, number]): number {
   const output: number = net.run([
     args[0] || 0,
     args[1] || 0,
@@ -41,6 +47,8 @@ export function classify(site: string, args: [number, number, number, number, nu
     args[3] || 0,
     args[4] || 0,
     args[5] || 0,
+    args[6] || 0,
+    args[7] || 0,
   ])[0]
   if (Math.floor(Date.now() / 1000) > (pulse[site] || 0)) {
     pulse[site] = Math.floor(Date.now() / 1000)
@@ -52,28 +60,20 @@ export function classify(site: string, args: [number, number, number, number, nu
 // Generate training data
 export function writeData(i: number): void {
   const store = require("./store")
-  const mark: Record<string, number> = {}
-  data.forEach(it => (mark[it.site] = it.prefer))
   const buffer: string[] = []
-  Object.keys(mark)
-    .concat(whiteList)
-    .concat(blackList)
-    .forEach(site => {
-      const { err0, err1 } = store.countConnErr(site)
-      const { spd0, spd1, bw0, bw1 } = store.measure(site)
-      if ([err0, err1, spd0, spd1, bw0, bw1].every(it => !it)) {
-        if (whiteList.includes(site) || blackList.includes(site)) {
-          return log.warn(`no history: ${site}`)
-        }
-      }
-      let prefer = mark[site]
-      if (whiteList.includes(site)) {
-        prefer = 0
-      } else if (blackList.includes(site)) {
-        prefer = 1
-      }
-      buffer.push(JSON.stringify({ site, err0, err1, spd0, spd1, bw0, bw1, prefer }))
-    })
+  Array(...whiteList, ...blackList).forEach(site => {
+    const { err0, err1, spd0, spd1, blk0, blk1, bw0, bw1 } = store.measure(site)
+    if ([err0, err1, spd0, spd1, blk0, blk1, bw0, bw1].every(it => !it)) {
+      return log.warn(`no history: ${site}`)
+    }
+    let prefer = -1
+    if (whiteList.includes(site)) {
+      prefer = 0
+    } else if (blackList.includes(site)) {
+      prefer = 1
+    }
+    buffer.push(JSON.stringify({ site, err0, err1, spd0, spd1, blk0, blk1, bw0, bw1, prefer }))
+  })
   fs.appendFileSync(`data.${i}.json`, "[" + buffer.join(",\n") + "]")
 }
 

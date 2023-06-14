@@ -2,8 +2,8 @@
   "scripts": {
     "build": "tsc main.ts",
     "start": "npm run build && node main.js",
-    "write": "npm run build && node -e 'require(\"./train.js\").writeData(13); process.exit()'",
-    "train": "npm run build && node -e 'require(\"./train.js\").train(); process.exit()'"
+    "write": "npm run build && node -e 'require(\"./train.js\").writeData(14); process.exit()'",
+    "train": "npm run build && rm -f model.json && node -e 'require(\"./train.js\").train(); process.exit()'"
   },
   "dependencies": {
     "@types/node": "^10.17.44",

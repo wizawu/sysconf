@@ -8,9 +8,8 @@ export function select(upstream: string): store.Backend {
   const result = store.selectDomain(upstream)
   if (result) {
     setTimeout(() => {
-      const { err0, err1 } = store.countConnErr(upstream)
-      const { spd0, spd1, bw0, bw1 } = store.measure(upstream)
-      const next = train.classify(upstream, [err0, err1, spd0, spd1, bw0, bw1])
+      const { err0, err1, spd0, spd1, blk0, blk1, bw0, bw1 } = store.measure(upstream)
+      const next = train.classify(upstream, [err0, err1, spd0, spd1, blk0, blk1, bw0, bw1])
       if (Number(result.prefer) !== next) {
         store.updateDomain(upstream, next, "TRAIN")
       }
