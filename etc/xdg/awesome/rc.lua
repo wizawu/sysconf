@@ -110,7 +110,7 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
                                     { "open terminal", terminal },
                                     -- @wizawu --
                                     { "autorandr", "autorandr -l office" },
-                                    { "xinput", terminal .. " -e x -m" },
+                                    { "xinput", terminal .. " -e x -i" },
                                     -- @end --
                                   }
                         })

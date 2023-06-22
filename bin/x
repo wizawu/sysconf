@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ "$1" = "-m" ]]; then
+if [[ "$1" = "-i" ]]; then
     set -x
     setxkbmap -layout us
     xmodmap -e "keycode 9 = Escape asciitilde grave"
@@ -19,7 +19,7 @@ if [[ "$1" = "-s" ]]; then
     exit
 fi
 
-if [[ "$1" = "-i" ]]; then
+if [[ "$1" = "-b" ]]; then
     set -x
     xset -b
     xset -dpms
