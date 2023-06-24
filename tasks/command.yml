@@ -11,8 +11,8 @@
       - curl
       - dconf-cli
       - di
+      - docker-ce
       - fish
-      - fonttools=3.0-1
       - fping
       - git-extras
       - gnupg1
