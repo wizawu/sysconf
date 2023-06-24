@@ -6,7 +6,6 @@
       - awesome-extra
       - code
       - dbus-x11
-      - deepin-screenshot
       - geany # text editor
       - gimp
       - mirage # image viewer
@@ -17,7 +16,6 @@
       - tilix
       - vim-gtk
       - wireshark-gtk
-      - wps-office
       - x11-xkb-utils
       - x11-xserver-utils
       - xdg-user-dirs
