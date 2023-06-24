@@ -45,7 +45,7 @@
 
 - name: remove useless git commands
   file:
-    src: /usr/bin/{{item}}
+    path: /usr/bin/{{item}}
     state: absent
   with_items:
     - git-alias
