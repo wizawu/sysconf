@@ -10,4 +10,4 @@
     - prettier@2.4.x
 
 - name: switch node version
-  shell: "n 16"
+  shell: "n 18"
