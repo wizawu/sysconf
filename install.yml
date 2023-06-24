@@ -36,6 +36,9 @@
         - 3B4FE6ACC0B21F32 # tsinghua
         - 6A030B21BA07F4FB # aliyun kubernetes
         - 7EA0A9C3F273FCD8 # aliyun docker
+        - EB2E94ADBE1229CF
+        - 4EB27DB2A2B88B8B
+        - B53DC80D13EDEF05
 
     - name: install apt packages
       apt:
