@@ -5,7 +5,12 @@
 
   tasks:
     - name: create user
-      user: name={{user}} state=present group=root shell=/bin/bash
+      user:
+        name: "{{user}}"
+        groups:
+          - root
+          - video
+        shell: /bin/bash
 
     - name: change file mode of this repo
       file:

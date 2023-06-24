@@ -3,15 +3,13 @@
 
 - name: start brook
   shell: >-
-    podman run
-    -d --replace
+    docker run -d
     --name brook
     --restart always
     --network host
     --dns 1.2.4.8
     --dns 8.8.4.4
     --dns 8.8.8.8
-    --log-driver k8s-file
     --log-opt max-file=10
     --log-opt max-size=100m
     --entrypoint /bin/sh

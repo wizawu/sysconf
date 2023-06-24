@@ -31,21 +31,17 @@ if [[ "$1" = "-b" ]]; then
 
     # fcitx
     fcitx -rd && im-config -n fcitx
-    set -e
 
-    # plasma session
-    plasma_session &>/dev/null &
+    # start session
+    nohup gnome-session &>>/tmp/gnome-session.log &
 
     # reload awesome
-    until [ -n "$(pgrep kdeinit5)" ]; do
+    until [ -n "$(pgrep gnome)" ]; do
         sleep 1
     done
     sleep 1
     awesome-client 'awesome.restart()' || echo
-
-    # kill plasma shell
-    pgrep plasmashell || exit
-    pkill plasmashell && exit
+    exit
 fi
 
 DISPLAYS=("" $(xrandr | grep connected | awk '{print $1}'))
