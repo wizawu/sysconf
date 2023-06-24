@@ -7,7 +7,6 @@
       - code
       - dbus-x11
       - deepin-screenshot
-      - draw.io
       - geany # text editor
       - gimp
       - mirage # image viewer
