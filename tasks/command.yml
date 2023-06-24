@@ -43,6 +43,7 @@
       - whois
       - wput
       - yamllint
+      - zstd
 
 - name: remove useless git commands
   file:

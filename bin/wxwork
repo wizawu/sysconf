@@ -1,4 +1,4 @@
 #!/bin/sh
 
 set -x
-exec sudo -i /opt/deepinwine/apps/Deepin-WXWork/run.sh
+exec sudo -i /opt/apps/com.qq.weixin.work.deepin/files/run.sh
