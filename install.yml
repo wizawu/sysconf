@@ -97,7 +97,6 @@
           - sshpass
           - strace
           - supervisor
-          - sysbench
           - syslog-ng
           - sysstat
           - systemd-sysv
