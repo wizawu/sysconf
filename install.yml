@@ -119,7 +119,6 @@
       apt:
         name:
           - mydumper
-          - mysql-client
           - postgresql-client
           - redis-tools
           - sqlite3
