@@ -24,3 +24,14 @@ GRUB_CMDLINE_LINUX="text"
 update-grub
 systemctl set-default multi-user.target
 ```
+
+### Fix Intel Iris Xe graphics
+```bash
+# change the following line in /etc/default/grub
+GRUB_CMDLINE_LINUX_DEFAULT="splash quiet nomodeset"
+# to
+GRUB_CMDLINE_LINUX_DEFAULT="splash quiet i915.enable_psr=0"
+
+# run scripts
+update-grub
+```
