@@ -195,15 +195,6 @@
         state: restarted
       ignore_errors: true
 
-    - name: disable splash screen
-      lineinfile:
-        dest: /etc/default/grub
-        regexp: '^GRUB_CMDLINE_LINUX_DEFAULT\s{0,}='
-        line: 'GRUB_CMDLINE_LINUX_DEFAULT=""'
-
-    - name: update grub config
-      command: update-grub2
-
     - name: update systemd logind.conf
       lineinfile:
         dest: /etc/systemd/logind.conf
