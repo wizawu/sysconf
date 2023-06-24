@@ -4,8 +4,6 @@ if [[ "$1" = "-i" ]]; then
     set -x
     setxkbmap -layout us
     xmodmap -e "keycode 9 = Escape asciitilde grave"
-    sudo modprobe -r elan_i2c hid_multitouch i2c_hid
-    sudo modprobe i2c_hid
     xinput set-prop 'pointer:Razer Razer DeathAdder' 'libinput Accel Profile Enabled'  0, 1
     xinput set-prop 'pointer:Razer Razer DeathAdder' 'libinput Accel Speed' -0.${2:-4}
     xinput set-prop 'pointer:Razer Razer DeathAdder V2' 'libinput Accel Profile Enabled'  0, 1
@@ -33,14 +31,14 @@ if [[ "$1" = "-b" ]]; then
     fcitx -rd && im-config -n fcitx
 
     # start session
-    nohup gnome-session &>>/tmp/gnome-session.log &
+    nohup cinnamon-session &>>/tmp/cinnamon-session.log &
 
     # reload awesome
-    until [ -n "$(pgrep gnome)" ]; do
+    until [ -n "$(pgrep -f cinnamon-session)" ]; do
         sleep 1
     done
     sleep 1
-    awesome-client 'awesome.restart()' || echo
+    awesome-client 'awesome.restart()'
     exit
 fi
 
@@ -53,9 +51,9 @@ for i in {1..9}; do
     echo [$i] ${DISPLAYS[i]}
     if [ "$1" = "-a" ]; then
         xrandr --output ${DISPLAYS[i]} --auto
-        xrandr --newmode 1920x1080x60 173.00 1920 2048 2248 2576 1080 1083 1088 1120 -hsync +vsync
+        xrandr --newmode 1920x1200x60 193.25 1920 2056 2256 2592 1200 1203 1209 1245 -hsync +vsync
         xrandr --newmode 3840x2160x26 290.25 3840 4064 4464 5088 2160 2163 2168 2195 -hsync +vsync
-        xrandr --addmode ${DISPLAYS[i]} 1920x1080x60
+        xrandr --addmode ${DISPLAYS[i]} 1920x1200x60
         xrandr --addmode ${DISPLAYS[i]} 3840x2160x26
     fi
 done

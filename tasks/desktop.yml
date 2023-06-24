@@ -42,8 +42,14 @@
 - name: install chrome
   apt: deb=https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
-- name: install gnome
+- name: install cinnamon
   apt:
+    install_recommends: true
     name:
-      - gnome-session
+      - cinnamon-session
+      - cinnamon-settings
       - nautilus
+      - network-manager-gnome
+
+- name: remove nemo-desktop
+  shell: mv /usr/bin/nemo-desktop /usr/bin/.nemo-desktop
