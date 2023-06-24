@@ -9,7 +9,7 @@ iface wlan0 inet dhcp
 # install
 ifup wlan0
 apt install git make
-git clone --depth 1 https://github.com/wizawu/sysconf.git
-cd sysconf
+git clone --depth 1 https://github.com/wizawu/sysconf.git /home/wizawu/.sysconf
+cd /home/wizawu/.sysconf
 make all
 ```
