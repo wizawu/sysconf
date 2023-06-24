@@ -15,7 +15,10 @@ ssh:
 	ssh -o "StrictHostKeyChecking=no" root@127.0.0.1 echo ok
 
 install:
-	ansible-playbook install.yml -b -e user=wizawu -v
+	ansible-playbook -b -e user=wizawu -v install.yml
+
+debug:
+	ansible-playbook -b -e user=wizawu -v debug.yml
 
 clean:
 	apt autoremove --purge -y
