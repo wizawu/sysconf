@@ -5,28 +5,16 @@
       - awesome
       - awesome-extra
       - code
-      - cups # printer
       - dbus-x11
-      - deepin-screenshot=4.1.8-1
-      - deepin-wine5-i386
-      - dolphin
+      - deepin-screenshot
       - draw.io
-      - freerdp-x11
       - geany # text editor
       - gimp
-      - gtk-theme-switch
-      - kde-config-gtk-style
-      - kde-config-screenlocker
       - mirage # image viewer
       - pavucontrol
-      - plasma-desktop
-      - plasma-nm
-      - qbittorrent
-      - qml-module-org-kde-newstuff
       - qpdfview
       - redshift
       - smplayer
-      - systemsettings # KDE settings center
       - tilix
       - vim-gtk
       - wireshark-gtk
@@ -56,8 +44,3 @@
 
 - name: install chrome
   apt: deb=https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-
-- name: download waterfox
-  shell: >-
-    wget https://cdn.waterfox.net/releases/linux64/installer/waterfox-G4.0.2.en-US.linux-x86_64.tar.bz2
-    -qO - | tar -xjf - -C /home/{{user}}/local/
