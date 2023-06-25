@@ -113,6 +113,7 @@
     - name: check built-in tools
       shell: command -v {{item}}
       with_items:
+        - curl
         - getconf
         - ipcs
         - losetup
