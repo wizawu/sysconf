@@ -34,6 +34,7 @@ if [[ "$1" = "-b" ]]; then
     done
     awesome-client 'awesome.restart()' || echo
     sleep 1
+    pkill cinnamon-screensaver || echo
 
     # background
     hsetroot -full /usr/share/awesome/themes/default/background.png

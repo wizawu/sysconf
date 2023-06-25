@@ -51,5 +51,8 @@
       - nautilus
       - network-manager-gnome
 
+- name: disable deepin-devicemanager-server
+  service: name=deepin-devicemanager-server state=stopped enabled=false
+
 - name: remove nemo-desktop
   shell: mv /usr/bin/nemo-desktop /usr/bin/.nemo-desktop
