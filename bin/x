@@ -25,6 +25,7 @@ if [[ "$1" = "-b" ]]; then
     xset s off
 
     # start session
+    pkill nm-applet || echo
     nohup cinnamon-session &>>/tmp/cinnamon-session.log &
 
     # reload awesome
