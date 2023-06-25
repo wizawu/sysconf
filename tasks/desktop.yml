@@ -12,7 +12,6 @@
       - pavucontrol
       - qpdfview
       - redshift
-      - scrot
       - smplayer
       - tilix
       - vim-gtk
@@ -40,8 +39,11 @@
       - fcitx-ui-light
       - libgtk-3-bin
 
-- name: install chrome
-  apt: deb=https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+- name: install packages from url
+  apt: deb={{item}}
+  with_items:
+    - https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    - https://github.com/flameshot-org/flameshot/releases/download/v12.1.0/flameshot-12.1.0-1.debian-10.amd64.deb
 
 - name: install cinnamon
   apt:

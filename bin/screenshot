@@ -1,5 +1,4 @@
 #!/bin/sh
 
 mkdir -p ~/tmp
-cd ~/tmp
-scrot -s -q 100
+flameshot gui -p tmp/
