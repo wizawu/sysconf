@@ -1,4 +1,3 @@
 #!/bin/sh
 
-set -x
-exec sudo -i /opt/apps/com.qq.weixin.work.deepin/files/run.sh
+VBoxManage startvm wxwork --type sdl

@@ -38,7 +38,9 @@ if [[ "$1" = "-b" ]]; then
     hsetroot -full /usr/share/awesome/themes/default/background.png
 
     # fcitx
-    fcitx -rd && im-config -n fcitx
+    nohup fcitx -rd &>>/tmp/fcitx.log &
+    im-config -n fcitx
+
     exit
 fi
 
