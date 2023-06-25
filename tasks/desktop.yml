@@ -12,6 +12,7 @@
       - pavucontrol
       - qpdfview
       - redshift
+      - scrot
       - smplayer
       - tilix
       - vim-gtk

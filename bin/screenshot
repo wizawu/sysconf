@@ -1,4 +1,5 @@
 #!/bin/sh
 
 mkdir -p ~/tmp
-deepin-screenshot -s ~/tmp/ "$@"
+cd ~/tmp
+scrot -s -q 100
