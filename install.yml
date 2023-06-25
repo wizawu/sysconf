@@ -141,7 +141,6 @@
       with_items:
         - etc/X11/xorg.conf.d
         - etc/apt/apt.conf.d
-        - etc/containers
         - etc/fonts/conf.d
         - etc/opt/chrome/policies/managed
         - etc/security/limits.d
@@ -153,8 +152,7 @@
       with_items:
         - etc/X11/xorg.conf.d/99-synaptics.conf
         - etc/apt/apt.conf.d/99default
-        - etc/containers/registries.conf
-        - etc/containers/storage.conf
+        - etc/docker/daemon.json
         - etc/fonts/conf.d/99-default.conf
         - etc/opt/chrome/policies/managed/blocklist.json
         - etc/rc.local
@@ -179,12 +177,6 @@
         insertafter: "<fontconfig"
       with_items:
         - "<dir>~/.fonts</dir>"
-
-    - name: update tsocks config
-      lineinfile:
-        dest: /etc/tsocks.conf
-        regexp: '^server\s{0,}='
-        line: "server = 127.0.0.1"
 
     - name: disable NetworkManager dns
       lineinfile:

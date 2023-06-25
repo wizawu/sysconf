@@ -1,2 +1,5 @@
 #!/bin/sh
-flatpak run com.jetpackduba.Gitnuro
+
+set -e
+cd ~/local
+exec zulu-17-jre/bin/java -jar Gitnuro-linux-1.2.1.jar

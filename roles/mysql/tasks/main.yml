@@ -5,8 +5,7 @@
 
 - name: start mysql
   shell: >-
-    podman run
-    -d --replace
+    docker run -d
     --name mysql
     --restart always
     --network host
@@ -15,4 +14,4 @@
     -v /var/lib/mysql:/var/lib/mysql
     -v {{playbook_dir}}/roles/mysql/files/conf.d:/etc/mysql/conf.d
     -e MYSQL_ALLOW_EMPTY_PASSWORD=yes
-    docker.mirrors.ustc.edu.cn/library/mysql:8.0.22
+    docker.io/library/mysql:8.0.22

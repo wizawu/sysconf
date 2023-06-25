@@ -27,7 +27,6 @@
       - mtr
       - nethogs
       - npm
-      - podman
       - pv
       - rar
       - rustc

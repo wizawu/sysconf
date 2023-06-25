@@ -1,0 +1,5 @@
+{
+  "registry-mirrors": [
+    "http://docker.registry:3307"
+  ]
+}

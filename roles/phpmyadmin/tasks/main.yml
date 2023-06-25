@@ -1,7 +1,6 @@
 - name: start phpmyadmin
   shell: >-
-    podman run
-    -d --replace
+    docker run -d
     -p 3309:80
     -e PMA_ARBITRARY=1
     --name phpmyadmin

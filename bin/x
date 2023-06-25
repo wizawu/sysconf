@@ -18,17 +18,11 @@ if [[ "$1" = "-s" ]]; then
 fi
 
 if [[ "$1" = "-b" ]]; then
-    set -x
+    set -ex
     xset -b
     xset -dpms
     xset s noblank
     xset s off
-
-    # background
-    hsetroot -full /usr/share/awesome/themes/default/background.png &
-
-    # fcitx
-    fcitx -rd && im-config -n fcitx
 
     # start session
     nohup cinnamon-session &>>/tmp/cinnamon-session.log &
@@ -37,8 +31,14 @@ if [[ "$1" = "-b" ]]; then
     until [ -n "$(pgrep -f cinnamon-session)" ]; do
         sleep 1
     done
+    awesome-client 'awesome.restart()' || echo
     sleep 1
-    awesome-client 'awesome.restart()'
+
+    # background
+    hsetroot -full /usr/share/awesome/themes/default/background.png
+
+    # fcitx
+    fcitx -rd && im-config -n fcitx
     exit
 fi
 
