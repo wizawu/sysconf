@@ -148,6 +148,9 @@
         - etc/supervisor/conf.d
         - etc/xdg/awesome
 
+    - name: remove old font config
+      shell: rm -f /etc/fonts/conf.d/*
+
     - name: create symbolic link to global config
       file: src=/home/{{user}}/.sysconf/{{item}} dest=/{{item}} state=link force=yes
       with_items:
