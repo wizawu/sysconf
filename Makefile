@@ -3,7 +3,7 @@ all: apt ssh install clean
 
 apt:
 	apt-key adv --keyserver keyserver.ubuntu.com --recv 04EE7237B7D453EC
-	echo "deb http://mirrors.tuna.tsinghua.edu.cn/debian buster main" > /etc/apt/sources.list
+	echo "deb https://mirrors.cloud.tencent.com/debian bookworm main" > /etc/apt/sources.list
 	apt update
 	apt install -y ansible openssh-client openssh-server sudo
 	echo > /etc/apt/sources.list
@@ -38,3 +38,6 @@ proxy:
 
 addon:
 	sudo ansible-playbook addon.yml
+
+rustpad:
+	docker run --rm -d -p 172.17.0.1:3030:3030 --name rustpad ekzhang/rustpad

@@ -32,8 +32,8 @@ if [[ "$1" = "-b" ]]; then
     until [ -n "$(pgrep -f cinnamon-session)" ]; do
         sleep 1
     done
-    awesome-client 'awesome.restart()' || echo
     sleep 1
+    awesome-client 'awesome.restart()' || echo
     pkill cinnamon-screensaver || echo
 
     # background
