@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ "$1" = pause ]; then
+if [ "$1" = off ]; then
     VBoxManage controlvm wxwork savestate
 else
     VBoxManage startvm wxwork --type sdl

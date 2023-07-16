@@ -40,4 +40,4 @@ addon:
 	sudo ansible-playbook addon.yml
 
 rustpad:
-	docker run --rm -d -p 172.17.0.1:3030:3030 --name rustpad ekzhang/rustpad
+	docker run -d -p 172.17.0.1:3030:3030 --restart always --name rustpad ekzhang/rustpad

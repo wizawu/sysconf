@@ -3,7 +3,6 @@
 if [[ "$1" = "-r" ]]; then
     set -x
     setxkbmap -layout us
-    xmodmap -e "keycode 9 = Escape asciitilde grave"
     xinput set-prop 'pointer:Razer Razer DeathAdder' 'libinput Accel Profile Enabled'  0, 1
     xinput set-prop 'pointer:Razer Razer DeathAdder' 'libinput Accel Speed' -0.${2:-4}
     xinput set-prop 'pointer:Razer Razer DeathAdder V2' 'libinput Accel Profile Enabled'  0, 1
