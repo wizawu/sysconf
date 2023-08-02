@@ -18,7 +18,7 @@ export function select(upstream: string): store.Backend {
   } else {
     let prefer = 1
     for (const t of [2, 3, 5]) {
-      const child = spawnSync("curl", `-I -L -k -m 0.${t} http://${upstream}/`.split(" "))
+      const child = spawnSync("curl", `-I -L -k -m 0.${t} https://${upstream}/`.split(" "))
       if (child.status === 0) {
         prefer = 0
         break

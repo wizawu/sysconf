@@ -51,7 +51,7 @@ server.on("connection", conn => {
           conn.destroy()
           log.warn(`disconnect ${upstream}`)
         }
-      }, 10_000)
+      }, 3_000)
       client.on("connect", () => {
         client?.write(clientData1)
       })

@@ -10,6 +10,7 @@ const data = [
   ...JSON.parse(fs.readFileSync("./data.15.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.16.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.17.json", "utf-8")),
+  ...JSON.parse(fs.readFileSync("./data.18.json", "utf-8")),
 ]
 
 const net = new brain.NeuralNetwork()
@@ -34,7 +35,7 @@ export function train() {
       output: [it.prefer],
     })),
     {
-      iterations: 50000,
+      iterations: 80000,
       log: it => log.debug(it),
       logPeriod: 1000,
       learningRate: 0.1,
