@@ -39,5 +39,5 @@ proxy:
 addon:
 	sudo ansible-playbook addon.yml
 
-rustpad:
-	docker run -d -p 172.17.0.1:3030:3030 --restart always --name rustpad ekzhang/rustpad
+etherpad:
+	docker run -d -p 172.17.0.1:3030:9001 --restart always --name etherpad etherpad/etherpad
