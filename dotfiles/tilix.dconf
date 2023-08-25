@@ -1,11 +1,11 @@
 [/]
-app-title='${sessionName}'
-prompt-on-delete-profile=true
-quake-specific-monitor=0
 session-name='${directory}'
 terminal-title-show-when-single=false
+quake-specific-monitor=0
+app-title='${sessionName}'
 terminal-title-style='none'
 use-overlay-scrollbar=true
+prompt-on-delete-profile=true
 window-style='borderless'
 
 [keybindings]
@@ -16,26 +16,27 @@ default='2b7c4080-0ddd-46c5-8f23-563fd3ba789d'
 list=['2b7c4080-0ddd-46c5-8f23-563fd3ba789d']
 
 [profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
-background-color='#303030'
-badge-color='#AC7EA8'
-badge-color-set=true
-bold-color-set=false
-cell-height-scale=1.3000000000000003
-cell-width-scale=1.0
-cursor-blink-mode='on'
-cursor-colors-set=false
-cursor-shape='ibeam'
-default-size-columns=128
-default-size-rows=32
-draw-margin=80
+use-custom-command=false
+badge-color-set=false
 encoding='UTF-8'
-font='Courier Prime Code 11'
-foreground-color='#EFEFEF'
-highlight-colors-set=false
-login-shell=true
-palette=['#000000', '#CC0000', '#4D9A05', '#C3A000', '#3464A3', '#754F7B', '#05979A', '#D3D6CF', '#545652', '#EF2828', '#89E234', '#FBE84F', '#729ECF', '#AC7EA8', '#34E2E2', '#EDEDEB']
-scrollback-lines=10000
 show-scrollbar=false
-use-system-font=false
+login-shell=true
+background-color='#272822'
+badge-color='#AC7EA8'
+cursor-shape='ibeam'
+default-size-columns=160
+cursor-colors-set=false
+font='Courier Prime Code 11'
 use-theme-colors=false
+default-size-rows=40
+use-system-font=false
+cell-width-scale=1.0
+palette=['#272822', '#F92672', '#A6E22E', '#F4BF75', '#66D9EF', '#AE81FF', '#A1EFE4', '#F8F8F2', '#75715E', '#F92672', '#A6E22E', '#F4BF75', '#66D9EF', '#AE81FF', '#A1EFE4', '#F9F8F5']
 visible-name='Default'
+scrollback-lines=10000
+foreground-color='#F8F8F2'
+cell-height-scale=1.3000000000000003
+draw-margin=80
+highlight-colors-set=false
+cursor-blink-mode='on'
+bold-color-set=false
