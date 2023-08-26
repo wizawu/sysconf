@@ -228,7 +228,7 @@ awful.screen.connect_for_each_screen(function(s)
     vicious.register(fswidget, vicious.widgets.fs, " SSD ${/ used_gb}/${/ size_gb}GiB |", 1)
 
     batwidget = wibox.widget.textbox()
-    vicious.register(batwidget, vicious.widgets.bat, " BAT $2% |", 1, "BAT1")
+    vicious.register(batwidget, vicious.widgets.bat, " BAT $2% |", 1, "BAT0")
     -- @end --
 
     -- Add widgets to the wibox
