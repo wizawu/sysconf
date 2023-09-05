@@ -2,12 +2,6 @@
   become: true
 
   tasks:
-    - name: reconfigure tzdata
-      cron:
-        name: reconfigure tzdata
-        special_time: reboot
-        job: dpkg-reconfigure -f noninteractive tzdata
-
     - name: updatedb
       cron:
         name: updatedb
