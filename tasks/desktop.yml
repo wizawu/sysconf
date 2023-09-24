@@ -9,8 +9,8 @@
       - geany # text editor
       - gimp
       - mirage # image viewer
+      - mupdf
       - pavucontrol
-      - qpdfview
       - redshift
       - smplayer
       - tilix

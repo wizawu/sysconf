@@ -2,6 +2,8 @@
 
 if [ "$1" = off ]; then
     VBoxManage controlvm wxwork savestate
+elif [ "$1" = reset ]; then
+    VBoxManage controlvm wxwork reset
 else
     VBoxManage startvm wxwork --type sdl
 fi
