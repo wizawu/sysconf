@@ -1,11 +1,10 @@
 - name: start phpmyadmin
   shell: >-
     docker run -d
-    -p 3309:80
-    -e PMA_ARBITRARY=1
+    -p 3309:8080
     --name phpmyadmin
     --restart always
-    -v {{role_path}}/files/config.user.inc.php:/etc/phpmyadmin/config.user.inc.php
+    -v {{role_path}}/files/config.user.inc.php:/opt/bitnami/phpmyadmin/config.inc.php
     --log-opt max-file=10
     --log-opt max-size=100m
-    phpmyadmin/phpmyadmin:5.2.0
+    bitnami/phpmyadmin:5.2.1-debian-11-r112
