@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ "$1" = off ]; then
+if [ "$1" = pause ]; then
     VBoxManage controlvm wxwork savestate
 elif [ "$1" = reset ]; then
     VBoxManage controlvm wxwork reset
