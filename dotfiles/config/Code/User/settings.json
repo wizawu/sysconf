@@ -64,6 +64,7 @@
     120
   ],
   "explorer.openEditors.visible": 0,
+  "extensions.ignoreRecommendations": true,
   "files.autoSave": "off",
   "files.defaultLanguage": "json",
   "files.exclude": {

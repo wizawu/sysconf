@@ -57,9 +57,8 @@
           - fio
           - fiu-utils
           - fuse-overlayfs
-          - g++
           - gcp
-          - glusterfs-client=5.5-3
+          - glusterfs-client
           - grub2-common
           - haproxy
           - hdparm
