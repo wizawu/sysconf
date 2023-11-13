@@ -4,7 +4,6 @@
       - ack-grep
       - apt-file
       - autossh
-      - cargo
       - cmake
       - cmatrix
       - cpulimit
@@ -29,7 +28,6 @@
       - pm-utils
       - pv
       - rar
-      - rustc
       - time
       - tmux
       - tree
