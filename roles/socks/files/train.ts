@@ -7,10 +7,10 @@ const log = LoggerFactory.getLogger("\t\b\b\b\b\b\b\b")
 log.level = "debug"
 
 const data = [
-  ...JSON.parse(fs.readFileSync("./data.19.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.20.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.21.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.22.json", "utf-8")),
+  ...JSON.parse(fs.readFileSync("./data.23.json", "utf-8")),
 ]
 
 const net = new brain.NeuralNetwork()
@@ -35,7 +35,7 @@ export function train() {
       output: [it.prefer],
     })),
     {
-      iterations: 80000,
+      iterations: 20000,
       log: it => log.debug(it),
       logPeriod: 1000,
       learningRate: 0.1,
@@ -75,7 +75,7 @@ export function writeData(i: number): void {
     if (whiteList.includes(site)) {
       prefer = 0
     } else if (blackList.includes(site)) {
-      prefer = 1
+      prefer = 9
     }
     buffer.push(JSON.stringify({ site, err0, err1, spd0, spd1, blk0, blk1, bw0, bw1, prefer }))
   })
