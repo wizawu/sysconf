@@ -1,7 +1,6 @@
 - name: install desktop
   apt:
     name:
-      - autorandr
       - awesome
       - awesome-extra
       - code

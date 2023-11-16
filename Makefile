@@ -16,8 +16,6 @@ ssh:
 
 install:
 	ansible-playbook -b -e user=wizawu -v install.yml
-
-debug:
 	ansible-playbook -b -e user=wizawu -v debug.yml
 
 clean:
@@ -32,6 +30,9 @@ swap:
 
 cron:
 	ansible-playbook cron.yml
+
+rust:
+	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 proxy:
 	sudo ansible-playbook proxy.yml
