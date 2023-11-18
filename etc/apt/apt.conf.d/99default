@@ -1,1 +1,2 @@
 apt::install-recommends "false";
+Dpkg::Progress-Fancy "1";

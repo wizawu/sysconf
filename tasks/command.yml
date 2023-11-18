@@ -25,6 +25,7 @@
       - mtr
       - nethogs
       - npm
+      - pm-utils
       - pv
       - rar
       - time

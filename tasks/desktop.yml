@@ -37,14 +37,10 @@
 - name: install input method
   apt:
     name:
-      - fcitx
       - fcitx-config-gtk
       - fcitx-frontend-gtk3
       - fcitx-googlepinyin
-      - fcitx-modules
-      - fcitx-ui-classic
-      - fcitx-ui-light
-      - libgtk-3-bin
+      - fcitx-module-x11
 
 - name: install packages from url
   apt: deb={{item}}

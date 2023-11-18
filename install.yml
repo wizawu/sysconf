@@ -216,7 +216,7 @@
           value: 999999
 
     - name: create user directories
-      file: dest=/home/{{user}}/{{item}} state=directory recurse=yes owner={{user}}
+      file: dest=/home/{{user}}/{{item}} state=directory recurse=true owner={{user}}
       with_items:
         - .gradle
         - .ssh
