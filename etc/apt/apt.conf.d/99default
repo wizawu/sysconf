@@ -1,2 +1,3 @@
-apt::install-recommends "false";
+APT::Color "1";
+APT::Install-Recommends "false";
 Dpkg::Progress-Fancy "1";
