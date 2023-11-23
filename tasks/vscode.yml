@@ -40,6 +40,7 @@
     - redhat.ansible
     - redhat.vscode-yaml
     - rust-lang.rust-analyzer
+    - ryu1kn.partial-diff
     - sgryjp.vscode-stable-sort
     - streetsidesoftware.code-spell-checker
     - tobiasalthoff.atom-material-theme
