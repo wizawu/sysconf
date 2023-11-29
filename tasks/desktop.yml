@@ -5,9 +5,9 @@
       - awesome-extra
       - code
       - dbus-x11
+      - geany # text editor
       - gimp
       - mirage # image viewer
-      - mousepad # text editor
       - mupdf
       - pavucontrol
       - redshift
