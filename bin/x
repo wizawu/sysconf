@@ -7,7 +7,7 @@ if [[ "$1" = "-r" ]]; then
       xmodmap -e "keycode 9 = Escape asciitilde grave"
     fi
     xinput set-prop 'pointer:MOSART Semi. 2.4G Keyboard Mouse' 'libinput Accel Profile Enabled'  0, 1
-    xinput set-prop 'pointer:MOSART Semi. 2.4G Keyboard Mouse' 'libinput Accel Speed' 0.${2:-2}
+    xinput set-prop 'pointer:MOSART Semi. 2.4G Keyboard Mouse' 'libinput Accel Speed' -0.${2:-1}
     xinput set-prop 'pointer:Razer Razer DeathAdder V2' 'libinput Accel Profile Enabled'  0, 1
     xinput set-prop 'pointer:Razer Razer DeathAdder V2' 'libinput Accel Speed' -0.${2:-01}
     xrandr --output eDP-1 --same-as HDMI-1
