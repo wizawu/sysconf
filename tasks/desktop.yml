@@ -5,6 +5,7 @@
       - awesome-extra
       - code
       - dbus-x11
+      - diffuse
       - geany # text editor
       - gimp
       - mirage # image viewer
