@@ -37,7 +37,6 @@
     - ms-python.isort
     - ms-python.python
     - ms-python.vscode-pylance
-    - redhat.ansible
     - redhat.vscode-yaml
     - rust-lang.rust-analyzer
     - ryu1kn.partial-diff

@@ -7,10 +7,10 @@ const log = LoggerFactory.getLogger("\t\b\b\b\b\b\b\b")
 log.level = "debug"
 
 const data = [
-  ...JSON.parse(fs.readFileSync("./data.21.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.22.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.23.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.24.json", "utf-8")),
+  ...JSON.parse(fs.readFileSync("./data.25.json", "utf-8")),
 ]
 
 const net = new brain.NeuralNetwork()
