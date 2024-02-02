@@ -46,3 +46,6 @@ addon:
 
 etherpad:
 	docker run -d -p 172.17.0.1:3030:9001 --restart always --name etherpad etherpad/etherpad
+
+excalidraw:
+	docker run -d -p 172.17.0.1:6060:80 --restart always --name excalidraw excalidraw/excalidraw
