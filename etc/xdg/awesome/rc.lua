@@ -41,7 +41,7 @@ end
 beautiful.init(awful.util.get_themes_dir() .. "default/theme.lua")
 
 -- @wizawu --
-beautiful.get().font = "Lexend 10"
+beautiful.get().font = "Lexend 11"
 terminal = "tilix"
 local vicious = require("vicious")
 -- @end --
@@ -211,7 +211,7 @@ awful.screen.connect_for_each_screen(function(s)
     s.mytasklist = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, tasklist_buttons)
 
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", height = 25, screen = s })
+    s.mywibox = awful.wibar({ position = "top", height = 29, screen = s })
 
     -- @wizawu --
     cpuwidget = wibox.widget.textbox()
