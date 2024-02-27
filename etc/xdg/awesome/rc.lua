@@ -41,7 +41,7 @@ end
 beautiful.init(awful.util.get_themes_dir() .. "default/theme.lua")
 
 -- @wizawu --
-beautiful.get().font = "Lexend 11"
+beautiful.get().font = "Varela 11"
 terminal = "tilix"
 local vicious = require("vicious")
 -- @end --

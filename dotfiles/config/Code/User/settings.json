@@ -49,7 +49,7 @@
   },
   "debug.javascript.codelens.npmScripts": "never",
   "editor.fontFamily": "Courier Prime Code, OPPOSans",
-  "editor.fontSize": 11,
+  "editor.fontSize": 12,
   "editor.formatOnSave": false,
   "editor.letterSpacing": -0.5,
   "editor.lineHeight": 17,
