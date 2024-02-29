@@ -1,0 +1,3 @@
+[submodule "dotfiles/kotlin-vim"]
+	path = dotfiles/kotlin-vim
+	url = git@github.com:udalov/kotlin-vim.git
