@@ -1,8 +1,5 @@
 - set_fact: vscode_conf=config/Code/User
 
-- name: add apt key
-  shell: apt-key adv --keyserver keyserver.ubuntu.com --recv EB3E94ADBE1229CF
-
 - name: install vscode
   apt: name=code update_cache=yes
 

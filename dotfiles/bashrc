@@ -63,7 +63,7 @@ alias suspend='sudo systemctl suspend'
 alias tarip='tar --strip-components=1 -x -f'
 alias tgit="tsocks git"
 alias timev="/usr/bin/time -v"
-alias tree='tree -C'
+alias tree='tree -C --dirsfirst'
 alias tsfmt='prettier -w --print-width=120 --no-semi --arrow-parens=avoid'
 alias ups='ps -N --ppid 2 -f'
 alias vi='vim'

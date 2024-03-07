@@ -35,6 +35,14 @@
         state: link
         force: true
 
+    - name: import apt keys
+      apt_key:
+        keyserver: keyserver.ubuntu.com
+        id: "{{item}}"
+      with_items:
+        - 7EA0A9C3F273FCD8 # docker-ce
+        - EB3E94ADBE1229CF # vscode
+
     - name: install apt packages
       apt:
         update_cache: true
