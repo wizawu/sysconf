@@ -16,7 +16,6 @@ ssh:
 
 install:
 	ansible-playbook -b -e user=wizawu -v install.yml
-	ansible-playbook -b -e user=wizawu -v debug.yml
 
 clean:
 	apt autoremove --purge -y

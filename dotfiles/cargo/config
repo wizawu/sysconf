@@ -1,0 +1,6 @@
+[source.crates-io]
+registry = "https://github.com/rust-lang/crates.io-index"
+replace-with = "tsinghua"
+
+[source.tsinghua]
+registry = "https://mirrors.tuna.tsinghua.edu.cn/git/crates.io-index.git"

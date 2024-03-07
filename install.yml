@@ -228,21 +228,15 @@
         - name: kernel.perf_event_paranoid
           value: 1
 
-    - name: create user directories
-      file: dest=/home/{{user}}/{{item}} state=directory recurse=true owner={{user}}
-      with_items:
-        - .gradle
-        - .ssh
-
     - name: create symbolic link to user config
-      file:
-        src: /home/{{user}}/.sysconf/dotfiles/{{item}}
-        dest: /home/{{user}}/.{{item}}
-        state: link
-        force: true
-        owner: "{{user}}"
+      shell: |
+        dirname /home/{{user}}/.{{item}} | xargs mkdir -p
+        ln -sf /home/{{user}}/.sysconf/dotfiles/{{item}} /home/{{user}}/.{{item}}
+      become: true
+      become_user: "{{user}}"
       with_items:
         - bashrc
+        - cargo/config
         - gitconfig
         - gradle/gradle.properties
         - sqliterc
