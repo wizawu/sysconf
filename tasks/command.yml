@@ -4,6 +4,7 @@
       - ack-grep
       - apt-file
       - autossh
+      - chrony
       - cmake
       - cmatrix
       - cpulimit

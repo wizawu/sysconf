@@ -121,6 +121,7 @@
       with_items:
         - curl
         - getconf
+        - hwclock
         - ipcs
         - losetup
         - lscpu

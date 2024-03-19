@@ -3,7 +3,7 @@
 sudo chattr -i /etc/resolv.conf
 cat /etc/resolv.conf
 
-servers='
+hosts='
     10.212.132.64
     10.212.132.65
     1.2.4.8
@@ -11,22 +11,20 @@ servers='
     1.1.1.1
 '
 
-if [ "$1" = "-a" ]; then
-    for host in $servers; do
-        grep -q $host /etc/resolv.conf && continue || echo
-        echo -n "append $host, y/n/q: "
-        read -n 1
-        echo
-        if [ "$REPLY" = q ]; then
-            break
-        elif [ "$REPLY" = y ]; then
-            ns_list="$ns_list $host"
-            echo "nameserver $host" | sudo tee -a /etc/resolv.conf
-        fi
-    done
-    test -z "$ns_list" || fping -c1 -q -t100 $ns_list
-fi
+for host in $hosts; do
+    grep -q $host /etc/resolv.conf && continue || echo
+    echo -n "append $host, y/n/e/q: "
+    read -n 1
+    echo
+    if [ "$REPLY" = q ]; then
+        break
+    elif [ "$REPLY" = e ]; then
+        sudo vi /etc/resolv.conf
+        break
+    elif [ "$REPLY" = y ]; then
+        tail="$tail $host"
+        echo "nameserver $host" | sudo tee -a /etc/resolv.conf
+    fi
+done
 
-if [ "$1" = "-e" ]; then
-    sudo vi /etc/resolv.conf
-fi
+test -z "$tail" || fping -c1 -q -t100 $tail
