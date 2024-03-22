@@ -7,10 +7,10 @@ const log = LoggerFactory.getLogger("\t\b\b\b\b\b\b\b")
 log.level = "debug"
 
 const data = [
-  ...JSON.parse(fs.readFileSync("./data.22.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.23.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.24.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.25.json", "utf-8")),
+  ...JSON.parse(fs.readFileSync("./data.26.json", "utf-8")),
 ]
 
 const net = new brain.NeuralNetwork()
@@ -254,6 +254,7 @@ const blackList = [
   "bing.com",
   "c.bing.com",
   "camo.githubusercontent.com",
+  "cdn.staticfile.org",
   "clients2.google.com",
   "cm.mgid.com",
   "eus.rubiconproject.com",
