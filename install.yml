@@ -41,6 +41,7 @@
         id: "{{item}}"
       with_items:
         - 7EA0A9C3F273FCD8 # docker-ce
+        - 871920D1991BC93C # ubuntu mantic
         - EB3E94ADBE1229CF # vscode
 
     - name: install apt packages

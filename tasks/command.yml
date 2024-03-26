@@ -22,7 +22,6 @@
       - iotop
       - jq
       - less
-      - linux-cpupower
       - mtr
       - nethogs
       - npm

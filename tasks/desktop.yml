@@ -4,6 +4,7 @@
       - awesome
       - awesome-extra
       - code
+      - cpupower-gui
       - dbus-x11
       - diffuse
       - geany # text editor
