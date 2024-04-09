@@ -7,6 +7,7 @@
       - cpupower-gui
       - dbus-x11
       - diffuse
+      - flameshot
       - geany # text editor
       - gimp
       - mirage # image viewer
@@ -42,6 +43,7 @@
     name:
       - fcitx-config-gtk
       - fcitx-frontend-gtk3
+      - fcitx-frontend-qt5 # needed by flameshot
       - fcitx-googlepinyin
       - fcitx-module-x11
 
@@ -57,7 +59,6 @@
   apt: deb={{item}}
   with_items:
     - https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-    - https://github.com/flameshot-org/flameshot/releases/download/v12.1.0/flameshot-12.1.0-1.debian-10.amd64.deb
 
 - name: install cinnamon
   apt:
