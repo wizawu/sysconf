@@ -6,10 +6,10 @@
       - code
       - cpupower-gui
       - dbus-x11
-      - diffuse
       - flameshot
       - geany # text editor
       - gimp
+      - meld
       - mirage # image viewer
       - mupdf
       - pavucontrol
