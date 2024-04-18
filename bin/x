@@ -7,9 +7,9 @@ if [[ "$1" = "-r" ]]; then
       xmodmap -e "keycode 9 = Escape asciitilde grave"
     fi
     xinput set-prop 'pointer:MOSART Semi. 2.4G Keyboard Mouse' 'libinput Accel Profile Enabled'  0  1
-    xinput set-prop 'pointer:MOSART Semi. 2.4G Keyboard Mouse' 'libinput Accel Speed' -0.${2:-1}
+    xinput set-prop 'pointer:MOSART Semi. 2.4G Keyboard Mouse' 'libinput Accel Speed' 0.1
     xinput set-prop 'pointer:Razer Razer Viper 8KHz' 'libinput Accel Profile Enabled'  0  1
-    xinput set-prop 'pointer:Razer Razer Viper 8KHz' 'libinput Accel Speed' -0.${2:-4}
+    xinput set-prop 'pointer:Razer Razer Viper 8KHz' 'libinput Accel Speed' -0.5
     hsetroot -full /usr/share/awesome/themes/default/background.png -sharpen 8
     exit
 fi
