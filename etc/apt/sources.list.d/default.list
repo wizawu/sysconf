@@ -1,4 +1,5 @@
 deb [arch=amd64] http://mirrors.aliyun.com/docker-ce/linux/debian bookworm stable
 deb [arch=amd64] https://mirrors.cloud.tencent.com/debian bookworm main contrib non-free non-free-firmware
+deb [arch=amd64] https://mirrors.cloud.tencent.com/ubuntu jammy main universe
 deb [arch=amd64] https://mirrors.cloud.tencent.com/ubuntu mantic main universe
 deb https://community-packages.deepin.com/deepin apricot main contrib non-free
