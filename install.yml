@@ -28,6 +28,9 @@
         - zh_CN.GBK
         - zh_CN.UTF-8
 
+    - name: hold libc6
+      command: apt-mark hold libc6
+
     - name: create symbolic link to apt sources.list
       file:
         src: /home/{{user}}/.sysconf/etc/apt/sources.list.d
