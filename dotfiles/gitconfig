@@ -4,6 +4,8 @@
 	ui = true
 [diff]
     algorithm = histogram
+[pull]
+	rebase = true
 [push]
     default = upstream
 [user]
