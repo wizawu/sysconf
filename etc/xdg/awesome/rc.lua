@@ -104,9 +104,6 @@ myawesomemenu = {
 
 mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
                                     { "open terminal", terminal },
-                                    -- @wizawu --
-                                    { "refresh", terminal .. " -e x -r" },
-                                    -- @end --
                                   }
                         })
 
@@ -185,6 +182,7 @@ screen.connect_signal("property::geometry", set_wallpaper)
 -- @wizawu --
 screen.connect_signal("added", awesome.restart)
 screen.connect_signal("removed", awesome.restart)
+awful.spawn("x -r")
 -- @end --
 
 awful.screen.connect_for_each_screen(function(s)
