@@ -13,7 +13,7 @@ export JAVA_TOOL_OPTIONS="-XX:MaxRAMPercentage=75.0"
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export NODE_PATH=/usr/local/lib/node_modules
-export PATH=$HOME/.sysconf/bin:$GOPATH/bin:$GRADLE_HOME/bin:$JAVA_HOME/bin:/usr/sbin:$HOME/.cargo/bin:$PATH
+export PATH=$HOME/.sysconf/bin:$GOPATH/bin:$GRADLE_HOME/bin:$JAVA_HOME/bin:/usr/sbin:$PATH
 export RUSTUP_DIST_SERVER=https://mirrors4.tuna.tsinghua.edu.cn/rustup
 export RUSTUP_UPDATE_ROOT=https://mirrors4.tuna.tsinghua.edu.cn/rustup/rustup
 export TRASH_DIR=$HOME/.local/share/Trash
@@ -60,6 +60,7 @@ alias psync='rsync -Pz --info=progress2'
 alias pyfmt='bash -c "isort \$0 && black \$0"'
 alias randn='shuf -i 1-9223372036854775807 -n 1'
 alias rm='rm -I'
+alias suspend='sudo systemctl suspend'
 alias tarip='tar --strip-components=1 -x -f'
 alias tgit="tsocks git"
 alias timev="/usr/bin/time -v"

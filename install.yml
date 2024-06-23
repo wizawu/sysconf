@@ -240,7 +240,6 @@
       become_user: "{{user}}"
       with_items:
         - bashrc
-        - cargo/config
         - gitconfig
         - gradle/gradle.properties
         - sqliterc

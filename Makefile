@@ -30,13 +30,6 @@ swap:
 cron:
 	ansible-playbook cron.yml
 
-rust: export RUSTUP_UPDATE_ROOT = https://mirrors4.tuna.tsinghua.edu.cn/rustup/rustup
-
-rust:
-	curl -s https://sh.rustup.rs | \
-		sed -e 's/dist/archive\/1.26.0/g' | \
-		sh /dev/stdin -vy --default-toolchain=stable --profile=complete --no-modify-path
-
 proxy:
 	sudo ansible-playbook proxy.yml
 
