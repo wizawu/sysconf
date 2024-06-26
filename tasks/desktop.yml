@@ -15,11 +15,13 @@
       - pavucontrol
       - picom # fix chrome menu border
       - qpdfview
+      - qt5ct
       - redshift
       - smplayer
       - tilix
       - vim-gtk3
       - virtualbox
+      - virtualbox-qt
       - x11-xkb-utils
       - x11-xserver-utils
       - xdg-desktop-portal

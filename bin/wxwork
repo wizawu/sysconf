@@ -9,6 +9,5 @@ elif [ "$1" = reset ]; then
 elif [ "$1" = off ]; then
     VBoxManage controlvm wxwork poweroff
 else
-    VBoxManage modifyvm wxwork --accelerate2dvideo off
-    VBoxManage startvm wxwork --type sdl
+    VBoxManage startvm wxwork --type gui
 fi
