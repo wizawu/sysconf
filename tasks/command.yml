@@ -1,7 +1,6 @@
 - name: install cli tools
   apt:
     name:
-      # FIXME hwclock
       - ack-grep
       - apt-file
       - autossh
@@ -53,6 +52,7 @@
     path: /usr/bin/{{item}}
     state: absent
   with_items:
+    - git-abort
     - git-alias
     - git-archive-file
     - git-authors

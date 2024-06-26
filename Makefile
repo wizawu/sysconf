@@ -5,13 +5,6 @@ clean:
 install:
 	ansible-playbook -b -e user=wizawu -v install.yml
 
-
-swap:
-	echo 60 >> /proc/sys/vm/swappiness
-	dd if=/dev/zero of=/swap bs=4M count=1024
-	chmod 600 /swap && mkswap /swap
-	swapon /swap && swapon -s
-
 cron:
 	ansible-playbook cron.yml
 

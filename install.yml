@@ -112,6 +112,7 @@
           - systemd-sysv
           - tlp
           - tlp-rdw
+          - util-linux-extra
           - wpasupplicant
 
     - name: check built-in tools

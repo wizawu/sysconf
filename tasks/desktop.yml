@@ -31,13 +31,6 @@
       - xserver-xorg-input-synaptics
       - xtrlock
 
-- name: uninstall packages
-  apt:
-    state: absent
-    name:
-      - xdg-desktop-portal-gtk
-      - xdg-desktop-portal-wlr
-
 - name: install input method
   apt:
     name:
@@ -64,7 +57,19 @@
   apt:
     install_recommends: true
     name:
+      - cinnamon
       - cinnamon-session
-      - cinnamon-control-center
       - nautilus
       - network-manager-gnome
+
+- name: uninstall packages
+  apt:
+    state: absent
+    name:
+      - xdg-desktop-portal-gtk
+      - xdg-desktop-portal-wlr
+
+- name: remove cinnamon-screensaver, nemo-desktop
+  shell: |
+    mv /usr/bin/cinnamon-screensaver /usr/bin/.cinnamon-screensaver
+    mv /usr/bin/nemo-desktop /usr/bin/.nemo-desktop

@@ -1,4 +1,5 @@
 {
+  "C_Cpp.default.cppStandard": "gnu++20",
   "[css]": {
     "editor.detectIndentation": true,
     "editor.insertSpaces": true,
