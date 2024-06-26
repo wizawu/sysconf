@@ -18,8 +18,7 @@
       - redshift
       - smplayer
       - tilix
-      - vim-gtk
-      - wireshark-gtk
+      - vim-gtk3
       - x11-xkb-utils
       - x11-xserver-utils
       - xdg-desktop-portal
@@ -66,12 +65,6 @@
     install_recommends: true
     name:
       - cinnamon-session
-      - cinnamon-settings
+      - cinnamon-control-center
       - nautilus
       - network-manager-gnome
-
-- name: disable deepin-devicemanager-server
-  service: name=deepin-devicemanager-server state=stopped enabled=false
-
-- name: remove nemo-desktop
-  shell: mv /usr/bin/nemo-desktop /usr/bin/.nemo-desktop

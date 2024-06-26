@@ -43,8 +43,8 @@
         keyserver: keyserver.ubuntu.com
         id: "{{item}}"
       with_items:
-        - 7EA0A9C3F273FCD8 # docker-ce
-        - 871920D1991BC93C # ubuntu mantic
+        - 7EA0A9C3F273FCD8 # docker
+        - E88979FB9B30ACF2 # chrome
         - EB3E94ADBE1229CF # vscode
 
     - name: install apt packages
@@ -76,7 +76,6 @@
           - hdparm
           - hsetroot
           - im-config
-          - ipad-charge
           - lftp
           - lm-sensors
           - locate
@@ -85,7 +84,6 @@
           - m4
           - make
           - manpages-dev
-          - netcat
           - nethogs
           - network-manager
           - nfs-common
@@ -99,9 +97,6 @@
           - psmisc
           - pulseaudio
           - putty-tools
-          - python3-pip
-          - python3.10-dev
-          - rcconf
           - rinetd
           - rlwrap
           - rsync
@@ -122,9 +117,7 @@
     - name: check built-in tools
       shell: command -v {{item}}
       with_items:
-        - curl
         - getconf
-        - hwclock
         - ipcs
         - losetup
         - lscpu
@@ -132,19 +125,11 @@
         - pmap
         - trap
 
-    - name: install database packages
-      apt:
-        name:
-          - mydumper
-          - postgresql-client
-          - redis-tools
-          - sqlite3
-
-    - include: tasks/command.yml
-    - include: tasks/desktop.yml
-    - include: tasks/vscode.yml
-    - include: tasks/pip.yml
-    - include: tasks/npm.yml
+    - include_tasks: tasks/command.yml
+    - include_tasks: tasks/desktop.yml
+    - include_tasks: tasks/vscode.yml
+    - include_tasks: tasks/pip.yml
+    - include_tasks: tasks/npm.yml
 
     - name: create etc directories
       file: dest=/{{item}} state=directory recurse=yes
@@ -213,9 +198,6 @@
       with_items:
         - { key: "HandleLidSwitch", value: "ignore" }
         - { key: "HandlePowerKey", value: "suspend" }
-
-    - name: disable grp:alt_shift_toggle
-      shell: sed -i -e 's/grp:alt_shift_toggle,\?//g' /etc/default/keyboard
 
     - name: configure kernel parameters
       sysctl:

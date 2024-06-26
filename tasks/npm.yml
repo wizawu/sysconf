@@ -7,7 +7,3 @@
     - n@latest
     - otplib@12.x.x
     - pnpm@7.12.x
-    - prettier@2.4.x
-
-- name: switch node version
-  shell: "n 18"

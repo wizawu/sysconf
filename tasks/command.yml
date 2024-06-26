@@ -1,6 +1,7 @@
 - name: install cli tools
   apt:
     name:
+      # FIXME hwclock
       - ack-grep
       - apt-file
       - autossh
@@ -9,6 +10,7 @@
       - cmatrix
       - cpufrequtils
       - cpulimit
+      - curl
       - dconf-cli
       - di
       - docker-ce
@@ -26,8 +28,12 @@
       - mtr
       - nethogs
       - npm
+      - postgresql-client
       - pv
+      - python3-pip
       - rar
+      - redis-tools
+      - sqlite3
       - time
       - tmux
       - tree
@@ -51,8 +57,3 @@
     - git-archive-file
     - git-authors
     - git-commits-since
-
-- name: download antlr4
-  get_url:
-    url: https://www.antlr.org/download/antlr-4.9.3-complete.jar
-    dest: /usr/share/java/antlr-complete.jar
