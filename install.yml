@@ -4,10 +4,14 @@
       prompt: Cancel the play with CTRL+C or continue with ENTER
 
   tasks:
+    - name: create group
+      group: name=docker
+
     - name: create user
       user:
         name: "{{user}}"
         groups:
+          - docker
           - root
           - video
         shell: /bin/bash

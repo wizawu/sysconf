@@ -19,6 +19,7 @@
       - smplayer
       - tilix
       - vim-gtk3
+      - virtualbox
       - x11-xkb-utils
       - x11-xserver-utils
       - xdg-desktop-portal
