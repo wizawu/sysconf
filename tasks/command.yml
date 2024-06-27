@@ -24,6 +24,7 @@
       - iotop
       - jq
       - less
+      - mariadb-client
       - mtr
       - nethogs
       - npm
