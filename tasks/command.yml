@@ -2,6 +2,7 @@
   apt:
     name:
       - ack-grep
+      - aha
       - apt-file
       - autossh
       - chrony
@@ -13,6 +14,7 @@
       - dconf-cli
       - di
       - docker-ce
+      - fdisk
       - fish
       - fping
       - git-extras

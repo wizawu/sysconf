@@ -1,3 +1,4 @@
 *.log
 *.retry
 *.swp
+debug.yml

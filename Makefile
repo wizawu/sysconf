@@ -1,7 +1,3 @@
-clean:
-	apt autoremove --purge -y
-	apt clean -y
-
 install:
 	ansible-playbook -b -e user=wizawu -v install.yml
 

@@ -135,6 +135,7 @@
     - include_tasks: tasks/vscode.yml
     - include_tasks: tasks/pip.yml
     - include_tasks: tasks/npm.yml
+    - include_tasks: tasks/cleanup.yml
 
     - name: create etc directories
       file: dest=/{{item}} state=directory recurse=yes

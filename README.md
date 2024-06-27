@@ -17,7 +17,7 @@ echo > /etc/apt/sources.list
 
 # git clone this repository to /home/wizawu/.sysconf
 cd /home/wizawu/.sysconf
-make install clean
+make install
 ```
 
 ### Disable GUI

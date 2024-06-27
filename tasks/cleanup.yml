@@ -1,0 +1,36 @@
+- name: disable services
+  service:
+    name: "{{item}}"
+    state: stopped
+    enabled: false
+  ignore_errors: true
+  with_items:
+    - snapd.seeded
+    - snapd.socket
+    - snapd
+
+- name: uninstall packages
+  apt:
+    state: absent
+    name:
+      - cloud-init
+      - pcp
+      - xdg-desktop-portal-gtk
+      - xdg-desktop-portal-wlr
+
+- name: apt clean
+  apt:
+    autoremove: true
+    purge: true
+    clean: true
+
+- name: remove cinnamon-screensaver, nemo-desktop
+  shell: mv /usr/bin/{{item}} /usr/bin/.{{item}}
+  ignore_errors: true
+  with_items:
+    - cinnamon-screensaver
+    - csd-clipboard
+    - csd-keyboard
+    - csd-media-keys
+    - csd-screensaver-proxy
+    - nemo-desktop
