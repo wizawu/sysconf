@@ -5,9 +5,10 @@
     enabled: false
   ignore_errors: true
   with_items:
+    - snapd
     - snapd.seeded
     - snapd.socket
-    - snapd
+    - systemd-resolved
 
 - name: uninstall packages
   apt:
@@ -18,14 +19,16 @@
       - xdg-desktop-portal-gtk
       - xdg-desktop-portal-wlr
 
-- name: apt clean
+- name: clean apt cache
   apt:
     autoremove: true
     purge: true
     clean: true
 
-- name: remove cinnamon-screensaver, nemo-desktop
-  shell: mv /usr/bin/{{item}} /usr/bin/.{{item}}
+- name: disable execution
+  file:
+    path: /usr/bin/{{item}}
+    mode: 400
   ignore_errors: true
   with_items:
     - cinnamon-screensaver
@@ -34,3 +37,8 @@
     - csd-media-keys
     - csd-screensaver-proxy
     - nemo-desktop
+
+- name: remove qt5ct config
+  file:
+    path: /etc/X11/Xsession.d/99qt5ct
+    state: absent

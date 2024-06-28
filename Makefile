@@ -1,5 +1,5 @@
 install:
-	ansible-playbook -b -e user=wizawu -v install.yml
+	ansible-playbook -b -e user=wizawu install.yml
 
 cron:
 	ansible-playbook cron.yml
