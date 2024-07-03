@@ -28,6 +28,7 @@
       - less
       - mariadb-client
       - mtr
+      - ncal
       - nethogs
       - npm
       - postgresql-client

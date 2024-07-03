@@ -18,6 +18,7 @@
       - qt5ct
       - redshift
       - smplayer
+      - sqlitebrowser
       - tilix
       - vim-gtk3
       - virtualbox
