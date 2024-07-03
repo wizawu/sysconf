@@ -3,11 +3,11 @@
 set -ex
 
 if [ "$1" = pause ]; then
-    VBoxManage controlvm wxwork savestate
+    sudo VBoxManage controlvm wxwork savestate
 elif [ "$1" = reset ]; then
-    VBoxManage controlvm wxwork reset
+    sudo VBoxManage controlvm wxwork reset
 elif [ "$1" = off ]; then
-    VBoxManage controlvm wxwork poweroff
+    sudo VBoxManage controlvm wxwork poweroff
 else
-    QT_QPA_PLATFORMTHEME=qt5ct VBoxManage startvm wxwork --type gui
+    sudo QT_QPA_PLATFORMTHEME=qt5ct VBoxManage startvm wxwork --type gui
 fi
