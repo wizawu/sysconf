@@ -64,6 +64,7 @@
     80,
     120
   ],
+  "editor.stickyScroll.enabled": false,
   "explorer.openEditors.visible": 0,
   "extensions.ignoreRecommendations": true,
   "files.autoSave": "off",

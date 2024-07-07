@@ -58,6 +58,7 @@ alias psync='rsync -Pz --info=progress2'
 alias pyfmt='bash -c "isort \$0 && black \$0"'
 alias randn='shuf -i 1-9223372036854775807 -n 1'
 alias rm='rm -I'
+alias si='sudo -i'
 alias suspend='sudo systemctl suspend'
 alias tarip='tar --strip-components=1 -x -f'
 alias tgit="tsocks git"
