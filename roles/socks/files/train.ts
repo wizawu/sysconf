@@ -7,10 +7,10 @@ const log = LoggerFactory.getLogger("\t\b\b\b\b\b\b\b")
 log.level = "debug"
 
 const data = [
-  ...JSON.parse(fs.readFileSync("./data.24.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.25.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.26.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.27.json", "utf-8")),
+  ...JSON.parse(fs.readFileSync("./data.28.json", "utf-8")),
 ]
 
 const net = new brain.NeuralNetwork()
@@ -35,7 +35,7 @@ export function train() {
       output: [it.prefer],
     })),
     {
-      iterations: 20000,
+      iterations: 100_000,
       log: it => log.debug(it),
       logPeriod: 1000,
       learningRate: 0.1,
@@ -84,6 +84,7 @@ export function writeData(i: number): void {
 
 const whiteList = [
   "ad.browser.qq.com",
+  "aiqicha.baidu.com",
   "aegis.qq.com",
   "ai.jd.com",
   "aq.qq.com",
