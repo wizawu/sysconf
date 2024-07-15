@@ -38,7 +38,7 @@ export function train() {
       iterations: 100_000,
       log: it => log.debug(it),
       logPeriod: 1000,
-      learningRate: 0.1,
+      learningRate: 0.01,
     }
   )
   fs.writeFileSync("model.json", JSON.stringify(net.toJSON(), null, 2))
