@@ -7,3 +7,9 @@
         name: updatedb
         special_time: daily
         job: updatedb
+
+    - name: update node.js
+      cron:
+        name: update node.js
+        special_time: daily
+        job: n 14 && n 18
