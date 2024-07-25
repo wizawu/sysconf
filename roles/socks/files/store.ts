@@ -55,6 +55,11 @@ db.exec(`
 db.exec("create index if not exists history_idx_site_traffic on history(site, traffic)")
 db.exec("create index if not exists history_idx_time on history(time)")
 
+export function allDomains(): string[] {
+  const result = db.prepare("select * from site").all()
+  return result.map(it => it.site)
+}
+
 export function selectDomain(site: string): Record<string, any> {
   const start = Date.now()
   const result = db.prepare("select * from site where site = @site").get({ site })
@@ -77,7 +82,7 @@ export function createHistory(
   duration: number,
   traffic: number,
   speed: number,
-  error?: string
+  error?: string,
 ): void {
   if (!online) return
   const now = Date.now()
@@ -86,7 +91,7 @@ export function createHistory(
     `
     replace into history(time, history_id, site, choose, duration, traffic, speed, error)
     values(${now}, '${id}', '${site}', ${choose}, ${duration}, ${traffic}, ${speed}, @error)
-    `
+    `,
   ).run({ error: error || "" })
 }
 
@@ -114,7 +119,7 @@ export function measure(site: string): Record<string, number> {
         max(case when choose = 1 then speed else 0 end) as bw1
       from history
       where site = @site
-      `
+      `,
     )
     .get({ site })
 }

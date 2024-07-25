@@ -26,7 +26,7 @@ server.on("connection", conn => {
         Date.now() - startTime,
         contentLength,
         maxSpeed,
-        hadError ? "close" : ""
+        hadError ? "close" : "",
       )
     }
   }) as any)
