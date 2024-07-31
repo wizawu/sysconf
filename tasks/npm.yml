@@ -7,3 +7,4 @@
     - n@latest
     - otplib@12.x.x
     - pnpm@7.12.x
+    - prettier@3.3.3

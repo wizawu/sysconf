@@ -1,7 +1,10 @@
-import { spawnSync } from "child_process"
-
+import * as LoggerFactory from "log4js"
 import * as store from "./store"
 import * as train from "./train"
+import { spawnSync } from "child_process"
+
+const log = LoggerFactory.getLogger("\t\b\b\b\b\b\b\b")
+log.level = "debug"
 
 export function select(upstream: string): store.Backend {
   if (/\d$/.test(upstream)) return store.backendList[0]
@@ -24,6 +27,7 @@ export function select(upstream: string): store.Backend {
         break
       }
     }
+    log.info(`prefer ${prefer} - ${upstream}`)
     store.updateDomain(upstream, prefer, "INIT")
     return store.backendList[prefer]
   }
