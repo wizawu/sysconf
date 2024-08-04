@@ -9,6 +9,7 @@ log.level = "debug"
 const data = [
   ...JSON.parse(fs.readFileSync("./data.30.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.31.json", "utf-8")),
+  ...JSON.parse(fs.readFileSync("./data.32.json", "utf-8")),
 ]
 
 const net = new brain.NeuralNetwork()

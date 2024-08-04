@@ -63,5 +63,4 @@
     name:
       - cinnamon
       - cinnamon-session
-      - nautilus
       - network-manager-gnome
