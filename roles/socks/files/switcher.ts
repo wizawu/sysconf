@@ -12,7 +12,9 @@ export function select(upstream: string): store.Backend {
   if (result) {
     setTimeout(() => {
       const { err0, err1, spd0, spd1, blk0, blk1, bw0, bw1 } = store.measure(upstream)
-      const next = train.classify(upstream, [err0, err1, spd0, spd1, blk0, blk1, bw0, bw1])
+      const spd0r = Math.round(spd0 * 100) / 100
+      const spd1r = Math.round(spd1 * 100) / 100
+      const next = train.classify(upstream, [err0, err1, spd0r, spd1r, blk0, blk1, bw0, bw1])
       if (Number(result.prefer) !== next) {
         store.updateDomain(upstream, next, "TRAIN")
       }

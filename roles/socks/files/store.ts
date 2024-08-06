@@ -19,7 +19,7 @@ const log = LoggerFactory.getLogger("\t\b\b\b\b\b\b\b")
 
 let online = true
 setInterval(() => {
-  const child = spawnSync("curl", "-I -m 5 http://223.5.5.5/".split(" "))
+  const child = spawnSync("curl", "-I -m 5 http://166.111.4.100/".split(" "))
   online = child.status === 0
   if (!online) {
     log.warn("I am offline")
