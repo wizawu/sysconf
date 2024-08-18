@@ -3,18 +3,20 @@
     name: "{{item}}"
     state: stopped
     enabled: false
-  ignore_errors: true
   with_items:
     - snapd
     - snapd.seeded
     - snapd.socket
     - systemd-resolved
+  ignore_errors: true
 
 - name: uninstall packages
   apt:
     state: absent
     name:
+      - bluez
       - cloud-init
+      - evolution-data-server
       - pcp
       - xdg-desktop-portal-gtk
       - xdg-desktop-portal-wlr
@@ -29,7 +31,6 @@
   file:
     path: /usr/bin/{{item}}
     mode: 400
-  ignore_errors: true
   with_items:
     - cinnamon-screensaver
     - csd-clipboard
@@ -37,3 +38,4 @@
     - csd-media-keys
     - csd-screensaver-proxy
     - nemo-desktop
+  ignore_errors: true

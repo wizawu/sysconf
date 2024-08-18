@@ -10,6 +10,7 @@ const data = [
   ...JSON.parse(fs.readFileSync("./data.30.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.31.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.33.json", "utf-8")),
+  ...JSON.parse(fs.readFileSync("./data.35.json", "utf-8")),
 ]
 
 const net = new brain.NeuralNetwork()
@@ -70,10 +71,10 @@ export function writeData(i: number): void {
     if ([err0, err1, spd0, spd1, blk0, blk1, bw0, bw1].every(it => !it)) {
       return
     }
-    if (whiteList.some(it => RegExp(it.source + "$").test(site))) {
+    if (whiteList.some(it => it === site || site.endsWith("." + it))) {
       buffer.push(JSON.stringify({ site, err0, err1, spd0, spd1, blk0, blk1, bw0, bw1, prefer: 0 }))
     }
-    if (blackList.some(it => RegExp(it.source + "$").test(site))) {
+    if (blackList.some(it => it === site || site.endsWith("." + it))) {
       buffer.push(JSON.stringify({ site, err0, err1, spd0, spd1, blk0, blk1, bw0, bw1, prefer: 1 }))
     }
   })
@@ -81,54 +82,57 @@ export function writeData(i: number): void {
 }
 
 const whiteList = [
-  /.360buyimg.com/,
-  /.aiqicha.com/,
-  /.alicdn.com/,
-  /.baidu.com/,
-  /.bcebos.com/,
-  /.bdimg.com/,
-  /.csdn.net/,
-  /.csdnimg.cn/,
-  /.gtimg.cn/,
-  /.gtimg.com/,
-  /.idqqimg.com/,
-  /.ifanr.com/,
-  /.inwaishe.com/,
-  /.ithome.com/,
-  /.jd.com/,
-  /.mi.com/,
-  /.qq.com/,
-  /.soso.com/,
-  /.weixinbridge.com/,
-  /.woa.com/,
+  "360buyimg.com",
+  "aiqicha.com",
+  "alicdn.com",
+  "baidu.com",
+  "bcebos.com",
+  "bdimg.com",
+  "csdn.net",
+  "csdnimg.cn",
+  "gtimg.cn",
+  "gtimg.com",
+  "idqqimg.com",
+  "ifanr.com",
+  "inwaishe.com",
+  "ithome.com",
+  "jd.com",
+  "mi.com",
+  "qq.com",
+  "soso.com",
+  "weixinbridge.com",
+  "woa.com",
 ]
 
 const blackList = [
-  /.adnxs.com/,
-  /.adsrvr.org/,
-  /.amplitude.com/,
-  /.bing.com/,
-  /.clearbit.com/,
-  /.docker.com/,
-  /.doubleclick.net/,
-  /.duckduckgo.com/,
-  /.elastic.co/,
-  /.feedly.com/,
-  /.gettoby.com/,
-  /.github.com/,
-  /.githubassets.com/,
-  /.githubusercontent.com/,
-  /.google-analytics.com/,
-  /.google.com/,
-  /.googleadservices.com/,
-  /.googleapis.com/,
-  /.googlesyndication.com/,
-  /.gravatar.com/,
-  /.gstatic.com/,
-  /.lastpass.com/,
-  /.optimizely.com/,
-  /.oracle.com/,
-  /.quora.com/,
-  /.stripe.com/,
-  /.yahoo.com/,
+  "adnxs.com",
+  "adsrvr.org",
+  "amplitude.com",
+  "bing.com",
+  "clearbit.com",
+  "docker.com",
+  "doubleclick.net",
+  "duckduckgo.com",
+  "elastic.co",
+  "feedly.com",
+  "gettoby.com",
+  "github.com",
+  "github.io",
+  "githubassets.com",
+  "githubusercontent.com",
+  "google-analytics.com",
+  "google.com",
+  "googleadservices.com",
+  "googleapis.com",
+  "googlesyndication.com",
+  "gravatar.com",
+  "gstatic.com",
+  "huggingface.co",
+  "lastpass.com",
+  "optimizely.com",
+  "oracle.com",
+  "quora.com",
+  "readthedocs.io",
+  "stripe.com",
+  "yahoo.com",
 ]
