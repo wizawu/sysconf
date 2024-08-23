@@ -8,6 +8,19 @@ const server = net.createServer()
 const log = LoggerFactory.getLogger("\t\b\b\b\b\b\b\b")
 log.level = "debug"
 
+function destroy(conn, client) {
+  try {
+    client?.destroy()
+  } catch (e) {
+    log.warn(e.toString())
+  }
+  try {
+    conn?.destroy()
+  } catch (e) {
+    log.warn(e.toString())
+  }
+}
+
 server.on("connection", conn => {
   const startTime = Date.now()
   let client: net.Socket | null = null
@@ -19,6 +32,7 @@ server.on("connection", conn => {
   let maxSpeed = 0
 
   conn.on("close", (hadError => {
+    destroy(conn, client)
     if (upstream !== null && backend !== null) {
       store.createHistory(
         upstream,
@@ -31,6 +45,7 @@ server.on("connection", conn => {
     }
   }) as any)
   conn.on("error", e => {
+    destroy(conn, client)
     if (upstream !== null && backend !== null) {
       store.createHistory(upstream, backend._id, Date.now() - startTime, contentLength, maxSpeed, e.message)
     }
@@ -50,7 +65,7 @@ server.on("connection", conn => {
       })
       client.on("data", data => {
         if (Date.now() - startTime > 30000 && conn.destroyed) {
-          client?.destroy()
+          destroy(conn, client)
         }
         if (clientData2 === null) {
           contentLength += data.length
@@ -62,9 +77,11 @@ server.on("connection", conn => {
         }
       })
       client.on("end", () => {
+        destroy(conn, client)
         store.createHistory(upstream!, backend!._id, Date.now() - startTime, contentLength, maxSpeed, "")
       })
       client.on("error", e => {
+        destroy(conn, client)
         store.createHistory(upstream!, backend!._id, Date.now() - startTime, contentLength, maxSpeed, e.message)
       })
     } else {

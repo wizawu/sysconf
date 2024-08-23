@@ -27,6 +27,7 @@
     "editor.tabSize": 2
   },
   "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnType": true
   },
   "[scss]": {

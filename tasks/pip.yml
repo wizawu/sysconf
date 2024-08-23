@@ -4,7 +4,7 @@
 - name: install python packages
   pip:
     name:
-      - black==20.8b1
+      - black==22.*
       - docker==4.4.4
       - isort==5.7.0
       - yq==2.13.0
