@@ -101,6 +101,7 @@
     "./lib"
   ],
   "python.createEnvironment.trigger": "off",
+  "python.testing.pytestEnabled": true,
   "redhat.telemetry.enabled": true,
   "sql-formatter.dialect": "db2",
   "sql-formatter.uppercase": true,
