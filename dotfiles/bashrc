@@ -14,6 +14,7 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export NODE_PATH=/usr/local/lib/node_modules
 export PATH=$HOME/.sysconf/bin:$GOPATH/bin:$GRADLE_HOME/bin:$JAVA_HOME/bin:/usr/sbin:$PATH
+export PIP_BREAK_SYSTEM_PACKAGES=1
 export PIP_INDEX_URL=https://pypi.tuna.tsinghua.edu.cn/simple
 export TRASH_DIR=$HOME/.local/share/Trash
 
@@ -56,7 +57,7 @@ alias lh='ls -lh'
 alias ll='ls -l'
 alias ls='ls --color=auto'
 alias psync='rsync -Pz --info=progress2'
-alias pyfmt='bash -c "isort \$0 && black \$0"'
+alias pyfmt='bash -c "isort \$0 && black --line-length 120 \$0"'
 alias randn='shuf -i 1-9223372036854775807 -n 1'
 alias rm='rm -I'
 alias si='sudo -i'

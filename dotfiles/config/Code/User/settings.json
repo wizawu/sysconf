@@ -49,6 +49,10 @@
     "preserve_newlines": true,
     "selector_separator_newline": false
   },
+  "black-formatter.args": [
+    "--line-length",
+    "120"
+  ],
   "debug.console.fontFamily": "Courier Prime Code",
   "debug.console.fontSize": 12,
   "debug.javascript.codelens.npmScripts": "never",
