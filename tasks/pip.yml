@@ -1,5 +1,5 @@
-- name: set pip index url
-  shell: pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+- name: create /etc/pip.conf
+  file: src=/home/{{user}}/.sysconf/etc/pip.conf dest=/etc/pip.conf state=link force=true
 
 - name: install python packages
   pip:
