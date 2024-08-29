@@ -12,4 +12,4 @@
       cron:
         name: update node.js
         special_time: daily
-        job: n 14 && n 18
+        job: tsocks n 14 && tsocks n 18
