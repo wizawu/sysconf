@@ -5,6 +5,7 @@
     --name phpmyadmin
     --restart always
     -v {{role_path}}/files/config.user.inc.php:/opt/bitnami/phpmyadmin/config.inc.php
+    -v {{role_path}}/files/themes/eyed:/opt/bitnami/phpmyadmin/themes/eyed
     --log-opt max-file=10
     --log-opt max-size=100m
     bitnami/phpmyadmin:5.2.1-debian-11-r112

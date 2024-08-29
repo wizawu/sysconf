@@ -1,3 +1,6 @@
 [submodule "dotfiles/kotlin-vim"]
 	path = dotfiles/kotlin-vim
 	url = git@github.com:udalov/kotlin-vim.git
+[submodule "roles/phpmyadmin/files/themes"]
+	path = roles/phpmyadmin/files/themes
+	url = git@github.com:phpmyadmin/themes.git
