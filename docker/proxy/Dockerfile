@@ -1,6 +1,6 @@
 FROM node:14.16-buster-slim
 
-RUN echo "deb http://hk.archive.ubuntu.com/ubuntu focal main universe" > /etc/apt/sources.list
+RUN echo "deb http://mirrors.digitalocean.com/ubuntu focal main universe" > /etc/apt/sources.list
 RUN apt update -o Acquire::AllowInsecureRepositories=true -y && \
     apt install --allow-unauthenticated --no-install-recommends -y \
     curl \
