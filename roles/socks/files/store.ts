@@ -60,11 +60,14 @@ export function allDomains(): string[] {
   return result.map(it => it.site)
 }
 
+export function likeDomain(site: string, prefer: number[]): number[] {
+  return prefer.map(
+    it => db.prepare("select * from site where site like @site and prefer = @prefer").all({ site, prefer: it }).length,
+  )
+}
+
 export function selectDomain(site: string): Record<string, any> {
-  const start = Date.now()
-  const result = db.prepare("select * from site where site = @site").get({ site })
-  if (Date.now() - start > 1) log.warn(`slow query: ${Date.now() - start}ms`)
-  return result
+  return db.prepare("select * from site where site = @site").get({ site })
 }
 
 export function updateDomain(site: string, prefer: number, reason: string): void {
