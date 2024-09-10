@@ -81,6 +81,7 @@
           - hsetroot
           - im-config
           - lftp
+          - libfuse2
           - lm-sensors
           - locate
           - lshw
