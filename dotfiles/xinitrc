@@ -4,8 +4,9 @@ export LC_CTYPE="zh_CN.UTF-8"
 export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
 
+# WPS generates files here
+xdg-user-dirs-update --set DOCUMENTS ~/docs
 xdg-user-dirs-update --set DESKTOP ~
-xdg-user-dirs-update --set DOCUMENTS ~
 xdg-user-dirs-update --set DOWNLOAD ~
 xdg-user-dirs-update --set MUSIC ~
 xdg-user-dirs-update --set PICTURES ~
