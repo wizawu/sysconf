@@ -204,6 +204,8 @@
         line: "{{item.key}}={{item.value}}"
       with_items:
         - { key: "HandleLidSwitch", value: "ignore" }
+        - { key: "HandleLidSwitchDocked", value: "ignore" }
+        - { key: "HandleLidSwitchExternalPower", value: "ignore" }
         - { key: "HandlePowerKey", value: "suspend" }
 
     - name: configure kernel parameters
