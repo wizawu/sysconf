@@ -50,7 +50,7 @@ if [[ "$1" = "-b" ]]; then
     exit
 fi
 
-DISPLAYS=("" $(xrandr | grep connected | awk '{print $1}'))
+DISPLAYS=("" $(xrandr | grep -w connected | awk '{print $1}'))
 
 for i in {1..9}; do
     if [ -z "${DISPLAYS[i]}" ]; then
@@ -58,11 +58,12 @@ for i in {1..9}; do
     fi
     echo [$i] ${DISPLAYS[i]}
     if [ "$1" = "-a" ]; then
+        set -x
         xrandr --output ${DISPLAYS[i]} --auto
         xrandr --newmode 1920x1200x60 193.25 1920 2056 2256 2592 1200 1203 1209 1245 -hsync +vsync
-        xrandr --newmode 3840x2160x26 290.25 3840 4064 4464 5088 2160 2163 2168 2195 -hsync +vsync
+        xrandr --newmode 3840x2160x29 327.25 3840 4080 4488 5136 2160 2163 2168 2199 -hsync +vsync
         xrandr --addmode ${DISPLAYS[i]} 1920x1200x60
-        xrandr --addmode ${DISPLAYS[i]} 3840x2160x26
+        xrandr --addmode ${DISPLAYS[i]} 3840x2160x29
     fi
 done
 
