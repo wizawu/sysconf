@@ -18,6 +18,7 @@
       - cloud-init
       - evolution-data-server
       - pcp
+      - wireplumber
       - xdg-desktop-portal-gtk
       - xdg-desktop-portal-wlr
 
