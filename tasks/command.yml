@@ -24,6 +24,7 @@
       - iftop
       - inotify-tools
       - iotop
+      - iperf3
       - jq
       - less
       - mariadb-client
