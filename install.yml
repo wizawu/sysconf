@@ -157,7 +157,6 @@
       with_items:
         - etc/X11/xorg.conf.d/99-synaptics.conf
         - etc/apt/apt.conf.d/99default
-        - etc/dnsdist/dnsdist.conf # not always useful
         - etc/docker/daemon.json
         - etc/fonts/conf.d/99-default.conf
         - etc/opt/chrome/policies/managed/blocklist.json
