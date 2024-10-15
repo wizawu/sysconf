@@ -44,6 +44,7 @@ alias code='code -n'
 alias cpufreq="cpufreq-info | tr '\n' '\r' | sed -e 's/\r\s\{8,\}/ /g' | tr '\r' '\n' | grep current"
 alias datev='date +%Y%m%d%H%M%S'
 alias digs='dig +noall +answer'
+alias ffc="fontforge -lang=ff -c '"'Open($1); Generate($2); Close();'"'"
 alias ffunix='vi -c ":set ff=unix" -c ":wq"'
 alias fish='fish -P'
 alias gl='git log --pretty=format:"%Cblue%<(22,trunc)%cd %Cgreen%h%Creset %s %Cred@%an" --date=iso8601'

@@ -7,6 +7,7 @@
       - cpupower-gui
       - dbus-x11
       - flameshot
+      - fontforge
       - geany # text editor
       - gimp
       - meld
