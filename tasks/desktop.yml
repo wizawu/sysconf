@@ -6,7 +6,6 @@
       - code
       - cpupower-gui
       - dbus-x11
-      - filezilla
       - flameshot
       - fontforge
       - geany # text editor
