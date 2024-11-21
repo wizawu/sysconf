@@ -1,3 +1,8 @@
 #!/bin/bash
 
-git subtree add --prefix $(basename $1) $1 main
+if [[ "$1" == "-h" ]]; then
+    echo $0 "<path/to/repo>" "<branch>"
+    exit 0
+fi
+
+git subtree add --prefix $(basename $1) $1 $2
