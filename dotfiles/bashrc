@@ -3,8 +3,6 @@
 
 # basic
 export EDITOR=vim
-export GOPATH=$HOME/github/go
-export GRADLE_HOME=/opt/gradle
 export HISTFILESIZE=10000
 export HISTSIZE=10000
 export HISTTIMEFORMAT="%d/%m/%y %T "
@@ -12,7 +10,7 @@ export JAVA_HOME=/usr/lib/jvm/default-jdk
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export NODE_PATH=/usr/local/lib/node_modules
-export PATH=$HOME/.sysconf/bin:$GOPATH/bin:$GRADLE_HOME/bin:$JAVA_HOME/bin:/usr/sbin:$PATH
+export PATH=$HOME/.sysconf/bin:$JAVA_HOME/bin:/usr/sbin:$PATH
 export PIP_BREAK_SYSTEM_PACKAGES=1
 export PYTHONDONTWRITEBYTECODE=1
 export TRASH_DIR=$HOME/.local/share/Trash

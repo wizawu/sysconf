@@ -14,12 +14,6 @@ if [[ "$1" = "-r" ]]; then
     exit
 fi
 
-if [[ "$1" = "-s" ]]; then
-    set -x
-    xrandr | grep -w connected | cut -d ' ' -f1 | xargs -I{} xrandr --output {} --scale ${2:-1}x${2:-1}
-    exit
-fi
-
 if [[ "$1" = "-b" ]]; then
     set -ex
     xset -b

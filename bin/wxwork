@@ -9,5 +9,5 @@ elif [ "$1" = reset ]; then
 elif [ "$1" = off ]; then
     sudo VBoxManage controlvm wxwork poweroff
 else
-    sudo QT_QPA_PLATFORMTHEME=qt5ct VBoxManage startvm wxwork --type gui
+    sudo env QT_QPA_PLATFORMTHEME=qt5ct VBoxManage startvm wxwork --type gui
 fi
