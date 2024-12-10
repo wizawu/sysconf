@@ -43,9 +43,9 @@
         force: true
 
     - name: import apt keys
-      apt_key:
-        keyserver: keyserver.ubuntu.com
-        id: "{{item}}"
+      shell: >-
+        curl -sSL 'https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x{{item}}' |
+        gpg --dearmor -o /etc/apt/trusted.gpg.d/{{item}}.gpg
       with_items:
         - 7EA0A9C3F273FCD8 # docker
         - E88979FB9B30ACF2 # chrome
