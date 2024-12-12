@@ -36,7 +36,6 @@
     - ms-python.isort
     - ms-python.python
     - ms-python.vscode-pylance
-    - ms-vscode.cpptools
     - redhat.vscode-yaml
     - sgryjp.vscode-stable-sort
     - streetsidesoftware.code-spell-checker
