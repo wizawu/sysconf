@@ -22,6 +22,7 @@
       - gnupg1
       - htop
       - httrack
+      - icdiff
       - iftop
       - inotify-tools
       - iotop
