@@ -25,7 +25,6 @@
   shell: "code --install-extension {{item}}"
   with_items:
     - adpyke.vscode-sql-formatter
-    - bierner.markdown-preview-github-styles
     - jeff-hykin.better-dockerfile-syntax
     - michelemelluso.code-beautifier
     - mike-lischke.vscode-antlr4
