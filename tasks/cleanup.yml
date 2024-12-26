@@ -37,6 +37,7 @@
     - csd-clipboard
     - csd-keyboard
     - csd-media-keys
+    - csd-power
     - csd-screensaver-proxy
     - nemo-desktop
   ignore_errors: true

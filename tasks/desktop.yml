@@ -11,6 +11,7 @@
       - fontforge
       - geany # text editor
       - gimp
+      - lxappearance
       - meld
       - mirage # image viewer
       - mupdf
