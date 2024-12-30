@@ -34,10 +34,15 @@
     mode: 400
   with_items:
     - cinnamon-screensaver
+    - csd-a11y-settings
+    - csd-background
     - csd-clipboard
     - csd-keyboard
     - csd-media-keys
     - csd-power
+    - csd-printer
     - csd-screensaver-proxy
+    - csd-settings-remap
+    - csd-wacom
     - nemo-desktop
   ignore_errors: true
