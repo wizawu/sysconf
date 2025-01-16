@@ -49,6 +49,7 @@
       - unzip
       - upower
       - valgrind
+      - vim
       - whois
       - wput
       - yamllint

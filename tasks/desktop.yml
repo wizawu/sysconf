@@ -10,6 +10,7 @@
       - flameshot
       - fontforge
       - geany # text editor
+      - geany-plugin-vimode
       - gimp
       - lxappearance
       - meld
@@ -22,7 +23,6 @@
       - smplayer
       - sqlitebrowser
       - tilix
-      - vim-gtk3
       - virtualbox
       - virtualbox-qt
       - x11-xkb-utils

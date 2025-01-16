@@ -9,7 +9,6 @@ set shiftwidth=4
 set smartindent
 set smarttab
 set tabstop=4
-set toolbariconsize=huge
 
 colorscheme koehler
 filetype indent on
