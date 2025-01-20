@@ -49,11 +49,21 @@
       - unzip
       - upower
       - valgrind
-      - vim
       - whois
       - wput
       - yamllint
       - zstd
+
+- name: check built-in commands
+  shell: command -v {{item}}
+  with_items:
+    - getconf
+    - ipcs
+    - losetup
+    - lscpu
+    - lsusb
+    - pmap
+    - trap
 
 - name: remove useless git commands
   file:

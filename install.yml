@@ -120,17 +120,6 @@
           - util-linux-extra
           - wpasupplicant
 
-    - name: check built-in tools
-      shell: command -v {{item}}
-      with_items:
-        - getconf
-        - ipcs
-        - losetup
-        - lscpu
-        - lsusb
-        - pmap
-        - trap
-
     - include_tasks: tasks/command.yml
     - include_tasks: tasks/desktop.yml
     - include_tasks: tasks/vscode.yml

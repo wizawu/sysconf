@@ -23,6 +23,7 @@
       - smplayer
       - sqlitebrowser
       - tilix
+      - vim-gtk3 # needed by "+ command
       - virtualbox
       - virtualbox-qt
       - x11-xkb-utils
