@@ -40,7 +40,6 @@ alias bcrypt='htpasswd -bnBC 10 ""'
 alias chrome='google-chrome-stable --process-per-tab'
 alias cmemchk='valgrind --tool=memcheck --leak-check=full'
 alias code='code -n'
-alias cpufreq="cpufreq-info | tr '\n' '\r' | sed -e 's/\r\s\{8,\}/ /g' | tr '\r' '\n' | grep current"
 alias datev='date +%Y%m%d%H%M%S'
 alias digs='dig +noall +answer'
 alias ffc="fontforge -lang=ff -c '"'Open($1); Generate($2); Close();'"'"

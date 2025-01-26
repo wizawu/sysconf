@@ -29,12 +29,3 @@ GRUB_CMDLINE_LINUX="text"
 update-grub
 systemctl set-default multi-user.target
 ```
-
-### Enable more cpufreq governors (than powersave and performance)
-
-```bash
-# modify the following line in /etc/default/grub
-GRUB_CMDLINE_LINUX_DEFAULT="... intel_pstate=disable"
-
-update-grub
-```
