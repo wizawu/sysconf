@@ -5,7 +5,6 @@
       - aha
       - apt-file
       - autossh
-      - cargo
       - chrony
       - cmake
       - cmatrix
@@ -53,6 +52,12 @@
       - wput
       - yamllint
       - zstd
+
+- name: install rust
+  apt:
+    name:
+      - rust-src
+      - rustup
 
 - name: check built-in commands
   shell: command -v {{item}}

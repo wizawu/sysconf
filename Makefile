@@ -17,3 +17,6 @@ etherpad:
 
 excalidraw:
 	docker run -d -p 172.17.0.1:6060:80 --restart always --name excalidraw excalidraw/excalidraw
+
+rustup:
+	rustup default stable

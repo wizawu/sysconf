@@ -37,6 +37,7 @@
     - ms-python.vscode-pylance
     - redhat.vscode-yaml
     - rooveterinaryinc.roo-cline
+    - rust-lang.rust-analyzer
     - sgryjp.vscode-stable-sort
     - streetsidesoftware.code-spell-checker
     - tobiasalthoff.atom-material-theme
