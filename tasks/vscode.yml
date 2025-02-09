@@ -25,6 +25,7 @@
   shell: "code --install-extension {{item}}"
   with_items:
     - adpyke.vscode-sql-formatter
+    - alibaba-cloud.tongyi-lingma
     - jeff-hykin.better-dockerfile-syntax
     - michelemelluso.code-beautifier
     - mike-lischke.vscode-antlr4
@@ -36,7 +37,6 @@
     - ms-python.python
     - ms-python.vscode-pylance
     - redhat.vscode-yaml
-    - rooveterinaryinc.roo-cline
     - rust-lang.rust-analyzer
     - sgryjp.vscode-stable-sort
     - streetsidesoftware.code-spell-checker
