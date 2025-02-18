@@ -1,0 +1,1 @@
+deb [signed-by=/etc/apt/trusted.gpg.d/oneapi.gpg] https://apt.repos.intel.com/oneapi all main
