@@ -1,4 +1,10 @@
 #!/bin/bash
+#
+if [[ "$1" = "-t" ]]; then
+    set -ex
+    redshift -PO "$2"
+    exit
+fi
 
 if [[ "$1" = "-r" ]]; then
     set -x

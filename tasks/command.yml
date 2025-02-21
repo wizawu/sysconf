@@ -18,6 +18,7 @@
       - fish
       - fping
       - git-extras
+      - git-lfs
       - gnupg1
       - htop
       - httrack
