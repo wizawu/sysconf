@@ -24,8 +24,8 @@
 - name: install vscode extensions
   shell: "code --install-extension {{item}}"
   with_items:
-    - adpyke.vscode-sql-formatter
     - alibaba-cloud.tongyi-lingma
+    - inferrinizzard.prettier-sql-vscode
     - jeff-hykin.better-dockerfile-syntax
     - michelemelluso.code-beautifier
     - mike-lischke.vscode-antlr4
