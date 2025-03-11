@@ -26,6 +26,7 @@
   with_items:
     - alibaba-cloud.tongyi-lingma
     - inferrinizzard.prettier-sql-vscode
+    - intel-corporation.oneapi-gdb-debug
     - jeff-hykin.better-dockerfile-syntax
     - michelemelluso.code-beautifier
     - mike-lischke.vscode-antlr4
@@ -35,6 +36,7 @@
     - ms-python.isort
     - ms-python.python
     - ms-python.vscode-pylance
+    - ms-vscode.cpptools
     - redhat.vscode-yaml
     - sgryjp.vscode-stable-sort
     - streetsidesoftware.code-spell-checker
