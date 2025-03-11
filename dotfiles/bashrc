@@ -27,6 +27,7 @@ source /usr/share/bash-completion/bash_completion
 source /usr/share/bash-completion/completions/git
 
 # alias
+alias 1api="source /opt/intel/oneapi/setvars.sh"
 alias 2fa='node -e "console.log(require(\"otplib\").authenticator.generate(process.argv[1]))"'
 alias ackj='ack --type kotlin --type java --type groovy'
 alias ackng='ack --nogroup'
@@ -41,7 +42,6 @@ alias datev='date +%Y%m%d%H%M%S'
 alias digs='dig +noall +answer'
 alias ffc="fontforge -lang=ff -c '"'Open($1); Generate($2); Close();'"'"
 alias ffunix='vi -c ":set ff=unix" -c ":wq"'
-alias fish='fish -P'
 alias gl='git log --pretty=format:"%Cblue%<(22,trunc)%cd %Cgreen%h%Creset %s %Cred@%an" --date=iso8601'
 alias grep='grep --color'
 alias hl='grep --color=always -e ^ -e'
@@ -49,7 +49,6 @@ alias ip4='ip -4 -br'
 alias isp='http -b http://ip-api.com/json'
 alias jdump='bash -c "set -x; jmap -dump:format=b,file=\$0.dump \$0"'
 alias jqi='bash -c "cat <<< \$(jq \$0 \$1) > \$1"'
-alias la='ls -A'
 alias lh='ls -lh'
 alias ll='ls -l'
 alias ls='ls --color=auto'

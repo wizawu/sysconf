@@ -15,7 +15,6 @@
       - di
       - docker-ce
       - fdisk
-      - fish
       - fping
       - git-extras
       - git-lfs
