@@ -1,9 +1,0 @@
-#!/bin/bash
-
-set -ex
-
-[[ "$(fc-match -s test | awk 'NR==1')" = Carlito* ]]
-[[ "$(fc-match -s test | awk 'NR==2')" = OPPOSans* ]]
-[[ "$(fc-match -s mono | awk 'NR==1')" = Courier* ]]
-
-echo OK
