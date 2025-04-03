@@ -225,7 +225,6 @@
       become_user: "{{user}}"
       with_items:
         - bashrc
-        - config/flameshot/flameshot.ini
         - gitconfig
         - gradle/gradle.properties
         - sqliterc

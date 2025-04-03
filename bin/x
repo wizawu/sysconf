@@ -61,6 +61,7 @@ for i in {1..9}; do
         set -x
         xrandr --output ${DISPLAYS[i]} --off
         xrandr --output ${DISPLAYS[i]} --auto
+        xrandr --output ${DISPLAYS[i]} --gamma 0.9:0.9:1.0
         xrandr --newmode 1920x1200x60 193.25 1920 2056 2256 2592 1200 1203 1209 1245 -hsync +vsync
         xrandr --newmode 3840x2160x29 327.25 3840 4080 4488 5136 2160 2163 2168 2199 -hsync +vsync
         xrandr --addmode ${DISPLAYS[i]} 1920x1200x60
