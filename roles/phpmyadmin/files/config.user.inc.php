@@ -10,8 +10,8 @@ $cfg['Servers'][$i]['compress'] = false;
 $cfg['Servers'][$i]['AllowNoPassword'] = true;
 
 $cfg['AllowArbitraryServer'] = true;
-$cfg['EnableAutocompleteForTablesAndColumns'] = false;
-$cfg['LoginCookieValidity'] = 86400;
+$cfg['EnableAutocompleteForTablesAndColumns'] = true;
+$cfg['LoginCookieValidity'] = 8640000;
 $cfg['NavigationDisplayLogo'] = false;
 $cfg['ShowDatabasesNavigationAsTree'] = false;
 ?>
