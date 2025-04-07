@@ -1,2 +1,2 @@
 deb [arch=amd64] http://mirrors.aliyun.com/docker-ce/linux/ubuntu noble stable
-deb [arch=amd64] http://mirrors.tuna.tsinghua.edu.cn/ubuntu noble main restricted universe multiverse
+deb [arch=amd64] http://mirrors.tuna.tsinghua.edu.cn/ubuntu plucky main restricted universe multiverse

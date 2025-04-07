@@ -16,6 +16,7 @@
     name:
       - bluez
       - cloud-init
+      - cups
       - evolution-data-server
       - pcp
       - wireplumber
@@ -33,7 +34,6 @@
     path: /usr/bin/{{item}}
     mode: 400
   with_items:
-    - cinnamon-screensaver
     - csd-a11y-settings
     - csd-background
     - csd-clipboard

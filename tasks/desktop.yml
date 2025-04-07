@@ -60,10 +60,11 @@
   with_items:
     - https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
-- name: install cinnamon
+- name: install mate desktop
   apt:
     install_recommends: true
     name:
-      - cinnamon
-      - cinnamon-session
+      - mate-control-center
+      - mate-panel
+      - mate-session-manager
       - network-manager-gnome

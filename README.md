@@ -10,9 +10,9 @@ iface wlan0 inet dhcp
 
 # run as root
 ifup wlan0
-echo "deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu noble main restricted universe multiverse" > /etc/apt/sources.list
+echo "deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu plucky main restricted universe multiverse" > /etc/apt/sources.list
 apt-get update
-apt-get install git make ansible openssh-client openssh-server sudo
+apt-get install git make ansible curl openssh-client openssh-server sudo
 echo > /etc/apt/sources.list
 
 # git clone this repository to /home/wizawu/.sysconf

@@ -30,15 +30,17 @@ if [[ "$1" = "-b" ]]; then
 
     # start session
     pkill nm-applet || echo
-    nohup cinnamon-session &>>/tmp/cinnamon-session.log &
+    sudo chmod a+x /usr/bin/mate-panel
+    nohup mate-session &>>/tmp/mate-session.log &
 
     # reload awesome
-    until [ -n "$(pgrep -f cinnamon-session)" ]; do
+    until [ -n "$(pgrep -f mate-session)" ]; do
         sleep 1
     done
     sleep 1
+    sudo chmod a-x /usr/bin/mate-panel
+    pkill -f mate-panel || echo
     awesome-client 'awesome.restart()' || echo
-    pkill -f cinnamon-screensaver || echo
 
     # background
     hsetroot -full /usr/share/awesome/themes/default/background.png -root -sharpen 8
