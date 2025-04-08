@@ -10,7 +10,7 @@ iface wlan0 inet dhcp
 
 # run as root
 ifup wlan0
-echo "deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu plucky main restricted universe multiverse" > /etc/apt/sources.list
+echo "deb https://mirrors.tencent.com/ubuntu plucky main restricted universe multiverse" > /etc/apt/sources.list
 apt-get update
 apt-get install git make ansible curl openssh-client openssh-server sudo
 echo > /etc/apt/sources.list
