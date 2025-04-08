@@ -31,7 +31,7 @@ alias 1api="source /opt/intel/oneapi/setvars.sh"
 alias 2fa='node -e "console.log(require(\"otplib\").authenticator.generate(process.argv[1]))"'
 alias ackj='ack --type kotlin --type java --type groovy'
 alias ackng='ack --nogroup'
-alias apt='sudo apt-get'
+alias apt='sudo /usr/bin/apt'
 alias apthi='bash -c "sudo apt-get -o Acquire::http::Proxy=http://\$0 install \$1"'
 alias base58='basex -i $(echo {0..9} {A..Z} {a..z} | tr -d " 0IOl")'
 alias base62='basex -i $(echo {0..9} {A..Z} {a..z} | tr -d " ")'
