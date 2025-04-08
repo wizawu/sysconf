@@ -5,6 +5,7 @@
       - aha
       - apt-file
       - autossh
+      - axel
       - chrony
       - cmake
       - cmatrix
