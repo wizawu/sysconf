@@ -4,9 +4,6 @@
     state: stopped
     enabled: false
   with_items:
-    - snapd
-    - snapd.seeded
-    - snapd.socket
     - systemd-resolved
   ignore_errors: true
 
@@ -17,8 +14,12 @@
       - bluez
       - cloud-init
       - cups
+      - cups-*
       - evolution-data-server
+      - firefox
       - pcp
+      - snapd
+      - snapd-*
       - wireplumber
       - xdg-desktop-portal-gtk
       - xdg-desktop-portal-wlr
