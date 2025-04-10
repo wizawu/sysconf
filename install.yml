@@ -142,9 +142,6 @@
         - etc/supervisor/conf.d
         - etc/xdg/awesome
 
-    - name: remove old font config
-      shell: rm -f /etc/fonts/conf.d/*
-
     - name: create symbolic link to global config
       file: src=/home/{{user}}/.sysconf/{{item}} dest=/{{item}} state=link force=yes
       with_items:
@@ -175,6 +172,12 @@
         insertafter: "<fontconfig"
       with_items:
         - "<dir>~/.fonts</dir>"
+
+    - name: include only conf.d/99-default.conf
+      lineinfile:
+        dest: /etc/fonts/fonts.conf
+        regexp: '^\s{0,}<include.*>(/etc/fonts/)?conf.d/?</include>'
+        line: '<include>conf.d/99-default.conf</include>'
 
     - name: disable NetworkManager dns
       lineinfile:
