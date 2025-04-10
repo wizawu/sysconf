@@ -95,7 +95,6 @@
           - make
           - manpages-dev
           - nethogs
-          - network-manager
           - nfs-common
           - nginx
           - nmap

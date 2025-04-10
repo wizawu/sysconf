@@ -12,10 +12,12 @@
       - geany # text editor
       - geany-plugin-vimode
       - gimp
+      - libappindicator3-1
       - lxappearance
       - meld
       - mirage # image viewer
       - mupdf
+      - network-manager-applet
       - pavucontrol
       - picom # fix chrome menu border
       - qt5ct
@@ -67,4 +69,3 @@
       - mate-control-center
       - mate-panel
       - mate-session-manager
-      - network-manager-gnome
