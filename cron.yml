@@ -7,9 +7,3 @@
         name: updatedb
         special_time: daily
         job: updatedb
-
-    - name: update node.js
-      cron:
-        name: update node.js
-        special_time: daily
-        job: tsocks n 14 && tsocks n 18
