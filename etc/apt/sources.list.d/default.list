@@ -1,2 +1,3 @@
 deb [arch=amd64] https://mirrors.aliyun.com/docker-ce/linux/ubuntu noble stable
+deb [arch=amd64] https://mirrors.tencent.com/ubuntu oracular main # python3.12
 deb [arch=amd64] https://mirrors.tencent.com/ubuntu plucky main restricted universe multiverse
