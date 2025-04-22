@@ -115,7 +115,7 @@
   "vim.useSystemClipboard": false,
   "window.openFoldersInNewWindow": "on",
   "window.restoreWindows": "none",
-  "window.zoomLevel": 1.4,
+  "window.zoomLevel": 1.2,
   "workbench.colorTheme": "Atom Material Theme",
   "workbench.editor.enablePreview": false,
   "workbench.editor.restoreViewState": false,
