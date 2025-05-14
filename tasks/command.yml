@@ -14,6 +14,7 @@
       - curl
       - dconf-cli
       - di
+      - duf
       - docker-ce
       - fdisk
       - fping
