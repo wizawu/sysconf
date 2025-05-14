@@ -69,10 +69,11 @@
 - name: remove useless git commands
   file:
     path: /usr/bin/{{item}}
-    state: absent
+    mode: "a-x"
   with_items:
     - git-abort
     - git-alias
     - git-archive-file
     - git-authors
     - git-commits-since
+    - git-pr

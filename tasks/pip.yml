@@ -4,9 +4,10 @@
 - name: install python packages
   pip:
     name:
-      - black==22.*
+      - black
       - docker==4.4.4
-      - isort==5.7.0
+      - isort
+      - pipdeptree
       - yq==2.13.0
     executable: pip3
     extra_args: --break-system-packages

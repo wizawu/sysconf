@@ -15,6 +15,7 @@
     co = checkout
     dc = diff --cached
     df = diff
+    pr = push origin HEAD:refs/for/master
     rb = rebase
     rbi = rebase -i HEAD~10
     rh = reset HEAD
