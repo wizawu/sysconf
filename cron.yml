@@ -6,4 +6,4 @@
       cron:
         name: updatedb
         special_time: daily
-        job: updatedb
+        job: updatedb --prunepaths='/run/user'
