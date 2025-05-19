@@ -68,12 +68,13 @@
 
 - name: remove useless git commands
   file:
-    path: /usr/bin/{{item}}
+    path: /usr/{{item}}
     mode: "a-x"
   with_items:
-    - git-abort
-    - git-alias
-    - git-archive-file
-    - git-authors
-    - git-commits-since
-    - git-pr
+    - bin/git-abort
+    - bin/git-alias
+    - bin/git-archive-file
+    - bin/git-authors
+    - bin/git-commits-since
+    - bin/git-pr
+    - lib/git-core/git-am
