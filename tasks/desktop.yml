@@ -28,6 +28,7 @@
       - vim-gtk3 # needed by "+ command
       - virtualbox
       - virtualbox-qt
+      - wireshark
       - x11-xkb-utils
       - x11-xserver-utils
       - xdg-desktop-portal
