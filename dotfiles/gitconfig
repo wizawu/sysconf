@@ -12,7 +12,6 @@
     email = wizawu@gmail.com
     name = wizawu
 [alias]
-    amend = commit --amend --no-edit
     co = checkout
     dc = diff --cached
     df = diff

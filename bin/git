@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 if [[ $PWD == /home/wizawu/repos/* ]]; then
     /usr/bin/git config user.name $(echo d2h1YWwK | base64 -d)
     /usr/bin/git config user.email $(echo d2h1YWxAc2VydnlvdS5jb20uY24K | base64 -d)
@@ -10,4 +12,9 @@ if [[ $PWD == /home/wizawu/github/* ]]; then
     /usr/bin/git config user.email wizawu@gmail.com
 fi
 
-/usr/bin/git "$@"
+if [[ "$1" == "am" ]] && [[ -z "$2" ]]; then
+    set -x
+    /usr/bin/git commit --amend
+else
+    /usr/bin/git "$@"
+fi
