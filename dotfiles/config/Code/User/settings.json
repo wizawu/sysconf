@@ -86,6 +86,7 @@
       }
     ]
   },
+  "editor.wordBasedSuggestions": "allDocuments",
   "explorer.openEditors.visible": 0,
   "extensions.ignoreRecommendations": true,
   "files.autoSave": "off",

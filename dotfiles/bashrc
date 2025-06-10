@@ -17,7 +17,6 @@ export TRASH_DIR=$HOME/.local/share/Trash
 
 # terminal
 xmodmap -e "keycode 9 = Escape asciitilde grave" &>>/dev/null
-git config --global color.ui true
 PS1='${debian_chroot:+($debian_chroot)}\033[1;34m\u\033[90m@\033[33m\h\033[90m:\033[94m\w \033[90m$(git branch 2>/dev/null|grep "*"|sed "s/../^/")\n\[\033[93m\]\$ \[\033[0m\]'
 echo -e -n "\x1b[\x35 q"
 
