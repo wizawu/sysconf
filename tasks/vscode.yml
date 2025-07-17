@@ -25,6 +25,7 @@
   shell: "code --install-extension {{item}}"
   with_items:
     - alibaba-cloud.tongyi-lingma
+    - bodil.prettier-toml
     - inferrinizzard.prettier-sql-vscode
     - intel-corporation.oneapi-gdb-debug
     - jeff-hykin.better-dockerfile-syntax
@@ -39,7 +40,6 @@
     - ms-vscode.cpptools
     - redhat.vscode-yaml
     - sgryjp.vscode-stable-sort
-    - shellomo.enhanced-toml
     - streetsidesoftware.code-spell-checker
     - tobiasalthoff.atom-material-theme
     - vscodevim.vim

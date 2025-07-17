@@ -37,7 +37,7 @@
     "editor.tabSize": 2
   },
   "[toml]": {
-    "editor.defaultFormatter": "Shellomo.enhanced-toml"
+    "editor.defaultFormatter": "bodil.prettier-toml"
   },
   "[typescript]": {
     "editor.detectIndentation": true,
