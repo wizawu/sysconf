@@ -39,6 +39,7 @@
     - ms-vscode.cpptools
     - redhat.vscode-yaml
     - sgryjp.vscode-stable-sort
+    - shellomo.enhanced-toml
     - streetsidesoftware.code-spell-checker
     - tobiasalthoff.atom-material-theme
     - vscodevim.vim
