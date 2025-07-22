@@ -8,7 +8,7 @@ proxy:
 	sudo ansible-playbook proxy.yml
 
 addon:
-	docker rm -f redis mysql phpmyadmin
+	docker rm -f redis mysql
 	sudo ansible-playbook addon.yml
 
 etherpad:
