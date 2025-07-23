@@ -1,0 +1,2 @@
+deb https://mirrors.ustc.edu.cn/libnvidia-container/stable/deb/$(ARCH) /
+deb https://mirrors.ustc.edu.cn/libnvidia-container/stable/ubuntu18.04/$(ARCH) /
