@@ -1,5 +1,5 @@
 #!/bin/bash
-#
+
 if [[ "$1" = "-t" ]]; then
     set -ex
     redshift -PO "$2"
@@ -50,6 +50,18 @@ if [[ "$1" = "-b" ]]; then
     im-config -n fcitx
 
     exit
+fi
+
+if [ "$1" == "-s" ]; then
+  set -ex
+  test -n "$2"
+  until [ -n "${DISPLAYS[$2]}" ]; do
+    sleep 1
+    DISPLAYS=("" $(xrandr | grep -w connected | awk '{print $1}'))
+  done
+  xrandr --output ${DISPLAYS[$2]} --auto
+  xrandr --output ${DISPLAYS[$2]} --gamma 0.9:0.9:1.0
+  exit
 fi
 
 DISPLAYS=("" $(xrandr | grep -w connected | awk '{print $1}'))
