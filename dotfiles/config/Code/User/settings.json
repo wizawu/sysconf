@@ -1,5 +1,10 @@
 {
   "C_Cpp.default.cppStandard": "gnu++20",
+  "Lingma.DisplayLanguage": "English",
+  "Lingma.PreferredLanguage for AI Chat": "English",
+  "Lingma.PreferredLanguage forCommitMessage": "English",
+  "Lingma.cloudModelAutoTriggerGenerateLength": "short",
+  "Lingma.cloudModelManualTriggerGenerateLength": "short",
   "Prettier-SQL.SQLFlavourOverride": "mariadb",
   "[css]": {
     "editor.detectIndentation": true,
