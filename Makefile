@@ -7,9 +7,9 @@ cron:
 proxy:
 	sudo ansible-playbook proxy.yml
 
-addon:
-	docker rm -f redis mysql
-	sudo ansible-playbook addon.yml
+mysql:
+	docker rm -f mysql
+	sudo ansible-playbook mysql.yml
 
 etherpad:
 	docker rm -f etherpad
