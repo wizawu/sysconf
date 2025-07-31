@@ -12,7 +12,7 @@ max_allowed_packet=100m
 max_connections=500
 mysqlx=0
 secure_file_priv=/tmp
-sql_mode=ansi
+sql_mode=ansi,strict_trans_tables
 
 # storage engine settings
 default_storage_engine=innodb
