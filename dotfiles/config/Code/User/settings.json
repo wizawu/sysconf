@@ -57,6 +57,8 @@
     "--line-length",
     "120"
   ],
+  "chat.agent.enabled": false,
+  "chat.commandCenter.enabled": false,
   "debug.console.fontFamily": "Courier Prime Code",
   "debug.console.fontSize": 12,
   "debug.javascript.codelens.npmScripts": "never",
@@ -112,6 +114,7 @@
   "python.createEnvironment.trigger": "off",
   "python.testing.pytestEnabled": true,
   "redhat.telemetry.enabled": true,
+  "telemetry.feedback.enabled": false,
   "terminal.integrated.fontSize": 11,
   "terminal.integrated.inheritEnv": false,
   "trae.chatLanguage": "en",

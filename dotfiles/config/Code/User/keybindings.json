@@ -48,5 +48,15 @@
         "key": "ctrl+alt+r",
         "command": "-smartSort.sortAscending",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "-extension.vim_ctrl+u",
+        "when": "editorTextFocus && vim.active && vim.use<C-u> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "-list.focusPageUp",
+        "when": "listFocus && !inputFocus"
     }
 ]
