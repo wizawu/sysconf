@@ -52,17 +52,14 @@ if [[ "$1" = "-b" ]]; then
     exit
 fi
 
-if [ "$1" == "-s" ]; then
+if [ "$1" == "4k" ]; then
   set -ex
-  test -n "$2"
-  until [ -n "${DISPLAYS[$2]}" ]; do
+  until [ -n "$(xrandr | grep 'connected 3840')" ]; do
     sleep 1
-    DISPLAYS=("" $(xrandr | grep -w connected | awk '{print $1}'))
   done
-  for i in {1..5}; do
-    xrandr --output ${DISPLAYS[$i]} --auto
-    xrandr --output ${DISPLAYS[$i]} --gamma 0.9:0.9:1.0
-  done
+  xrandr | grep 'connected 3840' | cut -d " " -f 1 | xargs -I{} xrandr --output {} --auto
+  xrandr | grep 'connected 3840' | cut -d " " -f 1 | xargs -I{} xrandr --output {} --gamma 0.9:0.9:1.0
+  xrandr | grep -w connected | grep -v 'connected 3840' | cut -d " " -f 1 | xargs -I{} xrandr --output {} --off
   exit
 fi
 
