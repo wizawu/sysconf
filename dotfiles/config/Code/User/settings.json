@@ -1,8 +1,11 @@
 {
+  "C_Cpp.clang_format_fallbackStyle": "Webkit",
+  "C_Cpp.clang_format_style": "Webkit",
   "C_Cpp.default.cppStandard": "gnu++20",
   "C_Cpp.default.includePath": [
     "vcpkg_installed/x64-linux/include"
   ],
+  "C_Cpp.formatting": "clangFormat",
   "Prettier-SQL.SQLFlavourOverride": "mariadb",
   "[css]": {
     "editor.detectIndentation": true,
