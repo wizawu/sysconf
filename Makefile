@@ -2,7 +2,7 @@ install:
 	ansible-playbook -b -e user=wizawu install.yml
 
 cron:
-	ansible-playbook cron.yml
+	ansible localhost -b -m cron -a "name=updatedb special_time=daily job='updatedb --prunepaths=/run/user'"
 
 mysql:
 	sudo mkdir -p /var/lib/mysql
