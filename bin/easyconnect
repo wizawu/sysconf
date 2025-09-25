@@ -1,4 +1,5 @@
 #!/bin/sh
 
+pgrep ECAgent && exit 1
 sudo systemctl restart EasyMonitor.service
 exec /usr/share/sangfor/EasyConnect/EasyConnect "$@"
