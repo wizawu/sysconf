@@ -1,6 +1,10 @@
 install:
 	ansible-playbook -b -e user=wizawu install.yml
 
+upgrade:
+	sudo apt-get update
+	sudo apt-get install -y code google-chrome-stable
+
 cron:
 	ansible localhost -b -m cron -a "name=updatedb special_time=daily job='updatedb --prunepaths=/run/user'"
 
