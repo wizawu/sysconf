@@ -6,7 +6,7 @@ upgrade:
 	sudo apt-get install -y code google-chrome-stable
 
 cron:
-	ansible localhost -b -m cron -a "name=updatedb special_time=daily job='updatedb --prunepaths=/run/user'"
+	ansible localhost -b -m cron -a "name=updatedb special_time=daily job='/usr/bin/updatedb --prunepaths=/run/user'"
 
 mysql:
 	sudo mkdir -p /var/lib/mysql
