@@ -29,8 +29,8 @@
     - jeff-hykin.better-dockerfile-syntax
     - marscode.marscode-extension
     - michelemelluso.code-beautifier
-    - mikeburgh.xml-format
     - mike-lischke.vscode-antlr4
+    - mikeburgh.xml-format
     - ms-python.black-formatter
     - ms-python.debugpy
     - ms-python.isort
@@ -41,6 +41,7 @@
     - redhat.vscode-yaml
     - sgryjp.vscode-stable-sort
     - streetsidesoftware.code-spell-checker
+    - syntaf.vscode-pytest-runner
     - tobiasalthoff.atom-material-theme
     - vscodevim.vim
   become: true

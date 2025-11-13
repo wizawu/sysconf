@@ -118,7 +118,6 @@
     "./lib"
   ],
   "python.createEnvironment.trigger": "off",
-  "python.testing.pytestEnabled": true,
   "redhat.telemetry.enabled": true,
   "telemetry.feedback.enabled": false,
   "terminal.integrated.fontSize": 11,
