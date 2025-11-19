@@ -58,5 +58,10 @@
         "key": "ctrl+u",
         "command": "-list.focusPageUp",
         "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "trae.add.context.menu",
+        "when": "editorFocus"
     }
 ]

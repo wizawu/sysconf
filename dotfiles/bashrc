@@ -3,9 +3,9 @@
 
 # basic
 export EDITOR=vim
-export HISTFILESIZE=10000
-export HISTSIZE=10000
-export HISTTIMEFORMAT="%d/%m/%y %T "
+export HISTFILESIZE=50000
+export HISTSIZE=50000
+export HISTTIMEFORMAT="%y-%m-%d %T "
 export JAVA_HOME=/usr/lib/jvm/default-jdk
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
