@@ -17,9 +17,3 @@ jobs:
 
       - name: push proxy image
         run: docker push wizawu/proxy:latest
-
-      - name: build postgres image
-        run: cd docker/postgres && docker build . -t wizawu/postgres:latest
-
-      - name: push postgres image
-        run: docker push wizawu/postgres:latest

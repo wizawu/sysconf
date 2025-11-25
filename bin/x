@@ -55,7 +55,7 @@ fi
 if [ "$1" == "4k" ]; then
   set -ex
   until [ -n "$(xrandr | grep 'connected .*3840')" ]; do
-    sleep 1
+    sleep 3
   done
   xrandr | grep 'connected .*3840' | cut -d " " -f 1 | xargs -I{} xrandr --output {} --auto
   xrandr | grep 'connected .*3840' | cut -d " " -f 1 | xargs -I{} xrandr --output {} --gamma 0.9:0.9:1.0
