@@ -10,5 +10,5 @@ elif [ "$1" = off ]; then
     sudo VBoxManage controlvm wxwork poweroff
 else
     # sudo qt5ct, choose `darker` color scheme
-    sudo env QT_QPA_PLATFORMTHEME=qt5ct VBoxManage startvm wxwork --type gui
+    sudo env QT_QPA_PLATFORMTHEME=qt5ct QT_SCALE_FACTOR=0.9 VBoxManage startvm wxwork --type gui
 fi
