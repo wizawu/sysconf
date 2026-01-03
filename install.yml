@@ -106,7 +106,6 @@
           - psmisc
           - pulseaudio
           - putty-tools
-          - redis-server
           - rinetd
           - rlwrap
           - rsync
