@@ -62,7 +62,6 @@ alias pyfmt='bash -c "isort -l 120 \$0 \$@ && black -l 120 \$0 \$@"'
 alias randn='shuf -i 1-9223372036854775807 -n 1'
 alias rm='rm -I'
 alias si='sudo -i'
-alias suspend='sleep 9 && sudo systemctl suspend'
 alias tarip='tar --strip-components=1 -x -f'
 alias tgit="tsocks git"
 alias timev="/usr/bin/time -v"
