@@ -1,4 +1,0 @@
-#!/bin/bash
-
-~/local/graalvm-ce-java11/languages/js/bin/node \
-    --jvm --experimental-options --js.nashorn-compat=true "$@"
