@@ -1,6 +1,0 @@
-#!/bin/bash
-
-set -ex
-setxkbmap -layout us
-dconf write /org/mate/desktop/peripherals/mouse/accel-profile "'flat'"
-dconf write /org/mate/desktop/peripherals/mouse/motion-acceleration "$1"
