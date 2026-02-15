@@ -226,6 +226,7 @@
       become_user: "{{user}}"
       with_items:
         - bashrc
+        - config/opencode/opencode.json
         - gitconfig
         - gradle/gradle.properties
         - sqliterc

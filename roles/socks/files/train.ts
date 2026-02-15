@@ -7,10 +7,7 @@ const log = LoggerFactory.getLogger("\t\b\b\b\b\b\b\b")
 log.level = "debug"
 
 const data = [
-  ...JSON.parse(fs.readFileSync("./data.38.json", "utf-8")),
-  ...JSON.parse(fs.readFileSync("./data.39.json", "utf-8")),
-  ...JSON.parse(fs.readFileSync("./data.40.json", "utf-8")),
-  ...JSON.parse(fs.readFileSync("./data.41.json", "utf-8")),
+  ...JSON.parse(fs.readFileSync("./data.42.json", "utf-8")),
 ]
 
 const net = new brain.NeuralNetwork()
@@ -35,7 +32,7 @@ export function train() {
       output: [it.prefer],
     })),
     {
-      iterations: 99999,
+      iterations: 30000,
       log: it => log.debug(it),
       logPeriod: 1000,
       learningRate: 0.01,
@@ -71,7 +68,7 @@ export function writeData(i: number): void {
     if ([err0, err1, spd0, spd1, blk0, blk1, bw0, bw1].every(it => !it)) {
       return
     }
-    if (whiteList.some(it => it === site || site.endsWith("." + it))) {
+    if (whiteList.some(it => it === site || site.endsWith("." + it)) || site.endsWith(".cn")) {
       buffer.push(JSON.stringify({ site, err0, err1, spd0, spd1, blk0, blk1, bw0, bw1, prefer: 0 }))
     }
     if (blackList.some(it => it === site || site.endsWith("." + it))) {
@@ -89,8 +86,6 @@ const whiteList = [
   "bcebos.com",
   "bdimg.com",
   "csdn.net",
-  "csdnimg.cn",
-  "gtimg.cn",
   "gtimg.com",
   "idqqimg.com",
   "ifanr.com",
