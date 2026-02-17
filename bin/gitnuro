@@ -2,4 +2,4 @@
 
 set -e
 cd ~/local
-exec zulu-17-jre/bin/java -jar Gitnuro-linux-*.jar
+exec ibm-semeru-25.0.2/bin/java -jar Gitnuro-linux-*.jar

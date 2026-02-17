@@ -8,6 +8,7 @@ log.level = "debug"
 
 const data = [
   ...JSON.parse(fs.readFileSync("./data.42.json", "utf-8")),
+  ...JSON.parse(fs.readFileSync("./data.43.json", "utf-8")),
 ]
 
 const net = new brain.NeuralNetwork()
@@ -32,7 +33,7 @@ export function train() {
       output: [it.prefer],
     })),
     {
-      iterations: 30000,
+      iterations: 50000,
       log: it => log.debug(it),
       logPeriod: 1000,
       learningRate: 0.01,
@@ -128,6 +129,7 @@ const blackList = [
   "oracle.com",
   "quora.com",
   "readthedocs.io",
+  "solidot.org",
   "stripe.com",
   "yahoo.com",
 ]
