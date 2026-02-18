@@ -19,10 +19,11 @@ const log = LoggerFactory.getLogger("\t\b\b\b\b\b\b\b")
 
 let online = true
 setInterval(() => {
-  const child = spawnSync("curl", "-Ik -m 5 https://223.5.5.5/".split(" "))
+  const child = spawnSync("curl", "-Iks -m 5 https://223.5.5.5/".split(" "), { stdio: [null, "pipe", "pipe"] })
   online = child.status === 0
   if (!online) {
     log.warn("I am offline")
+    log.warn(child.stderr?.toString())
     db.exec(`delete from history where time < ${Date.now() - 30 * 86400 * 1000}`)
     db.exec("VACUUM")
   }

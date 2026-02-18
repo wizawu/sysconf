@@ -37,7 +37,7 @@ brook:
 		--name brook \
 		--restart always \
 		--network host \
-		--dns 1.2.4.8 --dns 8.8.8.8 \
+		--dns 119.29.29.29 --dns 8.8.8.8 \
 		--log-opt max-file=10 --log-opt max-size=100m \
 		--entrypoint /bin/sh \
 		docker.io/wizawu/proxy:latest \
@@ -52,7 +52,7 @@ socks:
 		--name socks \
 		--restart always \
 		--network host \
-		--dns 1.2.4.8 --dns 8.8.8.8 \
+		--dns 223.5.5.5 --dns 8.8.8.8 \
 		--log-opt max-file=10 --log-opt max-size=100m \
 		-v $(PWD)/roles/socks/files:/opt/proxy -w /opt/proxy \
 		--entrypoint /usr/local/bin/npm \

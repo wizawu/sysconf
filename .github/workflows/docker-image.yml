@@ -13,7 +13,7 @@ jobs:
         run: echo ${{secrets.DOCKER_HUB_PASSWORD}} | docker login -u wizawu --password-stdin
 
       - name: build proxy image
-        run: cd docker/proxy && docker build . -t wizawu/proxy:latest
+        run: echo docker build docker/proxy -t wizawu/proxy:latest
 
       - name: push proxy image
-        run: docker push wizawu/proxy:latest
+        run: echo docker push wizawu/proxy:latest

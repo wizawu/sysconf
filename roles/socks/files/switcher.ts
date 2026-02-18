@@ -16,6 +16,7 @@ export function select(upstream: string): store.Backend {
       const spd1r = Math.round(spd1 * 100) / 100
       const next = train.classify(upstream, [err0, err1, spd0r, spd1r, blk0, blk1, bw0, bw1])
       if (Number(result.prefer) !== next) {
+        log.info(`train ${result.prefer} - ${upstream}`)
         store.updateDomain(upstream, next, "TRAIN")
       }
     }, 0)
@@ -25,15 +26,17 @@ export function select(upstream: string): store.Backend {
     const [like0b, like1b] = store.likeDomain("%." + upstream.split(".").slice(-2, -1)[0] + ".%", [0, 1])
     let prefer = like0a + like0b > like1a + like1b ? 0 : 1
     log.info(`prefer (${like0a + like0b}, ${like1a + like1b}) - ${upstream}`)
-    for (const t of [2, 3, 5]) {
-      const child = spawnSync("curl", `-I -L -k -m 0.${t} https://${upstream}/`.split(" "))
+    for (const port of [80, 80, 443]) {
+      const child = spawnSync("nc", `-vz -w 1 ${upstream} ${port}`.split(" "), { stdio: [null, "pipe", "pipe"] })
       if (child.status === 0) {
         prefer = 0
         break
+      } else {
+        log.debug(child.stderr?.toString())
       }
     }
-    log.info(`prefer ${prefer} - ${upstream}`)
-    store.updateDomain(upstream, prefer, "INIT")
+    log.info(`reset ${prefer} - ${upstream}`)
+    store.updateDomain(upstream, prefer, "RESET")
     return store.backendList[prefer]
   }
 }
