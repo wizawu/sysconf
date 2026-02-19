@@ -133,6 +133,7 @@
   "workbench.colorTheme": "Atom Material Theme",
   "workbench.editor.enablePreview": false,
   "workbench.editor.restoreViewState": false,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
   "workbench.startupEditor": "none",
   "workbench.tree.indent": 16,
   "yaml.validate": false

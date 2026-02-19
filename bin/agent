@@ -3,13 +3,13 @@
 set -ex
 test -n "$1"
 
-WORKSPACE=$(cd $1 && pwd)
+WORKSPACE=$(cd "${@: -1}" && pwd)
 
 docker run --rm -it \
     --user $(id -u):$(id -g) \
     -v /etc/passwd:/etc/passwd:ro \
     -v /etc/group:/etc/group:ro \
-    -v /home/wizawu/.kimi:/root/.kimi \
+    -v /home/wizawu/.kimi:/home/wizawu/.kimi \
     -v $WORKSPACE:$WORKSPACE \
     -w $WORKSPACE \
-    wizawu/agent:latest kimi
+    wizawu/agent:latest kimi "${@:1:$#-1}"
