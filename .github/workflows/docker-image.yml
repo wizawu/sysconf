@@ -12,8 +12,8 @@ jobs:
       - name: login registry
         run: echo ${{secrets.DOCKER_HUB_PASSWORD}} | docker login -u wizawu --password-stdin
 
-      - name: build proxy image
-        run: echo docker build docker/proxy -t wizawu/proxy:latest
+      - name: build agent image
+        run: docker build docker/agent -t wizawu/agent:latest
 
-      - name: push proxy image
-        run: echo docker push wizawu/proxy:latest
+      - name: push agent image
+        run: docker push wizawu/agent:latest
