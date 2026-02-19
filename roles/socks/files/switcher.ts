@@ -22,10 +22,7 @@ export function select(upstream: string): store.Backend {
     }, 0)
     return store.backendList[result.prefer]
   } else {
-    const [like0a, like1a] = store.likeDomain("%." + upstream.split(".").slice(-2).join("."), [0, 1])
-    const [like0b, like1b] = store.likeDomain("%." + upstream.split(".").slice(-2, -1)[0] + ".%", [0, 1])
-    let prefer = like0a + like0b > like1a + like1b ? 0 : 1
-    log.info(`prefer (${like0a + like0b}, ${like1a + like1b}) - ${upstream}`)
+    let prefer = 1
     for (const port of [80, 80, 443]) {
       const child = spawnSync("nc", `-vz -w 1 ${upstream} ${port}`.split(" "), { stdio: [null, "pipe", "pipe"] })
       if (child.status === 0) {

@@ -8,6 +8,7 @@
       - docker==4.4.4
       - isort
       - pipdeptree
+      - uv
       - yq==2.13.0
     executable: pip3
     extra_args: --break-system-packages

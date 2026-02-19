@@ -19,7 +19,9 @@ const log = LoggerFactory.getLogger("\t\b\b\b\b\b\b\b")
 
 let online = true
 setInterval(() => {
-  const child = spawnSync("curl", "-Iks -m 5 https://223.5.5.5/".split(" "), { stdio: [null, "pipe", "pipe"] })
+  const child = spawnSync("curl", "-Ik --no-progress-meter -m 5 https://223.5.5.5/".split(" "), {
+    stdio: [null, "pipe", "pipe"],
+  })
   online = child.status === 0
   if (!online) {
     log.warn("I am offline")
@@ -59,12 +61,6 @@ db.exec("create index if not exists history_idx_time on history(time)")
 export function allDomains(): string[] {
   const result = db.prepare("select * from site").all()
   return result.map(it => it.site)
-}
-
-export function likeDomain(site: string, prefer: number[]): number[] {
-  return prefer.map(
-    it => db.prepare("select * from site where site like @site and prefer = @prefer").all({ site, prefer: it }).length,
-  )
 }
 
 export function selectDomain(site: string): Record<string, any> {
