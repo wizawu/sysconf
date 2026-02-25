@@ -2,6 +2,11 @@
 
 set -e
 
+if [[ "$1" == "init" ]]; then
+    /usr/bin/git "$@"
+    exit 0
+fi
+
 if [[ $PWD == /home/wizawu/repos/* ]]; then
     /usr/bin/git config user.name $(echo d2h1YWwK | base64 -d)
     /usr/bin/git config user.email $(echo d2h1YWxAc2VydnlvdS5jb20uY24K | base64 -d)
