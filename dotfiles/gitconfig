@@ -11,6 +11,8 @@
 [user]
     email = wizawu@gmail.com
     name = wizawu
+[safe]
+    directory = *
 [alias]
     co = checkout
     dc = diff --cached
