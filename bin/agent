@@ -10,6 +10,7 @@ docker run --rm -it \
     --network host \
     -v /etc/passwd:/etc/passwd:ro \
     -v /etc/group:/etc/group:ro \
+    -v /home/wizawu/.agents/skills:/home/wizawu/.agents/skills \
     -v /home/wizawu/.kimi:/home/wizawu/.kimi \
     -v $WORKSPACE:$WORKSPACE \
     -w $WORKSPACE \
