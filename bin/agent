@@ -1,9 +1,10 @@
 #!/bin/bash
 
 set -ex
-test -n "$1"
+test -d "$1"
 
-WORKSPACE=$(cd "${@: -1}" && pwd)
+WORKSPACE=$(cd "$1" && pwd)
+shift 1
 
 docker run --rm -it \
     --user $(id -u):$(id -g) \
@@ -13,4 +14,4 @@ docker run --rm -it \
     -v /home/wizawu/.kimi:/home/wizawu/.kimi \
     -v $WORKSPACE:$WORKSPACE \
     -w $WORKSPACE \
-    wizawu/agent:latest kimi "${@:1:$#-1}"
+    wizawu/agent:latest kimi "$@"
