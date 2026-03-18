@@ -4,6 +4,7 @@ set -ex
 test -d "$1"
 
 WORKSPACE=$(cd "$1" && pwd)
+test "$WORKSPACE" != "/home/wizawu"
 shift 1
 
 docker run --rm -it \

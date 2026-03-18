@@ -15,7 +15,7 @@ RUN apt-get update -qq && \
 
 ENV PIP_BREAK_SYSTEM_PACKAGES=1
 ENV PIP_INDEX_URL=https://pypi.tuna.tsinghua.edu.cn/simple
-RUN pip install --no-cache-dir kimi-cli==1.16.0 beautifulsoup4 easyofd lxml openpyxl pandas pdf2image pdfplumber pillow pypdf pypdfium2 pytesseract pyyaml reportlab
+RUN pip install --no-cache-dir kimi-cli==1.22.0 beautifulsoup4 easyofd lxml openpyxl pandas pdf2image pdfplumber pillow pypdfium2 pytesseract pyyaml reportlab
 
 RUN mkdir -p /home/wizawu
 RUN git clone --depth 1 https://github.com/anthropics/skills.git /home/wizawu/.claude
