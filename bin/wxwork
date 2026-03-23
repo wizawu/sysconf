@@ -3,12 +3,12 @@
 set -ex
 
 if [ "$1" = pause ]; then
-    sudo VBoxManage controlvm wxwork savestate
+    sudo VBoxManage controlvm wework savestate
 elif [ "$1" = reset ]; then
-    sudo VBoxManage controlvm wxwork reset
+    sudo VBoxManage controlvm wework reset
 elif [ "$1" = off ]; then
-    sudo VBoxManage controlvm wxwork poweroff
+    sudo VBoxManage controlvm wework poweroff
 else
     # sudo qt5ct, choose `darker` color scheme
-    sudo env QT_QPA_PLATFORMTHEME=qt5ct QT_SCALE_FACTOR=0.9 VBoxManage startvm wxwork --type gui
+    sudo env QT_QPA_PLATFORMTHEME=qt5ct QT_SCALE_FACTOR=0.9 VBoxManage startvm wework --type gui
 fi
