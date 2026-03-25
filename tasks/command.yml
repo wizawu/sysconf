@@ -36,6 +36,7 @@
       - nethogs
       - npm
       - postgresql-client
+      - proxychains4
       - pv
       - python3-pip
       - rar
