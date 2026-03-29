@@ -45,7 +45,6 @@
       - time
       - tmux
       - tree
-      - tsocks
       - uidmap
       - unrar
       - unzip
