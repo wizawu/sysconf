@@ -84,6 +84,14 @@ The `bin/agent` script runs kimi-cli in a Docker container:
 agent /path/to/workspace [kimi-cli arguments]
 ```
 
+#### Docker Agent Environment Variables
+
+The agent image includes the following environment variables:
+- `PLAYWRIGHT_BROWSERS_PATH=/var/playwright` - Playwright browsers installation directory
+- `CHROME_EXECUTABLE_PATH=/var/playwright/chrome` - Stable path to Chromium executable
+- `PIP_INDEX_URL=https://pypi.tuna.tsinghua.edu.cn/simple` - PyPI mirror for Python packages
+- `PIP_BREAK_SYSTEM_PACKAGES=1` - Allow pip to install system packages
+
 ## Configuration Files
 
 ### System Configurations (symlinked to /etc)
@@ -93,6 +101,8 @@ Files in `etc/` are symlinked to system directories during installation:
 - `etc/X11/xorg.conf.d/` - X11 configurations
 - `etc/fonts/conf.d/` - Font configurations
 - `etc/xdg/awesome/rc.lua` - Awesome WM configuration
+- `etc/proxychains1.conf` - ProxyChains config for local SOCKS (1081)
+- `etc/proxychains2.conf` - ProxyChains config for VM SOCKS (192.168.56.2:1080)
 
 ### User Dotfiles (symlinked to ~/.*)
 
@@ -146,7 +156,8 @@ No automated tests in this repository. The project is tested manually through:
 ### Docker Images
 
 Built automatically via GitHub Actions on push to main branch:
-- `wizawu/agent:latest` - AI agent image with kimi-cli
+- `wizawu/agent:latest` - AI agent image with kimi-cli, Playwright (Chromium), and various Python tools
+  - Playwright Chromium installed to `/var/playwright` with stable symlink at `/var/playwright/chrome`
 
 ### Manual Deployment
 
@@ -180,7 +191,7 @@ Defined in `.bashrc`:
 - `JAVA_HOME=/usr/lib/jvm/default-jdk`
 - `VCPKG_ROOT=$HOME/local/vcpkg`
 - `CMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake`
-- `UV_INDEX_URL=https://mirrors.tencent.com/pypi/simple`
+- `PIP_INDEX_URL=https://mirrors.aliyun.com/pypi/simple`
 - `PIP_BREAK_SYSTEM_PACKAGES=1`
 
 ## Custom Bin Scripts
@@ -194,11 +205,20 @@ The `bin/` directory contains custom utility scripts:
 - `compress-pdf` - PDF compression
 - See `bin/` directory for more
 
+### Bash Aliases
+
+Key aliases defined in `.bashrc`:
+- `pc1`, `pc2` - ProxyChains with different configs (local/VM)
+- `pyfmt` - Format Python with isort + black
+- `tsfmt` - Format TypeScript with prettier
+- `psync` - Rsync with progress
+- `myip` - Show public IP address
+
 ## Mirror Configuration
 
 The project uses Chinese mirrors for faster downloads:
 - APT: mirrors.tencent.com, mirrors.aliyun.com
-- PyPI: mirrors.tencent.com/pypi/simple
+- PyPI: mirrors.aliyun.com/pypi/simple (was mirrors.tencent.com)
 - Node.js: npmmirror.com/mirrors/node
 
 ## Notes
