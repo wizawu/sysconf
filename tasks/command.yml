@@ -52,6 +52,7 @@
       - valgrind
       - whois
       - wput
+      - wtmpdb
       - yamllint
       - zstd
 
