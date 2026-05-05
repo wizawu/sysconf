@@ -2,6 +2,7 @@ FROM ubuntu:25.10
 
 ENV DEBIAN_FRONTEND=noninteractive
 
+RUN sed -i 's|http://.*.ubuntu.com/ubuntu|http://mirrors.tuna.tsinghua.edu.cn/ubuntu|g' /etc/apt/sources.list.d/ubuntu.sources
 RUN apt-get update -qq && \
     apt-get install -y --no-install-recommends \
         python3.13 \
