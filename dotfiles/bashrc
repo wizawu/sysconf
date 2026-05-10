@@ -17,6 +17,8 @@ export TRASH_DIR=$HOME/.local/share/Trash
 export VCPKG_DISABLE_METRICS=1
 export VCPKG_ROOT=$HOME/local/vcpkg
 export CMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake
+export GOPROXY=https://goproxy.cn,direct
+export GOPATH=$HOME/github/go
 export PATH=$HOME/.sysconf/bin:$VCPKG_ROOT:$JAVA_HOME/bin:/opt/intel/oneapi/compiler/latest/bin:/usr/sbin:$PATH
 
 # terminal
