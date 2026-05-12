@@ -10,6 +10,7 @@ RUN apt-get update -qq && \
         ca-certificates \
         curl \
         git \
+        jq \
         && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
@@ -22,6 +23,10 @@ RUN pip install --no-cache-dir kimi-cli==1.42.0 playwright==1.58.0 beautifulsoup
 ENV PLAYWRIGHT_BROWSERS_PATH=/var/lib/playwright
 RUN playwright install --with-deps chromium
 ENV CHROME_EXECUTABLE_PATH=/var/lib/playwright/chromium-1208/chrome-linux64/chrome
+
+RUN curl -fsSL -o /tmp/crush.deb https://github.com/charmbracelet/crush/releases/download/v0.67.0/crush_0.67.0_amd64.deb && \
+    dpkg -i /tmp/crush.deb && \
+    rm -f /tmp/crush.deb
 
 RUN mkdir -p /home/wizawu
 RUN git clone --depth 1 https://github.com/anthropics/skills.git /home/wizawu/.claude
