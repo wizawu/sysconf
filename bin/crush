@@ -1,0 +1,19 @@
+#!/bin/bash
+
+set -ex
+test -d "$1"
+
+WORKSPACE=$(cd "$1" && pwd)
+test "$WORKSPACE" != "/home/wizawu"
+shift 1
+
+docker run --rm -it \
+    --user $(id -u):$(id -g) \
+    --network host \
+    -v /etc/passwd:/etc/passwd:ro \
+    -v /etc/group:/etc/group:ro \
+    -v /home/wizawu/.crush:/home/wizawu/.crush \
+    -v /home/wizawu/.local/share/crush:/home/wizawu/.local/share/crush \
+    -v $WORKSPACE:$WORKSPACE \
+    -w $WORKSPACE \
+    wizawu/agent:latest crush -y "$@"
