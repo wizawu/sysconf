@@ -18,15 +18,15 @@ RUN apt-get update -qq && \
 RUN test -f /usr/bin/python || ln -sf /usr/bin/python3 /usr/bin/python
 ENV PIP_BREAK_SYSTEM_PACKAGES=1
 ENV PIP_INDEX_URL=https://pypi.tuna.tsinghua.edu.cn/simple
-RUN pip install --no-cache-dir kimi-cli==1.43.0 playwright==1.58.0 beautifulsoup4 easyofd lxml openpyxl pandas pdfplumber pillow pypdfium2 pyyaml reportlab
+RUN pip install --no-cache-dir kimi-cli==1.44.0 playwright==1.58.0 beautifulsoup4 easyofd lxml openpyxl pandas pdfplumber pillow pypdfium2 pyyaml reportlab
 
 ENV PLAYWRIGHT_BROWSERS_PATH=/var/lib/playwright
 RUN playwright install --with-deps chromium
 ENV CHROME_EXECUTABLE_PATH=/var/lib/playwright/chromium-1208/chrome-linux64/chrome
 
-RUN curl -fsSL -o /tmp/crush.deb https://github.com/charmbracelet/crush/releases/download/v0.67.0/crush_0.67.0_amd64.deb && \
-    dpkg -i /tmp/crush.deb && \
-    rm -f /tmp/crush.deb
+RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v0.74.0/pi-linux-x64.tar.gz | \
+    tar xf - -C /usr/local && \
+    ln -sf /usr/local/pi/pi /usr/bin/pi
 
 RUN mkdir -p /home/wizawu/.config/agents && \
     git clone --depth 1 https://github.com/anthropics/skills.git /tmp/skills && \

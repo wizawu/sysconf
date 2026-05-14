@@ -12,8 +12,7 @@ docker run --rm -it \
     --network host \
     -v /etc/passwd:/etc/passwd:ro \
     -v /etc/group:/etc/group:ro \
-    -v /home/wizawu/.crush:/home/wizawu/.crush \
-    -v /home/wizawu/.local/share/crush:/home/wizawu/.local/share/crush \
+    -v /home/wizawu/.pi:/home/wizawu/.pi \
     -v $WORKSPACE:$WORKSPACE \
     -w $WORKSPACE \
-    wizawu/agent:latest crush -y "$@"
+    wizawu/agent:latest pi "$@"
