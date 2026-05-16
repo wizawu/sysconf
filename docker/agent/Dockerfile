@@ -33,6 +33,8 @@ RUN wget -q -O- https://qoder-ide.oss-accelerate.aliyuncs.com/qodercli/releases/
     tar zxf - -C /usr/bin && \
     mv /usr/bin/qodercli /usr/bin/qoder
 
+RUN chmod 755 /usr/bin
+
 RUN mkdir -p /home/wizawu/.config/agents && \
     git clone --depth 1 https://github.com/anthropics/skills.git /tmp/skills && \
     mv /tmp/skills/skills /home/wizawu/.config/agents/skills && \
