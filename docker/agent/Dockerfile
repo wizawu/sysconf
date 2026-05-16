@@ -19,7 +19,7 @@ RUN apt-get update -qq && \
 RUN test -f /usr/bin/python || ln -sf /usr/bin/python3 /usr/bin/python
 ENV PIP_BREAK_SYSTEM_PACKAGES=1
 ENV PIP_INDEX_URL=https://pypi.tuna.tsinghua.edu.cn/simple
-RUN pip install --no-cache-dir kimi-cli==1.44.0 playwright==1.58.0 beautifulsoup4 easyofd lxml openpyxl pandas pdfplumber pillow pypdfium2 pyyaml reportlab
+RUN pip install --no-cache-dir kimi-cli==1.44.0 playwright==1.58.0 beautifulsoup4 easyofd lxml markdown openpyxl pandas pdfplumber pillow pypdfium2 python-docx pyyaml requests
 
 ENV PLAYWRIGHT_BROWSERS_PATH=/var/lib/playwright
 RUN playwright install --with-deps chromium
@@ -28,6 +28,10 @@ ENV CHROME_EXECUTABLE_PATH=/var/lib/playwright/chromium-1208/chrome-linux64/chro
 RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v0.74.0/pi-linux-x64.tar.gz | \
     tar zxf - -C /usr/local && \
     ln -sf /usr/local/pi/pi /usr/bin/pi
+
+RUN wget -q -O- https://qoder-ide.oss-accelerate.aliyuncs.com/qodercli/releases/0.2.16/qodercli-linux-x64.tar.gz | \
+    tar zxf - -C /usr/bin && \
+    mv /usr/bin/qodercli /usr/bin/qoder
 
 RUN mkdir -p /home/wizawu/.config/agents && \
     git clone --depth 1 https://github.com/anthropics/skills.git /tmp/skills && \
