@@ -13,7 +13,6 @@ docker run --rm -it \
     -v /etc/passwd:/etc/passwd:ro \
     -v /etc/group:/etc/group:ro \
     -v /home/wizawu/.qoder:/home/wizawu/.qoder \
-    -v /home/wizawu/.qoder-cli:/home/wizawu/.qoder-cli \
     -v $WORKSPACE:$WORKSPACE \
     -w $WORKSPACE \
     wizawu/agent:latest qoder --yolo "$@"

@@ -15,4 +15,4 @@ docker run --rm -it \
     -v /home/wizawu/.kimi:/home/wizawu/.kimi \
     -v $WORKSPACE:$WORKSPACE \
     -w $WORKSPACE \
-    wizawu/agent:latest kimi -y "$@"
+    wizawu/agent:latest kimi --yolo "$@"

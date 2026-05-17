@@ -25,7 +25,7 @@ ENV PLAYWRIGHT_BROWSERS_PATH=/var/lib/playwright
 RUN playwright install --with-deps chromium
 ENV CHROME_EXECUTABLE_PATH=/var/lib/playwright/chromium-1208/chrome-linux64/chrome
 
-RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v0.74.0/pi-linux-x64.tar.gz | \
+RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v0.74.1/pi-linux-x64.tar.gz | \
     tar zxf - -C /usr/local && \
     ln -sf /usr/local/pi/pi /usr/bin/pi
 
