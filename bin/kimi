@@ -4,7 +4,7 @@ set -ex
 test -d "$1"
 
 WORKSPACE=$(cd "$1" && pwd)
-test "$WORKSPACE" != "/home/wizawu"
+test "$WORKSPACE" != "$HOME"
 shift 1
 
 docker run --rm -it \
@@ -12,7 +12,7 @@ docker run --rm -it \
     --network host \
     -v /etc/passwd:/etc/passwd:ro \
     -v /etc/group:/etc/group:ro \
-    -v /home/wizawu/.kimi:/home/wizawu/.kimi \
+    -v $HOME/.kimi:$HOME/.kimi \
     -v $WORKSPACE:$WORKSPACE \
     -w $WORKSPACE \
     wizawu/agent:latest kimi --yolo "$@"
