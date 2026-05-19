@@ -41,4 +41,4 @@ RUN mkdir -p /home/wizawu/.agents && \
     rm -rf /tmp/skills && \
     mkdir /home/wizawu/.agents/skills/browser
 
-COPY browser/SKILL.md browser/browser.py /home/wizawu/.agents/skills/browser/
+COPY browser/SKILL.md browser/browse.py /home/wizawu/.agents/skills/browser/
