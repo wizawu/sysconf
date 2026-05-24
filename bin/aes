@@ -1,5 +1,4 @@
 #!/usr/bin/env jjs
-///usr/bin/env graaljs
 
 var Base64 = Packages.java.util.Base64
 var Cipher = Packages.javax.crypto.Cipher
@@ -9,16 +8,19 @@ var argv = this.arguments ? arguments : process.argv.slice(2)
 var cipher = Cipher.getInstance("AES")
 var keySpec = new SecretKeySpec(argv[1].getBytes(), "AES")
 
+var scanner = new java.util.Scanner(java.lang.System["in"]).useDelimiter("\\A")
+var stdin = scanner.hasNext() ? scanner.next() : ""
+
 if (argv[0] === "-d") {
   cipher.init(Cipher.DECRYPT_MODE, keySpec)
-  var secret = Base64.getDecoder().decode(argv[2])
+  var secret = Base64.getDecoder().decode(stdin.trim())
   var result = new java.lang.String(cipher.doFinal(secret))
   java.lang.System.out.println(result)
 }
 
 if (argv[0] === "-e") {
   cipher.init(Cipher.ENCRYPT_MODE, keySpec)
-  var secret = cipher.doFinal(argv[2].getBytes())
+  var secret = cipher.doFinal(stdin.getBytes())
   var result = Base64.getEncoder().encodeToString(secret)
   java.lang.System.out.println(result)
 }
