@@ -212,7 +212,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--proxy",
         default=None,
-        help="SOCKS proxy, e.g. socks5://127.0.0.1:1080",
+        help="SOCKS proxy, e.g. socks5://127.0.0.1:1081",
     )
     parser.add_argument(
         "--timeout",

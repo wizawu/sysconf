@@ -25,7 +25,7 @@ python3 browse.py "https://example.com"
 python3 browse.py "python tutorial"
 
 # With SOCKS proxy
-python3 browse.py "https://example.com" --proxy "socks5://127.0.0.1:1080"
+python3 browse.py "https://example.com" --proxy "socks5://127.0.0.1:1081"
 
 # With custom timeout (default 30 s)
 python3 browse.py "https://example.com" --timeout 60000
@@ -40,7 +40,7 @@ python3 browse.py "https://example.com" --format md
 | Argument     | Default    | Description                                 |
 |--------------|------------|---------------------------------------------|
 | `url`        | (required) | URL to visit, or search keywords            |
-| `--proxy`    | None       | SOCKS proxy, e.g. `socks5://127.0.0.1:1080` |
+| `--proxy`    | None       | SOCKS proxy, e.g. `socks5://127.0.0.1:1081` |
 | `--timeout`  | `30000`    | Page load timeout in milliseconds            |
 | `--format`   | None       | Output page content: `txt` or `md`          |
 

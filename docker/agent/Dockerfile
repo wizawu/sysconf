@@ -1,7 +1,6 @@
 FROM ubuntu:25.10
 
 ENV DEBIAN_FRONTEND=noninteractive
-
 RUN sed -i 's|http://.*.ubuntu.com/ubuntu|http://mirrors.tuna.tsinghua.edu.cn/ubuntu|g' /etc/apt/sources.list.d/ubuntu.sources
 RUN apt-get update -qq && \
     apt-get install -y --no-install-recommends \
@@ -19,17 +18,20 @@ RUN apt-get update -qq && \
 RUN test -f /usr/bin/python || ln -sf /usr/bin/python3 /usr/bin/python
 ENV PIP_BREAK_SYSTEM_PACKAGES=1
 ENV PIP_INDEX_URL=https://pypi.tuna.tsinghua.edu.cn/simple
+# https://pypi.org/project/kimi-cli/#history
 RUN pip install --no-cache-dir kimi-cli==1.44.0 playwright==1.58.0 beautifulsoup4 easyofd lxml markdown markdownify openpyxl pandas pdfplumber pillow pypdfium2 python-docx pyyaml requests
 
 ENV PLAYWRIGHT_BROWSERS_PATH=/var/lib/playwright
 RUN playwright install --with-deps chromium
 ENV CHROME_EXECUTABLE_PATH=/var/lib/playwright/chromium-1208/chrome-linux64/chrome
 
-RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v0.75.4/pi-linux-x64.tar.gz | \
+# https://github.com/earendil-works/pi/releases
+RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v0.75.5/pi-linux-x64.tar.gz | \
     tar zxf - -C /usr/local && \
     ln -sf /usr/local/pi/pi /usr/bin/pi
 
-RUN wget -q -O- https://qoder-ide.oss-accelerate.aliyuncs.com/qodercli/releases/1.0.0/qodercli-linux-x64.tar.gz | \
+# https://qoder.com/en/changelog?type=cli
+RUN wget -q -O- https://qoder-ide.oss-accelerate.aliyuncs.com/qodercli/releases/1.0.4/qodercli-linux-x64.tar.gz | \
     tar zxf - -C /usr/bin && \
     mv /usr/bin/qodercli /usr/bin/qoder
 
