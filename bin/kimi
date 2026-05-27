@@ -12,7 +12,7 @@ docker run --rm -it \
     --network host \
     -v /etc/passwd:/etc/passwd:ro \
     -v /etc/group:/etc/group:ro \
-    -v $HOME/.kimi:$HOME/.kimi \
+    -v $HOME/.kimi-code:$HOME/.kimi-code \
     -v $WORKSPACE:$WORKSPACE \
     -w $WORKSPACE \
     wizawu/agent:latest kimi --yolo "$@"
