@@ -18,8 +18,11 @@ RUN apt-get update -qq && \
 RUN test -f /usr/bin/python || ln -sf /usr/bin/python3 /usr/bin/python
 ENV PIP_BREAK_SYSTEM_PACKAGES=1
 ENV PIP_INDEX_URL=https://pypi.tuna.tsinghua.edu.cn/simple
-# https://pypi.org/project/kimi-cli/#history
-RUN pip install --no-cache-dir kimi-cli==1.45.0 playwright==1.58.0 beautifulsoup4 easyofd lxml markdown markdownify openpyxl pandas pdfplumber pillow pypdfium2 python-docx pyyaml requests
+RUN pip install --no-cache-dir playwright==1.58.0 beautifulsoup4 easyofd lxml markdown markdownify openpyxl pandas pdfplumber pillow pypdfium2 python-docx pyyaml requests
+
+# https://code.kimi.com/kimi-code/latest
+RUN wget -q -O /usr/bin/kimi https://code.kimi.com/kimi-code/0.4.0/kimi-code-linux-x64 && \
+    chmod +x /usr/bin/kimi
 
 ENV PLAYWRIGHT_BROWSERS_PATH=/var/lib/playwright
 RUN playwright install --with-deps chromium
