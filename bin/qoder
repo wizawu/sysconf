@@ -7,7 +7,7 @@ WORKSPACE=$(cd "$1" && pwd)
 test "$WORKSPACE" != "$HOME"
 shift 1
 
-docker run --rm -it \
+docker run --rm \
     --user $(id -u):$(id -g) \
     --network host \
     -v /etc/passwd:/etc/passwd:ro \
@@ -15,4 +15,5 @@ docker run --rm -it \
     -v $HOME/.qoder:$HOME/.qoder \
     -v $WORKSPACE:$WORKSPACE \
     -w $WORKSPACE \
+    $([[ "$*" =~ -p ]] || echo -it) \
     wizawu/agent:latest qoder --yolo "$@"

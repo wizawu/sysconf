@@ -21,7 +21,7 @@ ENV PIP_INDEX_URL=https://pypi.tuna.tsinghua.edu.cn/simple
 RUN pip install --no-cache-dir playwright==1.58.0 beautifulsoup4 easyofd lxml markdown markdownify openpyxl pandas pdfplumber pillow pypdfium2 python-docx pyyaml requests
 
 # https://code.kimi.com/kimi-code/latest
-RUN wget -q -O /usr/bin/kimi https://code.kimi.com/kimi-code/0.9.0/kimi-code-linux-x64 && \
+RUN wget -q -O /usr/bin/kimi https://code.kimi.com/kimi-code/0.11.0/kimi-code-linux-x64 && \
     chmod +x /usr/bin/kimi
 
 ENV PLAYWRIGHT_BROWSERS_PATH=/var/lib/playwright
@@ -29,12 +29,12 @@ RUN playwright install --with-deps chromium
 ENV CHROME_EXECUTABLE_PATH=/var/lib/playwright/chromium-1208/chrome-linux64/chrome
 
 # https://github.com/earendil-works/pi/releases
-RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v0.78.0/pi-linux-x64.tar.gz | \
+RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v0.78.1/pi-linux-x64.tar.gz | \
     tar zxf - -C /usr/local && \
     ln -sf /usr/local/pi/pi /usr/bin/pi
 
 # https://qoder.com/en/changelog?type=cli
-RUN wget -q -O- https://qoder-ide.oss-accelerate.aliyuncs.com/qodercli/releases/1.0.13/qodercli-linux-x64.tar.gz | \
+RUN wget -q -O- https://qoder-ide.oss-accelerate.aliyuncs.com/qodercli/releases/1.0.14/qodercli-linux-x64.tar.gz | \
     tar zxf - -C /usr/bin && \
     mv /usr/bin/qodercli /usr/bin/qoder
 
