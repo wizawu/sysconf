@@ -21,7 +21,7 @@ ENV PIP_INDEX_URL=https://pypi.tuna.tsinghua.edu.cn/simple
 RUN pip install --no-cache-dir playwright==1.58.0 beautifulsoup4 easyofd lxml markdown markdownify openpyxl pandas pdfplumber pillow pypdfium2 python-docx pyyaml requests
 
 # https://github.com/MoonshotAI/kimi-code/releases
-RUN wget -q -O /usr/bin/kimi https://code.kimi.com/kimi-code/0.12.1/kimi-code-linux-x64 && \
+RUN wget -q -O /usr/bin/kimi https://code.kimi.com/kimi-code/binaries/0.12.1/kimi-code-linux-x64 && \
     chmod +x /usr/bin/kimi
 
 ENV PLAYWRIGHT_BROWSERS_PATH=/var/lib/playwright
