@@ -16,4 +16,4 @@ docker run --rm \
     -v $WORKSPACE:$WORKSPACE \
     -w $WORKSPACE \
     $([[ "$*" =~ -p ]] || echo -it) \
-    wizawu/agent:latest pi "$@"
+    wizawu/agent:latest pi -a "$@"

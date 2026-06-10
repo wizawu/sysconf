@@ -34,7 +34,7 @@ RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v0.79.1/p
     ln -sf /usr/local/pi/pi /usr/bin/pi
 
 # https://qoder.com/en/changelog?type=cli
-RUN wget -q -O- https://qoder-ide.oss-accelerate.aliyuncs.com/qodercli/releases/1.0.16/qodercli-linux-x64.tar.gz | \
+RUN wget -q -O- https://qoder-ide.oss-accelerate.aliyuncs.com/qodercli/releases/1.0.17/qodercli-linux-x64.tar.gz | \
     tar zxf - -C /usr/bin && \
     mv /usr/bin/qodercli /usr/bin/qoder
 
@@ -42,6 +42,7 @@ RUN chmod 755 /usr/bin
 
 RUN mkdir -p /home/wizawu/.agents && \
     git clone --depth 1 https://github.com/anthropics/skills.git /tmp/skills && \
+    rm -rf /tmp/skills/skills/claude-api && \
     mv /tmp/skills/skills /home/wizawu/.agents/skills && \
     rm -rf /tmp/skills && \
     mkdir /home/wizawu/.agents/skills/browser
