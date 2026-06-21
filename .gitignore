@@ -2,4 +2,5 @@
 *.retry
 *.swp
 .marscode/
+__pycache__/
 debug.yml

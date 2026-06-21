@@ -9,26 +9,36 @@ Browser script using Playwright + Chromium.
 """
 
 import argparse
+
 from playwright.sync_api import sync_playwright
 
 
-def browse(url: str, proxy: str | None = None, timeout: int = 30000, output_format: str | None = None):
+def browse(
+    url: str,
+    proxy: str | None = None,
+    timeout: int = 30000,
+    output_format: str | None = None,
+    locale: str | None = None,
+):
     proxy_config = {"server": proxy} if proxy else None
     resource_info = []  # (url, mime_type, size)
     pending_bodies = []
 
+    context_options = {
+        "viewport": {"width": 1920, "height": 1080},
+        "user_agent": (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/135.0.0.0 Safari/537.36"
+        ),
+        "timezone_id": "Asia/Shanghai",
+    }
+    if locale:
+        context_options["locale"] = locale
+
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True, proxy=proxy_config)
-        context = browser.new_context(
-            viewport={"width": 1920, "height": 1080},
-            user_agent=(
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                "AppleWebKit/537.36 (KHTML, like Gecko) "
-                "Chrome/135.0.0.0 Safari/537.36"
-            ),
-            locale="zh-CN",
-            timezone_id="Asia/Shanghai",
-        )
+        context = browser.new_context(**context_options)
         page = context.new_page()
 
         # Anti-detection: hide webdriver and fake plugins
@@ -75,26 +85,19 @@ def browse(url: str, proxy: str | None = None, timeout: int = 30000, output_form
         while stable_count < 5 and check_count < max_checks:
             page.wait_for_timeout(1000)
             try:
-                text = page.evaluate(
-                    "() => document.body ? document.body.innerText : ''"
-                )
+                text = page.evaluate("() => document.body ? document.body.innerText : ''")
             except Exception:
                 text = ""
             curr_length = len(text) if text else 0
 
             if check_count > 0:
-                growth = (
-                    0.0
-                    if curr_length == 0
-                    else (curr_length - prev_length) / curr_length
-                )
+                growth = 0.0 if curr_length == 0 else (curr_length - prev_length) / curr_length
                 if growth < 0.10:
                     stable_count += 1
                 else:
                     stable_count = 0
                 print(
-                    f"  Check {check_count}: innerText={curr_length}, "
-                    f"growth={growth:.2%}, stable={stable_count}/5"
+                    f"  Check {check_count}: innerText={curr_length}, " f"growth={growth:.2%}, stable={stable_count}/5"
                 )
             else:
                 print(f"  Check {check_count}: innerText={curr_length}")
@@ -103,10 +106,7 @@ def browse(url: str, proxy: str | None = None, timeout: int = 30000, output_form
             check_count += 1
 
         # Fetch bodies for responses without content-length
-        print(
-            f"\nFetching body sizes for {len(pending_bodies)} "
-            f"resources without content-length..."
-        )
+        print(f"\nFetching body sizes for {len(pending_bodies)} " f"resources without content-length...")
         for response in pending_bodies:
             url = response.url
             mime = response.headers.get("content-type", "")
@@ -133,9 +133,7 @@ def browse(url: str, proxy: str | None = None, timeout: int = 30000, output_form
             for entry in perf_entries:
                 name = entry.get("name", "")
                 if name and name not in have_urls:
-                    size = entry.get("transferSize", 0) or entry.get(
-                        "encodedBodySize", 0
-                    )
+                    size = entry.get("transferSize", 0) or entry.get("encodedBodySize", 0)
                     if size > 0:
                         mime = ""
                         if name.endswith(".css"):
@@ -149,9 +147,7 @@ def browse(url: str, proxy: str | None = None, timeout: int = 30000, output_form
             pass
 
         title = page.title()
-        final_text = page.evaluate(
-            "() => document.body ? document.body.innerText : ''"
-        )
+        final_text = page.evaluate("() => document.body ? document.body.innerText : ''")
         char_count = len(final_text) if final_text else 0
         print(f"\nPage Title: {title}")
         print(f"InnerText Characters: {char_count:,}")
@@ -165,8 +161,7 @@ def browse(url: str, proxy: str | None = None, timeout: int = 30000, output_form
                 import markdownify
             except ImportError as exc:
                 raise SystemExit(
-                    "The 'markdownify' package is required for --format md. "
-                    "Install it with: pip install markdownify"
+                    "The 'markdownify' package is required for --format md. " "Install it with: pip install markdownify"
                 ) from exc
             html = page.content()
             md_text = markdownify.markdownify(html, heading_style="ATX")
@@ -181,11 +176,7 @@ def browse(url: str, proxy: str | None = None, timeout: int = 30000, output_form
                 html_size += size
             elif "text/css" in m:
                 css_size += size
-            elif (
-                "javascript" in m
-                or "application/x-javascript" in m
-                or "text/javascript" in m
-            ):
+            elif "javascript" in m or "application/x-javascript" in m or "text/javascript" in m:
                 js_size += size
 
         print("\nResource Sizes:")
@@ -224,8 +215,12 @@ if __name__ == "__main__":
         "--format",
         choices=["txt", "md"],
         default=None,
-        help="Output page content as plain text (txt) or markdown (md). "
-             "Requires 'markdownify' for md.",
+        help="Output page content as plain text (txt) or markdown (md). " "Requires 'markdownify' for md.",
+    )
+    parser.add_argument(
+        "--locale",
+        default=None,
+        help="Optional browser locale, e.g. en-US or zh-CN. If omitted, Playwright default is used.",
     )
     args = parser.parse_args()
 
@@ -235,4 +230,10 @@ if __name__ == "__main__":
         url = f"https://cn.bing.com/search?q={query}"
         print(f"Search mode: {url}")
 
-    browse(url, proxy=args.proxy, timeout=args.timeout, output_format=args.format)
+    browse(
+        url,
+        proxy=args.proxy,
+        timeout=args.timeout,
+        output_format=args.format,
+        locale=args.locale,
+    )
