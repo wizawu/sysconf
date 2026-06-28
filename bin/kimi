@@ -1,11 +1,14 @@
 #!/bin/bash
 
 set -ex
-test -d "$1"
-
-WORKSPACE=$(cd "$1" && pwd)
-test "$WORKSPACE" != "$HOME"
-shift 1
+if [[ -z $1 ]]; then
+  WORKSPACE=/tmp
+else
+  test -d "$1"
+  WORKSPACE=$(cd "$1" && pwd)
+  test "$WORKSPACE" != "$HOME"
+  shift 1
+fi
 
 docker run --rm \
     --user $(id -u):$(id -g) \

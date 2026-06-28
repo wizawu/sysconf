@@ -25,7 +25,7 @@ RUN playwright install --with-deps chromium
 ENV CHROME_EXECUTABLE_PATH=/var/lib/playwright/chromium-1208/chrome-linux64/chrome
 
 # https://github.com/MoonshotAI/kimi-code/releases
-RUN wget -q -O /usr/bin/kimi https://code.kimi.com/kimi-code/binaries/0.19.1/kimi-code-linux-x64 && \
+RUN wget -q -O /usr/bin/kimi https://code.kimi.com/kimi-code/binaries/0.20.1/kimi-code-linux-x64 && \
     chmod +x /usr/bin/kimi
 
 # https://github.com/earendil-works/pi/releases
@@ -34,7 +34,7 @@ RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v0.80.2/p
     ln -sf /usr/local/pi/pi /usr/bin/pi
 
 # https://qoder.com/en/changelog?type=cli
-RUN wget -q -O- https://qoder-ide.oss-accelerate.aliyuncs.com/qodercli/releases/1.0.26/qodercli-linux-x64.tar.gz | \
+RUN wget -q -O- https://qoder-ide.oss-accelerate.aliyuncs.com/qodercli/releases/1.0.32/qodercli-linux-x64.tar.gz | \
     tar zxf - -C /usr/bin && \
     mv /usr/bin/qodercli /usr/bin/qoder
 
