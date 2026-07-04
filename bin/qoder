@@ -2,7 +2,7 @@
 
 set -ex
 if [[ -z $1 ]]; then
-  WORKSPACE=/tmp
+  WORKSPACE=$HOME/tmp
 else
   test -d "$1"
   WORKSPACE=$(cd "$1" && pwd)
