@@ -29,7 +29,7 @@ RUN wget -q -O /usr/bin/kimi https://code.kimi.com/kimi-code/binaries/0.26.0/kim
     chmod +x /usr/bin/kimi
 
 # https://github.com/earendil-works/pi/releases
-RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v0.80.8/pi-linux-x64.tar.gz | \
+RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v0.80.9/pi-linux-x64.tar.gz | \
     tar zxf - -C /usr/local && \
     ln -sf /usr/local/pi/pi /usr/bin/pi
 
