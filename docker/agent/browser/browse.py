@@ -214,7 +214,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--format",
         choices=["txt", "md"],
-        default=None,
+        default="md",
         help="Output page content as plain text (txt) or markdown (md). " "Requires 'markdownify' for md.",
     )
     parser.add_argument(

@@ -47,9 +47,9 @@ python3 browse.py "https://example.com" --format md
 | `--proxy`    | None       | SOCKS proxy, e.g. `socks5://127.0.0.1:1081` |
 | `--timeout`  | `30000`    | Page load timeout in milliseconds            |
 | `--locale`   | None       | Optional browser locale, e.g. `en-US` or `zh-CN`; if omitted, Playwright default is used |
-| `--format`   | None       | Output page content: `txt` or `md`          |
+| `--format`   | `md`       | Output page content: `txt` or `md`          |
 
-Without `--format`, only the summary below is printed — not the page body.
+The default output format is `md`; use `--format txt` to get plain text instead.
 
 ## Output
 
