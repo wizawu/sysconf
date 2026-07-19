@@ -19,7 +19,8 @@ RUN apt-get update -qq && \
 RUN test -f /usr/bin/python || ln -sf /usr/bin/python3 /usr/bin/python
 ENV PIP_BREAK_SYSTEM_PACKAGES=1
 ENV PIP_INDEX_URL=https://pypi.tuna.tsinghua.edu.cn/simple
-RUN pip install --no-cache-dir playwright==1.58.0 beautifulsoup4 easyofd lxml markdown markdownify openpyxl pandas pdfplumber pillow pyotp pypdfium2 python-docx pyyaml requests
+RUN pip install --no-cache-dir specify-cli==0.13.0 playwright==1.58.0 \
+    beautifulsoup4 easyofd lxml markdown markdownify openpyxl pandas pdfplumber pillow pyotp pypdfium2 python-docx pyyaml requests
 
 ENV PLAYWRIGHT_BROWSERS_PATH=/var/lib/playwright
 RUN playwright install --with-deps chromium

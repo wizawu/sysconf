@@ -50,14 +50,6 @@
       - fcitx-googlepinyin
       - fcitx-module-x11
 
-- name: install fcitx skin
-  shell: >-
-    wget https://codeload.github.com/{{item}}/tar.gz/refs/heads/master -qO- |
-    tar zxf - --strip-component=1 -C /usr/share/fcitx/skin/
-  with_items:
-    - 22dm/fcitx-solarized-skin
-    - Yucklys/fcitx-nord-skin
-
 - name: install packages from url
   apt: deb={{item}}
   with_items:
