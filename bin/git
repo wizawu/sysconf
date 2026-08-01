@@ -20,6 +20,12 @@ fi
 if [[ "$1" == "am" ]] && [[ -z "$2" ]]; then
     set -x
     /usr/bin/git commit --amend
+elif [[ $PWD == /home/wizawu/repos/* ]] && [[ "$1" =~ ^(pull|push|pr)$ ]]; then
+    if timeout 0.1 nc -z 192.168.56.2 1080; then
+        proxychains -q -f $(dirname $0)/../etc/proxychains2.conf /usr/bin/git "$@"
+    else
+        /usr/bin/git "$@"
+    fi
 else
     /usr/bin/git "$@"
 fi
