@@ -50,3 +50,7 @@ RUN mkdir -p /home/wizawu/.agents && \
     mkdir /home/wizawu/.agents/skills/browser
 
 COPY browser/SKILL.md browser/browse.py /home/wizawu/.agents/skills/browser/
+
+RUN mkdir -p /home/wizawu/.agents/skills/git-commit && \
+    wget -q -O /home/wizawu/.agents/skills/git-commit/SKILL.md \
+    https://raw.githubusercontent.com/github/awesome-copilot/refs/heads/main/skills/git-commit/SKILL.md
