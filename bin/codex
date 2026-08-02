@@ -22,5 +22,5 @@ docker run --rm \
     -v $HOME/.codex:$HOME/.codex \
     -v $WORKSPACE:$WORKSPACE \
     -w $WORKSPACE \
-    -e OPENAI_API_KEY=$(jq -r .providers.teamorouter.apiKey $HOME/.pi/agent/models.json) \
+    -it -e OPENAI_API_KEY=$(jq -r .providers.teamorouter.apiKey $HOME/.pi/agent/models.json) \
     wizawu/agent:latest codex --dangerously-bypass-approvals-and-sandbox "$@"
