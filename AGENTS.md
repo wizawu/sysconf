@@ -9,6 +9,7 @@ This Dockerfile installs three external tools. Here is the complete workflow for
 - kimi-cli
 - pi
 - qoder
+- codex
 
 ### Update Logic
 
