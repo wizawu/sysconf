@@ -13,7 +13,7 @@ jobs:
         run: echo ${{secrets.DOCKER_HUB_PASSWORD}} | docker login -u wizawu --password-stdin
 
       - name: build agent image
-        run: docker build docker/agent -t wizawu/agent:latest
+        run: docker build docker/agent -t wizawu/agent:latest -t wizawu/agent:$(date +%Y%m%d)
 
       - name: push agent image
-        run: docker push wizawu/agent:latest
+        run: docker push wizawu/agent:latest && docker push wizawu/agent:$(date +%Y%m%d)

@@ -1,12 +1,5 @@
 #!/bin/bash
 
-set -x
-setxkbmap -layout us
-if [[ -n "$(xinput | grep RDMCTMZT | tail -1)" ]]; then
-  xmodmap -e "remove Shift = Shift_R" -e "keysym Shift_R = slash question"
-  xmodmap -e "keycode 61 = F2"
-fi
-
-set -e
+set -ex
 dconf write /org/mate/desktop/peripherals/mouse/accel-profile "'flat'"
 dconf write /org/mate/desktop/peripherals/mouse/motion-acceleration $(node -e "console.log(($1).toFixed(1))")
