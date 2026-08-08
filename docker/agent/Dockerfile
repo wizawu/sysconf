@@ -37,11 +37,11 @@ RUN wget -q -O /usr/bin/kimi https://code.kimi.com/kimi-code/binaries/0.34.0/kim
     chmod +x /usr/bin/kimi
 
 # https://github.com/openai/codex/releases
-RUN npm install -g @openai/codex@0.146.1 && \
+RUN npm install -g @openai/codex@0.147.0 && \
     npm cache clean --force
 
 # https://qoder.com/en/changelog?type=cli
-RUN wget -q -O- https://qoder-ide.oss-accelerate.aliyuncs.com/qodercli/releases/1.1.16/qodercli-linux-x64.tar.gz | \
+RUN wget -q -O- https://qoder-ide.oss-accelerate.aliyuncs.com/qodercli/releases/1.1.17/qodercli-linux-x64.tar.gz | \
     tar zxf - -C /usr/bin && \
     mv /usr/bin/qodercli /usr/bin/qoder
 
