@@ -82,9 +82,8 @@ alias zstar='ZSTD_CLEVEL=3 tar --zstd'
 # keyboard
 if [[ -n "$DISPLAY" ]]; then
   setxkbmap -layout us
-  xmodmap -e "keycode 9 = Escape asciitilde grave" &>>/dev/null
+  xmodmap -e "keycode 9 = Escape asciitilde grave"
   if [[ -n "$(xinput | grep RDMCTMZT | tail -1)" ]]; then
-    xmodmap -e "remove Shift = Shift_R" -e "keysym Shift_R = slash question"
-    xmodmap -e "keycode 61 = F2"
+    xmodmap -e "remove Shift = Shift_R" -e "keysym Shift_R = slash question" &>/dev/null
   fi
 fi
