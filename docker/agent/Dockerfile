@@ -31,7 +31,8 @@ ENV CHROME_EXECUTABLE_PATH=/var/lib/playwright/chromium-1208/chrome-linux64/chro
 RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v0.84.2/pi-linux-x64.tar.gz | \
     tar zxf - -C /usr/local && \
     ln -sf /usr/local/pi/pi /usr/bin/pi && \
-    pi install npm:pi-mcp-adapter
+    pi install npm:pi-mcp-adapter && \
+    pi install npm:pi-a2a-adaptor
 
 # https://github.com/MoonshotAI/kimi-code/releases
 RUN wget -q -O /usr/bin/kimi https://code.kimi.com/kimi-code/binaries/0.38.0/kimi-code-linux-x64 && \
