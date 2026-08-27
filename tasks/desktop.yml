@@ -62,3 +62,32 @@
       - mate-control-center
       - mate-panel
       - mate-session-manager
+
+- name: create awesome config directory
+  file:
+    path: /home/{{user}}/.config/awesome
+    state: directory
+    owner: "{{user}}"
+    group: "{{user}}"
+    mode: "0755"
+
+- name: copy lain to awesome config
+  copy:
+    src: usr/share/awesome/lib/lain/
+    dest: /home/{{user}}/.config/awesome/lain/
+    owner: "{{user}}"
+    group: "{{user}}"
+
+- name: copy awesome layout icon
+  copy:
+    src: usr/share/awesome/lib/lain/icons/layout/default/centerfairw.png
+    dest: /usr/share/awesome/themes/default/layouts/centerfairw.png
+    owner: root
+    group: root
+    mode: "0644"
+
+- name: configure awesome centerfair layout icon
+  lineinfile:
+    path: /usr/share/awesome/themes/default/theme.lua
+    insertbefore: '^return theme'
+    line: 'theme.layout_centerfair = themes_path.."default/layouts/centerfairw.png"'

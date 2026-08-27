@@ -33,10 +33,10 @@ export function train() {
       output: [it.prefer],
     })),
     {
-      iterations: 50000,
+      iterations: 80000,
       log: it => log.debug(it),
       logPeriod: 1000,
-      learningRate: 0.01,
+      learningRate: 0.001,
     },
   )
   fs.writeFileSync("model.json", JSON.stringify(net.toJSON(), null, 2))
@@ -118,6 +118,7 @@ const blackList = [
   "githubusercontent.com",
   "google-analytics.com",
   "google.com",
+  "google.nl",
   "googleadservices.com",
   "googleapis.com",
   "googlesyndication.com",

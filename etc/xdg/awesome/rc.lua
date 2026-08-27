@@ -77,6 +77,13 @@ awful.layout.layouts = {
 }
 -- }}}
 
+-- @wizawu --
+local lain = require("lain")
+lain.layout.termfair.nmaster = 3
+lain.layout.termfair.ncol    = 1
+table.insert(awful.layout.layouts, 2, lain.layout.termfair.center)
+-- @end --
+
 -- {{{ Helper functions
 local function client_menu_toggle_fn()
     local instance = nil
