@@ -7,8 +7,8 @@ const log = LoggerFactory.getLogger("\t\b\b\b\b\b\b\b")
 log.level = "debug"
 
 const data = [
-  ...JSON.parse(fs.readFileSync("./data.42.json", "utf-8")),
   ...JSON.parse(fs.readFileSync("./data.43.json", "utf-8")),
+  ...JSON.parse(fs.readFileSync("./data.44.json", "utf-8")),
 ]
 
 const net = new brain.NeuralNetwork()
@@ -131,5 +131,6 @@ const blackList = [
   "readthedocs.io",
   "solidot.org",
   "stripe.com",
+  "teamorouter.com",
   "yahoo.com",
 ]
