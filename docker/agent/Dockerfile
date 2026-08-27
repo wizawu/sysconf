@@ -20,7 +20,7 @@ RUN apt-get update -qq && \
 RUN test -f /usr/bin/python || ln -sf /usr/bin/python3 /usr/bin/python
 ENV PIP_BREAK_SYSTEM_PACKAGES=1
 ENV PIP_INDEX_URL=https://pypi.tuna.tsinghua.edu.cn/simple
-RUN pip install --no-cache-dir specify-cli==0.13.0 playwright==1.58.0 \
+RUN pip install --no-cache-dir playwright==1.58.0 \
     beautifulsoup4 easyofd lxml markdown markdownify openpyxl pandas pdfplumber pillow pyotp pypdfium2 python-docx pyyaml requests
 
 ENV PLAYWRIGHT_BROWSERS_PATH=/var/lib/playwright
@@ -32,18 +32,19 @@ RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v0.84.3/p
     tar zxf - -C /usr/local && \
     ln -sf /usr/local/pi/pi /usr/bin/pi && \
     pi install npm:pi-mcp-adapter && \
-    pi install npm:pi-a2a-adaptor
+    pi install npm:pi-a2a-adaptor && \
+    pi install @the-agency/pi-spec-kit
 
 # https://github.com/openai/codex/releases
-RUN npm install -g @openai/codex@0.149.1 && \
+RUN npm install -g @openai/codex@0.150.1 && \
     npm cache clean --force
 
 # https://github.com/MoonshotAI/kimi-code/releases
-RUN wget -q -O /usr/bin/kimi https://code.kimi.com/kimi-code/binaries/0.38.0/kimi-code-linux-x64 && \
+RUN wget -q -O /usr/bin/kimi https://code.kimi.com/kimi-code/binaries/0.39.0/kimi-code-linux-x64 && \
     chmod +x /usr/bin/kimi
 
 # https://qoder.com/en/changelog?type=cli
-RUN wget -q -O- https://qoder-ide.oss-accelerate.aliyuncs.com/qodercli/releases/1.1.30/qodercli-linux-x64.tar.gz | \
+RUN wget -q -O- https://qoder-ide.oss-accelerate.aliyuncs.com/qodercli/releases/1.1.32/qodercli-linux-x64.tar.gz | \
     tar zxf - -C /usr/bin && \
     mv /usr/bin/qodercli /usr/bin/qoder
 
