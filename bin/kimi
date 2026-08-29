@@ -19,6 +19,7 @@ docker run --rm \
     --network host \
     -v /etc/passwd:/etc/passwd:ro \
     -v /etc/group:/etc/group:ro \
+    -v $HOME/.local:$HOME/.local \
     -v $HOME/.kimi-code:$HOME/.kimi-code \
     -v $WORKSPACE:$WORKSPACE \
     -w $WORKSPACE \
