@@ -34,7 +34,8 @@ RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v0.84.4/p
     ln -sf /usr/local/pi/pi /usr/bin/pi && \
     pi install npm:pi-mcp-adapter && \
     pi install npm:pi-a2a-adaptor && \
-    pi install npm:@the-agency/pi-spec-kit
+    pi install npm:@the-agency/pi-spec-kit && \
+    pi install npm:@mjasnikovs/pi-task
 
 # https://github.com/openai/codex/releases
 RUN npm install -g @openai/codex@0.151.0 && \
