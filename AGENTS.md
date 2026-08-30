@@ -9,7 +9,6 @@ This Dockerfile installs four external tools. Here is the complete workflow for 
 - kimi-cli
 - pi
 - codex
-- codebuddy-code
 
 ### Update Logic
 

@@ -81,7 +81,7 @@ awful.layout.layouts = {
 local lain = require("lain")
 lain.layout.termfair.nmaster = 3
 lain.layout.termfair.ncol    = 1
-table.insert(awful.layout.layouts, 2, lain.layout.termfair.center)
+table.insert(awful.layout.layouts, 3, lain.layout.termfair.center)
 -- @end --
 
 -- {{{ Helper functions

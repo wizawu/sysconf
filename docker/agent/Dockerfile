@@ -34,8 +34,7 @@ RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v0.84.4/p
     ln -sf /usr/local/pi/pi /usr/bin/pi && \
     pi install npm:pi-mcp-adapter && \
     pi install npm:pi-a2a-adaptor && \
-    pi install npm:@the-agency/pi-spec-kit && \
-    chmod -R a+rX /root
+    pi install npm:@the-agency/pi-spec-kit
 
 # https://github.com/openai/codex/releases
 RUN npm install -g @openai/codex@0.151.0 && \
@@ -45,11 +44,7 @@ RUN npm install -g @openai/codex@0.151.0 && \
 RUN wget -q -O /usr/bin/kimi https://code.kimi.com/kimi-code/binaries/0.39.1/kimi-code-linux-x64 && \
     chmod +x /usr/bin/kimi
 
-# https://cnb.cool/codebuddy/codebuddy-code/-/blob/main/docs/release-notes/README.md
-RUN npm install -g @tencent-ai/codebuddy-code@2.141.0 && \
-    npm cache clean --force
-
-RUN chmod 755 /usr/bin
+RUN chmod 755 /usr/bin && chmod -R a+rX /root
 
 RUN mkdir -p /home/wizawu/.agents && \
     git clone --depth 1 https://github.com/anthropics/skills.git /tmp/skills && \
