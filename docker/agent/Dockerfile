@@ -29,20 +29,19 @@ RUN playwright install --with-deps chromium
 ENV CHROME_EXECUTABLE_PATH=/var/lib/playwright/chromium-1208/chrome-linux64/chrome
 
 # https://github.com/earendil-works/pi/releases
-RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v0.84.4/pi-linux-x64.tar.gz | \
+RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v0.85.0/pi-linux-x64.tar.gz | \
     tar zxf - -C /usr/local && \
     ln -sf /usr/local/pi/pi /usr/bin/pi && \
     pi install npm:pi-mcp-adapter && \
     pi install npm:pi-a2a-adaptor && \
-    pi install npm:@the-agency/pi-spec-kit && \
-    pi install npm:@mjasnikovs/pi-task
+    pi install npm:@the-agency/pi-spec-kit
 
 # https://github.com/openai/codex/releases
-RUN npm install -g @openai/codex@0.151.0 && \
+RUN npm install -g @openai/codex@0.153.2 && \
     npm cache clean --force
 
 # https://github.com/MoonshotAI/kimi-code/releases
-RUN wget -q -O /usr/bin/kimi https://code.kimi.com/kimi-code/binaries/0.39.1/kimi-code-linux-x64 && \
+RUN wget -q -O /usr/bin/kimi https://code.kimi.com/kimi-code/binaries/0.41.0/kimi-code-linux-x64 && \
     chmod +x /usr/bin/kimi
 
 RUN chmod 755 /usr/bin && chmod -R a+rX /root
