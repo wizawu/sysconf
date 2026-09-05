@@ -37,7 +37,7 @@ RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v0.85.0/p
     pi install npm:@the-agency/pi-spec-kit
 
 # https://github.com/openai/codex/releases
-RUN npm install -g @openai/codex@0.153.2 && \
+RUN npm install -g @openai/codex@0.153.4 && \
     npm cache clean --force
 
 # https://github.com/MoonshotAI/kimi-code/releases
@@ -57,4 +57,7 @@ COPY browser/SKILL.md browser/browse.py /home/wizawu/.agents/skills/browser/
 
 RUN mkdir -p /home/wizawu/.agents/skills/git-commit && \
     wget -q -O /home/wizawu/.agents/skills/git-commit/SKILL.md \
-    https://raw.githubusercontent.com/github/awesome-copilot/refs/heads/main/skills/git-commit/SKILL.md
+    https://raw.githubusercontent.com/github/awesome-copilot/refs/heads/main/skills/git-commit/SKILL.md && \
+    cd /home/wizawu/.agents/skills/git-commit && echo -e "\n## Commit Message Language\n" >> SKILL.md && \
+    echo 'If the git remote is github.com, write the commit message in English using English punctuation.' >> SKILL.md && \
+    echo 'For git remotes on other domains, write the commit message in Chinese using English punctuation.' >> SKILL.md
