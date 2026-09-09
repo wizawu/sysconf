@@ -44,6 +44,11 @@ RUN npm install -g @openai/codex@0.153.4 && \
 RUN wget -q -O /usr/bin/kimi https://code.kimi.com/kimi-code/binaries/0.41.0/kimi-code-linux-x64 && \
     chmod +x /usr/bin/kimi
 
+# https://qoder.com/en/changelog?type=cli
+RUN wget -q -O- https://qoder-ide.oss-accelerate.aliyuncs.com/qodercli/releases/1.1.47/qodercli-linux-x64.tar.gz | \
+    tar zxf - -C /usr/bin && \
+    mv /usr/bin/qodercli /usr/bin/qoder
+
 RUN chmod 755 /usr/bin && chmod -R a+rX /root
 
 RUN mkdir -p /home/wizawu/.agents && \
