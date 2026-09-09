@@ -20,7 +20,7 @@ docker run --rm \
     -v /etc/passwd:/etc/passwd:ro \
     -v /etc/group:/etc/group:ro \
     -v $HOME/.local:$HOME/.local \
-    -v $HOME/.qoder:$HOME/.qoder \
+    -v $HOME/.qoder-cn:$HOME/.qoder-cn \
     -v $WORKSPACE:$WORKSPACE \
     -w $WORKSPACE \
     $([[ "$*" =~ -p ]] || echo -it) \
