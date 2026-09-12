@@ -1,14 +1,40 @@
-#!/bin/sh
+#!/bin/bash
+
+# Installation
+#
+# https://download.virtualbox.org/virtualbox/7.2.16/VirtualBox-7.2.16-174877-Linux_amd64.run
+# http://ftp.cn.debian.org/debian/pool/contrib/v/virtualbox/virtualbox-dkms_7.2.16-dfsg-1_amd64.deb
+# https://download.virtualbox.org/virtualbox/7.2.16/Oracle_VirtualBox_Extension_Pack-7.2.16.vbox-extpack
+# https://download.virtualbox.org/virtualbox/7.2.16/VBoxGuestAdditions_7.2.16.iso
 
 set -ex
 
 if [ "$1" = pause ]; then
-    sudo VBoxManage controlvm wxwork savestate
+    sudo /opt/VirtualBox/VBoxManage controlvm wxwork savestate
 elif [ "$1" = reset ]; then
-    sudo VBoxManage controlvm wxwork reset
+    sudo /opt/VirtualBox/VBoxManage controlvm wxwork reset
 elif [ "$1" = off ]; then
-    sudo VBoxManage controlvm wxwork poweroff
+    sudo /opt/VirtualBox/VBoxManage controlvm wxwork poweroff
 else
-    # sudo qt5ct, choose `darker` color scheme
-    sudo env QT_QPA_PLATFORMTHEME=qt5ct QT_SCALE_FACTOR=0.9 VBoxManage startvm wxwork --type gui
+    echo '
+    QMenuBar, QMenu {
+        background-color: #1e1e1e !important;
+        color: #ffffff !important;
+        border: none !important;
+    }
+    QMenu::item:selected, QMenuBar::item:selected {
+        background-color: #007acc !important;
+        color: #ffffff !important;
+    }
+    QStatusBar, QToolBar {
+        background-color: #1e1e1e !important;
+        color: #ffffff !important;
+        border: none !important;
+    }
+    QStatusBar QLabel, QStatusBar QFrame {
+        background-color: transparent !important;
+        color: #ffffff !important;
+    }
+    ' > /tmp/virtualbox-dark.qss
+    sudo nohup /opt/VirtualBox/VirtualBoxVM --startvm wxwork -stylesheet /tmp/virtualbox-dark.qss &>/dev/null &
 fi
