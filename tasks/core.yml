@@ -13,6 +13,7 @@
       - cpulimit
       - curl
       - dconf-cli
+      - dkms
       - di
       - duf
       - docker-ce

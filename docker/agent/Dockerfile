@@ -45,7 +45,7 @@ RUN wget -q -O /usr/bin/kimi https://code.kimi.com/kimi-code/binaries/0.42.0/kim
     chmod +x /usr/bin/kimi
 
 # https://static.qoder.com.cn/qoder-cli-cn/channels/manifest.json
-RUN wget -q -O- https://static.qoder.com.cn/qoder-cli-cn/releases/1.1.50/qoderclicn-linux-x64.tar.gz | \
+RUN wget -q -O- https://static.qoder.com.cn/qoder-cli-cn/releases/1.1.51/qoderclicn-linux-x64.tar.gz | \
     tar zxf - -C /usr/bin && \
     mv /usr/bin/qoderclicn /usr/bin/qoder
 

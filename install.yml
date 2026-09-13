@@ -124,7 +124,7 @@
           - util-linux-extra
           - wpasupplicant
 
-    - include_tasks: tasks/command.yml
+    - include_tasks: tasks/core.yml
     - include_tasks: tasks/desktop.yml
     - include_tasks: tasks/vscode.yml
     - include_tasks: tasks/pip.yml
