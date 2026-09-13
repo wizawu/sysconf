@@ -7,7 +7,7 @@ if [[ "$1" == "init" ]]; then
     exit 0
 fi
 
-if [[ $PWD == /home/wizawu/repos/* ]]; then
+if [[ $PWD =~ ^/home/wizawu/(repos|vibe)/.* ]]; then
     /usr/bin/git config user.name $(echo d2h1YWwK | base64 -d)
     /usr/bin/git config user.email $(echo d2h1YWxAc2VydnlvdS5jb20uY24K | base64 -d)
 fi
@@ -20,7 +20,7 @@ fi
 if [[ "$1" == "am" ]] && [[ -z "$2" ]]; then
     set -x
     /usr/bin/git commit --amend
-elif [[ $PWD == /home/wizawu/repos/* ]] && [[ "$1" =~ ^(pull|push|pr)$ ]]; then
+elif [[ $PWD =~ ^/home/wizawu/(repos|vibe)/.* ]] && [[ "$1" =~ ^(pull|push|pr)$ ]]; then
     if timeout 0.1 nc -z 192.168.56.2 1080; then
         proxychains -q -f $(dirname $0)/../etc/proxychains2.conf /usr/bin/git "$@"
     else
