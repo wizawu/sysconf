@@ -29,7 +29,7 @@ RUN playwright install --with-deps chromium
 ENV CHROME_EXECUTABLE_PATH=/var/lib/playwright/chromium-1208/chrome-linux64/chrome
 
 # https://github.com/earendil-works/pi/releases
-RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v0.85.1/pi-linux-x64.tar.gz | \
+RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v0.86.1/pi-linux-x64.tar.gz | \
     tar zxf - -C /usr/local && \
     ln -sf /usr/local/pi/pi /usr/bin/pi && \
     pi install npm:pi-mcp-adapter && \
@@ -41,11 +41,11 @@ RUN npm install -g @openai/codex@0.155.1 && \
     npm cache clean --force
 
 # https://github.com/MoonshotAI/kimi-code/releases
-RUN wget -q -O /usr/bin/kimi https://code.kimi.com/kimi-code/binaries/2.0.1/kimi-code-linux-x64 && \
+RUN wget -q -O /usr/bin/kimi https://code.kimi.com/kimi-code/binaries/2.0.2/kimi-code-linux-x64 && \
     chmod +x /usr/bin/kimi
 
 # https://static.qoder.com.cn/qoder-cli-cn/channels/manifest.json
-RUN wget -q -O- https://static.qoder.com.cn/qoder-cli-cn/releases/1.1.57/qoderclicn-linux-x64.tar.gz | \
+RUN wget -q -O- https://static.qoder.com.cn/qoder-cli-cn/releases/1.1.59/qoderclicn-linux-x64.tar.gz | \
     tar zxf - -C /usr/bin && \
     mv /usr/bin/qoderclicn /usr/bin/qoder
 
