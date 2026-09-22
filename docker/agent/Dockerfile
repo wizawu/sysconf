@@ -1,4 +1,4 @@
-FROM ubuntu:25.10
+FROM ubuntu:26.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 RUN sed -i 's|http://.*.ubuntu.com/ubuntu|http://mirrors.tuna.tsinghua.edu.cn/ubuntu|g' /etc/apt/sources.list.d/ubuntu.sources
@@ -48,6 +48,10 @@ RUN wget -q -O /usr/bin/kimi https://code.kimi.com/kimi-code/binaries/2.0.2/kimi
 RUN wget -q -O- https://static.qoder.com.cn/qoder-cli-cn/releases/1.1.61/qoderclicn-linux-x64.tar.gz | \
     tar zxf - -C /usr/bin && \
     mv /usr/bin/qoderclicn /usr/bin/qoder
+
+# https://github.com/MiniMax-AI/minimax-code/releases
+RUN npm install -g @minimax-ai/code@0.5.2 && \
+    npm cache clean --force
 
 RUN chmod 755 /usr/bin && chmod -R a+rX /root
 

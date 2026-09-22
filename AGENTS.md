@@ -2,7 +2,7 @@
 
 ## docker/agent/Dockerfile Update Check Workflow
 
-This Dockerfile installs four external tools. Here is the complete workflow for checking and updating them.
+This Dockerfile installs five external tools. Here is the complete workflow for checking and updating them.
 
 ### Tools (with version-source URL)
 
@@ -10,6 +10,7 @@ This Dockerfile installs four external tools. Here is the complete workflow for 
 - codex — `https://github.com/openai/codex/releases`
 - kimi-cli — `https://github.com/MoonshotAI/kimi-code/releases`
 - qoder (Qoder CLI CN) — manifest `https://static.qoder.com.cn/qoder-cli-cn/channels/manifest.json` (read top-level `latest` field)
+- minimax-code — `https://github.com/MiniMax-AI/minimax-code/releases` (npm package `@minimax-ai/code`, CLI binary `mcode`)
 
 ### Update Logic
 
