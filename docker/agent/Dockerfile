@@ -21,12 +21,12 @@ RUN apt-get update -qq && \
 RUN test -f /usr/bin/python || ln -sf /usr/bin/python3 /usr/bin/python
 ENV PIP_BREAK_SYSTEM_PACKAGES=1
 ENV PIP_INDEX_URL=https://pypi.tuna.tsinghua.edu.cn/simple
-RUN pip install --no-cache-dir playwright==1.58.0 \
+RUN pip install --no-cache-dir playwright==1.61.0 \
     beautifulsoup4 easyofd ffmpeg-python lxml markdown markdownify openpyxl pandas pdfplumber pillow pyotp pypdfium2 python-docx pyyaml requests
 
 ENV PLAYWRIGHT_BROWSERS_PATH=/var/lib/playwright
 RUN playwright install --with-deps chromium
-ENV CHROME_EXECUTABLE_PATH=/var/lib/playwright/chromium-1208/chrome-linux64/chrome
+ENV CHROME_EXECUTABLE_PATH=/var/lib/playwright/chromium-1228/chrome-linux64/chrome
 
 # https://github.com/earendil-works/pi/releases
 RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v0.87.0/pi-linux-x64.tar.gz | \
