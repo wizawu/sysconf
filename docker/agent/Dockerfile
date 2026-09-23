@@ -29,7 +29,7 @@ RUN playwright install --with-deps chromium
 ENV CHROME_EXECUTABLE_PATH=/var/lib/playwright/chromium-1228/chrome-linux64/chrome
 
 # https://github.com/earendil-works/pi/releases
-RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v0.87.0/pi-linux-x64.tar.gz | \
+RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v0.87.1/pi-linux-x64.tar.gz | \
     tar zxf - -C /usr/local && \
     ln -sf /usr/local/pi/pi /usr/bin/pi && \
     pi install npm:pi-mcp-adapter && \
@@ -37,7 +37,7 @@ RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v0.87.0/p
     pi install npm:@the-agency/pi-spec-kit
 
 # https://github.com/openai/codex/releases
-RUN npm install -g @openai/codex@0.155.1 && \
+RUN npm install -g @openai/codex@0.156.1 && \
     npm cache clean --force
 
 # https://github.com/MoonshotAI/kimi-code/releases
@@ -55,7 +55,8 @@ RUN npm install -g @minimax-ai/code@0.5.2 && \
 
 RUN chmod 755 /usr/bin && chmod -R a+rX /root
 
-RUN mkdir -pm 777 /home/wizawu/.agents && \
+RUN mkdir -p /home/wizawu/.agents && \
+    chmod a+w /home/wizawu && \
     git clone --depth 1 https://github.com/anthropics/skills.git /tmp/skills && \
     rm -rf /tmp/skills/skills/claude-api && \
     mv /tmp/skills/skills /home/wizawu/.agents/skills && \
