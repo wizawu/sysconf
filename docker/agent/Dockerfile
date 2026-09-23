@@ -55,7 +55,7 @@ RUN npm install -g @minimax-ai/code@0.5.2 && \
 
 RUN chmod 755 /usr/bin && chmod -R a+rX /root
 
-RUN mkdir -p /home/wizawu/.agents && \
+RUN mkdir -pm 777 /home/wizawu/.agents && \
     git clone --depth 1 https://github.com/anthropics/skills.git /tmp/skills && \
     rm -rf /tmp/skills/skills/claude-api && \
     mv /tmp/skills/skills /home/wizawu/.agents/skills && \
