@@ -37,7 +37,7 @@ RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v0.87.1/p
     pi install npm:@the-agency/pi-spec-kit
 
 # https://github.com/openai/codex/releases
-RUN npm install -g @openai/codex@0.157.0 && \
+RUN npm install -g @openai/codex@0.158.0 && \
     npm cache clean --force
 
 # https://github.com/MoonshotAI/kimi-code/releases
@@ -45,12 +45,12 @@ RUN wget -q -O /usr/bin/kimi https://code.kimi.com/kimi-code/binaries/2.1.1/kimi
     chmod +x /usr/bin/kimi
 
 # https://static.qoder.com.cn/qoder-cli-cn/channels/manifest.json
-RUN wget -q -O- https://static.qoder.com.cn/qoder-cli-cn/releases/1.1.63/qoderclicn-linux-x64.tar.gz | \
+RUN wget -q -O- https://static.qoder.com.cn/qoder-cli-cn/releases/1.1.64/qoderclicn-linux-x64.tar.gz | \
     tar zxf - -C /usr/bin && \
     mv /usr/bin/qoderclicn /usr/bin/qoder
 
 # https://github.com/MiniMax-AI/minimax-code/releases
-RUN npm install -g @minimax-ai/code@0.5.4 && \
+RUN npm install -g @minimax-ai/code@0.5.8 && \
     npm cache clean --force
 
 RUN chmod 755 /usr/bin && chmod -R a+rX /root
