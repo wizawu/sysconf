@@ -13,6 +13,8 @@ RUN apt-get update -qq && \
         git-lfs \
         jq \
         npm \
+        xclip \
+        xsel \
         wget \
         && \
     apt-get clean && \

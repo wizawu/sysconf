@@ -17,6 +17,9 @@ fi
 docker run --rm \
     --user $(id -u):$(id -g) \
     --network host \
+    -e DISPLAY \
+    -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
+    -v $HOME/.Xauthority:$HOME/.Xauthority:ro \
     -v /etc/passwd:/etc/passwd:ro \
     -v /etc/group:/etc/group:ro \
     -v $HOME/.local:$HOME/.local \
