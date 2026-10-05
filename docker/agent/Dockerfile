@@ -31,7 +31,7 @@ RUN playwright install --with-deps chromium
 ENV CHROME_EXECUTABLE_PATH=/var/lib/playwright/chromium-1228/chrome-linux64/chrome
 
 # https://github.com/earendil-works/pi/releases
-RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v1.0.0/pi-linux-x64.tar.gz | \
+RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v1.0.3/pi-linux-x64.tar.gz | \
     tar zxf - -C /usr/local && \
     ln -sf /usr/local/pi/pi /usr/bin/pi && \
     pi install npm:pi-mcp-adapter && \
@@ -50,10 +50,6 @@ RUN wget -q -O /usr/bin/kimi https://code.kimi.com/kimi-code/binaries/2.1.1/kimi
 RUN wget -q -O- https://static.qoder.com.cn/qoder-cli-cn/releases/1.1.65/qoderclicn-linux-x64.tar.gz | \
     tar zxf - -C /usr/bin && \
     mv /usr/bin/qoderclicn /usr/bin/qoder
-
-# https://github.com/MiniMax-AI/minimax-code/releases
-RUN npm install -g @minimax-ai/code@0.6.2 && \
-    npm cache clean --force
 
 RUN chmod 755 /usr/bin && chmod -R a+rX /root
 
