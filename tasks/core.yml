@@ -29,6 +29,7 @@
       - inotify-tools
       - iotop
       - iperf3
+      - j2cli
       - jq
       - less
       - mariadb-client
