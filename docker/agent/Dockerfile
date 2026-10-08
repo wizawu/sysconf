@@ -31,7 +31,7 @@ RUN playwright install --with-deps chromium
 ENV CHROME_EXECUTABLE_PATH=/var/lib/playwright/chromium-1228/chrome-linux64/chrome
 
 # https://github.com/earendil-works/pi/releases
-RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v1.0.3/pi-linux-x64.tar.gz | \
+RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v1.1.0/pi-linux-x64.tar.gz | \
     tar zxf - -C /usr/local && \
     ln -sf /usr/local/pi/pi /usr/bin/pi && \
     pi install npm:pi-mcp-adapter && \
@@ -39,7 +39,7 @@ RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v1.0.3/pi
     pi install npm:@the-agency/pi-spec-kit
 
 # https://github.com/openai/codex/releases
-RUN npm install -g @openai/codex@0.160.0 && \
+RUN npm install -g @openai/codex@0.161.0 && \
     npm cache clean --force
 
 # https://github.com/MoonshotAI/kimi-code/releases

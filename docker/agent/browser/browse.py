@@ -19,17 +19,21 @@ def browse(
     timeout: int = 30000,
     output_format: str | None = None,
     locale: str | None = None,
+    width: int = 1536,
+    height: int = 864,
+    user_agent: str | None = None,
 ):
     proxy_config = {"server": proxy} if proxy else None
     resource_info = []  # (url, mime_type, size)
     pending_bodies = []
 
     context_options = {
-        "viewport": {"width": 1920, "height": 1080},
-        "user_agent": (
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "viewport": {"width": width, "height": height},
+        "user_agent": user_agent
+        or (
+            "Mozilla/5.0 (X11; Linux x86_64) "
             "AppleWebKit/537.36 (KHTML, like Gecko) "
-            "Chrome/135.0.0.0 Safari/537.36"
+            "Chrome/154.0.0.0 Safari/537.36"
         ),
         "timezone_id": "Asia/Shanghai",
     }
@@ -222,6 +226,23 @@ if __name__ == "__main__":
         default=None,
         help="Optional browser locale, e.g. en-US or zh-CN. If omitted, Playwright default is used.",
     )
+    parser.add_argument(
+        "--width",
+        type=int,
+        default=1536,
+        help="Viewport width in px (default 1536)",
+    )
+    parser.add_argument(
+        "--height",
+        type=int,
+        default=864,
+        help="Viewport height in px (default 864)",
+    )
+    parser.add_argument(
+        "--ua",
+        default=None,
+        help="Custom User-Agent string. If omitted, a default desktop Chrome UA is used.",
+    )
     args = parser.parse_args()
 
     url = args.url.strip()
@@ -236,4 +257,7 @@ if __name__ == "__main__":
         timeout=args.timeout,
         output_format=args.format,
         locale=args.locale,
+        width=args.width,
+        height=args.height,
+        user_agent=args.ua,
     )
