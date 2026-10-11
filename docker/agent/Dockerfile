@@ -39,7 +39,7 @@ RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v1.1.0/pi
     pi install npm:@the-agency/pi-spec-kit
 
 # https://github.com/openai/codex/releases
-RUN npm install -g @openai/codex@0.161.0 && \
+RUN npm install -g @openai/codex@0.162.1 && \
     npm cache clean --force
 
 # https://github.com/MoonshotAI/kimi-code/releases
