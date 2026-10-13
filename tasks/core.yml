@@ -51,7 +51,6 @@
       - unrar
       - unzip
       - upower
-      - valgrind
       - whois
       - wput
       - wtmpdb

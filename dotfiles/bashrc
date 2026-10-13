@@ -14,12 +14,9 @@ export PIP_BREAK_SYSTEM_PACKAGES=1
 export PIP_INDEX_URL=https://mirrors.aliyun.com/pypi/simple
 export PYTHONDONTWRITEBYTECODE=1
 export TRASH_DIR=$HOME/.local/share/Trash
-export VCPKG_DISABLE_METRICS=1
-export VCPKG_ROOT=$HOME/local/vcpkg
-export CMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake
 export GOPROXY=https://goproxy.cn,direct
 export GOPATH=$HOME/github/go
-export PATH=$HOME/.sysconf/bin:$VCPKG_ROOT:$JAVA_HOME/bin:/opt/intel/oneapi/compiler/latest/bin:/usr/sbin:$PATH
+export PATH=$HOME/.sysconf/bin:$JAVA_HOME/bin:/usr/sbin:$PATH
 
 # git
 PS1='${debian_chroot:+($debian_chroot)}\033[1;34m\u\033[90m@\033[33m\h\033[90m:\033[94m\w \033[90m$(/usr/bin/git branch 2>/dev/null|grep "*"|sed "s/../^/")\n\[\033[93m\]\$ \[\033[0m\]'
@@ -31,7 +28,6 @@ source /usr/share/bash-completion/bash_completion
 source /usr/share/bash-completion/completions/git
 
 # alias
-alias 1api="source /opt/intel/oneapi/setvars.sh"
 alias 2fa='node -e "console.log(require(\"otplib\").authenticator.generate(process.argv[1]))"'
 alias ackj='ack --type kotlin --type java --type groovy'
 alias ackng='ack --nogroup'
@@ -40,7 +36,6 @@ alias apthi='bash -c "sudo apt-get -o Acquire::http::Proxy=http://\$0 install \$
 alias base58='basex -i $(echo {0..9} {A..Z} {a..z} | tr -d " 0IOl")'
 alias base62='basex -i $(echo {0..9} {A..Z} {a..z} | tr -d " ")'
 alias bcrypt='htpasswd -bnBC 10 ""'
-alias cmemchk='valgrind --tool=memcheck --leak-check=full'
 alias code='code -n'
 alias datev='date +%Y%m%d%H%M%S'
 alias digs='dig +noall +answer'
