@@ -189,7 +189,7 @@ screen.connect_signal("property::geometry", set_wallpaper)
 -- @wizawu --
 screen.connect_signal("added", awesome.restart)
 screen.connect_signal("removed", awesome.restart)
-awful.spawn("hsetroot -full /usr/share/awesome/themes/default/background.png")
+awful.spawn("hsetroot /usr/share/awesome/themes/default/background.png")
 -- @end --
 
 awful.screen.connect_for_each_screen(function(s)
