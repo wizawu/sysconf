@@ -29,6 +29,7 @@
       - wireshark
       - x11-xkb-utils
       - x11-xserver-utils
+      - xclip
       - xdg-desktop-portal
       - xdg-user-dirs
       - xinput

@@ -71,7 +71,7 @@ alias vo='vim -R'
 alias wifi='sudo bash -c "nmcli device wifi connect \"\$0\" password \$1"'
 alias winzip='unzip -O cp936'
 alias wmount='sudo mount -o rw,uid=$UID,iocharset=utf8'
-alias xcp='xsel -b <'
+alias xcp='xclip -selection clipboard <'
 alias zstar='ZSTD_CLEVEL=3 tar --zstd'
 
 # keyboard

@@ -39,11 +39,11 @@ RUN wget -q -O- https://github.com/earendil-works/pi/releases/download/v1.5.0/pi
     pi install npm:@the-agency/pi-spec-kit
 
 # https://github.com/openai/codex/releases
-RUN npm install -g @openai/codex@0.166.0 && \
+RUN npm install -g @openai/codex@0.167.0 && \
     npm cache clean --force
 
 # https://github.com/MoonshotAI/kimi-code/releases
-RUN wget -q -O /usr/bin/kimi https://code.kimi.com/kimi-code/binaries/2.4.1/kimi-code-linux-x64 && \
+RUN wget -q -O /usr/bin/kimi https://code.kimi.com/kimi-code/binaries/2.5.2/kimi-code-linux-x64 && \
     chmod +x /usr/bin/kimi
 
 RUN chmod 755 /usr/bin && chmod -R a+rX /root
