@@ -12,7 +12,7 @@ if [[ "$1" = "-b" ]]; then
     xset -dpms
     xset s noblank
     xset s off
-    picom --backend egl -b || echo
+    picom --backend xrender --no-vsync -b || echo
 
     # start session
     pkill nm-applet || echo
