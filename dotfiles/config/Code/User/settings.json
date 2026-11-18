@@ -62,10 +62,9 @@
   "debug.console.fontSize": 12,
   "debug.javascript.codelens.npmScripts": "never",
   "editor.fontFamily": "Courier Prime Code, OPPOSans",
-  "editor.fontSize": 12,
   "editor.formatOnSave": false,
   "editor.letterSpacing": -0.5,
-  "editor.lineHeight": 17,
+  "editor.lineHeight": 22,
   "editor.minimap.enabled": false,
   "editor.quickSuggestions": {
     "comments": true,

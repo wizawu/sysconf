@@ -1,5 +1,6 @@
 [/]
 app-title='${sessionName}'
+copy-on-select=true
 prompt-on-delete-profile=true
 quake-specific-monitor=0
 session-name='${directory}'
